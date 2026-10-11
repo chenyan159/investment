@@ -16,6 +16,7 @@ export function backupExistingOutputs({
   matchFileName = () => false,
 } = {}) {
   if (!outputDir) return { backupDir: "", files: [] };
+  const resolvedBackupRootDir = resolveBackupRoot(outputDir, backupRootDir);
   fs.mkdirSync(outputDir, { recursive: true });
 
   const matchingFiles = fs.readdirSync(outputDir, { withFileTypes: true })
@@ -25,7 +26,6 @@ export function backupExistingOutputs({
 
   if (!matchingFiles.length) return { backupDir: "", files: [] };
 
-  const resolvedBackupRootDir = backupRootDir || path.join(outputDir, "备份");
   const backupDir = path.join(resolvedBackupRootDir, `${safeIdPart(backupKey || "output")}_${safeIdPart(formatLocalIso(new Date()))}`);
   fs.mkdirSync(backupDir, { recursive: true });
 
@@ -56,6 +56,7 @@ export function rollbackPreparedOutputs({
 } = {}) {
   const removed = [];
   const restored = [];
+  const resolvedBackupRootDir = outputDir ? resolveBackupRoot(outputDir, backupRootDir) : "";
 
   if (outputDir && fs.existsSync(outputDir)) {
     const newFiles = fs.readdirSync(outputDir, { withFileTypes: true })
@@ -85,7 +86,7 @@ export function rollbackPreparedOutputs({
 
   if (prepareResult?.backupDir && outputDir) {
     const backupDir = path.join(rootDir, ...normalizeProjectPath(prepareResult.backupDir).split("/"));
-    removeEmptyDirectoriesUpTo(backupDir, backupRootDir || path.join(outputDir, "备份"));
+    removeEmptyDirectoriesUpTo(backupDir, resolvedBackupRootDir);
   }
 
   return { removed, files: restored };
@@ -104,7 +105,7 @@ function uniqueBackupPath(targetPath) {
 function removeEmptyDirectoriesUpTo(startDir, stopDir) {
   let current = startDir;
   const stop = path.resolve(stopDir);
-  while (path.resolve(current).startsWith(stop)) {
+  while (isWithin(stop, current)) {
     if (!fs.existsSync(current)) return;
     try {
       fs.rmdirSync(current);
@@ -114,4 +115,17 @@ function removeEmptyDirectoriesUpTo(startDir, stopDir) {
     if (path.resolve(current) === stop) return;
     current = path.dirname(current);
   }
+}
+
+function resolveBackupRoot(outputDir, backupRootDir) {
+  const backup = path.resolve(backupRootDir || path.join(path.dirname(outputDir), "备份"));
+  if (isWithin(outputDir, backup) || isWithin(backup, outputDir)) {
+    throw new Error("Backup directory must be separate from the formal output directory");
+  }
+  return backup;
+}
+
+function isWithin(parent, child) {
+  const relative = path.relative(path.resolve(parent), path.resolve(child));
+  return relative === "" || (!path.isAbsolute(relative) && relative !== ".." && !relative.startsWith(`..${path.sep}`));
 }

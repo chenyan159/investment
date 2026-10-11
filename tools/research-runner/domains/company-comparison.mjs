@@ -118,6 +118,7 @@ export function backupExistingCompanyComparisonOutputs(item, outputContract = {}
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_COMPARISON_OUTPUT_DIR,
+    backupRootDir: path.join(ANALYSIS_ROOT, "公司对比", "备份"),
     backupKey: primary,
     expectedFileName,
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
@@ -131,6 +132,7 @@ export function rollbackCompanyComparisonFormalRun(item, prepareResult = {}, out
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_COMPARISON_OUTPUT_DIR,
+    backupRootDir: path.join(ANALYSIS_ROOT, "公司对比", "备份"),
     expectedFileName,
     prepareResult,
     newFileNameMatcher: (fileName) => primary

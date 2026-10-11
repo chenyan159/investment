@@ -79,6 +79,7 @@ export function backupExistingCompanySentimentOutputs(item, outputContract = {})
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(PROJECT_ROOT, "情绪面", "备份", "公司情绪"),
     backupKey: primary,
     expectedFileName,
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
@@ -93,6 +94,7 @@ export function rollbackCompanySentimentFormalRun(item, prepareResult = {}, outp
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(PROJECT_ROOT, "情绪面", "备份", "公司情绪"),
     expectedFileName,
     prepareResult,
     newFileNameMatcher: (fileName) => primary

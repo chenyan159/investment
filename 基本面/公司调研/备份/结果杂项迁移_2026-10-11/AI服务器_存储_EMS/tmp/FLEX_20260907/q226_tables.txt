@@ -1,0 +1,208 @@
+SCHEDULE I
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+(In millions, except per share amounts)
+
+Three-Month Periods Ended
+September 26, 2025 | September 27, 2024
+GAAP:
+Net sales | $                           6,804 | $                           6,545
+Cost of sales | 6,181 | 5,998
+Restructuring charges | 9 | 16
+Gross profit | 614 | 531
+Selling, general and administrative expenses | 260 | 216
+Restructuring and impairment charges | 42 | 2
+Intangible amortization | 16 | 16
+Operating income | 296 | 297
+Interest expense | 52 | 53
+Interest income | 10 | 16
+Other charges (income), net | (13) | (8)
+Equity in earnings (losses) of unconsolidated affiliates | (5) | (4)
+Income before income taxes | 262 | 264
+Provision for (benefit from) income taxes | 63 | 50
+Net income | $                              199 | $                              214
+
+GAAP EPS
+Diluted earnings per share | $                             0.52 | $                             0.54
+Diluted shares used in computing per share amounts | 380 | 400
+
+See Schedule II for the reconciliation of GAAP to non-GAAP financial measures. See the accompanying notes | on Schedule V attached to this press release.
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+(In millions, except per share amounts)
+
+Six-Month Periods Ended
+September 26, 2025 | September 27, 2024
+GAAP:
+Net sales | $                         13,379 | $                        12,859
+Cost of sales | 12,168 | 11,825
+Restructuring charges | 25 | 32
+Gross profit | 1,186 | 1,002
+Selling, general and administrative expenses | 493 | 429
+Restructuring and impairment charges | 49 | 11
+Intangible amortization | 37 | 32
+Operating income | 607 | 530
+Interest expense | 103 | 109
+Interest income | 23 | 32
+Other charges (income), net | (6) | (6)
+Equity in earnings (losses) of unconsolidated affiliates | (25) | (3)
+Income before income taxes | 508 | 456
+Provision for (benefit from) income taxes | 117 | 103
+Net income | $                              391 | $                              353
+
+GAAP EPS
+Diluted earnings per share | $                             1.03 | $                             0.87
+Diluted shares used in computing per share amounts | 381 | 405
+
+See Schedule II for the reconciliation of GAAP to non-GAAP financial measures. See the accompanying notes | on Schedule V attached to this press release.
+SCHEDULE II
+FLEX
+RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES
+(In millions, except per share amounts and percentages)
+
+Three-Month Periods Ended
+September 26, 2025 | September 27, 2024
+
+GAAP operating income and margin % | $                              296 | 4.4 % | $                              297 | 4.5 %
+Intangible amortization | 16 | 16
+Stock-based compensation | 37 | 28
+Restructuring and impairment charges | 51 | 17
+Legal and other | 9 | —
+Non-GAAP operating income and margin % | $                              409 | 6.0 % | $                              358 | 5.5 %
+
+GAAP provision for income taxes | $                                 63 | $                                 50
+Intangible amortization benefit | 3 | 4
+Other tax related adjustments | 14 | 15
+Non-GAAP provision for income taxes | $                                 80 | $                                 69
+
+GAAP net income | $                              199 | $                              214
+Intangible amortization | 16 | 16
+Stock-based compensation | 37 | 28
+Restructuring and impairment charges | 51 | 17
+Legal and other | 9 | —
+Equity in losses of unconsolidated affiliates | 8 | —
+Interest and other, net | (3) | (1)
+Adjustments for taxes | (17) | (19)
+Non-GAAP net income | $                              300 | $                              255
+
+Diluted earnings per share:
+GAAP | $                             0.52 | $                             0.54
+Non-GAAP | $                             0.79 | $                             0.64
+
+Free Cash Flow:
+Net cash provided by operating activities | 453 | 319
+Net capital expenditures | (148) | (100)
+Free Cash Flow | $                              305 | $                              219
+
+See the accompanying notes on Schedule V attached to this press release.
+FLEX
+RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES
+(In millions, except per share amounts and percentages)
+
+Six-Month Periods Ended
+September 26, 2025 | September 27, 2024
+
+GAAP operating income and margin % | $                              607 | 4.5 % | $                              530 | 4.1 %
+Intangible amortization | 37 | 32
+Stock-based compensation | 71 | 60
+Restructuring and impairment charges | 74 | 42
+Legal and other | 15 | —
+Non-GAAP operating income and margin % | $                              804 | 6.0 % | $                              664 | 5.2 %
+
+GAAP provision for income taxes | $                              117 | $                              103
+Intangible amortization benefit | 8 | 7
+Other tax related adjustments | 28 | 13
+Non-GAAP provision for income taxes | $                              153 | $                              123
+
+GAAP net income | $                              391 | $                              353
+Intangible amortization | 37 | 32
+Stock-based compensation | 71 | 60
+Restructuring and impairment charges | 74 | 42
+Legal and other | 15 | —
+Equity in losses of unconsolidated affiliates | 25 | —
+Interest and other, net | (3) | (1)
+Adjustments for taxes | (36) | (20)
+Non-GAAP net income | $                              574 | $                              466
+
+Diluted earnings per share:
+GAAP | $                             1.03 | $                             0.87
+Non-GAAP | $                             1.51 | $                             1.15
+
+Free Cash Flow:
+Net cash provided by operating activities | 852 | 659
+Net capital expenditures | (279) | (208)
+Free Cash Flow | $                              573 | $                              451
+
+See the accompanying notes on Schedule V attached to this press release.
+SCHEDULE III
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED BALANCE SHEETS
+(In millions)
+
+As of September 26, 2025 | As of March 31, 2025
+ASSETS
+Current assets:
+Cash and cash equivalents | $                                  2,249 | $                          2,289
+Accounts receivable, net of allowance | 3,857 | 3,671
+Contract assets | 819 | 616
+Inventories | 5,270 | 5,071
+Other current assets | 1,647 | 1,194
+Total current assets | 13,842 | 12,841
+
+Property and equipment, net | 2,352 | 2,330
+Operating lease right-of-use assets, net | 703 | 562
+Goodwill | 1,375 | 1,341
+Other intangible assets, net | 314 | 343
+Other non-current assets | 960 | 964
+Total assets | $                                19,546 | $                        18,381
+
+LIABILITIES AND SHAREHOLDERS' EQUITY
+Current liabilities:
+Bank borrowings and current portion of long-term debt | $                                      676 | $                          1,209
+Accounts payable | 6,125 | 5,147
+Accrued payroll and benefits | 568 | 560
+Deferred revenue and customer working capital advances | 1,914 | 1,957
+Other current liabilities | 1,091 | 977
+Total current liabilities | 10,374 | 9,850
+
+Long-term debt, net of current portion | 3,013 | 2,483
+Operating lease liabilities, non-current | 604 | 456
+Other non-current liabilities | 520 | 590
+Total liabilities | 14,511 | 13,379
+Total shareholders' equity | 5,035 | 5,002
+Total liabilities and shareholders' equity | $                                19,546 | $                        18,381
+SCHEDULE IV
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+(In millions)
+
+Six-Month Periods Ended
+September 26, 2025 | September 27, 2024
+CASH FLOWS FROM OPERATING ACTIVITIES:
+Net income | $                            391 | $                            353
+Depreciation, amortization and other impairment charges | 298 | 257
+Changes in working capital and other, net | 163 | 49
+Net cash provided by operating activities | 852 | 659
+
+CASH FLOWS FROM INVESTING ACTIVITIES:
+Purchases of property and equipment | (283) | (214)
+Proceeds from the disposition of property and equipment | 4 | 6
+Acquisition of businesses, net of cash acquired | (43) | (1)
+Proceeds from divestiture of businesses, net of cash held in divested businesses | (4) | —
+Other investing activities, net | (8) | 3
+Net cash used in investing activities | (334) | (206)
+
+CASH FLOWS FROM FINANCING ACTIVITIES:
+Proceeds from bank borrowings and long-term debt | 500 | 499
+Payments of bank borrowings, long-term debt and other financing liabilities | (535) | (57)
+Payments for repurchases of ordinary shares | (544) | (757)
+Other, net | 4 | (6)
+Net cash used in financing activities | (575) | (321)
+
+Effect of exchange rates on cash and cash equivalents | 17 | (5)
+Net change in cash and cash equivalents | (40) | 127
+Cash and cash equivalents, beginning of period | 2,289 | 2,474
+Cash and cash equivalents, end of period | $                         2,249 | $                        2,601
+Email Address | *
+Investor Alert Options | *
+News | SEC Filings | End of Day Stock Quote | Events & Presentations

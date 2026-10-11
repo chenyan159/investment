@@ -1,0 +1,354 @@
+1
+Flex Announces Intention to 
+Spin Off its Cloud and Power 
+Infrastructure Segment into a 
+New Independent Publicly 
+Traded Company
+May 5th, 2026
+
+2
+Forward Looking Statements
+ This presentation contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange 
+Act of 1934, as amended. Words such as "anticipate," "believe," "expect," "intend," "may," "plan," "project," "will," and similar expressions identify forward-looking statements. 
+These forward-looking statements include, without limitation, statements regarding the planned spin-off of our cloud and power infrastructure business into an independent, 
+publicly traded company; the expected timing of the spin-off and the ability to complete the spin-off; the anticipated benefits of the spin-off, including enhanced strategic 
+focus, financial flexibility, and value creation for shareholders; the expected tax-free treatment of the spin-off for U.S. federal income tax purposes; the expected future 
+performance of each company following completion of the spin-off; management changes and leadership of each company; and statements about business strategies, growth 
+opportunities, market position, and financial outlook for each company. These forward-looking statements are based on current expectations, estimates, and assumptions 
+involving risks and uncertainties that could cause actual outcomes and results to differ materially from those anticipated by these forward-looking statements. Readers are 
+cautioned not to place undue reliance on these forward-looking statements.
+ Risks and uncertainties related to the proposed spin-off include, but are not limited to: uncertainties as to whether the spin-off will be completed and the timing thereof; the 
+possibility that various conditions to the completion of the spin-off may not be satisfied or waived; the possibility that the spin-off will not qualify for the expected tax-free 
+treatment for U.S. federal income tax purposes; the risk that the spin-off may be more difficult, time-consuming, or costly than expected, including the impact on Flex's 
+resources, systems, procedures, and controls; the possibility that the strategic, operational, and financial benefits of the spin-off may not be achieved or may take longer to 
+achieve than expected; the failure to obtain, or delays in obtaining, required legal, regulatory or other approvals necessary to complete the spin-off; disruption from the spin-off, 
+including potential adverse effects on relationships with customers, suppliers, employees, and other business partners; competitive responses to the announcement or 
+completion of the spin-off; diversion of management's attention from ongoing business operations; the possibility of disputes, litigation, or unanticipated costs in connection with 
+the spin-off; uncertainty regarding the financial performance of either company following the spin-off; negative effects of the announcement or pendency of the spin-off on the 
+market price of Flex's securities and/or on Flex's financial performance; the ability to achieve anticipated capital structures, credit ratings, and financing in connection with the 
+spin-off; the ability to retain key personnel; impacts of geopolitical conflicts; and any changes in general economic and/or industry-specific conditions. 
+ Additional information concerning risks relating to our business is described under "Risk Factors" and “Management's Discussion and Analysis of Financial Condition and Results 
+of Operations" in our most recent Annual Report on Form 10-K and in our subsequent filings with the U.S. Securities and Exchange Commission. All forward-looking statements are 
+made as of the date hereof, and Flex assumes no obligation to update or revise any forward-looking statements, whether as a result of new information, future events, or 
+otherwise, except as required by applicable law.
+
+3
+Strategic rationale
+A sharpened focus to unlock the potential of two businesses, each with a clear mission and operating 
+model built to match
+SpinCo will be a critical digital and electrical infrastructure company, delivering end-to-end power and 
+thermal management technologies and integrated infrastructure systems for AI data centers and mission-
+critical applications
+Flex will continue to execute its proven playbook as a leading advanced manufacturing company 
+operating at global scale for premier brands across a diverse set of end markets that are aligned with long 
+term secular growth trends 
+Both companies expected to enter the spin-off well-capitalized with robust balance sheets and dedicated 
+management teams to drive value for customers, employees, and shareholders
+Announcing Intent to Spin Off Flex’s Cloud and Power Infrastructure Segment 
+
+4
+Transaction overview
+•
+Intended to be a tax-free spin-off of SpinCo into a standalone publicly-traded company
+•
+Flex expected to retain stake in SpinCoA not to exceed 19.9% 
+Transaction 
+Structure
+•
+Target investment grade balance sheet at Flex and target investment grade metrics at 
+SpinCo
+•
+Specific capital structure and financial policies will be tailored for each business with 
+more detail provided later in the year
+Financial
+•
+Transaction close is targeted for Q1 calendar 2027
+•
+Subject to customary conditions, including final approval by the Flex Board of Directors, 
+requisite approval of Flex shareholders, receipt of tax opinion from counsel, and filing and 
+effectiveness of Form 10 registration statement with the U.S. Securities and Exchange 
+Commission 
+Timing
+AIntend to be partially used for future debt reduction of Flex
+
+5
+Two companies built to win
+Embedded Power 
+Products
+Critical Power 
+Products
+Thermal Management
+Products
+Cloud
+SpinCo
+A leader in critical digital infrastructure, delivering end-to-end 
+power and thermal management technologies for AI data 
+centers and mission-critical applications 
+31%
+Power 
+Products
+69%
+Thermal 
+Management 
+Products & Cloud
+$6.6B
+FY26 Revenue
+Health
+Industrial
+Automotive
+Communications
+Lifestyle
+Flex
+A market leading advanced manufacturing company 
+operating at global scale for premier brands across a diverse 
+set of end markets
+48%
+Regulated 
+Manufacturing 
+Solutions
+52%
+Integrated 
+Technology 
+Solutions
+$21.3B
+FY26 Revenue
+
+6
+Proven leaders committed to driving value
+Michael Hartung
+CEO, Flex
+Upon Spin-off
+Currently Flex Chief Commercial Officer
+Chairman of the Board, Flex
+Revathi Advaithi
+Upon Spin-off
+CEO, SpinCo
+Currently Flex Chief Executive Officer
+
+7
+SpinCo Company 
+Overview
+7
+
+8
+A high-growth critical digital and electrical 
+infrastructure company
+Critical Power 
+Products
+Cloud
+Embedded 
+Power Products
+Thermal 
+Management 
+Products
+Lifecycle 
+Services 
+ASource: Omdia
+Exposure to a ~$1.1T compute and 
+power infrastructure TAMA with multi-year 
+demand visibility
+Rising compute density requires power 
+and thermal to be designed around it as 
+a unified system
+Our portfolio spans grid to chip, 
+positioned for the next generation of 
+infrastructure deployments
+
+9
+SpinCo business profile
+SpinCo serves a diversified customer base
+Hyperscalers
+Silicon Providers
+Colocation Providers
+Neoclouds
+Thermal Management Products
+Advanced liquid cooling 
+solutions supporting 
+higher-density, power-intensive 
+rack architectures
+Example products:
+• Cold plates
+• Coolant distribution units
+Cloud
+Integrated compute systems 
+supporting power-dense digital 
+infrastructure deployments
+Example products:
+• Compute trays
+• Rack integration
+Embedded Power Products
+High-density rack- and 
+board-level power systems 
+supporting power-intensive 
+compute workloads
+Example products:
+• Chip-level power solutions
+• Power shelves and racks 
+Critical Power Products
+Utility and facility-level electrical 
+infrastructure enabling reliable, 
+scalable power delivery
+Example products:
+• MV/LV switchgear
+• Power distribution units
+• Busway
+• Prefabricated modular pods
+Utilities
+Power Products
+Thermal Management Products and Cloud
+
+10
+CONFIDENTIAL
+SpinCo strategic opportunities
+Drive technological competitive advantage
+Provide customers with innovative, forward-looking solutions as 
+power and compute architectures align
+2
+Expand market penetration
+Increased participation across integrated infrastructure for 
+converged power, thermal, and compute systems
+3
+Long-term revenue outlook
+65-75% 
+FY27E YoY revenue growth
+80%+ 
+FY28E YoY revenue growth
+38% 
+FY26 YoY revenue growth
+Capture sustained infrastructure demand 
+Capitalize on multi-year demand for power-dense data center 
+and critical infrastructure driven by AI and electrification
+1
+Invest to deepen platform differentiation
+Selectively allocate capital toward technology, capacity 
+expansion, and M&A to strengthen our integrated solutions 
+offering
+4
+
+11
+Flex Company 
+Overview
+11
+
+12
+A future-ready manufacturing partner designed 
+for speed, scale, and resilience
+AsiaA
+15M square feet
+EMEAA
+10M square feet
+AmericasA
+14M square feet
+Future-ready manufacturing
+End-to-end design, engineering, and manufacturing 
+enabled by automation, digital factories, and 
+advanced processes
+Leading EMS provider
+Top-tier EMS provider continuing to execute proven 
+playbook through operational innovation, automation, 
+and global manufacturing scale
+Automation-driven productivity
+Advanced automation, vertical integration, and 
+analytics to scale output without linear labor growth
+AExpected Flex footprint post spin-off
+
+13
+Flex business profile
+Health
+Regulated medical 
+devices, drug delivery 
+systems, and 
+equipment
+Automotive
+Compute, controls, 
+and power electronics
+Communications
+High speed networking 
+and enterprise systems
+Industrial
+Automation, energy, 
+and equipment 
+infrastructure
+Lifestyle
+Premium products 
+across commercial, 
+home, and personal 
+categories
+Regulated Manufacturing Solutions
+Integrated Technology Solutions
+Select Flex customers
+
+14
+Prioritize growth in high value end markets
+Focus on markets shaped by powerful, long-term secular trends—
+markets that increasingly demand higher levels of complexity, 
+reliability, and global scale
+1
+Scale with technology-enabled operational rigor
+Continue to drive productivity and margin uplift through global 
+standardization, automation and AI-enabled operations
+2
+Robust capital return framework
+Disciplined cash generation driven by margin expansion, clear 
+investment priorities, and a returns first mindset
+3
+CONFIDENTIAL
+14
+Execute our proven playbook
+Long-term revenue outlook
+LSD-MSD
+FY27E YoY revenue growthA
+LSD-MSD
+FY28E YoY revenue growthA
+1.4%
+FY26 YoY revenue growth
+ALSD is low-single digit, MSD is mid-single digit
+
+15
+Long-term Value Creation
+15
+
+16
+Positioned to deliver long-term value
+Two independent, focused companies with clear execution priorities
+Each company purpose-built for its market and positioned to lead
+Distinct growth strategies aligned to differentiated market positions
+Capital and focus directed to where each business has the strongest right to win
+Management focus on scaling businesses, expanding margins, and driving value creation
+Clear accountability, disciplined portfolio management, and capital deployment aligned to returns
+
+17
+Continuing our proven transformation approach
+Announcing the planned spin-off 
+of the Cloud and Power 
+Infrastructure segment 
+Establishing two focused, 
+independent public companies 
+positioned to lead in their 
+respective markets
+Entering our next 
+phase of growth
+Repositioned from global-scale 
+contract manufacturing to 
+higher-value, differentiated markets
+Sharpened portfolio toward higher 
+margins and attractive end-market 
+exposure; exited structurally 
+lower-margin businesses
+Defined a new 
+strategic direction
+2019
+2026+
+Delivered value through 
+portfolio transformation
+2020 – Today
+Executed the Nextracker spin-off, 
+optimizing value and strategic focus
+Built integrated power and thermal 
+management platform through 
+strategic acquisitions
+Flex TSR of ~1,125% since 2019, compared to ~200% for the S&P 500A
+AFlex TSR based on market close as of May 1, 2026; S&P 500 TSR is based on the total return of the S&P 500 Index as reported by Bloomberg for the same period
+
+18
+18

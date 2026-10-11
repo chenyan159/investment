@@ -46,3 +46,23 @@ test("integrated company-decision backup keeps formal results and backups as sib
     fs.rmSync(rootDir, { recursive: true, force: true });
   }
 });
+
+test("default backup is a sibling and nested backup roots are rejected before moving files", () => {
+  const rootDir = fs.mkdtempSync(path.join(os.tmpdir(), "backup-boundary-"));
+  const outputDir = path.join(rootDir, "结果");
+  try {
+    fs.mkdirSync(outputDir);
+    fs.writeFileSync(path.join(outputDir, "report.md"), "old");
+    for (const backupRootDir of [outputDir, path.join(outputDir, "备份"), rootDir]) {
+      assert.throws(() => backupExistingOutputs({ rootDir, outputDir, backupRootDir, expectedFileName: "report.md" }), /must be separate/);
+      assert.equal(fs.readFileSync(path.join(outputDir, "report.md"), "utf8"), "old");
+    }
+    const prepared = backupExistingOutputs({ rootDir, outputDir, expectedFileName: "report.md" });
+    assert.ok(prepared.backupDir.startsWith("备份/"));
+    rollbackPreparedOutputs({ rootDir, outputDir, expectedFileName: "report.md", prepareResult: prepared });
+    assert.equal(fs.readFileSync(path.join(outputDir, "report.md"), "utf8"), "old");
+    assert.equal(fs.existsSync(path.join(rootDir, "备份")), false);
+  } finally {
+    fs.rmSync(rootDir, { recursive: true, force: true });
+  }
+});

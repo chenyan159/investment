@@ -126,6 +126,7 @@ export function backupExistingCompanyInvestmentDecisionOutputs(item, outputContr
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_INVESTMENT_DECISION_OUTPUT_DIR,
+    backupRootDir: path.join(ANALYSIS_ROOT, "公司情景投资决策", "备份"),
     backupKey: primary,
     expectedFileName,
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
@@ -139,6 +140,7 @@ export function rollbackCompanyInvestmentDecisionFormalRun(item, prepareResult =
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_INVESTMENT_DECISION_OUTPUT_DIR,
+    backupRootDir: path.join(ANALYSIS_ROOT, "公司情景投资决策", "备份"),
     expectedFileName,
     prepareResult,
     newFileNameMatcher: (fileName) => primary

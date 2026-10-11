@@ -1,0 +1,34 @@
+{
+  "RepairedLinks": 13,
+  "PreservedFormalFiles": 970,
+  "RepairedReports": 1,
+  "Results": [
+    {
+      "FormalReports": 221,
+      "Stage": "基本面/公司调研/结果"
+    },
+    {
+      "FormalReports": 96,
+      "Stage": "基本面/行业调研/结果"
+    },
+    {
+      "FormalReports": 221,
+      "Stage": "分析报告/公司情景投资决策/结果"
+    },
+    {
+      "FormalReports": 221,
+      "Stage": "分析报告/公司对比/结果"
+    },
+    {
+      "FormalReports": 192,
+      "Stage": "情绪面/公司情绪"
+    },
+    {
+      "FormalReports": 19,
+      "Stage": "基本面/特征量化/量化评分"
+    }
+  ],
+  "PreservedExistingBackups": 463,
+  "Verified": true,
+  "MovedFiles": 3072
+}

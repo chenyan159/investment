@@ -146,6 +146,7 @@ export function backupExistingIndustryOutputs(item, outputContract = {}) {
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(FUNDAMENTAL_ROOT, "行业调研", "备份", path.basename(outputDir)),
     backupKey: item.subject,
     expectedFileName: outputContract.expectedOutputFile?.split("/").pop() || "",
     matchFileName: (fileName) => industryDomain.outputFilePattern.test(fileName)
@@ -161,6 +162,7 @@ export function rollbackIndustryFormalRun(item, prepareResult = {}, outputContra
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(FUNDAMENTAL_ROOT, "行业调研", "备份", path.basename(outputDir)),
     expectedFileName: outputContract.expectedOutputFile?.split("/").pop() || "",
     prepareResult,
     newFileNameMatcher: (fileName) => fileName.startsWith(expectedPrefix)

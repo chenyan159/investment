@@ -1,0 +1,275 @@
+TABLE 0
+ |  |  | 
+CEREBRAS SYSTEMS INC. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (unaudited) (in thousands, except per share amounts)
+ |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 |  |  |  | 2026 |  |  |  | 2025 | 
+Revenue |  |  |  |  |  |  | 
+Hardware | $ | 54,119 |  |  | $ | 70,295 |  |  | $ | 164,712 |  |  | $ | 139,969 | 
+Cloud and other services |  | 125,991 |  |  |  | 33,027 |  |  |  | 208,804 |  |  |  | 62,865 | 
+Total revenue |  | 180,110 |  |  |  | 103,322 |  |  |  | 373,516 |  |  |  | 202,834 | 
+Cost of revenue |  |  |  |  |  |  | 
+Hardware |  | 53,141 |  |  |  | 46,649 |  |  |  | 118,072 |  |  |  | 95,059 | 
+Cloud and other services |  | 101,410 |  |  |  | 24,574 |  |  |  | 143,709 |  |  |  | 34,072 | 
+Total cost of revenue |  | 154,551 |  |  |  | 71,223 |  |  |  | 261,781 |  |  |  | 129,131 | 
+Gross profit |  | 25,559 |  |  |  | 32,099 |  |  |  | 111,735 |  |  |  | 73,703 | 
+Operating expenses |  |  |  |  |  |  | 
+Research and development |  | 320,151 |  |  |  | 60,768 |  |  |  | 395,646 |  |  |  | 113,519 | 
+Sales and marketing |  | 86,969 |  |  |  | 18,228 |  |  |  | 101,670 |  |  |  | 28,554 | 
+General and administrative |  | 95,672 |  |  |  | 10,285 |  |  |  | 106,689 |  |  |  | 17,282 | 
+Total operating expenses |  | 502,792 |  |  |  | 89,281 |  |  |  | 604,005 |  |  |  | 159,355 | 
+Loss from operations |  | (477,233 | ) |  |  | (57,182 | ) |  |  | (492,270 | ) |  |  | (85,652 | )
+Other income, net |  | 26,979 |  |  |  | 368,358 |  |  |  | 29,507 |  |  |  | 374,644 | 
+Income (loss) before income taxes |  | (450,254 | ) |  |  | 311,176 |  |  |  | (462,763 | ) |  |  | 288,992 | 
+Income tax expense |  | 274 |  |  |  | 1,664 |  |  |  | 1,771 |  |  |  | 3,347 | 
+Net income (loss) | $ | (450,528 | ) |  | $ | 309,512 |  |  | $ | (464,534 | ) |  | $ | 285,645 | 
+ |  |  |  |  |  |  | 
+Net income (loss) attributable to common shareholders |  |  |  |  |  |  | 
+Basic | $ | (450,528 | ) |  | $ | 120,318 |  |  | $ | (464,534 | ) |  | $ | 110,580 | 
+Diluted | $ | (450,528 | ) |  | $ | 309,512 |  |  | $ | (464,534 | ) |  | $ | 285,645 | 
+Net income (loss) per share attributable to common shareholders |  |  |  |  |  |  | 
+Basic | $ | (2.98 | ) |  | $ | 2.28 |  |  | $ | (4.34 | ) |  | $ | 2.11 | 
+Diluted | $ | (2.98 | ) |  | $ | 1.91 |  |  | $ | (4.34 | ) |  | $ | 1.76 | 
+Weighted average shares outstanding |  |  |  |  |  |  | 
+Basic |  | 150,968 |  |  |  | 52,720 |  |  |  | 107,132 |  |  |  | 52,363 | 
+Diluted |  | 150,968 |  |  |  | 161,822 |  |  |  | 107,132 |  |  |  | 162,276 | 
+
+TABLE 1
+ |  |  | 
+CEREBRAS SYSTEMS INC. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (unaudited) (in thousands)
+ |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 |  |  |  | 2026 |  |  |  | 2025 | 
+Net income (loss) | $ | (450,528 | ) |  | $ | 309,512 |  |  | $ | (464,534 | ) |  | $ | 285,645 | 
+Change in foreign currency translation adjustments, net of tax |  | (274 | ) |  |  | 732 |  |  |  | 638 |  |  |  | 912 | 
+Available-for-sale investments: |  |  |  |  |  |  | 
+Change in net unrealized gain (loss) on debt securities, net of tax |  | 2,645 |  |  |  | (735 | ) |  |  | 3,828 |  |  |  | (807 | )
+Comprehensive income (loss) | $ | (448,157 | ) |  | $ | 309,509 |  |  | $ | (460,068 | ) |  | $ | 285,750 | 
+
+TABLE 2
+ |  |  | 
+CEREBRAS SYSTEMS INC. CONDENSED CONSOLIDATED BALANCE SHEETS (unaudited) (in thousands)
+ |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+ASSETS |  |  | 
+Current assets: |  |  | 
+Cash and cash equivalents | $ | 6,742,157 |  |  | $ | 701,706 | 
+Restricted cash |  | 684,680 |  |  |  | 228,672 | 
+Investments |  | 1,179,390 |  |  |  | 406,531 | 
+Accounts receivable, net |  | 123,361 |  |  |  | 50,423 | 
+Inventories |  | 32,666 |  |  |  | 63,626 | 
+Customer warrants |  | 167,762 |  |  |  | 60,906 | 
+Prepaid expenses and other current assets |  | 191,698 |  |  |  | 31,782 | 
+Total current assets |  | 9,121,714 |  |  |  | 1,543,646 | 
+Property and equipment, net |  | 986,808 |  |  |  | 437,396 | 
+Customer warrants, net of current portion |  | 960,635 |  |  |  | 91,447 | 
+Operating lease right-of-use assets |  | 528,275 |  |  |  | 248,950 | 
+Other non-current assets |  | 30,440 |  |  |  | 4,598 | 
+Total assets | $ | 11,627,872 |  |  | $ | 2,326,037 | 
+ |  |  | 
+LIABILITIES, REDEEMABLE CONVERTIBLE PREFERRED STOCK, AND STOCKHOLDERS’ EQUITY (DEFICIT) |  |  | 
+Current liabilities: |  |  | 
+Accounts payable | $ | 88,313 |  |  | $ | 48,630 | 
+Deferred revenue |  | 173,735 |  |  |  | 131,049 | 
+Operating lease liability |  | 88,422 |  |  |  | 45,865 | 
+Customer deposits |  | 242,672 |  |  |  | 354,460 | 
+Working capital loan |  | 736,036 |  |  |  | — | 
+Accrued and other current liabilities |  | 236,910 |  |  |  | 139,536 | 
+Total current liabilities |  | 1,566,088 |  |  |  | 719,540 | 
+Deferred revenue, net of current portion |  | 244,529 |  |  |  | 35,847 | 
+Operating lease liability, net of current portion |  | 480,405 |  |  |  | 215,957 | 
+Working capital loan, net of current portion |  | 182,208 |  |  |  | — | 
+Total liabilities |  | 2,473,230 |  |  |  | 971,344 | 
+ |  |  | 
+Redeemable convertible preferred stock |  | — |  |  |  | 1,933,348 | 
+Stockholders’ equity (deficit) |  |  | 
+Class A common stock |  | 1 |  |  |  | 1 | 
+Class B common stock |  | 1 |  |  |  | — | 
+Class N common stock |  | — |  |  |  | — | 
+Treasury stock |  | (21,456 | ) |  |  | (21,456 | )
+Additional paid-in capital |  | 10,540,193 |  |  |  | 346,829 | 
+Accumulated other comprehensive income |  | 5,767 |  |  |  | 1,301 | 
+Accumulated deficit |  | (1,369,864 | ) |  |  | (905,330 | )
+Total stockholders’ equity (deficit) |  | 9,154,642 |  |  |  | (578,655 | )
+Total liabilities, redeemable convertible preferred stock, and stockholders’ equity (deficit) | $ | 11,627,872 |  |  | $ | 2,326,037 | 
+
+TABLE 3
+ | 
+CEREBRAS SYSTEMS INC. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (unaudited) (in thousands)
+ | 
+ | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 | 
+Cash flows from operating activities: |  |  | 
+Net income (loss) | $ | (464,534 | ) |  | $ | 285,645 | 
+Adjustments to reconcile net income (loss) to net cash flows used in operating activities: |  |  | 
+Stock-based compensation |  | 386,601 |  |  |  | 22,435 | 
+Amortization of customer warrants |  | 46,315 |  |  |  | — | 
+Depreciation and amortization |  | 42,551 |  |  |  | 9,315 | 
+Non-cash lease expense |  | 39,104 |  |  |  | 5,872 | 
+Non-cash interest expense |  | 38,602 |  |  |  | — | 
+Provision for product warranties |  | 8,430 |  |  |  | 9,000 | 
+Extinguishment of forward contract liability |  | — |  |  |  | (363,336 | )
+Other |  | (2,110 | ) |  |  | (835 | )
+Changes in operating assets and liabilities: |  |  | 
+Accounts receivable |  | (72,938 | ) |  |  | 125,508 | 
+Inventories |  | 31,116 |  |  |  | 74,929 | 
+Prepaid expenses and other assets |  | (182,311 | ) |  |  | (3,003 | )
+Accounts payable |  | 565 |  |  |  | 6,314 | 
+Deferred revenue |  | 126,440 |  |  |  | 16,525 | 
+Customer deposits |  | (111,788 | ) |  |  | (320,558 | )
+Other liabilities |  | 66,469 |  |  |  | 8,346 | 
+Net cash flows used in operating activities | $ | (47,488 | ) |  | $ | (123,843 | )
+Cash flows from investing activities: |  |  | 
+Purchases of property and equipment | $ | (548,873 | ) |  | $ | (185,094 | )
+Purchases of investments |  | (1,275,515 | ) |  |  | (20,175 | )
+Maturities and sales of investments |  | 514,455 |  |  |  | 117,973 | 
+Net cash flows used in investing activities | $ | (1,309,933 | ) |  | $ | (87,296 | )
+Cash flows from financing activities: |  |  | 
+Proceeds from initial public offering, net of underwriting discounts and commissions | $ | 6,232,511 |  |  | $ | — | 
+Proceeds from sale of shares of Series H redeemable convertible preferred stock |  | 1,014,249 |  |  |  | — | 
+Costs incurred in connection with the sale of shares of Series H redeemable convertible preferred stock |  | (218 | ) |  |  | — | 
+Proceeds from Working Capital Loan |  | 1,004,571 |  |  |  | — | 
+Proceeds from exercise of stock options |  | 20,221 |  |  |  | 5,176 | 
+Proceeds from issuance of shares of Class N common stock |  | 15,036 |  |  |  | — | 
+Fees paid for revolving credit facility |  | (3,801 | ) |  |  | — | 
+Repurchases of early exercised stock options |  | — |  |  |  | (28 | )
+Tax withholding from tender offer and initial public offering |  | (416,660 | ) |  |  | — | 
+Payments of deferred offering costs and other financing activities |  | (12,667 | ) |  |  | — | 
+Net cash flows provided by financing activities | $ | 7,853,242 |  |  | $ | 5,148 | 
+Effect of exchange rate on cash |  | 638 |  |  |  | 912 | 
+Increase (decrease) in cash, cash equivalents, and restricted cash | $ | 6,496,459 |  |  | $ | (205,079 | )
+Cash, cash equivalents, and restricted cash beginning of period |  | 930,378 |  |  |  | 581,965 | 
+Cash, cash equivalents, and restricted cash end of period | $ | 7,426,837 |  |  | $ | 376,886 | 
+
+TABLE 4
+
+CEREBRAS SYSTEMS INC. RECONCILIATION OF GAAP TO NON-GAAP MEASURES (unaudited) (in thousands)
+
+Reconciliation of GAAP Revenue to Core Revenue:
+ |  | Three Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP revenue |  | $ | 180,110 |  |  | $ | 54,119 |  | $ | 125,991 |  |  | $ | 103,322 |  | $ | 70,295 |  | $ | 33,027
+Less: Pass-through revenue |  |  | (14,503 | ) |  |  | — |  |  | (14,503 | ) |  |  | — |  |  | — |  |  | —
+Add: Amortization of customer warrant assets |  |  | 44,262 |  |  |  | 28,022 |  |  | 16,240 |  |  |  | — |  |  | — |  |  | —
+Core revenue |  | $ | 209,869 |  |  | $ | 82,141 |  | $ | 127,728 |  |  | $ | 103,322 |  | $ | 70,295 |  | $ | 33,027
+
+TABLE 5
+ |  | Six Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP revenue |  | $ | 373,516 |  |  | $ | 164,712 |  | $ | 208,804 |  |  | $ | 202,834 |  | $ | 139,969 |  | $ | 62,865
+Less: Pass-through revenue |  |  | (18,614 | ) |  |  | — |  |  | (18,614 | ) |  |  | — |  |  | — |  |  | —
+Add: Amortization of customer warrant assets |  |  | 46,315 |  |  |  | 28,991 |  |  | 17,324 |  |  |  | — |  |  | — |  |  | —
+Core revenue |  | $ | 401,217 |  |  | $ | 193,703 |  | $ | 207,514 |  |  | $ | 202,834 |  | $ | 139,969 |  | $ | 62,865
+
+TABLE 6
+
+Reconciliation of GAAP Gross Profit to Core Gross Profit:
+ |  | Three Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP gross profit |  | $ | 25,559 |  |  | $ | 978 |  | $ | 24,581 |  |  | $ | 32,099 |  | $ | 23,646 |  | $ | 8,453
+Less: Pass-through revenue |  |  | (14,503 | ) |  |  | — |  |  | (14,503 | ) |  |  | — |  |  | — |  |  | —
+Add: Pass-through costs |  |  | 14,075 |  |  |  | — |  |  | 14,075 |  |  |  | — |  |  | — |  |  | —
+Add: Amortization of customer warrant assets |  |  | 44,262 |  |  |  | 28,022 |  |  | 16,240 |  |  |  | — |  |  | — |  |  | —
+Add: Stock-based compensation expense |  |  | 15,353 |  |  |  | 2,760 |  |  | 12,593 |  |  |  | 187 |  |  | 47 |  |  | 140
+Add: Employer payroll tax related to stock-based compensation from IPO |  |  | 471 |  |  |  | 118 |  |  | 353 |  |  |  | — |  |  | — |  |  | —
+Core gross profit |  | $ | 85,217 |  |  | $ | 31,878 |  | $ | 53,339 |  |  | $ | 32,286 |  | $ | 23,693 |  | $ | 8,593
+
+TABLE 7
+ |  | Six Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP gross profit |  | $ | 111,735 |  |  | $ | 46,640 |  | $ | 65,095 |  |  | $ | 73,703 |  | $ | 44,910 |  | $ | 28,793
+Less: Pass-through revenue |  |  | (18,614 | ) |  |  | — |  |  | (18,614 | ) |  |  | — |  |  | — |  |  | —
+Add: Pass-through costs |  |  | 18,065 |  |  |  | — |  |  | 18,065 |  |  |  | — |  |  | — |  |  | —
+Add: Amortization of customer warrant assets |  |  | 46,315 |  |  |  | 28,991 |  |  | 17,324 |  |  |  | — |  |  | — |  |  | —
+Add: Stock-based compensation expense |  |  | 16,303 |  |  |  | 2,998 |  |  | 13,305 |  |  |  | 513 |  |  | 129 |  |  | 384
+Add: Employer payroll tax related to stock-based compensation from IPO |  |  | 471 |  |  |  | 118 |  |  | 353 |  |  |  | — |  |  | — |  |  | —
+Core gross profit |  | $ | 174,275 |  |  | $ | 78,747 |  | $ | 95,528 |  |  | $ | 74,216 |  | $ | 45,039 |  | $ | 29,177
+
+TABLE 8
+
+Reconciliation of GAAP Gross Margin to Core Gross Margin:
+ |  | Three Months Ended June 30,
+ |  | 2026 |  |  | 2025 | 
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP gross margin |  | 14.2 | % |  | 1.8 | % |  | 19.5 | % |  | 31.1 | % |  | 33.6 | % |  | 25.6 | %
+Non-GAAP adjustments |  | 26.4 |  |  | 37.0 |  |  | 22.2 |  |  | 0.2 |  |  | 0.1 |  |  | 0.4 | 
+Core gross margin |  | 40.6 | % |  | 38.8 | % |  | 41.8 | % |  | 31.2 | % |  | 33.7 | % |  | 26.0 | %
+
+TABLE 9
+ |  | Six Months Ended June 30,
+ |  | 2026 |  |  | 2025 | 
+ |  | Total |  | Hardware |  | Cloud and Other Services |  | Total |  | Hardware |  | Cloud and Other Services
+GAAP gross margin |  | 29.9 | % |  | 28.3 | % |  | 31.2 | % |  | 36.3 | % |  | 32.1 | % |  | 45.8 | %
+Non-GAAP adjustments |  | 13.5 |  |  | 12.3 |  |  | 14.9 |  |  | 0.3 |  |  | 0.1 |  |  | 0.6 | 
+Core gross margin |  | 43.4 | % |  | 40.7 | % |  | 46.0 | % |  | 36.6 | % |  | 32.2 | % |  | 46.4 | %
+
+TABLE 10
+ |  | 
+Reconciliation of GAAP Operating Expenses to Core Operating Expenses:
+ |  | Three Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025 | 
+ |  | Total |  | Research and Development |  | Sales and Marketing |  | General and Administrative |  | Total |  | Research and Development |  | Sales and Marketing |  | General and Administrative
+GAAP operating expenses |  | $ | 502,792 |  |  | $ | 320,151 |  |  | $ | 86,969 |  |  | $ | 95,672 |  |  | $ | 89,281 |  |  | $ | 60,768 |  |  | $ | 18,228 |  |  | $ | 10,285 | 
+Less: Stock-based compensation expense |  |  | (361,655 | ) |  |  | (222,147 | ) |  |  | (71,055 | ) |  |  | (68,453 | ) |  |  | (13,094 | ) |  |  | (9,301 | ) |  |  | (1,533 | ) |  |  | (2,260 | )
+Less: Employer payroll tax related to stock-based compensation from IPO |  |  | (22,307 | ) |  |  | (16,491 | ) |  |  | (3,907 | ) |  |  | (1,909 | ) |  |  | — |  |  |  | — |  |  |  | — |  |  |  | — | 
+Core operating expenses |  | $ | 118,830 |  |  | $ | 81,513 |  |  | $ | 12,007 |  |  | $ | 25,310 |  |  | $ | 76,187 |  |  | $ | 51,467 |  |  | $ | 16,695 |  |  | $ | 8,025 | 
+
+TABLE 11
+ |  | Six Months Ended June 30,
+ |  |  | 2026 |  |  |  | 2025 | 
+ |  | Total |  | Research and Development |  | Sales and Marketing |  | General and Administrative |  | Total |  | Research and Development |  | Sales and Marketing |  | General and Administrative
+GAAP operating expenses |  | $ | 604,005 |  |  | $ | 395,646 |  |  | $ | 101,670 |  |  | $ | 106,689 |  |  | $ | 159,355 |  |  | $ | 113,519 |  |  | $ | 28,554 |  |  | $ | 17,282 | 
+Less: Stock-based compensation expense |  |  | (370,298 | ) |  |  | (227,846 | ) |  |  | (72,847 | ) |  |  | (69,605 | ) |  |  | (21,922 | ) |  |  | (15,013 | ) |  |  | (3,482 | ) |  |  | (3,427 | )
+Less: Employer payroll tax related to stock-based compensation from IPO |  |  | (22,307 | ) |  |  | (16,491 | ) |  |  | (3,907 | ) |  |  | (1,909 | ) |  |  | — |  |  |  | — |  |  |  | — |  |  |  | — | 
+Core operating expenses |  | $ | 211,400 |  |  | $ | 151,309 |  |  | $ | 24,916 |  |  | $ | 35,175 |  |  | $ | 137,433 |  |  | $ | 98,506 |  |  | $ | 25,072 |  |  | $ | 13,855 | 
+
+TABLE 12
+ |  |  | 
+Reconciliation of GAAP Loss from Operations to Core Operating Loss:
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 |  |  |  | 2026 |  |  |  | 2025 | 
+GAAP loss from operations | $ | (477,233 | ) |  | $ | (57,182 | ) |  | $ | (492,270 | ) |  | $ | (85,652 | )
+Less: Pass-through revenue |  | (14,503 | ) |  |  | — |  |  |  | (18,614 | ) |  |  | — | 
+Add: Stock-based compensation expense |  | 377,008 |  |  |  | 13,281 |  |  |  | 386,601 |  |  |  | 22,435 | 
+Add: Pass-through costs |  | 14,075 |  |  |  | — |  |  |  | 18,065 |  |  |  | — | 
+Add: Amortization of customer warrant assets |  | 44,262 |  |  |  | — |  |  |  | 46,315 |  |  |  | — | 
+Add: Employer payroll tax related to stock-based compensation from IPO |  | 22,778 |  |  |  | — |  |  |  | 22,778 |  |  |  | — | 
+Core operating loss | $ | (33,613 | ) |  | $ | (43,901 | ) |  | $ | (37,125 | ) |  | $ | (63,217 | )
+
+TABLE 13
+ |  |  | 
+Reconciliation of GAAP Operating Margin to Core Operating Margin:
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  |  | 2025 |  |  | 2026 |  |  | 2025 | 
+GAAP operating margin | (265 | %) |  | (55 | %) |  | (132 | %) |  | (42 | %)
+Non-GAAP adjustments | (249 | ) |  | (13 | ) |  | (123 | ) |  | (11 | )
+Core operating margin | (16 | %) |  | (42 | %) |  | (9 | %) |  | (31 | %)
+
+TABLE 14
+ |  |  | 
+Reconciliation of GAAP Loss from Operations to Adjusted EBITDA:
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 |  |  |  | 2026 |  |  |  | 2025 | 
+GAAP loss from operations | $ | (477,233 | ) |  | $ | (57,182 | ) |  | $ | (492,270 | ) |  | $ | (85,652 | )
+Add: Depreciation and amortization |  | 24,377 |  |  |  | 5,600 |  |  |  | 42,551 |  |  |  | 9,315 | 
+Add: Stock-based compensation |  | 377,008 |  |  |  | 13,281 |  |  |  | 386,601 |  |  |  | 22,435 | 
+Add: Employer payroll tax related to stock-based compensation from IPO |  | 22,778 |  |  |  | — |  |  |  | 22,778 |  |  |  | — | 
+Adjusted EBITDA | $ | (53,070 | ) |  | $ | (38,301 | ) |  | $ | (40,340 | ) |  | $ | (53,902 | )
+
+TABLE 15
+ |  |  | 
+Reconciliation of GAAP Net Income (Loss) to Core Net Loss:
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ |  | 2026 |  |  |  | 2025 |  |  |  | 2026 |  |  |  | 2025 | 
+GAAP net income (loss) | $ | (450,528 | ) |  | $ | 309,512 |  |  | $ | (464,534 | ) |  | $ | 285,645 | 
+Less: Pass-through revenue |  | (14,503 | ) |  |  | — |  |  |  | (18,614 | ) |  |  | — | 
+Less: Change in fair value (extinguishment) of forward contract liability |  | — |  |  |  | (363,336 | ) |  |  | — |  |  |  | (363,336 | )
+Add: Stock-based compensation expense |  | 377,008 |  |  |  | 13,281 |  |  |  | 386,601 |  |  |  | 22,435 | 
+Add: Pass-through costs |  | 14,075 |  |  |  | — |  |  |  | 18,065 |  |  |  | — | 
+Add: Amortization of customer warrant assets |  | 44,262 |  |  |  | — |  |  |  | 46,315 |  |  |  | — | 
+Add: Employer payroll tax related to stock-based compensation from IPO |  | 22,778 |  |  |  | — |  |  |  | 22,778 |  |  |  | — | 
+Core net loss | $ | (6,908 | ) |  | $ | (40,543 | ) |  | $ | (9,389 | ) |  | $ | (55,256 | )

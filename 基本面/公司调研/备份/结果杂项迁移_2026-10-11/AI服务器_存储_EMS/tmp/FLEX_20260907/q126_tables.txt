@@ -1,0 +1,169 @@
+SCHEDULE I
+‌
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+(In millions, except per share amounts)
+‌
+Three-Month Periods Ended
+June 27, 2025 | June 28, 2024
+GAAP:
+Net sales | $                           6,575 | $                           6,314
+Cost of sales | 5,987 | 5,827
+Restructuring charges | 16 | 16
+Gross profit | 572 | 471
+Selling, general and administrative expenses | 233 | 213
+Restructuring charges | 7 | 9
+Intangible amortization | 21 | 16
+Operating income | 311 | 233
+Interest expense | 51 | 56
+Interest income | 13 | 16
+Other charges (income), net | 7 | 2
+Equity in earnings (losses) of unconsolidated affiliates | (20) | 1
+Income before income taxes | 246 | 192
+Provision for (benefit from) income taxes | 54 | 53
+Net income | $                              192 | $                              139
+‌
+GAAP EPS
+Diluted earnings per share | $                             0.50 | $                             0.34
+Diluted shares used in computing per share amounts | 381 | 411
+
+See Schedule II for the reconciliation of GAAP to non-GAAP financial measures. See the accompanying notes | on Schedule V attached to this press release.
+SCHEDULE II
+‌
+FLEX
+RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES
+(In millions, except per share amounts)
+‌
+Three-Month Periods Ended
+June 27, 2025 | June 28, 2024
+‌
+GAAP operating income | $                              311 | $                              233
+Intangible amortization | 21 | 16
+Stock-based compensation expense | 34 | 32
+Restructuring charges | 23 | 25
+Legal and other | 6 | —
+Non-GAAP operating income | $                              395 | $                              306
+‌
+GAAP provision for income taxes | $                                 54 | $                                 53
+Intangible amortization benefit | 5 | 3
+Other tax related adjustments | 14 | (2)
+Non-GAAP provision for income taxes | $                                 73 | $                                 54
+‌
+GAAP net income | $                              192 | $                              139
+Intangible amortization | 21 | 16
+Stock-based compensation expense | 34 | 32
+Restructuring charges | 23 | 25
+Legal and other | 6 | —
+Equity in losses of unconsolidated affiliates | 17 | —
+Adjustments for taxes | (19) | (1)
+Non-GAAP net income | $                              274 | $                              211
+‌
+Diluted earnings per share:
+GAAP | $                             0.50 | $                             0.34
+Non-GAAP | $                             0.72 | $                             0.51
+‌
+See the accompanying notes on Schedule V attached to this press release.
+SCHEDULE III
+‌
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED BALANCE SHEETS
+(In millions)
+‌
+As of June 27, 2025 | As of March 31, 2025
+ASSETS
+Current assets:
+Cash and cash equivalents | $                                   2,239 | $                            2,289
+Accounts receivable, net of allowance | 3,924 | 3,671
+Contract assets | 751 | 616
+Inventories | 5,208 | 5,071
+Other current assets | 1,345 | 1,194
+Total current assets | 13,467 | 12,841
+‌
+Property and equipment, net | 2,329 | 2,330
+Operating lease right-of-use assets, net | 686 | 562
+Goodwill | 1,369 | 1,341
+Other intangible assets, net | 330 | 343
+Other non-current assets | 951 | 964
+Total assets | $                                 19,132 | $                         18,381
+‌
+LIABILITIES AND SHAREHOLDERS' EQUITY
+Current liabilities:
+Bank borrowings and current portion of long-term debt | $                                       677 | $                            1,209
+Accounts payable | 5,799 | 5,147
+Accrued payroll and benefits | 494 | 560
+Deferred revenue and customer working capital advances | 1,876 | 1,957
+Other current liabilities | 1,075 | 977
+Total current liabilities | 9,921 | 9,850
+‌
+Long-term debt, net of current portion | 3,004 | 2,483
+Operating lease liabilities, non-current | 583 | 456
+Other non-current liabilities | 535 | 590
+Total liabilities | 14,043 | 13,379
+Total shareholders' equity | 5,089 | 5,002
+Total liabilities and shareholders' equity | $                                 19,132 | $                         18,381
+SCHEDULE IV
+‌
+FLEX
+UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+(In millions)
+‌
+Three-Month Periods Ended
+June 27, 2025 | June 28, 2024
+CASH FLOWS FROM OPERATING ACTIVITIES:
+Net income | $                            192 | $                            139
+Depreciation, amortization and other impairment charges | 142 | 126
+Changes in working capital and other, net | 65 | 75
+Net cash provided by operating activities | 399 | 340
+‌
+CASH FLOWS FROM INVESTING ACTIVITIES:
+Purchases of property and equipment | (133) | (111)
+Proceeds from the disposition of property and equipment | 2 | 3
+Acquisition of businesses, net of cash acquired | (41) | 2
+Other investing activities, net | (7) | 24
+Net cash used in investing activities | (179) | (82)
+‌
+CASH FLOWS FROM FINANCING ACTIVITIES:
+Proceeds from bank borrowings and long-term debt | 500 | —
+Payments of bank borrowings, long-term debt and other financing liabilities | (532) | (41)
+Payments for repurchases of ordinary shares | (247) | (457)
+Other, net | (4) | 30
+Net cash used in financing activities | (283) | (468)
+‌
+Effect of exchange rates on cash and cash equivalents | 13 | (21)
+Net change in cash and cash equivalents | (50) | (231)
+Cash and cash equivalents, beginning of period | 2,289 | 2,474
+Cash and cash equivalents, end of period | $                         2,239 | $                        2,243
+SCHEDULE V
+
+FLEX AND SUBSIDIARIES
+NOTES TO SCHEDULES I and II
+
+(1) | To supplement Flex's unaudited selected financial data presented consistent with U.S. Generally Accepted Accounting Principles ("GAAP"), the Company discloses certain non-GAAP financial measures that exclude certain charges and gains, including non-GAAP operating income, non-GAAP net income and non-GAAP net income per diluted share. These supplemental measures exclude certain legal and other charges, restructuring charges, customer-related asset impairments (recoveries), stock-based compensation expense, intangible amortization, other discrete events as applicable and the related tax effects. These non-GAAP measures are not in accordance with or an alternative for GAAP and may be different from non-GAAP measures used by other companies. We believe that these non-GAAP measures have limitations in that they do not reflect all of the amounts associated with Flex's results of operations as determined in accordance with GAAP and that these measures should only be used to evaluate Flex's results of operations in conjunction with the corresponding GAAP measures. The presentation of this additional information is not meant to be considered in isolation or as a substitute for the most directly comparable GAAP measures. We compensate for the limitations of non-GAAP financial measures by relying upon GAAP results to gain a complete picture of the Company's performance.
+
+In calculating non-GAAP financial measures, we exclude certain items to facilitate a review of the comparability of the Company's operating performance on a period-to-period basis because such items are not, in our view, related to the Company's ongoing operational performance. We use non-GAAP measures to evaluate the operating performance of our business, for comparison with forecasts and strategic plans, for calculating return on investment, and for benchmarking performance externally against competitors. In addition, management's incentive compensation is determined using certain non-GAAP measures. Also, when evaluating potential acquisitions, we exclude certain items described below from consideration of the target's performance and valuation. Since we find these measures to be useful, we believe that investors benefit from seeing results "through the eyes" of management in addition to seeing GAAP results. We believe that these non-GAAP measures, when read in conjunction with the Company's GAAP financials, provide useful information to investors by offering:
+
+• | the ability to make more meaningful period-to-period comparisons of the Company's ongoing operating results;
+• | the ability to better identify trends in the Company's underlying business and perform related trend analysis;
+• | a better understanding of how management plans and measures the Company's underlying business; and
+• | an easier way to compare the Company's operating results against analyst financial models and operating results of competitors that supplement their GAAP results with non-GAAP financial measures.
+
+The following are explanations of each of the adjustments that we incorporate into non-GAAP measures, as well as the reasons for excluding each of these individual items in the reconciliations of these non-GAAP financial measures:
+
+Stock-based compensation expense | consists of non-cash charges for the estimated fair value of unvested restricted share units granted to employees and assumed in business acquisitions. The Company believes that the exclusion of these charges provides for more accurate comparisons of its operating results to peer companies due to the varying available valuation methodologies, subjective assumptions and the variety of award types. In addition, the Company believes it is useful to investors to understand the specific impact stock-based compensation expense has on its operating results.
+
+Intangible amortization | consists primarily of non-cash charges that can be impacted by, among other things, the timing and magnitude of acquisitions. The Company considers its operating results without these charges when evaluating its ongoing performance and forecasting its earnings trends, and therefore excludes such charges when presenting non-GAAP financial measures. The Company believes that the assessment of its operations excluding these costs is relevant to its assessment of internal operations and comparisons to the performance of its competitors.
+
+Restructuring charges | include severance charges at existing sites and corporate SG&A functions as well as asset impairment, and other charges related to the closures and consolidations of certain operating sites and targeted activities to restructure the business. These costs may vary in size based on the Company's initiatives, are not directly related to ongoing or core business results, and do not reflect expected future operating expenses. These costs are excluded by the Company's management in assessing current operating performance and forecasting its earnings trends and are therefore excluded by the Company from its non-GAAP measures.
+
+During the three month periods ended June 27, 2025 and June 28, 2024, the Company recognized approximately $23 million of restructuring charges and $25 million of restructuring charges, respectively, most of which related to employee severance.
+
+Legal and other | consist primarily of costs not directly related to core business results and may include matters relating to commercial disputes, government regulatory and compliance, intellectual property, antitrust, tax, employment or shareholder issues, product liability claims and other issues on a global basis as well as acquisition related costs and asset impairment. During the first quarter of fiscal year 2026, the Company accrued for $6 million related to acquisitions costs. No such costs were incurred in the first quarter of fiscal year 2025. These costs are excluded by the Company's management in assessing current operating performance and forecasting its earnings trends and are therefore excluded by the Company from its non-GAAP measures.
+
+Equity in losses of unconsolidated affiliates | consists of various other types of items that are not directly related to ongoing or core business results, such as losses associated with certain non-core investments. The Company excludes these items because they are not related to the Company's ongoing operating performance or do not affect core operations. Excluding these amounts provides investors with a basis to compare Company performance against the performance of other companies without this variability. In the first quarter of fiscal year 2026, the Company recognized approximately $17 million equity in losses from a reduced valuation of a certain non-core investment fund. No such event occurred in the first quarter of fiscal year 2025.
+
+Adjustments for taxes | relates to the tax effects of the various adjustments that we incorporate into non-GAAP measures in order to provide a more meaningful measure on non-GAAP net income and certain adjustments related to non-recurring settlements of tax contingencies or other non-recurring tax charges, when applicable. Effective in fiscal year 2026, the Company adopted an annual normalized tax rate for the purpose of determining the tax effect of non-GAAP adjustments. In estimating the normalized tax rate the Company utilizes a full-year projection of earnings that considers the mix of earnings across tax jurisdictions, existing tax positions and other significant tax matters.
+
+During the three month periods ended June 27, 2025, and June 28, 2024, the Company recognized a $19 million and $1 million net tax benefit, respectively, related to the tax effects of various adjustments that are incorporated into non-GAAP measures on restructuring and other.
+Email Address | *
+Investor Alert Options | *
+News | SEC Filings | End of Day Stock Quote | Events & Presentations

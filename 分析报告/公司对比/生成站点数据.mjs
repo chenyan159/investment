@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const ROOT = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(ROOT, "..", "..");
 const RESULT_ROOT = path.join(ROOT, "结果");
-const BACKUP_ROOT = path.join(RESULT_ROOT, "备份");
+const BACKUP_ROOT = path.join(ROOT, "备份");
 const DEFAULT_OUTPUT_ROOT = path.join(ROOT, "站点数据");
 const OUTPUT_ROOT = process.env.PROJECT_ANANTA_OUTPUT_ROOT?.trim()
   ? path.resolve(process.env.PROJECT_ANANTA_OUTPUT_ROOT)
@@ -211,13 +211,15 @@ async function findCurrentReports() {
   return chooseLatestByTicker(candidates);
 }
 
-async function findPreviousReports(universe) {
-  const dirs = await fs.readdir(BACKUP_ROOT, { withFileTypes: true });
+export async function findPreviousReports(universe, backupRoot = BACKUP_ROOT) {
+  const dirs = await fs.readdir(backupRoot, { withFileTypes: true }).catch((error) => {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  });
   const candidates = [];
   for (const dirent of dirs) {
     if (!dirent.isDirectory()) continue;
-    const dir = path.join(BACKUP_ROOT, dirent.name);
-    const dirStat = await fs.stat(dir);
+    const dir = path.join(backupRoot, dirent.name);
     const files = await fs.readdir(dir, { withFileTypes: true });
     for (const fileEntry of files) {
       if (!fileEntry.isFile()) continue;
@@ -225,11 +227,13 @@ async function findPreviousReports(universe) {
       if (!match) continue;
       const ticker = canonicalTicker(match[1]);
       if (!universe.has(ticker)) continue;
+      // Directory mtimes change during archive migration; report mtimes travel with the file.
+      const reportStat = await fs.stat(path.join(dir, fileEntry.name));
       candidates.push({
         ticker,
         reportDate: match[2],
         file: path.join(dir, fileEntry.name),
-        sortTime: dirStat.mtimeMs,
+        sortTime: reportStat.mtimeMs,
       });
     }
   }
@@ -899,7 +903,7 @@ async function writeJson(file, value, pretty = true) {
   await fs.writeFile(file, `${JSON.stringify(value, null, pretty ? 2 : 0)}\n`, "utf8");
 }
 
-main().catch((error) => {
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) main().catch((error) => {
   console.error(error.stack || error.message || error);
   process.exitCode = 1;
 });

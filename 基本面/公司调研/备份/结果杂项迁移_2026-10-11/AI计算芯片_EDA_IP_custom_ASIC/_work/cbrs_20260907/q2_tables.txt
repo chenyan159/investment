@@ -1,0 +1,806 @@
+TABLE 0
+ |  | 
+
+
+TABLE 1
+ |  | 
+
+
+TABLE 2
+ |  | 
+
+
+TABLE 3
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+(Mark One) |  |  |  | 
+☒ |  | QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 |  | 
+ | For the quarterly period ended June 30, 2026 |  | 
+ |  |  |  |  |  | 
+ |  |  | OR |  |  | 
+ |  |  |  |  |  | 
+☐ |  | TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 |  | 
+ | For the transition period from __________ to __________ |  | 
+ |  |  |  |  |  | 
+ |  |  | Commission file number 001-43284 |  |  | 
+
+TABLE 4
+ |  | 
+
+
+TABLE 5
+ |  | 
+
+
+TABLE 6
+ |  |  |  |  |  |  |  | 
+Delaware |  | 81-2256092
+(State or other jurisdiction of incorporation or organization) |  | (I.R.S. Employer Identification Number)
+ |  | 
+1237 E. Arques Avenue Sunnyvale , California |  | 94085
+(Address of principal executive offices) |  | (Zip Code)
+ | ( 650 ) 933-4980 | 
+ | Registrant’s telephone number, including area code | 
+
+TABLE 7
+ |  |  |  |  |  |  |  | 
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Class A common stock, $0.00001 par value per share | CBRS | The Nasdaq Stock Market LLC
+ |  | 
+ |  | 
+
+TABLE 8
+ |  |  |  |  |  |  |  |  |  |  | 
+Large accelerated filer | ☐ | Accelerated filer | ☐
+Non-accelerated filer | ☒ | Smaller reporting company | ☐
+ |  | Emerging growth company | ☒
+
+TABLE 9
+ |  |  |  |  |  |  |  | 
+ |  | Page
+ |  | 
+Note Regarding Forward-Looking Statements | 3
+W here You Can Find Additional Information | 5
+Part I - Financial Information | 6
+ | Item 1. Financial Statements (Unaudited) | 6
+ | Condensed Consolidated Balance Sheets | 6
+ | Condensed Consolidated Statements of Operations | 7
+ | Condensed Consolidated Statements of Comprehensive Income (Loss) | 8
+ | Condensed Consolidated Statements of Redeemable Convertible Preferred Stock and Stockholders’ Equity | 9
+ | Condensed Consolidated Statements of Cash Flows | 11
+ | Notes to the Condensed Consolidated Financial Statements | 13
+ | Item 2. Management ’ s Discussion and Analysis of Financial Condition and Results of Operations | 30
+ | Item 3. Quantitative and Qualitative Disclosures About Market Risk | 42
+ | Item 4. Controls and Procedures | 43
+Part II - Other Information | 45
+ | Item 1. Legal Proceedings | 45
+ | Item 1A. Risk Factors | 45
+ | Item 2. Unregistered Sales of Equity Securities and Use of Proceeds | 94
+ | Item 3. Defaults Upon Senior Securities | 94
+ | Item 4. Mine Safety Disclosures | 94
+ | Item 5. Other Information | 95
+ | Item 6. Exhibits | 96
+Signatures | 97
+
+TABLE 10
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+ASSETS |  |  | 
+Current assets: |  |  | 
+Cash and cash equivalents | $ | 6,742,157 |  |  | $ | 701,706 | 
+Restricted cash | 684,680 |  |  | 228,672 | 
+Investments | 1,179,390 |  |  | 406,531 | 
+Accounts receivable, net | 123,361 |  |  | 50,423 | 
+Inventories | 32,666 |  |  | 63,626 | 
+ |  |  | 
+Customer warrants | 167,762 |  |  | 60,906 | 
+Prepaid expenses and other current assets | 191,698 |  |  | 31,782 | 
+Total current assets | 9,121,714 |  |  | 1,543,646 | 
+Property and equipment, net | 986,808 |  |  | 437,396 | 
+Customer warrants, net of current portion | 960,635 |  |  | 91,447 | 
+Operating lease right-of-use assets | 528,275 |  |  | 248,950 | 
+Other non-current assets | 30,440 |  |  | 4,598 | 
+Total assets | $ | 11,627,872 |  |  | $ | 2,326,037 | 
+LIABILITIES, REDEEMABLE CONVERTIBLE PREFERRED STOCK, AND STOCKHOLDERS’ EQUITY (DEFICIT) |  |  | 
+Current liabilities: |  |  | 
+Accounts payable | $ | 88,313 |  |  | $ | 48,630 | 
+Deferred revenue | 173,735 |  |  | 131,049 | 
+Operating lease liability | 88,422 |  |  | 45,865 | 
+Customer deposits | 242,672 |  |  | 354,460 | 
+Working capital loan | 736,036 |  |  | — | 
+Accrued and other current liabilities | 236,910 |  |  | 139,536 | 
+Total current liabilities | 1,566,088 |  |  | 719,540 | 
+Deferred revenue, net of current portion | 244,529 |  |  | 35,847 | 
+Operating lease liability, net of current portion | 480,405 |  |  | 215,957 | 
+Working capital loan, net of current portion | 182,208 |  |  | — | 
+ |  |  | 
+Total liabilities | 2,473,230 |  |  | 971,344 | 
+Commitments and contingencies (Note 16) |  |  | 
+Redeemable convertible preferred stock, $ 0.00001 par value per share: 100,000,000 shares and 113,258,719 shares authorized, at June 30, 2026 and December 31, 2025, respectively; nil and 113,258,716 shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | — |  |  | 1,933,348 | 
+Stockholders’ equity (deficit) |  |  | 
+Class A common stock, $ 0.00001 par value; 3,500,000,000 and 271,800,000 shares authorized at June 30, 2026 and December 31, 2025, respectively; 103,220,568 and 57,907,093 shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | 1 |  |  | 1 | 
+Class B common stock, $ 0.00001 par value; 240,000,000 and nil shares authorized at June 30, 2026 and December 31, 2025, respectively; 121,301,359 and nil shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | 1 |  |  | — | 
+Class N common stock, $ 0.00001 par value; 100,000,000 and 37,100,000 shares authorized at June 30, 2026 and December 31, 2025, respectively; 3,682,000 and nil shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | — |  |  | — | 
+Treasury stock, at cost, 889,890 shares as of June 30, 2026 and December 31, 2025 | ( 21,456 ) |  |  | ( 21,456 ) | 
+Additional paid-in capital | 10,540,193 |  |  | 346,829 | 
+Accumulated other comprehensive income | 5,767 |  |  | 1,301 | 
+Accumulated deficit | ( 1,369,864 ) |  |  | ( 905,330 ) | 
+Total stockholders’ equity (deficit) | 9,154,642 |  |  | ( 578,655 ) | 
+Total liabilities, redeemable convertible preferred stock, and stockholders’ equity (deficit) | $ | 11,627,872 |  |  | $ | 2,326,037 | 
+
+TABLE 11
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Revenue |  |  |  |  |  |  | 
+Hardware | $ | 54,119 |  |  | $ | 70,295 |  |  | $ | 164,712 |  |  | $ | 139,969 | 
+Cloud and other services | 125,991 |  |  | 33,027 |  |  | 208,804 |  |  | 62,865 | 
+Total revenue | 180,110 |  |  | 103,322 |  |  | 373,516 |  |  | 202,834 | 
+Cost of revenue |  |  |  |  |  |  | 
+Hardware | 53,141 |  |  | 46,649 |  |  | 118,072 |  |  | 95,059 | 
+Cloud and other services | 101,410 |  |  | 24,574 |  |  | 143,709 |  |  | 34,072 | 
+Total cost of revenue | 154,551 |  |  | 71,223 |  |  | 261,781 |  |  | 129,131 | 
+Gross profit | 25,559 |  |  | 32,099 |  |  | 111,735 |  |  | 73,703 | 
+Operating expenses |  |  |  |  |  |  | 
+Research and development | 320,151 |  |  | 60,768 |  |  | 395,646 |  |  | 113,519 | 
+Sales and marketing | 86,969 |  |  | 18,228 |  |  | 101,670 |  |  | 28,554 | 
+General and administrative | 95,672 |  |  | 10,285 |  |  | 106,689 |  |  | 17,282 | 
+Total operating expenses | 502,792 |  |  | 89,281 |  |  | 604,005 |  |  | 159,355 | 
+Loss from operations | ( 477,233 ) |  |  | ( 57,182 ) |  |  | ( 492,270 ) |  |  | ( 85,652 ) | 
+Other income, net | 26,979 |  |  | 368,358 |  |  | 29,507 |  |  | 374,644 | 
+Income (loss) before income taxes | ( 450,254 ) |  |  | 311,176 |  |  | ( 462,763 ) |  |  | 288,992 | 
+Income tax expense | 274 |  |  | 1,664 |  |  | 1,771 |  |  | 3,347 | 
+Net income (loss) | $ | ( 450,528 ) |  |  | $ | 309,512 |  |  | $ | ( 464,534 ) |  |  | $ | 285,645 | 
+ |  |  |  |  |  |  | 
+Net income (loss) attributable to common shareholders |  |  |  |  |  |  | 
+Basic | $ | ( 450,528 ) |  |  | $ | 120,318 |  |  | $ | ( 464,534 ) |  |  | $ | 110,580 | 
+Diluted | $ | ( 450,528 ) |  |  | $ | 309,512 |  |  | $ | ( 464,534 ) |  |  | $ | 285,645 | 
+Net income (loss) per share attributable to common shareholders |  |  |  |  |  |  | 
+Basic | $ | ( 2.98 ) |  |  | $ | 2.28 |  |  | $ | ( 4.34 ) |  |  | $ | 2.11 | 
+Diluted | $ | ( 2.98 ) |  |  | $ | 1.91 |  |  | $ | ( 4.34 ) |  |  | $ | 1.76 | 
+Weighted average shares outstanding |  |  |  |  |  |  | 
+Basic | 150,968 |  |  | 52,720 |  |  | 107,132 |  |  | 52,363 | 
+Diluted | 150,968 |  |  | 161,822 |  |  | 107,132 |  |  | 162,276 | 
+
+TABLE 12
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Net income (loss) | $ | ( 450,528 ) |  |  | $ | 309,512 |  |  | $ | ( 464,534 ) |  |  | $ | 285,645 | 
+Change in foreign currency translation adjustments, net of tax | ( 274 ) |  |  | 732 |  |  | 638 |  |  | 912 | 
+Available-for-sale investments: |  |  |  |  |  |  | 
+Change in net unrealized gain (loss) on debt securities, net of tax | 2,645 |  |  | ( 735 ) |  |  | 3,828 |  |  | ( 807 ) | 
+Comprehensive income (loss) | $ | ( 448,157 ) |  |  | $ | 309,509 |  |  | $ | ( 460,068 ) |  |  | $ | 285,750 | 
+
+TABLE 13
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  | Redeemable Convertible Preferred Stock |  |  | Common Stock |  | Additional Paid-in Capital |  | Treasury Stock |  | Accumulated Other Comprehensive Income (Loss) |  | Accumulated Deficit |  | Total Stockholders’ Equity (Deficit)
+ |  | Shares |  | Amount |  |  | Shares |  | Amount |  |  | Shares |  | Amount |  |  | 
+Balance as of December 31, 2025 |  | 113,259 |  |  | $ | 1,933,348 |  |  |  | 57,907 |  |  | $ | 1 |  |  | $ | 346,829 |  |  | ( 890 ) |  |  | $ | ( 21,456 ) |  |  | $ | 1,301 |  |  | $ | ( 905,330 ) |  |  | $ | ( 578,655 ) | 
+Issuance of shares of Series H redeemable convertible preferred stock, net of issuance costs |  | 11,394 |  |  | 1,014,031 |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — | 
+Customer warrants issued |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 365,755 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 365,755 | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Issuance of shares of Class N common stock |  | — |  |  | — |  |  |  | 2,026 |  |  | — |  |  | 15,019 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 15,019 | 
+Class A common shares issued upon exercise of stock options |  | — |  |  | — |  |  |  | 1,085 |  |  | — |  |  | 5,177 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 5,177 | 
+Tax withholding from tender offer |  | — |  |  | — |  |  |  | — |  |  | — |  |  | ( 623 ) |  |  | — |  |  | — |  |  | — |  |  | — |  |  | ( 623 ) | 
+Vesting of early exercised stock options |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 809 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 809 | 
+Stock-based compensation expense |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 9,418 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 9,418 | 
+Conversion of stock-based liability classified awards to stock-based equity classified awards |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 329 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 329 | 
+Other comprehensive income |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 2,095 |  |  | — |  |  | 2,095 | 
+Net loss |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | ( 14,006 ) |  |  | ( 14,006 ) | 
+Balance as of March 31, 2026 |  | 124,653 |  |  | 2,947,379 |  |  |  | 61,018 |  |  | 1 |  |  | 742,713 |  |  | ( 890 ) |  |  | ( 21,456 ) |  |  | 3,396 |  |  | ( 919,336 ) |  |  | ( 194,682 ) | 
+Issuance of common stock in connection with initial public offering, net of underwriting discounts and commissions and offering costs |  | — |  |  | — |  |  |  | 34,500 |  |  | — |  |  | 6,217,099 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 6,217,099 | 
+Conversion of redeemable convertible preferred stock in connection with initial public offering |  | ( 124,653 ) |  |  | ( 2,947,379 ) |  |  |  | 124,653 |  |  | 1 |  |  | 2,947,378 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 2,947,379 | 
+Customer warrants issued |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 656,604 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 656,604 | 
+Issuance of shares of Class N common stock |  | — |  |  | — |  |  |  | 1,656 |  |  | — |  |  | 17 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 17 | 
+Issuance of common stock upon settlement of restricted stock units |  | — |  |  | — |  |  |  | 5,301 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — | 
+Class A common shares issued upon exercise of stock options |  | — |  |  | — |  |  |  | 3,326 |  |  | — |  |  | 14,958 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 14,958 | 
+Tax withholdings on settlement of restricted stock units |  | — |  |  | — |  |  |  | ( 2,250 ) |  |  | — |  |  | ( 416,037 ) |  |  | — |  |  | — |  |  | — |  |  | — |  |  | ( 416,037 ) | 
+Vesting of early exercised stock options |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 627 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 627 | 
+Stock-based compensation expense |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 376,834 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 376,834 | 
+Other comprehensive income |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 2,371 |  |  | — |  |  | 2,371 | 
+Net loss |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | ( 450,528 ) |  |  | ( 450,528 ) | 
+Balance as of June 30, 2026 |  | — |  |  | $ | — |  |  |  | 228,204 |  |  | $ | 2 |  |  | $ | 10,540,193 |  |  | $ | ( 890 ) |  |  | $ | ( 21,456 ) |  |  | $ | 5,767 |  |  | $ | ( 1,369,864 ) |  |  | $ | 9,154,642 | 
+
+TABLE 14
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  | Redeemable Convertible Preferred Stock |  |  | Common Stock |  | Additional Paid-in Capital |  | Treasury Stock |  | Accumulated Other Comprehensive Income (Loss) |  | Accumulated Deficit |  | Total Stockholders’ Deficit
+ |  | Shares |  | Amount |  |  | Shares |  | Amount |  |  | Shares |  | Amount |  |  | 
+Balance as of December 31, 2024 |  | 82,899 |  |  | $ | 850,066 |  |  |  | 53,373 |  |  | $ | 1 |  |  | $ | 176,233 |  |  | ( 300 ) |  |  | $ | ( 88 ) |  |  | $ | 220 |  |  | $ | ( 1,143,157 ) |  |  | $ | ( 966,791 ) | 
+Class A common shares issued upon exercise of stock options |  | — |  |  | — |  |  |  | 374 |  |  | — |  |  | 1,549 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 1,549 | 
+Vesting of early exercised stock options |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 1,715 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 1,715 | 
+Stock-based compensation expense |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 8,927 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 8,927 | 
+Conversion of stock-based liability classified awards to stock-based equity classified awards |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 150 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 150 | 
+Other comprehensive income |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 108 |  |  | — |  |  | 108 | 
+Net loss |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | ( 23,867 ) |  |  | ( 23,867 ) | 
+Balance as of March 31, 2025 |  | 82,899 |  |  | 850,066 |  |  |  | 53,747 |  |  | 1 |  |  | 188,574 |  |  | ( 300 ) |  |  | ( 88 ) |  |  | 328 |  |  | ( 1,167,024 ) |  |  | ( 978,209 ) | 
+Shares issued upon exercise of stock options, net of repurchases of early exercised stock options |  | — |  |  | — |  |  |  | 851 |  |  | — |  |  | 3,576 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 3,576 | 
+Vesting of early exercised stock options |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 695 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 695 | 
+Stock-based compensation expense |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 13,043 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 13,043 | 
+Conversion of stock-based liability classified awards to stock-based equity classified awards |  | — |  |  | — |  |  |  | — |  |  | — |  |  | 268 |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 268 | 
+Other comprehensive loss |  | — |  |  | — |  |  |  | — |  |  | — |  |  |  |  | — |  |  | — |  |  | ( 3 ) |  |  | — |  |  | ( 3 ) | 
+Net income |  | — |  |  | — |  |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | — |  |  | 309,512 |  |  | 309,512 | 
+Balance as of June 30, 2025 |  | 82,899 |  |  | $ | 850,066 |  |  |  | 54,598 |  |  | $ | 1 |  |  | $ | 206,156 |  |  | ( 300 ) |  |  | $ | ( 88 ) |  |  | $ | 325 |  |  | $ | ( 857,512 ) |  |  | $ | ( 651,118 ) | 
+
+TABLE 15
+ |  |  |  |  |  |  |  |  |  |  | 
+ | Six Months Ended June 30,
+ | 2026 |  | 2025
+Cash flows from operating activities: |  |  | 
+Net income (loss) | $ | ( 464,534 ) |  |  | $ | 285,645 | 
+Adjustments to reconcile net income (loss) to net cash flows used in operating activities: |  |  | 
+Stock-based compensation | 386,601 |  |  | 22,435 | 
+Amortization of customer warrants | 46,315 |  |  | — | 
+Depreciation and amortization | 42,551 |  |  | 9,315 | 
+Non-cash lease expense | 39,104 |  |  | 5,872 | 
+Non-cash interest expense | 38,602 |  |  | — | 
+Provision for product warranties | 8,430 |  |  | 9,000 | 
+Extinguishment of forward contract liability | — |  |  | ( 363,336 ) | 
+Other | ( 2,110 ) |  |  | ( 835 ) | 
+Changes in operating assets and liabilities: |  |  | 
+Accounts receivable | ( 72,938 ) |  |  | 125,508 | 
+Inventories | 31,116 |  |  | 74,929 | 
+Prepaid expenses and other assets | ( 182,311 ) |  |  | ( 3,003 ) | 
+Accounts payable | 565 |  |  | 6,314 | 
+Deferred revenue | 126,440 |  |  | 16,525 | 
+Customer deposits | ( 111,788 ) |  |  | ( 320,558 ) | 
+Other liabilities | 66,469 |  |  | 8,346 | 
+Net cash flows used in operating activities | $ | ( 47,488 ) |  |  | $ | ( 123,843 ) | 
+Cash flows from investing activities: |  |  | 
+Purchases of property and equipment | $ | ( 548,873 ) |  |  | $ | ( 185,094 ) | 
+Purchases of investments | ( 1,275,515 ) |  |  | ( 20,175 ) | 
+Maturities and sales of investments | 514,455 |  |  | 117,973 | 
+Net cash flows used in investing activities | $ | ( 1,309,933 ) |  |  | $ | ( 87,296 ) | 
+Cash flows from financing activities: |  |  | 
+Proceeds from initial public offering, net of underwriting discounts and commissions | $ | 6,232,511 |  |  | $ | — | 
+Proceeds from sale of shares of Series H redeemable convertible preferred stock | 1,014,249 |  |  | — | 
+Costs incurred in connection with the sale of shares of Series H redeemable convertible preferred stock | ( 218 ) |  |  | — | 
+Proceeds from Working Capital Loan | 1,004,571 |  |  | — | 
+Proceeds from exercise of stock options | 20,221 |  |  | 5,176 | 
+Proceeds from issuance of shares of Class N common stock | 15,036 |  |  | — | 
+Fees paid for revolving credit facility | ( 3,801 ) |  |  | — | 
+Repurchases of early exercised stock options | — |  |  | ( 28 ) | 
+Tax withholding from tender offer and initial public offering | ( 416,660 ) |  |  | — | 
+Payments of deferred offering costs and other financing activities | ( 12,667 ) |  |  | — | 
+Net cash flows provided by financing activities | $ | 7,853,242 |  |  | $ | 5,148 | 
+Effect of exchange rate on cash | 638 |  |  | 912 | 
+Increase (decrease) in cash, cash equivalents, and restricted cash | $ | 6,496,459 |  |  | $ | ( 205,079 ) | 
+Cash, cash equivalents, and restricted cash beginning of period | 930,378 |  |  | 581,965 | 
+Cash, cash equivalents, and restricted cash end of period | $ | 7,426,837 |  |  | $ | 376,886 | 
+
+TABLE 16
+ |  |  |  |  |  |  |  |  |  |  | 
+Supplemental disclosures of cash flow information: |  |  | 
+Income taxes paid | $ | 8,760 |  |  | $ | 1,427 | 
+Non-cash investing and financing activities: |  |  | 
+Conversion of redeemable convertible preferred stock in connection with initial public offering | $ | 2,947,379 |  |  | $ | — | 
+Right-of-use assets obtained in exchange for lease obligations | $ | 318,429 |  |  | $ | — | 
+Billed amounts offsetting Working Capital Loan balance | $ | 86,327 |  |  | $ | — | 
+Purchases of property and equipment included in accounts payable and accrued and other current liabilities | $ | 58,560 |  |  | $ | 4,992 | 
+ |  |  | 
+Transfer of property and equipment into inventories | $ | 8,443 |  |  | $ | 16,772 | 
+Unpaid deferred offering costs included in accrued and other current liabilities | $ | 2,390 |  |  | $ | — | 
+Vesting of early exercised options | $ | 1,436 |  |  | $ | 2,410 | 
+Transfer to property and equipment out of inventories | $ | — |  |  | $ | 67,303 | 
+
+TABLE 17
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Hardware revenue recognized at a point in time | $ | 54,119 |  |  | $ | 70,295 |  |  | $ | 164,712 |  |  | $ | 139,969 | 
+Cloud and other services revenue recognized at a point in time | 359 |  |  | 237 |  |  | 987 |  |  | 851 | 
+Cloud and other services revenue recognized over time | 125,632 |  |  | 32,790 |  |  | 207,817 |  |  | 62,014 | 
+Total revenue | $ | 180,110 |  |  | $ | 103,322 |  |  | 373,516 |  |  | 202,834 | 
+
+TABLE 18
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Customer A (1) | 34 | % |  | 70 | % |  | 49 | % |  | 47 | %
+Customer B | 32 | % |  | * |  | 20 | % |  | *
+Customer C | 10 | % |  | * |  | * |  | *
+Customer D (1) | * |  | 18 | % |  | 10 | % |  | 41 | %
+
+TABLE 19
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+Customer A (1) | * |  | 78 | %
+Customer B | 57 | % |  | *
+Customer C | * |  | *
+Customer D (1) | 19 | % |  | *
+
+TABLE 20
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+United States | $ | 83,977 |  |  | $ | 30,212 |  |  | $ | 154,071 |  |  | $ | 105,096 | 
+Europe, Middle East, and Africa | 95,749 |  |  | 73,033 |  |  | 218,921 |  |  | 97,643 | 
+Other | 384 |  |  | 77 |  |  | 524 |  |  | 95 | 
+Total revenue | $ | 180,110 |  |  | $ | 103,322 |  |  | $ | 373,516 |  |  | $ | 202,834 | 
+
+TABLE 21
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+United States | $ | 817,750 |  |  | $ | 376,021 | 
+Canada | 168,976 |  |  | 61,281 | 
+Other | 82 |  |  | 94 | 
+Total property and equipment, net | $ | 986,808 |  |  | $ | 437,396 | 
+
+TABLE 22
+ |  |  |  |  | 
+ | June 30, 2026
+Contingently issuable warrants | 26,108 | 
+Early exercised shares subject to repurchase | 574 | 
+Options to purchase common stock | 23,797 | 
+Unvested RSUs | 16,532 | 
+Contingently issuable unvested performance-based restricted stock units (“PRSUs”) | 9,000 | 
+Total potential common stock excluded from net loss per share | 76,011 | 
+
+TABLE 23
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+ | (in thousands, except per share data)
+Numerator: |  |  |  |  |  |  | 
+Net income (loss) | $ | ( 450,528 ) |  |  | $ | 309,512 |  |  | $ | ( 464,534 ) |  |  | $ | 285,645 | 
+Less: Net income attributable to participating securities | — |  |  | 189,194 |  |  | — |  |  | 175,065 | 
+Net income (loss) attributable to common stockholders | $ | ( 450,528 ) |  |  | $ | 120,318 |  |  | $ | ( 464,534 ) |  |  | $ | 110,580 | 
+Denominator: |  |  |  |  |  |  | 
+Basic weighted-average common shares net of shares subject to repurchase | 150,968 |  |  | 52,720 |  |  | 107,132 |  |  | 52,363 | 
+Dilutive impact of outstanding redeemable convertible preferred stock (as-if converted basis) | — |  |  | 82,899 |  |  | — |  |  | 82,899 | 
+Dilutive impact of outstanding stock options | — |  |  | 26,203 |  |  | — |  |  | 27,014 | 
+Dilutive weighted-average common shares | 150,968 |  |  | 161,822 |  |  | 107,132 |  |  | 162,276 | 
+Net income (loss) per share: |  |  |  |  |  |  | 
+Basic | $ | ( 2.98 ) |  |  | $ | 2.28 |  |  | $ | ( 4.34 ) |  |  | $ | 2.11 | 
+Diluted | $ | ( 2.98 ) |  |  | $ | 1.91 |  |  | $ | ( 4.34 ) |  |  | $ | 1.76 | 
+
+TABLE 24
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026
+ | Fair Value Hierarchy (1) |  | Amortized Cost |  | Gross Unrealized Gains |  | Gross Unrealized Losses |  | Accrued Interest |  | Fair Value
+U.S. Treasury securities | Level 2 |  | $ | 1,173,730 |  |  | $ | 5,624 |  |  | $ | — |  |  | $ | — |  |  | $ | 1,179,354 | 
+Time deposits | Level 2 |  | 36 |  |  | — |  |  | — |  |  | — |  |  | 36 | 
+Total |  |  | $ | 1,173,766 |  |  | $ | 5,624 |  |  | $ | — |  |  | $ | — |  |  | $ | 1,179,390 | 
+
+TABLE 25
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | December 31, 2025
+ | Fair Value Hierarchy (1) |  | Amortized Cost |  | Gross Unrealized Gains |  | Gross Unrealized Losses |  | Accrued Interest |  | Fair Value
+U.S. Treasury securities | Level 2 |  | $ | 404,321 |  |  | $ | 2,174 |  |  | $ | — |  |  | $ | — |  |  | $ | 406,495 | 
+Time deposits | Level 2 |  | 36 |  |  | — |  |  | — |  |  | — |  |  | 36 | 
+Total |  |  | $ | 404,357 |  |  | $ | 2,174 |  |  | $ | — |  |  | $ | — |  |  | $ | 406,531 | 
+
+TABLE 26
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  | Fair Value Measurements |  | 
+Balance Sheet Captions |  | June 30, 2026 |  | Level 1 |  | Level 2 |  |  |  | Total Gains (1)
+Cash and cash equivalents |  |  |  |  |  |  |  |  |  | 
+Money market funds |  | $ | 6,393,647 |  |  | $ | 6,393,647 |  |  | $ | — |  |  |  |  | $ | — | 
+U.S. Treasury securities |  | 348,509 |  |  | — |  |  | 348,509 |  |  |  |  | 1,010 | 
+ |  |  |  |  |  |  |  |  |  | 
+Restricted cash |  |  |  |  |  |  |  |  |  | 
+Money market funds |  | 684,680 |  |  | 684,680 |  |  | — |  |  |  |  | — | 
+ |  |  |  |  |  |  |  |  |  | 
+Investments |  |  |  |  |  |  |  |  |  | 
+U.S. Treasury securities |  | 1,179,354 |  |  | — |  |  | 1,179,354 |  |  |  |  | 5,624 | 
+Time deposits |  | 36 |  |  | — |  |  | 36 |  |  |  |  | — | 
+Total investments |  | $ | 1,179,390 |  |  | $ | — |  |  | $ | 1,179,390 |  |  |  |  | $ | 5,624 | 
+
+TABLE 27
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  | Fair Value Measurements |  | 
+Balance Sheet Captions |  | December 31, 2025 |  | Level 1 |  | Level 2 |  |  |  | Total Gains (1)
+Cash and cash equivalents |  |  |  |  |  |  |  |  |  | 
+Money market funds |  | $ | 598,544 |  |  | $ | 598,544 |  |  | $ | — |  |  |  |  | $ | — | 
+U.S. Treasury securities |  | 101,845 |  | — |  | 101,845 |  |  |  | 632
+ |  |  |  |  |  |  |  |  |  | 
+Restricted cash |  |  |  |  |  |  |  |  |  | 
+Money market funds |  | 224,006 |  |  | 224,006 |  |  | — |  |  |  |  | — | 
+ |  |  |  |  |  |  |  |  |  | 
+Investments |  |  |  |  |  |  |  |  |  | 
+U.S. Treasury securities |  | 406,495 |  |  | — |  |  | 406,495 |  |  |  |  | 2,374 | 
+Time deposits |  | 36 |  |  | — |  |  | 36 |  |  |  |  | — | 
+Total investments |  | $ | 406,531 |  |  | $ | — |  |  | $ | 406,531 |  |  |  |  | $ | 2,374 | 
+
+TABLE 28
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+Raw materials | $ | 6,090 |  |  | $ | 15,939 | 
+Work in progress | 753 |  |  | 10,968 | 
+Finished goods | 25,823 |  |  | 36,719 | 
+Total inventories | $ | 32,666 |  |  | $ | 63,626 | 
+
+TABLE 29
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+Prepaid expenses | $ | 144,482 |  |  | $ | 8,196 | 
+Taxes receivable | 21,510 |  |  | 4,795 | 
+Unbilled receivables | 14,438 |  |  | 16,244 | 
+Contract assets | 4,795 |  |  | — | 
+Other receivables and current assets | 6,473 |  |  | 2,547 | 
+Total prepaid expenses and other current assets | $ | 191,698 |  |  | $ | 31,782 | 
+
+TABLE 30
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+Data center and computer equipment | $ | 403,579 |  |  | $ | 277,421 | 
+Machinery and equipment | 31,400 |  |  | 25,370 | 
+Leasehold improvements | 38,790 |  |  | 22,348 | 
+Construction in progress | 604,030 |  |  | 163,451 | 
+Property and equipment | 1,077,800 |  |  | 488,590 | 
+Less: accumulated depreciation | ( 90,992 ) |  |  | ( 51,194 ) | 
+Total property and equipment, net | $ | 986,808 |  |  | $ | 437,396 | 
+
+TABLE 31
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Cost of revenue | $ | 18,482 |  |  | $ | 1,601 |  |  | $ | 28,353 |  |  | $ | 3,201 | 
+Research and development | 5,073 |  |  | 3,408 |  |  | 11,568 |  |  | 4,550 | 
+Sales and marketing | 110 |  |  | 585 |  |  | 1,639 |  |  | 1,544 | 
+General and administrative | 712 |  |  | 6 |  |  | 991 |  |  | 20 | 
+Total depreciation expense | $ | 24,377 |  |  | $ | 5,600 |  |  | $ | 42,551 |  |  | $ | 9,315 | 
+
+TABLE 32
+ |  |  |  |  |  |  |  |  |  |  | 
+ | June 30, 2026 |  | December 31, 2025
+Accrued purchases and expenses | $ | 150,866 |  |  | $ | 59,458 | 
+Accrued compensation | 48,615 |  |  | 16,611 | 
+Sales tax payable | 19,494 |  |  | 35,577 | 
+Product warranty liability | 12,047 |  |  | 9,368 | 
+Liability related to early exercised options | 3,837 |  |  | 5,187 | 
+Other | 2,051 |  |  | 13,335 | 
+Total accrued and other current liabilities | $ | 236,910 |  |  | $ | 139,536 | 
+
+TABLE 33
+ |  |  |  |  |  |  |  |  |  |  | 
+ | Six Months Ended June 30,
+ | 2026 |  | 2025
+Balance at beginning of year | $ | 9,368 |  |  | $ | 17,043 | 
+Additions during the period | 8,430 |  |  | 9,000 | 
+Utilization during the period | ( 5,751 ) |  |  | ( 12,903 ) | 
+Balance at end of the period | $ | 12,047 |  |  | $ | 13,140 | 
+
+TABLE 34
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Interest and dividend income | $ | 48,839 |  |  | $ | 5,337 |  |  | $ | 71,571 |  |  | $ | 11,833 | 
+Non-cash interest expense (1) | ( 19,653 ) |  |  | — |  |  | ( 38,602 ) |  |  | — | 
+Extinguishment of forward contract liability | — |  |  | 363,336 |  |  | — |  |  | 363,336 | 
+Other expense | ( 2,207 ) |  |  | ( 315 ) |  |  | ( 3,462 ) |  |  | ( 525 ) | 
+Total other income, net | $ | 26,979 |  |  | $ | 368,358 |  |  | $ | 29,507 |  |  | $ | 374,644 | 
+
+TABLE 35
+ |  |  |  |  |  |  |  | 
+ |  | June 30, 2026
+Principal amount received in January 2026 |  | $ | 1,004,571 | 
+Less: non-cash repayments through services and other permitted credits |  | ( 86,327 ) | 
+Principal balance outstanding as of June 30, 2026 |  | 918,244 | 
+Less: current portion of Working Capital Loan |  | ( 736,036 ) | 
+Long-term portion of Working Capital Loan |  | $ | 182,208 | 
+
+TABLE 36
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Cost of revenue | $ | 15,353 |  |  | $ | 187 |  |  | $ | 16,303 |  |  | $ | 513 | 
+Research and development | 222,147 |  |  | 9,301 |  |  | 227,846 |  |  | 15,013 | 
+Sales and marketing | 71,055 |  |  | 1,533 |  |  | 72,847 |  |  | 3,482 | 
+General and administrative | 68,453 |  |  | 2,260 |  |  | 69,605 |  |  | 3,427 | 
+Total stock-based compensation expense | $ | 377,008 |  |  | $ | 13,281 |  |  | $ | 386,601 |  |  | $ | 22,435 | 
+
+TABLE 37
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Stock options | $ | 9,161 |  |  | $ | 13,043 |  |  | $ | 18,579 |  |  | $ | 21,970 | 
+RSUs | 332,920 |  |  | — |  |  | 332,920 |  |  | — | 
+PRSUs | 34,223 |  |  | — |  |  | 34,223 |  |  | — | 
+Special bonus awards | 174 |  |  | 238 |  |  | 349 |  |  | 465 | 
+ESPP | 530 |  |  | — |  |  | 530 |  |  | — | 
+Total stock-based compensation expense | $ | 377,008 |  |  | $ | 13,281 |  |  | $ | 386,601 |  |  | $ | 22,435 | 
+
+TABLE 38
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+Operating lease cost | $ | 31,991 |  |  | $ | 3,930 |  |  | $ | 55,641 |  |  | $ | 7,856 | 
+Short-term lease costs (1) | 37,572 |  |  | 22,007 |  |  | 54,586 |  |  | 30,266 | 
+Variable lease costs | 2,135 |  |  | — |  |  | 4,781 |  |  | — | 
+Total lease costs | $ | 71,698 |  |  | $ | 25,937 |  |  | $ | 115,008 |  |  | $ | 38,122 | 
+
+TABLE 39
+ |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Other information |  | June 30, 2026 |  | December 31, 2025
+Weighted-average remaining lease term (in years) |  | 5.5 |  | 4.7
+Weighted-average discount rate |  | 7.2 | % |  | 8.6 | %
+
+TABLE 40
+ |  |  |  |  |  |  |  | 
+June 30, 2026 |  | Operating Leases
+2026 (remaining 6 months) |  | $ | 58,153 | 
+2027 |  | 132,394 | 
+2028 |  | 123,660 | 
+2029 |  | 126,323 | 
+2030 |  | 123,261 | 
+Thereafter |  | 126,513 | 
+Total future lease payments |  | 690,304 | 
+Less: Imputed interest |  | ( 121,477 ) | 
+Present value of operating lease liabilities |  | $ | 568,827 | 
+
+TABLE 41
+ |  |  |  |  |  |  |  |  |  |  | 
+ | Six Months Ended June 30,
+ | 2026 |  | 2025
+Cash paid for amounts included in the measurement of lease liabilities: |  |  | 
+Operating cash flows for operating leases | $ | 27,904 |  |  | $ | 8,355 | 
+Right-of-use assets obtained in exchange for lease obligations: |  |  | 
+Operating leases | $ | 318,429 |  |  | $ | — | 
+
+TABLE 42
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+ | (in thousands)
+Revenue: |  |  |  |  |  |  | 
+Hardware | $ | 54,119 |  |  | $ | 70,295 |  |  | $ | 164,712 |  |  | $ | 139,969 | 
+Cloud and other services | 125,991 |  |  | 33,027 |  |  | 208,804 |  |  | 62,865 | 
+Total revenue | 180,110 |  |  | 103,322 |  |  | 373,516 |  |  | 202,834 | 
+Cost of revenue (1) : |  |  |  |  |  |  | 
+Hardware | 53,141 |  |  | 46,649 |  |  | 118,072 |  |  | 95,059 | 
+Cloud and other services | 101,410 |  |  | 24,574 |  |  | 143,709 |  |  | 34,072 | 
+Total cost of revenue | 154,551 |  |  | 71,223 |  |  | 261,781 |  |  | 129,131 | 
+Gross profit | 25,559 |  |  | 32,099 |  |  | 111,735 |  |  | 73,703 | 
+Operating expenses: |  |  |  |  |  |  | 
+Research and development (1) | 320,151 |  |  | 60,768 |  |  | 395,646 |  |  | 113,519 | 
+Sales and marketing (1) | 86,969 |  |  | 18,228 |  |  | 101,670 |  |  | 28,554 | 
+General and administrative (1) | 95,672 |  |  | 10,285 |  |  | 106,689 |  |  | 17,282 | 
+Total operating expenses | 502,792 |  |  | 89,281 |  |  | 604,005 |  |  | 159,355 | 
+Loss from operations | (477,233) |  |  | (57,182) |  |  | (492,270) |  |  | (85,652) | 
+Other income, net | 26,979 |  |  | 368,358 |  |  | 29,507 |  |  | 374,644 | 
+Income (loss) before income tax | (450,254) |  |  | 311,176 |  |  | (462,763) |  |  | 288,992 | 
+Income tax expense | 274 |  |  | 1,664 |  |  | 1,771 |  |  | 3,347 | 
+Net income (loss) | $ | (450,528) |  |  | $ | 309,512 |  |  | $ | (464,534) |  |  | $ | 285,645 | 
+
+TABLE 43
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+ | (in thousands)
+Cost of revenue | $ | 15,353 |  |  | $ | 187 |  |  | $ | 16,303 |  |  | $ | 513 | 
+Research and development | 222,147 |  |  | 9,301 |  |  | 227,846 |  |  | 15,013 | 
+Sales and marketing | 71,055 |  |  | 1,533 |  |  | 72,847 |  |  | 3,482 | 
+General and administrative | 68,453 |  |  | 2,260 |  |  | 69,605 |  |  | 3,427 | 
+Total stock-based compensation expense | $ | 377,008 |  |  | $ | 13,281 |  |  | $ | 386,601 |  |  | $ | 22,435 | 
+
+TABLE 44
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+ | (as a percentage of revenue)
+Revenue: |  |  |  |  |  |  | 
+Hardware | 30.0 | % |  | 68.0 | % |  | 44.1 | % |  | 69.0 | %
+Cloud and other services | 70.0 |  |  | 32.0 |  |  | 55.9 |  |  | 31.0 | 
+Total revenue | 100.0 |  |  | 100.0 |  |  | 100.0 |  |  | 100.0 | 
+Cost of revenue: |  |  |  |  |  |  | 
+Hardware | 29.5 |  |  | 45.1 |  |  | 31.6 |  |  | 46.9 | 
+Cloud and other services | 56.3 |  |  | 23.8 |  |  | 38.5 |  |  | 16.8 | 
+Total cost of revenue | 85.8 |  |  | 68.9 |  |  | 70.1 |  |  | 63.7 | 
+Gross profit | 14.2 |  |  | 31.1 |  |  | 29.9 |  |  | 36.3 | 
+Operating expenses: |  |  |  |  |  |  | 
+Research and development | 177.8 |  |  | 58.8 |  |  | 105.9 |  |  | 56.0 | 
+Sales and marketing | 48.3 |  |  | 17.6 |  |  | 27.2 |  |  | 14.1 | 
+General and administrative | 53.1 |  |  | 10.0 |  |  | 28.6 |  |  | 8.5 | 
+Total operating expenses | 279.2 |  |  | 86.4 |  |  | 161.7 |  |  | 78.6 | 
+Loss from operations | (265.0) |  |  | (55.3) |  |  | (131.8) |  |  | (42.2) | 
+Other income, net | 15.0 |  |  | 356.5 |  |  | 7.9 |  |  | 184.7 | 
+Income (loss) before income tax | (250.0) |  |  | 301.2 |  |  | (123.9) |  |  | 142.5 | 
+Income tax expense | 0.2 |  |  | 1.6 |  |  | 0.5 |  |  | 1.7 | 
+Net income (loss) | (250.1 | %) |  | 299.6 | % |  | (124.4 | %) |  | 140.8 | %
+ |  |  |  |  |  |  | 
+
+TABLE 45
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Hardware | $ | 54,119 |  |  | $ | 70,295 |  |  | $ | (16,176) |  |  | (23 | %) |  | 164,712 |  |  | 139,969 |  |  | $ | 24,743 |  |  | 18 | %
+Cloud and other services | 125,991 |  |  | 33,027 |  | 92,964 |  |  | 281 |  |  | 208,804 |  |  | 62,865 |  |  | 145,939 |  |  | 232 | 
+Total revenue | $ | 180,110 |  |  | $ | 103,322 |  |  | $ | 76,788 |  |  | 74 | % |  | $ | 373,516 |  |  | $ | 202,834 |  |  | $ | 170,682 |  |  | 84 | %
+
+TABLE 46
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Hardware | $ | 53,141 |  |  | $ | 46,649 |  |  | $ | 6,492 |  |  | 14 | % |  | $ | 118,072 |  |  | $ | 95,059 |  |  | $ | 23,013 |  |  | 24 | %
+Cloud and other services | 101,410 |  |  | 24,574 |  |  | 76,836 |  |  | 313 |  |  | 143,709 |  |  | 34,072 |  |  | 109,637 |  |  | 322 | 
+Total cost of revenue | $ | 154,551 |  |  | $ | 71,223 |  |  | $ | 83,328 |  |  | 117 | % |  | $ | 261,781 |  |  | $ | 129,131 |  |  | $ | 132,650 |  |  | 103 | %
+
+TABLE 47
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Hardware | $ | 978 |  |  | $ | 23,646 |  |  | $ | (22,668) |  |  | (96 | %) |  | $ | 46,640 |  |  | $ | 44,910 |  |  | $ | 1,730 |  |  | 4 | %
+Cloud and other services | $ | 24,581 |  |  | $ | 8,453 |  |  | $ | 16,128 |  |  | 191 | % |  | $ | 65,095 |  |  | $ | 28,793 |  |  | $ | 36,302 |  |  | 126 | %
+Total gross profit | $ | 25,559 |  |  | $ | 32,099 |  |  | $ | (6,540) |  |  | (20 | %) |  | $ | 111,735 |  |  | $ | 73,703 |  |  | $ | 38,032 |  |  | 52 | %
+Hardware | 2 | % |  | 34 | % |  |  |  | (32 | %) |  | 28 | % |  | 32 | % |  |  |  | (4 | %)
+Cloud and other services | 20 | % |  | 26 | % |  |  |  | (6 | %) |  | 31 | % |  | 46 | % |  |  |  | (15 | %)
+Total gross margin | 14 | % |  | 31 | % |  |  |  | (17 | %) |  | 30 | % |  | 36 | % |  |  |  | (6 | %)
+
+TABLE 48
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Research and development | $ | 320,151 |  |  | $ | 60,768 |  |  | $ | 259,383 |  |  | 427 | % |  | $ | 395,646 |  |  | $ | 113,519 |  |  | $ | 282,127 |  |  | 249 | %
+Percentage of revenue | 178 | % |  | 59 | % |  |  |  |  |  | 106 | % |  | 56 | % |  |  |  | 
+
+TABLE 49
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Sales and marketing | $ | 86,969 |  |  | $ | 18,228 |  |  | $ | 68,741 |  |  | 377 | % |  | $ | 101,670 |  |  | $ | 28,554 |  |  | $ | 73,116 |  |  | 256 | %
+Percentage of revenue | 48 | % |  | 18 | % |  |  |  |  |  | 27 | % |  | 14 | % |  |  |  | 
+
+TABLE 50
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+General and administrative | $ | 95,672 |  |  | $ | 10,285 |  |  | $ | 85,387 |  |  | 830 | % |  | $ | 106,689 |  |  | $ | 17,282 |  |  | $ | 89,407 |  |  | 517 | %
+Percentage of revenue | 53 | % |  | 10 | % |  |  |  |  |  | 29 | % |  | 9 | % |  |  |  | 
+
+TABLE 51
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Other income, net | $ | 26,979 |  |  | $ | 368,358 |  |  | $ | (341,379) |  |  | (93 | %) |  | $ | 29,507 |  |  | $ | 374,644 |  |  | $ | (345,137) |  |  | (92 | %)
+
+TABLE 52
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  |  |  |  |  | Six Months Ended June 30, |  |  |  | 
+ | 2026 |  | 2025 |  | $ Change |  | % Change |  | 2026 |  | 2025 |  | $ Change |  | % Change
+ | (in thousands, except percentages)
+Income tax expense | $ | 274 |  |  | $ | 1,664 |  |  | $ | (1,390) |  |  | (84 | %) |  | $ | 1,771 |  |  | $ | 3,347 |  |  | $ | (1,576) |  |  | (47 | %)
+
+TABLE 53
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+GAAP gross profit | $ | 25,559 |  |  | $ | 32,099 |  |  | $ | 111,735 |  |  | $ | 73,703 | 
+Less: Pass-through revenue and related data center costs, net (1) | (428) |  |  | — |  |  | (549) |  |  | — | 
+Add: Amortization of customer warrant assets (1) | 44,262 |  |  | — |  |  | 46,315 |  |  | — | 
+Add: Stock-based compensation expense | 15,353 |  |  | 187 |  |  | 16,303 |  |  | 513 | 
+ |  |  |  |  |  |  | 
+Add: Employer payroll tax related to stock-based compensation from IPO (2) | 471 |  |  | — |  |  | 471 |  |  | — | 
+Core gross profit | $ | 85,217 |  |  | $ | 32,286 |  |  | $ | 174,275 |  |  | $ | 74,216 | 
+
+TABLE 54
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+GAAP loss from operations | $ | (477,233) |  |  | $ | (57,182) |  |  | $ | (492,270) |  |  | $ | (85,652) | 
+Less: Pass-through revenue and related data center costs, net (1) | (428) |  |  | — |  |  | (549) |  |  | — | 
+Add: Stock-based compensation expense (1) | 377,008 |  |  | 13,281 |  |  | 386,601 |  |  | 22,435 | 
+Add: Amortization of customer warrant assets (1) | 44,262 |  |  | — |  |  | 46,315 |  |  | — | 
+Add: Employer payroll tax related to stock-based compensation from IPO (2) | 22,778 |  |  | — |  |  | 22,778 |  |  | — | 
+ |  |  |  |  |  |  | 
+Core operating loss | $ | (33,613) |  |  | $ | (43,901) |  |  | $ | (37,125) |  |  | $ | (63,217) | 
+
+TABLE 55
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Three Months Ended June 30, |  | Six Months Ended June 30,
+ | 2026 |  | 2025 |  | 2026 |  | 2025
+GAAP net income (loss) | $ | (450,528) |  |  | $ | 309,512 |  |  | $ | (464,534) |  |  | $ | 285,645 | 
+Less: Pass-through revenue and related data center costs, net (1) | (428) |  |  | — |  |  | (549) |  |  | — | 
+Less: Extinguishment of forward contract liability | — |  |  | (363,336) |  |  | — |  |  | (363,336) | 
+Add: Stock-based compensation expense (1) | 377,008 |  |  | 13,281 |  |  | 386,601 |  |  | 22,435 | 
+Add: Amortization of customer warrant assets (1) | 44,262 |  |  | — |  |  | 46,315 |  |  | — | 
+Add: Employer payroll tax related to stock-based compensation from IPO (2) | 22,778 |  |  | — |  |  | 22,778 |  |  | — | 
+ |  |  |  |  |  |  | 
+Core net loss | $ | (6,908) |  |  | $ | (40,543) |  |  | $ | (9,389) |  |  | $ | (55,256) | 
+
+TABLE 56
+ |  |  |  |  |  |  |  |  |  |  | 
+ | Six Months Ended June 30,
+ | 2026 |  | 2025
+ | (in thousands)
+Net cash used in operating activities | $ | (47,488) |  |  | $ | (123,843) | 
+Net cash used in investing activities | $ | (1,309,933) |  |  | $ | (87,296) | 
+Net cash provided by financing activities | $ | 7,853,242 |  |  | $ | 5,148 | 
+
+TABLE 57
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Name |  | Title of Director or Officer |  | Action |  | Date of Action |  |  | Total Shares of Common Stock to be Sold |  | Expiration Date (1)
+Eric Vishria |  | Director |  | Adopted |  | May 18, 2026 |  |  | 650,153 |  |  | Close of market on the 2nd full trading day following the release of earnings for the Company’s fiscal quarter ending December 31, 2026
+Lior Susan (2) |  | Director |  | Adopted |  | May 19, 2026 |  |  | 417,363 |  |  | January 8, 2027
+ |  | Terminated |  | June 24, 2026 |  |  | 
+Andrew Feldman (3) |  | Chief Executive Officer, President, and Director |  | Adopted |  | May 20, 2026 |  |  | 1,500,000 |  |  | August 20, 2027
+Sean Lie (4) |  | Chief Technology Officer |  | Adopted |  | May 20, 2026 |  |  | 1,872,000 |  |  | August 27, 2027
+Yagnesh Patel (5) |  | Chief Accounting Officer |  | Adopted |  | June 29, 2026 |  |  | 34,375 |  |  | August 31, 2027
+Robert Komin |  | Chief Financial Officer |  | Adopted |  | June 30, 2026 |  |  | 128,000 |  |  | August 31, 2027
+Dhiraj Mallick (5) |  | Chief Operating Officer |  | Adopted |  | June 30, 2026 |  |  | 851,139 |  |  | August 31, 2027
+
+TABLE 58
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  | Incorporated by Reference
+Exhibit Number |  | Exhibit Description |  | Form |  | Exhibit |  | Filing Date |  | Filed or Furnished Herewith
+3.1 |  | Amended and Restated Certificate of Incorporation of the Company |  | 8-K |  | 3.1 |  | 5/15/2026 |  | 
+3.2 |  | Amended and Restated Bylaws of the Company |  | 8-K |  | 3.2 |  | 5/15/2026 |  | 
+4.1 |  | Reference is made to Exhibits 3.1 and 3.2 |  |  |  |  |  |  |  | 
+4.2 |  | Form of Class A Common Stock Certificate |  | S-1 |  | 4.2 |  | 4/17/2026 |  | 
+4.3 |  | Amended and Restated Investors’ Rights Agreement, dated as of January 28, 2026, by and among the Registrant and the investors listed therein |  | S-1 |  | 4.3 |  | 4/17/2026 |  | 
+ |  |  |  |  |  |  |  |  |  | 
+10.1(a)# |  | 2026 Incentive Award Plan |  | S-1/A |  | 10.3(a) |  | 5/11/2026 |  | 
+10.1(b)# |  | Form of Stock Option Grant Notice and Stock Option Agreement under the 2026 Incentive Award Plan |  | S-1 |  | 10.3(b) |  | 4/17/2026 |  | 
+10.1(c)# |  | Form of Restricted Stock Unit Award Grant Notice and Restricted Stock Unit Award Agreement under the 2026 Incentive Award Plan |  | S-1 |  | 10.3(c) |  | 4/17/2026 |  | 
+10.2# |  | 2026 Employee Stock Purchase Plan |  | S-1/A |  | 10.4 |  | 5/11/2026 |  | 
+10.3# |  | Non-Employee Director Compensation Program |  | S-1 |  | 10.5 |  | 4/17/2026 |  | 
+10.4# |  | Form of Indemnification and Advancement Agreement between the Registrant and each of its Directors and Executive Officers |  | S-1 |  | 10.6 |  | 4/17/2026 |  | 
+10.5+ |  | Revolving Credit and Guaranty Agreement, dated as of April 14, 2026, by and among the Registrant, the obligors, lenders, and issuing banks party thereto, and Morgan Stanley Senior Funding, Inc., as administrative agent and collateral agent |  | S-1 |  | 10.18 |  | 4/17/2026 |  | 
+31.1 |  | Certification of Principal Executive Officer Pursuant to Exchange Act Rules 13a-14(a) and 15d-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 |  |  |  |  |  |  |  | X
+31.2 |  | Certification of Principal Financial Officer Pursuant to Exchange Act Rules 13a-14(a) and 15d-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 |  |  |  |  |  |  |  | X
+32.1 |  | Certifications of Principal Executive Officer and Principal Financial Officer Pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002 |  |  |  |  |  |  |  | X
+101.INS |  | XBRL Instance Document (the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document) |  |  |  |  |  |  |  | X
+101.SCH |  | XBRL Taxonomy Extension Schema Document |  |  |  |  |  |  |  | X
+101.CAL |  | XBRL Taxonomy Extension Calculation Linkbase Document |  |  |  |  |  |  |  | X
+101.DEF |  | XBRL Taxonomy Definition Linkbase Document |  |  |  |  |  |  |  | X
+101.LAB |  | XBRL Taxonomy Extension Label Linkbase Document |  |  |  |  |  |  |  | X
+101.PRE |  | XBRL Taxonomy Extension Presentation Linkbase Document |  |  |  |  |  |  |  | X
+104 |  | Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101) |  |  |  |  |  |  |  | X
+
+TABLE 59
+ |  |  |  |  |  |  |  |  |  |  | 
+ |  | CEREBRAS SYSTEMS INC.
+ |  |  | 
+Date: | August 12, 2026 | By: | /s/ Andrew D. Feldman
+ |  | Name: | Andrew D. Feldman
+ |  | Title: | Chief Executive Officer and President
+ |  |  | (Principal Executive Officer)
+ |  |  | 
+Date: | August 12, 2026 | By: | /s/ Robert Komin
+ |  | Name: | Robert Komin
+ |  | Title: | Chief Financial Officer
+ |  |  | (Principal Financial Officer)
+ |  |  | 
+Date: | August 12, 2026 | By: | /s/ Yagnesh Patel
+ |  | Name: | Yagnesh Patel
+ |  | Title: | Chief Accounting Officer
+ |  |  | (Principal Accounting Officer)
+
+TABLE 60
+ |  | 
+August 12, 2026
+
+/s/ Andrew D. Feldman
+Andrew D. Feldman
+Chief Executive Officer
+
+TABLE 61
+ |  | 
+August 12, 2026
+
+/s/ Robert Komin
+Robert Komin
+Chief Financial Officer
+
+TABLE 62
+ |  | 
+August 12, 2026
+
+/s/ Andrew D. Feldman
+Andrew D. Feldman
+Chief Executive Officer
+
+TABLE 63
+ |  | 
+August 12, 2026
+
+/s/ Robert Komin
+Robert Komin
+Chief Financial Officer

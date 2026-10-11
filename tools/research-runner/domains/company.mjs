@@ -188,6 +188,7 @@ export function backupExistingCompanyOutputs(item, outputContract = {}) {
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(FUNDAMENTAL_ROOT, "公司调研", "备份", path.basename(outputDir)),
     backupKey: primary,
     expectedFileName: outputContract.expectedOutputFile?.split("/").pop() || "",
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
@@ -203,6 +204,7 @@ export function rollbackCompanyFormalRun(item, prepareResult = {}, outputContrac
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir,
+    backupRootDir: path.join(FUNDAMENTAL_ROOT, "公司调研", "备份", path.basename(outputDir)),
     expectedFileName: outputContract.expectedOutputFile?.split("/").pop() || "",
     prepareResult,
     newFileNameMatcher: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)

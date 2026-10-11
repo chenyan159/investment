@@ -1,0 +1,916 @@
+Corrected Transcript
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+Total Pages: 16
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+06-May-2026 
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+ 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+2
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+ 
+CORPORATE PARTICIPANTS 
+ 
+Michelle Simmons 
+Senior Vice President-Investor & Public Relations, Flex Ltd. 
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+Michael Hartung 
+President & Chief Commercial Officer, Flex Ltd. 
+Kevin S. Krumm 
+Chief Financial Officer, Flex Ltd. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+OTHER PARTICIPANTS 
+ 
+Samik Chatterjee 
+Analyst, JPMorgan Securities LLC 
+Luke L. Junk 
+Analyst, Robert W. Baird & Co., Inc. 
+Sahej Singh 
+Analyst, Stifel, Nicolaus & Co., Inc. 
+Mark Delaney 
+Analyst, Goldman Sachs & Co. LLC 
+Steve Barger 
+Analyst, KeyBanc Capital Markets, Inc. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+MANAGEMENT DISCUSSION SECTION 
+  
+Operator: Thank you for standing by. Welcome to Flex's Fourth Quarter and Fiscal 2026 Earnings Conference 
+Call. Presently, all participants are in a listen-only mode. After their speakers' remarks, there will be a question-
+and-answer session. [Operator Instructions] As a reminder, this call is being recorded. 
+ 
+I will now turn the call over to Ms. Michelle Simmons. You may begin. 
+ .....................................................................................................................................................................................................................................................................  
+Michelle Simmons 
+Senior Vice President-Investor & Public Relations, Flex Ltd. 
+Good morning. And thank you for joining us today for Flex's fourth quarter and fiscal Year 2026 earnings 
+conference call. With me today is our Chief Executive Officer, Revathi Advaithi; our Chief Financial Officer, Kevin 
+Krumm; and our Chief Commercial Officer, Michael Hartung. 
+ 
+We'll give brief remarks followed by Q&A. Slides for today's call as well as a copy of the earnings press release 
+are available on the Investor Relations section at flex.com. This call is being recorded and will be available for 
+replay on our corporate website. 
+ 
+Today's call contains forward-looking statements which are based on our current expectations and assumptions. 
+These statements involve risks and uncertainties that could cause actual results to differ materially. These 
+statements reflect expected results for the full fiscal year and do not give effect to the planned spin-off of the 
+Cloud and Power Infrastructure segment. 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+3
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+For a full discussion of these risks and uncertainties, please see the cautionary statements in our presentation, 
+press release, or in the risk factors section in our most recent filings with the SEC. Note, this information is subject 
+to change, and we undertake no obligation to update these forward-looking statements. 
+ 
+Please note, all growth metrics will be on a year-over-year basis unless stated otherwise. Additionally, all results 
+will be on a non-GAAP basis unless we specifically state it's a GAAP result. The full non-GAAP to GAAP 
+reconciliations can be found in the appendix slides of today's presentation as well as in the summary financials 
+posted on the Investor Relations website. 
+ 
+In addition to our earnings presentation, we also published a separate presentation regarding the proposed 
+transaction which will be discussed on today's call. Please refer to the earnings presentation to follow along. 
+ 
+Before we begin, I want to share a brief update on our Investor Day. In light of yesterday's announcement, we are 
+postponing the event until the fall when we expect to have more information to share. We will provide more details 
+as the year progresses. 
+ 
+Now, I'd like to turn the call over to our CEO. Revathi? 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+Thank you, Michelle. Good morning, and thank you for joining us today. We have a lot to cover this morning, so 
+let me begin with an important milestone that reflects how our business has evolved and where we are headed. 
+ 
+Seven years ago, we set out to transform Flex. The strategy was simple, focus on the right end markets, divest 
+noncore assets, invest in the technologies that matter, and execute with discipline. Since then, we have exited 
+consumer-focused markets, spun off Nextracker into a leading solar business, and created tremendous value for 
+our shareholders, and invested ahead of the curve in electrical products, recognizing early that compute would 
+become power hungry and that data centers would need an integrated architecture. 
+ 
+We have built a productivity machine in our factories, and most importantly, we've invested in our teams, creating 
+one of the best high-performing, values-based culture. Yesterday brought the next milestone in that journey. We 
+announced our intent to spin off our Cloud and Power Infrastructure business into a new publicly traded company, 
+with the spin expected to complete in the first quarter of calendar 2027. 
+ 
+This decision reflects our conviction that the business has achieved the scale, growth profile, and strategic 
+importance to stand on its own. It also positions Flex to sharpen its identity and invest more aggressively in its 
+highest growth, highest technology opportunities. 
+ 
+Turning to slide 5. SpinCo, historically our data center business, now captured in our CPI segment, will be a 
+global critical digital infrastructure company delivering end-to-end power and thermal management from grid to 
+chip for AI data centers and mission-critical applications like utilities. What differentiates SpinCo is its depth 
+across power, thermal, and compute integration. That depth lets us replace the fragmented multivendor approach 
+market-leading customers are actively moving away from, and gives us the opportunity to build one of the largest 
+electrical companies purpose built to deliver from utility to chip with cooling and compute integration designed in 
+from day one. 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+4
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+The timing is clear for two reasons. First, AI is driving compute density to levels that require power and thermal to 
+be engineered as a unified system, not bolted on after the fact. Customers no longer want individual subsystems. 
+They want a single partner who can deliver from grid to chip. SpinCo is purpose built for this moment. 
+ 
+Secondly, electrical infrastructure is entering a generational transformation. The shift to solid-state transformers 
+and 800-volt DC distribution will reshape how power moves from grid to chip, unlocking the density and efficiency 
+AI demands, and SpinCo is the only company with embedded power, distributed power, thermal and systems 
+depth to lead it. 
+ 
+Following the spin, Flex will continue to execute its proven playbook as a leading advanced manufacturing 
+company, designing and building highly complex products at global scale for premier brands across diversified 
+end markets. As global supply chains undergo structural changes, shorter technology cycles, rising system 
+complexity, and persistent constraints, customers are rethinking how products are designed, manufactured, and 
+scaled. These shifts are expanding opportunities for Flex to deepen customer relationships and capture greater 
+system-level engagement. 
+ 
+Post spin, as Flex allocates capital towards higher growth industries such as healthcare, robotics, warehouse 
+automation, and networking, we believe the company is entering its next phase of transformation. With a 
+simplified portfolio and a sharpened strategic focus, Flex is positioned to expand margins and continue to actively 
+optimizing its portfolio towards higher-growth opportunities that will drive strong cash flows and shareholder 
+returns. 
+ 
+Now, turning to slide 6. We believe spinning Flex into two distinct companies positions both to sharpen strategic 
+focus, improve operating discipline and align capital allocation with their respective growth and margin priorities. 
+This is not about changing our strategy. It is about unlocking value through simplification and clarity for 
+customers, for employees and for shareholders. 
+ 
+Now, from a financial perspective, both businesses have demonstrated strong fundamentals and we expect the 
+spin to enhance transparency while allowing each management team to pursue tailored investment priorities. We 
+plan to provide additional details over the upcoming quarters, including standalone financials at the appropriate 
+time. 
+ 
+Now, turning to slide 7. Now, to our recently-announced acquisition. Over the past several years, we have 
+deliberately evolved our portfolio across thermal technologies, around integrated structure and power. Earlier this 
+week, we closed our acquisition of Electrical Power Products, or EP², strengthening our power portfolio with utility-
+grade, specification-driven solutions for grid modernization and electrification. These capabilities are becoming 
+critical as data center growth places greater demands on power availability and reliability. 
+ 
+Combined with our existing power distribution, switchgear, thermal management and integrated rack-scale 
+capabilities, EP² enhances our ability to deliver end-to-end solutions for utility and infrastructure customers and it 
+increases our exposure to long-cycle margin-accretive programs that support grid resiliency. 
+ 
+To put a point on that momentum, we've recently secured substantial incremental business with several 
+hyperscaler and data center customers, including Google. These are not single-product manufacturing 
+engagements. They span power infrastructure, thermal systems and complex hardware manufacturing, deployed 
+at scale across our global footprint. 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+5
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Capital deployment for these projects is already underway and it will remain elevated through FY 2027 as this 
+growth, alongside broader CPI growth, requires expanded investment. We expect this level of investment to be 
+unique to fiscal year 2027. We have line of sight into fiscal year 2028 and 2029 requirements and expect CapEx 
+to normalize in fiscal year 2028. Awards of this scope are exactly why we believe this spin is the right move. 
+These deployments require the integrated end-to-end capability that SpinCo will deliver as a focused company. 
+ 
+Now, turning to slide 8. Let me put some numbers around the growth opportunity. For SpinCo, we're targeting 
+revenue growth of 65% to 75% in fiscal year 2027, a significant step-up from fiscal year 2026. And for FY 2028, 
+we expect further acceleration with growth of over 80%. 
+ 
+Going to slide 9. Flex, post-spin, is targeting low-to-mid single-digit revenue growth in that same timeframe and 
+will invest in areas where growth is accelerating, including regulated and technology-driven markets such as 
+healthcare, warehouse automation and networking tied to data center infrastructure growth. 
+ 
+Now, when you put all this together, it is clear that this is the right moment for this milestone. It is also clear that 
+this leadership team has the credibility to deliver this milestone, having already executed and delivered spins like 
+Nextracker. 
+ 
+Now, talking about leadership, I want to briefly address leadership as we take our next step. Turning to slide 10, 
+I'm excited to share that I will serve as CEO of SpinCo as we build a focused, purpose-driven platform designed 
+to lead the future of compute infrastructure. I'm equally confident in the future of Flex and I'm pleased to leave it in 
+Michael Hartung's very capable hands as CEO. Michael joined Flex in 2007 through the acquisition of Solectron 
+and has since held a range of senior leadership roles, most recently as our Chief Commercial Officer. 
+ 
+Over the past seven years, Michael and I have worked closely to transform this company, driving discipline, 
+portfolio optimization, margin expansion, targeted acquisitions and building a stronger and a more resilient Flex. 
+This playbook has delivered stronger customer relationships and meaningful returns for shareholders. 
+ 
+Michael, thank you for your trusted partnership over the years and for stepping into this role. I look forward to 
+supporting you and the entire leadership team as we embark on this next chapter. 
+ .....................................................................................................................................................................................................................................................................  
+Michael Hartung 
+President & Chief Commercial Officer, Flex Ltd. 
+Thank you, Revathi. I'm honored to step into the role of CEO of Flex and to build on the strong foundation this 
+team has created. As we sharpen our focus, I'm confident Flex is well positioned to build on its legacy of global 
+manufacturing and supply chain excellence while serving customers across diversified end-markets. I'm excited 
+about the opportunities ahead and what this team can accomplish together. 
+ 
+With that, I'll turn the call over to Kevin, who will walk through the financials in more detail. 
+ .....................................................................................................................................................................................................................................................................  
+Kevin S. Krumm 
+Chief Financial Officer, Flex Ltd. 
+Thank you, Michael. And good morning, everyone. I'd like to add that I too am excited about yesterday's 
+announcement of the spin and I'm looking forward to working with Revathi and Michael throughout this transition. 
+ 
+Before I discuss our financial results, I'd like to take a moment to explain our new segmentation, outlined on slide 
+12. From this quarter, moving forward, we will be reporting in three new segments, Regulated Manufacturing 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+6
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Solutions, Integrated Technology Solutions, and Cloud and Power Infrastructure. This new segmentation will 
+provide clearer visibility into our business units as our portfolio evolves. 
+ 
+So up front, I will make a few comments about our new segments. Regulated Manufacturing Solutions, or RMS, 
+like Reliability Solutions before it, will house our Industrial, Automotive, & Healthcare business units. RMS is 
+focused on specialized products with longer life cycles that demand a greater level of precision and consistency. 
+Our critical and embedded power businesses have been removed from industrial and are now reported in a new 
+segment. 
+ 
+Integrated Technology Solutions, or ITS, consists of our Communications and Lifestyle business units. Similar to 
+our previous Agility Solutions segments, ITS serves customers in fast-moving industries with shorter product life 
+cycles, with a focus on adaptability and time to market to meet the ever-changing needs of evolving industries. 
+Communications includes what was previously our non-cloud CEC businesses, and Lifestyle now includes our 
+former Consumer Device businesses. 
+ 
+Finally, we have consolidated our Data Center Power and Cloud businesses, once housed within Industrial and 
+CEC, into a new segment, Cloud and Power Infrastructure, or CPI. This new segment represents the business 
+previously included in our Data Center disclosures and will now be reported via our Cloud & Cooling and Power 
+business units. As Revathi previously announced, we intend to spin this segment into a new publicly traded 
+company and will provide segment-level disclosures until the transaction closes next year. 
+ 
+I will now discuss our financial results for the fourth quarter fiscal 2026. Starting with our key financials on slide 
+13. Fourth quarter revenue came in at $7.5 billion, up 17% year-over-year. Adjusted gross profit totaled $737 
+million, and adjusted gross margin improved to a record level 9.9%, up 50 basis points from the prior year. 
+Adjusted operating profit was $500 million, with adjusted operating margins at 6.7%, up 50 basis points from the 
+prior year and another company record due to improved operational efficiency and product mix. Finally, adjusted 
+earnings per share for the quarter increased 27% year-over-year to $0.93 per share. 
+ 
+Turning to our quarterly segment results on the next slide. RMS revenue was $2.7 billion, up 13% from the prior 
+year, driven by strong growth in Industrial and Healthcare. Adjusted operating income totaled $180 million, and 
+adjusted operating margin was 6.6%, up 80 basis points year-over-year, driven by strong improvements in 
+Industrial and Automotive. 
+ 
+ITS revenue totaled $2.9 billion, an increase of 13% year-over-year. The increase in revenue was primarily driven 
+by strength in Communications. Adjusted operating income was $147 million, and adjusted operating margin was 
+5%, unchanged from the prior year. 
+ 
+Finally, CPI revenue totaled $1.8 billion, up 31% versus the prior year, driven by growth in both business units, 
+with Power's growth rate exceeding Cloud's. Adjusted operating income was $182 million, and adjusted operating 
+margin was 9.9%, largely in line with the prior year with favorable mix impacts from Power, offset by infrastructure 
+investment in Critical Power and ramp costs in Cloud. 
+ 
+Looking at our full year results on slide 15. Revenue was $27.9 billion, up 8% on continued strong growth in 
+Cloud, Power and Industrial, offset by persistent softness in our consumer-related end markets. Adjusted gross 
+profit totaled $2.7 billion, and adjusted gross margin improved to 9.5%, up 70 basis points from the prior year. 
+Adjusted operating income totaled $1.8 billion, up 21%, and adjusted operating margin was 6.3%, up 70 basis 
+points year-over-year, primarily driven by favorable product mix and continued improvements in operational 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+7
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+efficiency. For the full year, Flex achieved adjusted EPS of $3.30 per share, up 25%, driven by increased adjusted 
+operating income and strong share repurchases. 
+ 
+Turning to our segment results for the year on slide 16. Similar to fiscal 2025, fiscal 2026 was a dynamic year, 
+characterized by macroeconomic uncertainties and rapidly accelerating AI deployment. I'm proud to say that, 
+once again, we delivered on our expectations for growth, exceeding our revenue expectations for all segments. 
+We have also maintained our focus on operational efficiency and execution, which led to another record year for 
+adjusted growth and adjusted operating margins. 
+ 
+RMS revenue was $10.2 billion for the year, a year-over-year increase of 5%, driven by Industrial and Healthcare, 
+and delivered an adjusted operating margin of 6%, up 80 basis points, primarily driven by improvements in 
+Industrial. 
+ 
+ITS revenue totaled $11.1 billion, down 2% from the prior year due to persistent softness in Lifestyle, offset by 
+growth in Communications. Adjusted operating margin was 5.4%, an increase of 60 basis points, driven by 
+improvements in Communications. 
+ 
+CPI revenue was $6.6 billion, up 38% year-over-year, exceeding our target of 35%. Adjusted operating margin 
+was 9.2%, down 100 basis points year-over-year, reflecting incremental infrastructure investments in Critical 
+Power and ramp costs in Cloud. While these investments temporarily weighed on our margins, we expect to 
+recoup the full 100 basis points in FY 2027 and see further expansion of 50 to 100 basis points in FY 2028 as we 
+grow into these investments. 
+ 
+Moving to cash on slide 18. Free cash flow in the quarter was $212 million and for the full fiscal year, we delivered 
+approximately $1.1 billion in free cash flow. Q4 inventory was up 5% sequentially and 15% year-over-year, mostly 
+supporting our CPI and RMS segment growth year-over-year. Inventory, net of working capital advances, was 55 
+days, a reduction of 1 day versus the prior year. 
+ 
+Fourth quarter net CapEx totaled $201 million, bringing full year CapEx to $625 million or approximately 2.2% of 
+revenue. In the fourth quarter, we repurchased $200 million of stock or approximately 3 million shares. And for the 
+full year, we repurchased $944 million of stock or approximately 19 million shares. 
+ 
+Moving on to our fiscal 2027 outlook on slide 19. For fiscal 2027, our expectations are the following: revenue to be 
+between $32.3 billion and $33.8 billion, up 18% at the midpoint; adjusted operating margin to be between 7% and 
+7.1%, an increase of approximately 80 basis points, driven in large part by recouped FY 2026 investments in CPI. 
+We expect an adjusted tax rate of 21%. We expect adjusted EPS to be between $4.21 and $4.51, up 32% at the 
+midpoint. Finally, we expect CapEx to be in the range of $1.4 billion to $1.6 billion and free cash flow conversion 
+of approximately 60%, excluding costs associated with the spin transaction. 
+ 
+As Revathi mentioned, we secured significant business with multiple customers, including a multiyear contract 
+with Google, underpinning our strong CPI growth expectations of 65% to 75% in FY 2027 and 80%-plus for FY 
+2028. 
+ 
+What we're putting in place today is foundational, Power and Cooling infrastructure to manufacture for the data 
+center market to support a broad set of hyperscaler and AI programs, products, and partnerships through FY 
+2028 and FY 2029. As we scale these investments, we expect incremental investments, but at levels materially 
+lower than the upfront investment required to establish the core infrastructure and capabilities for this next phase 
+of robust growth. 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+8
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+ 
+To put a finer point on it, we expect CapEx to return to historical levels in FY 2028, with CPI returning to 
+approximately 2.5% to 3% of revenue, and ITS and RMS below 2% of revenues. Post spin, both companies will 
+be well positioned to capture growth from this generational, AI-driven build-out. 
+ 
+Moving on to our fiscal 2027 segment outlook. For RMS, we expect revenue to be up low-to-mid single digits, 
+driven by strength in Industrial and Healthcare as Automotive continues to stabilize. For ITS, we expect revenue 
+to be flat-to-up low single digits as strength in Communications is offset by softness and our continued 
+deemphasis of low-value markets in Lifestyle. And for CPI, we expect revenue to be up 65% to 75%, driven by 
+continued accelerating demand in both Cloud and Power, with Power growth again outpacing Cloud growth. 
+ 
+Finishing off with our guidance for the first quarter on slide 21, we expect RMS to be up high single digits to low 
+double digits, driven by Industrial and Healthcare. We expect ITS to be up high single digits to low double digits 
+based on strength in Communications, offset by weakness in Lifestyle. We expect CPI revenue to be up 20% to 
+30%, driven by continued growth in Power and Cloud. We expect CPI growth to ramp in the second half of fiscal 
+2027 as investments made in fiscal 2026 allow us to deliver against robust demand from recent program wins. 
+ 
+For total Flex, we expect revenue in the range of $7.35 billion to $7.65 billion, up 14% at the midpoint, with 
+adjusted operating income between $469 million and $499 million. Interest and other expense is estimated to be 
+around $65 million and the adjusted tax rate to be around 21%. Lastly, we anticipate adjusted EPS to be between 
+$0.86 and $0.92 per share, up 24% at the midpoint, based on approximately 374 million weighted average shares 
+outstanding. 
+ 
+In summary, we finished FY 2026 in a position of strength, delivering record margins, strong cash flow and growth 
+across critical end-markets. As we look ahead to fiscal 2027 and our announcement yesterday to spin off our 
+Cloud and Power Infrastructure segment, we believe both companies are well positioned for their next phases of 
+value creation. 
+ 
+Flex's disciplined playbook under Revathi and Michael has driven shareholder returns that have consistently 
+outperformed market benchmarks and current planned investments are intended to support continued progress 
+post spin. We are excited about the prospects of these businesses moving forward and we are confident in the 
+continued value they will create for our investors, customers and our employees. 
+ 
+With that, I will now turn the call back over to the operator to begin Q&A. 
+ 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+9
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+ 
+QUESTION AND ANSWER SECTION 
+  
+Operator: Thank you. We will now begin the question-and-answer portion of today's call. [Operator Instructions] 
+Our first question comes from the line of Samik Chatterjee with JPMorgan. Please proceed with your question. 
+ .....................................................................................................................................................................................................................................................................  
+Samik Chatterjee 
+Analyst, JPMorgan Securities LLC 
+Q 
+Hi. Thanks for taking my questions. A lot to digest here in terms of information over last night and today morning. 
+So, thank you for all the presentations here. 
+ 
+Revathi, maybe if I can start with the decision to do a SpinCo here with the Power and Cloud assets, I understand 
+the sort of value unlock that might create, but how did you sort of balance that against looking at the scale of the 
+business, the sort of diversification across end markets and also customer concentration that that business might 
+have? How did you sort of weigh those opportunities and sort of those drivers before taking the spin? Interested 
+to hear your thoughts on that and have a follow-up. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. Samik, thank you for the question. I would say that value unlock story is absolutely very clear, like you said. 
+I think the important part to understand is if you look at what's happening in the AI data center space and across 
+power infrastructure in the US and across the world, it is a onetime change that is happening in the architecture of 
+power and in the architecture of data centers. 
+ 
+And if you look at the portfolio that we have very thoughtfully built out in the last four, five years, we do everything 
+from rack and pod scale system integration. We have the power and thermal architecture we talk about. And then, 
+we've been investing in building out all the way from the data center out to the substation with our utility 
+investments that we have done. 
+ 
+So, we have built a very diversified portfolio across power, across thermal, across compute and I think the beauty 
+of the whole thing is with a very diversified customer base, not just hyperscalers, but also across colos, across 
+neoclouds and then across a wide variety of utility customers. 
+ 
+So, diversified customers, diversified product portfolio, fantastic forward-looking growth rate, which is clear in 
+terms of the value unlock story. So, to me that definitely felt like it was a no-brainer to do it at this point in time 
+with the business that we have built and it is very well set up to run as a standalone company. 
+ .....................................................................................................................................................................................................................................................................  
+Samik Chatterjee 
+Analyst, JPMorgan Securities LLC 
+Q 
+Okay. Got it. And maybe just a quick follow-up. And thank you for all the details. The acceleration that you're 
+expecting in CPI's growth rate, can you just flesh that out a bit more? How much of that is attributable to your 
+multiyear agreement with Google related to maybe Power, which you've obviously also invested in over the last 
+year? Thank you. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+10
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Yeah. I would say, Samik, that the acceleration of the CPI growth rate is related to Google and multiple other 
+hyperscalers and including the growth that we're going to see across colos and neoclouds. So, it's a very 
+diversified kind of customer growth rate. It feels like almost every utility customer and almost every data center AI 
+customer is seeing some very significant expansion. So, we feel really good about the 65% to 75% and the 80-
+plus percent growth rate that we're seeing that we have said. 
+ 
+And it's across all the three end markets, so which is product lines, cooling, compute integration, and power, and 
+across multiple customers. So, well distributed between Power and Cloud, well distributed across multiple 
+customers. And as I said earlier in my interview earlier today is that we're also booked out in terms of capacity 
+and backlog for the next couple of years. 
+ .....................................................................................................................................................................................................................................................................  
+Samik Chatterjee 
+Analyst, JPMorgan Securities LLC 
+Q 
+Okay. Thank you. Thank you. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+Operator: Thank you. Our next question comes from the line of Luke Junk with Baird. Please proceed with your 
+question. 
+ .....................................................................................................................................................................................................................................................................  
+Luke L. Junk 
+Analyst, Robert W. Baird & Co., Inc. 
+Q 
+Good morning. Thanks for taking the questions. Be curious just to get some additional color now that it's a bigger 
+part of this SpinCo on the Power franchise, and just how we should think about some of the major 
+subcomponents in terms of embedded and Critical Power in that business. And just thinking about relative growth 
+rates backwards looking and as you think about some of the discrete opportunities for those parts of the business 
+going forward as well. Thank you. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. Luke, I would say that in terms of subcomponents of Power, I've said this before is what started our journey 
+was the fact that Flex was already doing work around embedded power, which was power for the chip itself. Small 
+business many years ago, but with the acceleration and the focus on power density for chip, obviously that 
+business is accelerating pretty significantly looking forward. And plus, with the change in technology happening 
+with 400-volt DC and 800-volt DC, embedded power is growing significantly. 
+ 
+But you can't grow by yourself just with embedded power, right? What affects the power in the rack also affects all 
+the power outside. So, distributed power, which is low-voltage switchgear, medium-voltage switchgear, all the way 
+out to power pods outside the data center, all the way up to the substation or utility-grade power infrastructure, 
+we're seeing growth across all of it, end-to-end. 
+ 
+I'd say in terms of growth rates, we're going to share more as we – we've have already given a lot of transparency 
+into the new segmentation. And as every quarter gets announced, you will see all the comparisons get more 
+clear. And so, I'd say feeling very good in terms of how the business is performing across the Power franchise, 
+and then you'll see further information on all the financials as we look forward. 
+ .....................................................................................................................................................................................................................................................................  
+Luke L. Junk 
+Analyst, Robert W. Baird & Co., Inc. 
+Q 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+11
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Thank you for that. And then for my follow-up, just hoping maybe you could give us some more texture on the 
+multiyear contract with Google that you mentioned and the pipeline and sorts of opportunities that you're seeing in 
+total. It sounds like these awards are fairly foundational in terms of materiality. And I'm just hoping you can maybe 
+double click on where customers are coming from incrementally, and it feels like this is maybe a different type of 
+opportunity. You mentioned kind of meeting the moment of this generational change. Is that kind of what you're 
+seeing in these awards opportunities as well? Thank you. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. I would say that the multiyear contract is with Google, as we talked about in the call itself, but it's also 
+across multiple hyperscalers. I think that's – and it's also across neoclouds and across colos. So, I think that's a 
+very important diversification story. But I think the cool part about all of this is it's not just in the compute 
+integration side or in terms of building mechanical structures like racks and enclosures, but is also across things 
+like 400-volt DC, 800-volt DC power architecture for hyperscalers or distributed power in terms of the data center 
+and the utility itself. 
+ 
+So, these multiyear contracts are really across multiple product lines, across multiple hyperscalers, and other 
+customers like neoclouds, colos, and utilities. Let's not forget utilities also. And we feel good about the fact that 
+we're adding capacity to meet this kind of multiyear commitment that we had from numerous customers, and 
+we're setting up our factories to enable that kind of growth. 
+ .....................................................................................................................................................................................................................................................................  
+Luke L. Junk 
+Analyst, Robert W. Baird & Co., Inc. 
+Q 
+Excellent. I'll leave it there. Thank you so much. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+Operator: Thank you. Our next question comes from the line of Ruben Roy with Stifel. Please proceed with your 
+question. 
+ .....................................................................................................................................................................................................................................................................  
+Sahej Singh 
+Analyst, Stifel, Nicolaus & Co., Inc. 
+Q 
+Hi, guys. This is Sahej Singh on for Ruben Roy. Good morning. Thank you for the question. Revathi, Kevin sort of 
+called out Power as the favorable mix driver in the fourth quarter and Cloud as the ramp cost drag. So, as Cloud, 
+that's to say sort of compute, cooling, data center architecture business units. As they scale through fiscal 2027, 
+now with the Google multiyear contract that you mentioned and the GPU programs that we know of, does this 
+Cloud's margin profile, once ramp costs digest, converge toward the segment average? And to the degree you're 
+able to speak to it, in a normalized FY 2028, what's the rough margin spread between the two business units 
+within CPI? 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Kevin, you want to take that? 
+ .....................................................................................................................................................................................................................................................................  
+Kevin S. Krumm 
+Chief Financial Officer, Flex Ltd. 
+A 
+Yeah. Hi. I'll take that question. So, your question on sort of Cloud margins, as we move into FY 2028, we did 
+have ramp costs in FY 2027. We do expect to absorb those costs and continue to scale through that. And when 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+12
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+looking at CPI, though, I will say that our Cloud margins are lower than our Power margins, and we've been 
+talking about that for the last few years. And Power in FY 2027, we also invested in infrastructure costs that we 
+expect to grow into in FY 2028 as well. 
+ 
+And that's the improvement that I pointed to in the script, where we think – where we see CPI margin improving 
+100 basis points, largely driven by us growing into those investments that we made. But just to put a finer point on 
+your question, our Power margins are going to be and will continue to be higher than our Cloud margins in that 
+segment. 
+ .....................................................................................................................................................................................................................................................................  
+Sahej Singh 
+Analyst, Stifel, Nicolaus & Co., Inc. 
+Q 
+Thank you. That's helpful. Just a follow-up. Michael, congrats on the role. RMS came in at, I believe you said, 6% 
+adjusted operating margin in fiscal 2026, and ITS just a tad below that. So, I guess without running the front – 
+front running the long-term framework you'll lay out in the fall, can you help us directionally think about the margin 
+progression for RemainCo. 
+ 
+Is mid-6% achievable through fiscal 2027/2028 on the trajectory you're laying out or is that further out as 
+Healthcare and Auto recovery take time to play through. And I guess on the continued deemphasis on Lifestyle, 
+low-value markets, should we think of that as a more meaningful revenue exit that benefits margin or just more 
+portfolio refinement at the edges? And thank you, I'll stop there. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Michael? 
+ .....................................................................................................................................................................................................................................................................  
+Michael Hartung 
+President & Chief Commercial Officer, Flex Ltd. 
+A 
+Yeah. First, thank you for the congratulations. I appreciate it. In terms of the story for this year, if we start with the 
+margin perspective, let's start with first what our result was in the FY 2026 period where both ITS and RMS were 
+up 80 basis points from 4.6% to 5.4%. And that strength came from across the portfolio with the exception of 
+Lifestyle. And remember that Lifestyle now includes our Consumer Devices business, so this does reflect our 
+deliberate repositioning away from those lower value end markets. 
+ 
+I would also say that when you think about the playbook going forward, that we will continue to, from a financial 
+perspective, prioritize high-quality earnings that maximize cash generation. We'll continue to drive the margin 
+expansion story through some of the similar themes we've talked about in the past, starting with productivity on 
+the very early stages of driving improvement on our cost structure, on the advent of using AI-enabled 
+technologies going forward. And then we'll continue to optimize the mix going forward as well. 
+ 
+So, from a margin standpoint, strength in Q4, similar progress into Q1. As you think about going forward, we think 
+there's a lot of room for improvement, given that productivity improvement we've been driving, the value of AI in 
+the future, and still there's gas in the tank to continue optimizing that portfolio. If you think about the near term, 
+we're early in the year, strong Q4, strong guiding Q1, still have a balanced perspective first half, second half, 
+relatively measured view on the second half today and don't forget we're lapping a really strong comparable in the 
+second half, including that strong Q4. 
+ 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+13
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+So, really pleased with how we're positioned and really optimistic about where we can take this story from here, in 
+particular from a margin perspective and a revenue story. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. I think the only thing I would add, Michael, is that just to put a finer point on everything you've said is, the 
+framework for Flex post-SpinCo is to basically focus on the things we're focused on. So, you'll see strong margin 
+improvement. You'll see focus on growth in the areas of highest return. You'll see great cash generation and 
+buyback invested with it and investments into new areas and technologies we want to lean into, like areas like 
+healthcare or associated with other infrastructure spend you're seeing. 
+ 
+So, the game plan is to continue to replicate what we have done and really lean into areas of investment that we 
+haven't been able to focus on because of the focus on data centers. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+Operator: Thank you. Our next question comes from the line of Mark Delaney with Goldman Sachs. Please 
+proceed with your question. 
+ .....................................................................................................................................................................................................................................................................  
+Mark Delaney 
+Analyst, Goldman Sachs & Co. LLC 
+Q 
+Yes. Good morning. Thanks for taking my questions. Congratulations on the strong results and to both Revathi 
+and Michael on the upcoming new roles. 
+ 
+My first question was related to the plans for the spin. I'm hoping you can help investors better understand the 
+potential for the two companies to grow faster on a standalone basis than they could together, perhaps with some 
+examples and if an aspect is to be able to better grow the products portion of the CPI business? 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. Mark, first, just thank you for the congratulations. We've been seeing the story with Flex together for a few 
+years. I would say for the spin portion of the business for CPI, we've already given a pretty strong guide in terms 
+of growth. We've talked about 65% to 75% and 80-plus percent for the year after. 
+ 
+I would say the focus – and you've also seen us focus on adding more to the product portfolio. We just announced 
+the acquisition of EP². So, we're obviously continuing to expand our geographic reach and our product portfolio 
+within the CPI portion of the business. 
+ 
+I feel very good about the overall architecture we have put together with thermal management on cooling, with 
+power, both in the rack, outside the rack, now heading all the way to the utilities and then, the whole focus in 
+terms of rack and scale integration, bringing that together. 
+ 
+So, I would say the potential to grow is pretty significant. It is going to be all about kind of continuing to focus on 
+adding capacity and bringing it on in a disciplined way, which is our biggest focus right now. And we'll keep 
+looking for areas of technology that we can invest in. 
+ .....................................................................................................................................................................................................................................................................  
+Mark Delaney 
+Analyst, Goldman Sachs & Co. LLC 
+Q 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+14
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Understood. My other question was to better understand the medium to longer-term outlook for CPI. You guided 
+for 65% to 75% growth for fiscal 2027, another 80%-plus in fiscal 2028. Does that growth represent Flex getting to 
+the full run rate of the deals that's already signed across multiple hyperscalers in that fiscal 2028 timeframe? Or 
+do the deals that you signed ramp even beyond 2028? 
+ 
+And then, maybe help investors understand where margins and CPI can get to over that two to three-year out 
+timeframe. I mean already 9.2% in fiscal 2026, but maybe give us a sense of where that could go over the 
+medium to longer term as you ramp the programs you discussed today. Thanks. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Kevin, you want to start off? 
+ .....................................................................................................................................................................................................................................................................  
+Kevin S. Krumm 
+Chief Financial Officer, Flex Ltd. 
+A 
+Yeah, sure. Hi, Mark. So, your questions on the programs that we've signed up commensurate with the 
+investments we're making. I would say that we would continue to see those programs expand beyond FY 2028. 
+So, the numbers we're giving you today is through FY 2028, but we would see some of those programs continue 
+to grow into FY 2029. 
+ 
+From a margin standpoint, we've talked about it and CPI, we expect to recoup the investment we made this year, 
+we've said that's 100 basis points plus. As we move into FY 2028, we expect additional margin expansion in CPI. 
+On the script, I said 50 basis points to 100 basis points. The drivers of that are going to be mix from the product 
+businesses continuing to grow faster as a percentage of revenue than the Cloud side. But additionally, it's 
+continued improvement on margins in our products business, really both, but our products business as we move 
+through FY 2028. 
+ 
+And so, moving FY 2028/FY 2029, I guess I would say our expectations are we'll continue to raise the bar as we 
+move through FY 2028 and our expectations will continue to go up as we move into FY 2029. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. So, Mark, our framework of whether it's for CPI or for Flex won't change in the sense that we will focus on 
+growth, but margin expansion will be a huge part of this story. So, again we're going to do both in both of the 
+companies. And whether it's coming from mix or accelerated growth or continued investment in our products 
+business, our expectation is that we'll see margin expansion in both businesses. 
+ .....................................................................................................................................................................................................................................................................  
+Mark Delaney 
+Analyst, Goldman Sachs & Co. LLC 
+Q 
+Thanks. I'll pass it on. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+Operator: Thank you. [Operator Instructions] And our last question comes from the line of – our next question 
+comes from the line of Steve Barger with KeyBanc. Please proceed with your question. 
+ .....................................................................................................................................................................................................................................................................  
+Steve Barger 
+Analyst, KeyBanc Capital Markets, Inc. 
+Q 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+15
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+Hi. Thanks. Revathi, how much of the CPI growth forecast is just this incredible demand environment versus your 
+own success in pitching the full product and service integration model to customers? And are you allocating 
+capacity to customers who are willing to commit to the full suite? 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. I would say, Steve, first is that's a really important question because a lot of what you are seeing today in 
+terms of expectations from customers is still individual product based. But what you're seeing moving forward 
+from a technology architecture perspective and what we're working with customer in the next generation of 
+products is more full architecture based. 
+ 
+So, you'll continue to see that migration from individual products to complete architecture. And I would say that 
+there's more to come on that. You're definitely seeing that both hyperscalers, colos, neoclouds are rearchitecting 
+their organizations to be able to deal with this change. And so, today, I would say a lot of our growth is individual 
+product, but a lot of our technology road maps are based on a complete architecture. 
+ .....................................................................................................................................................................................................................................................................  
+Steve Barger 
+Analyst, KeyBanc Capital Markets, Inc. 
+Q 
+Got it. Thank you. And then obviously the addressable market is just expanding really fast. It's hard to know how 
+that – where that stops if it does. But just thinking about the portfolio you've assembled, what has become the 
+hardest part of the business to replicate? Just talk about how you view your durable moat in a business that's 
+growing the way it is. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+A 
+Yeah. I'd say, Steve, first is the addressable market does continue to expand. I'd say US data center capacity still 
+is seeing a considerable shortfall in terms of what we're seeing today, but even the future-looking projections 
+we're seeing, in terms of what we're hearing from customers, and what you're all seeing publicly. 
+ 
+I'd say in terms of the addressable moat, for me the addressable moat always comes down to two things. One is 
+what is your performance in terms of capacity growth and schedule? Today, customers want everything fully 
+assembled, fully tested, just drop it off, ready to go in my data centers. And to do that at scale with the complexity 
+that customers are expecting, very few companies can do this. This is – I've done three decades of this, and it's 
+very hard to bring that scale together and that architecture together and deploy it fully tested at customers. 
+ 
+So, I would say that is a very significant moat that we have. And I saw that day one when I came to Flex is you 
+can combine the complexity of power and cooling and compute and then put it together in one architecture with 
+Flex's scale. I think that's the big moat that we're seeing, Steve. And I expect that that will continue, and actually 
+we'll get even more complex as we move forward. 
+ .....................................................................................................................................................................................................................................................................  
+Steve Barger 
+Analyst, KeyBanc Capital Markets, Inc. 
+Q 
+Excellent. Thanks for the time. 
+ .....................................................................................................................................................................................................................................................................  
+Kevin S. Krumm 
+Chief Financial Officer, Flex Ltd. 
+A 
+Thanks, Steve. 
+
+Flex Ltd. (FLEX) 
+Q4 2026 Earnings Call 
+Corrected Transcript 
+06-May-2026 
+ 
+ 
+1-877-FACTSET   www.callstreet.com 
+ 
+16
+Copyright © 2001-2026 FactSet CallStreet, LLC
+ 
+ 
+Operator: Thank you. I'll now turn the call back over to the CEO for any closing remarks. 
+ .....................................................................................................................................................................................................................................................................  
+Revathi Advaithi 
+Chief Executive Officer & Director, Flex Ltd. 
+Thank you. Hey, yesterday's announcement marks another foundational step in the transformation of our 
+business, and we're really excited about the opportunities ahead of us. 
+ 
+On behalf of the entire Flex leadership team, I want to say a sincere thank you to our customers for their trust and 
+partnership, of course, to our shareholders for their support, and the global Flex team for their dedication and 
+contributions. 
+ 
+We look forward to sharing further updates in the coming months. Thank you, everyone. 
+ .....................................................................................................................................................................................................................................................................  
+ 
+Operator: Thank you. This now concludes today's call. Thank you for joining. You may now disconnect. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Disclaimer 
+The information herein is based on sources we believe to be reliable but is not guaranteed by us and does not purport to be a complete or error-free statement or summary of the available data. 
+As such, we do not warrant, endorse or guarantee the completeness, accuracy, integrity, or timeliness of the information. You must evaluate, and bear all risks associated with, the use of any 
+information provided hereunder, including any reliance on the accuracy, completeness, safety or usefulness of such information. This information is not intended to be used as the primary basis 
+of investment decisions. It should not be construed as advice designed to meet the particular investment needs of any investor. This report is published solely for information purposes, and is 
+not to be construed as financial or other advice or as an offer to sell or the solicitation of an offer to buy any security in any state where such an offer or solicitation would be illegal. Any 
+information expressed herein on this date is subject to change without notice. Any opinions or assertions contained in this information do not represent the opinions or beliefs of FactSet 
+CallStreet, LLC. FactSet CallStreet, LLC, or one or more of its employees, including the writer of this report, may have a position in any of the securities discussed herein. 
+ 
+THE INFORMATION PROVIDED TO YOU HEREUNDER IS PROVIDED "AS IS," AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FactSet CallStreet, LLC AND ITS LICENSORS, 
+BUSINESS ASSOCIATES AND SUPPLIERS DISCLAIM ALL WARRANTIES WITH RESPECT TO THE SAME, EXPRESS, IMPLIED AND STATUTORY, INCLUDING WITHOUT LIMITATION ANY IMPLIED 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE 
+LAW, NEITHER FACTSET CALLSTREET, LLC NOR ITS OFFICERS, MEMBERS, DIRECTORS, PARTNERS, AFFILIATES, BUSINESS ASSOCIATES, LICENSORS OR SUPPLIERS WILL BE LIABLE FOR ANY 
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOST PROFITS OR REVENUES, GOODWILL, WORK STOPPAGE, 
+SECURITY BREACHES, VIRUSES, COMPUTER FAILURE OR MALFUNCTION, USE, DATA OR OTHER INTANGIBLE LOSSES OR COMMERCIAL DAMAGES, EVEN IF ANY OF SUCH PARTIES IS ADVISED 
+OF THE POSSIBILITY OF SUCH LOSSES, ARISING UNDER OR IN CONNECTION WITH THE INFORMATION PROVIDED HEREIN OR ANY OTHER SUBJECT MATTER HEREOF. 
+ 
+The contents and appearance of this report are Copyrighted FactSet CallStreet, LLC 2026 CallStreet and FactSet CallStreet, LLC are trademarks and service marks of FactSet CallStreet, LLC. All 
+other trademarks mentioned are trademarks of their respective companies. All rights reserved. 

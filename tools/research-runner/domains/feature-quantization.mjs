@@ -207,6 +207,7 @@ export function backupExistingFeatureQuantizationOutputs(item, outputContract = 
   return backupExistingOutputs({
     rootDir: paths.rootDir || PROJECT_ROOT,
     outputDir: paths.outputDir || FEATURE_QUANTIZATION_OUTPUT_DIR,
+    backupRootDir: paths.backupRootDir || path.join(path.dirname(paths.outputDir || FEATURE_QUANTIZATION_OUTPUT_DIR), "备份"),
     backupKey: expectedStem,
     expectedFileName,
     matchFileName: () => false,
@@ -218,6 +219,7 @@ export function rollbackFeatureQuantizationFormalRun(item, prepareResult = {}, o
   return rollbackPreparedOutputs({
     rootDir: paths.rootDir || PROJECT_ROOT,
     outputDir: paths.outputDir || FEATURE_QUANTIZATION_OUTPUT_DIR,
+    backupRootDir: paths.backupRootDir || path.join(path.dirname(paths.outputDir || FEATURE_QUANTIZATION_OUTPUT_DIR), "备份"),
     expectedFileName,
     prepareResult,
     newFileNameMatcher: () => false,
