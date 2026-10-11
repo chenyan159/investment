@@ -3,6 +3,7 @@ import { bindResearchPlan, researchPlanMetadata } from "./research-plan-store.mj
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { primarySubject, safeOutputNamePart } from "./domains/output-path.mjs";
 
 export const TOOL_DIR = path.dirname(fileURLToPath(import.meta.url));
 export const TOOLS_DIR = path.resolve(TOOL_DIR, "..");
@@ -280,6 +281,7 @@ export function recoverRunningQueueItems({ maxAttempts }) {
   for (const item of items) {
     if (item.status !== "running" || hasCleanupBlock(item)) continue;
     item.outputFile = "";
+    delete item.companionFile;
     item.finishedAt = nowText;
     item.updatedAt = nowIso;
     if (item.attempts >= maxAttempts) {
@@ -338,10 +340,12 @@ export function claimNextQueueItem({ maxAttempts, priorityGroups = [] }) {
 
   for (const item of items) {
     if (!claimableDomains.has(item.domain)) continue;
+    if (items.some((running) => running.status === "running" && outputOwner(running) === outputOwner(item))) continue;
     if (item.status === "pending" || (item.status === "retry_pending" && item.attempts < maxAttempts)) {
       item.status = "running";
       item.attempts += 1;
       item.outputFile = "";
+      delete item.companionFile;
       item.startedAt = nowText;
       item.finishedAt = "";
       item.note = "codex_sdk_claimed";
@@ -354,6 +358,10 @@ export function claimNextQueueItem({ maxAttempts, priorityGroups = [] }) {
 
   if (changed) writeActiveQueue(items);
   return claimed;
+}
+
+function outputOwner(item) {
+  return `${item.domain}:${safeOutputNamePart(primarySubject(item.subject)).toUpperCase()}`;
 }
 
 function highestPriorityBlockingDomains(items, priorityGroups) {
@@ -375,7 +383,7 @@ function normalizePriorityGroups(priorityGroups) {
     .filter((group) => group.size);
 }
 
-export function markQueueItemDone(id, { outputFile, note = "codex_sdk_done", tokenUsageAttempt = null }) {
+export function markQueueItemDone(id, { outputFile, companionFile = "", note = "codex_sdk_done", tokenUsageAttempt = null }) {
   const items = readActiveQueue();
   const item = items.find((candidate) => candidate.id === id);
   if (!item) throw new Error(`Queue item not found: ${id}`);
@@ -383,6 +391,8 @@ export function markQueueItemDone(id, { outputFile, note = "codex_sdk_done", tok
   const now = new Date();
   item.status = "done";
   item.outputFile = outputFile || "";
+  if (companionFile) item.companionFile = companionFile;
+  else delete item.companionFile;
   item.finishedAt = formatLocalDateTime(now);
   item.note = note;
   item.updatedAt = formatLocalIso(now);
@@ -402,6 +412,7 @@ export function markQueueItemFailure(id, errorMessage, maxAttempts, { tokenUsage
   const now = new Date();
   item.status = item.attempts >= maxAttempts ? "failed" : "retry_pending";
   item.outputFile = "";
+  delete item.companionFile;
   item.finishedAt = formatLocalDateTime(now);
   item.note = `codex_sdk_failed: ${String(errorMessage || "unknown failure").slice(0, 500).replace(/\r?\n/g, " ")}`;
   item.updatedAt = formatLocalIso(now);
@@ -428,6 +439,7 @@ export function deferQueueItemForQuota(id, pauseUntil) {
   item.status = "retry_pending";
   item.attempts = Math.max(0, item.attempts - 1);
   item.outputFile = "";
+  delete item.companionFile;
   item.finishedAt = formatLocalDateTime(now);
   item.note = `codex_quota_exit: retry on next launch; reported_reset_with_buffer: ${new Date(pauseUntil).toISOString()}`;
   item.updatedAt = formatLocalIso(now);

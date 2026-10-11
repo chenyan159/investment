@@ -106,13 +106,18 @@ test("the appended prompt contains only the concise output contract", () => {
 
 test("research plans leave filesystem output routing to the runner", () => {
   const standardPlans = Object.entries(DOMAIN_ADAPTERS)
-    .filter(([name]) => !["file-run", "feature-quantization"].includes(name))
+    .filter(([name]) => !["file-run", "feature-quantization", "background"].includes(name))
     .map(([, adapter]) => path.relative(PROJECT_ROOT, adapter.promptPath).replaceAll("\\", "/"));
+  const backgroundPlanRoot = DOMAIN_ADAPTERS.background.promptPath;
+  for (const topic of fs.readdirSync(backgroundPlanRoot, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+    const current = fs.readdirSync(path.join(backgroundPlanRoot, topic.name)).find((name) => /^研究方案_\d{8}_\d{6}\.md$/u.test(name));
+    standardPlans.push(path.relative(PROJECT_ROOT, path.join(backgroundPlanRoot, topic.name, current)).replaceAll("\\", "/"));
+  }
   const filesystemRule = /把报告写入|正式输出目录固定为|输出目录固定为|推荐输出文件名：|结果写入 `D:\\drive\\Investment\\情绪面\\公司情绪\\`/u;
   for (const relativePath of standardPlans) {
     const source = fs.readFileSync(path.join(PROJECT_ROOT, ...relativePath.split("/")), "utf8");
     assert.doesNotMatch(source, filesystemRule, relativePath);
-    assert.doesNotMatch(source, /research[- ]?runner|runner|入队|队列工具/iu, relativePath);
+    assert.doesNotMatch(source, /research[- ]?runner|runner|(?<!接)入队|队列工具/iu, relativePath);
   }
 
   const featurePlansDir = path.join(FUNDAMENTAL_ROOT, "特征量化", "研究方案");

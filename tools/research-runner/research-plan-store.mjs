@@ -17,13 +17,26 @@ export function resolveCurrentPlan(directory, root = PLAN_PROJECT_ROOT) {
   return path.join(dir, files[0].name);
 }
 
+export const BACKGROUND_PLAN_DIRECTORY = "基本面/产业背景/研究方案";
+
 export function planForItem(item, root = PLAN_PROJECT_ROOT) {
+  if (item.domain === "background") return backgroundPlanForItem(item, root);
   if (item.domain !== "file-run") return RESEARCH_PLANS.find(p => p.id === item.domain);
   if (!item.promptFile) return undefined;
   const file = resolvePlanAlias(item.promptFile, root);
   return RESEARCH_PLANS.find(p => file === path.resolve(root, p.legacy)
     || file === path.resolve(root, p.directory)
     || (file.startsWith(path.resolve(root, p.directory) + path.sep) && pattern.test(path.basename(file))));
+}
+
+// 产业背景任务按专题子目录选方案；已登记的方案沿用原ID，新专题无需登记。
+function backgroundPlanForItem(item, root) {
+  const topic = item.backgroundTopic || (item.backgroundKind === "conference" ? "会议调研" : "");
+  if (!topic) return undefined;
+  const directory = `${BACKGROUND_PLAN_DIRECTORY}/${topic}`;
+  const absolute = path.resolve(root, directory);
+  return RESEARCH_PLANS.find(p => path.resolve(root, p.directory) === absolute)
+    || { id: `background:${topic}`, label: topic, directory };
 }
 
 function resolvePlanAlias(file, root) {

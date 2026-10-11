@@ -36,6 +36,7 @@ export const companyComparisonDomain = {
   placeholder: "【公司股票代号A】",
   outputPrefix: "分析报告/公司对比/结果/",
   outputFilePattern: /^.+_逐家公司投资思路对比_\d{4}-\d{2}-\d{2}\.md$/u,
+  companionExtension: ".json",
   allowedCategories: new Set(),
   companyCategories: new Set(COMPANY_CATEGORIES),
   requiredPaths: [
@@ -122,7 +123,7 @@ export function backupExistingCompanyComparisonOutputs(item, outputContract = {}
     backupKey: primary,
     expectedFileName,
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
-      && companyComparisonDomain.outputFilePattern.test(fileName),
+      && companyComparisonDomain.outputFilePattern.test(fileName.replace(/\.json$/u, ".md")),
   });
 }
 
@@ -137,6 +138,6 @@ export function rollbackCompanyComparisonFormalRun(item, prepareResult = {}, out
     prepareResult,
     newFileNameMatcher: (fileName) => primary
       && fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
-      && companyComparisonDomain.outputFilePattern.test(fileName),
+      && companyComparisonDomain.outputFilePattern.test(fileName.replace(/\.json$/u, ".md")),
   });
 }

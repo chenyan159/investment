@@ -57,6 +57,7 @@ const CONTROL_POLL_INTERVAL_MS = 1000;
 const DEFAULT_SANDBOX_MODE = "danger-full-access";
 const ALLOWED_SANDBOX_MODES = new Set(["read-only", "workspace-write", "danger-full-access"]);
 const PRIORITY_GROUPS = [
+  ["background"],
   ["industry"],
   ["company"],
   ["feature-quantization", "company-sentiment"],
@@ -463,6 +464,7 @@ async function runOneQueueItem(item, options, quotaGate) {
       promptCharacters: prompt.length,
       promptDebug: debugFiles.timestampedPath,
       expectedOutputFile: outputContract.expectedOutputFile,
+      expectedCompanionFile: outputContract.expectedCompanionFile,
       expectedOutputDir: outputContract.expectedOutputDir,
       runDate: outputContract.runDate,
     });
@@ -497,7 +499,9 @@ async function runOneQueueItem(item, options, quotaGate) {
     let archiveResult;
     try {
       ({ doneItem, archiveResult } = await runQueueOperation(() => {
-        const nextDoneItem = markQueueItemDone(item.id, { outputFile, tokenUsageAttempt });
+        const nextDoneItem = markQueueItemDone(item.id, {
+          outputFile, companionFile: outputContract.expectedCompanionFile, tokenUsageAttempt,
+        });
         const nextArchiveResult = archiveDoneItems();
         return { doneItem: nextDoneItem, archiveResult: nextArchiveResult };
       }));
@@ -514,6 +518,7 @@ async function runOneQueueItem(item, options, quotaGate) {
     log(`Local output validation passed for ${item.domain}/${item.subject}.`, {
       id: item.id,
       outputFile: doneItem.outputFile,
+      companionFile: doneItem.companionFile,
       ...researchPlanMetadata(item),
       archivedDoneItems: archiveResult.archived,
     });

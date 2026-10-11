@@ -35,8 +35,10 @@ Runner 使用 ChatGPT/Codex 订阅登录，不需要设置 `OPENAI_API_KEY` 或 
 ## 运行约定
 
 - 每项任务使用独立 Codex 线程，并以队列中的 `reasoningEffort` 运行。
-- domain 在运行前锁定一个正式输出路径，并备份同主题旧文件；成功后只接受本轮生成或修改的非空正式文件。
-- 如果正式路径缺失但恰好存在一个符合 domain 规则的新文件，runner 可以将其规范化到锁定路径。
+- domain 在运行前锁定正式输出路径，并备份同主题旧文件；成功后只接受本轮生成或修改的非空正式文件。
+- 公司情景投资决策、公司对比固定交付同名 MD＋JSON；两份均须按锁定路径交齐，成组备份和回滚。只检查文件，不检查 JSON 内容；无旧方案兼容开关。
+- 单文件任务的正式路径缺失但恰好存在一个符合 domain 规则的新文件时，可规范化到锁定路径；双文件任务不猜测或重命名配对。
+- 同一 domain、同一输出主题串行执行，避免并发任务互相备份或覆盖。
 - 当前状态只通过 `npm run queue:status` 查看，不维护 Markdown 状态文件。
 - 模型、默认并发、调度优先级和配额阈值以代码常量为准，不在 README 重复维护。
 
@@ -57,10 +59,16 @@ Runner 使用 ChatGPT/Codex 订阅登录，不需要设置 `OPENAI_API_KEY` 或 
 
 映射见[research-plans.json](research-plans.json)。每个方案目录根部恰好保留一个研究方案_yyyymmdd_hhmmss.md，同名全文归档于yyyymmdd_hhmmss子目录。README及修改记录不进入研究提示。
 
-专用domain照常入队。背景与会议的file-run可以将--prompt-file设为注册目录、具体版本文件或迁移前路径（兼容映射到现行版）；其他file-run保持原有行为。入队绑定planId、planVersion、planEntryFile、planSnapshotFile、planSha256和planBoundAt；启动补齐未绑定活动任务并记录日志。实际运行记录actualPromptFile与actualPromptSha256，完成归档及以后队列备份保留字段，旧归档不回填。
+专用domain照常入队。产业背景专题与会议用 `background` domain 入队；旧的 file-run 入口仍可把--prompt-file设为注册目录、具体版本文件或迁移前路径（兼容映射到现行版），输出同样只能进入 `基本面/产业背景/结果/`，但不做同主题备份。其他file-run保持原有行为。入队绑定planId、planVersion、planEntryFile、planSnapshotFile、planSha256和planBoundAt；启动补齐未绑定活动任务并记录日志。实际运行记录actualPromptFile与actualPromptSha256，完成归档及以后队列备份保留字段，旧归档不回填。
 
 更新方案：从项目根目录运行`node tools/research-runner/research-plan-tools.mjs publish --plan-id=company --source=<完整新方案> --reason=<修改原因>`。命令创建版本子目录的两个文件并替换根目录现行副本，后续手动追加修改内容与效果。
 
-## 横向专题路径契约
+## 产业背景（background domain）
 
-六个背景/会议方案集中在 `基本面/行业调研/横向专题/<专题>/研究方案/`。注册表中的 `directoryAliases` 保留迁移前目录兼容，历史版本迁移后继续校验原哈希。`defaultOutputDir` 提供 file-run 默认输出位置，`outputRoot` 约束显式输出也只能进入 `基本面/行业调研/产业背景/`；会议默认进入其 `顶级会议信息/` 子目录。普通未注册 file-run 的默认行为不变。
+方案在 `基本面/产业背景/研究方案/<专题>/`，子目录名即专题名；`会议调研/` 是所有会议共用的方案。新增专题只需新建子目录并用 `research-plan-tools.mjs publish --plan-dir=...` 发布首个版本，无需登记；已登记的六套方案沿用原ID，`directoryAliases` 保留迁移前目录，历史绑定快照继续按原哈希校验。
+
+- 入队：`npm run queue:add-background -- --subject="数据中心建设规模"`；会议用 `--subject="<会议系列> <年份>"`。`npm run queue:list-background` 列出专题和结果中的会议系列。
+- 输出：`基本面/产业背景/结果/` 下平铺，专题为 `<专题>_YYYY-MM-DD.md`，会议为 `会议调研_<会议系列>_<年份>_YYYY-MM-DD.md`。
+- 只留最新：运行前把同专题或同会议系列（含更早届次）的旧文件移入 `基本面/产业背景/备份/<主题>_<时间>/`，失败回滚；结果中已有更新一届时拒绝旧届任务。会议系列按忽略大小写、空格、下划线和连字符比较。
+- 会议方案中的【会议名称】【会议年份】在组装提示时替换。
+- 调度优先级最高：队列中有未完成的产业背景任务时，其他 domain 等待，保证行业调研读到最新上游。

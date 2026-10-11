@@ -1,0 +1,52 @@
+{
+  "sourceDate": "2026-10-11",
+  "total": 105,
+  "companies": [
+    "AMD",
+    "CBRS",
+    "SNPS",
+    "PENG",
+    "WOLF",
+    "SBGSY",
+    "CEG",
+    "YASKY",
+    "SPCX",
+    "APLD",
+    "CRWV",
+    "MRNA",
+    "BNTX",
+    "ALNY",
+    "IONS",
+    "ARGX",
+    "KYTX",
+    "COST",
+    "WMT",
+    "BJ",
+    "KR",
+    "TJX",
+    "PGR",
+    "TRV",
+    "CB",
+    "WRB",
+    "RNR",
+    "AVAV",
+    "KTOS",
+    "DE",
+    "AGCO",
+    "WM",
+    "RSG",
+    "WCN",
+    "CWST"
+  ],
+  "domains": {
+    "company": 35,
+    "company-investment-decision": 35,
+    "company-comparison": 35
+  },
+  "plans": {
+    "company": "20261009_225000",
+    "company-investment-decision": "20261002_002635",
+    "company-comparison": "20261009_225000"
+  },
+  "backup": "D:\\investment\\tools\\research-runner\\queue-backups\\partial35-20261011-2026-10-11T10-36-05-964Z"
+}

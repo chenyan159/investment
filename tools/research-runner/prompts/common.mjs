@@ -1,4 +1,7 @@
 export function buildOutputInstruction(outputContract = {}) {
+  if (outputContract.expectedCompanionFile) {
+    return `\n## 本次输出\n\nMD：\`${outputContract.expectedOutputFile}\`\nJSON：\`${outputContract.expectedCompanionFile}\`\n两份均须交付，路径固定；字段按方案。临时材料放结果目录同级 tmp/，不另建正式文件。\n`;
+  }
   const directoryRule = formalDirectoryInstruction(outputContract.expectedOutputFile || "");
   if (outputContract.expectedOutputFile) {
     return `\n## 本次输出\n\n将完整研究结果写入 \`${outputContract.expectedOutputFile}\`。不得更改该路径，也不得创建第二份正式报告。\n${directoryRule}`;

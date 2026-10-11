@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Codex SDK trigger runner for company, company-comparison, integrated company-investment-decision, company-sentiment, industry, feature-quantization, and file-run research JSONL queues.",
+  "description": "Codex SDK trigger runner for company, company-comparison, integrated company-investment-decision, company-sentiment, industry, background, feature-quantization, and file-run research JSONL queues.",
   "scripts": {
     "test": "node --test",
     "start": "node runner.mjs",
@@ -17,6 +17,8 @@
     "queue:add-company-investment-decision": "node queue-tools.mjs add-company-investment-decision",
     "queue:add-company-sentiment": "node queue-tools.mjs add-company-sentiment",
     "queue:add-industry": "node queue-tools.mjs add-industry",
+    "queue:add-background": "node queue-tools.mjs add-background",
+    "queue:list-background": "node queue-tools.mjs list-background",
     "queue:add-feature-quantization": "node queue-tools.mjs add-feature-quantization",
     "queue:add-file-run": "node queue-tools.mjs add-file-run",
     "queue:seed-industry-from-index": "node queue-tools.mjs seed-industry-from-index",

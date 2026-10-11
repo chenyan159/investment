@@ -27,7 +27,7 @@ test("all six horizontal plans bind and build prompts with background output def
 
 test("topic outputs cannot escape background; ordinary file-run remains unrestricted", () => {
   for (const plan of topics) {
-    for (const directory of [plan.directory, "备份", "基本面/行业调研/产业背景旁边", "基本面/行业调研/产业背景/../结果"]) {
+    for (const directory of [plan.directory, "备份", "基本面/产业背景/备份", "基本面/产业背景/结果旁边", "基本面/产业背景/结果/../研究方案", "基本面/行业调研/结果"]) {
       assert.throws(() => createFileRunQueueItem({ runId: plan.id, promptFile: plan.directory, expectedOutputDir: directory }), /outputRoot/);
     }
     const item = createFileRunQueueItem({ runId: plan.id, promptFile: plan.directory, expectedOutputFile: `${plan.defaultOutputDir}/fixture.md` });

@@ -5,7 +5,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { RESEARCH_PLANS, PLAN_PROJECT_ROOT, bindResearchPlan, resolveCurrentPlan, planHash } from "../research-plan-store.mjs";
+import { BACKGROUND_PLAN_DIRECTORY, RESEARCH_PLANS, PLAN_PROJECT_ROOT, bindResearchPlan, resolveCurrentPlan, planHash } from "../research-plan-store.mjs";
 
 const toolDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260909_100000";
@@ -26,7 +26,8 @@ test("all eleven live entries have matching archive bytes and their two document
     const item = bindResearchPlan({ domain: "file-run", promptFile: plan.directory });
     assert.equal(item.planId, plan.id);
     assert.equal(planHash(fs.readFileSync(resolveCurrentPlan(plan.directory))), item.planSha256);
-    assert.ok(fs.existsSync(path.join(PLAN_PROJECT_ROOT, plan.directory, "README.md")));
+    const readmeDir = plan.directory.startsWith(`${BACKGROUND_PLAN_DIRECTORY}/`) ? BACKGROUND_PLAN_DIRECTORY : plan.directory;
+    assert.ok(fs.existsSync(path.join(PLAN_PROJECT_ROOT, readmeDir, "README.md")));
     assert.ok(fs.existsSync(path.join(PLAN_PROJECT_ROOT, plan.directory, item.planVersion, "修改记录以及效果.md")));
   }
 });
@@ -45,6 +46,24 @@ test("publisher changes current entry while an already bound task keeps its vers
     assert.match(fs.readFileSync(path.join(dir, "20260909_110000", "修改记录以及效果.md"), "utf8"), /clearer scope/);
     const duplicate = spawnSync(process.execPath, args, { env: { ...process.env, RESEARCH_RUNNER_PROJECT_ROOT: root }, encoding: "utf8" });
     assert.notEqual(duplicate.status, 0);
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});
+
+test("publisher creates the first version of an unregistered 产业背景 topic from --plan-dir", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "research-plan-dir-"));
+  try {
+    fs.writeFileSync(path.join(root, "candidate.md"), "# new topic\n");
+    const directory = `${BACKGROUND_PLAN_DIRECTORY}/新专题`;
+    const args = [path.join(toolDir, "research-plan-tools.mjs"), "publish", `--plan-dir=${directory}`, "--source=candidate.md", "--reason=new topic", "--timestamp=20261010_090000"];
+    const result = spawnSync(process.execPath, args, { env: { ...process.env, RESEARCH_RUNNER_PROJECT_ROOT: root }, encoding: "utf8" });
+    assert.equal(result.status, 0, result.stderr);
+    assert.equal(path.basename(resolveCurrentPlan(directory, root)), "研究方案_20261010_090000.md");
+    assert.match(fs.readFileSync(path.join(root, directory, "20261010_090000", "修改记录以及效果.md"), "utf8"), /首个版本/);
+    fs.writeFileSync(path.join(root, "candidate2.md"), "# second\n");
+    const second = spawnSync(process.execPath, [path.join(toolDir, "research-plan-tools.mjs"), "publish", `--plan-dir=${directory}`, "--source=candidate2.md", "--reason=update", "--timestamp=20261010_100000"], { env: { ...process.env, RESEARCH_RUNNER_PROJECT_ROOT: root }, encoding: "utf8" });
+    assert.equal(second.status, 0, second.stderr);
+    assert.equal(path.basename(resolveCurrentPlan(directory, root)), "研究方案_20261010_100000.md");
+    assert.ok(fs.existsSync(path.join(root, directory, "20261010_090000", "研究方案_20261010_090000.md")));
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
 
@@ -68,13 +87,13 @@ test("real CLI enqueue and queue completion preserve the bound version and actua
   const { root, plan } = fixture();
   try {
     const env = { ...process.env, RESEARCH_RUNNER_PROJECT_ROOT: root, RESEARCH_RUNNER_QUEUE_DIR: path.join(root, "queue") };
-    const result = spawnSync(process.execPath, [path.join(toolDir, "queue-tools.mjs"), "add-file-run", "--run-id=version-test", `--prompt-file=${plan.directory}`, "--expected-output-file=基本面/行业调研/产业背景/顶级会议信息/report.md"], { env, encoding: "utf8" });
+    const result = spawnSync(process.execPath, [path.join(toolDir, "queue-tools.mjs"), "add-file-run", "--run-id=version-test", `--prompt-file=${plan.directory}`, "--expected-output-file=基本面/产业背景/结果/report.md"], { env, encoding: "utf8" });
     assert.equal(result.status, 0, result.stderr);
     const queued = JSON.parse(fs.readFileSync(path.join(root, "queue/queue.jsonl"), "utf8"));
     assert.equal(queued.planVersion, version);
     const script = `import {bindActiveResearchPlans, recordResearchPlanRun, markQueueItemDone, archiveDoneItems} from './queue-store.mjs';
       bindActiveResearchPlans(); recordResearchPlanRun(${JSON.stringify(queued.id)}, {actualPromptFile:'prompt.md',actualPromptSha256:'test-hash'});
-      markQueueItemDone(${JSON.stringify(queued.id)}, {outputFile:'基本面/行业调研/产业背景/顶级会议信息/report.md'}); archiveDoneItems();`;
+      markQueueItemDone(${JSON.stringify(queued.id)}, {outputFile:'基本面/产业背景/结果/report.md'}); archiveDoneItems();`;
     const completion = spawnSync(process.execPath, ["--input-type=module", "-e", script], { env, cwd: toolDir, encoding: "utf8" });
     assert.equal(completion.status, 0, completion.stderr);
     const done = JSON.parse(fs.readFileSync(path.join(root, "queue/queue.done.jsonl"), "utf8"));

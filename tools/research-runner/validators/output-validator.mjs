@@ -30,11 +30,18 @@ export function createOutputContract(item, domain) {
   if (expectedOutputFile) {
     validateOutputFilePath({ item, domain, outputFile: expectedOutputFile });
   }
+  const expectedCompanionFile = domain.companionExtension
+    ? expectedOutputFile.replace(/\.md$/u, domain.companionExtension)
+    : "";
+  if (expectedCompanionFile) {
+    validateOutputFilePath({ item, domain, outputFile: expectedCompanionFile, companion: true });
+  }
 
   return {
     projectRoot: PROJECT_ROOT,
     runDate,
     expectedOutputFile,
+    expectedCompanionFile,
     expectedOutputDir: expectedOutputDir || ".",
   };
 }
@@ -46,7 +53,11 @@ export function captureOutputSnapshot(outputContract, item) {
 
 export function validateLocalOutput(item, domain, outputContract, beforeSnapshot = null) {
   if (outputContract.expectedOutputFile) {
-    recoverExpectedOutputPath(item, domain, outputContract, beforeSnapshot);
+    if (outputContract.expectedCompanionFile) {
+      validateOutputFile(item, domain, outputContract.expectedCompanionFile, true);
+    } else {
+      recoverExpectedOutputPath(item, domain, outputContract, beforeSnapshot);
+    }
     return validateOutputFile(item, domain, outputContract.expectedOutputFile);
   }
 
@@ -91,9 +102,9 @@ function changedFiles(beforeSnapshot, afterSnapshot) {
   return changed;
 }
 
-function validateOutputFile(item, domain, outputFile) {
+function validateOutputFile(item, domain, outputFile, companion = false) {
   try {
-    validateOutputFilePath({ item, domain, outputFile });
+    validateOutputFilePath({ item, domain, outputFile, companion });
     const absolutePath = outputFileToAbsolute(outputFile);
     if (!fs.existsSync(absolutePath)) throw new Error(`outputFile does not exist: ${outputFile}`);
     const stat = fs.statSync(absolutePath);
@@ -115,7 +126,7 @@ export function outputFileToAbsolute(outputFile) {
   return projectRelativeToAbsolute(outputFile);
 }
 
-export function validateOutputFilePath({ item = null, domain, outputFile, originalOutputFile = outputFile, allowBackup = false }) {
+export function validateOutputFilePath({ item = null, domain, outputFile, originalOutputFile = outputFile, allowBackup = false, companion = false }) {
   if (!outputFile) throw new Error("outputFile is empty");
   if (path.isAbsolute(String(originalOutputFile).replace(/\//g, path.sep))) {
     throw new Error(`outputFile must be relative to ${PROJECT_ROOT}: ${originalOutputFile}`);
@@ -136,7 +147,11 @@ export function validateOutputFilePath({ item = null, domain, outputFile, origin
   }
 
   const fileName = parts.at(-1) || "";
-  if (!domain.outputFilePattern.test(fileName)) {
+  if (companion && (!domain.companionExtension || path.posix.extname(fileName) !== domain.companionExtension)) {
+    throw new Error(`Invalid companion output: ${outputFile}`);
+  }
+  const primaryFileName = companion ? `${fileName.slice(0, -domain.companionExtension.length)}.md` : fileName;
+  if (!domain.outputFilePattern.test(primaryFileName)) {
     throw new Error(`outputFile filename does not match ${domain.domain} naming rule: ${fileName}`);
   }
   if (typeof domain.validateOutputFileForItem === "function" && !isBackupPath) {

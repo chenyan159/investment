@@ -30,14 +30,28 @@ export function backupExistingOutputs({
   fs.mkdirSync(backupDir, { recursive: true });
 
   const files = [];
-  for (const fileName of matchingFiles) {
-    const sourcePath = path.join(outputDir, fileName);
-    const targetPath = uniqueBackupPath(path.join(backupDir, fileName));
-    fs.renameSync(sourcePath, targetPath);
-    files.push({
-      from: normalizeProjectPath(path.relative(rootDir, sourcePath)),
-      to: normalizeProjectPath(path.relative(rootDir, targetPath)),
-    });
+  try {
+    for (const fileName of matchingFiles) {
+      const sourcePath = path.join(outputDir, fileName);
+      const targetPath = uniqueBackupPath(path.join(backupDir, fileName));
+      fs.renameSync(sourcePath, targetPath);
+      files.push({
+        from: normalizeProjectPath(path.relative(rootDir, sourcePath)),
+        to: normalizeProjectPath(path.relative(rootDir, targetPath)),
+      });
+    }
+  } catch (error) {
+    const restoreErrors = [];
+    for (const file of [...files].reverse()) {
+      try {
+        fs.renameSync(path.join(rootDir, file.to), path.join(rootDir, file.from));
+      } catch (restoreError) {
+        restoreErrors.push(restoreError);
+      }
+    }
+    removeEmptyDirectoriesUpTo(backupDir, resolvedBackupRootDir);
+    if (restoreErrors.length) throw new AggregateError([error, ...restoreErrors], `Backup restore failed; retained files in ${backupDir}`);
+    throw error;
   }
 
   return {

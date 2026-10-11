@@ -15,6 +15,8 @@
 
 支持的状态：`pending`、`running`、`retry_pending`、`done`、`failed`。
 
+公司情景投资决策、公司对比的完成记录以 `outputFile` 保存 MD 路径、`companionFile` 保存同名 JSON 路径；领取、失败、配额延期和中断恢复时清空产物记录。两个 domain 固定双输出，不设任务开关；同一 domain 的同一输出主题不并发领取。
+
 `reasoningEffort` 支持 `low`、`medium`、`high`、`xhigh`、`max` 和 `ultra`，缺省值为 `max`。完成记录包含累计 token 使用量和线程汇总；旧归档可能仍包含历史 `verification` 字段。
 
 ## 查看和校验
@@ -35,6 +37,9 @@ npm run queue:add-company-comparison -- --ticker=MU
 npm run queue:add-company-investment-decision -- --ticker=VST
 npm run queue:add-company-sentiment -- --ticker=MRVL
 npm run queue:add-industry -- --subject="数据中心直液冷系统"
+npm run queue:add-background -- --subject="数据中心建设规模"
+npm run queue:add-background -- --subject="OCP Global Summit 2026"
+npm run queue:list-background
 npm run queue:add-feature-quantization -- --subject="N01_AI可归因盈利暴露_研究方案"
 npm run queue:add-file-run -- --run-id="example" --prompt-file="分析报告/tmp/运行方案.md"
 ```
@@ -68,6 +73,6 @@ npm run queue:migrate-company-md
 
 映射见[research-plans.json](../research-plans.json)。每个方案目录根部恰好保留一个研究方案_yyyymmdd_hhmmss.md，同名全文归档于yyyymmdd_hhmmss子目录。README及修改记录不进入研究提示。
 
-专用domain照常入队。背景与会议的file-run可以将--prompt-file设为注册目录、具体版本文件或迁移前路径（兼容映射到现行版）；其他file-run保持原有行为。入队绑定planId、planVersion、planEntryFile、planSnapshotFile、planSha256和planBoundAt；启动补齐未绑定活动任务并记录日志。实际运行记录actualPromptFile与actualPromptSha256，完成归档及以后队列备份保留字段，旧归档不回填。
+专用domain照常入队。产业背景专题与会议用 `background` domain 入队；旧的 file-run 入口仍可把--prompt-file设为注册目录、具体版本文件或迁移前路径（兼容映射到现行版），输出同样只能进入 `基本面/产业背景/结果/`，但不做同主题备份。其他file-run保持原有行为。入队绑定planId、planVersion、planEntryFile、planSnapshotFile、planSha256和planBoundAt；启动补齐未绑定活动任务并记录日志。实际运行记录actualPromptFile与actualPromptSha256，完成归档及以后队列备份保留字段，旧归档不回填。
 
 更新方案：从项目根目录运行`node tools/research-runner/research-plan-tools.mjs publish --plan-id=company --source=<完整新方案> --reason=<修改原因>`。命令创建版本子目录的两个文件并替换根目录现行副本，后续手动追加修改内容与效果。

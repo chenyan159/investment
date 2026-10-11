@@ -1,0 +1,14 @@
+{
+  "dropped": 105,
+  "added": 105,
+  "status": "pending",
+  "companies": 35,
+  "versions": {
+    "company": "20261009_225000",
+    "company-investment-decision": "20261011_044451",
+    "company-comparison": "20261011_044451"
+  },
+  "oldTaskIdsRemain": false,
+  "archiveUnchanged": true,
+  "backup": "D:\\investment\\tools\\research-runner\\queue-backups\\partial35-refresh-2026-10-11T11-52-04-706Z"
+}

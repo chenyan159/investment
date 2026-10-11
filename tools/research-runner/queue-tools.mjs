@@ -4,6 +4,7 @@ import fs from "node:fs";
 import { bindResearchPlan } from "./research-plan-store.mjs";
 import path from "node:path";
 import { getDomainAdapter } from "./domains/index.mjs";
+import { BACKGROUND_RESULT_DIR, listBackgroundTopics, listConferenceResults } from "./domains/background.mjs";
 import { migrateLegacyCompanyMarkdownQueue } from "./domains/company.mjs";
 import { featureQuantizationDomain } from "./domains/feature-quantization.mjs";
 import { fileRunDomain } from "./domains/file-run.mjs";
@@ -46,6 +47,9 @@ Commands:
                                Append one company investment-decision item. Requires indexed --subject/--ticker.
   add-company-sentiment        Append one company sentiment item. Requires indexed --subject/--ticker.
   add-industry                 Append one industry item. Requires indexed --subject unless --update-index is used.
+  add-background               Append one 产业背景 item: --subject=<专题名> or --subject="<会议系列> <年份>".
+                               Older results of the same topic/conference series move to 基本面/产业背景/备份/ when it runs.
+  list-background              List 产业背景 topics and the conference series currently in 结果/.
   add-feature-quantization     Append one feature-quantization item. Requires --subject.
   add-file-run                 Append one generic file-run item. Requires --run-id and --prompt-file.
   seed-industry-from-index     Append industry items from 基本面/行业调研/行业索引.md. Defaults to missing-only.
@@ -178,6 +182,16 @@ function main() {
     return;
   }
 
+  if (command === "add-background") {
+    addOne("background", options);
+    return;
+  }
+
+  if (command === "list-background") {
+    listBackground();
+    return;
+  }
+
   if (command === "add-feature-quantization") {
     addOne("feature-quantization", options);
     return;
@@ -284,6 +298,19 @@ function addOne(domain, options) {
     console.log(`Index ${indexUpdate.changed ? "updated" : "unchanged"}: ${normalizeProjectPath(path.relative(PROJECT_ROOT, indexUpdate.indexPath))} | ${indexUpdate.subject} | ${indexUpdate.category}`);
   }
   console.log(`Added ${domain} item: ${item.id} | ${item.subject} | ${item.category || "(no category)"} | reasoning=${item.reasoningEffort}`);
+}
+
+function listBackground() {
+  const results = fs.existsSync(BACKGROUND_RESULT_DIR) ? fs.readdirSync(BACKGROUND_RESULT_DIR) : [];
+  console.log("背景专题（--subject=<专题名>）：");
+  for (const topic of listBackgroundTopics()) {
+    const latest = results.filter((file) => file.startsWith(`${topic}_`)).sort().at(-1) || "(结果中暂无)";
+    console.log(`  ${topic} | ${latest}`);
+  }
+  console.log("会议系列（--subject=\"<会议系列> <年份>\"，沿用下列系列名）：");
+  const conferences = listConferenceResults();
+  for (const row of conferences) console.log(`  ${row.series} ${row.year} | ${row.file}`);
+  if (!conferences.length) console.log("  (结果中暂无)");
 }
 
 function addFileRun(options) {
@@ -458,6 +485,13 @@ function validateActiveItems(items, errors, warnings, seenIds) {
           outputFile: normalizeProjectPath(item.outputFile),
           originalOutputFile: item.outputFile,
         });
+        if (adapter.companionExtension) {
+          const expectedCompanion = item.outputFile.replace(/\.md$/u, adapter.companionExtension);
+          if (item.companionFile !== expectedCompanion) throw new Error(`companionFile must be ${expectedCompanion}`);
+          validateOutputFilePath({
+            domain: adapter, item, outputFile: item.companionFile, companion: true,
+          });
+        }
       } catch (error) {
         errors.push(`${label} ${error.message}`);
       }

@@ -41,6 +41,7 @@ export const companyInvestmentDecisionDomain = {
   placeholder: "【公司股票代号】",
   outputPrefix: COMPANY_INVESTMENT_DECISION_OUTPUT_PREFIX,
   outputFilePattern: /^.+_经营情景市场状态投资决策_\d{4}-\d{2}-\d{2}\.md$/u,
+  companionExtension: ".json",
   allowedCategories: new Set(),
   companyCategories: new Set(COMPANY_CATEGORIES),
   requiredPaths: [
@@ -130,7 +131,7 @@ export function backupExistingCompanyInvestmentDecisionOutputs(item, outputContr
     backupKey: primary,
     expectedFileName,
     matchFileName: (fileName) => fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
-      && companyInvestmentDecisionDomain.outputFilePattern.test(fileName),
+      && companyInvestmentDecisionDomain.outputFilePattern.test(fileName.replace(/\.json$/u, ".md")),
   });
 }
 
@@ -145,6 +146,6 @@ export function rollbackCompanyInvestmentDecisionFormalRun(item, prepareResult =
     prepareResult,
     newFileNameMatcher: (fileName) => primary
       && fileName.toUpperCase().startsWith(`${primary.toUpperCase()}_`)
-      && companyInvestmentDecisionDomain.outputFilePattern.test(fileName),
+      && companyInvestmentDecisionDomain.outputFilePattern.test(fileName.replace(/\.json$/u, ".md")),
   });
 }

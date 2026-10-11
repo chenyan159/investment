@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { backgroundDomain } from "./background.mjs";
 import { companyComparisonDomain } from "./company-comparison.mjs";
 import { companyInvestmentDecisionDomain } from "./company-investment-decision.mjs";
 import { companyDomain } from "./company.mjs";
@@ -8,6 +9,7 @@ import { fileRunDomain } from "./file-run.mjs";
 import { industryDomain } from "./industry.mjs";
 
 export const DOMAIN_ADAPTERS = {
+  background: backgroundDomain,
   company: companyDomain,
   "company-comparison": companyComparisonDomain,
   "company-investment-decision": companyInvestmentDecisionDomain,
