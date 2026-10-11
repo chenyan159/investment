@@ -1,0 +1,149 @@
+{
+  "ticker": "PENG",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:47:22-07:00",
+  "reference_price": {
+    "value": 76.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-08-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        25.7,
+        25.7
+      ],
+      "target_price": [
+        14,
+        18
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        107.3,
+        107.3
+      ],
+      "target_price": [
+        91,
+        106
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        165.3,
+        165.3
+      ],
+      "target_price": [
+        156,
+        195
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        240.5,
+        240.5
+      ],
+      "target_price": [
+        250,
+        296
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "现价且追求基准回报时PENG优先；重视全球客户覆盖和交付确定性且Dell估值回落时Dell优先。"
+    },
+    {
+      "peer": "HPE",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "稳健AI基础设施配置优先HPE的网络利润池；仅在PENG现金和持续服务收费验证且追求更高右尾时优先PENG。"
+    },
+    {
+      "peer": "SMCI",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "SMCI交付、现金和治理同时验证后其进攻赔率优先；未满足这些条件且希望限制资本责任时优先PENG。"
+    },
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "当前系统工程成长配置优先CLS的网络和计算项目及较高基准回报；PENG仅补充持续运营收费和CXL期权。"
+    },
+    {
+      "peer": "RMBS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "按当前价格追求回报优先PENG；若优先轻资产授权现金流并等待RMBS回到较低估值，则RMBS更合适。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "限制永久损失和外部融资依赖时优先PENG；仅在CoreWeave融资、利用率和客户履约验证且能承担近归零左尾时优先CRWV。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一AI基础设施增长逻辑下优先NVDA的系统生态和利润截留及更高基准回报，PENG只作特定运营和CXL补充。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "看好内存供需和价格时优先MU直接捕获原厂租金及现金流，PENG仅补充CXL验证和集成服务收益。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "在当前估值追求基准及右尾回报优先PENG；ANET回到能提供正向基准回报的价格且EOS采购位置稳定时优先ANET。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健AI建设与现场服务配置优先VRT；PENG仅在持续运营收费和CXL验证且愿承担更高左尾时作为高弹性补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "组合核心现金流和生态复利优先MSFT；其现价仍有DCF溢价，PENG只承担小盘转型期权角色。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "按当前价格配置基准回报和现金自给能力优先ADBE，但需创意续约不恶化；PENG用于不同的硬件与运营期权敞口。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "当前价格追求回报优先PENG；KLAC估值回落或经营增长明显高于其基准且现金验证后，稳健资金优先KLAC。"
+    }
+  ]
+}
