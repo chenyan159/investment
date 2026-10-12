@@ -1,0 +1,131 @@
+{
+  "ticker": "CWST",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:38:13-07:00",
+  "reference_price": {
+    "value": 83.78,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        60.35,
+        60.35
+      ],
+      "target_price": [
+        24.14,
+        33.09
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        114.54,
+        114.54
+      ],
+      "target_price": [
+        94.88,
+        113.87
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        149.19,
+        149.19
+      ],
+      "target_price": [
+        130.52,
+        154.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        178.49,
+        178.49
+      ],
+      "target_price": [
+        170.48,
+        198.56
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "WM",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "以现金可见性和地域分散为先选WM；仅在CWST出口许可及全资本现金通过验证、追求区域右尾时选CWST作补充。"
+    },
+    {
+      "peer": "RSG",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "稳健日常服务优先RSG；许可有效且买价降低时CWST交易弹性更高，两者当前均缺高基准回报的核心买价。"
+    },
+    {
+      "peer": "WCN",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "同固废逻辑下WCN基准回报略高、乐观相近而悲观损失较浅，优先于CWST的弱证据突破右尾。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "投资液冷及水化学服务附着选择ECL并等待验证；投资东北合法出口密度选择CWST且须先验证许可，当前CWST价格弹性较高。"
+    },
+    {
+      "peer": "PNR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "愿承担渠道修复且泳池回单、Taco整合和还债得到验证时优先PNR；优先终端收入稳定性则CWST占优但仍需出口及价格条件。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "按当前买价的基准价格赔率及稳定终端需求CWST优于CAT，CAT的设备服务质量优势不足以弥补现价基准负回报。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "CMI在已计设备周期、新平台资本及退出现金的模型中基准与乐观回报更高、悲观损失更浅，平衡与进攻资金优先。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健复利优先LIN的长约、跨地区网络与资本纪律；CWST较高交易弹性不足以弥补其许可和融资左尾。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "资本保全与会员盈利确定性选COST；通过许可验证后追区域交易弹性可选CWST小仓，两者现价均非高基准回报核心买点。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "将全资本和SBC成本纳入后MSFT仍有更强平台、基准及右尾年化回报，核心与进攻顺位优先于CWST。"
+    }
+  ]
+}
