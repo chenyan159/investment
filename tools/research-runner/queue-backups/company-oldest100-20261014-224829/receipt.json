@@ -1,0 +1,26 @@
+{
+  "batch": "company-oldest100-20261014-224829",
+  "sourceDate": "2026-10-14",
+  "added": 100,
+  "activeBefore": 0,
+  "activeAfter": 100,
+  "domain": "company",
+  "status": "pending",
+  "reasoningEffort": "max",
+  "planVersions": [
+    "20261009_225000"
+  ],
+  "oldReportDates": {
+    "2026-09-18": 3,
+    "2026-09-21": 12,
+    "2026-09-22": 85
+  },
+  "doneArchiveUnchanged": true,
+  "sourceReportsUnchanged": true,
+  "previousBatchOverlap": 0,
+  "runnerStarted": false,
+  "backup": "D:/investment/tools/research-runner/queue-backups/company-oldest100-20261014-224829",
+  "queueBeforeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "queueAfterSha256": "1378682501a2979a13ca410f70a3b74ff3c0201f607dd1a4ccf62520e15a0d3f",
+  "doneArchiveSha256": "0db93accc2223ce1a4fd793c8e887fe9ab0de6c96398bfc7ff5ee5ad84691698"
+}
