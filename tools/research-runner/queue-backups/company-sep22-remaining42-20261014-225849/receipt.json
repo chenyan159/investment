@@ -1,0 +1,20 @@
+{
+  "batch": "company-sep22-remaining42-20261014-225849",
+  "sourceDate": "2026-10-14",
+  "added": 42,
+  "domain": "company",
+  "reasoningEffort": "max",
+  "planVersions": [
+    "20261009_225000"
+  ],
+  "activeBefore": 100,
+  "activeAfter": 142,
+  "statusAfter": {
+    "running": 70,
+    "pending": 72
+  },
+  "previousItemsMissing": 0,
+  "previousItemsChangedDuringAppend": 0,
+  "backup": "D:/investment/tools/research-runner/queue-backups/company-sep22-remaining42-20261014-225849",
+  "runnerAlreadyActive": true
+}
