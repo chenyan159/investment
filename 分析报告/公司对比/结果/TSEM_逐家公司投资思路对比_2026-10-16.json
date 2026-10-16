@@ -1,0 +1,149 @@
+{
+  "ticker": "TSEM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:50:00-07:00",
+  "reference_price": {
+    "value": 209.8,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        132.39,
+        132.39
+      ],
+      "target_price": [
+        57.62,
+        72.12
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        429.61,
+        429.61
+      ],
+      "target_price": [
+        244.13,
+        294.85
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        640.89,
+        640.89
+      ],
+      "target_price": [
+        400.4,
+        514.66
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        839.96,
+        839.96
+      ],
+      "target_price": [
+        573.2,
+        723.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "GFS",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "TSEM在硅光纯度、基准与右尾占优；区域服务和多元化由GFS胜出；当前同逻辑优先TSEM。"
+    },
+    {
+      "peer": "UMC",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "TSEM在硅光付费规模、增长与价格赔率占优；UMC资产/股息有补充价值，非更优硅光载体。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "稳健核心优先TSM：基准回报相近、兑现广度和左尾更好；TSEM提供独立SiPho暴露，非全面替代。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "资本效率及进攻赔率偏CRDO；合同可见度、多种材料平台偏TSEM；能承受单客风险选CRDO，否则TSEM。"
+    },
+    {
+      "peer": "LWLG",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "TSEM在基准、商业化、资金自给占优；LWLG仅突破倍数更高，不能作常规替代，优先TSEM。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重视合同资金与基准回报时选TSEM；若更重视光源跨路线且COHR库存和回款改善则选COHR。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "现价基准赔率与合同资金条件偏TSEM；追求OCS直接暴露选LITE，现价同一光学资金优先TSEM。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "系统IP、定制平台与长期上限偏MRVL；具体制造合同和较低目标倍数偏TSEM；综合机会成本优先MRVL，保留TSEM分散。"
+    },
+    {
+      "peer": "SMTC",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "近端和轻制造右尾优先SMTC；现金/多材料制造平台偏TSEM；进攻选择SMTC，供给平台或低负债偏好选TSEM。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "基准年化、软件现金与价值链收费权优先AVGO；TSEM隔离部分终端信用、提供制造分散，但不是核心首选。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健资金的左尾、客户分散和续约偏MSFT；纯SiPho及突破上行偏TSEM；核心选MSFT，进攻按行业预算选TSEM。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "TSEM制造订单与较小法律敞口占优，META入口与左尾更好；现金拐点前进攻偏TSEM，稳健分散偏META。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "资本保全/非AI分散优先PGR；TSEM的右尾和增长更强；防御仓选PGR，不能因低PE取代进攻TSEM。"
+    }
+  ]
+}
