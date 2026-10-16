@@ -1,0 +1,143 @@
+{
+  "ticker": "IESC",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:50:00-07:00",
+  "reference_price": {
+    "value": 262.44,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        214,
+        214
+      ],
+      "target_price": [
+        132,
+        162
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        429,
+        429
+      ],
+      "target_price": [
+        368,
+        429
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        589,
+        589
+      ],
+      "target_price": [
+        561,
+        674
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        728,
+        728
+      ],
+      "target_price": [
+        763,
+        904
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "EME",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求制造扩张和基准回报选IESC；重视成熟工程组合与服务现金、且接受较低回报选EME。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "以当前买价优先IESC的基准赔率；只有把模块跨客户规模商业化确定性置于首位时优先FIX。"
+    },
+    {
+      "peer": "MYRG",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "同为电气施工扩张，IESC现有制造利润、经营缓冲和基准回报更有利，MYRG大输电启动不自动弥补项目风险。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "看好设施内制造及安装利润且重视价格选IESC；专注电网接入瓶颈和多年公用事业预算则选PWR。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "重视全球电热系统与服务平台优先VRT；重视较短观察期的基准回报、接受工程整合风险选IESC。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "当前买价下IESC的基准与上行回报更有利；ETN虽有更强产品资格，Boyd资本回报和分拆不足以支持更高配置顺位。"
+    },
+    {
+      "peer": "POWL",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "同为设备产能与园区交付机会，IESC基准收益较高且利润池更分散，POWL现金更强但买价仍要求大单连续复制。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在同一AI基础设施成长预算下，当前更偏向NVT的产品入口、接近基准DCF及相近右尾；IESC作为更高工程执行弹性的补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "追求成熟企业入口与收入稳定性选MSFT；追求当前基准收益和更低资本获取负担选IESC，二者不是纯替代。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "需要消费分发和TPU平台期权时选GOOGL；重视基准回报与可核对工程现金路径时选IESC，不能将全部云CapEx归为承包商收入。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "若能承受台湾地域尾部风险，稳健长期资金优先TSM的工艺壁垒与现金承载力；IESC用于降低该地域集中并提高工程扩张弹性。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "当前价格下IESC基准回报更有利；KLAC技术壁垒领先，但即便放宽目标倍数，其基准收益仍未明显优于IESC。"
+    }
+  ]
+}
