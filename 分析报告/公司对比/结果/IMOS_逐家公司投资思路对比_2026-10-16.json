@@ -1,0 +1,149 @@
+{
+  "ticker": "IMOS",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:45:52-07:00",
+  "reference_price": {
+    "value": 65.14,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        30.38,
+        30.38
+      ],
+      "target_price": [
+        12.4,
+        16.34
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        102.36,
+        102.36
+      ],
+      "target_price": [
+        53.83,
+        71.98
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        167.23,
+        167.23
+      ],
+      "target_price": [
+        103.16,
+        132.63
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        227.81,
+        227.81
+      ],
+      "target_price": [
+        160.49,
+        200.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "ASX",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "看先进逻辑封测平台时ASX优先；看成熟存储外包单点弹性时IMOS可作补充，不能用IMOS替代ASX。"
+    },
+    {
+      "peer": "AMKR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若美国分期融资先于付款落实，AMKR的基准及右尾赔率更好；融资失约时不以其替代IMOS。"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若看跨客户混合键合采用，Besi更优；按行业容量校准后基准回报仍有限，若采用延后则两者均不宜重仓。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在AI制造扩张逻辑下，台积电的资格、现金回收和基准赔率均胜IMOS，优先配置TSM。"
+    },
+    {
+      "peer": "ATEYY",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "高确定性的AI逻辑测试选ATEYY；现价基准回报也弱，IMOS仅在成熟存储外包价格错位时占优。"
+    },
+    {
+      "peer": "TER",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "追求AI测试平台与多客户复制时TER优先；IMOS的低表面估值不能弥补资本回收和平台资格差距。"
+    },
+    {
+      "peer": "FORM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "看HBM/GPU/光电接口且生产复购成立时FORM更优；当前基准赔率有限，不能凭投资公告加仓。"
+    },
+    {
+      "peer": "COHU",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "跨客户高功率量产验证后COHU更优；此前两者都是里程碑小仓，IMOS现有盈利更成熟。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若核心判断是存储短缺及利润池扩大，MU更直接、基准与右尾赔率更好，IMOS只是外包加工的补充。"
+    },
+    {
+      "peer": "SIMO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若库存周转和2029现金回售覆盖改善，SIMO基准及突破更优；若只有介质涨价收入则不构成替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健配置时微软的客户粘性、融资韧性和基准回报优于IMOS；仍需防交易价高于现金流价值。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健与平台成长兼顾时GOOGL基准赔率、分发和跨客户复用优于IMOS；并非无条件现金牛。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "资本保全及成熟系统交付优先ETN；若追求经验证的存储利润跃升可选IMOS小仓，两者现价均非高赔率核心。"
+    }
+  ]
+}
