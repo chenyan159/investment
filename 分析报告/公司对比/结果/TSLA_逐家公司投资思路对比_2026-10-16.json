@@ -1,0 +1,143 @@
+{
+  "ticker": "TSLA",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:50:00-07:00",
+  "reference_price": {
+    "value": 362.44,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        28.0,
+        28.0
+      ],
+      "target_price": [
+        16.5,
+        22.2
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        80.4,
+        80.4
+      ],
+      "target_price": [
+        72.6,
+        99.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        178.3,
+        178.3
+      ],
+      "target_price": [
+        248.1,
+        335.3
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        302.3,
+        302.3
+      ],
+      "target_price": [
+        600.0,
+        748.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "FLNC",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "只买储能复苏且制造、现金和贷款契约修复时优先FLNC；以跨业务生存韧性和制造底盘为标准则TSLA更强。"
+    },
+    {
+      "peer": "ENPH",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "住宅光储及SST量产得到验证时ENPH的右尾赔率更优；若重视现有储能规模和跨业务资金缓冲则TSLA占优，现价两者均不宜作稳健核心。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "以可验证无人驾驶采用加成熟现金业务为投资逻辑，GOOGL已有更强运营证据且基准回报为正，优先于TSLA；它不是纯Waymo权益。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "投资已收费仓储任务时SYM的商业证据和估值距离更好；追求跨场景通用机器人时TSLA天花板更高，但现价两者都缺稳健安全垫。"
+    },
+    {
+      "peer": "FANUY",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "工业自动化的现金和资本保全逻辑优先FANUY；只有通用人形跨任务规模盈利得到验证且价格合适时，TSLA才适合作为高弹性补充。"
+    },
+    {
+      "peer": "PCRHY",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "投资合格电池、电源与AI材料增长时，PCRHY的基准回报和买价更优，且不必押注TSLA无人车胜出；其电池并无普遍短缺垄断。"
+    },
+    {
+      "peer": "ON",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "汽车电气化加AI电源的投资逻辑优先ON，其基准与乐观赔率较好；TSLA有终端平台优势，ON则承担新增收购与融资风险。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "投资AI算力及机器人基础设施优先NVDA，已有规模利润且基准和右尾年化均较优；不能把TSLA算力预算全算作NVDA订单。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "先进AI制造的投资逻辑优先TSM，盈利、量产与基准回报已有更强支撑；台湾尾部风险必须另行限仓。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心复利资金优先MSFT，续约和成熟利润更强、基准及乐观赔率更好；其交易价仍高于中心DCF，须分批。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "云与实体自动化平台逻辑优先AMZN，现有客户现金和三条利润渠道更强、基准回报为正；Zoox只是未单独上市的小部分权益。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "资本保全与经营确定性优先COST；若追求经验证后的通用机器人高弹性才考虑TSLA，现价COST自身也非高回报首选。"
+    }
+  ]
+}
