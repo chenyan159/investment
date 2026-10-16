@@ -1,0 +1,143 @@
+{
+  "ticker": "RKLB",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:54:49-07:00",
+  "reference_price": {
+    "value": 55.25,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        4.04,
+        4.04
+      ],
+      "target_price": [
+        0.93,
+        1.53
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        16.69,
+        16.69
+      ],
+      "target_price": [
+        15.24,
+        20.09
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        39.4,
+        39.4
+      ],
+      "target_price": [
+        40.51,
+        53.87
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        65.51,
+        65.51
+      ],
+      "target_price": [
+        74.83,
+        93.48
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "negative",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "SPCX",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若只承担火箭及系统交付风险，RKLB业务较纯；若追求规模壁垒和突破赔率，SPCX优先，现价两者均不宜作稳健底仓。"
+    },
+    {
+      "peer": "RDW",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在相同高风险航天防务预算下，RDW净现金缓冲及乐观、突破回报优于RKLB，虽然发射与系统规模不及RKLB。"
+    },
+    {
+      "peer": "ASTS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若优先真实经营底盘和近期兑现，RKLB较优；若接受星座和融资失败风险专买极端右尾，ASTS较优。"
+    },
+    {
+      "peer": "PL",
+      "relation": "alternative",
+      "verdict": "comparable",
+      "reason": "RKLB运输平台期权与PL数据复用优势不同，两者基准和乐观回报均不足，当前均不优先配置。"
+    },
+    {
+      "peer": "KTOS",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一国防试验与规模生产逻辑下，KTOS的净现金和情景回报结构优于RKLB，HASTE发射优势不足以抵销买价差异。"
+    },
+    {
+      "peer": "AVAV",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "同一防务增量预算下，AVAV的生产采购、基准正回报及乐观突破弹性优于RKLB，但须验证整合与回款。"
+    },
+    {
+      "peer": "CW",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若配置高可靠国防和工业增长，CW的真实利润、现金转换及基准回报明显优于RKLB。"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "高可靠工程与航空增长可由PH以更强造血和更低基准估值要求承载，RKLB的技术弹性不足以补偿价格风险。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "看好商业基础设施与卫星采用时，AMZN有成熟利润平台和更好的基准赔率，RKLB尚无足够已锁定客户价值截留。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "在成长机会成本下，NVDA已实现的利润与交付证据及经压力后的回报结构优于RKLB，仍需约束客户资本和信用风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "MSFT的成熟利润、客户续费和较短观察窗基准回报优于RKLB，虽有AI资本密度及交易价高于DCF的风险。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "GOOGL的实际经营规模、分发与基准正回报优于RKLB，资本效率和搜索替代风险限制加仓而非使RKLB成为更优替代。"
+    }
+  ]
+}
