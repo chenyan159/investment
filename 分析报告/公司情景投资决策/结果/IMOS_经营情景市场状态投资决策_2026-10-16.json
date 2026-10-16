@@ -1,0 +1,57 @@
+{
+  "ticker": "IMOS",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:57-07:00",
+  "reference_price": {
+    "value": 65.14,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        18.96,
+        18.96
+      ],
+      "target_price": [
+        12.4,
+        16.34
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        62.9,
+        62.9
+      ],
+      "target_price": [
+        53.83,
+        71.98
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        103.16,
+        103.16
+      ],
+      "target_price": [
+        103.16,
+        132.63
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        140.39,
+        140.39
+      ],
+      "target_price": [
+        160.49,
+        200.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
