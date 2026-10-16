@@ -1,0 +1,149 @@
+{
+  "ticker": "GOOGL",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:00-07:00",
+  "reference_price": {
+    "value": 349.22,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        303,
+        303
+      ],
+      "target_price": [
+        146,
+        185
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        504,
+        504
+      ],
+      "target_price": [
+        437,
+        504
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        664,
+        664
+      ],
+      "target_price": [
+        664,
+        752
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        813,
+        813
+      ],
+      "target_price": [
+        867,
+        976
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若资金投向企业办公与工作流AI，优先MSFT；若专门看好商业搜索与TPU、模型一体化，选择GOOGL。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "direct_competitor",
+      "verdict": "comparable",
+      "reason": "基准回报与资本回收风险接近，AMZN有零售效率和Trainium弹性，GOOGL有较高利润率的搜索与模型入口，适合互补。"
+    },
+    {
+      "peer": "META",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "按本次共同买价与基准经营路径，GOOGL的基准回报和云、TPU收入选择权更优，META的广告推荐优势不足以补偿较低基准价格回报。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "稳健或一般成长资金优先GOOGL；ORCL更高右尾伴随客户融资、长租与受损增发反身性，不能替代核心持仓。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在追求基准现金回报与估值缓冲的新增资金中优先ADBE，GOOGL仅在更看重自有模型、算力与搜索平台右尾时补充。"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "GOOGL基准回报更高且拥有自有模型、分发与算力，NOW须先证明扣SBC及并购资本后的净AI收费才能提高配置顺位。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在可承受AI采购周期和信用敞口的进攻资金中优先NVDA，其基准每股增长与现金价值更强，GOOGL作为终端变现和技术路线分散补充。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若看好定制ASIC交付且能接受XPV、采购与客户信用责任，AVGO进攻回报优先；若优先控制供应商融资风险，GOOGL优先。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若接受台湾集中生产风险，看好AI总采购而不押单一模型，优先TSM；若该地缘风险超出预算，则选GOOGL终端平台。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "以低经营波动和长约现金为首要目标时LIN优先；要求较高业务增长和AI右尾时GOOGL优先。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "在两者当前买价下，GOOGL的基准与乐观回报更高，COST强会员壁垒尚不足以补偿更高的现金价值溢价。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "需要低AI资本相关性、承保收益与分红时PGR优先；追求AI平台右尾时GOOGL优先，不能用周期高点PE判定PGR全面便宜。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "以稳定本地服务现金和降低组合AI相关性为目标时WM优先；以中期资本增值与非线性增长为目标时GOOGL优先。"
+    }
+  ]
+}
