@@ -1,0 +1,57 @@
+{
+  "ticker": "NET",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:00-07:00",
+  "reference_price": {
+    "value": 322.57,
+    "date": "2026-10-16",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        74.6,
+        74.6
+      ],
+      "target_price": [
+        24.1,
+        33.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        205.9,
+        205.9
+      ],
+      "target_price": [
+        118.4,
+        153.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        327.4,
+        327.4
+      ],
+      "target_price": [
+        222.1,
+        292.3
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        485.6,
+        485.6
+      ],
+      "target_price": [
+        485.6,
+        640.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
