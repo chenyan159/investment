@@ -1,0 +1,149 @@
+{
+  "ticker": "NOK",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:46:39-07:00",
+  "reference_price": {
+    "value": 9.57,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        6.36,
+        6.36
+      ],
+      "target_price": [
+        3.82,
+        4.67
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        13.67,
+        13.67
+      ],
+      "target_price": [
+        10.74,
+        12.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        17.94,
+        17.94
+      ],
+      "target_price": [
+        15.97,
+        18.59
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        22.8,
+        22.8
+      ],
+      "target_price": [
+        21.96,
+        26.19
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "CIEN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若追求纯光传输成长与右尾，优先CIEN；若优先业务分散和较浅的受损情景回撤，选择NOK。"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若强调企业现金底盘和分红，优先CSCO；若强调低基数光/IP增长及当前基准价格弹性，选择NOK。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若优先系统软件壁垒和已实现利润率，选择ANET；若在现价追求更好的基准价格赔率且接受业务质量差异，选择NOK。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在相同AI基础设施逻辑下，校准后的AVGO基准年化回报及硅和软件收费权更优，NOK仅适合需要减少客户信用支持敞口的补充。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若追求光学scale-up和定制互连弹性且能承担权证稀释，优先MRVL；若优先较简单的资本结构和许可现金底盘，选择NOK。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "按当前价格和稳健基准标准，NOK有正基准价格回报而LITE基准仍为负，且LITE扩产及可转债约束更大。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若扩产现金仍落后且采用现金回收定价，优先NOK；若COHR量产回款与平台收费证明可维持成长倍数，则优先COHR。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在当前买价下，NOK基准及突破价格回报优于GLW，后者还需承担新Photonics、融资租赁和ATM扩产约束。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一AI资本开支逻辑下，NVDA的系统收费权、已实现盈利和基准及右尾回报更有吸引力，NOK适合作为不同业务暴露的补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在长期核心配置标准下，MSFT的企业入口、收入持续性和基准年化回报优于NOK，但当前价格同样要求资本效率改善。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "TSM在跨架构制造壁垒、已实现现金和基准年化回报上优于NOK，只有需要降低台湾生产集中敞口时才以NOK补充。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "在稳健成长标准下，ASML的技术入口、装机升级和最新财报支持度优于NOK，NOK仅在追求更大条件性突破弹性时占优。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若要降低AI产业相关性并强调承保资本纪律，优先PGR；若明确配置光/IP产业右尾且接受较大回撤，选择NOK。"
+    }
+  ]
+}
