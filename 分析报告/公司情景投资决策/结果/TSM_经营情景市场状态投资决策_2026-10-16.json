@@ -1,0 +1,57 @@
+{
+  "ticker": "TSM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:13-07:00",
+  "reference_price": {
+    "value": 422.25,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        361,
+        361
+      ],
+      "target_price": [
+        203,
+        242
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        782,
+        782
+      ],
+      "target_price": [
+        543,
+        661
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        1037,
+        1037
+      ],
+      "target_price": [
+        874,
+        1031
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        1231,
+        1231
+      ],
+      "target_price": [
+        1084,
+        1272
+      ],
+      "evidence": "weak"
+    }
+  }
+}
