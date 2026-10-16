@@ -1,0 +1,57 @@
+{
+  "ticker": "NVT",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:07-07:00",
+  "reference_price": {
+    "value": 145.73,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        144.29,
+        144.29
+      ],
+      "target_price": [
+        74.35,
+        94.69
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        271.82,
+        271.82
+      ],
+      "target_price": [
+        209.13,
+        246.26
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        357.64,
+        357.64
+      ],
+      "target_price": [
+        312.13,
+        360.63
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        443.27,
+        443.27
+      ],
+      "target_price": [
+        417.0,
+        476.92
+      ],
+      "evidence": "weak"
+    }
+  }
+}
