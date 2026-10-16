@@ -1,0 +1,57 @@
+{
+  "ticker": "MRAM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:45-07:00",
+  "reference_price": {
+    "value": 14.07,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        1.78,
+        1.78
+      ],
+      "target_price": [
+        1.35,
+        1.61
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        12.66,
+        12.66
+      ],
+      "target_price": [
+        11.67,
+        14.65
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        36.14,
+        36.14
+      ],
+      "target_price": [
+        36.14,
+        42.32
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        64.2,
+        64.2
+      ],
+      "target_price": [
+        69.92,
+        81.36
+      ],
+      "evidence": "weak"
+    }
+  }
+}
