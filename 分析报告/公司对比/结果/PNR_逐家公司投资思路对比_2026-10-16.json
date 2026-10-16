@@ -1,0 +1,131 @@
+{
+  "ticker": "PNR",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:37-07:00",
+  "reference_price": {
+    "value": 53.45,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        48.8,
+        48.8
+      ],
+      "target_price": [
+        35.9,
+        44.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        87.6,
+        87.6
+      ],
+      "target_price": [
+        87.6,
+        101.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        106,
+        106
+      ],
+      "target_price": [
+        118.2,
+        138.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        120.5,
+        120.5
+      ],
+      "target_price": [
+        148.3,
+        176
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "comparisons": [
+    {
+      "peer": "DOV",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "PNR赔率占优，DOV分散性与执行可见度占优；容忍渠道修复选PNR，防守工业核心选DOV"
+    },
+    {
+      "peer": "ITT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "PNR现价回报和短债自偿覆盖占优；ITT高可靠平台更强，却不足以补偿当前价差"
+    },
+    {
+      "peer": "PH",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "PNR基准收益优先；PH航空壁垒更强，当前并购负担与估值使其不是更优水务修复载体"
+    },
+    {
+      "peer": "DCI",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "PNR更便宜且修复后基准年化更高；DCI复购稳定性较好，但现价未形成全面替代"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "PNR在当前买价、基准回报与估值缓冲占优；ECL的水服务入口较强，尚不足以覆盖溢价"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "PNR估值及基准回报优先；TT订单与服务质量较好，现金托底仍不足以抵消当前溢价"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "PNR左尾和基准赔率占优；明确押AI付费扩张优先VRT，PNR不能替代其产业纯度"
+    },
+    {
+      "peer": "EME",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "PNR回报优先；重视低净债与工程需求可见度选EME，不能把其采购额归为PNR订单"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "PNR现价回报显著更高；资本稳定与合同确定性优先LIN，二者组合互补"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "PNR基准性价比优先；跨周期平台复利和AI变现优先MSFT，不能用PNR替代软件核心"
+    }
+  ]
+}
