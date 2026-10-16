@@ -1,0 +1,149 @@
+{
+  "ticker": "GLW",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:52:07-07:00",
+  "reference_price": {
+    "value": 138.43,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        105,
+        105
+      ],
+      "target_price": [
+        25,
+        35
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        245,
+        245
+      ],
+      "target_price": [
+        123,
+        157
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        334,
+        334
+      ],
+      "target_price": [
+        199,
+        244
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        380,
+        380
+      ],
+      "target_price": [
+        255,
+        307
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "SMTOY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "接受日元、汽车及工程项目敞口时，住友以较低正常化估值提供同类光连接增长，现价配置顺位高于GLW。"
+    },
+    {
+      "peer": "ASGLY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求AI光连接确定性时GLW优先；若接受CDMO和传统资产修复风险并追求基准估值回报，AGC优先。"
+    },
+    {
+      "peer": "APH",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "相同AI连接逻辑下APH的正常路径回报、跨介质产品和现金转化均优于GLW，除纯光纤暴露偏好外优先APH。"
+    },
+    {
+      "peer": "BDC",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "承受收购杠杆与RUCKUS整合风险以换取更高经营杠杆时BDC优先；重视资金韧性及光连接规模时GLW优先。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "追求跨铜光平台右尾且接受高客户集中和SBC稀释时CRDO优先；重视成熟业务分散和左尾时GLW优先。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "在COHR扩产现金回收未验证前优先GLW的资金韧性；若COHR连续现金改善且可保留20倍以上NOPAT，COHR可成为更优进攻载体。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "常规成长仓优先GLW，因为LITE即使正常兑现仍承受更高估值消化压力，其更大右尾需OCS和光源同时超预期。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "看好AI基础设施且承受平台、出口和客户信用风险时NVDA以更强利润捕获和基准/右尾回报优先于GLW。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "两者基准赔率均有限时，ANET的净现金、软件运维粘性及较轻制造资本负担支持更高配置顺位。"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若看好广告和终端AI变现优先META；若只看好物理光连接且希望回避广告及内容监管则选GLW，两者基准赔率均有限。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心复利仓优先微软，其企业入口、成熟利润池和基准年化回报优于GLW，但仍须检验云资本回收。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾集中尾部风险时优先台积电，其工艺与封装瓶颈、最新财报和基准赔率均强于GLW。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "资本保全和长期底仓优先LIN的合同、区域网络与现金韧性；若目的为非线性进攻，GLW的弹性更高。"
+    }
+  ]
+}
