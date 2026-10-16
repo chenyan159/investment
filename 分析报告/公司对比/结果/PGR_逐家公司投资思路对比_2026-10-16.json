@@ -1,0 +1,131 @@
+{
+  "ticker": "PGR",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:46:40-07:00",
+  "reference_price": {
+    "value": 213.75,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        146,
+        146
+      ],
+      "target_price": [
+        117,
+        139
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        252,
+        252
+      ],
+      "target_price": [
+        239,
+        275
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        344,
+        344
+      ],
+      "target_price": [
+        351,
+        401
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        393,
+        393
+      ],
+      "target_price": [
+        415,
+        472
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "TRV",
+      "relation": "direct_competitor",
+      "verdict": "comparable",
+      "reason": "基准年化回报大致相当，个人汽车份额与家庭扩张选PGR，商业及保证险和资本分配选TRV。"
+    },
+    {
+      "peer": "CB",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "稳健新增资金在当前价格下略优先CB的分散盈利与基准回报，若PGR降至185—195美元且经营完整或车险乐观路径确认则可反转。"
+    },
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "当前正常化估值、个人汽车数量验证和右尾弹性更支持PGR，WRB仅作医疗止损及特色险分散补充。"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "承受巨灾和回购路径风险并追求更高赔率选RNR，偏好终端客户、汽车份额和快速续保纠错选PGR。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "当前买价下PGR的基准现金、估值和融资风险明显较优，TSLA需要尚未验证的大规模无人车及机器人突破才支撑显著上行。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "追求AI平台及无人车队长期右尾并承受资本回收与稀释选GOOGL，要求当前基本自筹增长及保险分散选PGR。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "COST经营确定性更高但现价正常化倍数压低基准回报，PGR在当前新资金的回报和右尾效率上更优。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "WM业务更稳定但现价基准回报较低且存在债务和项目风险，PGR的当前赔率更有吸引力。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "LIN长约和现场网络更稳，但现价基准收益及资本占用弱于PGR，待更低买价或项目现金上修后再比较。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "企业AI长期进攻优先MSFT，限制资本开支及模型客户信用敞口或需要保险分散的资金选PGR。"
+    }
+  ]
+}
