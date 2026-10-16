@@ -1,0 +1,57 @@
+{
+  "ticker": "SMCI",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:46-07:00",
+  "reference_price": {
+    "value": 35.09,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-30",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        33,
+        33
+      ],
+      "target_price": [
+        18,
+        26
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        91,
+        91
+      ],
+      "target_price": [
+        69,
+        91
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        148,
+        148
+      ],
+      "target_price": [
+        148,
+        182
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        194,
+        194
+      ],
+      "target_price": [
+        284,
+        344
+      ],
+      "evidence": "weak"
+    }
+  }
+}
