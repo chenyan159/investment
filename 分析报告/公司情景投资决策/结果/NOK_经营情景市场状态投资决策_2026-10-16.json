@@ -1,0 +1,57 @@
+{
+  "ticker": "NOK",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:34-07:00",
+  "reference_price": {
+    "value": 9.57,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        6.36,
+        6.36
+      ],
+      "target_price": [
+        3.82,
+        4.67
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        13.33,
+        13.33
+      ],
+      "target_price": [
+        10.47,
+        12.38
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        17.94,
+        17.94
+      ],
+      "target_price": [
+        15.97,
+        18.59
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        22.8,
+        22.8
+      ],
+      "target_price": [
+        21.96,
+        26.19
+      ],
+      "evidence": "weak"
+    }
+  }
+}
