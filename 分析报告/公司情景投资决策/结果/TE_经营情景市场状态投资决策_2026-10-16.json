@@ -1,0 +1,57 @@
+{
+  "ticker": "TE",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:06-07:00",
+  "reference_price": {
+    "value": 2.93,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        5.0,
+        5.0
+      ],
+      "target_price": [
+        1.27,
+        1.74
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        7.48,
+        7.48
+      ],
+      "target_price": [
+        5.43,
+        6.49
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        9.96,
+        9.96
+      ],
+      "target_price": [
+        8.55,
+        9.39
+      ],
+      "evidence": "weak"
+    }
+  }
+}
