@@ -1,0 +1,57 @@
+{
+  "ticker": "ROG",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:00:25-07:00",
+  "reference_price": {
+    "value": 137.78,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        69,
+        69
+      ],
+      "target_price": [
+        49,
+        59
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        187,
+        187
+      ],
+      "target_price": [
+        171,
+        204
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        264,
+        264
+      ],
+      "target_price": [
+        288,
+        335
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        297,
+        297
+      ],
+      "target_price": [
+        351,
+        405
+      ],
+      "evidence": "weak"
+    }
+  }
+}
