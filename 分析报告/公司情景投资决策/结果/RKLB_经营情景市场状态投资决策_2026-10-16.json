@@ -1,0 +1,57 @@
+{
+  "ticker": "RKLB",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:51:00-07:00",
+  "reference_price": {
+    "value": 56.02,
+    "date": "2026-10-16",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        4.04,
+        4.04
+      ],
+      "target_price": [
+        0.93,
+        1.53
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        16.69,
+        16.69
+      ],
+      "target_price": [
+        15.24,
+        20.09
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        39.4,
+        39.4
+      ],
+      "target_price": [
+        40.51,
+        53.87
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        65.51,
+        65.51
+      ],
+      "target_price": [
+        74.83,
+        93.48
+      ],
+      "evidence": "weak"
+    }
+  }
+}
