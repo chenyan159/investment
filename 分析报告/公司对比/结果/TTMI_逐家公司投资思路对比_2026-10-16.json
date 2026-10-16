@@ -1,0 +1,143 @@
+{
+  "ticker": "TTMI",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:53:58-07:00",
+  "reference_price": {
+    "value": 101.36,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        53,
+        53
+      ],
+      "target_price": [
+        19,
+        29
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        191,
+        191
+      ],
+      "target_price": [
+        130,
+        159
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        307,
+        307
+      ],
+      "target_price": [
+        243,
+        287
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        434,
+        434
+      ],
+      "target_price": [
+        364,
+        448
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "SANM",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若投资目标是高端PCB放量，TTMI的主业弹性更直接；若看好AMD整机及跨平台制造，则SANM更合适。"
+    },
+    {
+      "peer": "APH",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在同一AI互连配置逻辑下，APH具有更强现金转化、更广产品与客户组合，基准回报亦不逊于TTMI，核心配置优先APH。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "在当前价格下，TTMI的基准和上行情景赔率较好；GLW现价更依赖尚待商业化的新Photonics平台。"
+    },
+    {
+      "peer": "PCRHY",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若追求N+M板级利润弹性，TTMI更直接；若看好材料、电源与集团重组且接受日元和OTC风险，则PCRHY更合适。"
+    },
+    {
+      "peer": "Q",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若以较稳定的工艺耗材现金流为先，Q优于TTMI；若能承担融资与良率风险以换取更高右尾，TTMI更合适。"
+    },
+    {
+      "peer": "CLS",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若同时接受两者基准经营路径，CLS资金储备及基准年化回报更强，广义AI制造优先CLS；其客户集中仍需控制。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若优先现金防守和系统软件壁垒，ANET更好；若优先现价至目标日的进攻赔率且接受高回撤，则TTMI更好。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在广义AI算力主线下，NVDA平台定价权、资金调度及基准回报更强；TTMI仅在特定板级内容量跃升时提供差异化补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健核心资金优先MSFT的企业入口、持续经营底盘与较小左尾；TTMI只在寻求制造利润跃迁时作为进攻补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先技术栈、分发与广告经营底盘，GOOGL更优；若优先板级成长纯度和上行弹性且接受杠杆，则TTMI更优。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先电气装机、售后与较稳定现金流，ETN更合适；若优先进攻回报，TTMI的基准及右尾空间更高。"
+    },
+    {
+      "peer": "CW",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若以国防现金流和本金韧性为先，CW更优；若追求AI与国防共同带来的非线性，TTMI更合适。"
+    }
+  ]
+}
