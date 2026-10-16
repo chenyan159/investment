@@ -1,0 +1,143 @@
+{
+  "ticker": "NET",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:09:36-07:00",
+  "reference_price": {
+    "value": 316.32,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        74.6,
+        74.6
+      ],
+      "target_price": [
+        24.1,
+        33.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        205.9,
+        205.9
+      ],
+      "target_price": [
+        118.4,
+        153.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        327.4,
+        327.4
+      ],
+      "target_price": [
+        222.1,
+        292.3
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        485.6,
+        485.6
+      ],
+      "target_price": [
+        485.6,
+        640.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "PANW",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若专押边缘执行和开发生态，NET优先；若采购成熟企业安全平台，PANW更强，但两者现价均不满足稳健回报门槛。"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在企业网络与安全预算的稳健配置上CSCO优先，经营现金和当前盈利覆盖更强；NET仅在边缘平台增速上占优。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "企业云、开发工具与AI治理的综合配置优先MSFT；NET有独立边缘架构优势，但当前估值与盈利底线逊于MSFT。"
+    },
+    {
+      "peer": "CRWD",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若要端点与SOC控制选CRWD，若要边缘执行与开发平台右尾选NET；两者现价基准回报都为负，不互作稳健替代。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "通用云与代理生产预算优先AMZN，AWS生态和现有利润池支持正基准回报；NET仅在轻量边缘和跨云中立性占优。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在AI分发、模型与云的综合配置上GOOGL优先，基准回报和盈利覆盖较好；NET的内容与中立网络入口不能替代已实现利润。"
+    },
+    {
+      "peer": "DDOG",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "同属高波动开发平台预算时DDOG当前价格的基准损失较小、乐观回报为正；两者均不宜作稳健核心，NET仅在执行入口独特性占优。"
+    },
+    {
+      "peer": "EQIX",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "互联与分布式基础设施的稳健配置优先EQIX，真实计费和基准回报更清楚；需接受扩建融资与利率风险，不能把AFFO全当可分配现金。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义AI基础设施进攻优先NVDA，已实现收费、经营利润和基准赔率更好；NET较少依赖单一GPU架构是补充优势。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "若接受台湾集中风险，TSM的已实现制造壁垒与基准回报优于NET；不接受该尾部时改比MSFT等，不能因此自动提高NET价值。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "以经营现金和AI可收费工作流为资金机会成本，ADBE现价优先；NET增长更快，但基准与右尾价格回报都不足以抵消费用和估值差。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若看成熟广告盈利与较小基准损失，META优先；若明确只押中立边缘执行，NET有独特性，但两者现价都不宜当无条件稳健核心。"
+    }
+  ]
+}
