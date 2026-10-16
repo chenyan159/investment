@@ -1,0 +1,57 @@
+{
+  "ticker": "HPE",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:52:16-07:00",
+  "reference_price": {
+    "value": 58.63,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        42.17,
+        42.17
+      ],
+      "target_price": [
+        27.68,
+        33.54
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        90.67,
+        90.67
+      ],
+      "target_price": [
+        81.23,
+        93.01
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        119.42,
+        119.42
+      ],
+      "target_price": [
+        114.77,
+        137.49
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        152.29,
+        152.29
+      ],
+      "target_price": [
+        165.12,
+        193.99
+      ],
+      "evidence": "weak"
+    }
+  }
+}
