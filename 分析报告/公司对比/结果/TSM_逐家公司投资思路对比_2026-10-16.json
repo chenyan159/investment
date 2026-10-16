@@ -1,0 +1,155 @@
+{
+  "ticker": "TSM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:59:05-07:00",
+  "reference_price": {
+    "value": 422.25,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        361,
+        361
+      ],
+      "target_price": [
+        203,
+        242
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        782,
+        782
+      ],
+      "target_price": [
+        602,
+        719
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1037,
+        1037
+      ],
+      "target_price": [
+        913,
+        1070
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1231,
+        1231
+      ],
+      "target_price": [
+        1131,
+        1319
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "comparisons": [
+    {
+      "peer": "INTC",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在先进制造的盈利兑现与稳健基准配置上优先TSM，INTC的外部代工盈利与资本回收尚未验证。"
+    },
+    {
+      "peer": "GFS",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "优先TSM的可验证制造租金与基准回报，GFS新厂服务模式仍需最终收费和资本责任条款落地。"
+    },
+    {
+      "peer": "UMC",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "优先TSM的先进制程增长和基准赔率，UMC的经营利润须剔除投资收益且成熟工艺扩张受供给竞争约束。"
+    },
+    {
+      "peer": "TSEM",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "当前价格下优先TSM的基准回报与现金韧性，TSEM需要日本装载与硅光净收费明显超基准才更有吸引力。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "优先TSM的前段控制与现金自给，ASX的测试和封装增量要先穿过扩产融资及净加工费兑现。"
+    },
+    {
+      "peer": "AMKR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "稳健资金优先TSM；若美国项目资金先落实且计算封装连续达标，追求高弹性的资金可优先AMKR。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "接受台湾风险且重视基准回报时优先TSM；若必须分散制造地域并持有多家晶圆厂扩产的受益权，则优先ASML。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "当前买价下优先TSM的基准赔率，KLAC虽资本更轻但正常兑现路径的回报仍受高进入估值约束。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健制造敞口优先TSM；若追求平台右尾且能承受客户融资、毛利传导与ASIC份额风险，则优先NVDA。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "分散架构与信用风险时优先TSM；若确认ASIC代际订单、客户资金与采购责任闭合，进攻资金可优先AVGO。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在本价位新增成长配置优先TSM的基准赔率；MSFT可作为企业分发与地域分散的补充。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视制造壁垒与近期兑现时优先TSM；若确认专业创意续约稳定且重视现金估值修复，则优先ADBE。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求成长回报时优先TSM；若组合优先降低半导体周期与台湾风险并接受较低回报，则优先LIN。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "在当前买价下优先TSM的基准回报与上行弹性，COST的会员确定性尚不足以补偿低现金收益率。"
+    }
+  ]
+}
