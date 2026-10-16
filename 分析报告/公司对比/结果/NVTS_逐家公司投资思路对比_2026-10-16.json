@@ -1,0 +1,143 @@
+{
+  "ticker": "NVTS",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:56:25-07:00",
+  "reference_price": {
+    "value": 9.23,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        1.09,
+        1.09
+      ],
+      "target_price": [
+        0.98,
+        1.05
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        2.37,
+        2.37
+      ],
+      "target_price": [
+        2.31,
+        2.82
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        6.79,
+        6.79
+      ],
+      "target_price": [
+        7.51,
+        9.43
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        14.24,
+        14.24
+      ],
+      "target_price": [
+        16.93,
+        21.24
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "英飞凌有已交付的AI收入和成熟利润底盘，当前价格对基准兑现的要求低于NVTS"
+    },
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "ON有正利润底盘且基准及突破回报更优，但须控制全现金并购带来的债务和执行风险"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "STM有MCU及光互连量产底盘，现价基准与上行情景回报更好，需接受重组和资本开支风险"
+    },
+    {
+      "peer": "POWI",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "POWI有成熟现金业务且乐观回报更高，不过基准回报仍偏低，优先级高于NVTS不代表现价强买"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "MPS的供电模块已有规模利润和客户基础，在相近上行弹性下基准损失风险低于NVTS"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "Vicor已有许可和硬件盈利，基准及突破回报优于NVTS，但仍需约束厂房及诉讼集中风险"
+    },
+    {
+      "peer": "GFS",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若新SPV净收费及资本节省超过政府股权和责任成本则优先GFS；条款未定前两者均只观察"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "NVDA拥有平台收费权和规模利润，在本次条件模型中基准及突破回报更高，是AI主线首选"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "Vertiv能在多条供电与冷却路线收费，基准正回报及成熟交付能力优于NVTS"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "微软成熟软件现金与企业入口支撑基准增长，当前风险调整后的配置价值高于NVTS"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "Costco经营和资本保全证据更强，适合稳健资金优先观察，但高估值并不支持无条件现价配置"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "Linde长约、区域网络和正现金流更适合资本保全，虽然当前基准回报仍有限但优于NVTS"
+    }
+  ]
+}
