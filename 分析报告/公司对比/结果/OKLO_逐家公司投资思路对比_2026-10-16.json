@@ -1,0 +1,143 @@
+{
+  "ticker": "OKLO",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:00-07:00",
+  "reference_price": {
+    "value": 30.01,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2035-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        6.99,
+        6.99
+      ],
+      "target_price": [
+        5.6,
+        6.59
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        11.99,
+        11.99
+      ],
+      "target_price": [
+        10.36,
+        11.99
+      ],
+      "evidence": "weak"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        15.67,
+        15.67
+      ],
+      "target_price": [
+        18.58,
+        21.48
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        45.65,
+        45.65
+      ],
+      "target_price": [
+        60.61,
+        83.06
+      ],
+      "evidence": "insufficient"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "SMR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "有预付覆盖PMA和制造款的OEM落地时，SMR的年化右尾优于OKLO；未落地时两者均不作核心仓"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "配置可靠低碳电力重定价时优先CEG，现役机队和较短兑现期胜过OKLO；现价基准回报仍偏低"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "近中期电力现金与客户换约配置优先VST，OKLO仅在新快堆平台突破维度有差异化"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若优先要求交付确定性，选GEV；若追求新核平台右尾，可留OKLO观察，但GEV现价基准为负，不能据经营优势直接追买"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "追求2027—2029供电放量且接受维护／集中风险时BE优先；只接受无碳裂变期权时OKLO不同，现价两者均非稳健首选"
+    },
+    {
+      "peer": "LEU",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稀缺燃料跨堆型收费兑现时LEU优先；若复制资本回报偏薄，LEU也不能替代OKLO成为便宜核心仓"
+    },
+    {
+      "peer": "BWXT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "核工业参与优先BWXT，成熟核制造收费、现金及较短兑现优于OKLO；现价安全边际仍有限"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求已盈利、跨堆型核燃料和服务时CCJ优先；但现价基准估值仍不足，不能把它列为无条件更优买点"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "配置AI应用现金引擎优先META，其采购选择权强于单一电站开发商；基准低回报意味着不必现价重仓"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心复利资金优先MSFT，已有收费、利润和现金支持；OKLO的新核技术弹性不足以补偿九年等待"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "进攻兼复利资金优先NVDA，基准和乐观年化回报都优于OKLO且有当期经营证据，但客户资本相关性须限仓"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "可接受台湾集中风险时优先TSM，其多客户制造利润与现金已经兑现，基准年化回报显著胜过OKLO"
+    }
+  ]
+}
