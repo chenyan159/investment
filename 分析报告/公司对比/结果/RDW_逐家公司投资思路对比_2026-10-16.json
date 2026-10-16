@@ -1,0 +1,143 @@
+{
+  "ticker": "RDW",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:41-07:00",
+  "reference_price": {
+    "value": 8.91,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        2.31,
+        2.31
+      ],
+      "target_price": [
+        2.06,
+        2.25
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        4.29,
+        4.29
+      ],
+      "target_price": [
+        4.01,
+        4.71
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        11.94,
+        11.94
+      ],
+      "target_price": [
+        11.94,
+        14.47
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        18.77,
+        18.77
+      ],
+      "target_price": [
+        20.47,
+        25.57
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "RKLB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在当前价格下RDW四情景回报和融资缓冲更有利，RKLB的发射及网络平台优势尚未转成更好的每股赔率。"
+    },
+    {
+      "peer": "AVAV",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "若配置无人系统与国防技术增长，AVAV已有更强生产采购证据且基准与右尾回报更好，优先于RDW。"
+    },
+    {
+      "peer": "KTOS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若重视已兑现的有机增长和基准回报则KTOS优先，若明确购买空间电力及VLEO突破敞口则RDW更合适。"
+    },
+    {
+      "peer": "ASTS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "资本保全及现有交付证据优先时选择RDW，只有愿承担星座融资与付费采用风险并追求更大右尾时才选ASTS。"
+    },
+    {
+      "peer": "PL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "泛空间右尾配置优先RDW，若投资逻辑必须是观测数据复用与主权服务则PL提供更直接敞口。"
+    },
+    {
+      "peer": "AMPX",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若硅负极电芯资格与回款得到验证且追求更大上行则AMPX优先，若重视现金缓冲与多产品分散则RDW优先。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若配置高可靠部件与基础设施增长，APH盈利现金和跨平台复用更成熟，现价基准与上行情景回报均更好。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若比较组合资金的长期机会成本，AMZN成熟利润底盘和基准回报更优，但买入它并不等同纯空间制造敞口。"
+    },
+    {
+      "peer": "CW",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若作为核心高可靠制造持仓则CW优先，只有专门追求空间业务突破弹性时RDW才有补充价值。"
+    },
+    {
+      "peer": "BWXT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先确定性与受监管制造复利则BWXT优先，若只寻求高波动空间突破期权则RDW的上沿更高。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "在全市场资金机会成本下NVDA的基准、乐观与突破回报更高且已有更强盈利底盘，RDW仅保留不同产业敞口。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "若配置成熟平台的长期复利，MSFT的盈利、左尾和基准年化回报优先于RDW，仍需防范资本效率与估值溢价。"
+    }
+  ]
+}
