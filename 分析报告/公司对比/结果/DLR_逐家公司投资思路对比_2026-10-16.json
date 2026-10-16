@@ -1,0 +1,149 @@
+{
+  "ticker": "DLR",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:54:07-07:00",
+  "reference_price": {
+    "value": 174.47,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        163,
+        163
+      ],
+      "target_price": [
+        102,
+        121
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        252,
+        252
+      ],
+      "target_price": [
+        206,
+        236
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        280,
+        280
+      ],
+      "target_price": [
+        262,
+        295
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        322,
+        322
+      ],
+      "target_price": [
+        326,
+        364
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "EQIX",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "数字基础设施长期配置优先EQIX，其互联黏性和基准年化更好，DLR仅在较高现金股息率和较低买价时补充。"
+    },
+    {
+      "peer": "APLD",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "DLR的经常现金、融资成本及四情景普通股回报均优于APLD，后者项目优先分配使正常交付不足以保证股东收益。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "保全本金和现金收入优先DLR；只有能承受旧股清零且未来12个月融资与GPU更新回报均验证时，进攻配置才优先CRWV。"
+    },
+    {
+      "peer": "NBIS",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "NBIS基准价格回报接近DLR，却承担GPU更新、融资失灵和清零分支，当前稳健资金优先DLR。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "企业AI核心配置优先MSFT的成熟利润池与客户入口，DLR适合作为较高现金分红的基础设施补充。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "云和AI利润增长配置优先AMZN，其基准与右尾回报更高且客户入口更强，DLR仅补充租金现金流。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健租金配置优先DLR；OCI交付、预付款质量及更新后回报同时验证且接受更大回撤时，进攻才优先ORCL。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "现金分红与较低受损回撤优先DLR；能承担订单、净价和制造周期波动并追求AI资本开支弹性时，优先VRT。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "ETN现价的基准股价年化较低且现金价值溢价更大，DLR提供更好的基准回报和现金分红。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "CEG需更长观察期且基准年化更低、受损回撤更大，PPA净价未披露时可靠基础设施资金优先DLR。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "可接受台湾集中风险时TSM的制造壁垒、现金自给和右尾更优；若该风险不可承受且偏好全球租金，DLR优先。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求较高股息及租金增长优先DLR；若优先工业客户分散和更强经营自给能力，则选LIN，且须接受其较低基准回报。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "能承担创意席位被AI替代风险的价值资金优先ADBE，其现金价值折价、基准回报与模型左尾均优于DLR。"
+    }
+  ]
+}
