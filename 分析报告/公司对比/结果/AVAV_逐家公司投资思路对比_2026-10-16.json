@@ -1,0 +1,143 @@
+{
+  "ticker": "AVAV",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:00-07:00",
+  "reference_price": {
+    "value": 123.22,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-04-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        101,
+        101
+      ],
+      "target_price": [
+        25,
+        32
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        295,
+        295
+      ],
+      "target_price": [
+        142,
+        172
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        435,
+        435
+      ],
+      "target_price": [
+        245,
+        301
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        650,
+        650
+      ],
+      "target_price": [
+        416,
+        513
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "KTOS",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在当前买价下优先AVAV的已投产打击与激光收益路径，若专门押注CCA和发动机大批外售则KTOS更贴合。"
+    },
+    {
+      "peer": "RDW",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "AVAV的成熟产品利润和基准回报优于RDW，RDW的净现金优势尚不能补足集团盈利和现金缺口。"
+    },
+    {
+      "peer": "RKLB",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "AVAV生产采购的兑现门槛较近，RKLB现价需更高频新箭与网络跃迁共同成功。"
+    },
+    {
+      "peer": "PLTR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "看防务实物交付及现价回报选AVAV，看跨行业数据和执行控制层且接受较低基准回报才选PLTR。"
+    },
+    {
+      "peer": "TDY",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重现金和资本保全选TDY，承担交付与整合风险以追求打击和LOCUST非线性回报选AVAV。"
+    },
+    {
+      "peer": "CW",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重既有高可靠部件盈利和复利选CW，重消耗武器与激光量产弹性选AVAV。"
+    },
+    {
+      "peer": "AMPX",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "AVAV更成熟的盈利与生产采购优于AMPX当前电芯复制和融资风险，仅在AMPX跨厂验证及买价改善后重估。"
+    },
+    {
+      "peer": "MTSI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "看防务实物需求和现价回报偏AVAV，看数据通信与RF元件高利润扩张且认可更高倍数偏MTSI。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "APH成熟利润、现金转化和基准年化回报更适合核心配置，AVAV用于防务预算分散和激光进攻补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "MSFT企业入口和盈利底盘提供更好的核心持有质量与基准回报，AVAV仅增加不同来源的防务弹性。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "正常经营兑现的全市场配置偏GOOGL，若需降低AI资本开支关联并押注防务生产则AVAV更适合。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "NVDA在基准、乐观回报及已实现盈利能力上胜出，AVAV仅提供不同预算来源的防务补充。"
+    }
+  ]
+}
