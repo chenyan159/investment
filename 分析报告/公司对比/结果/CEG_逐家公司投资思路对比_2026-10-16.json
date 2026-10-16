@@ -1,0 +1,143 @@
+{
+  "ticker": "CEG",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:45:51-07:00",
+  "reference_price": {
+    "value": 275,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        163,
+        163
+      ],
+      "target_price": [
+        85,
+        106
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        403,
+        403
+      ],
+      "target_price": [
+        280,
+        333
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        596,
+        596
+      ],
+      "target_price": [
+        466,
+        544
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        783,
+        783
+      ],
+      "target_price": [
+        647,
+        749
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "VST",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "单押成熟核电重定价时CEG优先；重视近年普通股现金且接受煤电退出及复杂索取权时VST优先。"
+    },
+    {
+      "peer": "ETR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "追求受监管增长与含息回报且接受持续股权融资时ETR优先；追求核电净价右尾时CEG优先。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "GEV现价基准价格回报仍为负，CEG的成熟发电与当前赔率更好。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "CEG成熟盈利和基准赔率更强，BE的快速部署尚未转成更可靠的每股现金回报。"
+    },
+    {
+      "peer": "OKLO",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "CEG已有可交付核电与盈利；OKLO长周期突破年化和当前估值尚不能补偿融资及商业化风险。"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "CEG当前核电重定价赔率更好，CCJ高倍数与外购及合资现金约束削弱配置吸引力。"
+    },
+    {
+      "peer": "BWXT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "优先国防核制造与服务稳定性时选BWXT；优先存量核电PPA净价弹性时选CEG。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "微软成熟利润底盘、融资弹性和较高基准年化更值得新增核心资金。"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "verdict": "comparable",
+      "reason": "现价两者基准现金赔率都不足以成为核心首选，电力与广告利润敞口各有适用范围。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "英伟达的真实平台收费和当前基准复利更强，较新经营工作点的比例压力后仍优于CEG。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "台积电制造收费经最新财报验证且基准年化更高，台湾集中风险通过仓位控制。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视稳定现金和较小普通经营左尾时LIN优先；重视核电重新定价右尾时CEG优先。"
+    }
+  ]
+}
