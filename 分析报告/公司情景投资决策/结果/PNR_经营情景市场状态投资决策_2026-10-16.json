@@ -1,0 +1,57 @@
+{
+  "ticker": "PNR",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:13-07:00",
+  "reference_price": {
+    "value": 53.45,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        48.8,
+        48.8
+      ],
+      "target_price": [
+        35.9,
+        44.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        87.6,
+        87.6
+      ],
+      "target_price": [
+        87.6,
+        101.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        106.0,
+        106.0
+      ],
+      "target_price": [
+        118.2,
+        138.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        120.5,
+        120.5
+      ],
+      "target_price": [
+        148.3,
+        176.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
