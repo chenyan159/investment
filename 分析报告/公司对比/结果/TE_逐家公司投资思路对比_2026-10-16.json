@@ -1,0 +1,143 @@
+{
+  "ticker": "TE",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:50:45-07:00",
+  "reference_price": {
+    "value": 2.93,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        5.0,
+        5.0
+      ],
+      "target_price": [
+        1.56,
+        2.09
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        7.48,
+        7.48
+      ],
+      "target_price": [
+        6.27,
+        7.26
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        9.96,
+        9.96
+      ],
+      "target_price": [
+        9.74,
+        11.25
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "FLNC",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "承担储能修复风险时优先FLNC，其规模客户、基准及右尾赔率更好；仍须取得制造与授信改善证据。"
+    },
+    {
+      "peer": "ENPH",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "重视现金韧性和产品平台时优先ENPH；只有融资及抵免已闭合且押注公用事业本土片放量时TE才更直接。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "追求现场供电商业确定性优先BE；仅在TE融资及税抵确认后比较新增进攻赔率时TE更便宜，现价两者均不宜核心重仓。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "经营壁垒及融资韧性优先GEV；TE仅在成功融资的高风险上行分支占优，当前两者基准价格回报均不足。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "配置可交付低碳电力优先CEG，其运行资产和客户长约更强；低基准年化仍限制现价仓位。"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "既有电力资产与现金兑现优先VST；TE右尾更大，但融资及抵免双门槛使其无法替代VST的成熟供电敞口。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "分散经营及工艺壁垒优先GLW；若仅押美国电池片高弹性且融资税抵已证实，TE更直接，现价GLW基准赔率也不足。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "配置能源及电网建设优先PWR，成熟获客和自我融资强于TE；工程高估值仍使其适合克制建仓。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健复利配置优先MSFT，其已实现利润及资金能力更强；AI再投资压力要求按现金回报控制买价。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "追求已验证AI平台增长优先NVDA，基准与右尾兼具且无需靠母公司救助融资；客户资本周期仍是共同风险。"
+    },
+    {
+      "peer": "MU",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "承担产业周期风险时优先MU，其当前盈利现金及条件右尾更好；该结论以传统存储价格没有提前大幅逆转为条件。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "基准性价比及资本保全优先ADBE，其现金无需等待新厂融资，基准回报优于TE；须跟踪创意席位及净收费。"
+    }
+  ]
+}
