@@ -1,0 +1,143 @@
+{
+  "ticker": "P",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:04:43-07:00",
+  "reference_price": {
+    "value": 133.4,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-03",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        53,
+        53
+      ],
+      "target_price": [
+        28,
+        34
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        189,
+        189
+      ],
+      "target_price": [
+        142,
+        177
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        272,
+        272
+      ],
+      "target_price": [
+        255,
+        306
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        377,
+        377
+      ],
+      "target_price": [
+        377,
+        448
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "NTAP",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "P特定维度占优：双云与较快每股增长提供更高基准和右尾赔率；NTAP支持现金更稳，现价优先P的小仓成长敞口"
+    },
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "P特定维度占优：软件与续费收费权、基准赔率优于低利润集成和DFS信用敞口；Dell整柜渠道更强，但现价新增资金优先P"
+    },
+    {
+      "peer": "HPE",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "P被HPE在当前配置赔率上压制：HPE基准回报更高、悲观损失较小、乐观弹性相当；纯全闪存IP暴露仍由P提供"
+    },
+    {
+      "peer": "STX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若看好冷温数据容量和HAMR兑现，STX的当前年化赔率优先；若看好企业在线全闪存、云软件收费且希望降低介质价差依赖，P占优"
+    },
+    {
+      "peer": "WDC",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "同为可替代的数据存储配置，当前WDC基准年化更高且悲观回撤较小；P在低延迟在线负载与IP扩张上占优，但不足抵消当前价差"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若合格NAND紧张、NBM底价与交付成立，SNDK现金及基准赔率优先；若供应降价而P能保住系统溢价和云净收费，P更适合作补充"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若2027—2028合格供给紧张延续，MU基准和右尾赔率优先；若介质稀缺溢价消退而系统软件收费稳定，P相对受益，二者不能视为无条件替代"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "P被NVDA在当前AI进攻配置上压制：平台收费权、基准回报及右尾更强且悲观回撤较小；P只提供不同的数据层暴露和较低直接GPU出口风险"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "P相对AMZN只在直接存储IP与较小规模成长上占优；AMZN有更多成熟现金来源、更高基准年化及更小悲观回撤，综合长期资金优先AMZN"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心配置标准MSFT优先：成熟收费和抗损伤更强，基准年化也高于P；P乐观右尾更大时可作进攻补充，不能据此替代微软核心底仓"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若可承受台湾生产集中风险，TSM经营壁垒、基准与乐观赔率优先；若组合硬性限制该地域暴露，P可作数据层补充而非台积电等效替代"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若要求资本保全和防御分散，LIN优先；若明确追求双云／EXA上行且能承受约四分之三损失，P的右尾赔率更高"
+    }
+  ]
+}
