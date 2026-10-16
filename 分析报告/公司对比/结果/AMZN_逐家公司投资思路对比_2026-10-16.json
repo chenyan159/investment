@@ -1,0 +1,155 @@
+{
+  "ticker": "AMZN",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:37-07:00",
+  "reference_price": {
+    "value": 254.76,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        274,
+        274
+      ],
+      "target_price": [
+        135,
+        165
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        476,
+        476
+      ],
+      "target_price": [
+        340,
+        390
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        630,
+        630
+      ],
+      "target_price": [
+        500,
+        565
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        796,
+        796
+      ],
+      "target_price": [
+        720,
+        800
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "verdict": "comparable",
+      "reason": "AMZN的零售广告与自研成本优势、MSFT的企业入口与软件利润各有所长，当前基准年化接近。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "同价日AMZN基准回报较高，且不承担同样的搜索入口迁移与TPU外销信用组合风险；GOOGL全栈模型仍更强。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "成熟云配置优先AMZN，Oracle更高右尾同时要求融资与工程双兑现，不能构成同风险下的更优替代。"
+    },
+    {
+      "peer": "META",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "AMZN基准年化与右尾更好，Meta须显著改善新增AI资本回报才改变配置顺位。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价WMT基准交易回报不足，AMZN拥有更好的业务增长与价格赔率；WMT必需消费韧性不消除估值风险。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "核心或普通成长配置选AMZN；仅在可承受接近全部损失且融资按期到位的进攻预算中选择CRWV。"
+    },
+    {
+      "peer": "NET",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "NET在乐观情景下仍不足以覆盖现价，AMZN以较低的商业化门槛提供正基准与更大可信右尾。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "AI基础设施进攻配置优先NVDA：修正后的基准与乐观回报仍高于AMZN，但采购、信用和周期风险更集中。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "自研ASIC与网络进攻配置优先AVGO，基准年化和现金留存更高；承担客户集中和融资支持尾部，不能替代AMZN全部业务。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "接受台湾集中风险且希望跨GPU/ASIC收费时优先TSM；不接受该尾部或重视终端平台时优先AMZN。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "AMZN在当前价格下提供更高基准与乐观回报，COST经营确定性更强但高倍数已吸收大部分收益。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "成长资金优先AMZN，LIN长约韧性更强但现价基准年化较低；防守需求可独立保留LIN。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "AMZN基准回报与右尾更高；WM提供独立防守现金来源，但现价不是更优的成长资金载体。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求平台增长与右尾选AMZN；重视与AI投资周期分散且计入现金分红的稳健配置可优先PGR。"
+    }
+  ]
+}
