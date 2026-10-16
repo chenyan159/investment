@@ -1,0 +1,57 @@
+{
+  "ticker": "CEG",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:51-07:00",
+  "reference_price": {
+    "value": 275,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        163,
+        163
+      ],
+      "target_price": [
+        85,
+        106
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        403,
+        403
+      ],
+      "target_price": [
+        280,
+        333
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        596,
+        596
+      ],
+      "target_price": [
+        466,
+        544
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        783,
+        783
+      ],
+      "target_price": [
+        647,
+        749
+      ],
+      "evidence": "weak"
+    }
+  }
+}
