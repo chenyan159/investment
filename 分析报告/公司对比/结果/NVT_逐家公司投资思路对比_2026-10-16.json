@@ -1,0 +1,143 @@
+{
+  "ticker": "NVT",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:00:00-07:00",
+  "reference_price": {
+    "value": 145.73,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        112.08,
+        112.08
+      ],
+      "target_price": [
+        74.35,
+        94.69
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        213.01,
+        213.01
+      ],
+      "target_price": [
+        209.13,
+        246.26
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        280.83,
+        280.83
+      ],
+      "target_price": [
+        312.13,
+        360.63
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        348.38,
+        348.38
+      ],
+      "target_price": [
+        417.0,
+        476.92
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在配电与热管理成长逻辑下，NVT基准回报更高、已付收购资本较小；重视电气与航空分散性时ETN仍可补充。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "偏重供电散热系统广度和服务网络选VRT；偏重现价基准回报与较小市值弹性选NVT，二者均须验证交付现金。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "重视系统渠道和Q3兑现选施耐德；回避PTC交易融资与新增股本、追求更高基准弹性选NVT。"
+    },
+    {
+      "peer": "HUBB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "NVT在AI基础设施增长和现价基准赔率上优先；HUBB的电网维修分散性更好，但当前基准价格回报较低。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现金与交付质量、温水架构适应性优先选NVT；若MOD供应与利润率恢复且能承受更深左尾，MOD突破弹性更大。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "NVT基准估值与现金兑现更扎实；VICR专利许可和VPD右尾虽大，当前价仍要求新厂与长期费率共同成功。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在应用采购与客户资金持续、FY2028兑现约630—690十亿美元收入的条件下，NVDA平台租金和基准赔率优先；NVT适合补充芯片路线分散。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "企业入口、续约与核心仓质量选MSFT；现价基准回报和设备资本负担较轻选NVT，微软AI资本效率仍待证明。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在建设支出强但云资产回收未明时，NVT交付收费和现金路径更直接；只有搜索净变现及TPU资本回收明显改善才上调GOOGL顺位。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "能承担台湾生产集中风险、重视制造壁垒时TSM核心顺位优先；需要分散该地域和芯片架构风险时NVT作为设施补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "长期供气合同与较低业务波动优先选LIN；在当前价格追求基准成长回报和右尾选NVT，LIN的高质量尚不足以补偿低基准赔率。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "在专业创意续费和文档现金池保持的条件下，ADBE现价基准折价、每股现金和左尾优于NVT；NVT用于承担不同的AI设施风险。"
+    }
+  ]
+}
