@@ -1,0 +1,149 @@
+{
+  "ticker": "NBIS",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:56:51-07:00",
+  "reference_price": {
+    "value": 188.41,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        230,
+        230
+      ],
+      "target_price": [
+        195,
+        255
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        500,
+        500
+      ],
+      "target_price": [
+        500,
+        620
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        800,
+        800
+      ],
+      "target_price": [
+        980,
+        1260
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "CRWV",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若承诺融资可提款且五年更新成立，CRWV基准赔率优先；若无担保融资持续受阻，不以其模型高回报替代NBIS。"
+    },
+    {
+      "peer": "IREN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若微软后续验收和项目融资落实，IREN价格赔率优先；若重点押注伙伴平台净费与推理软件，NBIS更合适。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在核心AI云配置中优先ORCL的数据库现金底盘和较高基准年化回报，NBIS仅补充更高右尾。"
+    },
+    {
+      "peer": "APLD",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "NBIS对计算服务和平台收益的归属更直接，APLD普通股须先跨过高成本优先资本和项目债权。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "同样看好AI采用时优先AMZN的云、广告和零售现金来源，NBIS依赖外部融资且基准回报较低。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "综合配置优先GOOGL的自研芯片、分发和存量盈利，NBIS仅在追求更大伙伴平台右尾时作为补充。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "优先AVGO的定制芯片及网络价值捕获和更高基准年化回报，同时单独约束其客户融资担保风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "稳健AI配置优先MSFT的企业入口与内生现金，NBIS更高弹性不足以弥补基准回报和融资韧性的差距。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "AI资本开支逻辑优先NVDA的系统生态、当前盈利和基准赔率，NBIS承担设备更新和客户融资之后的剩余收益。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "优先VRT跨客户销售及较低资产更新负担，NBIS只在软件平台成功分支中拥有更大右尾。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "资本保全和经营确定性优先COST，追求三倍以上右尾且能承受本金毁损时选择NBIS小仓；两者现价基准回报均偏薄。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "稳健分配和股息优先PGR，押注AI平台跃迁选NBIS小仓；PGR须验证续保质量与正常灾损后的承保利润。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "稳定现金流和较小融资风险优先WM，追求高倍数上行选NBIS小仓；WM当前估值也限制基准回报。"
+    }
+  ]
+}
