@@ -1,0 +1,57 @@
+{
+  "ticker": "TSEM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:00-07:00",
+  "reference_price": {
+    "value": 209.8,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        132.39,
+        132.39
+      ],
+      "target_price": [
+        57.62,
+        72.12
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        429.61,
+        429.61
+      ],
+      "target_price": [
+        180.73,
+        231.45
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        640.89,
+        640.89
+      ],
+      "target_price": [
+        324.23,
+        400.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        839.96,
+        839.96
+      ],
+      "target_price": [
+        422.6,
+        523.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
