@@ -1,0 +1,143 @@
+{
+  "ticker": "TER",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:06:55-07:00",
+  "reference_price": {
+    "value": 343.21,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        232.56,
+        232.56
+      ],
+      "target_price": [
+        98.86,
+        121.14
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        581.7,
+        581.7
+      ],
+      "target_price": [
+        333.75,
+        392.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        848.35,
+        848.35
+      ],
+      "target_price": [
+        573.17,
+        682.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1143.55,
+        1143.55
+      ],
+      "target_price": [
+        892.08,
+        1070.53
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ATEYY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求既有高端SoC平台确定性选ATEYY；追求二供份额迁移及较好的基准买价赔率选TER，两者现价均不满足稳健核心标准。"
+    },
+    {
+      "peer": "COHU",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在当前价格和既有兑现规模下优先TER；COHU须证明更多HPC客户量产及扣SBC后现金利润，才可能反转取舍。"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "TER已有规模利润和多条付费测试业务，基准与突破回报更好；AEHR仅在晶圆级老化多客户订单显著上修后成为更强路线期权。"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "押注高端量产ATE份额和更大右尾选TER；重视研发验证流程、业务分散及现金转化选KEYS，二者现价基准回报均有限。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "重视过程控制壁垒和服务底盘选KLAC；重视测试二供份额与右尾弹性选TER，过程控制不能完全替代电测试。"
+    },
+    {
+      "peer": "FORM",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "计入待交割增资的现金与稀释后，TER的基准及乐观回报和现有利润规模仍更有吸引力；FORM须用GPU探针和新厂复购证明更大上修。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "愿承担重资本与可转债风险、押注利用率和加工费选ASX；重视轻制造和较低融资依赖选TER，不能把ASX采购与TER销售当独立终端需求。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在普通经营情景及可承受台湾集中风险的条件下，TSM的既有制造壁垒、基准回报和乐观空间优于TER，应先配置TSM。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "相信普通DRAM/NAND高价及客户协议延续时MU进攻赔率更好；若担心存储净价回落而测试资源仍增长，TER是较少直接价格风险的补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "接受客户信用支持和硬件周期风险时，NVDA的平台收费、基准回报和多场景上行优于TER；TER只补充多芯片路线测试敞口。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健组合优先MSFT的成熟企业付费入口及较高基准回报，但其高资本开支和交易价高于现金流价值仍限制买入仓位。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求测试主业现金增长和更大突破弹性选TER；偏好广告分发壁垒与较小普通情景回撤选META，其AI资本回收和法律尾部须单独承担。"
+    }
+  ]
+}
