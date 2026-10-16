@@ -1,0 +1,57 @@
+{
+  "ticker": "NBIS",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:09:30-07:00",
+  "reference_price": {
+    "value": 188.41,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "business_price": [
+        230,
+        230
+      ],
+      "target_price": [
+        195,
+        255
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        500,
+        500
+      ],
+      "target_price": [
+        500,
+        620
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        800,
+        800
+      ],
+      "target_price": [
+        980,
+        1260
+      ],
+      "evidence": "weak"
+    }
+  }
+}
