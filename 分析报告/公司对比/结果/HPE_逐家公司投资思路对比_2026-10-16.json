@@ -1,0 +1,149 @@
+{
+  "ticker": "HPE",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:00-07:00",
+  "reference_price": {
+    "value": 58.63,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        42.17,
+        42.17
+      ],
+      "target_price": [
+        27.68,
+        33.54
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        90.67,
+        90.67
+      ],
+      "target_price": [
+        81.23,
+        93.01
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        119.42,
+        119.42
+      ],
+      "target_price": [
+        114.77,
+        137.49
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        152.29,
+        152.29
+      ],
+      "target_price": [
+        165.12,
+        193.99
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "基准资金优先HPE：同AI集成交付逻辑下HPE网络利润权与基准CAGR更好；追求最大交付规模才选DELL"
+    },
+    {
+      "peer": "SMCI",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "资本保全及基准仓优先HPE；若可承受融资/治理和显著稀释风险、专求右尾，则SMCI优先"
+    },
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "高成长进攻仓CLS优先，成熟客户分散与近期自给现金HPE优先；CLS的高增长附带负FCFF和集中度条件"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "新增基准回报优先HPE；CSCO企业网络地位和股息更稳，但现价基准价格CAGR接近零至低个位数"
+    },
+    {
+      "peer": "ANET",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "当前赔率HPE优先；若目标是最高网络商业质量且可接受低基准回报，或ANET跌至约150，ANET优先"
+    },
+    {
+      "peer": "NTNX",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "当前基准资金优先HPE：相近年化回报下HPE经济利润起点和现金覆盖更实；若NTNX的NRR升至110%以上且SBC下降再切换"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "未来两年现金自给/网络转型选HPE；愿承受建设期负FCF并持有长期云平台选AMZN，当前CAGR不足以全面替代HPE"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同AI基础设施核心仓优先NVDA：平台租金、经营利润与基准CAGR胜出；HPE用于降低单平台及出口政策集中度"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "定制AI/网络核心进攻优先AVGO：更强IP捕获与较短窗口基准CAGR；须对backstop设独立上限，HPE作分散补充"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "规避GPU路线押注选VRT；现价基准CAGR差距有限而HPE估值要求低，盈利转型资金优先HPE，不能视为全面替代"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "当前2—4年新增配置优先HPE：META广告质量更强但基准股价CAGR近零，CapEx承诺压现金；不否认其长期平台价值"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "跨行业基准新增资金优先ADBE：更高现金回报与较小模型左尾；HPE只在不愿承担创作软件AI替代风险时作补充"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "防守核心底仓优先LIN；明确要求双位数基准年化且接受周期/信用风险时HPE优先，二者承担不同组合职责"
+    }
+  ]
+}
