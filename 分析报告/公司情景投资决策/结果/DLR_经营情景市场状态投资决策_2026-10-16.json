@@ -1,0 +1,57 @@
+{
+  "ticker": "DLR",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:50:26-07:00",
+  "reference_price": {
+    "value": 174.47,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        163,
+        163
+      ],
+      "target_price": [
+        102,
+        121
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        252,
+        252
+      ],
+      "target_price": [
+        206,
+        236
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        280,
+        280
+      ],
+      "target_price": [
+        262,
+        295
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        322,
+        322
+      ],
+      "target_price": [
+        326,
+        364
+      ],
+      "evidence": "weak"
+    }
+  }
+}
