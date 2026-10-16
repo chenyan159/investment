@@ -1,0 +1,143 @@
+{
+  "ticker": "ROG",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:55:02-07:00",
+  "reference_price": {
+    "value": 137.78,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        69,
+        69
+      ],
+      "target_price": [
+        49,
+        59
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        187,
+        187
+      ],
+      "target_price": [
+        171,
+        204
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        264,
+        264
+      ],
+      "target_price": [
+        288,
+        335
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        297,
+        297
+      ],
+      "target_price": [
+        351,
+        405
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "PCRHY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "低损耗材料商业化与现价回报优先PCRHY；ROG仅在拒绝汽车电池补贴和集团复杂性时更合适。"
+    },
+    {
+      "peer": "ASGLY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "愿承担CDMO、玻璃化学修复与杠杆选ASGLY；优先融资韧性和特定部件期权选ROG。"
+    },
+    {
+      "peer": "MMM",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "成熟利润和股息优先MMM；降低大型历史责任暴露并追求更大转型右尾时优先ROG。"
+    },
+    {
+      "peer": "Q",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "多工艺材料已有量产和跨客户收费，Q的商业支撑与正常兑现路径优先，ROG仅净现金和单项突破占优。"
+    },
+    {
+      "peer": "TTMI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "基准回报和资产负债表优先ROG；接受杠杆及扩建现金风险、追求已商业化N+M右尾选TTMI。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价基准及统一20倍控制的回报优先ROG，GLW已有光通信规模优势仍不足以抵消当前估值要求。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价正常兑现路径优先ROG；LITE商业化更强且突破右尾更大，但基准仍有负回报。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "AI散热规模部署优先VRT的交付、系统责任及服务；若预付款和现金转换失效须撤回优先。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "当前综合配置优先APH的多路线商业化与资本回报；若只能维持20倍或CCS净内容失效应重新比较。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求成熟现金、股息和低永久损伤优先LIN；追求更大右尾且接受资格风险时选ROG。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心配置优先MSFT已收费的平台利润与自我融资能力，前提是持续检验AI新增资本回报。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾生产集中尾部时优先TSM的已验证制造利润和同锚回报；排除该风险者另选其他载体。"
+    }
+  ]
+}
