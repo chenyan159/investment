@@ -1,0 +1,149 @@
+{
+  "ticker": "SMCI",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:57:53-07:00",
+  "reference_price": {
+    "value": 35.09,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-30",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        33,
+        33
+      ],
+      "target_price": [
+        18,
+        26
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        91,
+        91
+      ],
+      "target_price": [
+        69,
+        91
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        148,
+        148
+      ],
+      "target_price": [
+        148,
+        182
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        194,
+        194
+      ],
+      "target_price": [
+        254,
+        314
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在同为AI整机交付的高风险新增配置中，SMCI的基准回报显著更高；Dell渠道和融资更强但现价需要更高利润兑现。"
+    },
+    {
+      "peer": "HPE",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "同池核心配置优先HPE的网络利润和企业服务底盘；SMCI只在容忍融资与治理尾险、追求更高价格弹性时作为补充。"
+    },
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "现金和合规验证前优先CLS的设计内容与已落实融资；SMCI连续两季回款和单位毛利达标后可优先用于更高弹性的修复仓。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "看好AI预算向定制计算迁移时优先AVGO的芯片、网络IP及软件现金；其客户信用担保仍限制集中仓位。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "押注跨GPU和ASIC平台的供电散热瓶颈优先VRT；只在追求集成商现金修复赔率且接受更大尾险时选SMCI。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义AI核心配置优先NVDA的平台、生态和利润控制；SMCI的更大条件涨幅不足以替代这些优势，只适合作为小仓补充。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在当前存储稀缺和利润兑现逻辑下优先MU的已实现盈利与现金；若普通内存重定价而SMCI净收费和回款改善，须重做相对取舍。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "看好跨GPU和ASIC的先进制造需求时核心配置优先TSM的工艺与客户生态；需单独承担台湾集中风险，不能视为无风险替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "追求企业软件和云的核心持有质量优先MSFT；追求更高基准价格弹性且允许融资尾险时，SMCI可作小仓补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重视搜索分发和TPU长期控制权时选GOOGL；若目标是小仓现金修复弹性且SMCI回款得到验证，则SMCI更合适。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "价值配置优先ADBE的现金自给与较温和受损区间；SMCI只在追求更高右尾、愿意承担采购和融资不对称时作为补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "以稳定合同现金和资本保全为目标选LIN；以较高收益为目标且可承受SMCI尾险时，SMCI的条件价格回报更有吸引力。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "当前价格下追求高收益可选SMCI小仓；重视零售现金稳定性则COST质量更高，但其估值也应改善后才适合稳健新增配置。"
+    }
+  ]
+}
