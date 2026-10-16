@@ -1,0 +1,143 @@
+{
+  "ticker": "TTDKY",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:45:00-07:00",
+  "reference_price": {
+    "value": 18.67,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        11.42,
+        11.42
+      ],
+      "target_price": [
+        7.01,
+        8.97
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        27.02,
+        27.02
+      ],
+      "target_price": [
+        22.16,
+        27.02
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        40.75,
+        40.75
+      ],
+      "target_price": [
+        40.75,
+        48.14
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        49.23,
+        49.23
+      ],
+      "target_price": [
+        53.81,
+        62.97
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "MRAAY",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "按现价配置高端电子元件时TTDKY基准与右尾回报更高，村田的纯MLCC工艺优势尚不足以补偿其估值。"
+    },
+    {
+      "peer": "VSH",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求周期利润恢复且接受新厂和可转债风险时优先VSH，重视成熟利润及较低左尾损失时优先TTDKY。"
+    },
+    {
+      "peer": "PCRHY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "以数据中心备电为投资主线时松下已有更明确的BBU及CBU系统收入、扩产与客户开发基础，配置顺位高于TTDKY。"
+    },
+    {
+      "peer": "ALGM",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在当前估值下TTDKY成熟盈利更分散、基准和乐观赔率更好，ALGM只在追求纯磁传感及机器人敞口时更合适。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现价重视基准回报时优先TTDKY，若MPWR降至1100美元以下且跨代获配和现金兑现则优先MPWR。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现价追求制造成长回报时优先TTDKY，若优先现金稳定性或ADI降至约350美元且经营未坏则优先ADI。"
+    },
+    {
+      "peer": "AMPX",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "TTDKY已有成熟利润底盘且基准为正，AMPX当前买价下基准负回报并有低价融资尾部，仅极端技术突破偏好可例外。"
+    },
+    {
+      "peer": "STX",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "以HDD容量与净价为核心逻辑时优先STX，重视电池和其他元件利润分散及较低周期左尾时优先TTDKY。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义AI基础设施配置中NVDA平台议价及基准回报更强，按最新较低经营路径校准后仍优于TTDKY，故优先NVDA。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "comparable",
+      "reason": "GOOGL平台壁垒较强但资本开支压制现金，TTDKY制造右尾较大，两者基准年化接近且没有全面替代关系。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健核心配置标准下微软成熟企业入口、基准年化和悲观资本保全优于TTDKY，TTDKY可作为制造成长进攻补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "以资本保全和长约现金稳定为目标时优先LIN，以当前价格的成长赔率和制造右尾为目标时优先TTDKY。"
+    }
+  ]
+}
