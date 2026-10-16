@@ -1,0 +1,143 @@
+{
+  "ticker": "DT",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:12:28-07:00",
+  "reference_price": {
+    "value": 63.73,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        71.5,
+        71.5
+      ],
+      "target_price": [
+        16.3,
+        21.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        163.3,
+        163.3
+      ],
+      "target_price": [
+        54.1,
+        66.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        223.1,
+        223.1
+      ],
+      "target_price": [
+        84.9,
+        106.6
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        283.0,
+        283.0
+      ],
+      "target_price": [
+        121.0,
+        155.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "DDOG",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "同以当前买价配置企业可观测性成长，DT的基准回报、全成本利润及左尾优于DDOG；DDOG增长更快但价格要求更高。"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若专注跨云企业可观测性和轻资产现金选DT；若需要网络更新、AI硅光和股息的组合敞口选CSCO。"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若投资执行权限和跨部门企业工作流，NOW优先；若投资复杂生产环境的跨云诊断，DT更直接；现价均缺稳健基准回报。"
+    },
+    {
+      "peer": "SNOW",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "同用当前资金承担企业软件平台成长风险，DT全成本盈利和基准赔率较好；SNOW更大的数据/Agent空间尚不足抵消其估值要求。"
+    },
+    {
+      "peer": "NET",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "以当前价格承担平台成长风险，DT的成熟现金与基准/乐观回报更好；NET需突破兑现才能支持更强回报。"
+    },
+    {
+      "peer": "CRWD",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "按当前价格配置企业软件成长，DT的基准回报、乐观弹性及经济利润定价较好；纯端点安全敞口仍由CRWD提供。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义企业AI配置中，微软的分发、成熟盈利与同买价基准年化回报优于DT；DT可补充独立多云观测敞口。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "看好企业云与AI预算时，AMZN的基准回报、平台入口及更大右尾优于DT；代价是更高资本与融资责任。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同以当前资金参与AI平台成长，GOOGL正常化经营定价与基准回报优于DT；搜索监管和资本支出是其独有约束。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "以成熟软件现金流和估值缓冲为配置标准，ADBE的基准回报与当前DCF折价优于DT；创意入口受AI替代是其主要取舍。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "容忍硬件周期、客户融资和供应担保风险的AI进攻标准下，NVDA的基准与乐观回报强于DT；不适用于拒绝该类尾险的资金。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾地域与制造资本风险的AI瓶颈配置中，TSM的交付壁垒、盈利证据及基准回报优于DT；DT适合作地域/商业模式补充。"
+    }
+  ]
+}
