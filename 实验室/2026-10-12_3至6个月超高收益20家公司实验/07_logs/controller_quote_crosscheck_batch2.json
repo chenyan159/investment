@@ -1,0 +1,145 @@
+{
+  "access_date_utc": "2026-10-13",
+  "rows": [
+    {
+      "ticker": "MU",
+      "external_price": 989.04,
+      "asof_text": "Monday, October 12, 23:59:34 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "SNDK",
+      "external_price": 1487.33,
+      "asof_text": "Monday, October 12, 23:59:44 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "IREN",
+      "external_price": 34.8,
+      "asof_text": "Monday, October 12, 23:59:56 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "AAOI",
+      "external_price": 100.68,
+      "asof_text": "Monday, October 12, 23:59:35 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "SMCI",
+      "external_price": 39.98,
+      "asof_text": "Monday, October 12, 23:56:28 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "CRDO",
+      "external_price": 200.84,
+      "asof_text": "Monday, October 12, 23:59:13 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "CRWV",
+      "external_price": 80.26,
+      "asof_text": "Monday, October 12, 23:59:44 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "FLNC",
+      "external_price": 7.07,
+      "asof_text": "Monday, October 12, 23:52:59 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "COHR",
+      "external_price": 288.02,
+      "asof_text": "Monday, October 12, 23:59:46 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "CLS",
+      "external_price": 347.5,
+      "asof_text": "Monday, October 12, 23:55:16 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "MOD",
+      "external_price": 172.5,
+      "asof_text": "Monday, October 12, 23:56:27 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "NVDA",
+      "external_price": 226.32,
+      "asof_text": "Monday, October 12, 23:59:33 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "TTMI",
+      "external_price": 110.33,
+      "asof_text": "Monday, October 12, 23:27:27 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "AEIS",
+      "external_price": 280.77,
+      "asof_text": "Monday, October 12, 23:04:56 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "UCTT",
+      "external_price": 63.51,
+      "asof_text": "Monday, October 12, 23:05:24 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "PSIX",
+      "external_price": 50.1,
+      "asof_text": "Monday, October 12, 21:35:00 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "POET",
+      "external_price": 6.41,
+      "asof_text": "Monday, October 12, 23:59:54 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "AVGO",
+      "external_price": 354.73,
+      "asof_text": "Monday, October 12, 23:57:29 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "CC",
+      "external_price": 13.39,
+      "asof_text": "Monday, October 12, 23:15:00 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    },
+    {
+      "ticker": "ALNY",
+      "external_price": 227.02,
+      "asof_text": "Monday, October 12, 21:35:00 UTC",
+      "source": "web.finance",
+      "interpretation": "报价数值相互印证；时间多为盘后，不单独证明正常收盘；市值字段不可代替经济股数"
+    }
+  ]
+}

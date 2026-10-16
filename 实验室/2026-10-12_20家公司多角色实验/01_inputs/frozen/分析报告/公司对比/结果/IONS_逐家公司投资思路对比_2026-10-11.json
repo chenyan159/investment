@@ -1,0 +1,131 @@
+{
+  "ticker": "IONS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:05:00-07:00",
+  "reference_price": {
+    "value": 45.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        18.91,
+        18.91
+      ],
+      "target_price": [
+        8.68,
+        10.95
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        70.34,
+        70.34
+      ],
+      "target_price": [
+        62.06,
+        78.63
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        159.79,
+        159.79
+      ],
+      "target_price": [
+        159.79,
+        194.37
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        241.64,
+        241.64
+      ],
+      "target_price": [
+        241.64,
+        295.01
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ALNY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "以核心RNA药物配置为标准，ALNY的TTR结局与已实现自由现金流胜出；IONS只作更高波动的自有药放量补充。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "要求已实现药品现金流且未来仍保留14–18倍经营定价时优先ARGX；承受临床与融资尾部并追求更大百分比右尾时选IONS。"
+    },
+    {
+      "peer": "MRNA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "同为平台药物进攻配置，当前价格下IONS的基准与乐观每股回报更优，MRNA突破上沿仍仅略高于225美元买价。"
+    },
+    {
+      "peer": "BNTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "以现金保全及肿瘤平台为目标选BNTX；以已批准自有产品放量和中期基准回报为目标选IONS。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "要求上市产品证据及较少融资依赖时选IONS；能承受近全损并专门博弈CAR-T注册右尾时选KYTX。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求分散客户与低单药临床风险时选TMO；在当前买价追求药品放量成长回报并承受高回撤时选IONS。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求成熟耗材现金流和较低临床风险时选DHR；在当前买价追求较高上行弹性并接受融资尾部时选IONS。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "要求广泛已实现经营利润与长期入口壁垒时选GOOGL；更重视药物商业化右尾并能承受其临床尾部时选IONS。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "以核心中期配置为标准，MSFT基准年化相近且现金与商业兑现更成熟，IONS的临床右尾适合作补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "以有证据的成长进攻配置为标准，NVDA已实现利润及同日买价下基准年化更优，IONS仅提供不同产业的药品右尾。"
+    }
+  ]
+}

@@ -1,0 +1,3721 @@
+{
+  "status": "sealed_with_explicit_conditions_and_residuals",
+  "role": "Astra_chair_12",
+  "cutoff": "2026-10-12 20:50 America/Los_Angeles",
+  "price_date": "2026-10-12 normal session close",
+  "horizons": [
+    "2027-01-12",
+    "2027-04-12"
+  ],
+  "ranking_meaning": "综合研究优先级，不是校准翻倍概率、确定收益预测或等权组合。所有情景为研究条件，工作中枢不是数学期望。",
+  "final20": [
+    {
+      "rank": 1,
+      "ticker": "MU",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "以两次高利润和剔预付后的现金兑现证明盈利高台持续，市场从短周期折价转向更长盈利持续期；无须等待新厂收入。",
+      "why_selected": "较NVDA所需前瞻收入/持续期跃迁更接近当季经营；与SNDK相近机会下产品范围和金融现金更厚。",
+      "alternative": "NVDA",
+      "alternatives": [
+        "NVDA",
+        "SNDK"
+      ],
+      "condition": "低于触及；需要第二季价格、现金和供给纪律共同支持，存储周期不因AI需求消失。",
+      "invalidator": "下一季量价/毛利或剔预付后现金明显回落，且无法由季度周数解释，NVDA或较低周期暴露替代上升。",
+      "major_dissent": "利润与倍数可能负相关，不能取68%税后率和更高PE两个独立乐观抽样。",
+      "ruling": "保留但接受反证约束；较NVDA所需前瞻收入/持续期跃迁更接近当季经营；与SNDK相近机会下产品范围和金融现金更厚。",
+      "new_evidence": "保留原始68.274B金融净现金，拒绝把客户押金和未来CapEx重复扣成当天债；同时去掉14周季度直接乘4。",
+      "three_month_vs_six_month": {
+        "three_month": "预计12月FY27Q1验证61.5B指引、52周可比量价、正常税和客户预付款变化。",
+        "six_month": "预计3月FY27Q2再次证明价格/毛利与净CapEx后现金；前瞻全年盈利和倍数须相容。"
+      },
+      "touch_2x": "本池相对较强；一个超预期季度可引发持续期重估，但单季不足以确立2x。",
+      "hold_2x_april12": "低于触及；需要第二季价格、现金和供给纪律共同支持，存储周期不因AI需求消失。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；本池相对较强；一个超预期季度可引发持续期重估，但单季不足以确立2x。",
+      "left_tail": "普通DRAM/NAND价格见顶，现金充足仍不能阻止盈利和PE一起下降。",
+      "price": 989.04,
+      "two_x_price": 1978.08,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 556.1094017094018,
+          "return_pct": -43.77280982473896,
+          "inputs": {
+            "revenue_m": 180000,
+            "gross_margin": 0.65,
+            "economic_opex_rate": 0.09,
+            "tax_rate": 0.17,
+            "multiple": 7,
+            "shares_m": 1170,
+            "net_debt_m": -65000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 1382.3379310344828,
+          "return_pct": 39.765624346283545,
+          "inputs": {
+            "revenue_m": 260000,
+            "gross_margin": 0.84,
+            "economic_opex_rate": 0.07,
+            "tax_rate": 0.16,
+            "multiple": 9,
+            "shares_m": 1160,
+            "net_debt_m": -90000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 2089.4827586206898,
+          "return_pct": 111.26372630234265,
+          "inputs": {
+            "revenue_m": 310000,
+            "gross_margin": 0.87,
+            "economic_opex_rate": 0.07,
+            "tax_rate": 0.15,
+            "multiple": 11,
+            "shares_m": 1160,
+            "net_debt_m": -105000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 2808.5944206008585,
+          "return_pct": 183.97177268875458,
+          "inputs": {
+            "revenue_m": 350000,
+            "gross_margin": 0.88,
+            "economic_opex_rate": 0.065,
+            "tax_rate": 0.15,
+            "multiple": 13,
+            "shares_m": 1165,
+            "net_debt_m": -120000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 1978.08,
+        "shares_m": 1160,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 2189572.8,
+        "required_NOPAT_m": 199052.07272727272,
+        "required_revenue_m": 292723.63636363635
+      },
+      "capital_bridge_status": "arithmetically_closed_conditional_not_forecast_verified",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "FY26Q4收入54.229B、GAAP EPS32.87；现金及证券73.453B、债务5.179B。客户保证金12.747B列融资现金流。",
+      "v1_event_3m": "FY27Q1收入61.5±1.5B、GAAP EPS37.84±1为公司指引；12月财报时间为估计",
+      "v1_event_6m": "FY27Q2财报约3月为估计；观察HBM/DRAM供需、价格与资本开支",
+      "v1_counterevidence": "利润已处高位；客户预付款不是新增经营利润。远期供给与客户集中度仍可逆转。",
+      "source_urls": [
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "NVDA",
+      "capital_bridge_residual": {
+        "status": "arithmetically_closed_conditional_not_forecast_verified",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 68274,
+        "scenario_target_net_debt_m": [
+          -65000,
+          -90000,
+          -105000,
+          -120000
+        ],
+        "required_net_cash_change_m": [
+          -3274,
+          21726,
+          36726,
+          51726
+        ],
+        "reason": "从9/3至4/12流量研究假设；CFO已净掉新增客户押金且含营运资本及税，不能再扣旧12895。不是FY28现金。",
+        "branches": [
+          {
+            "branch": "失望",
+            "starting_net_cash_m": 68274,
+            "movements_m": {
+              "net_operating_cash_ex_new_customer_deposits": 26000,
+              "net_capex": -25000,
+              "dividends_buybacks_tax_award_and_other": -4274
+            },
+            "calculated_ending_net_cash_m": 65000,
+            "target_net_cash_m": 65000,
+            "residual_m": 0
+          },
+          {
+            "branch": "工作中枢",
+            "starting_net_cash_m": 68274,
+            "movements_m": {
+              "net_operating_cash_ex_new_customer_deposits": 52000,
+              "net_capex": -27000,
+              "dividends_buybacks_tax_award_and_other": -3274
+            },
+            "calculated_ending_net_cash_m": 90000,
+            "target_net_cash_m": 90000,
+            "residual_m": 0
+          },
+          {
+            "branch": "强成功",
+            "starting_net_cash_m": 68274,
+            "movements_m": {
+              "net_operating_cash_ex_new_customer_deposits": 72000,
+              "net_capex": -30000,
+              "dividends_buybacks_tax_award_and_other": -5274
+            },
+            "calculated_ending_net_cash_m": 105000,
+            "target_net_cash_m": 105000,
+            "residual_m": 0
+          },
+          {
+            "branch": "更强右尾",
+            "starting_net_cash_m": 68274,
+            "movements_m": {
+              "net_operating_cash_ex_new_customer_deposits": 92000,
+              "net_capex": -33000,
+              "dividends_buybacks_tax_award_and_other": -7274
+            },
+            "calculated_ending_net_cash_m": 120000,
+            "target_net_cash_m": 120000,
+            "residual_m": 0
+          }
+        ]
+      },
+      "model_assumption_boundary": "原始净金融现金68274；客户押金12895属履约融资，不能既在FCF净除又从净现金再全扣。模型未新增未披露押金。FY26Q4为14周，模型用完整前瞻年度非Q4乘4。强成功87%GM-7%经济费用、15%税才有68%NOPAT。 财报封面法律实股已独核：1131.423212M，日期2026-10-02；不等未来经济稀释分母。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 2,
+      "ticker": "KYTX",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "Q4完成SPS rolling BLA及PMS数据，使不足十亿美元级的风险调整管线价值可明显上移，申报和平台可复制性共同降低折价。",
+      "why_selected": "较ALNY小权益基数与Q4申报/PMS组合可由有限增量信息显著重估；保留小样本和融资二元风险。",
+      "alternative": "ALNY",
+      "alternatives": [
+        "ALNY",
+        "IONS",
+        "WOLF"
+      ],
+      "condition": "低于触及；只有受理而无更好临床/CMC证据不能维持极高平台价值。",
+      "invalidator": "完整BLA/CMC重大延误、PMS疗效不可复制或安全性恶化，BNTX/IONS替代；单纯受理不足以锁住2倍估值。",
+      "major_dissent": "单一SPS市场规模可能不够，成功价需PMS等增量，不能把BLA提交当临床获益新增。",
+      "ruling": "保留但接受反证约束；较ALNY小权益基数与Q4申报/PMS组合可由有限增量信息显著重估；保留小样本和融资二元风险。",
+      "new_evidence": "贷款已提25M与尚可A15M/条件后续提款分开；90M股是压力而非半年必然分母。",
+      "three_month_vs_six_month": {
+        "three_month": "公司计划Q4完成BLA；核真实完整提交、CMC批次与PMS数据，不将受理写成批准。",
+        "six_month": "核FDA受理/审评路径与PMS开发策略、贷款限制现金和实际股数；商业上市预期在年中，不计4月销售。"
+      },
+      "touch_2x": "本池相对较强且二元性高；小权益基数使申报加平台好数据有明显价格弹性。",
+      "hold_2x_april12": "低于触及；只有受理而无更好临床/CMC证据不能维持极高平台价值。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；本池相对较强且二元性高；小权益基数使申报加平台好数据有明显价格弹性。",
+      "left_tail": "小样本不可复制、安全/CMC补件、融资条款或审评失败可造成深跌，现金并非价格底。",
+      "price": 6.21,
+      "two_x_price": 12.42,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 1.9871794871794872,
+          "return_pct": -68.0003303191709,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "SPS": 100,
+              "PMS_gMG_other": 30
+            },
+            "net_cash_m": 25,
+            "net_debt_m": -25,
+            "shares_m": 78
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 10.205479452054794,
+          "return_pct": 64.33944367237994,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "SPS": 450,
+              "PMS_gMG_other": 220
+            },
+            "net_cash_m": 75,
+            "net_debt_m": -75,
+            "shares_m": 73
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "强成功",
+          "price": 18.666666666666668,
+          "return_pct": 200.59044551798175,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "SPS": 750,
+              "PMS_gMG_other": 550
+            },
+            "net_cash_m": 100,
+            "net_debt_m": -100,
+            "shares_m": 75
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 29.333333333333332,
+          "return_pct": 372.35641438539983,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "SPS": 1200,
+              "PMS_gMG_other": 1250
+            },
+            "net_cash_m": 190,
+            "net_debt_m": -190,
+            "shares_m": 90
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 12.42,
+        "shares_m": 75,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_owned_pipeline_and_franchise_EV_m": 831.5
+      },
+      "capital_bridge_status": "arithmetically_closed_conditional_not_forecast_verified",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "CMC已提交，Q4完成BLA计划；gMG三期mid2027是完成入组，不是读出且超6月窗。",
+      "v1_event_3m": "Q4完成SPS滚动BLA及PMS IIT追加数据为公司计划",
+      "v1_event_6m": "2027早期PMS开发策略；SPS受理/审评实际进展，未公告确定批准日",
+      "v1_counterevidence": "小样本外推、安全性、制造可比性、审批与现金消耗；申请优先审评不等于已获优先。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "ALNY",
+      "capital_bridge_residual": {
+        "status": "arithmetically_closed_conditional_not_forecast_verified",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 174.427,
+        "scenario_target_net_debt_m": [
+          -25,
+          -75,
+          -100,
+          -190
+        ],
+        "required_net_cash_change_m": [
+          -149.427,
+          -99.42699999999999,
+          -74.42699999999999,
+          15.573000000000008
+        ],
+        "reason": "从6/30到4/12约9.4个月，不是6个月。贷款新增15同时现金+15债+15，不增加净现金，未在净桥假装额外价值；受控现金约束未知，仍可能触发融资。73/75/90M含现61.8434、奖励/融资条件。",
+        "branches": [
+          {
+            "branch": "失望",
+            "starting_net_cash_m": 174.427,
+            "movements_m": {
+              "operating_capex_interest_burn": -149.427
+            },
+            "calculated_ending_net_cash_m": 25.0,
+            "target_net_cash_m": 25,
+            "residual_m": 0.0
+          },
+          {
+            "branch": "工作中枢",
+            "starting_net_cash_m": 174.427,
+            "movements_m": {
+              "operating_capex_interest_burn": -129.427,
+              "equity_net_proceeds": 30
+            },
+            "calculated_ending_net_cash_m": 75.0,
+            "target_net_cash_m": 75,
+            "residual_m": 0.0
+          },
+          {
+            "branch": "强成功",
+            "starting_net_cash_m": 174.427,
+            "movements_m": {
+              "operating_capex_interest_burn": -139.427,
+              "equity_net_proceeds": 65
+            },
+            "calculated_ending_net_cash_m": 100.0,
+            "target_net_cash_m": 100,
+            "residual_m": 0.0
+          },
+          {
+            "branch": "更强右尾",
+            "starting_net_cash_m": 174.427,
+            "movements_m": {
+              "operating_capex_interest_burn": -164.427,
+              "equity_net_proceeds": 180
+            },
+            "calculated_ending_net_cash_m": 190.0,
+            "target_net_cash_m": 190,
+            "residual_m": 0.0
+          }
+        ]
+      },
+      "model_assumption_boundary": "25M贷款实借，不等150M额度。模型73M工作股数、75M强成功、90M融资压力；融资后新现金同步记入。贷款受控现金最低额未披露，不虚填。净现金不是失败价格底。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 3,
+      "ticker": "SNDK",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "企业SSD/NAND提价及合同底价改善盈利可见度，以现金兑现削弱市场对高峰利润必崩的折价。",
+      "why_selected": "10/29已定事件与NAND/SSD利润弹性胜过高估值AI质量替代；不是因股价低，亦不拿证券收益年化。",
+      "alternative": "NVDA",
+      "alternatives": [
+        "NVDA",
+        "MU"
+      ],
+      "condition": "低于触及且周期集中；两季兑现后仍须相信2027供给不会迅速压价。",
+      "invalidator": "NBM定价被重谈、正常化经济利润/回款明显不及指引，MU优先且本席可退出。",
+      "major_dissent": "Q4 GAAP EPS含证券收益，客户预收提供现金但附履约义务，不可当永久利润。",
+      "ruling": "保留但接受反证约束；10/29已定事件与NAND/SSD利润弹性胜过高估值AI质量替代；不是因股价低，亦不拿证券收益年化。",
+      "new_evidence": "保留真盈利与10/29事件，取消12B净现金未经资金桥的默认值；现金折减不单独否定2x路径。",
+      "three_month_vs_six_month": {
+        "three_month": "官方10/29财报兑现Q1指引，并核下一季收入/毛利和NBM退款、预付款变化。",
+        "six_month": "下一季财报验证剔证券收益后经济利润，JV/CapEx及税后留存现金；最低价条款与客户重谈风险。"
+      },
+      "touch_2x": "相对较强，纯NAND及近财报可令预期快速跳升；波动高于MU。",
+      "hold_2x_april12": "低于触及且周期集中；两季兑现后仍须相信2027供给不会迅速压价。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；相对较强，纯NAND及近财报可令预期快速跳升；波动高于MU。",
+      "left_tail": "Edge需求弱、价格回落或底价重置同时压利润与倍数；无债不等低股价风险。",
+      "price": 1487.33,
+      "two_x_price": 2974.66,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 571.2506329113924,
+          "return_pct": -61.5922066446994,
+          "inputs": {
+            "revenue_m": 32000,
+            "gross_margin": 0.62,
+            "economic_opex_rate": 0.085,
+            "tax_rate": 0.17,
+            "multiple": 6,
+            "shares_m": 158,
+            "net_debt_m": -5000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 1707.5235668789812,
+          "return_pct": 14.804620822479286,
+          "inputs": {
+            "revenue_m": 46000,
+            "gross_margin": 0.81,
+            "economic_opex_rate": 0.065,
+            "tax_rate": 0.16,
+            "multiple": 9,
+            "shares_m": 157,
+            "net_debt_m": -9000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 3091.278481012658,
+          "return_pct": 107.84079397394382,
+          "inputs": {
+            "revenue_m": 59000,
+            "gross_margin": 0.85,
+            "economic_opex_rate": 0.06,
+            "tax_rate": 0.15,
+            "multiple": 12,
+            "shares_m": 158,
+            "net_debt_m": -13000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 4171.287499999999,
+          "return_pct": 180.4547410460355,
+          "inputs": {
+            "revenue_m": 68000,
+            "gross_margin": 0.86,
+            "economic_opex_rate": 0.055,
+            "tax_rate": 0.15,
+            "multiple": 14,
+            "shares_m": 160,
+            "net_debt_m": -16000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 2974.66,
+        "shares_m": 158,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 456996.27999999997,
+        "required_NOPAT_m": 38083.02333333333,
+        "required_revenue_m": 56713.363117398854
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q4收入8.965B，GAAP EPS43.97高于调整39.25，存在投资收益；Q1指引基于155M稀释股。",
+      "v1_event_3m": "10/29 13:30PT业绩电话会为官方已定日；Q1收入10.3–10.8B、调整EPS44–46为计划",
+      "v1_event_6m": "次季约1–2月财报为估计，核NBM订单转收入、定价与毛利延续",
+      "v1_counterevidence": "NBM合同不是多年固定超额利润保证；景气和客户议价可反向。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+        "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "NVDA",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 4762,
+        "scenario_target_net_debt_m": [
+          -5000,
+          -9000,
+          -13000,
+          -16000
+        ],
+        "required_net_cash_change_m": [
+          238,
+          4238,
+          8238,
+          11238
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "证券1777为市值波动权益资产，不全当现金；当前4762现金并非未来13000。NBM预付用于生产履约，未来FCF不再额外加同一客户款。较高利润率与倍数共同成立为强条件。 财报封面法律实股已独核：146.419001M，日期2026-08-07；不等未来经济稀释分母。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 4,
+      "ticker": "IREN",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "Horizon2–4从施工变成客户验收开票，已签ARR质量变化与2027容量签约使市场提前接受更远盈利规模。",
+      "why_selected": "Horizon2–4集中交付/验收比APLD普通股资本瀑布更容易在窗口检验，较NBIS起点更易给出2倍路径。",
+      "alternative": "APLD",
+      "alternatives": [
+        "APLD",
+        "NBIS",
+        "CRWV"
+      ],
+      "condition": "较触及明显更难；需要连续开票及资金桥，不能只停留4B contracted ARR。",
+      "invalidator": "交付后仍不能验收收费或融资成本/摊薄显著上升，CRWV在同批设备现金回报清楚时上位。",
+      "major_dissent": "运营可靠性批评有加拿大具体地点，但不能外推微软Texas已违约；是否蔓延仍未证明。",
+      "ruling": "保留但接受反证约束；Horizon2–4集中交付/验收比APLD普通股资本瀑布更容易在窗口检验，较NBIS起点更易给出2倍路径。",
+      "new_evidence": "4B contracted已包含1B operating；70美元购买权不是现款，69.60的2x价不会自动触发行权。",
+      "three_month_vs_six_month": {
+        "three_month": "公司Q4目标Horizon2–4交付是否进入测试、验收、收费；加拿大与Texas故障分别核。",
+        "six_month": "两个财报期实际AI收入/利用率、净资金缺口、经济GPU折耗和预付抵账，足以支持前瞻年收入假设。"
+      },
+      "touch_2x": "本池相对较强但执行/融资条件多；交付去风险可先于全年盈利体现。",
+      "hold_2x_april12": "较触及明显更难；需要连续开票及资金桥，不能只停留4B contracted ARR。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；本池相对较强但执行/融资条件多；交付去风险可先于全年盈利体现。",
+      "left_tail": "验收延期、GPU价格/残值下降、资本开支先行导致低价增发与债务压力相互放大。",
+      "price": 34.8,
+      "two_x_price": 69.6,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 1.072941176470586,
+          "return_pct": -96.91683569979716,
+          "inputs": {
+            "revenue_m": 4000,
+            "gross_margin": 0.35,
+            "economic_opex_rate": 0.18,
+            "tax_rate": 0.22,
+            "multiple": 18,
+            "shares_m": 510,
+            "net_debt_m": 9000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 44.24242424242424,
+          "return_pct": 27.13340299547198,
+          "inputs": {
+            "revenue_m": 6500,
+            "gross_margin": 0.4,
+            "economic_opex_rate": 0.15,
+            "tax_rate": 0.2,
+            "multiple": 23,
+            "shares_m": 495,
+            "net_debt_m": 8000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 85.54400000000003,
+          "return_pct": 145.8160919540231,
+          "inputs": {
+            "revenue_m": 8500,
+            "gross_margin": 0.44,
+            "economic_opex_rate": 0.15,
+            "tax_rate": 0.2,
+            "multiple": 26,
+            "shares_m": 500,
+            "net_debt_m": 8500,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 137.0,
+          "return_pct": 293.67816091954023,
+          "inputs": {
+            "revenue_m": 11000,
+            "gross_margin": 0.46,
+            "economic_opex_rate": 0.14,
+            "tax_rate": 0.2,
+            "multiple": 30,
+            "shares_m": 540,
+            "net_debt_m": 10500,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 69.6,
+        "shares_m": 500,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 43300.0,
+        "required_NOPAT_m": 1665.3846153846155,
+        "required_revenue_m": 7178.381962864721
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "40亿美元签约ARR对比10亿美元运营ARR；AI季度收入70.5M。公告脚注：交付后数月仍须调试、测试和客户验收。",
+      "v1_event_3m": "Horizon2–4 Q4交付为公司计划；交付≠GPU验收/计费",
+      "v1_event_6m": "Q1–Q2客户验收及实际AI收入爬坡；具体日期未定",
+      "v1_counterevidence": "140亿美元现金及融资承诺不能全作现钱；6%客户特定融资不能泛化至全部扩产。",
+      "source_urls": [
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-closes-365bn-investment-grade-gpu-financing"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "APLD",
+      "capital_bridge_residual": {
+        "known_or_committed": "截至6/30非受限现金5895.6M；6/1 GPU债额度3650M已close，含2100M私募及1550M延迟提款，6%债成本。与客户预付合计5590M覆盖微软5810M GPU CapEx。",
+        "numeric_gap": "此已指定GPU包差额220M=5810−5590，另有设施、非微软GPU、预付抵扣与利息；它不是全公司缺口。现有现金只能用一次，不把3650再次全加至6/30现金。",
+        "research_bounds_m": {
+          "Microsoft_GPU_package_uncovered": 220,
+          "whole_company_unfunded_capex_lower_bound": 220,
+          "whole_company_upper_bound": null
+        },
+        "uncommitted": "NVIDIA 30M股×70权利不是到账2100M；2倍69.60低于行权价。未来模型债区间是融资条件，不能写已获14B自由现金。",
+        "verdict": "局部项目融资覆盖可算，全公司逐季资金缺口未闭合；违约/重谈和追加股融仍能改变股价。"
+      },
+      "model_assumption_boundary": "5895.6现金不含1724受限；14B现金/承诺/预付不是现金总额。强成功500M股+8.5B净债仍是融资条件非已获，$70 NVIDIA购买权不可在69.60自动视到账。 资金复议：截至6/30非受限现金5895.6M；6/1 GPU债额度3650M已close，含2100M私募及1550M延迟提款，6%债成本。与客户预付合计5590M覆盖微软5810M GPU CapEx。 此已指定GPU包差额220M=5810−5590，另有设施、非微软GPU、预付抵扣与利息；它不是全公司缺口。现有现金只能用一次，不把3650再次全加至6/30现金。 NVIDIA 30M股×70权利不是到账2100M；2倍69.60低于行权价。未来模型债区间是融资条件，不能写已获14B自由现金。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 5,
+      "ticker": "SMCI",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "官方65–72B收入路径与正常毛利/回款修复，让市场对治理和资本占款的折价部分消退。",
+      "why_selected": "较CLS起点折价大，65–72B官方收入计划可与回款修复共同作用；必须接受优先股/转债经济摊薄，不能凭新模型高价自动升第一。 相对未入选POET，也有已成规模收入和可检验正常利润，无需从资格批跨若干数量级收入来支撑估值。",
+      "alternative": "CLS",
+      "alternatives": [
+        "CLS",
+        "POET"
+      ],
+      "condition": "低于触及，需两季实际现金修复，不能仅凭高收入指引。",
+      "invalidator": "两季经营现金/账龄不改善且低毛利无法正常化，CLS替换；治理/出口新证据可立即下调。",
+      "major_dissent": "V2工作79.44已接近旧B2强81.6，不是更稳的期望。强135.84要求FY28运行速率85B、GM12.5%、19倍，超过FY27上限72B18.1%。CEO明确80B以上可能另需资金；模型净现金改善4.5B含4.725B债经济转换，不是4.5B经营现金创造。",
+      "ruling": "保留但接受反证约束；较CLS起点折价大，65–72B官方收入计划可与回款修复共同作用；必须接受优先股/转债经济摊薄，不能凭新模型高价自动升第一。",
+      "new_evidence": "撤回EPS×稀释股所推集团净利下降41%；采用同口径经济EPS/if-converted资本桥。 末轮B2独开电话会补80B以上资金警示；保留右尾但进一步明确融资桥未闭合。",
+      "three_month_vs_six_month": {
+        "three_month": "预计11月FY27Q1：AI组合恢复后的10.4–10.8%毛利、应收账龄、库存及CFO。",
+        "six_month": "预计2月FY27Q2再验证回款和毛利，统一优先股/转换后的普通股经济EPS。 若提前资本化85B收入，必须证明80B以上营运资金和可能增发的现金/股数对称，不将经济转换当法律已转。"
+      },
+      "touch_2x": "相对中等偏前，收入规模已大而估值折价可变，正面现金信息能触发重估。",
+      "hold_2x_april12": "低于触及，需两季实际现金修复，不能仅凭高收入指引。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；相对中等偏前，收入规模已大而估值折价可变，正面现金信息能触发重估。",
+      "left_tail": "低毛利、治理/出口限制、库存应收与融资同向恶化；优先分配和稀释吞掉利润。",
+      "price": 39.98,
+      "two_x_price": 79.96,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 31.545629629629644,
+          "return_pct": -21.096474163007382,
+          "inputs": {
+            "revenue_m": 58000,
+            "gross_margin": 0.095,
+            "economic_opex_m": 2300,
+            "tax_rate": 0.21,
+            "multiple": 12,
+            "cash_m": 6000,
+            "base_common_plus_employee_shares_m": 675,
+            "remaining_bank_debt_m": 5500,
+            "preferred_dividends_PV_m": 600,
+            "preferred_units_m": 4.3125,
+            "preferred_min_rate": 30.304,
+            "preferred_max_rate": 36.364,
+            "preferred_initial_price": 27.4997,
+            "preferred_threshold_price": 32.9989,
+            "convertible_notes": [
+              {
+                "principal_m": 700,
+                "strike": 61.06
+              },
+              {
+                "principal_m": 2300,
+                "strike": 55.2
+              },
+              {
+                "principal_m": 1725,
+                "strike": 83.44
+              }
+            ],
+            "shares_m": 811.7067340431026,
+            "net_debt_m": 4225
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 79.4405963913741,
+          "return_pct": 98.70084139913484,
+          "inputs": {
+            "revenue_m": 72000,
+            "gross_margin": 0.11,
+            "economic_opex_m": 2500,
+            "tax_rate": 0.21,
+            "multiple": 16,
+            "cash_m": 7200,
+            "base_common_plus_employee_shares_m": 677,
+            "remaining_bank_debt_m": 5000,
+            "preferred_dividends_PV_m": 600,
+            "preferred_units_m": 4.3125,
+            "preferred_min_rate": 30.304,
+            "preferred_max_rate": 36.364,
+            "preferred_initial_price": 27.4997,
+            "preferred_threshold_price": 32.9989,
+            "convertible_notes": [
+              {
+                "principal_m": 700,
+                "strike": 61.06
+              },
+              {
+                "principal_m": 2300,
+                "strike": 55.2
+              },
+              {
+                "principal_m": 1725,
+                "strike": 83.44
+              }
+            ],
+            "shares_m": 860.8168003057102,
+            "net_debt_m": -475
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 135.8446156094965,
+          "return_pct": 239.78142973861054,
+          "inputs": {
+            "revenue_m": 85000,
+            "gross_margin": 0.125,
+            "economic_opex_m": 2800,
+            "tax_rate": 0.21,
+            "multiple": 19,
+            "cash_m": 8000,
+            "base_common_plus_employee_shares_m": 680,
+            "remaining_bank_debt_m": 4700,
+            "preferred_dividends_PV_m": 600,
+            "preferred_units_m": 4.3125,
+            "preferred_min_rate": 30.304,
+            "preferred_max_rate": 36.364,
+            "preferred_initial_price": 27.4997,
+            "preferred_threshold_price": 32.9989,
+            "convertible_notes": [
+              {
+                "principal_m": 700,
+                "strike": 61.06
+              },
+              {
+                "principal_m": 2300,
+                "strike": 55.2
+              },
+              {
+                "principal_m": 1725,
+                "strike": 83.44
+              }
+            ],
+            "shares_m": 884.4903381772347,
+            "net_debt_m": -3300
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 222.67498771124576,
+          "return_pct": 456.96595225424164,
+          "inputs": {
+            "revenue_m": 105000,
+            "gross_margin": 0.14,
+            "economic_opex_m": 3400,
+            "tax_rate": 0.21,
+            "multiple": 22,
+            "cash_m": 9000,
+            "base_common_plus_employee_shares_m": 695,
+            "remaining_bank_debt_m": 4500,
+            "preferred_dividends_PV_m": 600,
+            "preferred_units_m": 4.3125,
+            "preferred_min_rate": 30.304,
+            "preferred_max_rate": 36.364,
+            "preferred_initial_price": 27.4997,
+            "preferred_threshold_price": 32.9989,
+            "convertible_notes": [
+              {
+                "principal_m": 700,
+                "strike": 61.06
+              },
+              {
+                "principal_m": 2300,
+                "strike": 55.2
+              },
+              {
+                "principal_m": 1725,
+                "strike": 83.44
+              }
+            ],
+            "shares_m": 899.4903381772347,
+            "net_debt_m": -4500
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 79.96,
+        "shares_m": 863.8168003057102,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "remaining_debt_m": 6425,
+        "required_EV_m": 68095.79135244459,
+        "required_NOPAT_m": 3583.989018549715,
+        "required_revenue_m": 58693.559681516104
+      },
+      "capital_bridge_status": "capital_instrument_price_consistency_solved; cash_flow_funding_bridge_not_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "2028债转股价61.06、2030为55.20；条件触发/主动转换须区别。7%强制可转优先股2029年强转，价高于32.9989时每1000优先股本金最低30.304普通股。",
+      "v1_event_3m": "约11月FY27Q1财报为估计，检验14.5–15.5B收入与持续毛利",
+      "v1_event_6m": "约2月次季为估计，FY27收入65–72B为公司计划而非订单保底",
+      "v1_counterevidence": "高增长也需存货/应收融资；优先股股息与摊薄对普通股价值真实。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "POET",
+      "capital_bridge_residual": {
+        "status": "capital_instrument_price_consistency_solved; cash_flow_funding_bridge_not_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": -1200,
+        "scenario_target_net_debt_m": [
+          4225,
+          -475,
+          -3300,
+          -4500
+        ],
+        "required_net_cash_change_m": [
+          -3025,
+          1675,
+          4500,
+          5700
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "采用EV经济NOPAT及隐式转换索取权；会计稀释745/761M非2027年经济分母。优先4.3125M股7%股息、最低130.686M普通；2028/2030/2029债转价61.06/55.20/83.44，面值700/2300/1725。价内按经济转换减债增股，不声称法律上已转。另扣剩余优先股息PV，不再扣优先本金；capped calls不计价值为保守压力，未核最终结算。 B2强是经济EPS5.1×16；V2工作中枢等价接近这一成功强度，不是更稳健的期望。V2强收入85B比FY27官方上限72B高18.1%，是FY28运行速率且GM12.5%，费用率3.29%，相对工作分支利润+44.4%、倍数+18.75%，并计更多债转换。股价抬高主要由更强经营及重估，不是换公式免费增值。 8/11原始：FY27销售65–72B、Q1 14.5–15.5B、FY26新增订单>60B与纪录backlog。Q4GM17.5%，全年10.8%，故不年化17.5%。仅当11月/2月估计财报连续兑现交付、11–12.5%正常化GM及现金回收，市场才有理由提前看85B；目前没有85B官方承诺。",
+      "late_rebuttal": {
+        "ticker": "SMCI",
+        "verdict": "保留高右尾，但V2工作中枢应标有条件恢复，不能是概率最大状态",
+        "price": 39.98,
+        "strong": 135.8446156095,
+        "thesis": "旧B2强81.6=经济EPS5.1×16；V2中枢79.44已经接近旧强成功强度。V2强85B较官方FY27上限72B高18.1%，配GM12.5%、费用2.8B、税21%、19倍和884.49M经济股，属于FY28运行速率提前定价。",
+        "rebuttal": "算式差别不是免费换估值方法：仅作算术瀑布，把旧4.08B归母盈利替换为新6.18175B NOPAT且暂固定800M/16倍，81.6→123.635；倍数19使146.8166；改884.49M得132.7920；加转换后净现金3.3B、减600M优先股息PV得135.8446。NOPAT与归母NI不同，第一步包含经营增长及付息前后口径变化，不能把42美元全部归为盈利上修。V2中枢→强NOPAT+44.4%、倍数+18.75%，这才是高价主要来源。",
+        "bull": "已存在65–72B官方需求/交付框架，11%GM和经济费用3.47%并非与收入矛盾，改善条款能缩短现金周期；两季兑现可同时解除盈利和治理折价，右尾有实质支持，不应只因历史争议否决。",
+        "sensitivity": {
+          "old_strong": 81.6,
+          "arithmetic_bridge": [
+            81.6,
+            123.635,
+            146.8165625,
+            132.7920101898,
+            135.8446156095
+          ],
+          "V2_central": 79.4405963914,
+          "V2_strong": 135.8446156095
+        },
+        "checks": "新重读电话会CEO明确65–72B资金够，80B以上可能需要更多资金；85B分支必须有营运资金/融资解释。目标净债-3.3B较期初+1.2B改善4.5B，却含4.725B债经济转换；剔转换约为净债恶化225M，不是4.5B经营现金创造（期初账面债与面值差仍需核）。未来增发若被需要要对称现金和股数，转换债不双扣。3m Q1交付/GM/现金；6m第二季度和指引检验12.5%能否持续，不年化Q4 17.5%。",
+        "external": "9/8 Trey Thoelcke反方全文认为高Q4毛利含一次因素，承认订单和客户多元化；其摘要将75%组合改善泛称非经常，需以电话会更细口径为准。原始管理层同时给现金周期改善多头与80B资金警示。没有新的85B官方承诺。",
+        "alternative": "继续SMCI优先于CLS的短窗右尾但有回款条件；若增长只增加应收/库存、毛利落回低端，则CLS更可执行，不用135.84自动压倒CLS。",
+        "sources": [
+          "F08",
+          "F09",
+          "F10"
+        ]
+      },
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair",
+        "B2_末轮补充反驳"
+      ]
+    },
+    {
+      "rank": 6,
+      "ticker": "AAOI",
+      "tier": "A 重点翻倍机制",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "800G/1.6T实际批量出货和制造良率跨越，能在小收入基数上形成明显利润杠杆，融资完成降低扩产断档。",
+      "why_selected": "比POET真实批量收入更近、比COHR从更小盈利基数跃迁更陡，适合短期高右尾目标；资本/生产失败左尾极深。",
+      "alternative": "POET",
+      "alternatives": [
+        "POET",
+        "COHR",
+        "CRDO"
+      ],
+      "condition": "明显低于触及，需产能×良率×ASP×验收四项兑现且现金不再快速流出。",
+      "invalidator": "资格验收、量产良率或客户价格导致增长不形成毛利现金，COHR/CRDO替换。",
+      "major_dissent": "40%毛利不是增长自动结果，成功分支不能同时无代价提高收入和经济利润率。",
+      "ruling": "保留但接受反证约束；比POET真实批量收入更近、比COHR从更小盈利基数跃迁更陡，适合短期高右尾目标；资本/生产失败左尾极深。",
+      "new_evidence": "10/5新增5.695M股和净588M只计一次；使用官方与媒体产能差异作为未决而非择大。",
+      "three_month_vs_six_month": {
+        "three_month": "Q3/Q4窗口核资格转交付、650k/月与媒体930k/月口径、非GAAP及GAAP毛利桥。",
+        "six_month": "连续出货/验收/回款与费用占比下降，证明前瞻高收入不只低毛利代工量。"
+      },
+      "touch_2x": "条件中等偏前，客户认证和盈利拐点可引发大跳升；当前利润支撑弱。",
+      "hold_2x_april12": "明显低于触及，需产能×良率×ASP×验收四项兑现且现金不再快速流出。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；条件中等偏前，客户认证和盈利拐点可引发大跳升；当前利润支撑弱。",
+      "left_tail": "客户压价/集中、良率低、物料短缺造成营收增长不盈利；融资已完成不能排除以后稀释。",
+      "price": 100.68,
+      "two_x_price": 201.36,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 17.498039215686276,
+          "return_pct": -82.62014380643001,
+          "inputs": {
+            "revenue_m": 1300,
+            "gross_margin": 0.24,
+            "economic_opex_rate": 0.15,
+            "tax_rate": 0.2,
+            "multiple": 18,
+            "shares_m": 102,
+            "net_debt_m": -100,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 87.69230769230771,
+          "return_pct": -12.899972494728152,
+          "inputs": {
+            "revenue_m": 2100,
+            "gross_margin": 0.33,
+            "economic_opex_rate": 0.12,
+            "tax_rate": 0.2,
+            "multiple": 25,
+            "shares_m": 104,
+            "net_debt_m": -300,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 201.88888888888894,
+          "return_pct": 100.52531673509031,
+          "inputs": {
+            "revenue_m": 3200,
+            "gross_margin": 0.4,
+            "economic_opex_rate": 0.12,
+            "tax_rate": 0.2,
+            "multiple": 30,
+            "shares_m": 108,
+            "net_debt_m": -300,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 328.6938053097345,
+          "return_pct": 226.47378358138107,
+          "inputs": {
+            "revenue_m": 4300,
+            "gross_margin": 0.42,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.2,
+            "multiple": 34,
+            "shares_m": 113,
+            "net_debt_m": -300,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 201.36,
+        "shares_m": 108,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 21446.88,
+        "required_NOPAT_m": 714.8960000000001,
+        "required_revenue_m": 3191.5
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "200M以上1.6T首笔订单是3/9旧公告，并先需资格认证；10/5已净募587.999986M、发行5.694845M股。",
+      "v1_event_3m": "Q4高端光模块出货/验收，公司计划；约11月财报估计",
+      "v1_event_6m": "约2月财报检验实际爬坡、良率、毛利和回款",
+      "v1_counterevidence": "订单和产能均非收入；组件约束、客户集中与良率仍未关闭。",
+      "source_urls": [
+        "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+        "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+        "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "POET",
+      "capital_bridge_residual": {
+        "known_or_committed": "S1已核10/5 ATM净款588M、5.694845M股；V2原始页面首次打开有元信息，定位正文反复Internal Error，因此金额仍标继承，不升级独核。",
+        "numeric_gap": "588M为本批已融资，不是新增未知额度；92.8M会计稀释与ATM相加不能当法律股数。之后产线CapEx、库存与回款缺同日全桥，无法以诚实证据给总缺口上限。",
+        "research_bounds_m": {
+          "inherited_completed_ATM_net_cash": 588,
+          "minimum_incremental_uncommitted_financing": 0,
+          "maximum_incremental_uncommitted_financing": null
+        },
+        "uncommitted": "零是可能无需再融的下限，不是结论；模型102–115M分母与净债变化仍是新增奖励/融资压力。",
+        "verdict": "融资已发生与产线兑现分开；最关键缺口是扩大收入所需营运现金。"
+      },
+      "model_assumption_boundary": "6月508.758包含受限现金；后续588融资需同时加5.694845M股，仅一次。模型现金为扩产后残余，未来100M以上分母含奖励/融资压力；客户warrant未完整按批次闭合。 资金复议：S1已核10/5 ATM净款588M、5.694845M股；V2原始页面首次打开有元信息，定位正文反复Internal Error，因此金额仍标继承，不升级独核。 588M为本批已融资，不是新增未知额度；92.8M会计稀释与ATM相加不能当法律股数。之后产线CapEx、库存与回款缺同日全桥，无法以诚实证据给总缺口上限。 零是可能无需再融的下限，不是结论；模型102–115M分母与净债变化仍是新增奖励/融资压力。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 7,
+      "ticker": "AMPX",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "已有销量/毛利增长加CAMINUS美国制造资格跨越，使高能量密度电池从代工销售转为可采购的国防供应能力。",
+      "why_selected": "CAMINUS Q1/27资格至量产有原始合作方计划，较TE/WOLF庞大建设融资和NVTS远期导入更贴近六个月。",
+      "alternative": "TE",
+      "alternatives": [
+        "TE",
+        "WOLF",
+        "NVTS"
+      ],
+      "condition": "较低于触及；需2027收入约翻倍路径和现金回收，不能只靠工厂公告。",
+      "invalidator": "CAMINUS资格/客户验收推迟且AR继续吞现金，PSIX或成熟盈利候选替换。",
+      "major_dissent": "旧空方并未被全部推翻，但Q2 bill-and-hold零及一次退租对烧钱的影响令机械年化过悲观。",
+      "ruling": "保留但接受反证约束；CAMINUS Q1/27资格至量产有原始合作方计划，较TE/WOLF庞大建设融资和NVTS远期导入更贴近六个月。",
+      "new_evidence": "伙伴原文确认Q1/27量产独立于2028补助线；只22.3M初始授权且需验收，74.793M不是自由现金。",
+      "three_month_vs_six_month": {
+        "three_month": "核CAMINUS资格批、FY26出货/毛利和应收；不是把补助总额加入现金。",
+        "six_month": "公司计划Q1/27分阶段量产，核客户验收、良率、加工成本与2027收入指引/回款。"
+      },
+      "touch_2x": "中等偏前的条件右尾；真实美国量产信息有机会在收入前产生大估值变化。",
+      "hold_2x_april12": "较低于触及；需2027收入约翻倍路径和现金回收，不能只靠工厂公告。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等偏前的条件右尾；真实美国量产信息有机会在收入前产生大估值变化。",
+      "left_tail": "资格/代工失败、关联供应链或应收回款恶化，高销售倍数和增发可同时压股价。",
+      "price": 8.87,
+      "two_x_price": 17.74,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 2.113095238095238,
+          "return_pct": -76.177054812906,
+          "inputs": {
+            "revenue_m": 110,
+            "gross_margin": 0.22,
+            "economic_opex_m": 60,
+            "tax_rate": 0.22,
+            "sales_multiple": 3,
+            "shares_m": 168,
+            "net_debt_m": -25
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 9.636363636363637,
+          "return_pct": 8.639950804550601,
+          "inputs": {
+            "revenue_m": 220,
+            "gross_margin": 0.29,
+            "economic_opex_m": 62,
+            "tax_rate": 0.22,
+            "sales_multiple": 7,
+            "shares_m": 165,
+            "net_debt_m": -50
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 19.228571428571428,
+          "return_pct": 116.78209051377033,
+          "inputs": {
+            "revenue_m": 330,
+            "gross_margin": 0.34,
+            "economic_opex_m": 75,
+            "tax_rate": 0.22,
+            "sales_multiple": 10,
+            "shares_m": 175,
+            "net_debt_m": -65
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 30.789473684210527,
+          "return_pct": 247.1192072628019,
+          "inputs": {
+            "revenue_m": 480,
+            "gross_margin": 0.37,
+            "economic_opex_m": 95,
+            "tax_rate": 0.22,
+            "sales_multiple": 12,
+            "shares_m": 190,
+            "net_debt_m": -90
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 17.74,
+        "shares_m": 175,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 3039.4999999999995,
+        "required_revenue_m": 303.94999999999993,
+        "required_sales_multiple_at_branch_revenue": 9.21060606060606
+      },
+      "capital_bridge_status": "arithmetically_closed_conditional_not_forecast_verified",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "新合同是CAMINUS美国软包电芯代工，资格批次正在开展，Q1/27预计逐步放量。",
+      "v1_event_3m": "CAMINUS美国制造资格验证已经启动，后续合格产品为公司计划",
+      "v1_event_6m": "2027Q1阶段量产为公司计划，落在6月观察窗",
+      "v1_counterevidence": "未披露最低采购量、保底毛利或无条件产能；认证和客户验收仍是条件。",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+        "https://ir.amprius.com/news-events/press-releases/detail/172/amprius-technologies-reports-second-quarter-2026-financial-results-and-recent-business-highlights"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "TE",
+      "capital_bridge_residual": {
+        "status": "arithmetically_closed_conditional_not_forecast_verified",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 74.517,
+        "scenario_target_net_debt_m": [
+          -25,
+          -50,
+          -65,
+          -90
+        ],
+        "required_net_cash_change_m": [
+          -49.516999999999996,
+          -24.516999999999996,
+          -9.516999999999996,
+          15.483000000000004
+        ],
+        "reason": "不把22.3或74.793拨款算自由现金；若收OTA里程碑，同时对应项目成本。模型资本桥为条件，费用、营运与融资尚未公司指引。",
+        "branches": [
+          {
+            "branch": "失望",
+            "starting_net_cash_m": 74.517,
+            "movements_m": {
+              "operating_wc_capex_cash_burn": -49.517
+            },
+            "calculated_ending_net_cash_m": 24.999999999999993,
+            "target_net_cash_m": 25,
+            "residual_m": -7.105427357601002e-15
+          },
+          {
+            "branch": "工作中枢",
+            "starting_net_cash_m": 74.517,
+            "movements_m": {
+              "operating_wc_capex_cash_burn": -24.517
+            },
+            "calculated_ending_net_cash_m": 50.0,
+            "target_net_cash_m": 50,
+            "residual_m": 0.0
+          },
+          {
+            "branch": "强成功",
+            "starting_net_cash_m": 74.517,
+            "movements_m": {
+              "operating_wc_capex_cash_burn": -29.517,
+              "equity_net_proceeds": 20
+            },
+            "calculated_ending_net_cash_m": 65.0,
+            "target_net_cash_m": 65,
+            "residual_m": 0.0
+          },
+          {
+            "branch": "更强右尾",
+            "starting_net_cash_m": 74.517,
+            "movements_m": {
+              "operating_wc_capex_cash_burn": -44.517,
+              "equity_net_proceeds": 60
+            },
+            "calculated_ending_net_cash_m": 90.0,
+            "target_net_cash_m": 90,
+            "residual_m": 0.0
+          }
+        ]
+      },
+      "model_assumption_boundary": "74.517现金无金融债为S2继承；OTA总74.793仅22.3初始授权且验收后支付，不加全部到账。sales高倍数意味着跨客户持续扩量预期，非当前利润。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 8,
+      "ticker": "PSIX",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "发动机产量/交付恢复使固定成本吸收和正常税后EPS上台阶，数据中心电力缺口支持前瞻订单。",
+      "why_selected": "比GNRC/PNR已有利润基础上的生产修复弹性更大，4–5经济EPS可检验；不是把Q2改善直接乘四。",
+      "alternative": "GNRC",
+      "alternatives": [
+        "GNRC",
+        "PNR",
+        "FLNC"
+      ],
+      "condition": "若现金兑现，触及与维持差距小于纯期权股；仍需市场接受约20–22倍经济EPS。",
+      "invalidator": "H2交付修复落空或SAR/正常税后归母现金仍差，PNR/GNRC替换。",
+      "major_dissent": "同比收入下降真实，不可用一个季度利润改善证明全年EPS已到5；税收益不可永续。",
+      "ruling": "保留但接受反证约束；比GNRC/PNR已有利润基础上的生产修复弹性更大，4–5经济EPS可检验；不是把Q2改善直接乘四。",
+      "new_evidence": "9/25新220M承诺授信至2029纠正旧到期风险；185M未用额度并非现金。",
+      "three_month_vs_six_month": {
+        "three_month": "预计11月Q3核Q2利润环比修复是否延续、产品交付和应收。",
+        "six_month": "预计3月年报给出新产能/2027订单与正常化EPS4–5路径，经营现金随利润增长。"
+      },
+      "touch_2x": "相对中等；已有利润和小权益使经营上修更直接，爆发性低于临床/工程二元事件。",
+      "hold_2x_april12": "若现金兑现，触及与维持差距小于纯期权股；仍需市场接受约20–22倍经济EPS。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；相对中等；已有利润和小权益使经营上修更直接，爆发性低于临床/工程二元事件。",
+      "left_tail": "控制股东治理、客户/零部件集中、关税、SAR费用和周转占款可令利润恢复反转。",
+      "price": 50.1,
+      "two_x_price": 100.2,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 28.373333333333335,
+          "return_pct": -43.3666001330672,
+          "inputs": {
+            "revenue_m": 700,
+            "gross_margin": 0.22,
+            "economic_opex_m": 80,
+            "net_interest_cost_m": 10,
+            "tax_rate": 0.24,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 24,
+            "PE": 14,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 73.45322448979593,
+          "return_pct": 46.613222534522805,
+          "inputs": {
+            "revenue_m": 870,
+            "gross_margin": 0.265,
+            "economic_opex_m": 91,
+            "net_interest_cost_m": 8,
+            "tax_rate": 0.24,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 24.5,
+            "PE": 18,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 129.70159999999998,
+          "return_pct": 158.88542914171654,
+          "inputs": {
+            "revenue_m": 1050,
+            "gross_margin": 0.29,
+            "economic_opex_m": 111,
+            "net_interest_cost_m": 8,
+            "tax_rate": 0.24,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 25,
+            "PE": 23,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 195.72923076923078,
+          "return_pct": 290.6771073238139,
+          "inputs": {
+            "revenue_m": 1300,
+            "gross_margin": 0.31,
+            "economic_opex_m": 145,
+            "net_interest_cost_m": 10,
+            "tax_rate": 0.24,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 26,
+            "PE": 27,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 100.2,
+        "shares_m": 25,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_parent_NI_m": 108.91304347826087,
+        "required_EPS": 4.356521739130435,
+        "required_revenue_m": 904.5056419158841
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q2收入152.5M，同比降21%、毛利27.1%；扩厂成本仍在，SAR公允价值变化影响费用。",
+      "v1_event_3m": "约11月Q3财报估计；H2收入高于H1且约等于2025H2为公司展望",
+      "v1_event_6m": "约3月全年与Wisconsin扩产效率；没有已确定新增大客户量产日",
+      "v1_counterevidence": "H2修复展望不是FY27订单保底；客户集中和传统需求下滑。",
+      "source_urls": [
+        "https://investors.psiengines.com/node/13891",
+        "https://www.sec.gov/Archives/edgar/data/1137091/000119312526408371/d28951d8k.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "GNRC",
+      "capital_bridge_residual": {
+        "known_or_committed": "新220M ABL法律额度；初借35M、偿旧15M，再扣费用不是净增220M现金。6/30现金70.1/债72.6继承S2。",
+        "numeric_gap": "名义未用上限185M=220−35，实际还受借款基数、LC及契约限制，可用下限0；新增订单库存及应收可能占用此额度。",
+        "research_bounds_m": {
+          "nominal_undrawn_ABL_max": 185,
+          "verified_immediately_drawable_min": 0
+        },
+        "uncommitted": "不得把未提款185M列为当前cash；超过借款基数的增长资本尚无闭合来源。",
+        "verdict": "盈利不等自由现金；优先监测应收库存与借款基数，未发现等额必须股融的证据。"
+      },
+      "model_assumption_boundary": "220M授信非现金；9/25实际35M借款偿15M旧款与费用，尚未重建6月至9月全部桥。净利息8–10M条件含融资成本；归母PE不重复扣债。 资金复议：新220M ABL法律额度；初借35M、偿旧15M，再扣费用不是净增220M现金。6/30现金70.1/债72.6继承S2。 名义未用上限185M=220−35，实际还受借款基数、LC及契约限制，可用下限0；新增订单库存及应收可能占用此额度。 不得把未提款185M列为当前cash；超过借款基数的增长资本尚无闭合来源。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 9,
+      "ticker": "UCTT",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "Q3收入和EPS现实台阶，加复杂子系统/自制内容与产能利用率改善，让前瞻归母经济利润上修。",
+      "why_selected": "现实Q3收入/EPS上台阶胜过ICHR尚需很大GM跃迁、AEHR与MRAM更远量产；薄利润和NCI仍需折价。",
+      "alternative": "AEIS",
+      "alternatives": [
+        "AEIS",
+        "AEHR",
+        "MRAM",
+        "ICHR"
+      ],
+      "condition": "略低于触及，订单/现金兑现后比纯技术概念更可维持，但客户CapEx可同步逆转。",
+      "invalidator": "收入虽增长但正常税/NCI后利润及现金不抬升，ICHR若自制件GM证据更强可替换。",
+      "major_dissent": "4B产能不是订单，当前GAAP经营率4.6%；V2强R4.5B/22%GM/10.5%费/20%税/23倍仍是大幅改善。扣未来NCI公允值552M后161.92；H1 FCF−100.2M、库存增加238.9M显示营运资金风险。",
+      "ruling": "保留但接受反证约束；现实Q3收入/EPS上台阶胜过ICHR尚需很大GM跃迁、AEHR与MRAM更远量产；薄利润和NCI仍需折价。",
+      "new_evidence": "首轮仅两提名仍上调，因真实Q3指引更接近窗口；使用正常税/少数权益桥而非nonGAAP直乘。 主席追问NCI后V2改扣192–832M研究公允值且不二次扣同一利润；强161.92仍过2倍。未来净债较现增加205.9–255.9M不是已获融资。",
+      "three_month_vs_six_month": {
+        "three_month": "10月财报窗口核700–750M指引、Products毛利、库存/回款和正常税；精确日以V1为准。",
+        "six_month": "年报/2027展望证明产能转订单，GAAP到经济利润桥保留SBC和少数权益。"
+      },
+      "touch_2x": "中等，近端盈利证据较多；2x仍要求比现在更高利润率和收入。",
+      "hold_2x_april12": "略低于触及，订单/现金兑现后比纯技术概念更可维持，但客户CapEx可同步逆转。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等，近端盈利证据较多；2x仍要求比现在更高利润率和收入。",
+      "left_tail": "Lam/AMAT集中、低毛利、库存与采购承诺、ATM/转债压力使盈利改善不归普通股。",
+      "price": 63.51,
+      "two_x_price": 127.02,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 22.598400000000012,
+          "return_pct": -64.41757203589984,
+          "inputs": {
+            "revenue_m": 2800,
+            "gross_margin": 0.16,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.22,
+            "multiple": 16,
+            "shares_m": 50,
+            "net_debt_m": 600,
+            "other_claims_m": 192,
+            "NCI_annual_economic_profit_m": 12,
+            "NCI_valuation_multiple": 16
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 75.1078431372549,
+          "return_pct": 18.261444083222965,
+          "inputs": {
+            "revenue_m": 3500,
+            "gross_margin": 0.19,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.21,
+            "multiple": 20,
+            "shares_m": 51,
+            "net_debt_m": 550,
+            "other_claims_m": 320,
+            "NCI_annual_economic_profit_m": 16,
+            "NCI_valuation_multiple": 20
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 161.92307692307693,
+          "return_pct": 154.9568208519555,
+          "inputs": {
+            "revenue_m": 4500,
+            "gross_margin": 0.22,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.2,
+            "multiple": 23,
+            "shares_m": 52,
+            "net_debt_m": 550,
+            "other_claims_m": 552,
+            "NCI_annual_economic_profit_m": 24,
+            "NCI_valuation_multiple": 23
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 270.0740740740741,
+          "return_pct": 325.2465345206646,
+          "inputs": {
+            "revenue_m": 5500,
+            "gross_margin": 0.24,
+            "economic_opex_rate": 0.1,
+            "tax_rate": 0.2,
+            "multiple": 26,
+            "shares_m": 54,
+            "net_debt_m": 600,
+            "other_claims_m": 832,
+            "NCI_annual_economic_profit_m": 32,
+            "NCI_valuation_multiple": 26
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 127.02,
+        "shares_m": 52,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 7707.04,
+        "required_NOPAT_m": 335.0886956521739,
+        "required_revenue_m": 3642.26843100189
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q2收入644.9M，GAAP毛利16.1%、经营利润率4.6%，调整7%。",
+      "v1_event_3m": "Q3收入700–750M、调整EPS.83–1.03为公司计划；约10–11月业绩估计",
+      "v1_event_6m": "约1–2月检验FY27设备采购周期及毛利改善",
+      "v1_counterevidence": "薄利且客户集中；收入增长尚不等于持续高利润率。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "AEIS",
+      "capital_bridge_residual": {
+        "known_or_committed": "6/26现金255.9、可转本金600（账面599.4），净金融债344.1M；H1 CFO−74.4、PPE25.8、FCF−100.2，库存增238.9、应付增104.4。",
+        "numeric_gap": "未来净债550–600相对当前344.1增205.9–255.9M是模型融资/现金消耗预算；当前cash若留100流动性仅155.9可消耗，不能保证无需追加融资。",
+        "research_bounds_m": {
+          "target_net_debt_increment_low": 205.9,
+          "target_net_debt_increment_high": 255.9,
+          "cash_available_above_research_minimum100": 155.9
+        },
+        "uncommitted": "未逐笔核对未提款银行额度；净债目标不是已承诺融资；盈利增长若库存继续吸钱会稀释。",
+        "verdict": "追加扣NCI价值192–832M；能过2倍但不能因为收入弹性忽略资本占用。"
+      },
+      "model_assumption_boundary": "600M可转债本金现金结算，目标股数含溢价/奖励但非已认证。营运库存629.9M，增长不保证现金；未来毛利22%须自制及利用率证实。 主席复议后扣NCI研究公允值192/320/552/832M，对应年NCI利润12/16/24/32M乘16/20/23/26；Q2实际3.2、H1 6.2、账面77.3不能当未来公允值。全集团现金债与NCI价值保持同一口径，未再次扣NCI利润。 资金复议：6/26现金255.9、可转本金600（账面599.4），净金融债344.1M；H1 CFO−74.4、PPE25.8、FCF−100.2，库存增238.9、应付增104.4。 未来净债550–600相对当前344.1增205.9–255.9M是模型融资/现金消耗预算；当前cash若留100流动性仅155.9可消耗，不能保证无需追加融资。 未逐笔核对未提款银行额度；净债目标不是已承诺融资；盈利增长若库存继续吸钱会稀释。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 10,
+      "ticker": "VISN",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "出售/派息后的存续Aurora利润、总部费用消除与实际回购逐季显露，残余权益从旧集团失真口径中被重新估值。",
+      "why_selected": "较CC法律/债务尾部和FLNC新预警后的现金修复，存续业务与已出售资产现金更可检验，允许相近机会时较少融资风险胜出。",
+      "alternative": "CC",
+      "alternatives": [
+        "CC",
+        "FLNC",
+        "PLAB"
+      ],
+      "condition": "需持续业务利润，可能比演示型期权稳，但转折若在年中仍有观察窗错位。",
+      "invalidator": "实际期末现金显著低于计划、总部成本不降、回购未兑现且主业弱，PLAB/PNR替换。",
+      "major_dissent": "Q2集团35.8M不是Aurora45.5M；旧15美元特殊分配不属于本次新买者。",
+      "ruling": "保留但接受反证约束；较CC法律/债务尾部和FLNC新预警后的现金修复，存续业务与已出售资产现金更可检验，允许相近机会时较少融资风险胜出。",
+      "new_evidence": "160M退税H2/27移出4月现金；回购同时减现金/股数；要求撤销B2失望高于现价的伪下行。 V2未来回购150M对应15.63M股（研究均价9.5969），不能同时用20–25M股；失望231M股/550M现金是费用或烧钱压力，并不假设完成同样回购。",
+      "three_month_vs_six_month": {
+        "three_month": "剥离后Q3现金桥、核心减总部后的EBITDA、已执行而非授权回购。",
+        "six_month": "年报/2027展望证明持续EBITDA与留存成本削减路径、现金用途和回购股数一致。"
+      },
+      "touch_2x": "中等偏条件，基数低且经营/资本结构可检验；不能因现金多认定高概率。",
+      "hold_2x_april12": "需持续业务利润，可能比演示型期权稳，但转折若在年中仍有观察窗错位。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等偏条件，基数低且经营/资本结构可检验；不能因现金多认定高概率。",
+      "left_tail": "Comcast采购缩减、许可衰退、总部成本迟延及现金再投资，现金不会形成交易价格底。",
+      "price": 6.08,
+      "two_x_price": 12.16,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 4.437229437229437,
+          "return_pct": -27.01925267714742,
+          "inputs": {
+            "revenue_m": 900,
+            "gross_margin_before_DA": 0.29,
+            "cash_opex_including_SBC_equivalent_m": 166,
+            "DA_m": 35,
+            "tax_rate": 0.23,
+            "multiple": 5,
+            "shares_m": 231,
+            "net_debt_m": -550,
+            "maintenance_capex_m": 35
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 8.561860465116279,
+          "return_pct": 40.820073439412475,
+          "inputs": {
+            "revenue_m": 1080,
+            "gross_margin_before_DA": 0.33,
+            "cash_opex_including_SBC_equivalent_m": 172,
+            "DA_m": 37,
+            "tax_rate": 0.23,
+            "multiple": 7,
+            "shares_m": 215,
+            "net_debt_m": -550,
+            "maintenance_capex_m": 40
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 13.015238095238095,
+          "return_pct": 114.06641604010024,
+          "inputs": {
+            "revenue_m": 1220,
+            "gross_margin_before_DA": 0.36,
+            "cash_opex_including_SBC_equivalent_m": 180,
+            "DA_m": 42,
+            "tax_rate": 0.23,
+            "multiple": 8.5,
+            "shares_m": 210,
+            "net_debt_m": -530,
+            "maintenance_capex_m": 45
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 18.743961352657006,
+          "return_pct": 208.28883803712182,
+          "inputs": {
+            "revenue_m": 1400,
+            "gross_margin_before_DA": 0.38,
+            "cash_opex_including_SBC_equivalent_m": 195,
+            "DA_m": 48,
+            "tax_rate": 0.23,
+            "multiple": 10,
+            "shares_m": 207,
+            "net_debt_m": -510,
+            "maintenance_capex_m": 55
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 12.16,
+        "shares_m": 210,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EBITDA_m": 238.0705882352941,
+        "required_revenue_m": 1161.3071895424837
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q2公告集团调整EBITDA35.8M而AuroraCore45.5M；电话会重复明确退税2027下半年。",
+      "v1_event_3m": "约11月确认DOCSIS4放量与memory成本；700–750M年末现金为公司计划",
+      "v1_event_6m": "约2月持续业务、资本配置；160M退税2027H2在观察窗外",
+      "v1_counterevidence": "内存供应/价格已压低指引；公司可投资/并购，现金不是必然分给股东。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+        "https://stockanalysis.com/stocks/visn/transcripts/658038-q2-2026/"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "CC",
+      "capital_bridge_residual": {
+        "known_or_committed": "出售后全年现金700–750M为公司指引，非10/12已实际闲置现金。此前15美元分配不属于本次买入收益。",
+        "numeric_gap": "工作中枢研究回购150后现金550–600M，采用550M且减15.63M股；失望231M股及550M现金来自费用/现金消耗压力，不代表已执行同笔回购；其他分支回购及股数仍属条件未证实。未来2027H2退税160M不进入4/12现金。实际回购价决定减股15.63M是否成立。",
+        "research_bounds_m": {
+          "guided_cash_before_assumed_buyback_low": 700,
+          "guided_cash_before_assumed_buyback_high": 750,
+          "assumed_buyback": 150,
+          "cash_after_assumed_buyback_low": 550,
+          "cash_after_assumed_buyback_high": 600
+        },
+        "uncommitted": "交割税/分拆费用及准确回购进度缺完整桥；不以现金指引加160作为下行地板。",
+        "verdict": "无需大规模外部融资是条件假设；主要误差为费用和资本返还节奏，而非凭空新资金。"
+      },
+      "model_assumption_boundary": "使用集团经营费用，非只取Aurora core EBITDA。工作中枢仅条件假设回购150M，以约9.5969美元均价减15.63M股（230.63至215M）；失望情景231M股、550M现金未假设同笔回购，现金下降代表费用及经营现金消耗压力。强成功和右尾的回购、费用与股数亦为尚未证实的条件，逐项资金桥未闭合；期末现金550M不是725M+160M退税。2027H2退税不在4月现金。旧分配不归新买入者。 资金复议：出售后全年现金700–750M为公司指引，非10/12已实际闲置现金。此前15美元分配不属于本次买入收益。 工作中枢研究回购150后现金550–600M，采用550M且减15.63M股；失望231M股及550M现金来自费用/现金消耗压力，不代表已执行同笔回购；其他分支回购及股数仍属条件未证实。未来2027H2退税160M不进入4/12现金。实际回购价决定减股15.63M是否成立。 交割税/分拆费用及准确回购进度缺完整桥；不以现金指引加160作为下行地板。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 11,
+      "ticker": "BNTX",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "多个后期肿瘤结果和组合数据共同去风险，现金研发平台被重估为可注册、可竞争资产组合。",
+      "why_selected": "与ALNY相较有多个后期数据窗口而非单一期早期靶点，较KYTX融资续航长；仍需大额净归属管线重估，不是现金套利。",
+      "alternative": "ALNY",
+      "alternatives": [
+        "ALNY",
+        "ARGX",
+        "IONS"
+      ],
+      "condition": "低于触及；普通阳性信号不足，需要竞争性较强的后期结果及可注册路径。",
+      "invalidator": "关键数据延期/效应竞争性弱或伙伴归属值大幅缩水，IONS或ALNY新实证胜出可替换。",
+      "major_dissent": "2倍需约31.014B净归属管线/药物价值；现金不自动产生该增值，单一旧HR不能代Stage2，资产分成桥尚未逐项闭合。",
+      "ruling": "保留但接受反证约束；与ALNY相较有多个后期数据窗口而非单一期早期靶点，较KYTX融资续航长；仍需大额净归属管线重估，不是现金套利。",
+      "new_evidence": "现金16.6342B是欧元，统一美元/ADS1:1；已终止BNT122不再列未来成功，Duality独立DB1310不归BNTX。",
+      "three_month_vs_six_month": {
+        "three_month": "11/3财报、2026后期计划读出是否实际发生，审查效应量/安全/对照与权益归属。",
+        "six_month": "积极结果能否推进注册和后续试验，BMS/伙伴分成后平台值及现金消耗仍支持强分支。"
+      },
+      "touch_2x": "中等偏条件；多项临床落在窗口但事件驱动，不能因现金大等同易翻倍。",
+      "hold_2x_april12": "低于触及；普通阳性信号不足，需要竞争性较强的后期结果及可注册路径。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等偏条件；多项临床落在窗口但事件驱动，不能因现金大等同易翻倍。",
+      "left_tail": "多项数据不足/延期，研发消耗、汇率及竞争压平台价值；融资风险较KYTX小但临床损失仍大。",
+      "price": 95.84,
+      "two_x_price": 191.68,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 72.49371541501978,
+          "return_pct": -24.3596458524418,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "COVID_franchise": 500,
+              "oncology_owned_share": 3000
+            },
+            "net_cash_m": 14840.910000000002,
+            "net_debt_m": -14840.910000000002,
+            "shares_m": 253,
+            "cash_bridge_EUR": {
+              "opening_EUR_m": 16634.2,
+              "research_operating_investing_burn_EUR_m": 2200,
+              "buyback_EUR_m": 300,
+              "EURUSD_assumption": 1.05
+            }
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 120.21132530120482,
+          "return_pct": 25.429179154011706,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "COVID_franchise": 1000,
+              "oncology_owned_share": 13000
+            },
+            "net_cash_m": 15932.620000000003,
+            "net_debt_m": -15932.620000000003,
+            "shares_m": 249,
+            "cash_bridge_EUR": {
+              "opening_EUR_m": 16634.2,
+              "research_operating_investing_burn_EUR_m": 1700,
+              "buyback_EUR_m": 450,
+              "EURUSD_assumption": 1.1
+            }
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "强成功",
+          "price": 197.64791164658635,
+          "return_pct": 106.2269528866719,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "COVID_franchise": 1500,
+              "oncology_owned_share": 31000
+            },
+            "net_cash_m": 16714.329999999998,
+            "net_debt_m": -16714.329999999998,
+            "shares_m": 249,
+            "cash_bridge_EUR": {
+              "opening_EUR_m": 16634.2,
+              "research_operating_investing_burn_EUR_m": 1500,
+              "buyback_EUR_m": 600,
+              "EURUSD_assumption": 1.15
+            }
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 267.04416000000003,
+          "return_pct": 178.63539232053424,
+          "inputs": {
+            "risk_adjusted_asset_values_m": {
+              "COVID_franchise": 2200,
+              "oncology_owned_share": 47000
+            },
+            "net_cash_m": 17561.04,
+            "net_debt_m": -17561.04,
+            "shares_m": 250,
+            "cash_bridge_EUR": {
+              "opening_EUR_m": 16634.2,
+              "research_operating_investing_burn_EUR_m": 1300,
+              "buyback_EUR_m": 700,
+              "EURUSD_assumption": 1.2
+            }
+          },
+          "forward_operating_period": "conditional owned pipeline/franchise risk-adjusted EV as of 2027-04-12; not six-month sales"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 191.68,
+        "shares_m": 249,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_owned_pipeline_and_franchise_EV_m": 31013.99
+      },
+      "capital_bridge_status": "EUR arithmetic cash bridge explicit; debt/royalty/ownership residual not fully closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "公司把肿瘤关键数据与2026申报均列为依赖数据/事件累积的计划，非必定阳性。现金证券16.6342B欧元。",
+      "v1_event_3m": "11/3财报官方已定；PRESERVE003/ DYNASTYBreast02 2026/Q4数据为事件累积驱动公司计划",
+      "v1_event_6m": "BLA推进及临床数据延续；具体监管批准日未定",
+      "v1_counterevidence": "临床失败和高研发消耗；1B欧元回购同时消耗现金，现金不全等于下行底。",
+      "source_urls": [
+        "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+        "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "ALNY",
+      "capital_bridge_residual": {
+        "status": "EUR arithmetic cash bridge explicit; debt/royalty/ownership residual not fully closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": null,
+        "scenario_target_net_debt_m": [
+          -14840.910000000002,
+          -15932.620000000003,
+          -16714.329999999998,
+          -17561.04
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "6月16634.2M EUR现金证券、251.204366M ADS1:1。四分支EURUSD1.05/1.10/1.15/1.20为汇率假设非即期报价；现金烧钱、回购先在EUR桥再换USD。项目值是伙伴分成后净权益的研究代理，未逐资产闭合BMS及中国伙伴合同分成，不是认证rNPV。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 12,
+      "ticker": "ENPH",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "住宅核心利润恢复提供基础，11月IQ SST系统演示和客户采纳证据可使新增电力电子期权被提前定价。",
+      "why_selected": "比NVTS既有业务/渠道与11月整机计划更具体，核心恢复加SST增量价值可成立；触及型重估强于期末站稳，不能当低风险。",
+      "alternative": "NVTS",
+      "alternatives": [
+        "NVTS",
+        "FLNC"
+      ],
+      "condition": "低于触及，需客户验证与核心盈利共同支持；没有确定4月前商业量产。",
+      "invalidator": "整机演示无客户验证且核心去拉货后继续降，或2027试点完全后移，PSIX或MOD等实绩替代上升。",
+      "major_dissent": "强核心EPS2.08×27=56.16，达2倍62.98另需941.16M净增量期权；2.3B是更强价格72.83的假设，不是最低门槛。失望1.55仅低盈利PE压力，非完整资产估值；当前净金融现金362.7M亦非地板，不能把旧937.7口径全额再加。",
+      "ruling": "保留但接受反证约束；比NVTS既有业务/渠道与11月整机计划更具体，核心恢复加SST增量价值可成立；触及型重估强于期末站稳，不能当低风险。",
+      "new_evidence": "正式分离11月演示和未定季度2027pilot；EPS包含现金利息，不再全加净现金，SST只加增量。 末轮B2区分核心56.16、2倍最低期权941.16M与强期权2.3B；研发留核心费用，新增商业化资金从期权净值扣。",
+      "three_month_vs_six_month": {
+        "three_month": "11月公司计划整机演示是否有可重复效率/热/可靠性结果与客户确认；住宅需求剔safe-harbor。",
+        "six_month": "2027试点是否有具名客户/资金/时间承诺，核心正常利润不被拉货退潮和45X变化侵蚀。"
+      },
+      "touch_2x": "中等条件机会；技术演示可引发大波动，产品发布本身不保证2x。",
+      "hold_2x_april12": "低于触及，需客户验证与核心盈利共同支持；没有确定4月前商业量产。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等条件机会；技术演示可引发大波动，产品发布本身不保证2x。",
+      "left_tail": "核心需求继续降、制造税惠/退款消退、SST迟延或无客户，利润与期权同时缩水。",
+      "price": 31.49,
+      "two_x_price": 62.98,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 1.5485294117647062,
+          "return_pct": -95.08247249360208,
+          "inputs": {
+            "revenue_m": 1100,
+            "gross_margin": 0.4,
+            "economic_opex_m": 425,
+            "net_interest_cost_m": 0,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 136,
+            "PE": 18,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 32.49722627737226,
+          "return_pct": 3.198559153293945,
+          "inputs": {
+            "revenue_m": 1450,
+            "gross_margin": 0.44,
+            "economic_opex_m": 450,
+            "net_interest_cost_m": -10,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 137,
+            "PE": 23,
+            "incremental_option_value_m": 900
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 72.82666666666668,
+          "return_pct": 131.26918598496883,
+          "inputs": {
+            "revenue_m": 1850,
+            "gross_margin": 0.46,
+            "economic_opex_m": 495,
+            "net_interest_cost_m": -12,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 138,
+            "PE": 27,
+            "incremental_option_value_m": 2300
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 115.04571428571428,
+          "return_pct": 265.3404708977907,
+          "inputs": {
+            "revenue_m": 2200,
+            "gross_margin": 0.47,
+            "economic_opex_m": 550,
+            "net_interest_cost_m": -12,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 140,
+            "PE": 30,
+            "incremental_option_value_m": 4500
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 62.98,
+        "shares_m": 138,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_parent_NI_m": 236.71259259259259,
+        "required_EPS": 1.7153086419753085,
+        "required_revenue_m": 1709.7340930674263
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "官方明确区分11月演示与2027年试点。",
+      "v1_event_3m": "2026年11月IQ SST整机演示为公司计划",
+      "v1_event_6m": "2027试点为公司计划，未承诺一定2027Q1完成；商业批量收入无已定日",
+      "v1_counterevidence": "没有近6个月SST量产合同/规模收入证据；演示成功不保证认证、客户导入和毛利。",
+      "source_urls": [
+        "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+        "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "NVTS",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 362.70000000000005,
+        "scenario_target_net_debt_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "剔52M退款、safe-harbor拉货；核心EPS保SBC、全部持续研发，SST只计额外去风险期权，不重复核心收入。2027客户试点不等4月量产。PE已含净利息，不再加937.7现金。 PE失望1.55不是完整清算价；独立净金融现金362.7/136=2.67每股，若再烧150/300M则1.56/0.46，不保证地板，也不叠加PE。",
+      "late_rebuttal": {
+        "ticker": "ENPH",
+        "verdict": "保留SST去风险期权；纠正1.55压力展示和2.3B并非翻倍最低期权值",
+        "price": 31.49,
+        "strong": 72.8266666667,
+        "thesis": "V2强核心EPS2.08×27=56.16，单核心尚不到62.98。再加2.3B/138M=16.67才达72.83；但翻倍只需额外941.16M期权，不是必须2.3B。固定2.3B时逆解EPS1.7153属另一组合，不要说核心2.08和2.3B同时是最低翻倍条件。",
+        "rebuttal": "1.55是1.1B收入、40%GM、425M费用所剩11.7M年度净利的18倍资本化，不是完整资产压力价。V2已加独立现金说明：当前净金融现金362.7M/136M=2.67；烧150/300M后1.56/0.46。不能把资产缓冲当硬底，也不能再机械叠加到含利息PE。由于失望分支利息设0，若改用经营EV+真实剩余净现金可作为替代完整模型，但须重设匹配倍数/资产占用，不能选较高者作保证。",
+        "bull": "11月整机演示和2027客户pilot是现实去风险日历；多倍收入不需在Apr27已实现，具有客户验证的电源产品期权可以先定价。强核心利润若接近56.16，约0.94B风险调整期权足够2x，较2.3B强价的承诺要求更低。",
+        "sensitivity": {
+          "strong_core": 56.16,
+          "option_for_two_x_m": 941.16,
+          "strong_option_m": 2300,
+          "cash_stress_per_share": [
+            2.6669117647058824,
+            1.5639705882352941,
+            0.4610294117647059
+          ]
+        },
+        "checks": "3m看完整系统而非模块效率/可靠性、核心safe-harbor后收入；6m客户独立采纳/条件及pilot排期，而非硬要求量产。公司只说2027试点，未限定Q1。核心1.85B/46%GM/495M经济费用仍要验证需求复苏，退款与提前拉货不能支撑正常化利润。全部持续研发留在核心费用，期权仅估未来超额增量并扣新增商业化资金，不能重复SST收入与利润。",
+        "external": "9/14官方演示公告相关正文已读；9/21 Goldman仍Buy但目标55降47，反映近端预期风险和长期地位并存，未背书73。10/5 Oppenheimer55仅搜索二手线索，未取完整券商正文，不算独立客户确认。",
+        "alternative": "优于NVTS是既有经营/近端系统验证，而非现金保底；PSIX已盈利路径更直接，若演示无客户/核心下修则PSIX优先。",
+        "sources": [
+          "F11",
+          "F12",
+          "F14"
+        ]
+      },
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair",
+        "B2_末轮补充反驳"
+      ]
+    },
+    {
+      "rank": 13,
+      "ticker": "ACMR",
+      "tier": "B 强条件机会",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "2.5B订单储备与先进封装/国产替代向美国上市母公司归属盈利转化，提高2027增长可信度和估值接受度。",
+      "why_selected": "有2.5B backlog和10/28已定更新，较AMBA/MRAM的远期产品量产更近；出口和NCI约束不因高订单而消失。",
+      "alternative": "AMBA",
+      "alternatives": [
+        "AMBA",
+        "MRAM",
+        "UCTT"
+      ],
+      "condition": "低于触及，需验收及正常利润，金融投资收益或子公司估值不是母公司可分配现金。",
+      "invalidator": "订单未转验收且应收恶化、管制切断关键需求，UCTT/PLAB更优。",
+      "major_dissent": "订单+88.2%不等半年收入+88.2%，面板H1不可强定Q1；高合并现金不能全归母。",
+      "ruling": "保留但接受反证约束；有2.5B backlog和10/28已定更新，较AMBA/MRAM的远期产品量产更近；出口和NCI约束不因高订单而消失。",
+      "new_evidence": "9/30 backlog及10/28确定日支持上调；V2核8/4 A64.657388M+B4.991808M=69.649196M，纠正旧B5.021811M，剔投资收益并扣沪子NCI。",
+      "three_month_vs_six_month": {
+        "three_month": "官方10/28预报和11月完整Q3：拆中国GAAP backlog、出货未验收、收入与应收。",
+        "six_month": "年报/2027指引验证经营归母利润和现金；面板工具H1计划不保证4/12前。"
+      },
+      "touch_2x": "中等条件机会；近确定披露日与订单增速较单纯新产品概念更有支撑。",
+      "hold_2x_april12": "低于触及，需验收及正常利润，金融投资收益或子公司估值不是母公司可分配现金。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等条件机会；近确定披露日与订单增速较单纯新产品概念更有支撑。",
+      "left_tail": "出口限制、订单验收/取消、跨境资金及少数权益、应收库存吞现金。",
+      "price": 68.1,
+      "two_x_price": 136.2,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 33.300000000000004,
+          "return_pct": -51.10132158590308,
+          "inputs": {
+            "revenue_m": 1100,
+            "gross_margin": 0.42,
+            "economic_opex_m": 250,
+            "net_interest_cost_m": -10,
+            "tax_rate": 0.2,
+            "nci_fraction": 0.25,
+            "preferred_distribution_m": 0,
+            "shares_m": 72,
+            "PE": 18,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 73.95945205479453,
+          "return_pct": 8.60418803934586,
+          "inputs": {
+            "revenue_m": 1500,
+            "gross_margin": 0.44,
+            "economic_opex_m": 290,
+            "net_interest_cost_m": -10,
+            "tax_rate": 0.2,
+            "nci_fraction": 0.26,
+            "preferred_distribution_m": 0,
+            "shares_m": 73,
+            "PE": 24,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 138.79733333333334,
+          "return_pct": 103.81399902104751,
+          "inputs": {
+            "revenue_m": 2000,
+            "gross_margin": 0.46,
+            "economic_opex_m": 355,
+            "net_interest_cost_m": -10,
+            "tax_rate": 0.2,
+            "nci_fraction": 0.27,
+            "preferred_distribution_m": 0,
+            "shares_m": 75,
+            "PE": 31,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 204.7015384615385,
+          "return_pct": 200.58963063368358,
+          "inputs": {
+            "revenue_m": 2600,
+            "gross_margin": 0.47,
+            "economic_opex_m": 440,
+            "net_interest_cost_m": -10,
+            "tax_rate": 0.2,
+            "nci_fraction": 0.28,
+            "preferred_distribution_m": 0,
+            "shares_m": 78,
+            "PE": 35,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 136.2,
+        "shares_m": 75,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_parent_NI_m": 329.51612903225805,
+        "required_EPS": 4.393548387096774,
+        "required_revenue_m": 1976.608580376184
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "9/30公告Shanghai backlog17.1B RMB约2.5B USD、同比+88.2%，含已出货待验收。6/30对Shanghai持股73.2%。",
+      "v1_event_3m": "10/28美股盘前公布初步Q3为官方定日；11月完整报告具体日未定",
+      "v1_event_6m": "约2–3月核backlog验收、回款和NCI归属",
+      "v1_counterevidence": "出口管制、验收节奏、客户/地域集中；上海市场价值不是美股母公司100%权益。",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+        "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "AMBA",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": null,
+        "scenario_target_net_debt_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "8/4封面A64.657388+B4.991808=69.649196M，5.021811为2025年底旧B。归母利润先扣NCI25–28%研究比例；投资收益不年化，PE不再减NCI或全加合并净现金。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 14,
+      "ticker": "CRWV",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "已交付GPU和成熟软件栈扩大收费，2027指引与旧卡续约证据降低经济寿命/融资折价，前置更远盈利。",
+      "why_selected": "实际云交付运营和软件比APLD/部分新建者成熟，2倍可由执行和融资折价解除；保留其高债务左尾而非按现金负就一票否决。",
+      "alternative": "APLD",
+      "alternatives": [
+        "APLD",
+        "NBIS",
+        "IREN"
+      ],
+      "condition": "明显低于触及；需收入和普通股现金回报同时证实，不能只凭backlog/EBITDA。",
+      "invalidator": "经济GPU折耗后普通股回报不可成立、开票延迟或融资条件吞净值，IREN或资金更稳者替代。",
+      "major_dissent": "旧A100续约只证明某批设备有残值，不证明所有新卡同价6年。45B净债/800M股是旧诊断假设；最终V2强成功用52B净债、850M股、37B收入、20.4%税后经济率及27倍，资本桥仍未闭合，不能混旧分母。",
+      "ruling": "保留但接受反证约束；实际云交付运营和软件比APLD/部分新建者成熟，2倍可由执行和融资折价解除；保留其高债务左尾而非按现金负就一票否决。",
+      "new_evidence": "容许有经济折旧后的右尾而不因负FCF一票否决；APLD通电不当CRWV客户已收费。",
+      "three_month_vs_six_month": {
+        "three_month": "设施交付之后的终端客户验收开票、借款/预付/CapEx与同批设备利用率。",
+        "six_month": "两季GAAP收入与经济折耗后利润、债务服务和资金桥，2027指引是否支持成熟规模。"
+      },
+      "touch_2x": "中等但高融资条件；规模/软件可见性较新建者强，股权杠杆使反应放大。",
+      "hold_2x_april12": "明显低于触及；需收入和普通股现金回报同时证实，不能只凭backlog/EBITDA。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中等但高融资条件；规模/软件可见性较新建者强，股权杠杆使反应放大。",
+      "left_tail": "利息、GPU更新与资本开支负担、客户信用和再融资联动，可造成很深股权损失。",
+      "price": 80.26,
+      "two_x_price": 160.52,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 0,
+          "return_pct": -100.0,
+          "inputs": {
+            "revenue_m": 17000,
+            "gross_margin": 0.25,
+            "economic_opex_rate": 0.13,
+            "tax_rate": 0.22,
+            "multiple": 18,
+            "shares_m": 810,
+            "net_debt_m": 50000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 80.54634146341466,
+          "return_pct": 0.3567673354281764,
+          "inputs": {
+            "revenue_m": 27000,
+            "gross_margin": 0.34,
+            "economic_opex_rate": 0.12,
+            "tax_rate": 0.2,
+            "multiple": 24,
+            "shares_m": 820,
+            "net_debt_m": 48000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 178.58352941176472,
+          "return_pct": 122.50626639890942,
+          "inputs": {
+            "revenue_m": 37000,
+            "gross_margin": 0.37,
+            "economic_opex_rate": 0.115,
+            "tax_rate": 0.2,
+            "multiple": 27,
+            "shares_m": 850,
+            "net_debt_m": 52000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 293.95555555555563,
+          "return_pct": 266.25411855912733,
+          "inputs": {
+            "revenue_m": 48000,
+            "gross_margin": 0.39,
+            "economic_opex_rate": 0.11,
+            "tax_rate": 0.2,
+            "multiple": 30,
+            "shares_m": 900,
+            "net_debt_m": 58000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 160.52,
+        "shares_m": 850,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 188442.0,
+        "required_NOPAT_m": 6979.333333333333,
+        "required_revenue_m": 34212.41830065359
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "RPO103.7B，约41%未来24月确认、39%随后24月；延迟交付罚则/可变对价可减少收入。",
+      "v1_event_3m": "Q4机房电力、GPU交付和客户验收为公司计划；财报约11月估计",
+      "v1_event_6m": "Q1继续核实际计费、利息、融资和资产折旧；日期未定",
+      "v1_counterevidence": "高债务、资本开支、折旧、客户集中；RPO期限长，6个月不能一次兑现。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "APLD",
+      "capital_bridge_residual": {
+        "known_or_committed": "6/30金融债本金35551M已独开。2026 CapEx35–39B为S1继承指引，不能和债本金相减得到缺口，因为期限、应付设备与受限现金不同。",
+        "numeric_gap": "模型目标净债45–58B相对当前毛本金差额9.449–22.449B，属于量纲提示而非真实资金缺口；实际需再加目标现金、既有现金及其可用限制。",
+        "research_bounds_m": {
+          "target_net_debt_low": 45000,
+          "target_net_debt_high": 58000,
+          "minimum_difference_vs_current_gross_principal": 9449,
+          "maximum_difference_vs_current_gross_principal": 22449
+        },
+        "uncommitted": "逐项目未提款facility、设备租赁、应付GPU期限和扩张CFO未完整对齐，不能认证融资全部已承诺。",
+        "verdict": "必须在4月前将capex付款日期与可提款日期配对；当前模型仅条件成立。"
+      },
+      "model_assumption_boundary": "35551现有本金、应付设备和未来扩产均占资本。48–58B净债为条件融资结果，未完成逐项目现金桥，GPU经济折旧已在GM，非EBITDA。不能给予低风险标签。 资金复议：6/30金融债本金35551M已独开。2026 CapEx35–39B为S1继承指引，不能和债本金相减得到缺口，因为期限、应付设备与受限现金不同。 模型目标净债45–58B相对当前毛本金差额9.449–22.449B，属于量纲提示而非真实资金缺口；实际需再加目标现金、既有现金及其可用限制。 逐项目未提款facility、设备租赁、应付GPU期限和扩张CFO未完整对齐，不能认证融资全部已承诺。",
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 15,
+      "ticker": "LEU",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "新的绑定承购与项目资金使美国浓缩能力从政策期权变为可执行工程，市场提前定价2029以后经营。",
+      "why_selected": "较OKLO/SMR已有浓缩业务及签约DOE项目，可由新增承购/资金去风险发生远期价值重估；没有确定新大单日，故条件层。",
+      "alternative": "OKLO",
+      "alternatives": [
+        "OKLO",
+        "SMR"
+      ],
+      "condition": "较低，须项目融资/客户约束而非重读7月奖项；窗口内无新增成熟浓缩利润。",
+      "invalidator": "半年内无新绑定承购/资金、只重播已签奖项；或权证融资不能闭合工程，退候补。",
+      "major_dissent": "远期投产并不禁止短期重估，但不能把已签900M合同又当未来惊喜。",
+      "ruling": "保留但接受反证约束；较OKLO/SMR已有浓缩业务及签约DOE项目，可由新增承购/资金去风险发生远期价值重估；没有确定新大单日，故条件层。",
+      "new_evidence": "2x270.62只首档价内；22.459M基础+2.203979M现金行权同时增500M，或cashless等价，拒绝固定全档29.451M。",
+      "three_month_vs_six_month": {
+        "three_month": "DOE合同执行、现有级联租约过渡、实物制造与有价量约束客户合同。",
+        "six_month": "新增资金和承购能否闭合扩产，CapEx/俄料风险可控；按实际股价重算分档权证。"
+      },
+      "touch_2x": "中低至中等的事件条件机会；消息可大幅变价，但没有确定新大单日期。",
+      "hold_2x_april12": "较低，须项目融资/客户约束而非重读7月奖项；窗口内无新增成熟浓缩利润。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低至中等的事件条件机会；消息可大幅变价，但没有确定新大单日期。",
+      "left_tail": "俄料缺口、工程延误/成本、政府条件拨款与高价权证/可转稀释同时出现。",
+      "price": 135.31,
+      "two_x_price": 270.62,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 61.40350877192982,
+          "return_pct": -54.62012506693532,
+          "inputs": {
+            "existing_trade_EV_m": 600,
+            "mature_incremental_NOPAT_m": 120,
+            "mature_multiple": 20,
+            "years_to_mature": 7,
+            "discount_rate": 0.14,
+            "conditional_execution_discount": 0.4,
+            "remaining_unfunded_capital_PV_m": 500,
+            "net_cash_before_warrants_m": 800,
+            "base_shares_m": 22.8,
+            "warrant_strikes": [
+              226.8625,
+              272.235,
+              317.6075,
+              362.98
+            ],
+            "warrant_cash_per_tranche_m": 500,
+            "shares_m": 22.8,
+            "net_debt_m": -800
+          },
+          "forward_operating_period": "Existing trade plus 2032-2034 mature expansion discounted to 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 173.10715224765264,
+          "return_pct": 27.93374639542727,
+          "inputs": {
+            "existing_trade_EV_m": 850,
+            "mature_incremental_NOPAT_m": 350,
+            "mature_multiple": 25,
+            "years_to_mature": 6,
+            "discount_rate": 0.12,
+            "conditional_execution_discount": 0.65,
+            "remaining_unfunded_capital_PV_m": 700,
+            "net_cash_before_warrants_m": 950,
+            "base_shares_m": 23,
+            "warrant_strikes": [
+              226.8625,
+              272.235,
+              317.6075,
+              362.98
+            ],
+            "warrant_cash_per_tranche_m": 500,
+            "shares_m": 23,
+            "net_debt_m": -950
+          },
+          "forward_operating_period": "Existing trade plus 2032-2034 mature expansion discounted to 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 378.6404202257992,
+          "return_pct": 179.83180860675424,
+          "inputs": {
+            "existing_trade_EV_m": 1100,
+            "mature_incremental_NOPAT_m": 650,
+            "mature_multiple": 27,
+            "years_to_mature": 5,
+            "discount_rate": 0.11,
+            "conditional_execution_discount": 0.8,
+            "remaining_unfunded_capital_PV_m": 1000,
+            "net_cash_before_warrants_m": 1000,
+            "base_shares_m": 23.2,
+            "warrant_strikes": [
+              226.8625,
+              272.235,
+              317.6075,
+              362.98
+            ],
+            "warrant_cash_per_tranche_m": 500,
+            "shares_m": 30.19238315635913,
+            "net_debt_m": -3000
+          },
+          "forward_operating_period": "Existing trade plus 2032-2034 mature expansion discounted to 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 652.6093642510866,
+          "return_pct": 382.3068245148819,
+          "inputs": {
+            "existing_trade_EV_m": 1400,
+            "mature_incremental_NOPAT_m": 1000,
+            "mature_multiple": 30,
+            "years_to_mature": 5,
+            "discount_rate": 0.1,
+            "conditional_execution_discount": 0.9,
+            "remaining_unfunded_capital_PV_m": 1300,
+            "net_cash_before_warrants_m": 1100,
+            "base_shares_m": 23.6,
+            "warrant_strikes": [
+              226.8625,
+              272.235,
+              317.6075,
+              362.98
+            ],
+            "warrant_cash_per_tranche_m": 500,
+            "shares_m": 30.592383156359134,
+            "net_debt_m": -3100
+          },
+          "forward_operating_period": "Existing trade plus 2032-2034 mature expansion discounted to 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 270.62,
+        "shares_m": 25.40397818061601,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "warrant_tranches_in_money": 1,
+        "required_EV_m": 5374.824575238305,
+        "required_mature_incremental_NOPAT_m": 411.49935959385203,
+        "historical_base_22_459M_comparison": {
+          "base_shares_m": 22.459,
+          "first_tranche_added_shares_m": 2.2039781806160117,
+          "cash_proceeds_m": 500,
+          "cashless_added_shares_m": 0.35636898691266394,
+          "note": "main forward model additionally carries 0.741M employee/convert premium pressure; old base comparison not substitute"
+        }
+      },
+      "capital_bridge_status": "capital_instrument_price_consistency_solved; cash_flow_funding_bridge_not_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "900M DOE合同已签，含可选170M合计1.07B；新增大规模产能首产2029。",
+      "v1_event_3m": "现有HALEU小级联转商业运营、租约及客户/融资进展为公司计划，未给确定日期",
+      "v1_event_6m": "新增融资或长期承购可重估；不能等同新规模产能投产",
+      "v1_counterevidence": "过桥资金、技术、政府合同选项/终止和执行；2029利润不应按2027现金流计入。",
+      "source_urls": [
+        "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+        "https://www.sec.gov/Archives/edgar/data/1065059/000110465926107103/tm2625019d5_ex99-2.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "OKLO",
+      "capital_bridge_residual": {
+        "status": "capital_instrument_price_consistency_solved; cash_flow_funding_bridge_not_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": 661.0,
+        "scenario_target_net_debt_m": [
+          -800,
+          -950,
+          -3000,
+          -3100
+        ],
+        "required_net_cash_change_m": [
+          139.0,
+          289.0,
+          2339.0,
+          2439.0
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "扩产成熟盈利在2032/33以后，不列FY27；在2027定价需折现及执行折价。普通权证四档各500M，内生解价内行权；基础22.459M含预付权证为继承，奖励/可转溢价另待核。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 16,
+      "ticker": "ADBE",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "现有经济利润和现金继续增长，AI新增净收费与有机ARR证据反驳持续席位被替代，使低PE重估。",
+      "why_selected": "较CRDO/COHR需较小经济盈利跃迁，真实现金续航更强；如果市场对AI替代叙事逆转的机会接近，优先此较小融资风险路径。",
+      "alternative": "CRDO",
+      "alternatives": [
+        "CRDO",
+        "COHR",
+        "ALNY"
+      ],
+      "condition": "与触及差距小于纯演示股，但仍需两次商业数据证明；通常修复可能仅约50–60%。",
+      "invalidator": "两季有机ARR/创意残差和净付费没有改善，或推理成本/席位流失加速，CRDO/COHR若出现更强现金增长可替换。",
+      "major_dissent": "FY26GAAP18.145到20.708仅+14.1%，但PE要显著扩张；AI650M仅总ARR2.36%，不能当集团拐点已成。",
+      "ruling": "保留但接受反证约束；较CRDO/COHR需较小经济盈利跃迁，真实现金续航更强；如果市场对AI替代叙事逆转的机会接近，优先此较小融资风险路径。",
+      "new_evidence": "X5/B2反向估值与控制器真实专项补齐复活；保留SBC。V2失望193.83只是条件，另看16EPS×11=176及14×10=140的竞争恶化压力，均非价格底。",
+      "three_month_vs_six_month": {
+        "three_month": "MAX11/10–12与CEO12/1交接后，预计12月财报看FY27有机ARR/净新增收费；演示和换帅本身非利好保证。",
+        "six_month": "预计3月结果验证付费/续订、正常股酬后的EPS与现金增长，创意残差不再停滞。"
+      },
+      "touch_2x": "中低，2x机制主要是约13至23倍重估，数学可达不代表市场愿意迅速相信。",
+      "hold_2x_april12": "与触及差距小于纯演示股，但仍需两次商业数据证明；通常修复可能仅约50–60%。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低，2x机制主要是约13至23倍重估，数学可达不代表市场愿意迅速相信。",
+      "left_tail": "AI免费竞争令席位/净价结构性下降，推理成本提高，回购只暂掩经营放缓，PE可继续降。",
+      "price": 238.14,
+      "two_x_price": 476.28,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 193.83493670886077,
+          "return_pct": -18.604628912043008,
+          "inputs": {
+            "revenue_m": 26000,
+            "gross_margin": 0.88,
+            "economic_opex_m": 14700,
+            "net_interest_cost_m": 0,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 395,
+            "PE": 12,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 365.76,
+          "return_pct": 53.59032501889644,
+          "inputs": {
+            "revenue_m": 28000,
+            "gross_margin": 0.895,
+            "economic_opex_m": 14900,
+            "net_interest_cost_m": 0,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 390,
+            "PE": 18,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 543.2860824742268,
+          "return_pct": 128.13726483338658,
+          "inputs": {
+            "revenue_m": 29500,
+            "gross_margin": 0.9,
+            "economic_opex_m": 14800,
+            "net_interest_cost_m": 0,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 388,
+            "PE": 23,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 713.851948051948,
+          "return_pct": 199.76146302676918,
+          "inputs": {
+            "revenue_m": 31500,
+            "gross_margin": 0.9,
+            "economic_opex_m": 15300,
+            "net_interest_cost_m": 0,
+            "tax_rate": 0.22,
+            "nci_fraction": 0,
+            "preferred_distribution_m": 0,
+            "shares_m": 385,
+            "PE": 27,
+            "incremental_option_value_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 476.28,
+        "shares_m": 388,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_parent_NI_m": 8034.636521739129,
+        "required_EPS": 20.70782608695652,
+        "required_revenue_m": 27889.795615013005
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q3收入6.760B、增长13%、ARR27.5B；FY26 GAAP EPS18.12–18.17，调整24.45–24.50。",
+      "v1_event_3m": "约12月FY26Q4/FY27展望为估计；Q4收入6.8–6.85B公司指引",
+      "v1_event_6m": "约3月检Creative续费、AI付费和ARR转换",
+      "v1_counterevidence": "竞争、SBC、订阅价格/席位迁移；ARR不是额外收入。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "CRDO",
+      "capital_bridge_residual": {
+        "known_or_committed": "当前389.2M法律股继承主席9/18原始核查。盈利/运营现金提供内生资金，暂无本模型必须新增股融项目；回购授权不等执行承诺。",
+        "numeric_gap": "未来股388–395M相对389.2M差−1.2至+5.8M；仅净减少1.2M按238.14至少285.8M回购现金，若同时对冲SBC需更多；中枢390M没有净回购依赖。",
+        "research_bounds_m": {
+          "minimum_cash_for_strong_net_share_reduction_at_reference_price": 285.768,
+          "required_new_external_financing_in_model": 0
+        },
+        "uncommitted": "SBC真实股份交付及实际回购价未知。模型GAAP式利润费用保SBC，未再加现金。",
+        "verdict": "缺口在回购执行/股数精度，非AI基建那种必须大额再融资；不得因此称全现金桥审计通过。"
+      },
+      "model_assumption_boundary": "FY26GAAP18.12–18.17 vs非GAAP24.45–24.50，每股SBC调整5.42不能免费剔除。模型费用含全部正常SBC；买回股数对应现金消耗，不再额外加现金。2倍须增长+23倍重估不是仅廉价。 资金复议：当前389.2M法律股继承主席9/18原始核查。盈利/运营现金提供内生资金，暂无本模型必须新增股融项目；回购授权不等执行承诺。 未来股388–395M相对389.2M差−1.2至+5.8M；仅净减少1.2M按238.14至少285.8M回购现金，若同时对冲SBC需更多；中枢390M没有净回购依赖。 SBC真实股份交付及实际回购价未知。模型GAAP式利润费用保SBC，未再加现金。",
+      "coverage_roles": [
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair",
+        "控制器_ADBE末位复活专项（非S1/S2）"
+      ]
+    },
+    {
+      "rank": 17,
+      "ticker": "AOSL",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "AI/server电源占比提升和上海产出恢复，使低盈利功率半导体被按可见的利润拐点重估。",
+      "why_selected": "较MRAM/NVTS有接近本季的AI/server组合转移与恢复产量，可先定价经济扭亏；相对ICHR较低权益和转型销售倍数提供不同路径。",
+      "alternative": "NVTS",
+      "alternatives": [
+        "NVTS",
+        "MRAM",
+        "ICHR"
+      ],
+      "condition": "较低，必须有经济利润与现金拐点；销售增长本身不够。",
+      "invalidator": "AI局部增长未能推动集团GM/经济扭亏且工厂现金消耗继续，ICHR/PLAB替换。",
+      "major_dissent": "176M×24.5%−46.5M仍亏3.38M；2x需约88M年净利或资本化更远转型，不能称收入门槛低即低风险。",
+      "ruling": "保留但接受反证约束；较MRAM/NVTS有接近本季的AI/server组合转移与恢复产量，可先定价经济扭亏；相对ICHR较低权益和转型销售倍数提供不同路径。",
+      "new_evidence": "撤销B2失望31.21>现26.58的伪下行；AI/server增长与先进计算占总收入分母分清。",
+      "three_month_vs_six_month": {
+        "three_month": "先进计算/AIserver环比增长是否与总体GM及季度约190M调整经营打平门槛接近。",
+        "six_month": "连续两季组合改善和费用吸收、现金回收，证明2倍销售估值背后有盈利路径。"
+      },
+      "touch_2x": "中低条件机会；AI组合叙事可先重估，但整体当前仍亏损。",
+      "hold_2x_april12": "较低，必须有经济利润与现金拐点；销售增长本身不够。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低条件机会；AI组合叙事可先重估，但整体当前仍亏损。",
+      "left_tail": "消费PC拖累、工厂修复和费用使增长不盈利，现金消耗/倍数回落可带来明显亏损。",
+      "price": 26.58,
+      "two_x_price": 53.16,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 14.893939393939394,
+          "return_pct": -43.96561552317759,
+          "inputs": {
+            "revenue_m": 610,
+            "gross_margin": 0.24,
+            "economic_opex_m": 195,
+            "tax_rate": 0.22,
+            "sales_multiple": 0.65,
+            "shares_m": 33,
+            "net_debt_m": -95
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 31.16417910447761,
+          "return_pct": 17.246723493143755,
+          "inputs": {
+            "revenue_m": 770,
+            "gross_margin": 0.29,
+            "economic_opex_m": 202,
+            "tax_rate": 0.22,
+            "sales_multiple": 1.2,
+            "shares_m": 33.5,
+            "net_debt_m": -120
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 60.0,
+          "return_pct": 125.73363431151243,
+          "inputs": {
+            "revenue_m": 950,
+            "gross_margin": 0.34,
+            "economic_opex_m": 210,
+            "tax_rate": 0.22,
+            "sales_multiple": 2,
+            "shares_m": 34,
+            "net_debt_m": -140
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 97.14285714285714,
+          "return_pct": 265.4735031710201,
+          "inputs": {
+            "revenue_m": 1200,
+            "gross_margin": 0.37,
+            "economic_opex_m": 240,
+            "tax_rate": 0.22,
+            "sales_multiple": 2.7,
+            "shares_m": 35,
+            "net_debt_m": -160
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 53.16,
+        "shares_m": 34,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 1667.4399999999998,
+        "required_revenue_m": 833.7199999999999,
+        "required_sales_multiple_at_branch_revenue": 1.7551999999999999
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "官方prepared remarks：6月advanced占计算31%，计算占集团49.8%，相乘约15.4%；9月预期advanced超计算40%。",
+      "v1_event_3m": "9月季度advanced computing收入环比+40%、AI/server+60%为管理层计划；约11月财报估计",
+      "v1_event_6m": "约2月检验AI贡献和集团扭亏",
+      "v1_counterevidence": "集团仍调整EPS亏损.13；PC需求软、洪水和成本；不能把局部增长当全集团增长。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm",
+        "https://www.sec.gov/Archives/edgar/data/1387467/000162828026059261/aosl-20260630.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "NVTS",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": null,
+        "scenario_target_net_debt_m": [
+          -95,
+          -120,
+          -140,
+          -160
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "不能把失望EV/Sales仍设1.5倍。当前近端24.5%nonGAAP GM与46.5M季费仍亏，强成功34%GM/950收入代表转型而非普通恢复；JV出售款已在现金，残余股权未额外估价。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 18,
+      "ticker": "CLS",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "近端投资者日与下一季结果把1.6T/定制计算平台增长转成更高前瞻盈利，工程增值占比提高。",
+      "why_selected": "10/26与10/27近已定窗口及2027增长展望较COHR/TTMI更容易检验；执行质量较SMCI强但估值门槛更高，仅最后席。",
+      "alternative": "COHR",
+      "alternatives": [
+        "COHR",
+        "TTMI",
+        "SMCI"
+      ],
+      "condition": "中低，须更高前瞻盈利而非客户芯片转售放大的收入。",
+      "invalidator": "投资者日仅重述收入增速且经济增值/现金率不上修，MOD/ICHR或COHR可替换。",
+      "major_dissent": "V2强44B/9.5%经济EBIT/28倍给700.98，仅过695约0.86%；44B较2027>65%增长对应33.825B起点高30.1%，须说明FY28提前定价。Q2 9.8%GAAP EBIT含TRS正收益，不能当9.5%经济率已达。",
+      "ruling": "保留但接受反证约束；10/26与10/27近已定窗口及2027增长展望较COHR/TTMI更容易检验；执行质量较SMCI强但估值门槛更高，仅最后席。",
+      "new_evidence": "3.45B融资伴11.129M股同时计入；CPO展示不算量产收入；用利润相容性决定降层。 B2末轮独开10/26盘后与10/27 8ET官方日历及同期署名多头；排除与原始Q2数值冲突的转载，保留条件后段。",
+      "three_month_vs_six_month": {
+        "three_month": "官方10/26财报、10/27投资者日是否给真实利润/增值内容上修，HPS不与CCS重复相加。",
+        "six_month": "年度结果兑现2027路径，现金结算激励/股酬、营运资本和新增股数保持同口径。"
+      },
+      "touch_2x": "中低至中等，明确日历和实际收入支持；2x对经济率/收入仍要求强。",
+      "hold_2x_april12": "中低，须更高前瞻盈利而非客户芯片转售放大的收入。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低至中等，明确日历和实际收入支持；2x对经济率/收入仍要求强。",
+      "left_tail": "客户集中、转售收入低增值、架构变化及现金激励/库存占款使高估值降级。",
+      "price": 347.5,
+      "two_x_price": 695.0,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 156.95151515151517,
+          "return_pct": -54.83409635927621,
+          "inputs": {
+            "revenue_m": 24000,
+            "gross_margin": 0.115,
+            "economic_opex_rate": 0.055,
+            "tax_rate": 0.22,
+            "multiple": 18,
+            "shares_m": 132,
+            "net_debt_m": -500,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 396.7515151515152,
+          "return_pct": 14.173097885328122,
+          "inputs": {
+            "revenue_m": 34000,
+            "gross_margin": 0.13,
+            "economic_opex_rate": 0.05,
+            "tax_rate": 0.21,
+            "multiple": 24,
+            "shares_m": 132,
+            "net_debt_m": -800,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 700.9777777777778,
+          "return_pct": 101.72022382094323,
+          "inputs": {
+            "revenue_m": 44000,
+            "gross_margin": 0.15,
+            "economic_opex_rate": 0.055,
+            "tax_rate": 0.2,
+            "multiple": 28,
+            "shares_m": 135,
+            "net_debt_m": -1000,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 1056.4057971014493,
+          "return_pct": 204.00166823063287,
+          "inputs": {
+            "revenue_m": 53000,
+            "gross_margin": 0.16,
+            "economic_opex_rate": 0.05,
+            "tax_rate": 0.2,
+            "multiple": 31,
+            "shares_m": 138,
+            "net_debt_m": -1200,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 695.0,
+        "shares_m": 135,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 92825.0,
+        "required_NOPAT_m": 3315.1785714285716,
+        "required_revenue_m": 43620.770676691725
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q2收入4.7B；GAAP经营率9.8%高于调整8.2%，TRS正向收益影响GAAP。",
+      "v1_event_3m": "官方确定：2026-10-26盘后发布Q3业绩；2026-10-27 08:00 ET召开业绩兼投资者/分析师日电话会，午间另有线下论坛。确认FY26指引及2027路径。",
+      "v1_event_6m": "约1月FY27正式范围及订单可见度；公司称2027收入增幅超过65%",
+      "v1_counterevidence": "超过65%是管理层展望，不是实际交付或确定保底；客户集中、工作资本风险仍在。",
+      "source_urls": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+        "https://corporate.celestica.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "COHR",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": null,
+        "scenario_target_net_debt_m": [
+          -500,
+          -800,
+          -1000,
+          -1200
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "Q2现金535.7，之后3.45B股权融资新增11.129031M股为继承S1并非新增现金全留存。2028收入提前定价需10/27日历与后续两季订单/毛利证实。",
+      "late_rebuttal": {
+        "ticker": "CLS",
+        "verdict": "保留20竞争后段；有近窗定价机制，强成功仍需三项共振",
+        "price": 347.5,
+        "strong": 700.9777777778,
+        "thesis": "官方2026收入20.5B，并预期2027增长超过65%，算术起点33.825B。44B较这一门槛高30.1%，可以是FY28前瞻年而非2027已确认收入。10/26盘后财报、10/27 8:00 ET投资者日官方已定，能给市场提前看2028的理由；不能把44B当现有公司指引。",
+        "rebuttal": "44B×(15%毛利−5.5%经济费用)×80%税后×28，加1B净现金，除135M股=700.98，仅高于695翻倍线0.86%。9.5%经济EBIT不是当前9.8% GAAP EBIT已达标：Q2有TRS正收益，调整率8.2%又排SBC等，须同时去TRS及保留持续激励，不能选择较高口径。HPS已在CCS内，转售芯片金额不可当新增高毛利价值。",
+        "bull": "不是空想的2x：原始2027加速展望支持收入基座，平台设计和1.6T/AI计算导入可带来经营杠杆，投资者日及下一次年报有机会把增量订单转成年度盈利。合理多头可把44B放FY28并在半年内重估；不需要等2028现金到账。",
+        "sensitivity": {
+          "same_profit_multiple24": 601.8962962962963,
+          "same_revenue_ebit8pct_multiple28": 591.4666666666667,
+          "two_x_required_revenue_m": 43620.77067669173
+        },
+        "checks": "3m：正式2027范围、平台订单量产/产能和毛利桥；6m：年度结果验证需求与费用、营运资金，令FY28的44B不是仅由客户芯片转售堆成。1月年报月估计，不能假定在1/12前公布。若只是33–34B收入和8%经济EBIT，700不是常态估值。",
+        "external": "10/6 Rajiv Nanjapla多头正文已读，强调扩产和客户需求；9/30 Bernstein 520为二手片段，8/7 Barclays降406亦为聚合，均非695背书。Stifel转载搜索命中Q2 6.63B/3.58与原始4.70B/2.54冲突，排除该转载数字。未找到可核完整近期卖方做空报告，反方主要由原始利润口径构造，不冒充市场共识。",
+        "alternative": "SMCI同需现金验证但起点低、回款去风险可使2x门槛更近；CLS执行证据较好，却不能仅因质量优先。UCTT若经济盈利上修更近，应在CLS只剩转售收入惊喜时替换。",
+        "sources": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F13"
+        ]
+      },
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair",
+        "B2_末轮补充反驳"
+      ]
+    },
+    {
+      "rank": 19,
+      "ticker": "RDW",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "优先股转换与股权融资改善续航后，Edge Autonomy订单和原Space有机利润若共同改善，可重估为国防航天平台。",
+      "why_selected": "较AVAV更小权益基数及融资后续航有更陡触及右尾，较ASTS少跨几步发射/商业收费链；承认期末盈利支撑更弱。",
+      "alternative": "AVAV",
+      "alternatives": [
+        "AVAV",
+        "ASTS",
+        "RKLB"
+      ],
+      "condition": "较低，成功仍要求较高销售倍数和前瞻盈利；短暂题材触及更容易。",
+      "invalidator": "旧Space有机增长停滞、已拨款订单弱或烧钱不降，AVAV优先。",
+      "major_dissent": "V2强收入850M下2倍仍需5.604倍销售；7倍销售强价22.68隐含约73倍EV/NOPAT，融资现金不等盈利。",
+      "ruling": "保留但接受反证约束；较AVAV更小权益基数及融资后续航有更陡触及右尾，较ASTS少跨几步发射/商业收费链；承认期末盈利支撑更弱。",
+      "new_evidence": "优先已转换不再重复扣，249.221M期末股数替代低加权股数；重算失望价低于现价的真实失败分支。",
+      "three_month_vs_six_month": {
+        "three_month": "Q3原有业务增长、合并毛利、funded订单和现金烧损，区分并购贡献。",
+        "six_month": "2027指引及订单转收入使经营现金改善，平台估值不是只靠更大融资和并购。"
+      },
+      "touch_2x": "中低至中等的高右尾；小EV与订单信息敏感，基本面支撑弱于AVAV。",
+      "hold_2x_april12": "较低，成功仍要求较高销售倍数和前瞻盈利；短暂题材触及更容易。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低至中等的高右尾；小EV与订单信息敏感，基本面支撑弱于AVAV。",
+      "left_tail": "有机增长停滞、整合/控制缺陷、低毛利订单和再融资同时侵蚀现金/倍数。",
+      "price": 9.22,
+      "two_x_price": 18.44,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 5.481481481481482,
+          "return_pct": -40.547923194344015,
+          "inputs": {
+            "revenue_m": 460,
+            "gross_margin": 0.22,
+            "economic_opex_m": 125,
+            "tax_rate": 0.22,
+            "sales_multiple": 2.5,
+            "shares_m": 270,
+            "net_debt_m": -330
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 12.830882352941176,
+          "return_pct": 39.163583003700374,
+          "inputs": {
+            "revenue_m": 620,
+            "gross_margin": 0.27,
+            "economic_opex_m": 143,
+            "tax_rate": 0.22,
+            "sales_multiple": 5,
+            "shares_m": 272,
+            "net_debt_m": -390
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 22.678571428571427,
+          "return_pct": 145.971490548497,
+          "inputs": {
+            "revenue_m": 850,
+            "gross_margin": 0.32,
+            "economic_opex_m": 168,
+            "tax_rate": 0.22,
+            "sales_multiple": 7,
+            "shares_m": 280,
+            "net_debt_m": -400
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 34.4,
+          "return_pct": 273.10195227765723,
+          "inputs": {
+            "revenue_m": 1100,
+            "gross_margin": 0.35,
+            "economic_opex_m": 205,
+            "tax_rate": 0.22,
+            "sales_multiple": 9,
+            "shares_m": 300,
+            "net_debt_m": -420
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 18.44,
+        "shares_m": 280,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 4763.200000000001,
+        "required_revenue_m": 680.4571428571429,
+        "required_sales_multiple_at_branch_revenue": 5.603764705882353
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "Q2收入117.1M、毛利27.8%、亏损41M，firm backlog542.1M。6/30优先股余额为零。",
+      "v1_event_3m": "约11月财报估计，观察积压订单转交付及新产能利用率",
+      "v1_event_6m": "约3月全年现金消耗和无人机整合；新增大订单日期未定",
+      "v1_counterevidence": "收入高增长并未令经营利润转正；IDIQ上限不等于已拨款订单。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "AVAV",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": null,
+        "scenario_target_net_debt_m": [
+          -330,
+          -390,
+          -400,
+          -420
+        ],
+        "required_net_cash_change_m": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "原始优先余额0，不能再扣。249.221102M期末普通不是220.467M季均。557.718含受限，目标400净现金须再扣票据与限制；模型为条件非全闭合。",
+      "coverage_roles": [
+        "S2_nonai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair"
+      ]
+    },
+    {
+      "rank": 20,
+      "ticker": "MOD",
+      "tier": "C 条件入选/竞争席",
+      "selection_status": "conditional_included_not_calibrated_probability",
+      "mechanism": "存续冷却业务的实际数据中心订单、产能释放和低谷毛利恢复，让分拆后的经济利润持续期得到重估。",
+      "why_selected": "较ICHR从13.9%至20.5%GM还需证明定价权，MOD已有DC高增长与低谷毛利恢复线索更近；不靠压力情景绝对价格决定优先。",
+      "alternative": "ICHR",
+      "alternatives": [
+        "ICHR",
+        "CRDO",
+        "VRT"
+      ],
+      "condition": "较低；5.1B收入和19.5%经济EBIT的强条件仍需订单与成本证明，不能只靠纯冷却标签。",
+      "invalidator": "温水设计削减内容、DC利润不恢复、独立留存费用高，ICHR出现持续GM/现金证据时替换。",
+      "major_dissent": "19.5%经济EBIT已接近冻结FY28约20.3%调整EBITDA，折旧/SBC空间紧；收入扩大、利润率和27倍同时成立是强成功。 B2末轮17.5%经济EBIT只321.86、25倍只332.33；分拆后组合也可能优于旧集团，不能用旧20.3%跨口径直接判不可能。",
+      "ruling": "保留但接受反证约束；较ICHR从13.9%至20.5%GM还需证明定价权，MOD已有DC高增长与低谷毛利恢复线索更近；不靠压力情景绝对价格决定优先。",
+      "new_evidence": "10/1分拆与156M偿债确认；新买入不含历史THRM分配。V2降低原18%NOPAT但仍需强假设；对ICHR复议后暂升最后席。 B2末轮原始Q1与10/2 Oppenheimer署名短正文补审，260目标不背书345，但同时支持需求与供给执行风险。",
+      "three_month_vs_six_month": {
+        "three_month": "预计11月首份拆分后财报核14.8%低谷DC EBITDA率是否恢复、留存费用和真实出货。10/1交割已发生，不列未来惊喜。",
+        "six_month": "预计2月后续结果核存续业务收入、经济利润、现金与4B长协转收入；前瞻FY28/29不是4月已实现利润。"
+      },
+      "touch_2x": "中低条件机会；两季增长/利润修复可触发，但需要超越普通恢复才能2倍。",
+      "hold_2x_april12": "较低；5.1B收入和19.5%经济EBIT的强条件仍需订单与成本证明，不能只靠纯冷却标签。",
+      "relative_likelihood": "相对等级只比较本池机制与窗口，不是统计概率；中低条件机会；两季增长/利润修复可触发，但需要超越普通恢复才能2倍。",
+      "left_tail": "温水架构减少机械冷却内容、零件/扩产执行差或预付款逆转，令盈利与倍数一起回落。",
+      "price": 172.5,
+      "two_x_price": 345.0,
+      "scenario_summary": [
+        {
+          "branch": "失望",
+          "price": 87.59642857142858,
+          "return_pct": -49.219461697722565,
+          "inputs": {
+            "revenue_m": 3000,
+            "gross_margin": 0.24,
+            "economic_opex_rate": 0.11,
+            "tax_rate": 0.23,
+            "multiple": 18,
+            "shares_m": 56,
+            "net_debt_m": 500,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "工作中枢",
+          "price": 215.1858407079647,
+          "return_pct": 24.74541490316795,
+          "inputs": {
+            "revenue_m": 4000,
+            "gross_margin": 0.28,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.22,
+            "multiple": 23,
+            "shares_m": 56.5,
+            "net_debt_m": 400,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "强成功",
+          "price": 359.5468421052632,
+          "return_pct": 108.43295194508009,
+          "inputs": {
+            "revenue_m": 5100,
+            "gross_margin": 0.3,
+            "economic_opex_rate": 0.105,
+            "tax_rate": 0.22,
+            "multiple": 27,
+            "shares_m": 57,
+            "net_debt_m": 450,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        },
+        {
+          "branch": "更强右尾",
+          "price": 514.944827586207,
+          "return_pct": 198.5187406296852,
+          "inputs": {
+            "revenue_m": 6200,
+            "gross_margin": 0.32,
+            "economic_opex_rate": 0.11,
+            "tax_rate": 0.22,
+            "multiple": 30,
+            "shares_m": 58,
+            "net_debt_m": 600,
+            "other_claims_m": 0
+          },
+          "forward_operating_period": "FY/CY2027-2028 complete forward year priced on 2027-04-12"
+        }
+      ],
+      "two_x_inverse": {
+        "target_price": 345.0,
+        "shares_m": 57,
+        "benchmark_branch": "强成功 cost/multiple/capital held constant",
+        "not_probability": true,
+        "required_EV_m": 20115.0,
+        "required_NOPAT_m": 745.0,
+        "required_revenue_m": 4898.093359631821
+      },
+      "capital_bridge_status": "not_fully_closed",
+      "unresolved": [
+        "现金/法律稀释全桥仍未完全闭合，见逐项说明",
+        "情景联合可行性需后续事实验证；没有校准概率"
+      ],
+      "v1_fact": "10/1原股东每股获0.44619 THRM；MOD收到156M用于偿债，原股东直接拥有THRM43.62%而非MOD持有。",
+      "v1_event_3m": "已完成拆分之后第一份季度报告约11月；拟股东会/更名是公司计划",
+      "v1_event_6m": "约2月核持续制冷业务利润率与增长；非制冷资产不再归MOD",
+      "v1_counterevidence": "原股东分配不属于10/12新买入者；更名本身不创造现金流。",
+      "source_urls": [
+        "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+        "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx"
+      ],
+      "chair_external_access": "none; citations inherited from actual role/controller accesses; chairman synthesized local evidence",
+      "displaced_candidate": "ICHR",
+      "capital_bridge_residual": {
+        "status": "not_fully_closed",
+        "as_of": "2027-04-12",
+        "starting_net_financial_cash_m": -432.90000000000003,
+        "scenario_target_net_debt_m": [
+          500,
+          400,
+          450,
+          600
+        ],
+        "required_net_cash_change_m": [
+          -67.09999999999997,
+          32.900000000000034,
+          -17.099999999999966,
+          -167.09999999999997
+        ],
+        "reason": "价格情景内现金/债是研究条件。未逐季核对全部经营、投资、股融、受限账户和回购，不能把差額解释为已获融资。PE模型不再次把净现金加到股价。"
+      },
+      "model_assumption_boundary": "6月净债432.9为分拆前；4月模型对应存续制冷主体，分拆分配已剔除，不加历史THRM权益。强成功15.21%NOPAT低于首轮18%假设。",
+      "late_rebuttal": {
+        "ticker": "MOD",
+        "verdict": "维持条件后段，反对把359.55解释为旧计划自然兑现",
+        "price": 172.5,
+        "strong": 359.5468421053,
+        "thesis": "V2由原18%税后NOPAT降至15.21%确有改善，但对应经济EBIT仍19.5%。这距离继承的旧FY28全集团20.3%调整EBITDA仅0.8pp，尚需折旧、经济激励及存续总部费用。旧集团与分拆后口径不同，不能硬断言不可能，也不能称已被旧目标支持。",
+        "rebuttal": "5.1B收入、30%GM、10.5%费用、22%税、27倍、57M股及450M净债共同给359.55。只把EBIT率改17.5%即321.86，18%为331.28；维持19.5%但25倍约332.33。翻倍需同资本倍数下745M NOPAT/约4.898B销售。单一利润率或倍数稍差就不过线。",
+        "bull": "Q1 DC销售增长90%有真实基础；产线人员、供应改善与高功率冷却订单可令低谷14.8% EBITDA率恢复。分拆后的产品组合可能显著优于旧集团，故19.5%经济EBIT不能仅凭旧20.3%集团EBITDA机械否决。必须由新独立业务指引证实，而非自行把旧分部高利润外推。",
+        "sensitivity": {
+          "ebit17_5pct": 321.86052631578946,
+          "ebit18pct": 331.2821052631579,
+          "multiple25": 332.32894736842104
+        },
+        "checks": "10/1 THRM分拆完成已由V1核实，新买不加THRM权益/旧分派。3m分拆后首份结果及11月分析师日（后者仅媒体公司计划线索，未独核官方日期）；6m持续业务DC/HVAC利润和总部成本、每MW订单内容。温水减少机械冷水机需以CDU等净新增毛利补足，不能把替代产品全部相加。",
+        "external": "10/2 Oppenheimer Noah Kaye维持Outperform但目标300降260，StreetInsider公开短正文核到；MT Newswires搜索片段指出招聘扩产与成本转嫁收入利好，同时风扇/马达/压缩机等供给约束。原Yahoo页打开失败。降目标可能含分拆口径调整，不能全解释成经营转熊；该观点本身同时保留多头与执行风险。",
+        "alternative": "PSIX已有利润的2x路径更直接，UCTT利润上修可两季核验；MOD在净冷却内容量和存续利润新指引明显上修时可胜，只有更名/已完分拆应退候补。",
+        "sources": [
+          "F05",
+          "F06",
+          "F07"
+        ]
+      },
+      "coverage_roles": [
+        "S1_ai_deep",
+        "B1_business_rebuttal",
+        "B2_valuation_rebuttal",
+        "V1_evidence",
+        "V2_models",
+        "Astra_chair",
+        "B2_末轮补充反驳"
+      ]
+    }
+  ],
+  "reserves": [
+    {
+      "reserve_rank": 1,
+      "ticker": "ICHR",
+      "reason": "第一候补：首轮漏选，经控制器/B1/B2复活；GM与现金跨越仍大，待持续自制件改善可换MOD/AOSL。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 2,
+      "ticker": "AVAV",
+      "reason": "已盈利但FY27调整EPS3.02–3.34到2倍要求FY28强上修，LOCUST已含指引且负FCF；若RDW无有机改善可换。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 3,
+      "ticker": "CRDO",
+      "reason": "需求强但SBC后经济率和2倍前瞻收入/42倍要求高；强分支仍不足2倍，需新光收入/现金证明。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 4,
+      "ticker": "COHR",
+      "reason": "成熟光业务与NVIDIA非排他采购支持，但正常利润/规模到2倍跨度较大，等PhotonLink真实量产。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 5,
+      "ticker": "ALNY",
+      "reason": "真实商业现金和10/23早期数据保留；V2改74%强GM及220M净利息后强价324.05不足2倍454.04，更强右尾仍526.48。需要额外临床/商业证据，单一期靶点不足。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 6,
+      "ticker": "PLAB",
+      "reason": "归母利润和现金可检验，但大额JV现金非全归母，六个月高增长/倍数转变证据较弱。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 7,
+      "ticker": "PNR",
+      "reason": "低盈利估值修复有空间，Taco增厚小且并购资金成本真，核心泳池恢复未证实。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 8,
+      "ticker": "FLNC",
+      "reason": "真正困境高右尾仍在；9/16新预警使旧多头及接近盈亏平衡模型失效，先Houston/资金闭合。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 9,
+      "ticker": "NVDA",
+      "reason": "优质且可有右尾，按经济利润口径仍需较大前瞻规模重估，不因大市值自动排除。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 10,
+      "ticker": "AMBA",
+      "reason": "边缘AI可选性但近期改善含一次9M研发抵减，汽车量产窗不够清楚。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 11,
+      "ticker": "MRAM",
+      "reason": "政府/NRE跨期与工程进展是机会，但剔诉讼后仅0.438M季度经济净利，样片非量产。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 12,
+      "ticker": "CC",
+      "reason": "周期反转弹性大，但法律后续PV与高净债并存，同等机会VISN优先。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 13,
+      "ticker": "IONS",
+      "reason": "有10/26目标日且商业资产多样化；已失败项目不可复活，纯权益增值门槛仍高。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 14,
+      "ticker": "POET",
+      "reason": "融资改善续航但季度收入不足1M与大估值鸿沟大；等资格转真正量产。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 15,
+      "ticker": "APLD",
+      "reason": "项目运营与CHRN有价值，资本瀑布/NCI未闭合前不能把集团NOI全归普通股。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 16,
+      "ticker": "NBIS",
+      "reason": "业务基础有吸引力但起点/前瞻收入门槛高，融资与收购对价仍须闭合。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 17,
+      "ticker": "TTMI",
+      "reason": "M+N和并购扩张真实，Epiq融资与折旧/SBC后2倍门槛高。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    },
+    {
+      "reserve_rank": 18,
+      "ticker": "AEIS",
+      "reason": "有盈利但800V大收入更远，六个月强分支仍未2倍，非技术质量否定。",
+      "revival_test": "出现更强订单、正常经济利润、现金或窗口内去风险证据后，与对应现选逐项复议；不是永久淘汰。",
+      "model_coverage": true,
+      "fact_coverage": true
+    }
+  ],
+  "pairwise": [
+    {
+      "a": "MU",
+      "b": "NVDA",
+      "winner": "MU",
+      "ruling": "现行季度收入/经济利润与2倍门槛之间距离较小；NVDA FY27非GAAP已含SBC，不能重复扣。",
+      "reverse_if": "若MU量价/现金反转而NVDA前瞻盈利超目前门槛，顺序可逆。"
+    },
+    {
+      "a": "MU",
+      "b": "SNDK",
+      "winner": "两者入选，MU优先",
+      "ruling": "两者都有盈利持续期重估；同类机会下MU现金与产品广度胜，SNDK纯度与10/29更近。",
+      "reverse_if": "若NAND现金兑现明显胜DRAM/HBM且合同持久，可逆。"
+    },
+    {
+      "a": "KYTX",
+      "b": "ALNY",
+      "winner": "KYTX",
+      "ruling": "小权益的申报/PMS数据可改变风险价值；ALNY有真实药品但TTR版税约束利润，不能85%GM伪造低门槛。",
+      "reverse_if": "ALNY若商业利润或临床功能数据支持净权益大跃升，可复活。"
+    },
+    {
+      "a": "KYTX",
+      "b": "BNTX",
+      "winner": "两者入选；KYTX右尾优先、BNTX融资更稳",
+      "ruling": "KYTX绝对新增权益门槛小；BNTX多个后期读出且现金续航长，允许并存而非行业配额。",
+      "reverse_if": "KYTX CMC/临床/融资恶化，BNTX上位；BNTX只旧信号不支持2倍。"
+    },
+    {
+      "a": "IREN",
+      "b": "CRWV",
+      "winner": "两者入选，IREN优先",
+      "ruling": "IREN集中Horizon验收窗口更鲜明；CRWV运营/软件更成熟但债务和更新负担深。",
+      "reverse_if": "IREN交付后不收费、CRWV同批GPU经济回报更清楚时逆转。"
+    },
+    {
+      "a": "CRWV",
+      "b": "APLD",
+      "winner": "CRWV",
+      "ruling": "真实云业务优于尚未闭合的项目NCI/优先资本瀑布，APLD通电非客户全部验收。",
+      "reverse_if": "APLD权益瀑布/CHRN归属闭合且已收费现金优于CRWV，可换。"
+    },
+    {
+      "a": "IREN",
+      "b": "NBIS",
+      "winner": "IREN",
+      "ruling": "NBIS起点较高，2倍所需更远规模更大，非因质量不足。",
+      "reverse_if": "NBIS订单/资金较快兑现而IREN延迟，可逆。"
+    },
+    {
+      "a": "AAOI",
+      "b": "POET",
+      "winner": "AAOI",
+      "ruling": "AAOI量产/收入基础更近，POET资格批与大融资不等收入证明。",
+      "reverse_if": "POET验收量产及权益股数现金清楚而AAOI良率失败才复议。"
+    },
+    {
+      "a": "AAOI",
+      "b": "COHR",
+      "winner": "AAOI优先争取窗内触及",
+      "ruling": "AAOI更小收入盈利基数带来更陡六个月右尾，COHR成熟度不足弥补2倍规模/利润跳跃。",
+      "reverse_if": "相近2倍证据时COHR较成熟利润/客户组合应优先。"
+    },
+    {
+      "a": "SMCI",
+      "b": "CLS",
+      "winner": "两者入选，SMCI优先",
+      "ruling": "SMCI估值折价可由真实回款解除；CLS治理/平台好但2倍要更高经济盈利。",
+      "reverse_if": "SMCI两季现金未修，CLS可优先。"
+    },
+    {
+      "a": "PSIX",
+      "b": "GNRC",
+      "winner": "PSIX",
+      "ruling": "PSIX产量恢复对小权益利润更敏感；GNRC多年合同/权证门槛不等当前保底采购。",
+      "reverse_if": "PSIX治理/回款弱而GNRC现订单显著上修可替换。"
+    },
+    {
+      "a": "PSIX",
+      "b": "PNR",
+      "winner": "PSIX",
+      "ruling": "PSIX生产/EPS拐点较近，PNR Taco每股0.10–0.15增厚不足2倍。",
+      "reverse_if": "PNR核心泳池真实补库存且利润上修、PSIX下滑时逆转。"
+    },
+    {
+      "a": "AMPX",
+      "b": "TE/WOLF",
+      "winner": "AMPX",
+      "ruling": "真实代工销量与CAMINUS Q1/27路径优于更重建设/融资或重整权利风险。",
+      "reverse_if": "AMPX客户验收/应收失败、替代融资与交付均闭合则逆转。"
+    },
+    {
+      "a": "ENPH",
+      "b": "NVTS",
+      "winner": "ENPH",
+      "ruling": "既有电力电子业务及11月整机计划更可验证，但2027pilot非Q1量产。",
+      "reverse_if": "SST无客户且核心弱、NVTS量产/现金出现实证可逆。"
+    },
+    {
+      "a": "VISN",
+      "b": "FLNC/CC",
+      "winner": "VISN",
+      "ruling": "现金存续业务可见性较FLNC新大幅预警后的融资修复、CC环境法律现金尾部更好。",
+      "reverse_if": "VISN现金误用/成本不降，而FLNC资金及Houston兑现或CC责任/去债明显去风险可逆。"
+    },
+    {
+      "a": "UCTT",
+      "b": "ICHR",
+      "winner": "UCTT",
+      "ruling": "UCTT Q3现实收入EPS台阶更近；ICHR13.9至20.5%GM含更多尚未证明改善。",
+      "reverse_if": "ICHR连续GM/自制件/现金兑现而UCTT归母率不提升可逆。"
+    },
+    {
+      "a": "UCTT",
+      "b": "ACMR",
+      "winner": "两者入选，UCTT优先",
+      "ruling": "前者订单客户链更直接，后者backlog真增长但验收/政策/NCI较复杂，不能拿沪子全价值。",
+      "reverse_if": "ACMR归母正常利润/回款超额实现时可上移。"
+    },
+    {
+      "a": "LEU",
+      "b": "OKLO/SMR",
+      "winner": "LEU",
+      "ruling": "已有浓缩业务与已签DOE框架，新增承购/融资可改变项目价值，非2027投产收入。",
+      "reverse_if": "半年无新约束合同或成本失控则退候补。"
+    },
+    {
+      "a": "ADBE",
+      "b": "CRDO/COHR/ALNY",
+      "winner": "ADBE",
+      "ruling": "数学门槛更近且已有现金；相近机会先较小融资风险，仍须证明PE13至23的市场信念改变。",
+      "reverse_if": "ADBE商业指标弱而替代出现真实超强利润上修，则逆转。"
+    },
+    {
+      "a": "AOSL",
+      "b": "ICHR/PLAB/MRAM",
+      "winner": "AOSL条件入选",
+      "ruling": "局部AI/server组合有本季验证，权益起点允许转型重估；承认仍亏而非假低风险。",
+      "reverse_if": "整体GM/盈亏两季不改善、替代有现金/利润实证则换。"
+    },
+    {
+      "a": "CLS",
+      "b": "COHR/TTMI",
+      "winner": "CLS条件入选",
+      "ruling": "明确近投资者日、2027平台增长有现实基础，经济利润跨越仍很大，已接受末轮TRS、经济成本和44B收入反驳，仍仅条件入选。",
+      "reverse_if": "转售增收入不增值，或替代利润现金更强时换。"
+    },
+    {
+      "a": "RDW",
+      "b": "AVAV/ASTS",
+      "winner": "RDW条件入选，偏向触及",
+      "ruling": "融资/优先转换让存续风险下降且较小基数有触及弹性；AVAV当前盈利更好但新订单已含指引。",
+      "reverse_if": "RDW有机增长/已拨款订单不兑现，AVAV应换；期末低于触及。"
+    },
+    {
+      "a": "MOD",
+      "b": "ICHR/CRDO",
+      "winner": "MOD条件入选",
+      "ruling": "实际DC增长/低谷利润恢复较近，ICHR需更大GM改变、CRDO经济SBC压强盈利；不按非同分位压力价排序。",
+      "reverse_if": "MOD冷却内容/费用恶化且ICHR自制件GM持续证明，ICHR复活。"
+    }
+  ],
+  "major_dissents": [
+    {
+      "issue": "20席不足以支持20个高概率翻倍",
+      "ruling": "明确A/B/C分层，C层条件等待；排名是本目标综合优先级，非校准翻倍概率或等权买入建议。"
+    },
+    {
+      "issue": "共享来源/票数不独立",
+      "ruling": "首轮五角色扫描245、深读各不等；主席不重新宣称245全文核验，S1/S2相同结论不加权当独立事实。"
+    },
+    {
+      "issue": "强成功数字任意贴近2倍",
+      "ruling": "V2独立四分支均研究假设，强成功并非预期；反解只显示门槛，新事实与同时相容性决定入选。"
+    },
+    {
+      "issue": "失败价格非同等严重程度",
+      "ruling": "不按模型跌幅机械算赔率；ENPH/ICHR低利润PE压力未给残余资产价值，现金模型也非清算底。"
+    },
+    {
+      "issue": "低现金或负FCF是否一票否决",
+      "ruling": "否。IREN/CRWV/AAOI等保留真实右尾，但清楚披露深跌与再融资条件；有相近证据才优先较稳者。"
+    },
+    {
+      "issue": "ALNY TTR版税被85%整体GM掩盖",
+      "ruling": "主席回流后V2将整体GM改72–75%、净利息改200–230M；强成功324.05低于2倍454.04，原强526.35撤回；更强右尾526.48仍存在，故可逆候补。"
+    },
+    {
+      "issue": "SMCI新强价135.84远高旧反驳81.6",
+      "ruling": "输入和转换规则变化，不是新增公司事实。85B收入、12.5%GM、19倍联合兑现必须具体证明；近端GM约10.4–10.8%。"
+    },
+    {
+      "issue": "ADBE无小盘标签却复活",
+      "ruling": "用户要求机制与相近机会下较少下行，不是小盘筛选；EPS增14.1%加PE13→23门槛可见，但ARR/净付费尚未证明。"
+    },
+    {
+      "issue": "FY28/29利润与半年窗口",
+      "ruling": "允许市场提前定价完整前瞻年，必须由本窗事件降低不确定；绝不当4月已赚收入/已有现金。"
+    },
+    {
+      "issue": "剩余资本桥未完全审计",
+      "ruling": "每卡保留V2状态。公式闭合不等未来现金、股数和经营条件已认证，不能给核验完成印章。"
+    }
+  ],
+  "rounds": [
+    {
+      "round": "R1",
+      "work": "5个独立盲研角色各扫描245并深读重点；44并集作为竞争池，不是选票定论。"
+    },
+    {
+      "round": "R2",
+      "work": "S1 AI深研、S2非AI深研；主席完整逐段读成熟正文，记录近期时间/成本约束。"
+    },
+    {
+      "round": "R3",
+      "work": "B1业务和B2估值反驳；恢复ICHR等遗漏，对假下行和非GAAP盈利保持异议。"
+    },
+    {
+      "round": "R4",
+      "work": "控制器定向重开原始/多空来源：AMPX、AAOI、KYTX/BNTX、FLNC、VISN、PSIX、RDW、AOSL/MRAM、CC、ADBE等。"
+    },
+    {
+      "round": "R5",
+      "work": "V1事实/日历和V2独立38公司模型；主席逐卡读事实字段及模型正文，另反向算末位敏感性。"
+    },
+    {
+      "round": "R6",
+      "work": "主席ALNY版税GM与UCTT NCI异议被V2采纳；B2同角色完成CLS/MOD/SMCI/ENPH末轮原始及外部补审；控制器独立重写公式审核1120项0失败，仍区分算术与经济假设。"
+    }
+  ],
+  "change_log": [
+    {
+      "change": "ADBE复活入条件席",
+      "reason": "X5/B2反向估值+控制器独立专项+V1/V2，不能因非小盘先排除。"
+    },
+    {
+      "change": "ICHR复活后退第一候补、MOD暂入20",
+      "reason": "有真实遗漏纠正，仍需GM13.9→20.5%与现金同时兑现；复活不等自动选入。"
+    },
+    {
+      "change": "VISN/BNTX相近机会下升层",
+      "reason": "错误现金币种/退税/回购/总部费纠正后，仍有可核实留存资产，融资尾部较小。"
+    },
+    {
+      "change": "FLNC不入但可逆",
+      "reason": "新Sept16warning改变旧UBS/接近平衡模型，强右尾保留而近期基本事实弱。"
+    },
+    {
+      "change": "CRDO/COHR质量不自动保位",
+      "reason": "经济股酬、研发税与收入增长相容约束后，2倍要更远规模；ADBE等竞争。"
+    },
+    {
+      "change": "ALNY毛利纠错触发复议",
+      "reason": "主席发现85%整体GM与Sanofi版税冲突，禁止不修模型即入选。"
+    },
+    {
+      "change": "最后5强反证",
+      "reason": "分别固定收入下压盈利率/倍数：ADBE331.33、AOSL37.18、CLS600.59、RDW13.57、MOD306.16，均不足2倍，非硬贴成功价。"
+    },
+    {
+      "change": "末轮维持20与条件层",
+      "reason": "B2承认四家公司右尾有机制，同时补SMCI80B融资、ENPH0.941B最低期权、CLS TRS/44B及MOD分拆口径约束；没有把强价当概率而机械换人。"
+    }
+  ],
+  "last_five_stress_file": "05_chair/主席末位压力对决.md",
+  "evidence_scope": "主席深读S1/S2/B1/B2全部正文、首轮汇总及选择性R1卡、控制器补充、V1逐卡核心字段、V2全文及选择性全模型；全245只读取结构化universe，不声称逐份重读。无主席独立外部访问，来源为角色/控制器真实访问之继承。 已完整读取B2末轮四公司md/json与V2修订ALNY/UCTT/SMCI/ENPH，以及IREN/AAOI/CRWV/VISN资金复议；另深读冻结ADBE公司前200行、ALNY前105行及情景版税/利润相关段。",
+  "pending": [],
+  "input_hashes": {
+    "04_verification/V1_evidence.json": "b606591eb64e3f74f64ef54fe62cfb638b09dbe5148e0c554d9406bfa76fa53e",
+    "04_verification/V2_models.json": "44024567a4376682ba92109636a69fb32799edfb4e20f89b0885ec596e9f564c",
+    "03_round2/B2_末轮补充反驳.json": "68733f7c4f46767499fb162fada29b49d72b1f0195a5b838dc5c8cd4092eed9a"
+  },
+  "seal_boundary": "根控制器明确确认关键纠错与修订后算术审核后封卷；封卷是研究意见版本冻结，不代表经营预测、融资条件或全部资本桥已认证。"
+}

@@ -1,0 +1,162 @@
+{
+  "role": "V1_primary_verification_addendum",
+  "ticker": "BNTX",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "observation_date": "2028-04-12",
+  "sealed_original_unchanged": true,
+  "checks": [
+    {
+      "id": "BNTX-R1",
+      "asset": "pumitamig",
+      "old_proxy": 0.5,
+      "result": "保留全球利润分成50%；不是50%销售royalty。不得重复计入BMS已收到款或相同开发费用。",
+      "source_ids": [
+        "BMS_Q2"
+      ],
+      "classification": "contract_fact"
+    },
+    {
+      "id": "BNTX-R2",
+      "asset": "gotistobart",
+      "old_proxy": 0.8,
+      "result": "80%不是合同股权。全球独家销售权，向OncoC4付双位数阶梯净销售版税；改成税前利润减销售royalty后计税。12/15/18%只是研究敏感，真实精确率删节。",
+      "source_ids": [
+        "ONCO_PR",
+        "ONCO_AGREEMENT"
+      ],
+      "classification": "contract_fact_plus_assumption"
+    },
+    {
+      "id": "BNTX-R3",
+      "asset": "T-Pam/BNT323/DB1303",
+      "old_proxy": 0.5,
+      "result": "不是全球50/50。只计大陆、香港、澳门以外的销售，台湾属于BioNTech。该区域再扣销售royalty。ex三区销售占85%和版税10/15/20%均为研究假设。",
+      "source_ids": [
+        "HER2_AGREEMENT",
+        "DUALITY_AR",
+        "BNTX_20F"
+      ],
+      "classification": "contract_fact_plus_assumption"
+    },
+    {
+      "id": "BNTX-R4",
+      "asset": "elfe-D/BNT324/DB1311",
+      "result": "美国成本/利润期权已于2026年5月行使。美国利润份额精确数字未公开；50%仅研究中枢、40–60%敏感。非美国非保留三区按授权销售扣版税；不得美国利润分成后再扣同项销售royalty。",
+      "source_ids": [
+        "DUALITY_INTERIM",
+        "B7H3_AGREEMENT"
+      ],
+      "classification": "contract_fact_plus_assumption"
+    },
+    {
+      "id": "BNTX-R5",
+      "asset": "BNT113/BNT116",
+      "old_proxy": 0.8,
+      "result": "全有FixVac不应机械80%利润权益。临床联合Keytruda或cemiplimab不构成80/20收益合同。可计自身药物100%权益，但联合疗法销售只能分配自身药物部分。",
+      "source_ids": [
+        "BNTX_FY25"
+      ],
+      "classification": "fact_plus_model_boundary"
+    },
+    {
+      "id": "BNTX-R6",
+      "asset": "autogene cevumeran/BNT122",
+      "old_proxy": 0.8,
+      "result": "Genentech合作净利润50/50，除非退出转royalty；混合mRNA桶80%只有具体销售权重才能成立。已停CRC及尿路上皮癌试验不应保留原项目销售；其他未停适应症可保留合理右尾。",
+      "source_ids": [
+        "GENENTECH_AGREEMENT",
+        "AUTOGENE_CRC",
+        "BNTX_FY25"
+      ],
+      "classification": "contract_fact_plus_pipeline_fact"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ONCO_PR",
+      "published_date": "2023-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698523000016/ex991230320proncoc4.htm",
+      "access_status": "independent_body_read",
+      "result": "全球独家商业权；双位数阶梯销售版税；特定联合开发成本平分，不等于利润平分。"
+    },
+    {
+      "id": "ONCO_AGREEMENT",
+      "published_date": "2023-03-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit448oncoc4agreementr.htm",
+      "access_status": "independent_body_read",
+      "result": "原协议§7.5版税数字删节，不能确认20%或80%经济权益。"
+    },
+    {
+      "id": "HER2_AGREEMENT",
+      "published_date": "2023-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "access_status": "independent_body_read",
+      "result": "§1.147/1.163排除大陆、香港、澳门，明确含台湾；§8.5销售版税率删节。"
+    },
+    {
+      "id": "B7H3_AGREEMENT",
+      "published_date": "2023-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "access_status": "independent_body_read",
+      "result": "§1.54美国利润分成区域；§8.8(a)-(d)数字删节；§8.8(f)行权后美国以外授权区域仍付销售版税，美国不可再叠同一版税。"
+    },
+    {
+      "id": "DUALITY_AR",
+      "published_date": "2026-04-26",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0426/2026042600131.pdf",
+      "access_status": "independent_body_read",
+      "result": "p44当时DB1311期权尚未行使；属于被后来事件覆盖的状态。"
+    },
+    {
+      "id": "DUALITY_INTERIM",
+      "published_date": "2026-08-28",
+      "source_url": "https://en.dualitybiologics.com/news/615.html",
+      "access_status": "independent_body_read",
+      "result": "5月已书面行使DB1311美国成本/利润分成期权；确认290.7M人民币历史开发费抵收入。"
+    },
+    {
+      "id": "BNTX_20F",
+      "published_date": "2026-03-10",
+      "source_url": "https://investors.biontech.de/static-files/242c45fc-69f7-4abb-b1a5-f29ab19c590d",
+      "access_status": "body_opened_partial_followup_failure",
+      "result": "FY2025报告PDF成功打开，但后续定位请求Internal Error；Duality single-digit至double-digit仅检索正文片段获得，精确率仍不得视为核准。"
+    },
+    {
+      "id": "BNTX_FY25",
+      "published_date": "2026-03-10",
+      "source_url": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/03/biontech-announces-fourth-quarter-and-full-year-2025-financial.html",
+      "access_status": "independent_body_read",
+      "result": "BNT113基于完全自有FixVac；autogene与Genentech合作；肌层浸润尿路上皮癌试验停止。"
+    },
+    {
+      "id": "GENENTECH_AGREEMENT",
+      "published_date": "2016-09-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "access_status": "independent_body_read",
+      "result": "§8.2.2开发成本平分；§8.4净利润亏损50/50；§8.5退出后转版税，不能同时算二者。"
+    },
+    {
+      "id": "AUTOGENE_CRC",
+      "published_date": "2026-08-28",
+      "source_url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "access_status": "independent_body_read",
+      "result": "BNT122-01辅助CRC试验已决定终止，不能作为仍活跃商业机会计入。"
+    },
+    {
+      "id": "BMS_Q2",
+      "published_date": "2026-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "access_status": "inherited_prior_V1_independent_body_read",
+      "result": "原V1已独立实读：pumitamig全球利润/亏损50/50，存在合同例外；本追加继承该核验。"
+    }
+  ],
+  "model_rule": "Licensed product: product sales in licensed geography * (pre-royalty operating margin - sales royalty) * (1-tax). Profit-share product: allocated product sales * net product margin * contractual profit share. Never apply both for the same territory unless agreement explicitly requires it.",
+  "unresolved": [
+    "OncoC4精确阶梯费率/里程碑及更新商业参与条款未公开核准",
+    "Duality具体ADC阶梯费率及DB1311美国分成比例被删节",
+    "所有地区销售权重、销售峰值、产品净利润率、税率及成功概率都是研究假设",
+    "四桶组合或联合疗法不能把同一患者完整联合方案售价重复归入不同药物",
+    "V2应确保before/after royalty margin语义一致，避免既减净利率又乘权益代理",
+    "最新20F正文定位受工具限制，未声称完整逐页审读；合同正文与合作方最新中报封口核心权利"
+  ]
+}

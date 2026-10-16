@@ -1,0 +1,178 @@
+{
+  "role": "V2",
+  "cutoff": "2026-10-12T19:40:00-07:00",
+  "independent_relevant_primary_documents_read": 17,
+  "sources": [
+    {
+      "id": "MU_Q4",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "published_date": "2026-09-30",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "Q1 GAAPGM85.95/调整86.25；GAAPOpex2.31B；SBC成本与费用分别174/253M。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "NVDA_Q2",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "published_date": "2026-08-26",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "FY27 nonGAAP已含SBC；Q2股数24.285B；投资收益不可经常化。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "AVGO_Q3",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "published_date": "2026-09-02",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "GAAP OP15.955B；adjusted20.095B−SBC2.019B=18.076B。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "CRDO_Q1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "published_date": "2026-09-01",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "SBC87.979M；经济OP230.641−87.979=142.662M。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "CLS_Q2",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "published_date": "2026-07-27",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "GAAP458.3M−TRS104.1M=354.2M；SBC19.3M保留，不重复扣。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "POET_FS",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "published_date": "2026-08-13",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "逐档权证总78.734968M含客户22.921408M；26.25仅一档；2029表与五年文字到期有冲突。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "FLNC_Q3",
+      "url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "published_date": "2026-08-05",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "A类143136891+B-1 41432781=184569672经济单位；非143M。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "S2-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "published_date": "2026-08-11",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "KYTX现金证券199.427M、贷款账面24.883M；额度不是全部到账。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "S2-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "published_date": "2026-08-04",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "BNTX金融资产16.6342BEUR；251.204366M股；ADS1:1。",
+      "root_event_independence": "Samecompanyeventaspriorroles;independentverificationvisitnotnewindependentbusinesssource"
+    },
+    {
+      "id": "V2_VST_Q2",
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "published_date": "2026-08-07",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "2027机会非指导；94/72%套保；336M股票；现金435M。"
+    },
+    {
+      "id": "V2_VST_10Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+      "published_date": "2026-08-07",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "19.764B grossdebt+AR.300+repurchase.613；Cogentrix2.3cash/1.5debt/5Mshares；优先股本金2.476B、当前年息约192M。"
+    },
+    {
+      "id": "V2_VST_DEAL",
+      "url": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix",
+      "published_date": "2026-01-05",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "购价现金/债务/股票与税收价值分别处理，税惠非立即现金。"
+    },
+    {
+      "id": "V2_IONS_Q2",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "published_date": "2026-07-29",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "产品31M、Spinraza53M、Wainua16M；伙伴销售不等Ionis收入；现金2.1B。"
+    },
+    {
+      "id": "V2_SMCI_Q4",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "published_date": "2026-08-11",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "Q4GAAPGM17.5%、FY26平均10.8%、现金7.5B/债8.7B；FY27收入65–72B；当时稿为preliminary，最终审计承接V1。"
+    },
+    {
+      "id": "V2_BNTX_ONCO_RIGHTS",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/press-releases/2023/03/biontech-and-oncoc4-announce-strategic-collaboration-co-develop.html",
+      "published_date": "2023-03-20",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "全球独家商业权+双位数阶梯销售版税；共同开发分摊不是80%利润份额。"
+    },
+    {
+      "id": "V2_BNTX_DUALITY_INTERIM",
+      "url": "https://en.dualitybiologics.com/news/615.html",
+      "published_date": "2026-08-28",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "DB1311美国成本/利润期权2026年5月已书面行使；不能用3月未行使状态。"
+    },
+    {
+      "id": "V2_BNTX_CRC_STOP",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "published_date": "2026-08-28",
+      "access_status": "V2 independently opened and relevant table/body read",
+      "note": "CRC二期终止；胰腺联合治疗二期继续。模型不把被停CRC销售带回。"
+    },
+    {
+      "id": "V1_BNTX_HER2_CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "access_status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "note": "V1实读§1.147/1.163：T-Pam排大陆香港澳门但含台湾；§8.5费率保密。"
+    },
+    {
+      "id": "V1_BNTX_B7H3_CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "access_status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "note": "V1实读§8.8：美国profitshare比例删节；行权后royalty只适用非美国授权区，不二扣美国。"
+    },
+    {
+      "id": "V1_BNTX_GENENTECH_CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "access_status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "note": "V1实读§8.4为50/50利润，除非opt-out改royalty；BNT113不是这份合同项目。"
+    },
+    {
+      "id": "V2_POET_CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "access_status": "opened; strikefind8.25notreturned; do notcountasindependentlyverifiedcontractterms"
+    },
+    {
+      "id": "V2_TSM_PDF",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "access_status": "opened; ADSratiofindnotreturned; inheritS1/V1ratioverification"
+    },
+    {
+      "id": "V2_IONS_10Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "access_status": "opened; detailedrights inheritedfrozenreportandV1; do notclaimfulldocumentread"
+    }
+  ],
+  "inherited_files": [
+    "03_round2/S1_ai_upside.json",
+    "03_round2/S2_nonai_upside.json",
+    "03_round2/S2_nonai_upside.md",
+    "03_round2/B2_valuation_rebuttal.json",
+    "03_round2/B1_business_rebuttal.md",
+    "04_verification/V1_primary_verification.json",
+    "04_verification/controller_web_quote_checks.json"
+  ],
+  "inheritance_note": "V1/S1/S2/B2facts/modelinputsareinherited;V2equationscomputedindependently. Accessoccurredafterfreeze;useonlydatedprecutoffpublications."
+}

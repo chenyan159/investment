@@ -1,0 +1,448 @@
+{
+  "scenario_checks": [
+    {
+      "ticker": "NVDA",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "NVDA",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "NVDA",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "bull",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "bear",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "base",
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "bull",
+      "status": "PASS"
+    }
+  ],
+  "checks_passed": 87,
+  "security_arithmetic": {
+    "AVGO_economic_OP_B": 18.076,
+    "CLS_economic_OP_M": 354.20000000000005,
+    "CRDO_economic_OP_M": 142.66199999999998,
+    "FLNC_economic_units": 184569672,
+    "POET_warrants": 78734968
+  },
+  "rounding": "prices6decimals;returntolerance0.00002percentagepoint;forecastsnotproven"
+}

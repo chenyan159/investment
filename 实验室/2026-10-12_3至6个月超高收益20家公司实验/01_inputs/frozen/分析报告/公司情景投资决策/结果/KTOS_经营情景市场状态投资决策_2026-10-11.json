@@ -1,0 +1,57 @@
+{
+  "ticker": "KTOS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:25:32-07:00",
+  "reference_price": {
+    "value": 42.36,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        41.11,
+        41.11
+      ],
+      "target_price": [
+        11.16,
+        13.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        91.84,
+        91.84
+      ],
+      "target_price": [
+        28.0,
+        36.86
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        141.04,
+        141.04
+      ],
+      "target_price": [
+        54.55,
+        68.5
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        187.88,
+        187.88
+      ],
+      "target_price": [
+        70.66,
+        94.29
+      ],
+      "evidence": "weak"
+    }
+  }
+}

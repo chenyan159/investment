@@ -1,0 +1,542 @@
+{
+  "role": "S2_nonai_deep",
+  "cutoff": "2026-10-12T20:50:00-07:00",
+  "access_date_utc": "2026-10-13",
+  "access_policy": "Only content published not later than cutoff; dynamic quotes ignored. Company syndication is same primary source, not independent confirmation. Secondary broker coverage is not full original research.",
+  "sources": [
+    {
+      "id": "KYTX_Q2",
+      "ticker": "KYTX",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "notes": "融资、现金流、现金最低约束、股数；非全文逐行"
+    },
+    {
+      "id": "KYTX_PR",
+      "ticker": "KYTX",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "notes": "Q4 BLA/PMS；gMG mid2027 enrollment"
+    },
+    {
+      "id": "KYTX_LOAN",
+      "ticker": "KYTX",
+      "type": "primary",
+      "published": "2026-07-09",
+      "access": "read_relevant_body",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526298979/kytx-20260708.htm",
+      "notes": "7月贷款修订"
+    },
+    {
+      "id": "KYTX_BULL",
+      "ticker": "KYTX",
+      "type": "secondary_analyst_AI_assisted",
+      "published": "2026-09-25",
+      "access": "read_relevant_body",
+      "url": "https://ca.investing.com/news/stock-market-news/hc-wainwright-reiterates-kyverna-stock-rating-on-durability-data-93CH-4853534",
+      "notes": "HCW 25为12个月；券商原研未读"
+    },
+    {
+      "id": "BNTX_Q2",
+      "ticker": "BNTX",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+      "notes": "现金、回购、PRESERVE003、DYNASTY时间"
+    },
+    {
+      "id": "BNTX_STOP",
+      "ticker": "BNTX",
+      "type": "primary",
+      "published": "2026-08-28",
+      "access": "search_full_statement",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "notes": "BNT122结直肠终止；不外推所有平台"
+    },
+    {
+      "id": "ALNY_Q2",
+      "ticker": "ALNY",
+      "type": "primary",
+      "published": "2026-07-30",
+      "access": "read_sections",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "notes": "10/23 HTT02、10/26 roundtable；财务及TTR指引"
+    },
+    {
+      "id": "ALNY_RBC",
+      "ticker": "ALNY",
+      "type": "secondary_analyst_AI_assisted",
+      "published": "2026-07-31",
+      "access": "read_relevant_body",
+      "url": "https://www.investing.com/news/analyst-ratings/alnylam-stock-price-target-lowered-to-350-by-rbc-on-revenue-guide-cut-93CH-4828816",
+      "notes": "RBC350维持Outperform但下调；非半年目标"
+    },
+    {
+      "id": "ALNY_MS",
+      "ticker": "ALNY",
+      "type": "secondary_analyst",
+      "published": "2026-07-31",
+      "access": "search_snippet_open_failed",
+      "url": "https://www.morningstar.com/company-reports/1492177-alnylam-earnings-shares-tank-amid-reduced-outlook-for-key-attr-franchise?listing=0P000000A8",
+      "notes": "仅搜索摘要；不能声称全文"
+    },
+    {
+      "id": "IONS_Q2",
+      "ticker": "IONS",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "notes": "10/26 bepirovirsen PDUFA、现金与商业化"
+    },
+    {
+      "id": "ARGX_Q2",
+      "ticker": "ARGX",
+      "type": "primary",
+      "published": "2026-07",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1697862/000169786226000033/argx-20260630_d2.htm",
+      "notes": "上半年现金利润"
+    },
+    {
+      "id": "ARGX_STOP",
+      "ticker": "ARGX",
+      "type": "primary",
+      "published": "2026-10-08",
+      "access": "search_full_statement",
+      "url": "https://www.globenewswire.com/news-release/2026/10/08/3376934/0/en/argenx-provides-update-on-phase-3-unity-study-of-efgartigimod-sc-in-sj%C3%B6gren-s-disease.html",
+      "notes": "UNITY futility"
+    },
+    {
+      "id": "ARGX_BULL",
+      "ticker": "ARGX",
+      "type": "secondary_signed",
+      "published": "2026-10-08",
+      "access": "search_excerpt",
+      "url": "https://finance.yahoo.com/healthcare/articles/argenx-sinks-11-sjogren-trial-133321131.html",
+      "notes": "Michael Douglass称跌幅过度；仅片段，不采用其myositis笼统胜利"
+    },
+    {
+      "id": "ARGX_BEAR",
+      "ticker": "ARGX",
+      "type": "secondary_professional",
+      "published": "2026-10-08",
+      "access": "search_excerpt",
+      "url": "https://www.biospace.com/drug-development/argenx-shutters-sjogrens-study-losing-blockbuster-expansion-opportunity-for-vyvgart",
+      "notes": "William Blair丧失扩适应症机会；未读银行原文"
+    },
+    {
+      "id": "PSIX_Q2",
+      "ticker": "PSIX",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_relevant_body",
+      "url": "https://investors.psiengines.com/node/13891",
+      "notes": "Q2收入利润、产能爬坡"
+    },
+    {
+      "id": "PSIX_LOAN",
+      "ticker": "PSIX",
+      "type": "primary",
+      "published": "2026-09-30",
+      "access": "read_relevant_body",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000119312526408371/d28951d8k.htm",
+      "notes": "9/25已签220M额度已提35M旧15M清偿"
+    },
+    {
+      "id": "PSIX_BULL",
+      "ticker": "PSIX",
+      "type": "secondary_independent",
+      "published": "2026-10-08",
+      "access": "read_relevant_body",
+      "url": "https://disruptorinvesting.com/daily-disruptor-psix-the-data-center-generator-builder-whose-operating-profit-doubled-in-one-quarter/",
+      "notes": "经营杠杆；其旧贷款说法不采用"
+    },
+    {
+      "id": "AMPX_Q2",
+      "ticker": "AMPX",
+      "type": "primary",
+      "published": "2026-08-04",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899287/000189928726000059/ampx-20260630.htm",
+      "notes": "billhold、回款、20M退出支出"
+    },
+    {
+      "id": "AMPX_PR",
+      "ticker": "AMPX",
+      "type": "primary",
+      "published": "2026-08-04",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899287/000189928726000056/ampx-2026x08x04x8kex991.htm",
+      "notes": "现金74.517、营收毛利、140M指引"
+    },
+    {
+      "id": "AMPX_CAM",
+      "ticker": "AMPX",
+      "type": "partner_primary",
+      "published": "2026-10-05",
+      "access": "read_relevant_body",
+      "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+      "notes": "Q1/27分阶段量产；合作伙伴发布"
+    },
+    {
+      "id": "AMPX_OTA",
+      "ticker": "AMPX",
+      "type": "contract_primary",
+      "published": "2026-09-28",
+      "access": "read_sections",
+      "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000065/attachment0001redacted2026.htm",
+      "notes": "74.793M、已拨22.3M；非全额到账"
+    },
+    {
+      "id": "AMPX_BULL",
+      "ticker": "AMPX",
+      "type": "secondary_signed",
+      "published": "2026-09-30",
+      "access": "read_sections",
+      "url": "https://www.marketbeat.com/articles/the-bull-case-for-amprius-technologies-just-got-stronger/",
+      "notes": "Thomas Hughes；22.09是共识非某人目标"
+    },
+    {
+      "id": "FLNC_CUT",
+      "ticker": "FLNC",
+      "type": "primary",
+      "published": "2026-09-16",
+      "access": "read_relevant_body",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "notes": "2.4B收入/-200M EBITDA"
+    },
+    {
+      "id": "FLNC_BEAR",
+      "ticker": "FLNC",
+      "type": "secondary_analyst_AI_assisted",
+      "published": "2026-09-17",
+      "access": "read_relevant_body",
+      "url": "https://ca.investing.com/news/stock-market-news/bmo-cuts-fluence-energy-stock-price-target-on-guidance-reduction-93CH-4843030",
+      "notes": "BMO7、FY27/28盈利下修"
+    },
+    {
+      "id": "ENPH_Q2",
+      "ticker": "ENPH",
+      "type": "primary",
+      "published": "2026-07-28",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000080/a2026q2exx991pressrelease.htm",
+      "notes": "937.7M现金、FCF、safeharbor、关税退款"
+    },
+    {
+      "id": "ENPH_SST",
+      "ticker": "ENPH",
+      "type": "primary",
+      "published": "2026-09-14",
+      "access": "read_relevant_body",
+      "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+      "notes": "11月整机演示、2027试点非指定一季度"
+    },
+    {
+      "id": "VISN_Q2",
+      "ticker": "VISN",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+      "notes": "35.8 vs45.5 EBITDA、资产出售特殊股息"
+    },
+    {
+      "id": "VISN_BUY",
+      "ticker": "VISN",
+      "type": "primary",
+      "published": "2026-08-26",
+      "access": "search_full_statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526368664/visn-20260826.htm",
+      "notes": "新增150M授权不等于已执行"
+    },
+    {
+      "id": "LEU_DOE",
+      "ticker": "LEU",
+      "type": "primary",
+      "published": "2026-07-01",
+      "access": "read_relevant_body",
+      "url": "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+      "notes": "已签900M、产能2029"
+    },
+    {
+      "id": "LEU_W",
+      "ticker": "LEU",
+      "type": "primary",
+      "published": "2026-09-11",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065059/000110465926106829/tm2625019d3_424b5.htm",
+      "notes": "首次失败后成功；4档各500M、cashless"
+    },
+    {
+      "id": "LEU_8K",
+      "ticker": "LEU",
+      "type": "primary",
+      "published": "2026-09-11",
+      "access": "read_relevant_body",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065059/000110465926107103/tm2625019d5_8k.htm",
+      "notes": "四档执行价直接复核"
+    },
+    {
+      "id": "LEU_VIEWS",
+      "ticker": "LEU",
+      "type": "ratings_aggregator",
+      "published": "2026-09/10",
+      "access": "search_excerpt",
+      "url": "https://www.pricetargets.com/NYSE/LEU",
+      "notes": "Jefferies169 Hold /Guggenheim167 Buy/Northland270，未读银行全文"
+    },
+    {
+      "id": "RDW_Q2",
+      "ticker": "RDW",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "notes": "期末249.2M股、557.7现金、优先股为零"
+    },
+    {
+      "id": "RDW_BEAR",
+      "ticker": "RDW",
+      "type": "secondary_signed",
+      "published": "2026-06-29",
+      "access": "read_relevant_body",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60160210/redwire-stock-rises-despite-fugazi-short-report-flagging-dilution-cash-burn",
+      "notes": "Fugazi指控二手，不当事实判决"
+    },
+    {
+      "id": "AVAV_Q1",
+      "ticker": "AVAV",
+      "type": "primary",
+      "published": "2026-09-09",
+      "access": "read_relevant_body",
+      "url": "https://investor.avinc.com/node/21391",
+      "notes": "FY27 EPS3.02–3.34，公司指引"
+    },
+    {
+      "id": "ASTS_Q2",
+      "ticker": "ASTS",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342540/asts-ex99_2.htm",
+      "notes": "45星early2027计划"
+    },
+    {
+      "id": "ASTS_DB",
+      "ticker": "ASTS",
+      "type": "secondary_analyst",
+      "published": "2026-10-12",
+      "access": "read_relevant_body",
+      "url": "https://www.investing.com/news/stock-market-news/ast-spacemobile-upgraded-to-buy-at-deutsche-bank-as-selloff-called-misread-4944184",
+      "notes": "Bryan Kraft升级93、频谱估值/运营商合作均观点未事实落地"
+    },
+    {
+      "id": "NVTS_Q2",
+      "ticker": "NVTS",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026049795/exhibit991-navitassemicond.htm",
+      "notes": "Q3 13.5M指引/现金；2027客户导入"
+    },
+    {
+      "id": "NVTS_CLOSE",
+      "ticker": "NVTS",
+      "type": "primary_syndicated",
+      "published": "2026-10-06",
+      "access": "search_excerpt",
+      "url": "https://markets.financialcontent.com/lightport.lightport5/article/gnwcq-2026-10-6-navitas-closes-acquisition-of-claros-advancing-ai-infrastructure-with-grid-to-xpu-power-delivery",
+      "notes": "收购完成、10/20webinar；非独立验证收入"
+    },
+    {
+      "id": "WOLF_LOAN",
+      "ticker": "WOLF",
+      "type": "primary",
+      "published": "2026-10-07",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526416987/d122407d8k.htm",
+      "notes": "条件贷款、750M可含债转股、150M初始现金股本"
+    },
+    {
+      "id": "WOLF_BEAR",
+      "ticker": "WOLF",
+      "type": "secondary_signed",
+      "published": "2026-10-07",
+      "access": "search_excerpt",
+      "url": "https://theinference.org/article/wolfspeed-s-1-5-billion-pentagon-loan-is-a-letter-not-a-check",
+      "notes": "Vincent Jiang；全部750M现金概括被SEC纠正"
+    },
+    {
+      "id": "TE_Q2",
+      "ticker": "TE",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1992243/000121390026088022/ea030161501ex99-2.htm",
+      "notes": "G2一季度首电池；IP股票支付15%折价"
+    },
+    {
+      "id": "CC_Q2",
+      "ticker": "CC",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_relevant_body",
+      "url": "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results",
+      "notes": "杠杆/FCF/指引"
+    },
+    {
+      "id": "AOSL_Q4",
+      "ticker": "AOSL",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_relevant_body",
+      "url": "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm",
+      "notes": "先进计算约15%总收、现金、洪灾、AI服务器加速"
+    },
+    {
+      "id": "AOSL_VIEW",
+      "ticker": "AOSL",
+      "type": "secondary_analyst_AI_assisted",
+      "published": "2026-08-13",
+      "access": "read_relevant_body",
+      "url": "https://www.investing.com/news/analyst-ratings/stifel-cuts-alpha--omega-semiconductor-stock-price-target-on-pc-weakness-93CH-4858614",
+      "notes": "StifelHold38、NeedhamBuy45；非银行原文"
+    },
+    {
+      "id": "MRAM_Q2",
+      "ticker": "MRAM",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053558/mram-20260630.htm",
+      "notes": "现金43.896M"
+    },
+    {
+      "id": "MRAM_VIEW",
+      "ticker": "MRAM",
+      "type": "ratings_aggregator",
+      "published": "2026-08-06",
+      "access": "search_excerpt",
+      "url": "https://trendonify.com/news/ratings/needham-raises-price-target-on-everspin-technologies-to-19-from-185-maintains-buy-rating-163629",
+      "notes": "Neil Young Buy19，未读银行全文"
+    },
+    {
+      "id": "AMBA_Q2",
+      "ticker": "AMBA",
+      "type": "primary",
+      "published": "2026-09",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm",
+      "notes": "增长减速、9M一次性credit/现金流"
+    },
+    {
+      "id": "ACMR_Q2",
+      "ticker": "ACMR",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm",
+      "notes": "非经营收益、股数、子公司权益"
+    },
+    {
+      "id": "ACMR_BACK",
+      "ticker": "ACMR",
+      "type": "primary",
+      "published": "2026-09-30",
+      "access": "read_full_relevant_body",
+      "url": "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+      "notes": "2.5B backlog+88.2%，10/28定日"
+    },
+    {
+      "id": "ACMR_VIEW",
+      "ticker": "ACMR",
+      "type": "secondary_signed_AI_assisted",
+      "published": "2026-09-30",
+      "access": "read_relevant_body",
+      "url": "https://theinference.org/article/acm-research-s-2-5-billion-backlog-comes-with-fine-print-and-an-october-28-test",
+      "notes": "Vincent Jiang正反论点，但当日动态价格/旧股比不采用"
+    },
+    {
+      "id": "PLAB_Q3",
+      "ticker": "PLAB",
+      "type": "primary",
+      "published": "2026-09",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm",
+      "notes": "少数权益和净现金、FCF"
+    },
+    {
+      "id": "PLAB_VIEW",
+      "ticker": "PLAB",
+      "type": "ratings_aggregator",
+      "published": "2026-05/2025-12",
+      "access": "search_excerpt",
+      "url": "https://www.pricetargets.com/NASDAQ/PLAB",
+      "notes": "LakeStreet55与CraigHallum42旧目标；非半年证据"
+    },
+    {
+      "id": "KTOS_Q2",
+      "ticker": "KTOS",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.kratosdefense.com/newsroom/kratos-reports-second-quarter-2026-financial-results",
+      "notes": "融资现金、负经营现金、租赁债务"
+    },
+    {
+      "id": "PL_Q2",
+      "ticker": "PL",
+      "type": "primary",
+      "published": "2026-09",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526382016/pl-20260731.htm",
+      "notes": "backlog/RPO差异"
+    },
+    {
+      "id": "RKLB_Q2",
+      "ticker": "RKLB",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+      "notes": "Neutron计划/现金流；不能提前并入Iridium"
+    },
+    {
+      "id": "OKLO_Q2",
+      "ticker": "OKLO",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026054571/oklo-20260630.htm",
+      "notes": "3.006B现金证券、烧钱"
+    },
+    {
+      "id": "SMR_Q2",
+      "ticker": "SMR",
+      "type": "primary",
+      "published": "2026-08",
+      "access": "read_relevant_body",
+      "url": "https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-second-quarter-2026-results",
+      "notes": "1.9B现金；FEED已完成收入下降"
+    },
+    {
+      "id": "MRAM_PR",
+      "ticker": "MRAM",
+      "type": "primary",
+      "published": "2026-08-05",
+      "access": "read_sections",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+      "notes": "S2重新打开Q2损益、nonGAAP与现金流；40M合同期限和Kerrisdale仍继承控制器"
+    }
+  ],
+  "web_tool_batches": 35,
+  "source_limitations": "Some inherited material not separately reopened; card explicitly labels it. Raw long articles not copied."
+}
+

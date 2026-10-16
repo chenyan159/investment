@@ -1,0 +1,1257 @@
+{
+  "role": "R1_cashflows",
+  "screened_count": 245,
+  "deep_read_tickers": [
+    "NVDA",
+    "AVGO",
+    "TSM",
+    "ADBE",
+    "CRM",
+    "MSFT",
+    "META",
+    "AMZN",
+    "GOOGL",
+    "QCOM",
+    "JBL",
+    "FLEX",
+    "CLS",
+    "CRDO",
+    "TEL",
+    "HUBB",
+    "MOD",
+    "EME",
+    "PNR",
+    "VST",
+    "PGR",
+    "RNR",
+    "ALNY",
+    "ARGX",
+    "BABA",
+    "MU",
+    "ORCL"
+  ],
+  "nominations": [
+    {
+      "rank": 1,
+      "ticker": "ADBE",
+      "thesis": "创意残差减速已承认；Acrobat及企业工作流收费、扣SBC后仍强现金，使低价不必依赖AI新故事。",
+      "horizon_months": 15,
+      "bear_price": 160,
+      "base_price": 336,
+      "bull_price": 525,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          16,
+          21,
+          25
+        ],
+        "multiples": [
+          10,
+          16,
+          21
+        ],
+        "operating_bridge": "FY27收入26/28.7/31B；含SBC营业率32%/35.4%/38%，税约22%，股数0.40/0.377/0.368B；经营净利每股取整16/21/25。利息与现金税差列为约1美元EPS敏感性。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：提价周年续约及FY27指引；6–12月：AI积分实收与有机ARR。"
+      ],
+      "kill_criteria": [
+        "连续两季剔并购ARR低于5%，且创意残差下滑/现金扣SBC低于6B年化。"
+      ],
+      "key_risks": [
+        "专业席位永久收缩；并购和回购可能消耗现金；价格低无硬底。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-10-01.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=ADBE"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 238.14,
+      "price_date": "2026-10-12",
+      "action": "分批研究候选；须最终核验",
+      "scenario_returns_pct": [
+        -32.8,
+        41.1,
+        120.5
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 2,
+      "ticker": "NVDA",
+      "thesis": "CUDA与整机网络价值捕获仍强，FY27Q2实际利润支持；主动削弱现金转换，避免把投资收益资本化。",
+      "horizon_months": 15,
+      "bear_price": 128,
+      "base_price": 322,
+      "bull_price": 493,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          8,
+          14,
+          17
+        ],
+        "multiples": [
+          16,
+          23,
+          29
+        ],
+        "operating_bridge": "FY28收入400/625/730B，含SBC经营率58%/65%/68%，税17%，稀释24.5B，得到EPS7.9/13.8/16.8取整。剔战略投资重估；净现金不另加，生态净投资50B作为回报约束。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：108B季度指引兑现、DSO回落；6–18月：Rubin交付和客户终端支付。"
+      ],
+      "kill_criteria": [
+        "DSO连续两季>75天且经营现金/经营利润<50%，或毛利持续低于65%。"
+      ],
+      "key_risks": [
+        "客户融资与采购担保同向；地缘禁运；最差尾部可比128美元悲观价更低。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-21.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=NVDA"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 226.32,
+      "price_date": "2026-10-12",
+      "action": "分批研究候选；须最终核验",
+      "scenario_returns_pct": [
+        -43.4,
+        42.3,
+        117.8
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 3,
+      "ticker": "MU",
+      "thesis": "短缺正在变成真实现金，SCA客户押金不计经营FCF；对成熟存储给低倍数，保留高弹性。",
+      "horizon_months": 15,
+      "bear_price": 480,
+      "base_price": 1360,
+      "bull_price": 2200,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          80,
+          170,
+          220
+        ],
+        "multiples": [
+          6,
+          8,
+          10
+        ],
+        "operating_bridge": "FY27独立归一收入165/260/315B，营业利润115/235/302B，税16%，稀释1.16B，EPS约83/170/219取整80/170/220。经营现金扣净capex46/55/65B后仍须保持正；不用报价207远期EPS。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：FY27Q1收入61.5B指引及毛利；6–12月：HBM交付、传统DRAM净价。"
+      ],
+      "kill_criteria": [
+        "两个季度合同价格连续跌且客户取消；净capex>60B而现金下降，重估周期峰值。"
+      ],
+      "key_risks": [
+        "极高毛利不可能永久；FY28供给与价格同步反转，灾难尾部可能跌60%以上。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-10-01.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=MU"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 989.04,
+      "price_date": "2026-10-12",
+      "action": "分批研究候选；须最终核验",
+      "scenario_returns_pct": [
+        -51.5,
+        37.5,
+        122.4
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 4,
+      "ticker": "PNR",
+      "thesis": "泳池去库存后恢复和过滤耗材现金，非AI利润来源；低价允许只实现温和修复。",
+      "horizon_months": 15,
+      "bear_price": 33.0,
+      "base_price": 75,
+      "bull_price": 111.6,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          3.3,
+          5,
+          6.2
+        ],
+        "multiples": [
+          10,
+          15,
+          18
+        ],
+        "operating_bridge": "FY27营业利润0.871/1.146/1.316B，利息和整合现金约0.20/0.18/0.15B，税20%，股数0.163/0.161/0.158B；保守取经济EPS3.3/5/6.2，低于仅调整后盈利。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：Taco交割融资、春季预订；6–12月：Pool终端售出/去库。"
+      ],
+      "kill_criteria": [
+        "2027旺季Pool仍丢份额，恢复净价靠大返利，或经济现金<0.45B。"
+      ],
+      "key_risks": [
+        "并购债务、渠道去库不等于消费恢复、CFO交接。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\热管理_流体_水处理\\PNR_Pentair_plc_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=PNR"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 52.33,
+      "price_date": "2026-10-12",
+      "action": "分批研究候选；须最终核验",
+      "scenario_returns_pct": [
+        -36.9,
+        43.3,
+        113.3
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 5,
+      "ticker": "TSM",
+      "thesis": "先进制造与封装同时收费，客户不能轻易复制；有盈利及现金实证，制造资本密度已扣。",
+      "horizon_months": 15,
+      "bear_price": 239.4,
+      "base_price": 514.8,
+      "bull_price": 720,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          13.3,
+          19.8,
+          24
+        ],
+        "multiples": [
+          18,
+          26,
+          30
+        ],
+        "operating_bridge": "2027美元营业利润84/125/152B×82%/5.1864B ADS等价股=13.3/19.8/24。每ADS=5普通股；原普通股25.932B。美元利润模型避免把TWD财务与USD市值直接比；capex约70–90B限制倍数。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：季度毛利/现金capex；6–18月：N2爬坡、封装与海外成本。"
+      ],
+      "kill_criteria": [
+        "大客户取消与利用率下降并存；新节点良率和海外成本令营业率<45%。"
+      ],
+      "key_risks": [
+        "台湾生产中断为不连续尾部，普通悲观情景不是风险下限。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-22.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=TSM"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 444.35,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -46.1,
+        15.9,
+        62.0
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 6,
+      "ticker": "AVGO",
+      "thesis": "软件现金支持ASIC和网络放量；明确扣SBC、营运资金与客户信用支持，仍有利润扩张。",
+      "horizon_months": 15,
+      "bear_price": 112.0,
+      "base_price": 391.5,
+      "bull_price": 600.6,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          5.6,
+          13.5,
+          18.2
+        ],
+        "multiples": [
+          20,
+          29,
+          33
+        ],
+        "operating_bridge": "FY27经营税后利润27.36/66.29/89.25B，稀释约4.9B，EPS5.6/13.5/18.2。经营含SBC和摊销；悲观担保额外损失可令EPS再低1.6美元。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：Q4 AI收入21.7B及回款；6–18月：新XPU生产验收。"
+      ],
+      "kill_criteria": [
+        "租赁/信用支持损失超过8B；增长但保理后现金不改善；XPU客户核心份额丢失。"
+      ],
+      "key_risks": [
+        "客户集中与系统外购内容压毛利；采购承诺；无形摊销与SBC不能全部免费化。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-18.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=AVGO"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 354.73,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -68.4,
+        10.4,
+        69.3
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 7,
+      "ticker": "PGR",
+      "thesis": "数据、定价与渠道建立可重复承保；保费先收不当利润，仍可用正常化承保盈利估值。",
+      "horizon_months": 15,
+      "bear_price": 120,
+      "base_price": 249.6,
+      "bull_price": 361,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          10,
+          15.6,
+          19
+        ],
+        "multiples": [
+          12,
+          16,
+          19
+        ],
+        "operating_bridge": "2027NPE约86/92.2/99B，CR约95/91.5/89.5%，净投资约4B，税21%，普通股约0.58B；净利EPS约10/15.6/19。保险浮存金不额外计FCF，特殊股息不进入目标价。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：月度PIF、事故年CR；6–12月：续保/新业务与费率。"
+      ],
+      "kill_criteria": [
+        "剔历史准备金释放车辆CR持续>97%，且保单增长停滞。"
+      ],
+      "key_risks": [
+        "赔付通胀和费率竞争；特殊股息非永续；灾害相关损失。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\保险_财产险_特色险_再保险\\PGR_The_Progressive_Corporation_公司调研_2026-10-11.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=PGR"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 220.28,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -45.5,
+        13.3,
+        63.9
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 8,
+      "ticker": "TEL",
+      "thesis": "复杂连接器、车用和电力产品使AI增量不承担全部估值；设计认证与多行业现金分散。",
+      "horizon_months": 15,
+      "bear_price": 126,
+      "base_price": 256.0,
+      "bull_price": 360,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          9,
+          12.8,
+          15
+        ],
+        "multiples": [
+          14,
+          20,
+          24
+        ],
+        "operating_bridge": "FY27含SBC经济营业利润约3.5/4.7/5.5B，利息0.1B，税20%，稀释0.285B；EPS9/12.8/15。公司FCF工作3.29B，再扣SBC0.18B检验。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：DDN订单到收入；6–12月：工业/汽车量与资本支出。"
+      ],
+      "kill_criteria": [
+        "汽车量价同时恶化，DDN增速不足弥补，FCF/SBC后<2.5B。"
+      ],
+      "key_risks": [
+        "新厂资本强度、汽车议价、并购协同延迟。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-22.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=TEL"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 217.28,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -42.0,
+        17.8,
+        65.7
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 9,
+      "ticker": "MSFT",
+      "thesis": "企业身份、Office与云分发入口最稳；Copilot确有付费规模，但只按经营盈利给有限增长溢价。",
+      "horizon_months": 15,
+      "bear_price": 374,
+      "base_price": 580,
+      "bull_price": 850,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          17,
+          20,
+          25
+        ],
+        "multiples": [
+          22,
+          29,
+          34
+        ],
+        "operating_bridge": "FY27/FY28过渡营业利润160/186/232B，税20%，净利息2B，稀释7.4B；EPS约17/20/25。包括SBC；FY27租赁本金后现金42B使基准PE不扩张至软件历史高位。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：Azure增长与毛利；6–12月：Copilot续费净账单；12–18月：资本现金回收。"
+      ],
+      "kill_criteria": [
+        "租赁后现金连续年低于40B且云增长放缓；折旧年限变化掩盖资产回报下降。"
+      ],
+      "key_risks": [
+        "巨大未开始租赁承诺；OpenAI相关集中；新增AI资本回报未证明。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=MSFT"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 541.15,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -30.9,
+        7.2,
+        57.1
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 10,
+      "ticker": "RNR",
+      "thesis": "软市中主动缩险而保留投资/资本管理费用，估值对平常年盈利较低；分散科技现金风险。",
+      "horizon_months": 15,
+      "bear_price": 168,
+      "base_price": 367.5,
+      "bull_price": 552,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          21,
+          35,
+          46
+        ],
+        "multiples": [
+          8,
+          10.5,
+          12
+        ],
+        "operating_bridge": "2027归属经营净利0.9/1.49/1.98B÷42.5M稀释股；EPS约21/35/46。已扣外部专户归属、税和优先股，不把合并承保利润全部归普通股。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：巨灾净损失和1月续保价格；6–12月：责任险准备金与retained收益。"
+      ],
+      "kill_criteria": [
+        "归属灾损及准备金补提累计超2B，或新签价格低于赔款趋势且不缩限额。"
+      ],
+      "key_risks": [
+        "巨灾有跳跃尾部；责任险长尾；外部账户利润归属复杂。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\保险_财产险_特色险_再保险\\RNR_RenaissanceRe_Holdings_公司调研_2026-10-11.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=RNR"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 338.87,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -50.4,
+        8.4,
+        62.9
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 11,
+      "ticker": "EME",
+      "thesis": "复杂机电工程的现场组织和预制能力可收费，低设备资本开支；以真实利润而非RPO全额估值。",
+      "horizon_months": 15,
+      "bear_price": 320,
+      "base_price": 864,
+      "bull_price": 1334,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          20,
+          36,
+          46
+        ],
+        "multiples": [
+          16,
+          24,
+          29
+        ],
+        "operating_bridge": "2027营业利润1.27/2.21/2.78B，税26%，净利息约0.02B，稀释44.5M；EPS20/36/46。FCF工作1.545B，但10天回款延迟占用约0.55B。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：H2现金转换；6–12月：网络施工RPO转化和并购整合。"
+      ],
+      "kill_criteria": [
+        "年度现金/净利<65%且合同资产不断增加，或核心项目毛利/工时显著恶化。"
+      ],
+      "key_risks": [
+        "固定价工程、熟练人员、延期与客户信用；低capex不等于低营运资金。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\工程建设_机电安装\\EME_EMCOR_Group_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=EME"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 779.16,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -58.9,
+        10.9,
+        71.2
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 12,
+      "ticker": "QCOM",
+      "thesis": "专利许可和汽车/IoT提供现金底盘，定制数据中心是期权；拒绝用一次性税项盈利。",
+      "horizon_months": 15,
+      "bear_price": 78,
+      "base_price": 180,
+      "bull_price": 288,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          6,
+          9,
+          12
+        ],
+        "multiples": [
+          13,
+          20,
+          24
+        ],
+        "operating_bridge": "FY27收入40/46/53B，含SBC正常经营利润8/11.5/15.5B，净利息0.5B，税18%，稀释1.03B；EPS6/9/12。基准高于上游9.55B经营利润，明确要求Amazon及Android改善；Amazon权证2.4%额外稀释压力。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：Amazon开始确认收入；6–12月：手机现金周转与汽车量产。"
+      ],
+      "kill_criteria": [
+        "FY27数据中心收入不及3B且手机现金流继续下降；QTL费率或续约恶化。"
+      ],
+      "key_risks": [
+        "苹果替代、客户让利/权证、库存与预付；当前价基准上涨有限。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-21.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=QCOM"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 174.43,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -55.3,
+        3.2,
+        65.1
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 13,
+      "ticker": "HUBB",
+      "thesis": "电网更新提供独立需求，高压项目及NSI扩展渠道；资本回报优于单纯AI概念。",
+      "horizon_months": 15,
+      "bear_price": 240,
+      "base_price": 506,
+      "bull_price": 729,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          15,
+          22,
+          27
+        ],
+        "multiples": [
+          16,
+          23,
+          27
+        ],
+        "operating_bridge": "2027调整净利润0.813/1.216/1.457B÷53.1M股，正常化摊销/整合保留约0.5–1美元EPS折扣后取15/22/27；NSI债务利息已在桥中。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：NSI整合和净债务；6–18月：电网产品交付。"
+      ],
+      "kill_criteria": [
+        "有机订单转负、收购增长掩盖旧业务，FCF低于0.7B且持续回购。"
+      ],
+      "key_risks": [
+        "并购杠杆、监管工程节奏；765kV大TAM不等于近期收入。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\HUBB_Hubbell_公司调研_2026-09-22.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=HUBB"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 474.05,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -49.4,
+        6.7,
+        53.8
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 14,
+      "ticker": "CRM",
+      "thesis": "成熟订阅续费仍有现金，AI流程收费能延缓席位侵蚀；只在资本配置收敛下有价值。",
+      "horizon_months": 15,
+      "bear_price": 140,
+      "base_price": 273,
+      "bull_price": 442,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          10,
+          13,
+          17
+        ],
+        "multiples": [
+          14,
+          21,
+          26
+        ],
+        "operating_bridge": "FY28收入约45/50/56B，GAAP经营率20/24/28%，净利息约1.5B，税22%，稀释0.80B；EPS约7.3/10.2/13.8。估值使用现金扣SBC经济EPS10/13/17，约8/10.4/13.6B股东现金，须区别GAAP；不把债务再扣第二次。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：cRPO有机增速和ASR结算；6–12月：Agent净收费及整合。"
+      ],
+      "kill_criteria": [
+        "净债务继续上升而有机增速<5%；FCF扣SBC<9B。"
+      ],
+      "key_risks": [
+        "借债回购、并购摊销、股票报酬；披露AI ARR扩大口径。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\CRM_Salesforce_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=CRM"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 233.92,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -40.2,
+        16.7,
+        89.0
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 15,
+      "ticker": "JBL",
+      "thesis": "低毛利但制造组织与客户供料可令资本回报良好；比单一客户AI代工现金更成熟。",
+      "horizon_months": 15,
+      "bear_price": 144,
+      "base_price": 306,
+      "bull_price": 462,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          12,
+          17,
+          21
+        ],
+        "multiples": [
+          12,
+          18,
+          22
+        ],
+        "operating_bridge": "FY27收入37/43/49B，core营业率5.3/6.1/6.7%，扣净利息/税与经济SBC后利润约1.25/1.77/2.18B÷104M股；经济EPS12/17/21。FCF仅约1.5–1.6B，限制基准倍数。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：FY27指引及营运资本；6–12月：云、医疗项目利润兑现。"
+      ],
+      "kill_criteria": [
+        "应付融资不足覆盖库存应收，FCF<1B且资本开支持续增加。"
+      ],
+      "key_risks": [
+        "客户供料与收入总额、应收出售、Amazon权证、增长不等于现金增长。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-10-01.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=JBL"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 312.01,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -53.8,
+        -1.9,
+        48.1
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 16,
+      "ticker": "VST",
+      "thesis": "现成核电/燃气与零售对冲有真实现金；Meta PPA只计2027逐步重定价。",
+      "horizon_months": 15,
+      "bear_price": 52,
+      "base_price": 174.6,
+      "bull_price": 286,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          4,
+          9.7,
+          13
+        ],
+        "multiples": [
+          13,
+          18,
+          22
+        ],
+        "operating_bridge": "2027成长后普通股现金1.4/3.3/4.4B÷341M股=4/9.7/13；基准从EBITDA8.4B扣利息1.35、税0.35、维持/燃料1.75、其他0.15、成长1.4、优先股0.1。以股东现金倍数估值，不称PE。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：Cogentrix交割和融资；6–18月：Meta逐步交付。"
+      ],
+      "kill_criteria": [
+        "停机/保证金占用超2B且成长后现金<2B；交易债务迫使大额发股。"
+      ],
+      "key_risks": [
+        "电价对冲限制短期弹性；环境责任；成长前FCF高估普通股所得。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\VST_Vistra_Corp_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=VST"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 158.13,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -67.1,
+        10.4,
+        80.9
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 17,
+      "ticker": "ARGX",
+      "thesis": "VYVGART已有多适应症持续患者付款，扩张无需押注全部管线；应收现金要追踪。",
+      "horizon_months": 15,
+      "bear_price": 391,
+      "base_price": 928,
+      "bull_price": 1560,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          17,
+          29,
+          40
+        ],
+        "multiples": [
+          23,
+          32,
+          39
+        ],
+        "operating_bridge": "2027净产品销售5.8/7.0/8.2B，经营率25%/34%/41%，税22%，稀释64M ADS，每ADS=1普通股；EPS约17/29/40。保留SBC及研发，收购摊销待核。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：CIDP续治净价；6–12月：ITP读出；12–18月：C2数据。"
+      ],
+      "kill_criteria": [
+        "CIDP停止/转药上升，净价下降>15%且患者量不能补；应收持续快于销售。"
+      ],
+      "key_risks": [
+        "医保、返利、竞争免疫重置、制造/并购义务；单产品集中。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\ARGX_argenx_公司调研_2026-10-11.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=ARGX"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 812.3,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -51.9,
+        14.2,
+        92.0
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 18,
+      "ticker": "ALNY",
+      "thesis": "AMVUTTRA增长是真实患者支付，RNAi技术有后续选择权；主要价值捕获被版税削弱，排名靠后。",
+      "horizon_months": 15,
+      "bear_price": 75,
+      "base_price": 224,
+      "bull_price": 480,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          3,
+          7,
+          12
+        ],
+        "multiples": [
+          25,
+          32,
+          40
+        ],
+        "operating_bridge": "2027收入5.0/6.5/8B，扣Sanofi版税、制造、研发及销售后经营利润0.55/1.25/2.15B，税20%，稀释142M股；EPS约3/7/12。nuc尚未商业化，不提前加免版税利润；融资版税义务需资本核验。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：TTR销售及净价；6–12月：处方医生扩散；12–18月：重复给药。"
+      ],
+      "kill_criteria": [
+        "TTR新增患者停滞且净价降>10%；现金被版税/研发吸收、持续稀释>4%。"
+      ],
+      "key_risks": [
+        "Sanofi/Blackstone经济权益、单供应商、临床及付款方限制。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=ALNY"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 227.02,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -67.0,
+        -1.3,
+        111.4
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 19,
+      "ticker": "AMZN",
+      "thesis": "AWS和广告是已付费利润池，零售规模产生协同；现金回收慢但经营选择权广。",
+      "horizon_months": 15,
+      "bear_price": 149.6,
+      "base_price": 279.0,
+      "bull_price": 432,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          6.8,
+          9.3,
+          12
+        ],
+        "multiples": [
+          22,
+          30,
+          36
+        ],
+        "operating_bridge": "2027营业利润95/130/165B，扣净利息5B，税20%，稀释10.8–11B；EPS6.8/9.3/12。全投资FCF基准约-20B，因此只能等待capex效率，不把利润视可分现金。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：AWS付费用量与利润率；6–18月：现金capex增速拐点。"
+      ],
+      "kill_criteria": [
+        "2027现金capex继续快于CFO增长且AWS降价毛利受损。"
+      ],
+      "key_risks": [
+        "巨额建设/设备投资、承诺与新业务消耗；当前上行不够补偿全部现金风险。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=AMZN"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 259.53,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -42.4,
+        7.5,
+        66.5
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    },
+    {
+      "rank": 20,
+      "ticker": "META",
+      "thesis": "广告推荐实际增加成交和付款，价值捕获比免费AI更直接；但资本配置决定普通股回报。",
+      "horizon_months": 15,
+      "bear_price": 380,
+      "base_price": 750,
+      "bull_price": 1209,
+      "valuation_formula": {
+        "formula": "price = normalized economic EPS (or owner cash/share) × multiple",
+        "per_share_scenarios": [
+          20,
+          30,
+          39
+        ],
+        "multiples": [
+          19,
+          25,
+          31
+        ],
+        "operating_bridge": "2027集团营业利润70/101/125B，税20%，净利息4B，全部经济股数2.55B，EPS约20/30/39。经营含SBC/RL；capex约150B令基准FCF近零，不加净现金溢价。",
+        "assumption_status": "R1 independent conditional assumptions, not company guidance",
+        "sensitivity": "经营每股值±10%则目标价同比±10%；倍数±20%则目标价同比±20%；不把二者当独立概率。",
+        "debt_and_dilution": "净利息已扣，股权估值不重复扣全债；稀释按各桥，债务再融资尾部另列。"
+      },
+      "catalysts": [
+        "3–6月：广告价格/展示；6–12月：AI支出强度及现金。"
+      ],
+      "kill_criteria": [
+        "广告量价减速而CapEx与SBC不收敛；两个季度经营率<30%。"
+      ],
+      "key_risks": [
+        "创始人控制、AI资本过剩、RL亏损、隐私监管；只作等待候选。"
+      ],
+      "evidence": [
+        {
+          "class": "company_research",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\META_Meta_Platforms_公司调研_2026-09-26.md",
+          "locator": "正文财务基线、现金/资本结构、经营模型与风险章节；详见R1_reading_notes.md"
+        },
+        {
+          "class": "financial_snapshot",
+          "path": "D:\\investment\\实验室\\2026-10-12_20家公司多角色实验\\01_inputs\\universe_screen.csv",
+          "locator": "ticker=META"
+        }
+      ],
+      "confidence": "中；经营事实高于远期倍数及短期重估",
+      "anchor_price": 742.96,
+      "price_date": "2026-10-12",
+      "action": "条件提名；等待价格/现金验证",
+      "scenario_returns_pct": [
+        -48.9,
+        0.9,
+        62.7
+      ],
+      "probabilities": null,
+      "probability_note": "未校准且尾部不完备，不机械加权。"
+    }
+  ],
+  "alternates": [
+    {
+      "ticker": "CRDO",
+      "reason": "光学与AEC强，但87.979M季度SBC、收购与客户集中降低现金可得；须验证FY27光收入。"
+    },
+    {
+      "ticker": "CLS",
+      "reason": "2027高增有价值，但H1 FCF285M小于融资类薪酬现金326.3M，增发约9.7%，重新验证股本和现金。"
+    },
+    {
+      "ticker": "FLEX",
+      "reason": "Axiom分拆有催化，但划出Q1 FCF为-229M、EPC并购及最终分拆融资尚不清。"
+    },
+    {
+      "ticker": "MOD",
+      "reason": "165M客户预付贡献FY26现金；剔预付敏感性FCF为负，PT/Gentherm分配须重建总回报。"
+    },
+    {
+      "ticker": "GOOGL",
+      "reason": "搜索/云强，但投资重估污染TTM PE、预计2027负FCF与股本融资；现金角色弱于MSFT。"
+    }
+  ],
+  "exclusions": [
+    {
+      "ticker": "ORCL",
+      "reason": "客户预付11.4B推动CFO；剔除敏感性季度FCF -16.796B，低PE不证明资本回报。"
+    },
+    {
+      "ticker": "BABA",
+      "reason": "TTM FCF -72.464B人民币；即时零售补贴和capex消耗，不能用ADR低P/S比较。"
+    },
+    {
+      "ticker": "PLTR",
+      "reason": "P/S 81.59，现金成长即使强，近期重估风险压过下行缓冲。"
+    },
+    {
+      "ticker": "NET",
+      "reason": "高P/S与高远期PE，需远超基准经营成果。"
+    },
+    {
+      "ticker": "LWLG",
+      "reason": "营收基数极小且负EPS；未满足客户付款与经济现金门槛。"
+    },
+    {
+      "ticker": "POET",
+      "reason": "极低收入/高P/S，商业认证及融资仍是主要变量。"
+    },
+    {
+      "ticker": "OKLO",
+      "reason": "收入前期，3–18月主要是融资/许可重估，不满足本角色现金质量门槛。"
+    }
+  ],
+  "open_questions": [
+    "快照forward EPS口径及时间窗不能当已审计盈利；尤其MU/NVDA。",
+    "所有提名价格仅冻结快照锚，未逐笔独立查交易所；美元价格日期为2026-10-12。",
+    "MU FY26新10-K、ALNY未来版税负债归属、ARGX收购资本桥优先补核。",
+    "MSFT/AMZN/META经营利润虽强但成长后现金弱，主席不应因提名票数自动纳入立即买入。",
+    "风险情景不是绝对底；台湾、巨灾和药品安全可穿透普通悲观价。"
+  ],
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "round": "independent R1",
+  "benchmark": "USD pretax price returns; dividends excluded here; SPY/QQQ comparison left to controller"
+}

@@ -1,0 +1,1757 @@
+{
+  "role": "S2_nonai_deep",
+  "status": "sealed_round2",
+  "cutoff": "2026-10-12T20:50:00-07:00",
+  "access_date_utc": "2026-10-13",
+  "horizons": [
+    "2027-01-12",
+    "2027-04-12"
+  ],
+  "price_source": "01_inputs/universe.json：28只全部逐项对齐；另读取控制器历史close核验日志，非S2独立重抓全部报价",
+  "currency": "USD except explicitly EUR",
+  "units": "million USD and million economic shares unless stated",
+  "model_warning": "全部情景价格、未来股数、未来现金、盈利/收入、估值倍数为S2主观条件模型；不是公司指引或校准概率。公开事实与继承数据在每卡标明。",
+  "priorities": [
+    "KYTX",
+    "AMPX",
+    "PSIX",
+    "VISN",
+    "ENPH",
+    "ACMR",
+    "AOSL",
+    "BNTX",
+    "LEU",
+    "RDW"
+  ],
+  "strong_alternate": [
+    "ALNY",
+    "ASTS"
+  ],
+  "conditional_alternate": [
+    "FLNC",
+    "AVAV",
+    "PLAB",
+    "OKLO",
+    "IONS",
+    "WOLF",
+    "TE"
+  ],
+  "companies": [
+    {
+      "ticker": "KYTX",
+      "price": 6.21,
+      "status": "优先",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 61.8434,
+        "central": 73,
+        "stress": 90
+      },
+      "scenarios": {
+        "disappointment": [
+          2.5,
+          4
+        ],
+        "central": [
+          8,
+          11
+        ],
+        "success": [
+          12.5,
+          18
+        ],
+        "extreme": [
+          20,
+          25
+        ]
+      },
+      "catalyst": "2026Q4完成SPS rolling BLA、PMS Stanford数据；early2027 PMS研发策略为公司计划。FDA受理/优先审评需发生后验证，非既定批准日。gMG三期mid2027仅完成入组，读出和SPS潜在mid2027上市均在4/12之后。",
+      "mechanism": "三个月靠CMC/BLA递交降低上市障碍，六个月需受理及审评路径可信、SPS一年耐久性延续、PMS证明可复制平台。仅受理不是药效新增；最强分支需市场同时提高SPS商业化概率与PMS价值。",
+      "capital": "6/30现金及证券199.427M，H1 CFO-81.903M，已借25M。A尚15M可在12/31前提；全提后B5–20M可至9/30/27且有临床条件；C两档20M分别受收入/临床门槛，D50M需贷款方同意。2/28/27受控现金最低额为贷款本金的未披露百分比，不编50M。原速至4/12现金约71M，提A后约86M，未计加速与利息变化；因此73M中央股数反映SBC/择机融资，90M是融资压力分支，150M总额度绝非在手现金。",
+      "inverse": "12.42×73=906.66M股权；若期末净现金60M，管线价值约846.7M。按假设SPS风险调整价值600M，则PMS/gMG增量需246.7M；若SPS只能450M，平台需396.7M。90M压力股数则管线需1057.8M。不是在半年产生这些销售，而是临床/申报使风险折价下降。",
+      "bull_bear": "HCW9/25看多25是12个月目标，报道明确mid2027潜在launch；不得前置。反方是非随机小样本、SPS定价/患者转化、细胞治疗CMC与安全、资本桥；现金减轻融资尾部却不限制临床失败跌幅。",
+      "comparison": "对BNTX/ALNY：临床失败下行更大，但只需不足1B管线价值支撑2倍，后两者需数十B。对WOLF/TE：融资窗口更清楚、催化更接近，优先。",
+      "revive_or_kill": "BLA不完整/重要CMC返工或PMS数据削弱跨病种机制则下调；完成受理且有非毁灭性融资才可把12.5–18作为半年成功分支。",
+      "sources": [
+        "KYTX_Q2",
+        "KYTX_PR",
+        "KYTX_LOAN",
+        "KYTX_BULL"
+      ],
+      "double_price": 12.42,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pipeline",
+          "shares": 73,
+          "net_cash_m": 60,
+          "anchor_sps_value_m": 600,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 12.42,
+          "required_equity_m": 906.66,
+          "required_ev_m": 846.66,
+          "additional_pipeline_value_m": 246.65999999999997
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "BLA是否完成、PMS实际数据及融资桥",
+        "by_2027_04_12": "受理/审评路径与PMS策略能否支持平台价值；上市不前置"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "AMPX",
+      "price": 8.87,
+      "status": "优先",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 146.08,
+        "central": 160,
+        "stress": 175
+      },
+      "scenarios": {
+        "disappointment": [
+          4,
+          6
+        ],
+        "central": [
+          11,
+          15
+        ],
+        "success": [
+          18,
+          23
+        ],
+        "extreme": [
+          26,
+          32
+        ]
+      },
+      "catalyst": "2026Q3/Q4财报及2027指引（日期未正式核定）；CAMINUS官方10/5称2027Q1分阶段volume production，资格批次已在建。补助对应2028路线不前移。",
+      "mechanism": "现有无人机/e-mobility订单增长+毛利正向、代工路径降低capex，美国本土供应资格可将普通电池材料股重估为国防供应平台。Q1首次量产若附有订单、良率与毛利，才可把2027收入250–300M前瞻纳入半年定价。",
+      "capital": "6/30现金74.517M、无金融借债。H1经营流出40.1M包含一次20M退租，不以80M全年线性烧钱；应收40.65M及未交付billhold仍需跟踪。OTA74.793M仅22.3M已拨预算，分里程碑不是全部现金。采用160M股中央、175M融资压力；不因Q2改善断言以后零稀释。",
+      "inverse": "17.74×160=2838.4M；假设期末净现金50M需EV2788.4M：2027收入250M对应11.15×，300M对应9.29×。成功条件是约两倍增长、毛利维持30%左右且美国产线可放量；仅FY26至少140M收入按同倍数不能自然翻倍。",
+      "bull_bear": "MarketBeat Thomas Hughes9/30看多并引22.09共识，不能当某位分析师独立承诺。旧空方billhold需更新：Q2确认额0，H1 5.8M、未交付3M；这削弱“本季全靠提前收入”，不解决关联代工、应收、真实客户质量。原始Manatee全文本角色未读，继承争议而不作已核判决。",
+      "comparison": "优于NVTS：已34M单季收入、27%毛利，翻倍估值约9–11×次年销售虽高，但低于NVTS约60×。比PSIX右尾更强、跌幅也更大；不以较稳PSIX完全取代。",
+      "revive_or_kill": "若美国产线推迟、应收/收入比再恶化、订单未转现金，则回到4–6压力；CAMINUS阶段性里程碑成功但规模不明仅提高中枢，不直接给32。",
+      "sources": [
+        "AMPX_Q2",
+        "AMPX_PR",
+        "AMPX_CAM",
+        "AMPX_OTA",
+        "AMPX_BULL"
+      ],
+      "double_price": 17.74,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 160,
+          "net_cash_m": 50,
+          "forward_sales_m": 250,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 17.74,
+          "required_equity_m": 2838.3999999999996,
+          "required_ev_m": 2788.3999999999996,
+          "required_ev_sales": 11.153599999999999
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "年度出货/应收、CAMINUS资格批",
+        "by_2027_04_12": "Q1分阶段量产、有客户订单与良率，2027收入指引"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "PSIX",
+      "price": 50.1,
+      "status": "优先",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 23.07,
+        "central": 24,
+        "stress": 26
+      },
+      "scenarios": {
+        "disappointment": [
+          28,
+          38
+        ],
+        "central": [
+          65,
+          85
+        ],
+        "success": [
+          100,
+          125
+        ],
+        "extreme": [
+          140,
+          160
+        ]
+      },
+      "catalyst": "Q3预计11月、Q4预计2027年3月财报（估计非已定日）；需新工厂产能、H2收入向2025H2约394M水平收敛、毛利与现金确认。",
+      "mechanism": "Q2相对Q1利润修复如果延续至2027，市场把它从周期发动机供应商改按电力缺口受益的持续成长供应商定价。半年2倍需销售斜率与经营杠杆同步，不靠换个AI标签。",
+      "capital": "9/25已签220M committed revolver至9/25/29、SOFR+1.8%，实际借35M并偿旧15M，未用185M不是现金。6月cash70.1M/debt72.6M不可直接用作10月净现金。利息覆盖>=3、杠杆<=3、Weichai控制条款限制；24M中央股数，无迫近必然权益融资。",
+      "inverse": "100.20/20PE=5.01 EPS；24M股需120.24M年度净利。若2027营收800M，需15.0%净利率；按25PE需4.008EPS/96.2M净利、12%利润率。Q2 EPS0.73不能简单年化为5；新扩产/销量恢复及估值从低倍修复必须共同发生。",
+      "bull_bear": "Disruptor10/8抓住Q1op11.4→Q2op23.9M的杠杆；其旧贷款叙述用新8K替换。反方：Q2收入同比仍降21%，SAR重估会影响费用、2025税收益不可常态化、关税与订单节奏、控制股东治理。",
+      "comparison": "同属电力右尾，PSIX的100目标需要可解释的约100–120M净利，NVTS需要极高销售倍数；相近上行时PSIX更优。ENPH技术催化更集中但产品商业化不确定，二者可并存。",
+      "revive_or_kill": "Q3订单交付/毛利无连续改善、继续积压营运资本，降低优先；已承诺信贷使‘2027近到期断贷’淘汰理由失效。",
+      "sources": [
+        "PSIX_Q2",
+        "PSIX_LOAN",
+        "PSIX_BULL"
+      ],
+      "double_price": 100.2,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pe",
+          "shares": 24,
+          "pe": 20,
+          "forward_sales_m": 800,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 100.2,
+          "required_equity_m": 2404.8,
+          "required_eps": 5.01,
+          "required_net_income_m": 120.24,
+          "required_net_margin": 0.1503
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "Q3修复是否延续及订单",
+        "by_2027_04_12": "Q4利润、产能、现金支持2027EPS4–5假设"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "VISN",
+      "price": 6.08,
+      "status": "优先",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 230.63,
+        "central": 210,
+        "stress": 230.63
+      },
+      "scenarios": {
+        "disappointment": [
+          3.8,
+          5
+        ],
+        "central": [
+          8,
+          10
+        ],
+        "success": [
+          12.2,
+          14
+        ],
+        "extreme": [
+          15,
+          18
+        ]
+      },
+      "catalyst": "2026Q3/Q4披露剥离后持续业务利润、现金桥和实际回购（预计11月/2027年2月，未定日）。8/26追加150M回购只是授权。",
+      "mechanism": "出售与特殊派息后市场误用历史亏损/失真利润，若留存Aurora收益稳定、总部费用下降且低价回购完成，企业价值重估和缩股一起促成翻倍。新买者不享有此前已支付的10及5美元股息。",
+      "capital": "6月cash151.6M不是出售后现金；7/1出售gross1.846B须扣税费及股息。继承公司call年末700–750M现金估计；追加回购150M后按550M中央，同时股数降210M，不能保留全部现金又缩股。未经执行可用230.63M/700M并列。",
+      "inverse": "12.16×210=2553.6M权益，减550M现金=>EV2003.6M。假设全总部费后EBITDA200M需10.02×；若170M需11.79×。230.63M不回购、700M现金模型需10.52×200M。两种路径都不需无限倍数。",
+      "bull_bear": "Q2 Aurora45.5M EBITDA扣corporate9.7M才是持续合计35.8M；FY26 Aurora200–225M还未扣所有总部费用，不能用225全乘高倍。GAAP净利含税利益、出售非持续。更乐观的资产回购论成立条件是Comcast采购不再压低核心盈利；本角色未取得充分有署名独立多空全文，记录此缺口。",
+      "comparison": "对FLNC：同有翻倍机制，VISN以已实现资产变现/剩余利润支持，FLNC需先从巨亏跨越；VISN下行相对可控但Comcast集中和硬件周期仍可能大跌。对PLAB：VISN资本结构事件更强。",
+      "revive_or_kill": "核实出售后现金低于预估或总部费用难降、主要客户再削减需求则取消9–10倍平台估值；实际回购可复活到12以上。",
+      "sources": [
+        "VISN_Q2",
+        "VISN_BUY"
+      ],
+      "double_price": 12.16,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_ebitda",
+          "shares": 210,
+          "net_cash_m": 550,
+          "forward_ebitda_m": 200,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 12.16,
+          "required_equity_m": 2553.6,
+          "required_ev_m": 2003.6,
+          "required_ev_ebitda": 10.017999999999999
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "剥离后现金/回购/持续EBITDA",
+        "by_2027_04_12": "2027全费用利润中枢及实际缩股"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "ENPH",
+      "price": 31.49,
+      "status": "优先但需SST演示确认",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 131.8,
+        "central": 136,
+        "stress": 142
+      },
+      "scenarios": {
+        "disappointment": [
+          19,
+          25
+        ],
+        "central": [
+          40,
+          50
+        ],
+        "success": [
+          63,
+          75
+        ],
+        "extreme": [
+          90,
+          110
+        ]
+      },
+      "catalyst": "官方计划2026年11月IQ SST整机演示；2027客户pilot无特定季度，不能写Q1量产。Q3/Q4财报检验住宅光储渠道和安全港收入，日期待公告。",
+      "mechanism": "有盈利核心业务提供续航，成功演示+可验证客户试点/订单让市场在实际AI收入前给新增电力电子平台价值。只演示一次功能不等于客户验收、可靠性或大规模成本成立。",
+      "capital": "Q2现金证券937.7M、2028债575M（后者继承冻结财务），无短期必需再融资。Q2 CFO40.3M含41M关税退款、FCF25.9M不能全部常态化；Q2GAAP毛利60%含退款，nonGAAP46.8%排除主要往年退款但仍依赖45X与美国制造经济性。",
+      "inverse": "62.98×136=8565.3M权益。自设正常化core EPS1.8×25=45/股（6120M权益），余SST增量2445.3M，若6×远期销售对应407.5M。这里EPS价值已含现金利息且不另加净现金；SST收入仅作远期反算，不能写2027确定收入。更谨慎core EPS1.4×25=35则SST需3805M。",
+      "bull_bear": "core EPS1.8是待检验假设，不是公司指引：Q2nonGAAP0.46×4接近1.84，但84.3M/291.9M收入来自safeharbor，Q3guide也含75M，拉货退潮与45X削弱可使年化失真。乐观RFI/RFP多GW仍是潜在客户意向；外部GS目标等为继承未逐文复核，不当已证订单。",
+      "comparison": "相对NVTS：ENPH现有营收利润体量、现金与11月工程节点更可检验，翻倍需要约2.4–3.8B新平台权益，NVTS以小收入支撑更高估值难度。对PSIX，SST右尾大但近期盈利支撑弱一些。",
+      "revive_or_kill": "演示延误/无外部客户验证或住宅利润不及正常化假设时改等候；演示+客户量化成本/可靠性证明可使63触及概率上升，末期维持仍要订单。",
+      "sources": [
+        "ENPH_Q2",
+        "ENPH_SST"
+      ],
+      "double_price": 62.98,
+      "inverse_model": {
+        "assumptions": {
+          "method": "eps_plus_option",
+          "shares": 136,
+          "core_eps": 1.8,
+          "core_pe": 25,
+          "option_sales_multiple": 6,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 62.98,
+          "required_equity_m": 8565.279999999999,
+          "core_value_per_share": 45,
+          "incremental_option_equity_m": 2445.2799999999997,
+          "implied_far_future_option_sales_m": 407.5466666666666
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "11月整机演示、核心销售正常化",
+        "by_2027_04_12": "客户pilot是否有明确时间/条件，安全港拉货退潮是否受控"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "ACMR",
+      "price": 68.1,
+      "status": "优先复活",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 69.679,
+        "central": 73,
+        "stress": 78
+      },
+      "scenarios": {
+        "disappointment": [
+          38,
+          50
+        ],
+        "central": [
+          88,
+          112
+        ],
+        "success": [
+          137,
+          155
+        ],
+        "extreme": [
+          180,
+          210
+        ]
+      },
+      "catalyst": "9/30官方公布9/29 backlog2.5B，同比+88.2%；10/28美股盘前九月累计预报已定、11月初完整Q3；2027Q1面板电镀工具交付属公司计划。",
+      "mechanism": "订单兑现、先进封装/面板新品和国产替代把前瞻2027收入与归母盈利上调，同时弱化制裁不可增长论。不能把2.5B backlog全放半年收入，也不能把子公司市值全部给母公司。",
+      "capital": "中央73M包含A+B经济股及SBC，不能仅用A64.66M。合并现金定存1.3556B与债340.9M为冻结资料，需少数股东/受限资金折扣；不把1B合并净现金全视母公司可派。经营利润须排除投资公允价值收益。",
+      "inverse": "136.20/30PE=4.54归母EPS，73M股对应331.4M常态归母净利。假设2027销售1.65B需20.1%归母净利率；若35PE则净利284.1M/17.2%。这是比2026收入指引1.125–1.175B高43%左右且有盈利改善的成功分支，不是已承诺。",
+      "bull_bear": "Vincent Jiang9/30文章正面认可增长，反面强调backlog口径、投资收益及BIS；文章AI辅助且部分旧股比/动态价不采用。9/30公司本身就说明backlog含已发货未确认及未发货、可能不产生全部预计收入。比仅凭低历史PE严谨，也不能因制裁一票否定已实现增长。",
+      "comparison": "对AOSL：ACMR经营验证和已定10/28更强、地缘与中国资产折价更大；两者各有位置。对AMBA/MRAM：订单增速、收入体量和新产品窗口更扎实，优先。",
+      "revive_or_kill": "10/28/11月若应收库存吞噬现金或订单无法确认/出口限制升级，回到等待；若交付提速且净利润剔除金融收益仍强，上调。",
+      "sources": [
+        "ACMR_Q2",
+        "ACMR_BACK",
+        "ACMR_VIEW"
+      ],
+      "double_price": 136.2,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pe",
+          "shares": 73,
+          "pe": 30,
+          "forward_sales_m": 1650,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 136.2,
+          "required_equity_m": 9942.599999999999,
+          "required_eps": 4.54,
+          "required_net_income_m": 331.42,
+          "required_net_margin": 0.20086060606060607
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "10/28、Q3订单与应收兑现",
+        "by_2027_04_12": "Q1面板工具交付、FY27指引及正常经营归母利润"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "AOSL",
+      "price": 26.58,
+      "status": "优先较低位",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 30.31,
+        "central": 33,
+        "stress": 35
+      },
+      "scenarios": {
+        "disappointment": [
+          17,
+          21
+        ],
+        "central": [
+          34,
+          43
+        ],
+        "success": [
+          54,
+          65
+        ],
+        "extreme": [
+          75,
+          90
+        ]
+      },
+      "catalyst": "Q3日历季先进计算收入公司预计环比>40%、AIserver>60%；后续11月/2027年2月财报检验，确切日未核定。上海洪灾恢复应以实际产出确认。",
+      "mechanism": "AI供电由小占比转成20%上下收入、消费PC拖累消退及毛利改善，使低估值功率半导体按成长股前瞻销售定价。必须把先进计算占computing31%×computing占总收入49.8%=约15.4%分母说清。",
+      "capital": "现金180.8M已包含出售JV最后15M，季度CFO-10M、capex14.9M；不以现金不变外推半年。假设期末净现金150M/股33M；无立即融资假设，SBC/并购/工厂冲击保留35M压力。",
+      "inverse": "53.16×33-150=EV1604.3M。2027销售800M需2.01×EV/S，2.3×时需698M，估值不极端；但EPS法20PE需2.658/股、87.7M盈利，与当前nonGAAP亏损差距大，所以2×销售必须由利润率拐点支撑。",
+      "bull_bear": "Stifel8/13 Hold38强调PC疲弱及洪灾，采用约1.3×CY27sales；同篇NeedhamBuy45观点是二手，不能当独立核验两次。乐观增长和悲观亏损均有原始依据。",
+      "comparison": "比NVTS更低反算销售倍数、成熟业务更多；比PLAB风险大但AImix拐点更能在半年重估。若要下行更小且右尾相近，ACMR有更多经营证据但地缘更差。",
+      "revive_or_kill": "连续两季AIserver增长且集团毛利跨26–28%可复活到翻倍；只实现销售增长却持续现金流出则维持34–43。",
+      "sources": [
+        "AOSL_Q4",
+        "AOSL_VIEW"
+      ],
+      "double_price": 53.16,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 33,
+          "net_cash_m": 150,
+          "forward_sales_m": 800,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 53.16,
+          "required_equity_m": 1754.28,
+          "required_ev_m": 1604.28,
+          "required_ev_sales": 2.00535
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "AIserver季度增长、洪灾后产出",
+        "by_2027_04_12": "连续两季mix/毛利/现金好转"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "BNTX",
+      "price": 95.84,
+      "status": "优先/大现金临床右尾",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 251.2044,
+        "central": 249,
+        "stress": 255
+      },
+      "scenarios": {
+        "disappointment": [
+          60,
+          75
+        ],
+        "central": [
+          120,
+          150
+        ],
+        "success": [
+          195,
+          225
+        ],
+        "extreme": [
+          250,
+          290
+        ]
+      },
+      "catalyst": "11/3 Q3财报；PRESERVE003 Stage2首次中期分析预计2026、DYNASTYBreast02预计Q4受事件数影响；ESMO10/23–27组合数据由控制器伙伴源验证。BNT113时间本角色未在Q2原文找到，不作确定节点。",
+      "mechanism": "两个后期机制与组合早期数据若一致积极，现金壳折价转为多个可注册肿瘤资产平台。三个月可价格跳升，六月维持2倍需强有效性/安全/注册路径，普通‘有信号’不够。",
+      "capital": "6月现金/证券16.6342B欧元，不是美元；3–6月继续R&D与回购，美元目标采用假设汇率1.10、期末16B美元净现金压力值，需由最终控制器统一FX。回购1B授权不是全执行，中央249M ADS1:1。巨额现金降低融资风险不等于股价底；BMS合作分成后才计项目价值。",
+      "inverse": "191.68×249=47.728B权益；若期末净现金16B美元，肿瘤/经营平台需31.728B。当前权益约24B，即使现金稳定仍需约24B新增认可价值；所以至少一个强后期突破+第二资产强化，不靠现金或新冠季节性收入。",
+      "bull_bear": "8/28 BNT122-01结直肠单药终止，DSMB见数值OS不平衡但未报告新安全信号；不能把它仍列待成功读出，亦不能外推全部mRNA。Goldman9/15 Buy127仅控制器读过预览，12个月非我们的半年190依据；更高目标明确额外押注后期结果。",
+      "comparison": "KYTX翻倍绝对价值门槛更低，但BNTX多项目和现金缩小单融资失败风险；ALNY已有商业利润，却单次HTT早期数据未必给到同等资产重估。保留BNTX而不把它等同低风险2倍。",
+      "revive_or_kill": "读出延后至4/12外或效应不足竞争，则只120–150；若二项临床均强且净权益确认才195以上。",
+      "sources": [
+        "BNTX_Q2",
+        "BNTX_STOP"
+      ],
+      "double_price": 191.68,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pipeline",
+          "shares": 249,
+          "net_cash_m": 16000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 191.68,
+          "required_equity_m": 47728.32,
+          "required_ev_m": 31728.32
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "后期读出是否发生、效应/竞争性",
+        "by_2027_04_12": "强结果是否能推进注册并撑合伙分成后权益"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "LEU",
+      "price": 135.31,
+      "status": "优先但须订单/融资增量",
+      "depth": "深研",
+      "shares_m": {
+        "economic_base": 22.459,
+        "at_2x_cash_exercise": 24.6629781806,
+        "at_2x_cashless": 22.8153689869,
+        "all_warrants": 29.451382
+      },
+      "scenarios": {
+        "disappointment": [
+          80,
+          105
+        ],
+        "central": [
+          175,
+          215
+        ],
+        "success": [
+          272,
+          310
+        ],
+        "extreme": [
+          365,
+          440
+        ]
+      },
+      "catalyst": "900M DOE合同7/1已签是现有事实；半年新催化须客户binding offtake/资金落实、HALEU商业cascade租约过渡和扩产里程碑。新产能预计2029，不是2027收入；2028俄料缺口仍风险。",
+      "mechanism": "美国浓缩稀缺性获得客户实质承诺与资本开支可融资验证，使长期工程从期权转成可执行项目；不是九个月内利润翻倍。",
+      "capital": "原始424B5四档权证各约500M执行金额，价226.8625/272.235/317.6075/362.98。翻倍270.62仅首档价内：约2.203978M股或现金less净增0.356369M；24.662978M股+500M现金与22.815369M股无现金经济等价。29.451M全普通权证仅更高价压力。6月cash1.8685B+9月net489M，减本金1.2075B约1.15B先前净现金桥，需扣后续capex，不能当全部自由现金。",
+      "inverse": "2×价270.62要求扣新增权证资金前的原有权益6174.295M；减现有净现金约1150M=>项目与经营EV约5024M。若未来EBITDA350M对应14.35×，但当前无2027交付支撑，只是订单完成融资后远期估值门槛。更高价权证依次入价再重算。",
+      "bull_bear": "Jefferies9/3 Hold169与Guggenheim10/8 Buy167、Northland9/11 270来自评级聚合片段，非银行全文。前两者证明方向乐观不等于2倍；已签政府合同是比无约束MOU更强的正面，2029产能/工期/俄料暴露是反面。",
+      "comparison": "对OKLO，LEU翻倍需约5B经营/项目EV，已有燃料业务与900M合同；OKLO需约10.5B项目期权，选LEU优先。对PSIX经营现金兑现更迟，保留条件。",
+      "revive_or_kill": "无新增有资金订单或capex通胀则175–215；项目可融资与客户价量透明时可支持270以上。不要把首档现金行权和全四档股数交叉搭配。",
+      "sources": [
+        "LEU_DOE",
+        "LEU_W",
+        "LEU_8K",
+        "LEU_VIEWS"
+      ],
+      "double_price": 270.62,
+      "inverse_model": {
+        "assumptions": {
+          "method": "warrant",
+          "economic_base_m": 22.459,
+          "first_strike": 226.8625,
+          "first_exercise_proceeds_m": 500,
+          "prior_net_cash_m": 1150,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 270.62,
+          "first_tranche_warrants_m": 2.2039781806160117,
+          "cash_exercise_shares_m": 24.66297818061601,
+          "cashless_shares_m": 22.815368986912663,
+          "equity_before_exercise_cash_m": 6174.295155238306,
+          "operating_project_ev_m": 5024.295155238306
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "DOE执行/租约与客户合同",
+        "by_2027_04_12": "扩产资金闭合/客户价量；权证首档及3月cashless选择"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "RDW",
+      "price": 9.22,
+      "status": "优先尾位/条件",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 249.99,
+        "central": 260,
+        "stress": 275
+      },
+      "scenarios": {
+        "disappointment": [
+          4.5,
+          6.5
+        ],
+        "central": [
+          11,
+          14
+        ],
+        "success": [
+          18.5,
+          22
+        ],
+        "extreme": [
+          25,
+          30
+        ]
+      },
+      "catalyst": "Q3/Q4业务披露（预计11月/2027年3月）；具体大单/国防预算授予日期未确定。要看到Edge Autonomy整合、合同转收入和现金流改善。",
+      "mechanism": "资本危机降低后若有机增长/国防无人系统平台拿到可执行订单，市场从融资rollup重估为增长型国防空间供应商。现有低基数和跌幅可放大事件弹性。",
+      "capital": "Q2现金及受限557.718M、债约48.1M；新增现金主要来自H1融资511.461M，优先股已转换，不能再扣优先股债权。期末249.221M区别weighted avg。H1经营现金-31.602M+capex约16.5M，中央期末netcash400M、260M股，275M压力。",
+      "inverse": "18.44×260-400=EV4394.4M；若下一年度收入600M需7.32×销售，若仅500M需8.79×；12%EBITDA率下对应61×，绝非便宜盈利股。翻倍靠订单/增长可见性令高倍数重估，持续到末期需要现金兑现。",
+      "bull_bear": "Benzinga6/29转述Fugazi dilution/现金烧钱/控制指控，原始报告未读，不能判为事实；Q2新现金反驳马上断粮，但H1空间收入近持平、总增长很大部分来自并购，仍支持有机增长疑虑。",
+      "comparison": "比RKLB，翻倍需约4.4B EV而非80B以上，收入机会和资金续航更匹配；比PSIX盈利验证弱、下行大。可占右尾尾位，不能按已成长期盈利平台排前。",
+      "revive_or_kill": "新大单是资金有约束、cashburn明显减小才18以上；如果靠再融资并购维持增长，压低到等待。",
+      "sources": [
+        "RDW_Q2",
+        "RDW_BEAR"
+      ],
+      "double_price": 18.44,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 260,
+          "net_cash_m": 400,
+          "forward_sales_m": 600,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 18.44,
+          "required_equity_m": 4794.400000000001,
+          "required_ev_m": 4394.400000000001,
+          "required_ev_sales": 7.324000000000001
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "Q3有机增长/现金流",
+        "by_2027_04_12": "订单转换、FY27指引、是否依旧融资rollup"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "FLNC",
+      "price": 7.07,
+      "status": "等待/严格条件候补",
+      "depth": "深研",
+      "shares_m": {
+        "economic_base": 184.57,
+        "central": 200,
+        "stress": 215
+      },
+      "scenarios": {
+        "disappointment": [
+          2.5,
+          4
+        ],
+        "central": [
+          8,
+          10.5
+        ],
+        "success": [
+          14.2,
+          17
+        ],
+        "extreme": [
+          20,
+          23
+        ]
+      },
+      "catalyst": "Houston工厂恢复供电计划2026年10–11月属管理层计划（继承控制器电话会全文）；财年2026结果/2027指引与Q1现金压力是半年关键，不能把calendar与fiscal年错位。",
+      "mechanism": "库存与人工焊接故障修复、交付/客户预付资金正常化，市场把FY26异常巨亏视为一次性，迅速转按FY27/28正EBITDA估值。订单虽多但仅交付与利润转换才增股权。",
+      "capital": "9/16最新营收2.4B/EBITDA-200M替代旧3B/-10M；184.57M经济股不能用A143M。以200M中央、215M压力含融资；400M可转债转价21.35高于14.14，不预先转掉债。公司FY27现金中性/正向是目标，不当保底。",
+      "inverse": "14.14×200=2828M股权。净债按200M假设，EV3028M；FY28 EBITDA150M需20.2×，若BMO9/17仅68M则44.5×。成功必须显著高于这一悲观盈利路径，不能只用低P/S。",
+      "bull_bear": "BMO9/17目标7、FY27收入2.8B/EBITDA-10M、FY28 EBITDA68M，是最新减指引后的反方。Canaccord9/17 Buy15为控制器片段未本角色全文；8/25 UBS12/MS15属旧消息，不与新悲观数字当同日共识。",
+      "comparison": "VISN有已变现现金和留存利润，类似翻倍但资金压力小，优先VISN。AMPX有销量/毛利增长并独立美国产线，优先AMPX。FLNC可作工厂实质恢复后的复活，不必占最强20。",
+      "revive_or_kill": "供电恢复≠盈利恢复；还须自动焊接效率、FY27现金计划无需毁灭性增资。任一失败移出，三项均验证可复活。",
+      "sources": [
+        "FLNC_CUT",
+        "FLNC_BEAR"
+      ],
+      "double_price": 14.14,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_ebitda",
+          "shares": 200,
+          "net_cash_m": -200,
+          "forward_ebitda_m": 150,
+          "alternative_ebitda_m": 68,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 14.14,
+          "required_equity_m": 2828,
+          "required_ev_m": 3028,
+          "required_ev_ebitda": 20.186666666666667,
+          "alternative_ev_ebitda": 44.529411764705884
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "Houston供电和FY27资金计划",
+        "by_2027_04_12": "人工成本/交付/现金兑现，是否需大增发"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "AVAV",
+      "price": 131.51,
+      "status": "等待/稳健替代",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 50.82,
+        "central": 53,
+        "stress": 56
+      },
+      "scenarios": {
+        "disappointment": [
+          85,
+          105
+        ],
+        "central": [
+          155,
+          195
+        ],
+        "success": [
+          265,
+          290
+        ],
+        "extreme": [
+          320,
+          350
+        ]
+      },
+      "catalyst": "FY27Q2预计2026年12月、Q3预计2027年3月；LOCUST等已宣布大额国防合同转funded backlog/交付，授标不等整额当年收入。时间依公司公告，未硬填财报日。",
+      "mechanism": "BlueHalo整合、无人系统+反无人机订单提升FY28利润预期，市场恢复成长国防倍数。传统业务质量高于纯概念，但半年2倍需要大幅盈利上修或非常高倍数。",
+      "capital": "Q1现金580.2M/债747.5M由冻结披露继承，现金较足但并购与营运资本吸收不可忽略。53M股含SBC，交易多倍时56M压力。",
+      "inverse": "263.02/40PE=6.5755 EPS，或30PE=8.7673；9/9公司FY27非GAAP EPS指引3.02–3.34，中点3.18。翻倍需要40倍下FY28EPS比指引多107%，不是snapshot4.44所暗示较小提升。",
+      "bull_bear": "官方Q1收入480.5M+6%，adjEBITDA53.4M低于56.6M上年、funded backlog1.5B；大订单支持后期但未同时证明利润改善。外部行业关于LOCUST订单仅阅读片段，未取得足够独立空方原研，深度低于首选。",
+      "comparison": "若只求较小下行，AVAV优于RDW；用户重点半年翻倍，RDW需要更小绝对EV重估但风险更高。对KTOS，AVAV已有更好EPS基础，优先AVAV作为替代而非为了防务配额入选。",
+      "revive_or_kill": "2027年3月前FY28盈利可达6.5+有订单利润率依据可复活；无上修则155–195更可辩护。",
+      "sources": [
+        "AVAV_Q1"
+      ],
+      "double_price": 263.02,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pe",
+          "shares": 53,
+          "pe": 40,
+          "company_guide_eps_mid": 3.18,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 263.02,
+          "required_equity_m": 13940.06,
+          "required_eps": 6.5755,
+          "required_net_income_m": 348.5015,
+          "eps_increase_over_current_guide": 1.0677672955974842
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "FY27Q2及订单资金化",
+        "by_2027_04_12": "Q3是否支持FY28EPS6.5以上"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "ASTS",
+      "price": 51.46,
+      "status": "等待/高右尾条件候补",
+      "depth": "深研",
+      "shares_m": {
+        "economic_inferred": 389,
+        "central": 420,
+        "stress": 450
+      },
+      "scenarios": {
+        "disappointment": [
+          22,
+          32
+        ],
+        "central": [
+          65,
+          85
+        ],
+        "success": [
+          103,
+          125
+        ],
+        "extreme": [
+          150,
+          185
+        ]
+      },
+      "catalyst": "官方45星early2027是部署计划且依发射能力，不是2026年内确定完成；未来几个发射、运营商商业服务和潜在合作是半年变量。10/12德银升级已发生、非未来催化。",
+      "mechanism": "连续多星发射成功+可收费服务证明执行拐点，若美国运营商正式合同/频谱权益得到外部交易验证，市场前置定价大规模覆盖。单纯launch calendar与网站移除竞品字样不等新合同。",
+      "capital": "A类299.79M不能代表经济股，中央420M/压力450M。资本密集卫星和频谱投入持续；冻结6月cash2.288B/debt3.022B及7月债券1.15B不能重复减加，最终净债须随新增资本支出重算。本模型仅用净债300M假设，不伪装已核值。",
+      "inverse": "102.92×420+300=EV43526.4M。即使远期收入3B也14.5×销售；如果其盈利30%则48×。因此2倍要长期盈利概率/频谱权益大幅重估，不能由2027几个月收入直接支撑。",
+      "bull_bear": "10/12 Bryan Kraft德银Buy93认为频谱覆盖大部分EV、SpaceX竞争反而促三大运营商靠向ASTS；读过二手正文未读银行模型。93仅1.81倍现价，且频谱价值/转售许可/融资优先级不等现金底。既有发射故障和延期作为可观察反证。",
+      "comparison": "ASTS有强阶段性价格右尾，优于SMR/RKLB某些纯远期节点；但对LEU/AMPX需更大绝对价值跃迁且融资依赖更强。可以条件尾位，不能凭从高点跌65%排名。",
+      "revive_or_kill": "发射和业务数据兑现可以103短触；若再延迟或运营商无实质协议，下调到22–32压力。",
+      "sources": [
+        "ASTS_Q2",
+        "ASTS_DB"
+      ],
+      "double_price": 102.92,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 420,
+          "net_cash_m": -300,
+          "forward_sales_m": 3000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 102.92,
+          "required_equity_m": 43226.4,
+          "required_ev_m": 43526.4,
+          "required_ev_sales": 14.5088
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "连续发射而非仅排期",
+        "by_2027_04_12": "45星部署/可收费服务与约束合同"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "WOLF",
+      "price": 28.03,
+      "status": "等待资本条款",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 52.93,
+        "central": 85,
+        "stress": 120
+      },
+      "scenarios": {
+        "disappointment": [
+          10,
+          17
+        ],
+        "central": [
+          30,
+          42
+        ],
+        "success": [
+          56.5,
+          70
+        ],
+        "extreme": [
+          85,
+          110
+        ]
+      },
+      "catalyst": "10/7政府贷款letter之后的definitive docs、初始equity与债转股方案、后续季度良率/现金烧钱。无已定完成日，不把LOI当到账。",
+      "mechanism": "生存折价若因政府长期低成本资金与债务等值减少而收窄，加上Mohawk Valley良率改善，股价可在盈利前跳升；债权转股会分走改善后的价值。",
+      "capital": "1.5B贷款条件：首600M拟再融资旧一押，其余900M分阶段；750M合格资本贡献不全是新现金，初始150M现金股本（50M有效前、100M第二拨前），余600M可含债转股等。政府权证7.5%还不含融资股本。85M中央/120M压力仅示例，未定转股价不能装精确。",
+      "inverse": "56.06×100M压力中值+600M假设净债=EV6206M；若FY28收入900M需6.90×销售，仍要生产转型成功。若股数120M同债EV7327M，门槛8.14×，证明不能只按52.93M计算2倍。",
+      "bull_bear": "Vincent Jiang10/7批评‘letter不是check’方向成立，但将750M概括现金要求过严，被SEC纠正。多头政策支持不能覆盖还未定的抵押/债转股/新股折价；负毛利与利用率才是经营反方。",
+      "comparison": "KYTX已现金支撑到事件、AMPX资本轻且成长已发生；相近潜在2倍优先它们。WOLF2–3倍上行真实可能但需资本条款先具体化才能选普通股。",
+      "revive_or_kill": "完整条款下融资后股数若显著低于85M、持续成本改善可复活；条款恶化/新资本贡献无法取得则淘汰而不是靠政府背书持有。",
+      "sources": [
+        "WOLF_LOAN",
+        "WOLF_BEAR"
+      ],
+      "double_price": 56.06,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 100,
+          "net_cash_m": -600,
+          "forward_sales_m": 900,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 56.06,
+          "required_equity_m": 5606,
+          "required_ev_m": 6206,
+          "required_ev_sales": 6.895555555555555
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "definitive financing与equity terms",
+        "by_2027_04_12": "新股数/债转股确定后才评普通股"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "TE",
+      "price": 3.21,
+      "status": "等待/高融资风险",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 299.5,
+        "central": 410,
+        "stress": 470
+      },
+      "scenarios": {
+        "disappointment": [
+          0.8,
+          1.5
+        ],
+        "central": [
+          3.5,
+          4.7
+        ],
+        "success": [
+          6.5,
+          8
+        ],
+        "extreme": [
+          10,
+          12
+        ]
+      },
+      "catalyst": "G2计划2027Q1首电池；IP付款10/15及10/30是合同安排，支付是否现金/股票待披露。首电池与产线验收、客户认证和5GW稳定量产分开。",
+      "mechanism": "G1模块销售稳定+G2按时首产并获得非关联客户/政府资本，使美国本土电池片稀缺溢价前置；同时要完成资金桥，资产项目价值不能忽略普通股分母。",
+      "capital": "6月cash79.1M、H1经营+capex消耗264.8M、7月120Mbridge为冻结财务；G2总预算约510M仍需资金。IP135M中股份支付按5日VWAP折15%，不是按3.21零折扣。410M中央、470M低价增发压力只是可复算假设，无确定融资方案。",
+      "inverse": "6.42×410=2632.2M权益，假设净债200M=>EV2832.2M；以未来EBITDA200M需14.16×。但200M来自稳定G1/G2与税贷经济性，不是2027Q1首片即刻利润；470M股需EV3217.4M。",
+      "bull_bear": "Q2slides证实G2首片计划及IP支付价格机制；高关联销售/现金吸收、调查风险和补助资格是反方。本角色未重读Fuzzy Panda完整原稿，指控不当定罪；亦不把模块出货增长等同自产电池价值。",
+      "comparison": "AMPX同样美国产能右尾，cashburn更低、代工分阶段资本更轻，优先AMPX；FLNC虽有亏损但现有客户和规模更大。TE需融资定价后再比较。",
+      "revive_or_kill": "融资完成且普通股稀释可控、独立客户验证后复活；只有工地/首片照片不足。",
+      "sources": [
+        "TE_Q2"
+      ],
+      "double_price": 6.42,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_ebitda",
+          "shares": 410,
+          "net_cash_m": -200,
+          "forward_ebitda_m": 200,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 6.42,
+          "required_equity_m": 2632.2,
+          "required_ev_m": 2832.2,
+          "required_ev_ebitda": 14.161
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "IP股款与融资/G2进度",
+        "by_2027_04_12": "首片之后认证/独立客户、资金闭合"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "ALNY",
+      "price": 227.02,
+      "status": "等待/优质替代优先于纯远期尾层",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 133.81,
+        "central": 137,
+        "stress": 142
+      },
+      "scenarios": {
+        "disappointment": [
+          155,
+          190
+        ],
+        "central": [
+          280,
+          340
+        ],
+        "success": [
+          455,
+          500
+        ],
+        "extreme": [
+          550,
+          620
+        ]
+      },
+      "catalyst": "10/23 EHDN HTT02一期数据、10/26专题会为官方明确日期；H2 ALN6400/2232早期数据计划，11月cemdisiran监管动作合作伙伴主导。nucresiran PN late2027/CM2030不在窗内。",
+      "mechanism": "TTR商业增长恢复、经营杠杆维持，与HTT02安全/靶蛋白降低共同证明CNS递送平台，才可能由单TTR现金流重估成多平台。单一期生物标志物不证明亨廷顿长期功能疗效。",
+      "capital": "Q2收入1.291B、GAAP营业利231.4M，H1FCF约340.7M来自冻结财务，短期无融资悬崖；137M股考虑SBC。商业利润仍受前期积压患者消化与报销/净价影响，稳定现金流降低尾部但不阻止估值收缩。",
+      "inverse": "454.04×137=62.203B权益。若以未来EPS10×30PE=300/股经营价值，需要新增CNS/其他权益21.1B；或维持40倍需EPS11.35。仅一期HTT读出难独立合理化21B，需TTR加速+整个平台验证。",
+      "bull_bear": "RBC7/31目标降至350仍Outperform、HCW485是二手同篇，不能当短期共识。Morningstar仅片段open失败；控制器Cantor9/30 Neutral325指出样本/疾病进展时间局限。TTR指引4.4–4.7→4.2–4.5B，中点下调200M不是某报道误写300M。",
+      "comparison": "相近最终2倍概率无法证实时，ALNY比NVTS/SMR/RKLB更有现金/商业支撑，并有10/23近催化；但KYTX的事件更能相对小市值产生2倍。可替换最弱概念尾位，不为了低风险削弱全组合右尾。",
+      "revive_or_kill": "10/23数据若清晰且TTR后续增长重加速可进入20；只有靶点下降而商业再降指引，不提高到455。",
+      "sources": [
+        "ALNY_Q2",
+        "ALNY_RBC",
+        "ALNY_MS"
+      ],
+      "double_price": 454.04,
+      "inverse_model": {
+        "assumptions": {
+          "method": "eps_plus_option",
+          "shares": 137,
+          "core_eps": 10,
+          "core_pe": 30,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 454.04,
+          "required_equity_m": 62203.48,
+          "core_value_per_share": 300,
+          "incremental_option_equity_m": 21103.480000000003
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "10/23 HTT02与TTR Q3销售",
+        "by_2027_04_12": "2027商业指引、早期平台数据是否持续"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "NVTS",
+      "price": 9.99,
+      "status": "淘汰本轮/可复活",
+      "depth": "深研",
+      "shares_m": {
+        "observed": 262.56,
+        "central": 280,
+        "stress": 305
+      },
+      "scenarios": {
+        "disappointment": [
+          4,
+          6
+        ],
+        "central": [
+          10,
+          13
+        ],
+        "success": [
+          20,
+          24
+        ],
+        "extreme": [
+          30,
+          38
+        ]
+      },
+      "catalyst": "Claros收购10/6完成、10/20技术webinar已宣布；2027客户导入/JFET商业化为公司计划无确定首单收入日期。",
+      "mechanism": "若Grid-to-XPU技术被头部客户大规模采用，设计胜出估值可短触2倍；持续2倍要求披露订单数量和利润，不能把webinar当量产。",
+      "capital": "6月cash557.4M，须扣Claros126.4M现金对价及烧钱；假设末期netcash350M/股280M，压力305M。现金改善主要靠融资，不能只说无负债不谈稀释。",
+      "inverse": "19.98×280-350=EV5244.4M；假设2027销售80M需65.6×，即150M也35×。Q3收入guide13.5M、毛利约39.5%、opex15.5–17.5M，经营收支平衡需单季约41.8M，约目前3倍。",
+      "bull_bear": "官网财报的高功率designwins和2027导入支持右尾，但公司明确设计胜出并非采购订单。积极媒体大多复述相同客户合作，本角色未取得独立采购验证，不将转载计多源。",
+      "comparison": "ENPH有已盈利业务和11月整机节点，AOSL翻倍仅约2倍未来销售，AMPX收入已3倍NVTS且增速强；三者优先。",
+      "revive_or_kill": "可量化订单/客户验收和收入年化>150M、毛利不牺牲时复活；本轮不因AI标签给60×销售。",
+      "sources": [
+        "NVTS_Q2",
+        "NVTS_CLOSE"
+      ],
+      "double_price": 19.98,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 280,
+          "net_cash_m": 350,
+          "forward_sales_m": 80,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 19.98,
+          "required_equity_m": 5594.400000000001,
+          "required_ev_m": 5244.400000000001,
+          "required_ev_sales": 65.555
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "可量化订单/客户验收和收入年化>150M、毛利不牺牲时复活；本轮不因AI标签给60×销售。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "CC",
+      "price": 13.39,
+      "status": "淘汰本轮/周期候补",
+      "depth": "定向核验",
+      "shares_m": {
+        "observed": 150.5,
+        "central": 155,
+        "stress": 170
+      },
+      "scenarios": {
+        "disappointment": [
+          6,
+          9
+        ],
+        "central": [
+          15,
+          19
+        ],
+        "success": [
+          27,
+          32
+        ],
+        "extreme": [
+          38,
+          44
+        ]
+      },
+      "catalyst": "Q3/Q4化工价格、制冷剂渠道、债务下降，预计10/11月与2027年2月；PFAS重大司法节点未找到可信半年日期。",
+      "mechanism": "化工周期回升+诉讼折价缩小+债务下降使股权高杠杆弹性2倍；不能单凭AI液冷相关产品给全部公司高倍数。",
+      "capital": "Q2现金671M、债3.9B净债3.2B，杠杆4.4×，Q2FCF114M；2026EBITDAguide775–825M，年末约3.8×是计划。PFAS负债另有尾部，不把账面净债当全部义务。",
+      "inverse": "26.78×155+3000净债假设=EV7150.9M，未来EBITDA1B需7.15×；若仅800M需8.94×且不含额外诉讼支出。翻倍不是算术不可能，缺的是半年利润/诉讼触发。",
+      "bull_bear": "官方提TiO2价格改善但制冷剂渠道偏弱；这是周期多空同源事实非独立双重验证。未取得新日期明确且可独立核验的诉讼缓解事件，不能虚构空方已解除。",
+      "comparison": "PSIX用更低净债和真实电力订单盈利增长达2倍；CC虽高杠杆右尾也有，类似涨幅下先PSIX。",
+      "revive_or_kill": "诉讼风险可量化封顶或周期盈利上修1B并净债降至3B以下可复活。",
+      "sources": [
+        "CC_Q2"
+      ],
+      "double_price": 26.78,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_ebitda",
+          "shares": 155,
+          "net_cash_m": -3000,
+          "forward_ebitda_m": 1000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 26.78,
+          "required_equity_m": 4150.900000000001,
+          "required_ev_m": 7150.900000000001,
+          "required_ev_ebitda": 7.150900000000001
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "诉讼风险可量化封顶或周期盈利上修1B并净债降至3B以下可复活。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "MRAM",
+      "price": 15.28,
+      "status": "淘汰本轮/技术候补",
+      "depth": "定向核验",
+      "shares_m": {
+        "observed": 24.35,
+        "central": 26,
+        "stress": 28
+      },
+      "scenarios": {
+        "disappointment": [
+          9,
+          12
+        ],
+        "central": [
+          16,
+          21
+        ],
+        "success": [
+          31,
+          35
+        ],
+        "extreme": [
+          42,
+          48
+        ]
+      },
+      "catalyst": "后续两季财报、license/产品设计采用；没有已确认半年大型收费license或量产客户事件。",
+      "mechanism": "高毛利许可收入与MRAM新采用使小收入平台突然盈利提速才可能2倍；不把MRAM泛化为HBM/DRAM全部替代。",
+      "capital": "6月cash43.896M、规模小、现金续航优于负债项目股；26M中央含SBC，28M压力。单一许可季节性不能全年化。 外部重开8/5原始业绩表：Q2GAAP净亏3.589M，仅加回4.027M诉讼得0.438M经济净利；nonGAAP2.862M另排SBC1.374M及Microchip NRE1.050M，不可当可分配净利。H1CFO0.729-PPE5.677-无形0.976=-5.924M。",
+      "inverse": "30.56×26-40假设现金=EV754.56M；未来销售100M需7.55×，或EPS1.02×30。相对现有小收入仍需大合同与高利润贡献。",
+      "bull_bear": "Needham Neil Young8/6 Buy19来自评级片段，非银行全文，目标未达2倍；多头专有技术和利基市场与反方收入规模/许可证不重复性同时存在。 控制器继承Kerrisdale5/19空方14目标系5月股价约33时背景，原稿403、Activ8摘要可读；不能把当时60%下跌空间套今天15.28。40M合同跨约30个月至2028年11月，非半年新增全部收入（合同期继承控制器）。",
+      "comparison": "AOSL事件已在财报可见，ACMR有2.5B backlog与正式日历；MRAM不因小市值自动胜出。",
+      "revive_or_kill": "确认新license/订单金额足够使年化100M/稳定盈利临近，可复活；此前仅观察。",
+      "sources": [
+        "MRAM_Q2",
+        "MRAM_VIEW",
+        "MRAM_PR"
+      ],
+      "double_price": 30.56,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 26,
+          "net_cash_m": 40,
+          "forward_sales_m": 100,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 30.56,
+          "required_equity_m": 794.56,
+          "required_ev_m": 754.56,
+          "required_ev_sales": 7.545599999999999
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "确认新license/订单金额足够使年化100M/稳定盈利临近，可复活；此前仅观察。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "AMBA",
+      "price": 64.81,
+      "status": "淘汰本轮/产品候补",
+      "depth": "定向核验",
+      "shares_m": {
+        "observed": 44.14,
+        "central": 47,
+        "stress": 50
+      },
+      "scenarios": {
+        "disappointment": [
+          40,
+          50
+        ],
+        "central": [
+          75,
+          95
+        ],
+        "success": [
+          130,
+          150
+        ],
+        "extreme": [
+          180,
+          200
+        ]
+      },
+      "catalyst": "FY27Q3及Q4财报（预计11月/2027年2–3月）；CES产品可能展示但未定成实质客户收入节点。",
+      "mechanism": "边缘AI SoC/汽车和机器人设计转量产，收入加速及经营杠杆显现，重获高增长倍数。新品展示不等未来设计赢的商业规模。",
+      "capital": "Q2收入108.1M同比13.2%；经营改善含约9M一次性R&D信用，冻结H1CFO-25.886M、capex10.779M、IP5.824M。中央47M股含SBC，不能只用nonGAAP而忽视股本增长。",
+      "inverse": "129.62×47=6092.1M股权，净现金假设200M=>EV5892M；未来收入550M需10.7×，或EPS3.24×40。目前13%增长且现金流负，要翻倍必须新增长周期远超当前斜率。",
+      "bull_bear": "看多physical AI/80%edgeAI mix的市场观点未获得本角色可验证完整署名原研，不能用论坛转述Rosenblatt120作事实；10Q显示增长/现金比标签弱。",
+      "comparison": "ACMR有订单翻转证据、AOSL反算销售倍数低得多，优先两者；AMBA财务尾部小于WOLF但半年催化弱。",
+      "revive_or_kill": "客户量产使未来两季收入增速>30%、现金流改善后复活。",
+      "sources": [
+        "AMBA_Q2"
+      ],
+      "double_price": 129.62,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 47,
+          "net_cash_m": 200,
+          "forward_sales_m": 550,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 129.62,
+          "required_equity_m": 6092.14,
+          "required_ev_m": 5892.14,
+          "required_ev_sales": 10.712981818181818
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "客户量产使未来两季收入增速>30%、现金流改善后复活。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "PLAB",
+      "price": 29.24,
+      "status": "等待/稳健替代",
+      "depth": "定向核验",
+      "shares_m": {
+        "observed": 59,
+        "central": 60,
+        "stress": 63
+      },
+      "scenarios": {
+        "disappointment": [
+          21,
+          25
+        ],
+        "central": [
+          36,
+          44
+        ],
+        "success": [
+          59,
+          65
+        ],
+        "extreme": [
+          75,
+          82
+        ]
+      },
+      "catalyst": "FY26Q4/2027Q1财报（预计12月/2027年3月）；半导体高端mask需求/中国扩产节奏，不编单一翻倍催化。",
+      "mechanism": "先进节点需求增长+利润率和股份回购，市场由成熟掩膜厂改给20–25×持续EPS；现金充足减少融资风险，但不能仅因低估便半年翻倍。",
+      "capital": "Q3现金549.5M+短投123.3M、债3.9M；合并净现金部分属于非控股JV，不能全给母公司。九月累计CFO220.6-capex130.4约90.2M，续航良好。",
+      "inverse": "58.48/20PE=2.924 EPS；60M股需175.4M归母净利，Q3归母28.9M、EPS0.49意味着年度化须提升约52%；25PE需2.339EPS，提升约19%，但倍数同时扩张。EPS法不另加全部现金。",
+      "bull_bear": "LakeStreet5/1 Buy55、CraigHallum2025/12 Buy42为聚合旧目标，不能当10月新多头或半年共识。营业profit45.5M不能忽视约15M少数股东分享。",
+      "comparison": "类似低下行与业务确认上强于MRAM/AMBA；若重半年右尾，VISN资本结构事件与AOSL利润拐点更强。可替最弱概念股，不必强塞。",
+      "revive_or_kill": "持续归母EPS接近0.65–0.75/季并有回购或先进节点合同可复活到2倍分支。",
+      "sources": [
+        "PLAB_Q3",
+        "PLAB_VIEW"
+      ],
+      "double_price": 58.48,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pe",
+          "shares": 60,
+          "pe": 20,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 58.48,
+          "required_equity_m": 3508.7999999999997,
+          "required_eps": 2.924,
+          "required_net_income_m": 175.44
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "持续归母EPS接近0.65–0.75/季并有回购或先进节点合同可复活到2倍分支。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "KTOS",
+      "price": 41.62,
+      "status": "淘汰本轮/军工候补",
+      "depth": "定向核验",
+      "shares_m": {
+        "observed": 187.52,
+        "central": 195,
+        "stress": 210
+      },
+      "scenarios": {
+        "disappointment": [
+          26,
+          33
+        ],
+        "central": [
+          45,
+          56
+        ],
+        "success": [
+          84,
+          95
+        ],
+        "extreme": [
+          110,
+          125
+        ]
+      },
+      "catalyst": "下一两季订单、无人机/发动机产能与有资金订单兑现；重大新增授标无确定日期。",
+      "mechanism": "批量无人机采购和发动机扩产兑现，市场前置高增长国防盈利；生产计划本身不够。",
+      "capital": "Q2现金1.4376B来自H1融资约1.3484B；无银行借债但融资租赁约139.9M。H1CFO-38.4M、capex37.1M、未开票应收405.4M，不能把现金高等同业务自供血。",
+      "inverse": "83.24×195-1200假设净现金=EV15031.8M；未来销售2.1B为7.16×，EBITDA220M为68.3×。需要极强远期增长溢价，不是半年利润可覆盖。",
+      "bull_bear": "公司订单/国家需求为正面；融资增长和未开票应收/负现金是原始反证。未独立读足署名空头观点，尾部深度低于重点入选者。",
+      "comparison": "AVAV盈利体量较强、RDW更小绝对价值门槛，均优先KTOS；军事需求不能保证普通股最优回报。",
+      "revive_or_kill": "大规模funded awards和利润率出现可令FY28现金盈利上修，才复活。",
+      "sources": [
+        "KTOS_Q2"
+      ],
+      "double_price": 83.24,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 195,
+          "net_cash_m": 1200,
+          "forward_sales_m": 2100,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 83.24,
+          "required_equity_m": 16231.8,
+          "required_ev_m": 15031.8,
+          "required_ev_sales": 7.1579999999999995
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "大规模funded awards和利润率出现可令FY28现金盈利上修，才复活。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "PL",
+      "price": 15.96,
+      "status": "淘汰本轮/等订单转换",
+      "depth": "定向核验",
+      "shares_m": {
+        "economic_inferred": 364,
+        "central": 380,
+        "stress": 405
+      },
+      "scenarios": {
+        "disappointment": [
+          8,
+          11
+        ],
+        "central": [
+          17,
+          22
+        ],
+        "success": [
+          32,
+          38
+        ],
+        "extreme": [
+          45,
+          52
+        ]
+      },
+      "catalyst": "FY27Q3/Q4财报（预计12月/2027年3月）、政府客户订单转换/Pelican服务。发射有技术价值，收费规模应另证。",
+      "mechanism": "地理空间数据/AI分析从项目验证转成持续高毛利订阅，RPO转换带来现金盈利，才配翻倍销售倍数。",
+      "capital": "backlog814.9M较1月900.4M下降，753.1M不可取消、61.7M可取消；RPO未来12月46%不等全部backlog46%。正现金流要区分客户预付与常态经常现金，380M经济股含稀释。",
+      "inverse": "31.92×380-600假设净现金=EV11529.6M；2027/28收入400M需28.8×，600M仍19.2×。这比当前可验证增长需要过大重估。",
+      "bull_bear": "大单和卫星能力是多头事实；未履约订单减少/取消性质与提前收款是反方，不能以gross backlog代ARR。本角色未取得足够独立专业多空全文。",
+      "comparison": "RDW翻倍约7×未来销售且国防订单更可能单次显著改变小EV；PL更优商业模式愿景却更高定价门槛，暂输。",
+      "revive_or_kill": "持续RPO/ARR增长与非预付驱动FCF使中期销售路径600M+可信，可复活。",
+      "sources": [
+        "PL_Q2"
+      ],
+      "double_price": 31.92,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 380,
+          "net_cash_m": 600,
+          "forward_sales_m": 400,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 31.92,
+          "required_equity_m": 12129.6,
+          "required_ev_m": 11529.6,
+          "required_ev_sales": 28.824
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "持续RPO/ARR增长与非预付驱动FCF使中期销售路径600M+可信，可复活。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "RKLB",
+      "price": 65.71,
+      "status": "淘汰本轮/技术事件交易候补",
+      "depth": "深研",
+      "shares_m": {
+        "observed_snapshot": 598.46,
+        "central": 640,
+        "stress": 685
+      },
+      "scenarios": {
+        "disappointment": [
+          30,
+          43
+        ],
+        "central": [
+          70,
+          90
+        ],
+        "success": [
+          132,
+          155
+        ],
+        "extreme": [
+          180,
+          210
+        ]
+      },
+      "catalyst": "Neutron Q4运抵发射场/后续首飞计划，Q2原文显示年末首飞窗口窄且风险高；Iridium收购预计2027年中完成，在4/12外。",
+      "mechanism": "成功首飞/回收与大客户订单把Neutron由工程风险变为可商业重复飞行平台；首飞可能产生极大情绪，但不能当成熟年发射频次。",
+      "capital": "9月ATM约1.944B/29.3M股为冻结后续资本桥；中央640M经济股，避免snapshot少算。Q2经营现金-84.1M；Iridium1.775B债务若未来并购承继，与新增现金/利润同一期纳入，半年不得只预加利润或单扣债。",
+      "inverse": "131.42×640=84.109B权益；假设netcash2B=>EV82.109B。即远期收入3B仍27.4×、EBITDA30%仍91×。未来数年成功被显著预支，半年2倍依超强重估而非可验证现金流。",
+      "bull_bear": "成熟Electron/space systems与Neutron是可信工程资产；现金使存活风险下降，但收购/发射执行和高估值为反方。‘到pad’不等‘首飞成功’，也不等商业频次。",
+      "comparison": "ASTS在合作/频谱有可变新增权益路径、RDW绝对EV较小、LEU已签DOE且2倍门槛较低；优先它们。",
+      "revive_or_kill": "成功首飞且有锚定客户量价合同、发射成本/融资路径透明才能复活；不因为有日期把宏大叙事变2倍确定性。",
+      "sources": [
+        "RKLB_Q2"
+      ],
+      "double_price": 131.42,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 640,
+          "net_cash_m": 2000,
+          "forward_sales_m": 3000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 131.42,
+          "required_equity_m": 84108.79999999999,
+          "required_ev_m": 82108.79999999999,
+          "required_ev_sales": 27.369599999999995
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "成功首飞且有锚定客户量价合同、发射成本/融资路径透明才能复活；不因为有日期把宏大叙事变2倍确定性。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "OKLO",
+      "price": 32.21,
+      "status": "等待/稀缺项目右尾候补",
+      "depth": "深研",
+      "shares_m": {
+        "minimum_economic": 192.35,
+        "central": 210,
+        "stress": 230
+      },
+      "scenarios": {
+        "disappointment": [
+          14,
+          21
+        ],
+        "central": [
+          38,
+          48
+        ],
+        "success": [
+          65,
+          78
+        ],
+        "extreme": [
+          95,
+          120
+        ]
+      },
+      "catalyst": "监管、燃料、现场工程和客户电力合同里程碑在未来两季可能出现；没有已核实4/12前商转发电时间表。",
+      "mechanism": "许可与燃料实质降风险使未来核能电站期权大幅增值，大客户合同若有约束现金/价格会提升融资可行性。股价可先于收入翻倍，但末期维持需连贯许可证/资金/燃料证据。",
+      "capital": "Q2cash/securities3.006B，H1CFO-65.5M；9月319.6M旧ATM完成及新1B额度为控制器桥，额度不是现金。min192.35M经济股，中央210M含继续融资/SBC；3B现金相对6B当前权益不是绝对价格底。",
+      "inverse": "64.42×210-3000假设现金=项目EV10528.2M，若未来250M现金利需42×；尚无半年经营利润。650M新增ATM假设必须同时加股与现金，不能只加一个。",
+      "bull_bear": "公司现金和政策关系支持续航；许可条件、fuel、工期、PPA约束构成反面，客户MOU不等有资金订单。未补足第三方完整反方原研，条件深度低于LEU。",
+      "comparison": "LEU翻倍约5B项目/经营EV且已有贸易业务与900M政府合同；相同核能稀缺叙事优先LEU。相对SMR拥有不同fuel/商业模式，不能只比现金。",
+      "revive_or_kill": "可验证许可进度+fuel+有约束承购同时到位可复活；只有工程动工或ATM补现金不够。",
+      "sources": [
+        "OKLO_Q2"
+      ],
+      "double_price": 64.42,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pipeline",
+          "shares": 210,
+          "net_cash_m": 3000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 64.42,
+          "required_equity_m": 13528.2,
+          "required_ev_m": 10528.2
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "可验证许可进度+fuel+有约束承购同时到位可复活；只有工程动工或ATM补现金不够。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "SMR",
+      "price": 6.7,
+      "status": "淘汰本轮/等项目融资",
+      "depth": "定向核验",
+      "shares_m": {
+        "economic_base": 410.39,
+        "central": 430,
+        "stress": 480
+      },
+      "scenarios": {
+        "disappointment": [
+          2.5,
+          4
+        ],
+        "central": [
+          7,
+          9
+        ],
+        "success": [
+          13.5,
+          16
+        ],
+        "extreme": [
+          20,
+          24
+        ]
+      },
+      "catalyst": "客户项目FID/有约束资金与设备合同、监管项目级节点，未有明确半年完成日期。NRC设计认证不是所有项目施工许可。",
+      "mechanism": "从技术授权/框架安排到业主融资完成及供应链订单，使项目特许权重新估值；如果只重复潜在GW数量没有新股权价值证明。",
+      "capital": "Q2现金约1.9B，未来客户支持/ENTRA1等义务与烧钱需折减；采用期末净现金1.6B、430M股，480M融资压力。经济分母含非A权益不能只用可交易A。",
+      "inverse": "13.40×430-1600=EV4162M，低于OKLO2倍门槛；但要以潜在项目风险调整NPV超过4.2B支撑，按400M远期收入也10.4×且当前FEED收入在下降。",
+      "bull_bear": "设计获批减少技术监管风险，但不自动解决客户融资与建造成本；2025已完成FEED导致当前收入降是原始财务信号。未取得可靠新FID日历，不能按官方愿景当已售装机。",
+      "comparison": "价格门槛较OKLO低，却项目可执行与合作资金结构更弱；LEU最可验证。若强资金FID出现SMR可反超OKLO，不永久淘汰。",
+      "revive_or_kill": "FID+客户自有资本/债务落实、成本承担明确则复活，不要求等商业发电才承认右尾。",
+      "sources": [
+        "SMR_Q2"
+      ],
+      "double_price": 13.4,
+      "inverse_model": {
+        "assumptions": {
+          "method": "pipeline",
+          "shares": 430,
+          "net_cash_m": 1600,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 13.4,
+          "required_equity_m": 5762,
+          "required_ev_m": 4162
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "FID+客户自有资本/债务落实、成本承担明确则复活，不要求等商业发电才承认右尾。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "IONS",
+      "price": 43.67,
+      "status": "等待/商业化替代",
+      "depth": "定向深研",
+      "shares_m": {
+        "observed": 166.18,
+        "central": 174,
+        "stress": 185
+      },
+      "scenarios": {
+        "disappointment": [
+          29,
+          35
+        ],
+        "central": [
+          50,
+          65
+        ],
+        "success": [
+          88,
+          100
+        ],
+        "extreme": [
+          115,
+          130
+        ]
+      },
+      "catalyst": "Bepirovirsen10/26 PDUFA为官方目标日；Q3/Q4自有药销售增长。9/3ZANVASTRO已批、9月FUSION/sefaxersen结果是已发生增量，不能又算未知催化；这些后续细节继承冻结未逐项外部复开。",
+      "mechanism": "全资TRYNGOLZA/DAWNZERA/ZANVASTRO销售超预期，加上合作药里程碑/royalty，使市场相信由研发授权商转盈利商业公司；不是把合作方全部药物销售算IONIS。",
+      "capital": "6月现金短投约2.055B、可转债1.345B（冻结明细）；净710M后仍有商业/研发消耗，174M中央考虑SBC与融资，185M压力。产品上市现金支出先于收入。",
+      "inverse": "87.34×174=15.197B权益；假设netcash400M=>EV14.797B。若未来2B归属公司收入需7.4×；或未来EPS3.49×25。现有季度自有销售小，必须多个自有launch突破，单个royalty获批不能解释2倍。",
+      "bull_bear": "10/26明确监管节点是优点；ATTR-CM与pelacarsen失败削弱旧后期平台（继承冻结），稀有病可治疗人数约束ZANVASTRO。未找到同时更新失败后有署名完整多空，保留证据深度缺口。",
+      "comparison": "ALNY已有商业利润与新CNS确定会议、KYTX较小价值门槛；IONS更适中风险但半年2倍需要多药起量，暂候补。",
+      "revive_or_kill": "自有销售连续超预期并明确2027盈亏平衡、监管成功royalty范围落实可复活。",
+      "sources": [
+        "IONS_Q2"
+      ],
+      "double_price": 87.34,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 174,
+          "net_cash_m": 400,
+          "forward_sales_m": 2000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 87.34,
+          "required_equity_m": 15197.16,
+          "required_ev_m": 14797.16,
+          "required_ev_sales": 7.39858
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "自有销售连续超预期并明确2027盈亏平衡、监管成功royalty范围落实可复活。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    },
+    {
+      "ticker": "ARGX",
+      "price": 812.3,
+      "status": "淘汰本轮/质量候补",
+      "depth": "定向深研",
+      "shares_m": {
+        "observed": 62.89,
+        "central": 64,
+        "stress": 67
+      },
+      "scenarios": {
+        "disappointment": [
+          600,
+          700
+        ],
+        "central": [
+          900,
+          1120
+        ],
+        "success": [
+          1630,
+          1800
+        ],
+        "extreme": [
+          2000,
+          2200
+        ]
+      },
+      "catalyst": "后续Q3/Q4销售和新适应症数据；10/8UNITY无效终止已发生，同时FB102早期积极非二次未来催化。确切半年可产生十余B增量资产的节点不足。",
+      "mechanism": "现有Vyvgart销售超预期与新平台FB102/其他适应症重新建立多资产成功概率，估值恢复；只把市场恐慌反转不够达2倍。",
+      "capital": "6月5.184B现金为收购前；8/27 Forte现金2.2B需扣，不能继续称有5B净现金（交易金额/时间继承冻结）。核心经营利润真实、短期融资风险低，64M股中央。",
+      "inverse": "1624.60×64=103.974B权益，假设3B净现金=>EV100.974B；未来收入10B需10.1×，30%净利需约34×。半年要提前接受2028/更远商业规模和恢复平台溢价，过于强。",
+      "bull_bear": "Michael Douglass10/8片段称暴跌过度，因Sjogren不在近年收入；BioSpace引William Blair称失去下一重磅扩适应症。二者均未读银行全文；官方UNITYprimary endpoint无法达到，不能以FB102早期好结果抵消为零风险。",
+      "comparison": "ALNY约一半权益体量、有10/23定日CNS节点；BNTX现金更多且后期肿瘤读出，右尾更强。ARGX质量不错但不符合本轮2倍主目标。",
+      "revive_or_kill": "重大外部购并/新资产强数据和现有商业加速同时出现时复活；没有就按900–1120恢复情景。",
+      "sources": [
+        "ARGX_Q2",
+        "ARGX_STOP",
+        "ARGX_BULL",
+        "ARGX_BEAR"
+      ],
+      "double_price": 1624.6,
+      "inverse_model": {
+        "assumptions": {
+          "method": "ev_sales",
+          "shares": 64,
+          "net_cash_m": 3000,
+          "forward_sales_m": 10000,
+          "all_forward_operating_numbers_are_analyst_scenario_assumptions": true
+        },
+        "calculated": {
+          "double_price": 1624.6,
+          "required_equity_m": 103974.4,
+          "required_ev_m": 100974.4,
+          "required_ev_sales": 10.097439999999999
+        }
+      },
+      "checkpoints": {
+        "by_2027_01_12": "核下次财报/已公开的客户与项目进展；无已定大事件不得自行补日期",
+        "by_2027_04_12": "重大外部购并/新资产强数据和现有商业加速同时出现时复活；没有就按900–1120恢复情景。"
+      },
+      "touch_vs_hold": "成功区间是条件性半年右尾，不是期望收益；窗口内触及通常比2027-04-12仍站稳更容易，末期需要上述经营/临床/资本验证。极端区间更依赖多项同时成立或交易过热，不作为中枢；失望区间不是最大损失上限。"
+    }
+  ]
+}
+

@@ -1,0 +1,246 @@
+﻿ticker,name,category,anchor,nominated_count,nomination_roles_ranks,reserves,deep_read_roles,screen_count
+ALAB,AsteraLabs,AI计算芯片_EDA_IP_custom_ASIC,324.11,0,,X2_AI供应链与短期盈利错价,X2_AI供应链与短期盈利错价,5
+AMBA,Ambarella,AI计算芯片_EDA_IP_custom_ASIC,64.81,2,X3_clinical_events:19; X5_reverse_valuation:15,X1_event_dislocations; X2_AI供应链与短期盈利错价; X4_space_energy_independent_round1,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+AMD,Advanced Micro Devices,AI计算芯片_EDA_IP_custom_ASIC,594.24,0,,,,5
+ARM,Arm Holdings,AI计算芯片_EDA_IP_custom_ASIC,255.24,0,,,,5
+AVGO,Broadcom,AI计算芯片_EDA_IP_custom_ASIC,354.73,1,X2_AI供应链与短期盈利错价:20,,X2_AI供应链与短期盈利错价,5
+CBRS,Cerebras Systems Inc,AI计算芯片_EDA_IP_custom_ASIC,146.62,0,,,,5
+CDNS,Cadence Design Systems,AI计算芯片_EDA_IP_custom_ASIC,348.42,0,,,,5
+INTC,Intel Corporation 英特尔,AI计算芯片_EDA_IP_custom_ASIC,101.35,0,,,,5
+MCHP,Microchip Technology,AI计算芯片_EDA_IP_custom_ASIC,73.83,0,,,,5
+MRVL,Marvell Technology,AI计算芯片_EDA_IP_custom_ASIC,265.86,0,,,,5
+MXL,MaxLinear,AI计算芯片_EDA_IP_custom_ASIC,88.99,0,,,,5
+NVDA,NVIDIA,AI计算芯片_EDA_IP_custom_ASIC,226.32,2,X2_AI供应链与短期盈利错价:14; X5_reverse_valuation:11,X4_space_energy_independent_round1,X2_AI供应链与短期盈利错价; X5_reverse_valuation,5
+QCOM,Qualcomm,AI计算芯片_EDA_IP_custom_ASIC,174.43,0,,,,5
+SNPS,Synopsys,AI计算芯片_EDA_IP_custom_ASIC,502.51,0,,,,5
+CLS,Celestica Inc,AI服务器_存储_EMS,347.50,1,X2_AI供应链与短期盈利错价:12,,X2_AI供应链与短期盈利错价,5
+DELL,Dell Technologies,AI服务器_存储_EMS,576.76,0,,,,5
+FLEX,Flex Ltd,AI服务器_存储_EMS,117.24,0,,,,5
+FN,Fabrinet,AI服务器_存储_EMS,456.40,0,,,,5
+HPE,惠普企业,AI服务器_存储_EMS,70.33,0,,,,5
+JBL,Jabil Inc,AI服务器_存储_EMS,312.01,0,,,,5
+MRAM,Everspin Technologies,AI服务器_存储_EMS,15.28,2,X3_clinical_events:9; X4_space_energy_independent_round1:20,X5_reverse_valuation,X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+MU,Micron Technology 美光科技,AI服务器_存储_EMS,989.04,2,X2_AI供应链与短期盈利错价:1; X5_reverse_valuation:5,,X2_AI供应链与短期盈利错价; X5_reverse_valuation,5
+NTAP,NetApp,AI服务器_存储_EMS,239.18,0,,,,5
+P,Everpure,AI服务器_存储_EMS,155.31,0,,,,5
+PENG,Penguin Solutions,AI服务器_存储_EMS,79.16,0,,X1_event_dislocations,X1_event_dislocations,5
+RMBS,Rambus,AI服务器_存储_EMS,101.04,0,,,,5
+SANM,Sanmina Corporation,AI服务器_存储_EMS,213.74,0,,,,5
+SIMO,Silicon Motion Technology,AI服务器_存储_EMS,246.95,0,,,,5
+SKHY,SK hynix Inc,AI服务器_存储_EMS,162.23,0,,,,5
+SMCI,Super Micro Computer Inc,AI服务器_存储_EMS,39.98,4,X1_event_dislocations:1; X2_AI供应链与短期盈利错价:5; X3_clinical_events:7; X5_reverse_valuation:3,X4_space_energy_independent_round1,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X5_reverse_valuation,5
+SNDK,SanDisk,AI服务器_存储_EMS,1487.33,1,X2_AI供应链与短期盈利错价:2,,X2_AI供应链与短期盈利错价,5
+STX,Seagate Technology,AI服务器_存储_EMS,753.25,0,,,,5
+WDC,WesternDigital,AI服务器_存储_EMS,386.94,0,,,,5
+AAOI,Applied Optoelectronics,AI网络_光互联_连接器,100.68,1,X2_AI供应链与短期盈利错价:4,,X2_AI供应链与短期盈利错价,5
+ANET,Arista Networks,AI网络_光互联_连接器,210.88,0,,,,5
+APH,Amphenol 安费诺,AI网络_光互联_连接器,86.19,0,,,,5
+BDC,Belden,AI网络_光互联_连接器,105.29,0,,X5_reverse_valuation,X5_reverse_valuation,5
+BELFB,Bel Fuse Inc,AI网络_光互联_连接器,238.41,0,,,,5
+CIEN,Ciena Corporation,AI网络_光互联_连接器,405.01,0,,,,5
+COHR,Coherent,AI网络_光互联_连接器,288.02,1,X2_AI供应链与短期盈利错价:11,,X2_AI供应链与短期盈利错价,5
+CRDO,Credo Technology Group,AI网络_光互联_连接器,200.84,1,X2_AI供应链与短期盈利错价:6,,X2_AI供应链与短期盈利错价,5
+CSCO,Cisco Systems,AI网络_光互联_连接器,115.34,0,,,,5
+GLW,Corning,AI网络_光互联_连接器,147.28,0,,,,5
+LITE,Lumentum,AI网络_光互联_连接器,995.41,0,,X2_AI供应链与短期盈利错价,X2_AI供应链与短期盈利错价,5
+LWLG,Lightwave Logic,AI网络_光互联_连接器,4.48,0,,X1_event_dislocations; X3_clinical_events,X1_event_dislocations; X3_clinical_events,5
+MTSI,MACOM Technology Solutions,AI网络_光互联_连接器,306.36,0,,,,5
+NOK,诺基亚,AI网络_光互联_连接器,9.90,0,,,,5
+POET,POET Technologies,AI网络_光互联_连接器,6.41,3,X1_event_dislocations:5; X2_AI供应链与短期盈利错价:19; X3_clinical_events:18,,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events,5
+SITM,SiTime Corporation,AI网络_光互联_连接器,570.07,0,,,,5
+SMTC,Semtech Corporation,AI网络_光互联_连接器,168.28,0,,,,5
+TEL,TE Connectivity,AI网络_光互联_连接器,217.28,0,,,,5
+VIAV,VIAVI Solutions,AI网络_光互联_连接器,41.75,0,,,,5
+VISN,Vistance Networks,AI网络_光互联_连接器,6.08,2,X1_event_dislocations:4; X5_reverse_valuation:1,,X1_event_dislocations; X5_reverse_valuation,5
+AJNMY,味之素 Ajinomoto,电子材料_化学品_基板_PCB,34.01,0,,,,5
+APD,Air Products and Chemicals,电子材料_化学品_基板_PCB,283.87,0,,,,5
+ASGLY,AGC Inc,电子材料_化学品_基板_PCB,7.43,0,,,,5
+AXTI,AXT Inc,电子材料_化学品_基板_PCB,61.98,0,,X2_AI供应链与短期盈利错价,X2_AI供应链与短期盈利错价,5
+CC,The Chemours Company,电子材料_化学品_基板_PCB,13.39,2,X1_event_dislocations:13; X5_reverse_valuation:7,,X1_event_dislocations; X5_reverse_valuation,5
+DD,DuPont de Nemours,电子材料_化学品_基板_PCB,129.37,0,,,,5
+DHR,Danaher Corporation,电子材料_化学品_基板_PCB,221.20,0,,,,5
+ENTG,Entegris,电子材料_化学品_基板_PCB,160.01,0,,,,5
+HOCPY,HOYA Corporation,电子材料_化学品_基板_PCB,157.16,0,,,,5
+LIN,Linde plc,电子材料_化学品_基板_PCB,487.35,0,,,,5
+MMM,3M,电子材料_化学品_基板_PCB,160.89,0,,,,5
+MTRN,Materion,电子材料_化学品_基板_PCB,270.15,0,,,,5
+PCRHY,Panasonic Holdings 松下控股,电子材料_化学品_基板_PCB,27.88,0,,,,5
+Q,Qnity Electronics,电子材料_化学品_基板_PCB,123.21,0,,,,5
+ROG,Rogers Corporation,电子材料_化学品_基板_PCB,145.84,0,,,,5
+SHECY,Shin-Etsu Chemical 信越化学,电子材料_化学品_基板_PCB,19.08,0,,,,5
+SMTOY,住友电工 Sumitomo Electric Industries,电子材料_化学品_基板_PCB,7.27,0,,,,5
+SOMMY,住友化学 Sumitomo Chemical,电子材料_化学品_基板_PCB,18.48,0,,,,5
+TTMI,TTM Technologies,电子材料_化学品_基板_PCB,110.33,1,X2_AI供应链与短期盈利错价:15,,X2_AI供应链与短期盈利错价,5
+ACLS,Axcelis Technologies,晶圆制造_前道设备,127.63,0,,X5_reverse_valuation,X5_reverse_valuation,5
+ACMR,ACM Research,晶圆制造_前道设备,68.10,3,X3_clinical_events:8; X4_space_energy_independent_round1:15; X5_reverse_valuation:18,X1_event_dislocations; X2_AI供应链与短期盈利错价,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+AEIS,Advanced Energy Industries,晶圆制造_前道设备,280.77,1,X2_AI供应链与短期盈利错价:16,,X2_AI供应链与短期盈利错价,5
+AMAT,Applied Materials,晶圆制造_前道设备,497.53,0,,,,5
+ASMIY,ASM International,晶圆制造_前道设备,978.26,0,,,,5
+ASML,ASML Holding NV,晶圆制造_前道设备,1750.24,0,,,,5
+DSCSY,DISCO,晶圆制造_前道设备,37.63,0,,,,5
+GFS,GlobalFoundries,晶圆制造_前道设备,48.34,0,,,,5
+ICHR,Ichor Holdings,晶圆制造_前道设备,54.38,0,,X5_reverse_valuation,X5_reverse_valuation,5
+KLAC,KLA Corporation,晶圆制造_前道设备,190.12,0,,,,5
+LRCX,Lam Research,晶圆制造_前道设备,309.56,0,,,,5
+MKSI,MKS Inc,晶圆制造_前道设备,249.91,0,,,,5
+NVMI,Nova Ltd,晶圆制造_前道设备,340.40,0,,,,5
+TOELY,Tokyo Electron,晶圆制造_前道设备,172.15,0,,,,5
+TSEM,Tower Semiconductor,晶圆制造_前道设备,216.50,0,,,,5
+TSM,台积电,晶圆制造_前道设备,444.35,0,,,,5
+UCTT,Ultra Clean Holdings,晶圆制造_前道设备,63.51,2,X2_AI供应链与短期盈利错价:17; X5_reverse_valuation:6,,X2_AI供应链与短期盈利错价; X5_reverse_valuation,5
+UMC,United Microelectronics 联华电子,晶圆制造_前道设备,22.55,0,,,,5
+VECO,Veeco Instruments,晶圆制造_前道设备,49.24,0,,,,5
+AEHR,Aehr Test Systems,封测_检测_计量_光罩,78.18,0,,,,5
+AMKR,Amkor Technology,封测_检测_计量_光罩,48.11,0,,,,5
+ASMVY,ASMPT,封测_检测_计量_光罩,60.70,0,,,,5
+ASX,ASE Technology Holding,封测_检测_计量_光罩,47.53,0,,,,5
+ATEYY,Advantest,封测_检测_计量_光罩,252.90,0,,,,5
+BESIY,BE Semiconductor,封测_检测_计量_光罩,195.59,0,,,,5
+CAMT,Camtek,封测_检测_计量_光罩,147.63,0,,,,5
+COHU,Cohu Inc,封测_检测_计量_光罩,65.21,0,,,,5
+FORM,FormFactor,封测_检测_计量_光罩,130.28,0,,,,5
+IMOS,ChipMOS Technologies 南茂科技,封测_检测_计量_光罩,75.19,0,,,,5
+KEYS,Keysight Technologies,封测_检测_计量_光罩,377.70,0,,,,5
+KLIC,Kulicke Soffa,封测_检测_计量_光罩,88.39,0,,,,5
+MICLF,Mycronic AB,封测_检测_计量_光罩,32.82,0,,,,5
+NDSN,Nordson,封测_检测_计量_光罩,330.44,0,,,,5
+ONTO,Onto Innovation,封测_检测_计量_光罩,273.74,0,,,,5
+PLAB,Photronics,封测_检测_计量_光罩,29.24,1,X3_clinical_events:20,X1_event_dislocations; X5_reverse_valuation,X1_event_dislocations; X3_clinical_events; X5_reverse_valuation,5
+TDY,Teledyne Technologies,封测_检测_计量_光罩,613.66,0,,,,5
+TER,Teradyne,封测_检测_计量_光罩,383.85,0,,,,5
+TMO,Thermo Fisher Scientific,封测_检测_计量_光罩,662.24,0,,,,5
+ADI,Analog Devices,功率半导体_电源管理_传感器,406.25,0,,,,5
+ALGM,Allegro MicroSystems,功率半导体_电源管理_传感器,33.79,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+AOSL,Alpha and Omega Semiconductor,功率半导体_电源管理_传感器,26.58,4,X1_event_dislocations:19; X3_clinical_events:6; X4_space_energy_independent_round1:16; X5_reverse_valuation:13,,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+DIOD,Diodes Incorporated,功率半导体_电源管理_传感器,90.62,0,,,,5
+IFNNY,Infineon Technologies AG 英飞凌科技,功率半导体_电源管理_传感器,63.74,0,,,,5
+LFUS,Littelfuse,功率半导体_电源管理_传感器,413.84,0,,,,5
+MPWR,Monolithic Power Systems,功率半导体_电源管理_传感器,1319.23,0,,,,5
+MRAAY,Murata Manufacturing,功率半导体_电源管理_传感器,24.63,0,,,,5
+NVTS,Navitas Semiconductor,功率半导体_电源管理_传感器,9.99,2,X1_event_dislocations:20; X4_space_energy_independent_round1:19,X2_AI供应链与短期盈利错价; X3_clinical_events,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1,5
+ON,onsemi,功率半导体_电源管理_传感器,76.00,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+POWI,Power Integrations,功率半导体_电源管理_传感器,47.11,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+ST,Sensata Technologies,功率半导体_电源管理_传感器,42.10,0,,,,5
+STM,STMicroelectronics,功率半导体_电源管理_传感器,50.48,0,,,,5
+TTDKY,TDK Corporation,功率半导体_电源管理_传感器,20.35,0,,,,5
+TXN,德州仪器,功率半导体_电源管理_传感器,281.74,0,,,,5
+VSH,Vishay Intertechnology,功率半导体_电源管理_传感器,32.03,0,,,,5
+WOLF,Wolfspeed,功率半导体_电源管理_传感器,28.03,2,X1_event_dislocations:16; X4_space_energy_independent_round1:11,X5_reverse_valuation,X1_event_dislocations; X4_space_energy_independent_round1; X5_reverse_valuation,5
+ABBNY,ABB Ltd,配电_电源系统_电气设备,95.54,0,,,,5
+ATKR,Atkore,配电_电源系统_电气设备,94.88,0,,X5_reverse_valuation,X5_reverse_valuation,5
+ETN,Eaton Corporation,配电_电源系统_电气设备,426.69,0,,,,5
+HUBB,Hubbell,配电_电源系统_电气设备,474.05,0,,,,5
+MIELY,三菱电机 Mitsubishi Electric,配电_电源系统_电气设备,64.38,0,,,,5
+NVT,nVent Electric,配电_电源系统_电气设备,162.78,0,,,,5
+POWL,Powell Industries,配电_电源系统_电气设备,185.38,0,,,,5
+SBGSY,Schneider Electric 施耐德,配电_电源系统_电气设备,58.69,0,,,,5
+VICR,Vicor Corporation,配电_电源系统_电气设备,259.40,0,,,,5
+AEP,American Electric Power,电力_发电_能源_储能,124.23,0,,,,5
+AMPX,Amprius Technologies,电力_发电_能源_储能,8.87,4,X1_event_dislocations:8; X3_clinical_events:4; X4_space_energy_independent_round1:2; X5_reverse_valuation:8,,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+BE,Bloom Energy,电力_发电_能源_储能,262.28,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+BWXT,BWX Technologies,电力_发电_能源_储能,139.92,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+CAT,Caterpillar Inc,电力_发电_能源_储能,799.37,0,,,,5
+CCJ,Cameco,电力_发电_能源_储能,86.12,0,,,,5
+CEG,Constellation Energy,电力_发电_能源_储能,293.89,0,,,,5
+CMI,Cummins Inc,电力_发电_能源_储能,527.86,0,,,,5
+DTE,DTE Energy Company,电力_发电_能源_储能,128.05,0,,,,5
+ENPH,Enphase Energy,电力_发电_能源_储能,31.49,5,X1_event_dislocations:12; X2_AI供应链与短期盈利错价:9; X3_clinical_events:10; X4_space_energy_independent_round1:1; X5_reverse_valuation:4,,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+ENS,EnerSys,电力_发电_能源_储能,178.25,0,,,,5
+ET,Energy Transfer LP,电力_发电_能源_储能,20.41,0,,,,5
+ETR,Entergy Corporation,电力_发电_能源_储能,103.99,0,,,,5
+FCEL,FuelCell Energy,电力_发电_能源_储能,16.37,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+FLNC,Fluence Energy,电力_发电_能源_储能,7.07,5,X1_event_dislocations:6; X2_AI供应链与短期盈利错价:10; X3_clinical_events:5; X4_space_energy_independent_round1:9; X5_reverse_valuation:14,,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+GEV,GE Vernova,电力_发电_能源_储能,996.80,0,,,,5
+GNRC,Generac Holdings,电力_发电_能源_储能,218.37,1,X4_space_energy_independent_round1:18,,X4_space_energy_independent_round1,5
+HTHIY,Hitachi Ltd,电力_发电_能源_储能,35.81,0,,,,5
+LEU,Centrus Energy,电力_发电_能源_储能,135.31,4,X1_event_dislocations:9; X3_clinical_events:15; X4_space_energy_independent_round1:4; X5_reverse_valuation:19,X2_AI供应链与短期盈利错价,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+OKLO,Oklo Inc,电力_发电_能源_储能,32.21,1,X4_space_energy_independent_round1:6,X1_event_dislocations; X3_clinical_events,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1,5
+PSIX,Power Solutions International,电力_发电_能源_储能,50.10,4,X1_event_dislocations:11; X2_AI供应链与短期盈利错价:18; X3_clinical_events:3; X4_space_energy_independent_round1:8,X5_reverse_valuation,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+RYCEY,Rolls-Royce Holdings,电力_发电_能源_储能,18.38,0,,,,5
+SMR,NuScale Power,电力_发电_能源_储能,6.70,0,,X1_event_dislocations; X4_space_energy_independent_round1,X1_event_dislocations; X4_space_energy_independent_round1,5
+TE,T1 Energy Inc,电力_发电_能源_储能,3.21,2,X1_event_dislocations:7; X4_space_energy_independent_round1:10,X3_clinical_events; X5_reverse_valuation,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+VST,Vistra Corp,电力_发电_能源_储能,158.13,0,,,,5
+AAON,AAON,热管理_流体_水处理,84.77,0,,,,5
+CARR,Carrier Global,热管理_流体_水处理,55.42,0,,,,5
+DCI,Donaldson Company,热管理_流体_水处理,86.47,0,,,,5
+DKILY,Daikin Industries,热管理_流体_水处理,13.30,0,,,,5
+DOV,Dover Corporation,热管理_流体_水处理,190.88,0,,,,5
+ECL,Ecolab,热管理_流体_水处理,284.30,0,,,,5
+ITT,ITT,热管理_流体_水处理,201.90,0,,,,5
+JCI,Johnson Controls,热管理_流体_水处理,155.41,0,,,,5
+MOD,Modine Manufacturing,热管理_流体_水处理,172.50,1,X2_AI供应链与短期盈利错价:13,,X2_AI供应链与短期盈利错价,5
+PH,Parker-Hannifin,热管理_流体_水处理,956.89,0,,,,5
+PNR,Pentair plc,热管理_流体_水处理,52.33,1,X5_reverse_valuation:9,,X5_reverse_valuation,5
+SPXC,SPX Technologies,热管理_流体_水处理,168.45,0,,,,5
+TT,Trane Technologies,热管理_流体_水处理,477.55,0,,,,5
+VRT,Vertiv,热管理_流体_水处理,239.36,0,,,,5
+EME,EMCOR Group,工程建设_机电安装,779.16,0,,,,5
+FIX,Comfort Systems USA,工程建设_机电安装,1638.05,0,,,,5
+IESC,IES Holdings,工程建设_机电安装,287.79,0,,,,5
+MYRG,MYR Group,工程建设_机电安装,313.18,0,,,,5
+PWR,Quanta Services,工程建设_机电安装,694.79,0,,,,5
+ALLE,Allegion plc,机器人_工业自动化_智能硬件,150.04,0,,,,5
+CGNX,Cognex,机器人_工业自动化_智能硬件,61.82,0,,,,5
+EMR,Emerson Electric,机器人_工业自动化_智能硬件,162.46,0,,,,5
+FANUY,FANUC 发那科,机器人_工业自动化_智能硬件,19.27,0,,,,5
+FTV,Fortive Corporation,机器人_工业自动化_智能硬件,57.37,0,,,,5
+MSI,Motorola Solutions,机器人_工业自动化_智能硬件,446.33,0,,,,5
+ROK,Rockwell Automation,机器人_工业自动化_智能硬件,433.97,0,,,,5
+SMCAY,SMC,机器人_工业自动化_智能硬件,23.13,0,,,,5
+SYM,Symbotic,机器人_工业自动化_智能硬件,40.78,0,,,,5
+TSLA,Tesla,机器人_工业自动化_智能硬件,378.03,0,,,,5
+YASKY,Yaskawa Electric 安川电机,机器人_工业自动化_智能硬件,62.35,0,,,,5
+ASTS,AST SpaceMobile,航空航天_卫星_高可靠系统,51.46,2,X1_event_dislocations:15; X4_space_energy_independent_round1:17,X2_AI供应链与短期盈利错价; X3_clinical_events; X5_reverse_valuation,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+CW,Curtiss-Wright,航空航天_卫星_高可靠系统,504.16,0,,,,5
+PL,Planet Labs,航空航天_卫星_高可靠系统,15.96,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+RDW,Redwire,航空航天_卫星_高可靠系统,9.22,4,X1_event_dislocations:10; X3_clinical_events:12; X4_space_energy_independent_round1:7; X5_reverse_valuation:20,,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+RKLB,Rocket Lab,航空航天_卫星_高可靠系统,65.71,0,,X4_space_energy_independent_round1,X4_space_energy_independent_round1,5
+SPCX,SpaceX,航空航天_卫星_高可靠系统,163.42,0,,,,5
+AMZN,Amazon,云算力_IDC_边缘云,259.53,0,,,,5
+APLD,Applied Digital,云算力_IDC_边缘云,23.25,2,X3_clinical_events:14; X4_space_energy_independent_round1:14,X1_event_dislocations; X2_AI供应链与短期盈利错价,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1,5
+BABA,Alibaba 阿里巴巴,云算力_IDC_边缘云,110.78,0,,X5_reverse_valuation,X5_reverse_valuation,5
+CRWV,CoreWeave,云算力_IDC_边缘云,80.26,1,X2_AI供应链与短期盈利错价:7,,X2_AI供应链与短期盈利错价,5
+DLR,Digital Realty,云算力_IDC_边缘云,180.16,0,,,,5
+EQIX,Equinix,云算力_IDC_边缘云,1032.60,0,,,,5
+GOOGL,Alphabet Inc,云算力_IDC_边缘云,352.72,0,,,,5
+IREN,IREN Limited,云算力_IDC_边缘云,34.80,4,X1_event_dislocations:3; X2_AI供应链与短期盈利错价:3; X3_clinical_events:13; X4_space_energy_independent_round1:13,,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1,5
+MSFT,微软,云算力_IDC_边缘云,541.15,0,,,,5
+NBIS,Nebius Group,云算力_IDC_边缘云,210.06,0,,X2_AI供应链与短期盈利错价,X2_AI供应链与短期盈利错价,5
+NET,Cloudflare,云算力_IDC_边缘云,350.87,0,,,,5
+ORCL,Oracle Corporation,云算力_IDC_边缘云,137.39,0,,,,5
+ADBE,Adobe,企业软件_数据平台,238.14,1,X5_reverse_valuation:10,X4_space_energy_independent_round1,X5_reverse_valuation,5
+CRM,Salesforce,企业软件_数据平台,233.92,0,,,,5
+DDOG,Datadog,企业软件_数据平台,287.29,0,,,,5
+DT,Dynatrace,企业软件_数据平台,65.25,0,,,,5
+IBM,International Business Machines,企业软件_数据平台,227.02,0,,,,5
+META,Meta Platforms,企业软件_数据平台,742.96,0,,,,5
+NOW,ServiceNow,企业软件_数据平台,140.32,0,,,,5
+NTNX,Nutanix,企业软件_数据平台,74.14,0,,,,5
+PLTR,Palantir Technologies,企业软件_数据平台,209.00,0,,,,5
+SNOW,Snowflake,企业软件_数据平台,360.37,0,,,,5
+CRWD,CrowdStrike,网络安全_身份权限_治理,263.01,0,,,,5
+PANW,Palo Alto Networks,网络安全_身份权限_治理,403.83,0,,,,5
+MRNA,Moderna 莫德纳,生物医药_核酸药物_免疫治疗,213.74,0,,X3_clinical_events,X3_clinical_events,5
+BNTX,BioNTech,生物医药_核酸药物_免疫治疗,95.84,4,X1_event_dislocations:18; X3_clinical_events:2; X4_space_energy_independent_round1:12; X5_reverse_valuation:12,,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+ALNY,Alnylam Pharmaceuticals,生物医药_核酸药物_免疫治疗,227.02,1,X1_event_dislocations:17,X3_clinical_events; X5_reverse_valuation,X1_event_dislocations; X3_clinical_events; X5_reverse_valuation,5
+IONS,Ionis Pharmaceuticals,生物医药_核酸药物_免疫治疗,43.67,2,X3_clinical_events:17; X5_reverse_valuation:16,X1_event_dislocations; X4_space_energy_independent_round1,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+ARGX,argenx,生物医药_核酸药物_免疫治疗,812.30,1,X3_clinical_events:16,,X3_clinical_events,5
+KYTX,Kyverna Therapeutics,生物医药_核酸药物_免疫治疗,6.21,5,X1_event_dislocations:2; X2_AI供应链与短期盈利错价:8; X3_clinical_events:1; X4_space_energy_independent_round1:3; X5_reverse_valuation:2,,X1_event_dislocations; X2_AI供应链与短期盈利错价; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+COST,Costco Wholesale 好市多,零售_会员制_食品_折扣渠道,959.44,0,,,,5
+WMT,Walmart 沃尔玛,零售_会员制_食品_折扣渠道,113.08,0,,,,5
+BJ,BJ's Wholesale Club Holdings,零售_会员制_食品_折扣渠道,99.80,0,,,,5
+KR,The Kroger Co. 克罗格,零售_会员制_食品_折扣渠道,62.56,0,,,,5
+TJX,The TJX Companies,零售_会员制_食品_折扣渠道,141.92,0,,,,5
+PGR,The Progressive Corporation,保险_财产险_特色险_再保险,220.28,0,,,,5
+TRV,The Travelers Companies,保险_财产险_特色险_再保险,371.68,0,,,,5
+CB,Chubb Limited,保险_财产险_特色险_再保险,345.06,0,,,,5
+WRB,W. R. Berkley Corporation,保险_财产险_特色险_再保险,72.90,0,,,,5
+RNR,RenaissanceRe Holdings,保险_财产险_特色险_再保险,338.87,0,,,,5
+AVAV,AeroVironment,航空航天_卫星_高可靠系统,131.51,4,X1_event_dislocations:14; X3_clinical_events:11; X4_space_energy_independent_round1:5; X5_reverse_valuation:17,,X1_event_dislocations; X3_clinical_events; X4_space_energy_independent_round1; X5_reverse_valuation,5
+KTOS,Kratos Defense & Security Solutions,航空航天_卫星_高可靠系统,41.62,0,,X3_clinical_events,X3_clinical_events; X4_space_energy_independent_round1,5
+DE,Deere & Company 迪尔,机器人_工业自动化_智能硬件,632.61,0,,,,5
+AGCO,AGCO Corporation,机器人_工业自动化_智能硬件,104.47,0,,,,5
+WM,Waste Management WM,环境服务_固废_回收_资源化,211.14,0,,,,5
+RSG,Republic Services,环境服务_固废_回收_资源化,219.75,0,,,,5
+WCN,Waste Connections,环境服务_固废_回收_资源化,153.71,0,,,,5
+CWST,Casella Waste Systems,环境服务_固废_回收_资源化,85.20,0,,,,5

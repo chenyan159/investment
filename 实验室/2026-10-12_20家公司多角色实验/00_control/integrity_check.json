@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-10-13T03:40:31.175690+00:00",
+  "input_files": 945,
+  "frozen_copy_failures": [],
+  "upstream_changes_since_freeze": [],
+  "sealed_blind_report_changes": [],
+  "scope_note": "Hashes prove the enumerated945 source files and five sealed blind reports stayed identical if all lists empty. This is not an OS-wide write audit; all task-controlled paths were restricted to the laboratory."
+}

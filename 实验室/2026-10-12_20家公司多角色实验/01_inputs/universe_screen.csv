@@ -1,0 +1,246 @@
+﻿ticker,name,category,price,price_date,market_cap,forward_pe,forward_eps,ps,currency,financial_currency,validation,company_md,scenario_md,comparison_md
+ALAB,AsteraLabs,AI计算芯片_EDA_IP_custom_ASIC,324.11,2026-10-12,$56.23B,50.69,6.39,46.78,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AMBA,Ambarella,AI计算芯片_EDA_IP_custom_ASIC,64.81,2026-10-12,$2.86B,57.84,1.12,6.85,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+AMD,Advanced Micro Devices,AI计算芯片_EDA_IP_custom_ASIC,594.24,2026-10-12,$970.08B,37.80,15.72,23.49,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ARM,Arm Holdings,AI计算芯片_EDA_IP_custom_ASIC,255.24,2026-10-12,$272.60B,83.34,3.06,52.87,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AVGO,Broadcom,AI计算芯片_EDA_IP_custom_ASIC,354.73,2026-10-12,$1.69T,18.29,19.39,19.00,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CBRS,Cerebras Systems Inc,AI计算芯片_EDA_IP_custom_ASIC,146.62,2026-10-12,$34.83B,115.12,1.27,51.17,USD,USD,市值:bad(53%); PE:missing; FwdPE:ok; P/S:ok,True,True,True
+CDNS,Cadence Design Systems,AI计算芯片_EDA_IP_custom_ASIC,348.42,2026-10-12,$96.10B,36.42,9.57,16.46,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+INTC,Intel Corporation 英特尔,AI计算芯片_EDA_IP_custom_ASIC,101.35,2026-10-12,$535.75B,48.66,2.08,9.39,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+MCHP,Microchip Technology,AI计算芯片_EDA_IP_custom_ASIC,73.83,2026-10-12,$40.09B,16.11,4.58,7.83,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MRVL,Marvell Technology,AI计算芯片_EDA_IP_custom_ASIC,265.86,2026-10-12,$238.93B,36.51,7.28,25.28,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MXL,MaxLinear,AI计算芯片_EDA_IP_custom_ASIC,88.99,2026-10-12,$8.07B,34.06,2.61,14.19,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+NVDA,NVIDIA,AI计算芯片_EDA_IP_custom_ASIC,226.32,2026-10-12,$5.46T,14.22,15.91,18.04,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+QCOM,Qualcomm,AI计算芯片_EDA_IP_custom_ASIC,174.43,2026-10-12,$186.26B,17.11,10.20,4.23,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SNPS,Synopsys,AI计算芯片_EDA_IP_custom_ASIC,502.51,2026-10-12,$96.30B,27.04,18.58,10.23,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CLS,Celestica Inc,AI服务器_存储_EMS,347.50,2026-10-12,$43.82B,17.68,19.65,2.81,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DELL,Dell Technologies,AI服务器_存储_EMS,576.76,2026-10-12,$366.71B,19.81,29.12,2.43,USD,USD,市值:bad(50%); PE:ok; FwdPE:ok; P/S:ok,True,True,True
+FLEX,Flex Ltd,AI服务器_存储_EMS,117.24,2026-10-12,$43.32B,16.61,7.06,1.48,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+FN,Fabrinet,AI服务器_存储_EMS,456.40,2026-10-12,$16.36B,20.95,21.79,3.52,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+HPE,惠普企业,AI服务器_存储_EMS,70.33,2026-10-12,$93.36B,14.94,4.71,2.23,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+JBL,Jabil Inc,AI服务器_存储_EMS,312.01,2026-10-12,$32.69B,14.07,22.17,0.91,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MRAM,Everspin Technologies,AI服务器_存储_EMS,15.28,2026-10-12,$372.07M,31.61,0.48,5.96,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+MU,Micron Technology 美光科技,AI服务器_存储_EMS,989.04,2026-10-12,$1.12T,4.79,206.33,8.40,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NTAP,NetApp,AI服务器_存储_EMS,239.18,2026-10-12,$46.98B,21.44,11.16,6.36,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+P,Everpure,AI服务器_存储_EMS,155.31,2026-10-12,$51.75B,36.92,4.21,12.14,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PENG,Penguin Solutions,AI服务器_存储_EMS,79.16,2026-10-12,$4.06B,15.06,5.26,2.34,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+RMBS,Rambus,AI服务器_存储_EMS,101.04,2026-10-12,$10.93B,26.78,3.77,14.45,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SANM,Sanmina Corporation,AI服务器_存储_EMS,213.74,2026-10-12,$11.46B,15.36,13.92,0.90,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SIMO,Silicon Motion Technology,AI服务器_存储_EMS,246.95,2026-10-12,$8.37B,15.56,15.87,6.37,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SKHY,SK hynix Inc,AI服务器_存储_EMS,162.23,2026-10-12,$1.15T,4.71,34.48,0.0061,USD,KRW,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+SMCI,Super Micro Computer Inc,AI服务器_存储_EMS,39.98,2026-10-12,$25.86B,7.51,5.33,0.66,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SNDK,SanDisk,AI服务器_存储_EMS,1487.33,2026-10-12,$214.96B,5.59,266.30,10.62,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+STX,Seagate Technology,AI服务器_存储_EMS,753.25,2026-10-12,$171.28B,13.35,56.42,14.05,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WDC,WesternDigital,AI服务器_存储_EMS,386.94,2026-10-12,$144.84B,11.76,32.91,11.21,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AAOI,Applied Optoelectronics,AI网络_光互联_连接器,100.68,2026-10-12,$8.55B,21.88,4.60,14.34,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+ANET,Arista Networks,AI网络_光互联_连接器,210.88,2026-10-12,$265.97B,40.42,5.22,25.23,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+APH,Amphenol 安费诺,AI网络_光互联_连接器,86.19,2026-10-12,$212.54B,25.88,3.33,7.33,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+BDC,Belden,AI网络_光互联_连接器,105.29,2026-10-12,$4.11B,10.49,10.03,1.44,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+BELFB,Bel Fuse Inc,AI网络_光互联_连接器,238.41,2026-10-12,$3.39B,22.25,10.71,4.56,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CIEN,Ciena Corporation,AI网络_光互联_连接器,405.01,2026-10-12,$57.43B,34.24,11.83,9.54,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+COHR,Coherent,AI网络_光互联_连接器,288.02,2026-10-12,$56.72B,20.51,14.05,7.97,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CRDO,Credo Technology Group,AI网络_光互联_连接器,200.84,2026-10-12,$37.75B,20.73,9.69,23.73,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CSCO,Cisco Systems,AI网络_光互联_连接器,115.34,2026-10-12,$454.74B,20.52,5.62,7.18,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+GLW,Corning,AI网络_光互联_连接器,147.28,2026-10-12,$126.61B,33.69,4.37,7.46,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+LITE,Lumentum,AI网络_光互联_连接器,995.41,2026-10-12,$90.17B,27.96,35.60,29.92,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+LWLG,Lightwave Logic,AI网络_光互联_连接器,4.48,2026-10-12,$690.67M,不适用(Forward EPS为负),-0.20,2759.91,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+MTSI,MACOM Technology Solutions,AI网络_光互联_连接器,306.36,2026-10-12,$23.40B,36.08,8.49,20.10,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NOK,诺基亚,AI网络_光互联_连接器,9.90,2026-10-12,$55.43B,20.51,0.48,2.72,USD,EUR,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+POET,POET Technologies,AI网络_光互联_连接器,6.41,2026-10-12,$1.11B,不适用(Forward EPS为负),-0.17,647.60,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+SITM,SiTime Corporation,AI网络_光互联_连接器,570.07,2026-10-12,$17.14B,38.21,14.92,36.64,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SMTC,Semtech Corporation,AI网络_光互联_连接器,168.28,2026-10-12,$15.70B,28.73,5.86,13.37,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TEL,TE Connectivity,AI网络_光互联_连接器,217.28,2026-10-12,$63.00B,16.76,12.97,3.26,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+VIAV,VIAVI Solutions,AI网络_光互联_连接器,41.75,2026-10-12,$10.27B,21.40,1.95,6.76,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+VISN,Vistance Networks,AI网络_光互联_连接器,6.08,2026-10-12,$1.40B,8.74,0.70,0.70,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AJNMY,味之素 Ajinomoto,电子材料_化学品_基板_PCB,34.01,2026-10-12,$32.37B,缺失,缺失,0.02,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+APD,Air Products and Chemicals,电子材料_化学品_基板_PCB,283.87,2026-10-12,$63.21B,19.66,14.44,5.02,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+ASGLY,AGC Inc,电子材料_化学品_基板_PCB,7.43,2026-10-12,$7.89B,缺失,缺失,0.0036,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+AXTI,AXT Inc,电子材料_化学品_基板_PCB,61.98,2026-10-12,$4.06B,27.55,2.25,32.38,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CC,The Chemours Company,电子材料_化学品_基板_PCB,13.39,2026-10-12,$2.02B,7.00,1.91,0.35,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+DD,DuPont de Nemours,电子材料_化学品_基板_PCB,129.37,2026-10-12,$17.47B,16.22,7.97,2.50,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DHR,Danaher Corporation,电子材料_化学品_基板_PCB,221.20,2026-10-12,$155.50B,23.79,9.30,6.19,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ENTG,Entegris,电子材料_化学品_基板_PCB,160.01,2026-10-12,$24.37B,31.81,5.03,7.33,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+HOCPY,HOYA Corporation,电子材料_化学品_基板_PCB,157.16,2026-10-12,$52.42B,36.72,4.28,0.05,USD,JPY,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+LIN,Linde plc,电子材料_化学品_基板_PCB,487.35,2026-10-12,$224.66B,24.90,19.58,6.34,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MMM,3M,电子材料_化学品_基板_PCB,160.89,2026-10-12,$82.97B,16.38,9.82,3.30,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MTRN,Materion,电子材料_化学品_基板_PCB,270.15,2026-10-12,$5.63B,32.03,8.43,2.68,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PCRHY,Panasonic Holdings 松下控股,电子材料_化学品_基板_PCB,27.88,2026-10-12,$65.10B,缺失,缺失,0.0080,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+Q,Qnity Electronics,电子材料_化学品_基板_PCB,123.21,2026-10-12,$25.79B,22.91,5.38,4.95,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ROG,Rogers Corporation,电子材料_化学品_基板_PCB,145.84,2026-10-12,$2.60B,32.05,4.55,3.12,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SHECY,Shin-Etsu Chemical 信越化学,电子材料_化学品_基板_PCB,19.08,2026-10-12,$69.29B,缺失,缺失,0.03,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+SMTOY,住友电工 Sumitomo Electric Industries,电子材料_化学品_基板_PCB,7.27,2026-10-12,$45.36B,缺失,缺失,0.0086,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+SOMMY,住友化学 Sumitomo Chemical,电子材料_化学品_基板_PCB,18.48,2026-10-09,$6.11B,缺失,缺失,0.0026,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+TTMI,TTM Technologies,电子材料_化学品_基板_PCB,110.33,2026-10-12,$11.62B,15.73,7.02,3.44,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ACLS,Axcelis Technologies,晶圆制造_前道设备,127.63,2026-10-12,$3.94B,24.23,5.27,4.55,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ACMR,ACM Research,晶圆制造_前道设备,68.10,2026-10-12,$4.74B,23.16,2.94,4.57,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AEIS,Advanced Energy Industries,晶圆制造_前道设备,280.77,2026-10-12,$11.24B,18.19,15.43,5.52,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AMAT,Applied Materials,晶圆制造_前道设备,497.53,2026-10-12,$394.84B,26.92,18.48,12.80,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ASMIY,ASM International,晶圆制造_前道设备,978.26,2026-10-12,$47.76B,24.61,39.75,14.20,USD,EUR,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+ASML,ASML Holding NV,晶圆制造_前道设备,1750.24,2026-10-12,$672.27B,29.93,58.48,19.03,USD,EUR,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+DSCSY,DISCO,晶圆制造_前道设备,37.63,2026-10-12,$40.82B,缺失,缺失,0.09,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+GFS,GlobalFoundries,晶圆制造_前道设备,48.34,2026-10-12,$26.95B,18.37,2.63,3.88,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ICHR,Ichor Holdings,晶圆制造_前道设备,54.38,2026-10-12,$2.04B,16.55,3.29,2.01,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+KLAC,KLA Corporation,晶圆制造_前道设备,190.12,2026-10-12,$248.11B,28.21,6.74,18.27,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+LRCX,Lam Research,晶圆制造_前道设备,309.56,2026-10-12,$387.39B,26.31,11.76,16.67,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MKSI,MKS Inc,晶圆制造_前道设备,249.91,2026-10-12,$16.90B,14.24,17.55,3.89,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NVMI,Nova Ltd,晶圆制造_前道设备,340.40,2026-10-12,$10.83B,24.92,13.66,11.55,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TOELY,Tokyo Electron,晶圆制造_前道设备,172.15,2026-10-12,$156.41B,缺失,缺失,0.06,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+TSEM,Tower Semiconductor,晶圆制造_前道设备,216.50,2026-10-12,$24.47B,32.26,6.71,14.31,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TSM,台积电,晶圆制造_前道设备,444.35,2026-10-12,$2.30T,20.27,21.93,0.52,USD,TWD,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+UCTT,Ultra Clean Holdings,晶圆制造_前道设备,63.51,2026-10-12,$2.85B,10.17,6.24,1.30,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+UMC,United Microelectronics 联华电子,晶圆制造_前道设备,22.55,2026-10-12,$56.55B,25.68,0.88,0.23,USD,TWD,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+VECO,Veeco Instruments,晶圆制造_前道设备,49.24,2026-10-12,$3.01B,16.95,2.91,4.41,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AEHR,Aehr Test Systems,封测_检测_计量_光罩,78.18,2026-10-12,$2.55B,56.52,1.38,51.07,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+AMKR,Amkor Technology,封测_检测_计量_光罩,48.11,2026-10-12,$11.93B,17.14,2.81,1.60,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ASMVY,ASMPT,封测_检测_计量_光罩,60.70,2026-10-12,$8.49B,缺失,缺失,0.52,USD,HKD,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+ASX,ASE Technology Holding,封测_检测_计量_光罩,47.53,2026-10-12,$104.51B,24.33,1.95,0.15,USD,TWD,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+ATEYY,Advantest,封测_检测_计量_光罩,252.90,2026-10-12,$182.58B,缺失,缺失,0.15,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+BESIY,BE Semiconductor,封测_检测_计量_光罩,195.59,2026-10-12,$15.47B,缺失,缺失,21.09,USD,EUR,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+CAMT,Camtek,封测_检测_计量_光罩,147.63,2026-10-12,$6.89B,30.83,4.79,13.80,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+COHU,Cohu Inc,封测_检测_计量_光罩,65.21,2026-10-12,$3.09B,35.32,1.85,5.91,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+FORM,FormFactor,封测_检测_计量_光罩,130.28,2026-10-12,$10.16B,34.40,3.79,11.26,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IMOS,ChipMOS Technologies 南茂科技,封测_检测_计量_光罩,75.19,2026-10-12,$2.61B,74.45,1.01,0.10,USD,TWD,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+KEYS,Keysight Technologies,封测_检测_计量_光罩,377.70,2026-10-12,$64.30B,27.11,13.93,9.77,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+KLIC,Kulicke Soffa,封测_检测_计量_光罩,88.39,2026-10-12,$4.63B,14.97,5.90,4.87,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MICLF,Mycronic AB,封测_检测_计量_光罩,32.82,2026-10-09,$6.41B,缺失,缺失,缺失,USD,SEK,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+NDSN,Nordson,封测_检测_计量_光罩,330.44,2026-10-12,$18.41B,25.45,12.98,6.18,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ONTO,Onto Innovation,封测_检测_计量_光罩,273.74,2026-10-12,$13.43B,23.40,11.70,11.99,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PLAB,Photronics,封测_检测_计量_光罩,29.24,2026-10-12,$1.73B,14.08,2.08,1.99,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TDY,Teledyne Technologies,封测_检测_计量_光罩,613.66,2026-10-12,$28.43B,22.91,26.79,4.46,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TER,Teradyne,封测_检测_计量_光罩,383.85,2026-10-12,$60.01B,32.94,11.65,13.44,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TMO,Thermo Fisher Scientific,封测_检测_计量_光罩,662.24,2026-10-12,$244.86B,24.02,27.58,5.28,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ADI,Analog Devices,功率半导体_电源管理_传感器,406.25,2026-10-12,$196.85B,24.85,16.35,14.18,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ALGM,Allegro MicroSystems,功率半导体_电源管理_传感器,33.79,2026-10-12,$6.30B,22.85,1.48,6.66,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AOSL,Alpha and Omega Semiconductor,功率半导体_电源管理_传感器,26.58,2026-10-12,$805.51M,84.38,0.32,1.19,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+DIOD,Diodes Incorporated,功率半导体_电源管理_传感器,90.62,2026-10-12,$4.17B,15.54,5.83,2.55,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IFNNY,Infineon Technologies AG 英飞凌科技,功率半导体_电源管理_传感器,63.74,2026-10-12,$82.83B,18.59,3.43,5.31,USD,EUR,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+LFUS,Littelfuse,功率半导体_电源管理_传感器,413.84,2026-10-12,$10.51B,20.52,20.17,4.02,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+MPWR,Monolithic Power Systems,功率半导体_电源管理_传感器,1319.23,2026-10-12,$64.83B,37.72,34.98,19.81,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MRAAY,Murata Manufacturing,功率半导体_电源管理_传感器,24.63,2026-10-12,$89.16B,缺失,缺失,0.05,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+NVTS,Navitas Semiconductor,功率半导体_电源管理_传感器,9.99,2026-10-12,$2.62B,不适用(Forward EPS为负),-0.13,71.79,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+ON,onsemi,功率半导体_电源管理_传感器,76.00,2026-10-12,$29.59B,16.78,4.53,4.77,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+POWI,Power Integrations,功率半导体_电源管理_传感器,47.11,2026-10-12,$2.63B,25.15,1.87,5.86,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ST,Sensata Technologies,功率半导体_电源管理_传感器,42.10,2026-10-12,$6.13B,10.31,4.09,1.62,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+STM,STMicroelectronics,功率半导体_电源管理_传感器,50.48,2026-10-12,$45.21B,19.87,2.54,3.45,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TTDKY,TDK Corporation,功率半导体_电源管理_传感器,20.35,2026-10-12,$38.63B,26.43,0.77,0.01,USD,JPY,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+TXN,德州仪器,功率半导体_电源管理_传感器,281.74,2026-10-12,$257.30B,26.47,10.64,13.23,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+VSH,Vishay Intertechnology,功率半导体_电源管理_传感器,32.03,2026-10-12,$4.91B,18.39,1.74,1.48,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WOLF,Wolfspeed,功率半导体_电源管理_传感器,28.03,2026-10-12,$1.48B,不适用(Forward EPS为负),-5.83,2.23,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+ABBNY,ABB Ltd,配电_电源系统_电气设备,95.54,2026-10-12,$172.84B,26.13,3.66,4.83,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ATKR,Atkore,配电_电源系统_电气设备,94.88,2026-10-12,$3.20B,14.84,6.39,1.09,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+ETN,Eaton Corporation,配电_电源系统_电气设备,426.69,2026-10-12,$165.68B,26.26,16.25,5.52,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+HUBB,Hubbell,配电_电源系统_电气设备,474.05,2026-10-12,$25.05B,20.64,22.96,4.02,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MIELY,三菱电机 Mitsubishi Electric,配电_电源系统_电气设备,64.38,2026-10-12,$65.87B,缺失,缺失,0.01,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+NVT,nVent Electric,配电_电源系统_电气设备,162.78,2026-10-12,$26.35B,23.77,6.85,5.45,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+POWL,Powell Industries,配电_电源系统_电气设备,185.38,2026-10-12,$6.75B,26.52,6.99,5.83,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SBGSY,Schneider Electric 施耐德,配电_电源系统_电气设备,58.69,2026-10-12,$165.30B,20.93,2.80,3.93,USD,EUR,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+VICR,Vicor Corporation,配电_电源系统_电气设备,259.40,2026-10-12,$11.96B,42.39,6.12,25.23,USD,USD,市值:warn(25%); PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AEP,American Electric Power,电力_发电_能源_储能,124.23,2026-10-12,$67.63B,18.12,6.86,2.97,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AMPX,Amprius Technologies,电力_发电_能源_储能,8.87,2026-10-12,$1.30B,88.70,0.10,11.86,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+BE,Bloom Energy,电力_发电_能源_储能,262.28,2026-10-12,$77.25B,53.07,4.94,24.81,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+BWXT,BWX Technologies,电力_发电_能源_储能,139.92,2026-10-12,$12.82B,26.75,5.23,3.65,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CAT,Caterpillar Inc,电力_发电_能源_储能,799.37,2026-10-12,$367.45B,24.66,32.42,4.92,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CCJ,Cameco,电力_发电_能源_储能,86.12,2026-10-12,$37.51B,47.46,1.81,10.79,USD,CAD,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+CEG,Constellation Energy,电力_发电_能源_储能,293.89,2026-10-12,$104.13B,22.06,13.32,3.33,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CMI,Cummins Inc,电力_发电_能源_储能,527.86,2026-10-12,$72.84B,15.17,34.80,2.10,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DTE,DTE Energy Company,电力_发电_能源_储能,128.05,2026-10-12,$26.65B,15.31,8.36,1.62,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ENPH,Enphase Energy,电力_发电_能源_储能,31.49,2026-10-12,$4.15B,14.41,2.19,3.12,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ENS,EnerSys,电力_发电_能源_储能,178.25,2026-10-12,$6.43B,12.40,14.38,1.69,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ET,Energy Transfer LP,电力_发电_能源_储能,20.41,2026-10-12,$70.28B,11.70,1.74,0.65,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ETR,Entergy Corporation,电力_发电_能源_储能,103.99,2026-10-12,$49.68B,20.37,5.10,3.69,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+FCEL,FuelCell Energy,电力_发电_能源_储能,16.37,2026-10-12,$1.31B,不适用(Forward EPS为负),-1.02,8.49,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+FLNC,Fluence Energy,电力_发电_能源_储能,7.07,2026-10-12,$1.38B,不适用(Forward EPS为负),-0.27,0.52,USD,USD,市值:warn(26%); PE:missing; FwdPE:missing; P/S:ok,True,True,True
+GEV,GE Vernova,电力_发电_能源_储能,996.80,2026-10-12,$265.48B,39.45,25.27,6.42,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+GNRC,Generac Holdings,电力_发电_能源_储能,218.37,2026-10-12,$12.90B,16.84,12.97,2.91,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+HTHIY,Hitachi Ltd,电力_发电_能源_储能,35.81,2026-10-12,$159.91B,14.44,2.48,0.01,USD,JPY,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+LEU,Centrus Energy,电力_发电_能源_储能,135.31,2026-10-12,$2.77B,35.40,3.82,5.84,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+OKLO,Oklo Inc,电力_发电_能源_储能,32.21,2026-10-12,$5.99B,不适用(Forward EPS为负),-1.08,4951.76,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+PSIX,Power Solutions International,电力_发电_能源_储能,50.10,2026-10-12,$1.16B,15.37,3.26,1.71,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+RYCEY,Rolls-Royce Holdings,电力_发电_能源_储能,18.38,2026-10-12,$151.17B,29.05,0.63,6.53,USD,GBP,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+SMR,NuScale Power,电力_发电_能源_储能,6.70,2026-10-12,$2.75B,不适用(Forward EPS为负),-0.66,257.21,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+TE,T1 Energy Inc,电力_发电_能源_储能,3.21,2026-10-12,$961.39M,26.85,0.12,0.96,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+VST,Vistra Corp,电力_发电_能源_储能,158.13,2026-10-12,$53.07B,15.18,10.42,2.76,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AAON,AAON,热管理_流体_水处理,84.77,2026-10-12,$6.99B,23.76,3.57,3.62,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CARR,Carrier Global,热管理_流体_水处理,55.42,2026-10-12,$46.03B,16.80,3.30,2.08,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DCI,Donaldson Company,热管理_流体_水处理,86.47,2026-10-12,$10.02B,17.81,4.86,2.58,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DKILY,Daikin Industries,热管理_流体_水处理,13.30,2026-10-12,$37.02B,缺失,缺失,0.0071,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+DOV,Dover Corporation,热管理_流体_水处理,190.88,2026-10-12,$25.71B,16.41,11.63,3.05,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ECL,Ecolab,热管理_流体_水处理,284.30,2026-10-12,$79.70B,30.22,9.41,4.73,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ITT,ITT,热管理_流体_水处理,201.90,2026-10-12,$18.14B,21.01,9.61,3.83,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+JCI,Johnson Controls,热管理_流体_水处理,155.41,2026-10-12,$94.14B,25.46,6.10,3.77,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MOD,Modine Manufacturing,热管理_流体_水处理,172.50,2026-10-12,$9.16B,16.99,10.15,2.72,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PH,Parker-Hannifin,热管理_流体_水处理,956.89,2026-10-12,$120.68B,24.13,39.65,5.61,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PNR,Pentair plc,热管理_流体_水处理,52.33,2026-10-12,$8.46B,10.02,5.22,2.11,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SPXC,SPX Technologies,热管理_流体_水处理,168.45,2026-10-12,$8.44B,17.28,9.75,3.41,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TT,Trane Technologies,热管理_流体_水处理,477.55,2026-10-12,$105.07B,27.13,17.60,4.73,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+VRT,Vertiv,热管理_流体_水处理,239.36,2026-10-12,$92.15B,26.08,9.18,8.03,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+EME,EMCOR Group,工程建设_机电安装,779.16,2026-10-12,$34.37B,21.20,36.75,1.85,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+FIX,Comfort Systems USA,工程建设_机电安装,1638.05,2026-10-12,$57.65B,27.22,60.18,5.13,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IESC,IES Holdings,工程建设_机电安装,287.79,2026-10-12,$12.20B,缺失,缺失,3.06,USD,USD,市值:ok; PE:ok; FwdPE:missing; P/S:ok,True,True,True
+MYRG,MYR Group,工程建设_机电安装,313.18,2026-10-12,$4.88B,21.48,14.58,1.22,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PWR,Quanta Services,工程建设_机电安装,694.79,2026-10-12,$104.46B,35.14,19.77,3.17,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ALLE,Allegion plc,机器人_工业自动化_智能硬件,150.04,2026-10-12,$12.76B,15.33,9.79,2.98,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CGNX,Cognex,机器人_工业自动化_智能硬件,61.82,2026-10-12,$10.40B,30.49,2.03,9.55,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+EMR,Emerson Electric,机器人_工业自动化_智能硬件,162.46,2026-10-12,$90.99B,22.35,7.27,4.88,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+FANUY,FANUC 发那科,机器人_工业自动化_智能硬件,19.27,2026-10-12,$35.65B,28.76,0.67,0.04,USD,JPY,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+FTV,Fortive Corporation,机器人_工业自动化_智能硬件,57.37,2026-10-12,$17.49B,17.64,3.25,4.05,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MSI,Motorola Solutions,机器人_工业自动化_智能硬件,446.33,2026-10-12,$73.86B,22.97,19.43,6.04,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ROK,Rockwell Automation,机器人_工业自动化_智能硬件,433.97,2026-10-12,$48.19B,29.10,14.91,5.37,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SMCAY,SMC,机器人_工业自动化_智能硬件,23.13,2026-10-12,$28.87B,缺失,缺失,0.03,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+SYM,Symbotic,机器人_工业自动化_智能硬件,40.78,2026-10-12,$24.69B,52.85,0.77,9.33,USD,USD,市值:bad(79%); PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TSLA,Tesla,机器人_工业自动化_智能硬件,378.03,2026-10-12,$1.49T,173.21,2.18,14.41,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+YASKY,Yaskawa Electric 安川电机,机器人_工业自动化_智能硬件,62.35,2026-10-12,$8.09B,缺失,缺失,0.01,USD,JPY,市值:ok; PE:ok; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+ASTS,AST SpaceMobile,航空航天_卫星_高可靠系统,51.46,2026-10-12,$20.03B,不适用(Forward EPS为负),-1.29,173.69,USD,USD,市值:warn(23%); PE:missing; FwdPE:missing; P/S:ok,True,True,True
+CW,Curtiss-Wright,航空航天_卫星_高可靠系统,504.16,2026-10-12,$18.62B,29.38,17.16,5.10,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PL,Planet Labs,航空航天_卫星_高可靠系统,15.96,2026-10-12,$5.81B,不适用(Forward EPS为负),-0.0013,15.35,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+RDW,Redwire,航空航天_卫星_高可靠系统,9.22,2026-10-12,$2.30B,不适用(Forward EPS为负),-0.34,5.41,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+RKLB,Rocket Lab,航空航天_卫星_高可靠系统,65.71,2026-10-12,$42.02B,1116.00,0.06,54.63,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+SPCX,SpaceX,航空航天_卫星_高可靠系统,163.42,2026-10-12,$2.15T,82.16,1.99,93.43,USD,USD,市值:warn(43%); PE:missing; FwdPE:ok; P/S:ok,True,True,True
+AMZN,Amazon,云算力_IDC_边缘云,259.53,2026-10-12,$2.80T,24.80,10.47,3.61,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+APLD,Applied Digital,云算力_IDC_边缘云,23.25,2026-10-12,$7.03B,不适用(Forward EPS为负),-0.78,8.06,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+BABA,Alibaba 阿里巴巴,云算力_IDC_边缘云,110.78,2026-10-12,$275.59B,11.93,9.29,0.26,USD,CNY,市值:ok; PE:ok; FwdPE:ok; P/S:bad(currency_mismatch),True,True,True
+CRWV,CoreWeave,云算力_IDC_边缘云,80.26,2026-10-12,$44.27B,不适用(Forward EPS为负),-1.83,5.83,USD,USD,市值:warn(17%); PE:missing; FwdPE:missing; P/S:ok,True,True,True
+DLR,Digital Realty,云算力_IDC_边缘云,180.16,2026-10-12,$68.04B,65.23,2.76,10.07,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+EQIX,Equinix,云算力_IDC_边缘云,1032.60,2026-10-12,$101.89B,55.73,18.53,10.29,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+GOOGL,Alphabet Inc,云算力_IDC_边缘云,352.72,2026-10-12,$4.31T,23.19,15.21,9.67,USD,USD,市值:bad(52%); PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IREN,IREN Limited,云算力_IDC_边缘云,34.80,2026-10-12,$13.71B,不适用(Forward EPS为负),-3.98,19.40,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+MSFT,微软,云算力_IDC_边缘云,541.15,2026-10-12,$4.02T,22.86,23.68,12.11,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NBIS,Nebius Group,云算力_IDC_边缘云,210.06,2026-10-12,$53.33B,不适用(Forward EPS为负),-3.56,39.36,USD,USD,市值:ok; PE:ok; FwdPE:missing; P/S:ok,True,True,True
+NET,Cloudflare,云算力_IDC_边缘云,350.87,2026-10-12,$124.94B,209.33,1.68,49.73,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+ORCL,Oracle Corporation,云算力_IDC_边缘云,137.39,2026-10-12,$416.50B,12.49,11.00,5.80,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+ADBE,Adobe,企业软件_数据平台,238.14,2026-10-12,$92.68B,8.61,27.67,3.57,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CRM,Salesforce,企业软件_数据平台,233.92,2026-10-12,$192.52B,14.60,16.02,4.38,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DDOG,Datadog,企业软件_数据平台,287.29,2026-10-12,$103.16B,96.59,2.97,26.01,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DT,Dynatrace,企业软件_数据平台,65.25,2026-10-12,$18.86B,30.09,2.17,9.00,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IBM,International Business Machines,企业软件_数据平台,227.02,2026-10-12,$213.88B,17.26,13.15,3.10,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+META,Meta Platforms,企业软件_数据平台,742.96,2026-10-12,$1.89T,21.51,34.55,8.29,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NOW,ServiceNow,企业软件_数据平台,140.32,2026-10-12,$145.07B,28.03,5.01,9.85,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+NTNX,Nutanix,企业软件_数据平台,74.14,2026-10-12,$20.06B,27.74,2.67,7.03,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PLTR,Palantir Technologies,企业软件_数据平台,209.00,2026-10-12,$502.24B,89.16,2.34,81.59,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+SNOW,Snowflake,企业软件_数据平台,360.37,2026-10-12,$127.14B,119.92,3.01,23.39,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+CRWD,CrowdStrike,网络安全_身份权限_治理,263.01,2026-10-12,$269.31B,163.78,1.61,49.91,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PANW,Palo Alto Networks,网络安全_身份权限_治理,403.83,2026-10-12,$330.33B,82.77,4.88,28.77,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+MRNA,Moderna 莫德纳,生物医药_核酸药物_免疫治疗,213.74,2026-10-12,$85.33B,不适用(Forward EPS为负),-4.44,38.30,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+BNTX,BioNTech,生物医药_核酸药物_免疫治疗,95.84,2026-10-12,$24.08B,不适用(Forward EPS为负),-5.48,9.09,USD,EUR,市值:ok; PE:missing; FwdPE:missing; P/S:bad(currency_mismatch),True,True,True
+ALNY,Alnylam Pharmaceuticals,生物医药_核酸药物_免疫治疗,227.02,2026-10-12,$30.38B,18.28,12.42,6.32,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+IONS,Ionis Pharmaceuticals,生物医药_核酸药物_免疫治疗,43.67,2026-10-12,$7.26B,不适用(Forward EPS为负),-1.11,8.30,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:ok,True,True,True
+ARGX,argenx,生物医药_核酸药物_免疫治疗,812.30,2026-10-12,$51.08B,22.82,35.59,9.61,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+KYTX,Kyverna Therapeutics,生物医药_核酸药物_免疫治疗,6.21,2026-10-12,$384.05M,不适用(Forward EPS为负),-3.17,缺失,USD,USD,市值:ok; PE:missing; FwdPE:missing; P/S:missing,True,True,True
+COST,Costco Wholesale 好市多,零售_会员制_食品_折扣渠道,959.44,2026-10-12,$425.16B,38.38,25.00,1.40,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WMT,Walmart 沃尔玛,零售_会员制_食品_折扣渠道,113.08,2026-10-12,$897.15B,35.08,3.22,1.22,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+BJ,BJ's Wholesale Club Holdings,零售_会员制_食品_折扣渠道,99.80,2026-10-12,$12.61B,19.86,5.03,0.55,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+KR,The Kroger Co. 克罗格,零售_会员制_食品_折扣渠道,62.56,2026-10-12,$36.95B,11.37,5.50,0.25,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TJX,The TJX Companies,零售_会员制_食品_折扣渠道,141.92,2026-10-12,$156.78B,24.58,5.77,2.51,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+PGR,The Progressive Corporation,保险_财产险_特色险_再保险,220.28,2026-10-12,$127.85B,13.46,16.37,1.40,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+TRV,The Travelers Companies,保险_财产险_特色险_再保险,371.68,2026-10-12,$77.52B,12.20,30.48,1.58,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CB,Chubb Limited,保险_财产险_特色险_再保险,345.06,2026-10-12,$133.12B,11.80,29.24,2.15,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WRB,W. R. Berkley Corporation,保险_财产险_特色险_再保险,72.90,2026-10-12,$27.06B,14.92,4.89,1.82,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+RNR,RenaissanceRe Holdings,保险_财产险_特色险_再保险,338.87,2026-10-12,$14.08B,8.15,41.57,1.26,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AVAV,AeroVironment,航空航天_卫星_高可靠系统,131.51,2026-10-12,$6.68B,29.64,4.44,3.34,USD,USD,市值:ok; PE:missing; FwdPE:ok; P/S:ok,True,True,True
+KTOS,Kratos Defense & Security Solutions,航空航天_卫星_高可靠系统,41.62,2026-10-12,$7.80B,37.30,1.12,5.13,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+DE,Deere & Company 迪尔,机器人_工业自动化_智能硬件,632.61,2026-10-12,$170.57B,27.78,22.77,3.56,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+AGCO,AGCO Corporation,机器人_工业自动化_智能硬件,104.47,2026-10-12,$7.32B,14.01,7.45,0.71,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WM,Waste Management WM,环境服务_固废_回收_资源化,211.14,2026-10-12,$84.40B,23.24,9.08,3.29,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+RSG,Republic Services,环境服务_固废_回收_资源化,219.75,2026-10-12,$67.29B,27.26,8.06,3.98,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+WCN,Waste Connections,环境服务_固废_回收_资源化,153.71,2026-10-12,$38.67B,24.77,6.20,3.96,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True
+CWST,Casella Waste Systems,环境服务_固废_回收_资源化,85.20,2026-10-12,$5.42B,59.33,1.44,2.77,USD,USD,市值:ok; PE:ok; FwdPE:ok; P/S:ok,True,True,True

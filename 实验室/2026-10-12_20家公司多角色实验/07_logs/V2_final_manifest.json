@@ -1,0 +1,39 @@
+{
+  "status": "V2 resealed after BNTX rights correction; KYTX semantic clarification only; other28 scenario models unchanged",
+  "sealed_utc": "2026-10-13T03:38:17.7702678Z",
+  "prior_manifest": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_final_manifest.json",
+  "files": [
+    {
+      "file": "04_verification\\V2_models.json",
+      "sha256": "53BF75813A86F394B435110BB6F02567A16DF4C80502388ECE5AA50A5A4D6448"
+    },
+    {
+      "file": "04_verification\\V2_numeric_verification.json",
+      "sha256": "573D240F839CF2E4476A5D9488AF89BB772950696E2C03EB637F129A697A2ECE"
+    },
+    {
+      "file": "04_verification\\V2_numeric_verification.md",
+      "sha256": "6804AA17B1482EEDB5BE57B89161D0FFA368EA2E0DE4630F406E1734635593CF"
+    },
+    {
+      "file": "04_verification\\V2_calculation_audit.json",
+      "sha256": "CA47CF5C2B5AB2BFCD5AE851F5C0BC04450F72694D972B6D795FE5B9EA28452B"
+    },
+    {
+      "file": "04_verification\\V2_BNTX_rights_correction.json",
+      "sha256": "F81C298E44406EDE1140CEF55A3CC0B6698181F390C818F19AB55B1EECDD2E41"
+    },
+    {
+      "file": "04_verification\\V2_BNTX_rights_correction.md",
+      "sha256": "F7834A1B34934EA3D7C2E2414765F71171C4D381FA188C1A93CBFE8B2CD80A57"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "sha256": "A93DD51881149B4FB042AC8B884AE63EC87F7E4B50E77740F0C8E8A9CCBE2017"
+    },
+    {
+      "file": "scripts\\V2_recalculate.py",
+      "sha256": "0CCF9CC2A2182CBC349ED127AD62BCE228A572F2379FF2BBA292EB2E9246AE09"
+    }
+  ]
+}

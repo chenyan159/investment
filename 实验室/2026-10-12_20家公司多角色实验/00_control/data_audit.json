@@ -1,0 +1,32 @@
+{
+  "all_companies": 245,
+  "flags": {
+    "adr_ratio_unconfirmed_in_snapshot": 30,
+    "share_class_or_cap_mismatch": 18,
+    "cross_currency_ps_unusable_without_fx": 35,
+    "no_positive_forward_eps": 37,
+    "stale_price": 2
+  },
+  "future_dated_filenames": [],
+  "mismatched_cap_tickers": [
+    "CBRS",
+    "DELL",
+    "BELFB",
+    "ACMR",
+    "VSH",
+    "VICR",
+    "FLNC",
+    "SYM",
+    "ASTS",
+    "PL",
+    "RKLB",
+    "SPCX",
+    "CRWV",
+    "GOOGL",
+    "NBIS",
+    "NET",
+    "DDOG",
+    "META"
+  ],
+  "note": "仅检验数据源内部算术一致性。不能证明底层EPS、预测、股数、FX或市值经济口径正确。多股权公司市值差异不自动判为错误。"
+}

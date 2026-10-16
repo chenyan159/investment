@@ -1,0 +1,131 @@
+{
+  "ticker": "TJX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:01:15-07:00",
+  "reference_price": {
+    "value": 138.76,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-01",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        137.5,
+        137.5
+      ],
+      "target_price": [
+        87.4,
+        102.4
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        192.5,
+        192.5
+      ],
+      "target_price": [
+        156.7,
+        178.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        219.8,
+        219.8
+      ],
+      "target_price": [
+        186.9,
+        211.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        247.7,
+        247.7
+      ],
+      "target_price": [
+        219.8,
+        247.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在共同买价下TJX基准回报、现金资本负担和左尾更优；WMT平台化右尾不改变常规配置优先TJX的裁决。"
+    },
+    {
+      "peer": "COST",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现价注重估值缓冲与回报优先TJX；愿支付高倍数换会员复购确定性则优先COST。"
+    },
+    {
+      "peer": "BJ",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "零售成长资金在现价优先BJ，其基准和右尾更高；代价是新地区验证与现金转换弱于TJX，非全维度压制。"
+    },
+    {
+      "peer": "KR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "接受食品量、真实现金及拟议并购修复条件优先KR；要求成熟净现金与采购确定性则优先TJX。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "云与广告成长资金且接受AI资本回报风险优先AMZN；重视现金自给和较小经营左尾则优先TJX。"
+    },
+    {
+      "peer": "BABA",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "接受中国政策、VIE、汇率及负自由现金投入风险的进攻资金优先BABA；美元现金确定性底仓优先TJX。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "常规配置优先TJX的基准赔率和现金韧性；SYM客户、验收与项目资金风险高，且没有确认其为TJX直接供应商。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "允许AI资本风险的成长核心资金优先MSFT，其内生每股增长与基准年化更高；不代表资本保全全面胜过TJX。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "工业长约可预测性优先LIN；更轻资本的零售复利与现价回报优先TJX，二者整体接近。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "接受承保与准备金周期并注重现金分配优先PGR；重视可见经营现金与较小股票左尾优先TJX。"
+    }
+  ]
+}

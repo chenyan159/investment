@@ -1,0 +1,131 @@
+{
+  "ticker": "BNTX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:41:44-07:00",
+  "reference_price": {
+    "value": 96.96,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        58,
+        58
+      ],
+      "target_price": [
+        54,
+        61
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        100,
+        100
+      ],
+      "target_price": [
+        90,
+        109
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        203,
+        203
+      ],
+      "target_price": [
+        181,
+        225
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        357,
+        357
+      ],
+      "target_price": [
+        315,
+        400
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "MRNA",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在96.96美元与225美元同日买价下，BNTX资金跑道和成功后价格赔率更优，MRNA的个体化mRNA临床领先不足以抵销现价所需的更高商业兑现。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "对要求已验证销售和基准年化回报的新增资金ALNY优先，BNTX仅补充肿瘤临床事件敞口，不能替代已收费RNAi业务。"
+    },
+    {
+      "peer": "IONS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "优先融资韧性时选择BNTX，能够承担2028债务再融资且自营两药持续付费得到验证时选择基准赔率更高的IONS。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "需要已实现免疫治疗利润时ARGX更优，需要较低已付成功预期与肿瘤事件敞口时BNTX更优，现价两者均缺少稳健基准余量。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "永久损失承受能力有限时选BNTX，愿接受临床失败及低价融资导致近乎全损并追求更大成功倍数时才选KYTX。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "希望以分散耗材和生物工艺交付参与药企投资周期时DHR更优，承担BNTX自身临床成败并获取药物权益上行时选BNTX。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求分散科研客户与持续现金流时TMO更优，明确购买BNTX药物临床事件右尾并接受亏损波动时才选BNTX。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "对核心持有资金MSFT的已收费生态和更高基准年化回报优先，BNTX只适合另设损失上限的临床事件卫星仓。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "需要已有经营利润和较高基准回报时GOOGL优先，只有专门承担肿瘤验证风险的卫星资金才选BNTX。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "优先经营和需求可预测性时选COST但须改善买价，接受临床亏损并追求明显非线性上行时才选BNTX。"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "accessed_utc": "2026-10-13T03:11:28.1834605Z",
+  "price_basis": "Normal session historical close, USD; not after-hours; source S&P Global via StockAnalysis. Independent of local snapshot ingestion but not an independent exchange audit.",
+  "limitation": "Direct Python HTTP attempts on first four returned403; web tool successfully read rows instead. Tiny source tick differences are not averaged; ADBE ChartExchange238.16 vs table238.14 preserved in notes.",
+  "records": [
+    {
+      "ticker": "AAOI",
+      "close": 100.68,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/aaoi/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 106.20  | 106.41  | 99.22  | 100.68  | 100.68  | -8.17%  | 11,030,855"
+    },
+    {
+      "ticker": "ADBE",
+      "close": 238.14,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/adbe/history/",
+      "access": "web_search_full_historical_row_read"
+    },
+    {
+      "ticker": "AGCO",
+      "close": 104.47,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/agco/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 102.76  | 104.87  | 102.76  | 104.47  | 104.47  | 1.15%  | 1,401,904"
+    },
+    {
+      "ticker": "ALNY",
+      "close": 227.02,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/alny/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 233.13  | 233.60  | 226.35  | 227.02  | 227.02  | -2.43%  | 916,918"
+    },
+    {
+      "ticker": "ARGX",
+      "close": 812.3,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/argx/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 832.33  | 832.49  | 810.70  | 812.30  | 812.30  | -1.54%  | 241,182"
+    },
+    {
+      "ticker": "AVGO",
+      "close": 354.73,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/avgo/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "BABA",
+      "close": 110.78,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/baba/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 110.14  | 110.96  | 109.41  | 110.78  | 110.78  | -0.53%  | 6,814,451"
+    },
+    {
+      "ticker": "BDC",
+      "close": 105.29,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/bdc/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 107.85  | 108.08  | 105.20  | 105.29  | 105.29  | -3.54%  | 231,618"
+    },
+    {
+      "ticker": "BNTX",
+      "close": 95.84,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/bntx/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 97.61  | 98.60  | 95.75  | 95.84  | 95.84  | -1.16%  | 1,276,960"
+    },
+    {
+      "ticker": "CARR",
+      "close": 55.42,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/carr/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 55.38  | 56.08  | 55.23  | 55.42  | 55.42  | -0.25%  | 3,054,978"
+    },
+    {
+      "ticker": "CLS",
+      "close": 347.5,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/cls/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "CRDO",
+      "close": 200.84,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/crdo/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 212.41  | 212.46  | 200.24  | 200.84  | 200.84  | -7.25%  | 8,382,018"
+    },
+    {
+      "ticker": "CRM",
+      "close": 233.92,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/crm/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 236.65  | 240.90  | 231.48  | 233.92  | 233.92  | 2.09%  | 8,878,923"
+    },
+    {
+      "ticker": "FLNC",
+      "close": 7.07,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/flnc/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 7.32  | 7.33  | 7.05  | 7.07  | 7.07  | -4.85%  | 5,216,433"
+    },
+    {
+      "ticker": "IONS",
+      "close": 43.67,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/ions/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 45.37  | 45.46  | 43.62  | 43.67  | 43.67  | -3.56%  | 1,950,353"
+    },
+    {
+      "ticker": "IREN",
+      "close": 34.8,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/iren/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "KYTX",
+      "close": 6.21,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/kytx/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 6.34  | 6.46  | 6.19  | 6.21  | 6.21  | -2.82%  | 417,108"
+    },
+    {
+      "ticker": "MCHP",
+      "close": 73.83,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/mchp/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 74.64  | 74.80  | 73.19  | 73.83  | 73.83  | -2.28%  | 7,562,619"
+    },
+    {
+      "ticker": "MOD",
+      "close": 172.5,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/mod/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 179.44  | 182.20  | 171.94  | 172.50  | 172.50  | -4.99%  | 954,544"
+    },
+    {
+      "ticker": "MU",
+      "close": 989.04,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/mu/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "NVDA",
+      "close": 226.32,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/nvda/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "PGR",
+      "close": 220.28,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/pgr/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 219.01  | 220.84  | 218.30  | 220.28  | 220.28  | 1.31%  | 1,864,460"
+    },
+    {
+      "ticker": "PNR",
+      "close": 52.33,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/pnr/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "POET",
+      "close": 6.41,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/poet/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 6.81  | 6.87  | 6.40  | 6.41  | 6.41  | -8.03%  | 10,665,953"
+    },
+    {
+      "ticker": "PSIX",
+      "close": 50.1,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/psix/history/",
+      "access": "web_open_or_find_historical_row_read"
+    },
+    {
+      "ticker": "SMCI",
+      "close": 39.98,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/smci/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 41.29  | 41.38  | 39.24  | 39.98  | 39.98  | -4.48%  | 25,516,190"
+    },
+    {
+      "ticker": "SNDK",
+      "close": 1487.33,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/sndk/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 1,538.12  | 1,539.10  | 1,464.43  | 1,487.33  | 1,487.33  | -5.97%  | 8,801,727"
+    },
+    {
+      "ticker": "TSM",
+      "close": 444.35,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/tsm/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 453.55  | 454.40  | 444.35  | 444.35  | 444.35  | -1.98%  | 8,867,207"
+    },
+    {
+      "ticker": "VST",
+      "close": 158.13,
+      "date": "2026-10-12",
+      "currency": "USD",
+      "source": "https://stockanalysis.com/stocks/vst/history/",
+      "access": "web_find_historical_row_read",
+      "row": "Oct 12, 2026  | 162.67  | 164.25  | 156.85  | 158.13  | 158.13  | -2.07%  | 6,524,545"
+    }
+  ]
+}

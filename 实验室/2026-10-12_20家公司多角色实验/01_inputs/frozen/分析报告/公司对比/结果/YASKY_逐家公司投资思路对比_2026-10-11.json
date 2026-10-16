@@ -1,0 +1,155 @@
+{
+  "ticker": "YASKY",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:40:47-07:00",
+  "reference_price": {
+    "value": 62.8,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-28",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        28.94,
+        28.94
+      ],
+      "target_price": [
+        15.5,
+        19.53
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        66.29,
+        66.29
+      ],
+      "target_price": [
+        60.18,
+        72.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        90.53,
+        90.53
+      ],
+      "target_price": [
+        98.9,
+        115.64
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        103.09,
+        103.09
+      ],
+      "target_price": [
+        131.91,
+        151.13
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "FANUY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "同一工业自动化逻辑下FANUC净现金、售后及基准正回报更优；安川仅在伺服/驱动器恢复或NEXT验证时作为补充"
+    },
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "广义电气化和现金质量优先ABB；直接押伺服及工业机器人恢复时安川暴露更纯，ABB机器人出售后不能替代同一股票逻辑"
+    },
+    {
+      "peer": "MIELY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "当前价格下三菱电机的基准及右尾价格回报、净现金与分散利润池更优；安川仅在要求更纯伺服/NEXT敞口时胜出"
+    },
+    {
+      "peer": "ROK",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "北美PLC锁定与控制系统优先ROK；伺服订单弹性和乐观相对回报偏安川，双方现价都欠稳健基准安全边际"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "融资和整合按计划、资本回报改善时优先施耐德；若增发/利息超预算而安川MC现金兑现，则安川可作较纯工业周期替代"
+    },
+    {
+      "peer": "TER",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "AI芯片测试与较强右尾优先TER；若资金任务只限工业伺服/机器人盈利恢复，安川更直接，不能把TER整体当协作机器人纯股"
+    },
+    {
+      "peer": "SYM",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "工业自动化与机器人总预算配置下安川的利润分散、融资韧性及基准赔率优于SYM；仅在押Walmart门店/第三方复制且接受高稀释时另选SYM"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价下安川已验证工业利润与基准/乐观赔率优于Tesla；Tesla仅在超出本报告突破的无人平台规模成立时拥有更大天花板"
+    },
+    {
+      "peer": "CGNX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "视觉内容量/算法路线优先CGNX；伺服交付及正常化估值底线偏安川；视觉通常互补，不认定全面取代工业机器人"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "长期设计导入和现金转化优先ADI；现价下二者基准都偏薄，伺服/NEXT较高右尾偏安川；未证实ADI是安川特定供货方"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "AI计算付费需求与客户资金/供电兑现时优先NVDA，其基准和右尾更强；若只押工业伺服现金或担忧算力预算过扩，安川作小额分散补充"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "成熟续约、现金缓冲与基准年化明显优于安川，是全市场复利资金更优先的载体；安川只作工业周期/FX分散进攻仓"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健资本保全和长约现金流优先Linde，基准年化也略优；安川仅在需要更高工业恢复弹性时胜出，LIN现价亦不属深度折价"
+    },
+    {
+      "peer": "ETN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "AI基础设施电热预算确定性优先Eaton；现价基准也薄，纯工业机器人恢复及更高乐观弹性可选安川，不能靠分拆额外送股制造收益"
+    }
+  ]
+}

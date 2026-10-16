@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-10-13T03:08:53.852672+00:00",
+  "method": "Public historical table, unadjusted close; no averaging with after-hours or differing ticks. HTTP failures are not successful checks.",
+  "records": [
+    {
+      "ticker": "ADBE",
+      "url": "https://stockanalysis.com/stocks/adbe/history/",
+      "status": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ticker": "NVDA",
+      "url": "https://stockanalysis.com/stocks/nvda/history/",
+      "status": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ticker": "PNR",
+      "url": "https://stockanalysis.com/stocks/pnr/history/",
+      "status": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ticker": "MU",
+      "url": "https://stockanalysis.com/stocks/mu/history/",
+      "status": "fetch_failed",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

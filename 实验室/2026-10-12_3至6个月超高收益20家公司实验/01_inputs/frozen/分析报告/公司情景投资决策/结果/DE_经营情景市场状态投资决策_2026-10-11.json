@@ -1,0 +1,57 @@
+{
+  "ticker": "DE",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T09:16:15-07:00",
+  "reference_price": {
+    "value": 620.93,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-11-30",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        580,
+        580
+      ],
+      "target_price": [
+        290,
+        360
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        1110,
+        1110
+      ],
+      "target_price": [
+        640,
+        770
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        1400,
+        1400
+      ],
+      "target_price": [
+        900,
+        1060
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        1560,
+        1560
+      ],
+      "target_price": [
+        1080,
+        1260
+      ],
+      "evidence": "weak"
+    }
+  }
+}

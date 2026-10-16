@@ -1,0 +1,11 @@
+{
+  "valuation_currency": "USD",
+  "price_date": "2026-10-12",
+  "reference_prices": {
+    "SPY": {"close": 778.10, "url": "https://stockanalysis.com/etf/spy/history/", "evidence": "opened_history_row", "underlying_vendor": "S&P Global Market Intelligence"},
+    "QQQ": {"close": 746.04, "url": "https://stockanalysis.com/etf/qqq/history/", "evidence": "opened_history_row", "underlying_vendor": "S&P Global Market Intelligence"}
+  },
+  "treasury": {"date": "2026-10-09", "ten_year_par_yield_pct": 5.24, "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026", "note": "10月12日无债市日度观测，不能标成当日成交收益率；收益率不是未来股市回报预测"},
+  "universe_benchmark": {"initial_value": 100, "method": "245家公司各初始等权，期初以冻结价格；SOMMY/MICLF滞后行单独保留；未来拆股、分红、退市与交易限制须显式处理，不删除输家"},
+  "future_comparison": "使用同起止日美元税前总收益。上述close是价格锚；复盘需独立加入现金分红/公司行动。不得将价格收益直接称为总收益或已验证超额收益。"
+}

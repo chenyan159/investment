@@ -1,0 +1,123 @@
+{
+  "role": "B2_valuation_rebuttal",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "independent_primary_documents_body_read": 15,
+  "sources": [
+    {
+      "id": "NVDA_Q2",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "publication_date": "2026-08-26",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "FY27 nonGAAP已含SBC；Q2其他收益7.773B不经常化"
+    },
+    {
+      "id": "AVGO_Q3",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "publication_date": "2026-09-02",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q3 GAAP OP15.955B，调整20.095B，SBC2.019B"
+    },
+    {
+      "id": "CRDO_Q1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "publication_date": "2026-09-01",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "调整OP230.641M，SBC87.979M，GAAP OP120.700M"
+    },
+    {
+      "id": "CLS_Q2",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "publication_date": "2026-07-27",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q2 TRS收益104.1M，SBC19.3M，GAAP OP458.3M"
+    },
+    {
+      "id": "S2-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "publication_date": "2026-09-10",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "FY26 GAAP OP35%，调整45%，SBC8.3ppt"
+    },
+    {
+      "id": "S2-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "publication_date": "2026-08-11",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "199.427M现金证券；24.883M贷款，2028跑道含未提款"
+    },
+    {
+      "id": "S2-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "publication_date": "2026-08-04",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "现金证券16.6342B EUR；251.204366M股；ADS1:1"
+    },
+    {
+      "id": "S2-12",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "publication_date": "2026-07-23",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "H1基本EPS13.47 USD，经营现金0.7B、金融资产现金5.2B"
+    },
+    {
+      "id": "S2-07",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "publication_date": "2026-07-30",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "未来版税/开发融资负债0.258570+1.461510B；可转债1.010981B"
+    },
+    {
+      "id": "S2-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "publication_date": "2026-07-30",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q2剔FX收入−3.7%，北美22M关税退款"
+    },
+    {
+      "id": "MU_Q4",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "publication_date": "2026-09-30",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q1 GM86.25%调整/85.95%GAAP；客户存款12.747B列融资流"
+    },
+    {
+      "id": "IREN_FY26",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "publication_date": "2026-08-27",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "ARR明示并非GAAP收入，预付款比例基于GPU及附属capex"
+    },
+    {
+      "id": "PSIX_Q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "publication_date": "2026-08-06",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q2销售152.5M、GM27.1%、EPS0.73；2025税收益1.27EPS"
+    },
+    {
+      "id": "FLNC_RESET",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "publication_date": "2026-09-16",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "9/16收入指导2.4B，EBITDA−200M，现金中性只是目标"
+    },
+    {
+      "id": "SNDK_Q4",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "publication_date": "2026-08-05",
+      "read_status": "B2 independently opened and read relevant original body/table with web tool",
+      "short_reading_note": "Q4收入8.965B，价格贡献约2/3增长；Q1调整EPS44–46"
+    },
+    {
+      "id": "S2-28",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "read_status": "opened title/body inventory; detailed securities verification delegated V1/V2"
+    },
+    {
+      "id": "S2-04/S2-05",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "read_status": "opened successfully but follow-up body extraction internal error; facts attributed to S2, not counted toward 15 body reads"
+    }
+  ],
+  "other_sources": "Dispute references not in above body-read list are specialist/round1 provenance or verification leads, not falsely represented as independently body-read."
+}

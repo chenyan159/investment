@@ -1,0 +1,132 @@
+[
+  {
+    "id": "R3S01",
+    "ticker": "ADBE",
+    "published_date": "2026-09-10",
+    "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+    "query": "Adobe 2026 third quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "Q3收入6.76B、GAAP EPS4.62；FY26 GAAP EPS指引18.12–18.17，非GAAP24.45–24.50。不能直接采用快照27.67为经济EPS。"
+  },
+  {
+    "id": "R3S02",
+    "ticker": "ALNY",
+    "published_date": "2026-07-30",
+    "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+    "query": "Alnylam 2026 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "TTR全年收入指引从4.4–4.7B降至4.2–4.5B，积压二线需求正常化；反驳持续外推上市初速。"
+  },
+  {
+    "id": "R3S03",
+    "ticker": "PNR",
+    "published_date": "2026-07-28",
+    "url": "https://investors.pentair.com/node/27096/pdf",
+    "query": "Pentair 2026 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "Pool季度收入下降42%；FY26调整EPS指引4.60–4.80，反驳无条件低PE安全垫。"
+  },
+  {
+    "id": "R3S04",
+    "ticker": "IONS",
+    "published_date": "2026-04-29",
+    "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-reports-first-quarter-2026-financial-results-and",
+    "query": "Ionis 2026 olezarsen approval",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "Q1收入246M、现金短投1.9B，峰值销售是公司目标。此源过时，只作前后对照，不能沿用待审批清单。"
+  },
+  {
+    "id": "R3S05",
+    "ticker": "ENPH",
+    "published_date": "2026-07-28",
+    "url": "https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026",
+    "query": "Enphase 2026 second quarter financial results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "收入291.9M包含safe-harbor84.3M；Q3指引290–320M含75M，AI SST仅RFI/RFP。"
+  },
+  {
+    "id": "R3S06",
+    "ticker": "BNTX",
+    "published_date": "2026-08-04",
+    "url": "https://investors.biontech.de/node/18731/pdf",
+    "query": "BioNTech 2026 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "现金及证券16.6B欧元；FY26收入指引1.6–1.9B欧元，研发2.0–2.3B与SG&A0.7–0.8B；现金持续消耗。"
+  },
+  {
+    "id": "R3S07",
+    "ticker": "BJ",
+    "published_date": "2026-08-21",
+    "url": "https://investors.bjs.com/press-releases/press-release-details/2026/BJs-Wholesale-Club-Holdings-Inc--Announces-Second-Quarter-Fiscal-2026-Results/default.aspx",
+    "query": "BJ 2026 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "FY26 EPS指引4.60–4.80；资本开支800M，新店扩张并非资产轻。"
+  },
+  {
+    "id": "R3S08",
+    "ticker": "PNR",
+    "published_date": "2026-10-01",
+    "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+    "query": "Pentair completes Taco October 1 2026",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "Taco已完成14亿美元收购，纠正9/26公司报告的待交割状态；不能因此假设协同已实现。"
+  },
+  {
+    "id": "R3S09",
+    "ticker": "DOV",
+    "published_date": "2026-08-28",
+    "url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+    "query": "EPA 2026 HFC restrictions 2032",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "超市系统2027先实施1400 GWP门槛，较严150/300延至2032；取消2027全面CO2强制替换的收益假设。"
+  },
+  {
+    "id": "R3S10",
+    "ticker": "NVDA",
+    "published_date": "2026-08-26",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+    "query": "NVIDIA second quarter fiscal 2027",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "Q2收入96.221B、数据中心89.023B；Q3指引108B和74%毛利。强交付证据仍非买方投资回报证明。"
+  },
+  {
+    "id": "R3S11",
+    "ticker": "IONS",
+    "published_date": "2026-09-04",
+    "url": "https://www.novartis.com/news/media-releases/novartis-announces-lpahorizon-phase-iii-topline-results-pelacarsen-patients-elevated-lpa-and-established-cardiovascular-disease-cvd",
+    "query": "Novartis pelacarsen Lp(a)HORIZON results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "读取合作方公告核对本地所列主要终点失利；旧管线成功概率不可沿用。"
+  },
+  {
+    "id": "R3S12",
+    "ticker": "VST",
+    "published_date": "2026-08-07",
+    "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000017/vistra-20260630xearningsre.htm",
+    "query": "Vistra 2026 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "2026 EBITDA6.8–7.6B、FCFbG3.925–4.725B指引；2027发电94%已对冲，Helix最多承诺1B。FCFbG不是扣全部增长投资后的股东现金。"
+  },
+  {
+    "id": "R3S13",
+    "ticker": "CRM",
+    "published_date": "2026-08-26",
+    "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+    "query": "Salesforce fiscal 2027 second quarter results",
+    "accessed_at": "2026-10-12T19:48:02.017406-07:00",
+    "read_status": "opened_primary_document",
+    "summary": "股数指引计入ASR初交103M股但排除最终结算；需防把回购缩股与运营增长重复计入。"
+  }
+]

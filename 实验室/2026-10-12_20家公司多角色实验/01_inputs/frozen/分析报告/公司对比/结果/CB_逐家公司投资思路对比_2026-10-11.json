@@ -1,0 +1,131 @@
+{
+  "ticker": "CB",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:42:36-07:00",
+  "reference_price": {
+    "value": 341.2,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        255,
+        255
+      ],
+      "target_price": [
+        205,
+        250
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        438,
+        438
+      ],
+      "target_price": [
+        430,
+        485
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        499,
+        499
+      ],
+      "target_price": [
+        530,
+        595
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        541,
+        541
+      ],
+      "target_price": [
+        600,
+        670
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "positive"
+  },
+  "comparisons": [
+    {
+      "peer": "PGR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若追求稳健正常化利润与全球分散优先CB；若家庭捆绑成交和续保改善且损失趋势受控，进攻优先PGR"
+    },
+    {
+      "peer": "TRV",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "同为稳健承保配置时CB全球分散、基准含息赔率略优；TRV保证险与回购更强，但不足以全面替代CB"
+    },
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "当前稳健资金优先CB：正常化购买倍数较低、全球分散更强；WRB细分平台复制有右尾但依赖更高资本回报持续"
+    },
+    {
+      "peer": "PANW",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "以现价保全资本与中心现金回报为条件优先CB；若独立AI净费与长期高增长被验证且估值可承载，PANW才适合替代进攻仓"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若承担巨灾及续保软市波动以追求更高基准/右尾收益，优先RNR；若要求分散与较小尾部回撤，优先CB"
+    },
+    {
+      "peer": "DE",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若看好农业风险保障及稳定复利优先CB；若换机周期恢复且精确农业形成有利润收费，DE可提供更强周期弹性"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若希望较确定的资本分配与较低现金投入优先CB；若AWS资本回报及消费兑现使基准上移，AMZN优先承担增长仓"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "当前新增稳健资金优先CB：基准价格下沿与内在价值缓冲较好；若只需更平稳需求且WM估值明显回落再取舍"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "按现价的稳健资金机会成本优先CB：COST经营确定性更高，但正常兑现价格收益与DCF缓冲较弱"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若云与办公AI资本回报满足门槛且市场溢价持续，成长资金优先MSFT；若强调现值缓冲与低资本强度，优先CB"
+    }
+  ]
+}

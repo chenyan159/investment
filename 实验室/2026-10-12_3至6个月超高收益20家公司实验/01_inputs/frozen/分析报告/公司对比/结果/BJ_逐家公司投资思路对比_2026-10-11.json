@@ -1,0 +1,131 @@
+{
+  "ticker": "BJ",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:10:23-07:00",
+  "reference_price": {
+    "value": 98.58,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-02",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        88.4,
+        88.4
+      ],
+      "target_price": [
+        57.5,
+        69.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        140.6,
+        140.6
+      ],
+      "target_price": [
+        122.1,
+        141.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        183,
+        183
+      ],
+      "target_price": [
+        184.3,
+        209.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        218.1,
+        218.1
+      ],
+      "target_price": [
+        239.7,
+        269.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "COST",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价增长资金优先BJ：基准回报及右尾更高；长期经营确定性则COST胜，降价后重排"
+    },
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价会员零售配置优先BJ；WMT经营更广，但基准股价回报为负至持平，额外平台收益已预付"
+    },
+    {
+      "peer": "KR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "接受食品销量修复、Giant Eagle整合及法律责任风险时KR优先；要求已有会员增长且较少整合变量时BJ优先"
+    },
+    {
+      "peer": "TJX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "重视当前现金转化和成熟零售执行时TJX优先；接受新市场验证并追求更大上行空间时BJ优先"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "接受AWS和AI资本回收风险、追求平台右尾时AMZN优先；要求消费经营自给和较低融资/久期敞口时BJ优先"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在零售效率逻辑下现价优先BJ：现金自给与基准正回报更可靠；SYM仅极端突破上沿弹性更高，尚不补偿左尾"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "要求现金分配且接受赔付/灾损及准备金风险时PGR优先；要求消费复利、较高基准股价增长时BJ优先"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "降低家庭消费暴露、重视许可资产和现金分配时WM优先；要求较高增长上限且减少高债务时BJ优先"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "可承担企业预算及AI资本周期的成熟成长资金综合优先MSFT：基准年化、生态和资金能力胜BJ；BJ保留消费分散价值"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "接受AI资本、监管及客户信用风险并要求平台右尾时GOOGL优先；要求消费利润可观察且少新增融资变量时BJ优先"
+    }
+  ]
+}

@@ -1,0 +1,1659 @@
+{
+  "role": "V1_facts_events_security",
+  "status": "sealed_with_explicit_residuals",
+  "cutoff": "2026-10-12T20:50:00-07:00",
+  "horizons": {
+    "three_month": "2027-01-12",
+    "six_month": "2027-04-12"
+  },
+  "coverage": {
+    "core": 34,
+    "extra": 4
+  },
+  "method": "每家公司独立打开至少一个原始文件关键段；本地冻结公司报告读身份/事件/财务相关段，不声称全文；预期财报月份不是官方确定日。原始公司来源证明公司披露/计划，不证明未来结果。",
+  "companies": [
+    {
+      "ticker": "MU",
+      "published": "2026-09-30",
+      "event_3m": "FY27Q1收入61.5±1.5B、GAAP EPS37.84±1为公司指引；12月财报时间为估计",
+      "event_6m": "FY27Q2财报约3月为估计；观察HBM/DRAM供需、价格与资本开支",
+      "independent_finding": "FY26Q4收入54.229B、GAAP EPS32.87；现金及证券73.453B、债务5.179B。客户保证金12.747B列融资现金流。",
+      "value_mechanism": "连续两个季度兑现高利润，并证明供需持续，才能把周期盈利资本化。",
+      "counterevidence_unclosed": "利润已处高位；客户预付款不是新增经营利润。远期供给与客户集中度仍可逆转。",
+      "local_correction": "不能延用旧FY26利润或把全部保证金一面计现金、一面计FCF；FY26第53周影响跨年可比。",
+      "security_notes": "USD股价/报表；普通股。净金融现金与可自由分配现金不同；本次未重做全摊薄。",
+      "source_urls": [
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Micron Technology 美光科技",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-01.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MU_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-01"
+      ],
+      "snapshot_identity": {
+        "最新价格": "989.04",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "1.13B"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "SNDK",
+      "published": "2026-08-05；财报日历2026-09-29",
+      "event_3m": "10/29 13:30PT业绩电话会为官方已定日；Q1收入10.3–10.8B、调整EPS44–46为计划",
+      "event_6m": "次季约1–2月财报为估计，核NBM订单转收入、定价与毛利延续",
+      "independent_finding": "Q4收入8.965B，GAAP EPS43.97高于调整39.25，存在投资收益；Q1指引基于155M稀释股。",
+      "value_mechanism": "现金创造和下季指引上修可改变持续盈利预期。",
+      "counterevidence_unclosed": "NBM合同不是多年固定超额利润保证；景气和客户议价可反向。",
+      "local_correction": "旧EPS/股数和GAAP峰值不能直接年化；10/29日历已由V1另开官方确认。",
+      "security_notes": "USD普通股、USD报表；投资收益须剔除后再估经营盈利。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+        "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "SanDisk",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SNDK_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "1487.33",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "144.53M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "SMCI",
+      "published": "2026-08-31最终10-K；8/11初步业绩",
+      "event_3m": "约11月FY27Q1财报为估计，检验14.5–15.5B收入与持续毛利",
+      "event_6m": "约2月次季为估计，FY27收入65–72B为公司计划而非订单保底",
+      "independent_finding": "2028债转股价61.06、2030为55.20；条件触发/主动转换须区别。7%强制可转优先股2029年强转，价高于32.9989时每1000优先股本金最低30.304普通股。",
+      "value_mechanism": "毛利和现金周转恢复可降低风险折价；仅服务器出货增加不够。",
+      "counterevidence_unclosed": "高增长也需存货/应收融资；优先股股息与摊薄对普通股价值真实。",
+      "local_correction": "8/11只是初步业绩，8/31已终稿；不能按目标价将全部证券强制当日转换，也不能既扣债又加全部转股。",
+      "security_notes": "SMCI普通股区别SMCIP存托优先股；USD；集团NI2.230B不等于普通股NI2.217B。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Super Micro Computer Inc",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMCI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMCI_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "39.98",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "646.87M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "IREN",
+      "published": "2026-08-27",
+      "event_3m": "Horizon2–4 Q4交付为公司计划；交付≠GPU验收/计费",
+      "event_6m": "Q1–Q2客户验收及实际AI收入爬坡；具体日期未定",
+      "independent_finding": "40亿美元签约ARR对比10亿美元运营ARR；AI季度收入70.5M。公告脚注：交付后数月仍须调试、测试和客户验收。",
+      "value_mechanism": "完成验收可把融资支出的设备变成有现金回款的计算服务。",
+      "counterevidence_unclosed": "140亿美元现金及融资承诺不能全作现钱；6%客户特定融资不能泛化至全部扩产。",
+      "local_correction": "先前把ARR直接转季度收入或交付即满负荷的模型应后移；2027容量目标不是今天产能。",
+      "security_notes": "澳洲普通股，USD价格/报表非ADS；NVIDIA权利/未来增发仍由V2核权益桥。",
+      "source_urls": [
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "IREN Limited",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/IREN_IREN_Limited_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IREN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IREN_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "34.80",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "394.06M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AAOI",
+      "published": "2026-03-09；ATM2026-10-05",
+      "event_3m": "Q4高端光模块出货/验收，公司计划；约11月财报估计",
+      "event_6m": "约2月财报检验实际爬坡、良率、毛利和回款",
+      "independent_finding": "200M以上1.6T首笔订单是3/9旧公告，并先需资格认证；10/5已净募587.999986M、发行5.694845M股。",
+      "value_mechanism": "新增产能能转成合格出货、并改善单位成本，才可支撑利润跃升。",
+      "counterevidence_unclosed": "订单和产能均非收入；组件约束、客户集中与良率仍未关闭。",
+      "local_correction": "3月每月500k年末目标不可冒充9月新披露；8月更新及推迟交付须采用最新报告。",
+      "security_notes": "USD普通股/报表；10/5ATM现金和新股必须同时入账，不能只加现金。",
+      "source_urls": [
+        "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+        "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Applied Optoelectronics",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AAOI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AAOI_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "100.68",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "84.91M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "CRDO",
+      "published": "2026-09-01",
+      "event_3m": "FY27Q2收入525–535M为公司指引；约11–12月财报为估计",
+      "event_6m": "約3月再检AEC/光连接放量与客户集中度",
+      "independent_finding": "Q2 GAAP毛利62.9–64.9% vs调整67–69%；GAAP费用199–204M vs调整100–105M，主要差距含约97M费用端SBC。",
+      "value_mechanism": "高增收入兑现与第二增长产品规模化可延长成长久期。",
+      "counterevidence_unclosed": "当前利润率假设对SBC处理敏感，超高NOPAT不能从调整毛利直接推导。",
+      "local_correction": "不能将68%调整毛利直接变50%经济NOPAT而忽略SBC/研发。",
+      "security_notes": "开曼普通股非ADR；USD；GAAP/调整指标、SBC稀释不能混用。",
+      "source_urls": [
+        "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Credo Technology Group",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRDO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRDO_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "200.84",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "187.95M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "CRWV",
+      "published": "2026-08-12",
+      "event_3m": "Q4机房电力、GPU交付和客户验收为公司计划；财报约11月估计",
+      "event_6m": "Q1继续核实际计费、利息、融资和资产折旧；日期未定",
+      "independent_finding": "RPO103.7B，约41%未来24月确认、39%随后24月；延迟交付罚则/可变对价可减少收入。",
+      "value_mechanism": "资源开通并被验收使多年承诺转成现金流；融资风险下降可能重估权益。",
+      "counterevidence_unclosed": "高债务、资本开支、折旧、客户集中；RPO期限长，6个月不能一次兑现。",
+      "local_correction": "RPO与104.2B backlog口径不能相加；10/11本地报告已新，不泛称过时。",
+      "security_notes": "A/B经济权益同计，B投票权更高；USD；未来C股/可转债与融资成本需V2闭合。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "CoreWeave",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRWV_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRWV_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "80.26",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "458.87M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "UCTT",
+      "published": "2026-08-03",
+      "event_3m": "Q3收入700–750M、调整EPS.83–1.03为公司计划；约10–11月业绩估计",
+      "event_6m": "约1–2月检验FY27设备采购周期及毛利改善",
+      "independent_finding": "Q2收入644.9M，GAAP毛利16.1%、经营利润率4.6%，调整7%。",
+      "value_mechanism": "设备需求及产能利用率回升可带来经营杠杆。",
+      "counterevidence_unclosed": "薄利且客户集中；收入增长尚不等于持续高利润率。",
+      "local_correction": "不能用景气峰值利润率替代当前4.6%GAAP经营率；前一季低基数不构成翻倍机制。",
+      "security_notes": "USD普通股/报表；调整EPS和GAAP指引.67–.87须区分。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Ultra Clean Holdings",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/UCTT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/UCTT_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "63.51",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "44.83M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "CLS",
+      "published": "Q2业绩2026-07-27 16:38EDT；日历公告2026-10-06 16:15EDT",
+      "event_3m": "官方确定：2026-10-26盘后发布Q3业绩；2026-10-27 08:00 ET召开业绩兼投资者/分析师日电话会，午间另有线下论坛。确认FY26指引及2027路径。",
+      "event_6m": "约1月FY27正式范围及订单可见度；公司称2027收入增幅超过65%",
+      "independent_finding": "Q2收入4.7B；GAAP经营率9.8%高于调整8.2%，TRS正向收益影响GAAP。",
+      "value_mechanism": "2027增长在订单和盈利上兑现可改变市场持续期判断。",
+      "counterevidence_unclosed": "超过65%是管理层展望，不是实际交付或确定保底；客户集中、工作资本风险仍在。",
+      "local_correction": "不得把高于调整的GAAP利润全当经营质量改善，需去TRS公允价值影响。 最终20复查纠正V1原先约10月估计写法；日历已亲自读取公告正文，不再仅继承S1。",
+      "security_notes": "NYSE USD与TSX CAD为同一经济股份体系，不双加市值；报表USD。",
+      "source_urls": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+        "https://corporate.celestica.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Celestica Inc",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-09-21.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CLS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CLS_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-21"
+      ],
+      "snapshot_identity": {
+        "最新价格": "347.50",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "126.11M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "MOD",
+      "published": "2026-10-01",
+      "event_3m": "已完成拆分之后第一份季度报告约11月；拟股东会/更名是公司计划",
+      "event_6m": "约2月核持续制冷业务利润率与增长；非制冷资产不再归MOD",
+      "independent_finding": "10/1原股东每股获0.44619 THRM；MOD收到156M用于偿债，原股东直接拥有THRM43.62%而非MOD持有。",
+      "value_mechanism": "纯冷却业务可被重新定价，但必须基于拆分后独立利润和资本结构。",
+      "counterevidence_unclosed": "原股东分配不属于10/12新买入者；更名本身不创造现金流。",
+      "local_correction": "尚未完成、现金159M等旧表述已被10/1交割修正；不能把THRM股权再加到MOD价值。",
+      "security_notes": "USD普通股/报表；拆分前价格总回报与拆分后新买入比较必须分开。",
+      "source_urls": [
+        "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Modine Manufacturing",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MOD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MOD_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "172.50",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "53.11M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "COHR",
+      "published": "2026-03-02",
+      "event_3m": "未来两季光通信交付/毛利证明，约11月财报日为估计",
+      "event_6m": "约2月核产能转收入，确定单独里程碑未找到",
+      "independent_finding": "NVIDIA原始伙伴公告：非排他、多年数十亿美元采购承诺及20亿美元投资；并非9–10月新获订单。",
+      "value_mechanism": "扩产资金与需求保障可降低资本和客户开发风险。",
+      "counterevidence_unclosed": "投入、产能、承诺未自动等于半年销售和利润；非排他。",
+      "local_correction": "不得将3月伙伴公告当未来新催化、或将全部多年采购计入6个月收入。",
+      "security_notes": "USD普通股/报表；优先股/NCI价值桥尚需V2，不能将集团价值全归普通股。",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Coherent",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/COHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/COHR_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "288.02",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "196.93M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "KYTX",
+      "published": "2026-08-11",
+      "event_3m": "Q4完成SPS滚动BLA及PMS IIT追加数据为公司计划",
+      "event_6m": "2027早期PMS开发策略；SPS受理/审评实际进展，未公告确定批准日",
+      "independent_finding": "CMC已提交，Q4完成BLA计划；gMG三期mid2027是完成入组，不是读出且超6月窗。",
+      "value_mechanism": "临床耐久性与监管路径去风险可显著重估小盘资产。",
+      "counterevidence_unclosed": "小样本外推、安全性、制造可比性、审批与现金消耗；申请优先审评不等于已获优先。",
+      "local_correction": "不把mid2027入组写成近期读出；不把2027可能上市塞入2027年1月。",
+      "security_notes": "USD普通股/报表；199.4M现金与有条件贷款承诺分开，跑道预测非全部现款。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Kyverna Therapeutics",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KYTX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KYTX_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "6.21",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "61.84M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AMPX",
+      "published": "2026-10-05 08:00ET",
+      "event_3m": "CAMINUS美国制造资格验证已经启动，后续合格产品为公司计划",
+      "event_6m": "2027Q1阶段量产为公司计划，落在6月观察窗",
+      "independent_finding": "新合同是CAMINUS美国软包电芯代工，资格批次正在开展，Q1/27预计逐步放量。",
+      "value_mechanism": "更早美国制造路径可缓和产能/政策约束并带来收入验证。",
+      "counterevidence_unclosed": "未披露最低采购量、保底毛利或无条件产能；认证和客户验收仍是条件。",
+      "local_correction": "不能只用2028年DOE工厂时间线淘汰；CAMINUS2027Q1是另一条制造路径。",
+      "security_notes": "USD普通股/报表；赠款分期与股权融资不可当无条件可用现金；本卡未独开全部赠款条款。",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Amprius Technologies",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMPX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMPX_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "8.87",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "146.08M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "ENPH",
+      "published": "2026-09-14",
+      "event_3m": "2026年11月IQ SST整机演示为公司计划",
+      "event_6m": "2027试点为公司计划，未承诺一定2027Q1完成；商业批量收入无已定日",
+      "independent_finding": "官方明确区分11月演示与2027年试点。",
+      "value_mechanism": "演示若证明技术可行，可增加AI电源选择权估值；核心现金流仍主要太阳能。",
+      "counterevidence_unclosed": "没有近6个月SST量产合同/规模收入证据；演示成功不保证认证、客户导入和毛利。",
+      "local_correction": "不能把2027pilot当2026Q4或2027Q1批量营收，太阳能复苏单独建模。",
+      "security_notes": "USD普通股/报表；安全港预收/潜在退税口径继承V2核算，本卡不认证为净现金。",
+      "source_urls": [
+        "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Enphase Energy",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ENPH_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ENPH_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "31.49",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "131.80M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "PSIX",
+      "published": "2026-08-06",
+      "event_3m": "约11月Q3财报估计；H2收入高于H1且约等于2025H2为公司展望",
+      "event_6m": "约3月全年与Wisconsin扩产效率；没有已确定新增大客户量产日",
+      "independent_finding": "Q2收入152.5M，同比降21%、毛利27.1%；扩厂成本仍在，SAR公允价值变化影响费用。",
+      "value_mechanism": "数据中心发动机增长和新厂利用率若改善，可恢复盈利可信度。",
+      "counterevidence_unclosed": "H2修复展望不是FY27订单保底；客户集中和传统需求下滑。",
+      "local_correction": "不能沿用高峰Q2或将220M信贷全视现金；Q2现金70.1M对债务72.6M。",
+      "security_notes": "USD普通股/报表；SAR非现金波动影响利润；授信额度≠现金。",
+      "source_urls": [
+        "https://investors.psiengines.com/node/13891"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Power Solutions International",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PSIX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PSIX_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "50.10",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "23.07M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "FLNC",
+      "published": "2026-09-16",
+      "event_3m": "下一全年业绩/重置FY27指引约11月估计，核心是Houston修复",
+      "event_6m": "约2月项目验收及经营现金流改善，FY27 OCF不负为公司目标",
+      "independent_finding": "FY26收入指引从3B降2.4B，调整EBITDA从-10M降-200M；生产问题已造成下修。",
+      "value_mechanism": "修复和融资风险降低可大幅重估受压权益。",
+      "counterevidence_unclosed": "转正目标不等于融资已经闭合；生产、验收、保函和客户付款风险。",
+      "local_correction": "停留旧3B/接近盈亏平衡指引的本地模型失效；高backlog不能抵消现金缺口。",
+      "security_notes": "USD；A/B与LLC经济权益需合并且NCI不得双扣；184.57M总经济份额为继承V2/控制器口径未本次逐条认证。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Fluence Energy",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FLNC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FLNC_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "7.07",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "143.16M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "VISN",
+      "published": "2026-08-06",
+      "event_3m": "约11月确认DOCSIS4放量与memory成本；700–750M年末现金为公司计划",
+      "event_6m": "约2月持续业务、资本配置；160M退税2027H2在观察窗外",
+      "independent_finding": "Q2公告集团调整EBITDA35.8M而AuroraCore45.5M；电话会重复明确退税2027下半年。",
+      "value_mechanism": "现金及持续业务盈利可降低尾部风险；回购仅在执行后改变每股价值。",
+      "counterevidence_unclosed": "内存供应/价格已压低指引；公司可投资/并购，现金不是必然分给股东。",
+      "local_correction": "历史资产出售/15美元分配不归新买入；不能把160M退税计作4/12之前催化或忽略总部费用。",
+      "security_notes": "USD普通股/报表；现金要用出售和分红后口径，授权回购不等于实施。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+        "https://stockanalysis.com/stocks/visn/transcripts/658038-q2-2026/"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Vistance Networks",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/VISN_Vistance_Networks_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VISN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VISN_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "6.08",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "230.63M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "BNTX",
+      "published": "2026-08-04",
+      "event_3m": "11/3财报官方已定；PRESERVE003/ DYNASTYBreast02 2026/Q4数据为事件累积驱动公司计划",
+      "event_6m": "BLA推进及临床数据延续；具体监管批准日未定",
+      "independent_finding": "公司把肿瘤关键数据与2026申报均列为依赖数据/事件累积的计划，非必定阳性。现金证券16.6342B欧元。",
+      "value_mechanism": "成熟度更高的肿瘤数据可重估管线，但价值须分成/合作权益和成功概率。",
+      "counterevidence_unclosed": "临床失败和高研发消耗；1B欧元回购同时消耗现金，现金不全等于下行底。",
+      "local_correction": "CureVac已2025收购不能再作未来催化；把2026target当确定读出日期不成立。",
+      "security_notes": "NASDAQ ADS每1份对应1普通股；价格USD报表EUR，股数251.204366M已排库存股，须同日汇率。",
+      "source_urls": [
+        "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "BioNTech",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BNTX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BNTX_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "95.84",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "EUR",
+        "listing_type": "ADR/ADS",
+        "adr_ratio": "需确认",
+        "shares_outstanding": "251.20M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "LEU",
+      "published": "2026-07-01",
+      "event_3m": "现有HALEU小级联转商业运营、租约及客户/融资进展为公司计划，未给确定日期",
+      "event_6m": "新增融资或长期承购可重估；不能等同新规模产能投产",
+      "independent_finding": "900M DOE合同已签，含可选170M合计1.07B；新增大规模产能首产2029。",
+      "value_mechanism": "远期产能可因融资和订单去风险先行重估，6月内不必已有全部盈利。",
+      "counterevidence_unclosed": "过桥资金、技术、政府合同选项/终止和执行；2029利润不应按2027现金流计入。",
+      "local_correction": "扩产投产在2029，但据此断言半年无催化也过强；合同已公布不能重复当新签。",
+      "security_notes": "USD A普通股，B经济权益、权证与融资需要合并；非ADS。",
+      "source_urls": [
+        "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Centrus Energy",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/LEU_Centrus_Energy_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LEU_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LEU_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "135.31",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "19.73M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "RDW",
+      "published": "2026-08-05",
+      "event_3m": "约11月财报估计，观察积压订单转交付及新产能利用率",
+      "event_6m": "约3月全年现金消耗和无人机整合；新增大订单日期未定",
+      "independent_finding": "Q2收入117.1M、毛利27.8%、亏损41M，firm backlog542.1M。6/30优先股余额为零。",
+      "value_mechanism": "订单交付利润和现金流回正可压低融资风险折价。",
+      "counterevidence_unclosed": "收入高增长并未令经营利润转正；IDIQ上限不等于已拨款订单。",
+      "local_correction": "不可继续减已消失优先股，不能把历史合同上限全部作为收入。",
+      "security_notes": "USD普通股/报表；249.221102M列报股数另有1.036294M库存股须对10-Q封面核对；现金等价物约557.0M，现金含受限合计557.718M，约0.8M受限不能作自由现金。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Redwire",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/RDW_Redwire_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RDW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RDW_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "9.22",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "249.99M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AVAV",
+      "published": "2026-09-09",
+      "event_3m": "约12月FY27Q2业绩估计，核订单交付与整合",
+      "event_6m": "约3月FY27Q3估计，核营运资金和现金流；没有新增已定公告日",
+      "independent_finding": "Q1收入480.5M仅增6%，funded backlog1.5B；FY27收入2.125–2.225B、GAAP EPS.21–.53、调整3.02–3.34。",
+      "value_mechanism": "若整合实现利润/现金而不是只报订单，可提升权益可见度。",
+      "counterevidence_unclosed": "现金转换和并购摊销差距大；FY27负FCF论据继承S2/控制器，本次只认证公告指引未重读电话会。",
+      "local_correction": "已公开合同已在管理层指引之内，不应在指引上再次相加全部订单。",
+      "security_notes": "USD普通股/报表；并购对价摊薄及调整EPS对比GAAP须区分。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d1.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "AeroVironment",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/AVAV_AeroVironment_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AVAV_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AVAV_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "131.51",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "50.82M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AOSL",
+      "published": "2026-08-12",
+      "event_3m": "9月季度advanced computing收入环比+40%、AI/server+60%为管理层计划；约11月财报估计",
+      "event_6m": "约2月检验AI贡献和集团扭亏",
+      "independent_finding": "官方prepared remarks：6月advanced占计算31%，计算占集团49.8%，相乘约15.4%；9月预期advanced超计算40%。",
+      "value_mechanism": "AI业务占比提升或改善组合与产能利用率，前提集团盈利确实改善。",
+      "counterevidence_unclosed": "集团仍调整EPS亏损.13；PC需求软、洪水和成本；不能把局部增长当全集团增长。",
+      "local_correction": "AI占比不是计算分部占比；不应把近期仍亏公司标为已经稳定盈利。",
+      "security_notes": "USD普通股/报表非ADR；子公司和投资价值不可与集团利润重复。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Alpha and Omega Semiconductor",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AOSL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AOSL_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "26.58",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "30.31M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "ACMR",
+      "published": "2026-09-30 07:00ET；10-Q2026-08",
+      "event_3m": "10/28美股盘前公布初步Q3为官方定日；11月完整报告具体日未定",
+      "event_6m": "约2–3月核backlog验收、回款和NCI归属",
+      "independent_finding": "9/30公告Shanghai backlog17.1B RMB约2.5B USD、同比+88.2%，含已出货待验收。6/30对Shanghai持股73.2%。",
+      "value_mechanism": "验收加速会将设备需求变成收入和归母利润，不能按订单币值直接推股价。",
+      "counterevidence_unclosed": "出口管制、验收节奏、客户/地域集中；上海市场价值不是美股母公司100%权益。",
+      "local_correction": "2.5B不是收入，不能用688082市值/盈利直接替代ACMR；73.12等旧比例应核时点。",
+      "security_notes": "美股A普通股非ADS；8/4封面A64.657388M+B4.991808M=69.649196M经济股，旧B5.021811M为2025年底；报表USD、订单RMB；Shanghai73.2%，NCI须剔除一次。",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+        "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "ACM Research",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ACMR_ACM_Research_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ACMR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ACMR_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "68.10",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "64.66M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AMBA",
+      "published": "2026-09-04",
+      "event_3m": "约11–12月财报估计，核边缘AI收入及真实经营利润",
+      "event_6m": "约3月新产品贡献；未找到6月窗内已定大规模汽车量产日",
+      "independent_finding": "客户5/12终止研发项目：13.5M预收退4.5M，剩9M冲减Q2研发费；报告经营亏损8.1M正常化约17.1M。H1 OCF-25.9M。",
+      "value_mechanism": "边缘AI收入持续增长且扣一次性后亏损收窄可推动估值改善。",
+      "counterevidence_unclosed": "汽车长开发周期、客户项目终止、研发/SBC及现金消耗。",
+      "local_correction": "Q2经营改善含9M一次性收益，不能当长期利润或以此证明已盈利。",
+      "security_notes": "开曼普通股非ADS；USD股价和报表；公司预收与营运现金不能重复加值。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Ambarella",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMBA_Ambarella_公司调研_2026-09-21.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMBA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMBA_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-21"
+      ],
+      "snapshot_identity": {
+        "最新价格": "64.81",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "44.14M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "MRAM",
+      "published": "2026-08-05；政府协议4/24签、4/29披露",
+      "event_3m": "约11月财报估计；年底UNISYST tapeout为本地/前轮继承计划，V1未另开该会议信息",
+      "event_6m": "约3月里程碑收入；2027样片仅为公司规划、非批量收入",
+      "independent_finding": "Q3收入19.5–20.5M；GAAP EPS-.10至-.05而调整+.10至+.15。40M政府项目周期约30个月至2028/11，按里程碑支付。",
+      "value_mechanism": "技术/政府验证和高毛利MRAM收入可降低商业化折价。",
+      "counterevidence_unclosed": "工程开发、法律/SBC剔除造成指标差异；政府终止权及样片到量产时间。",
+      "local_correction": "40M不属半年保证收入；不能只用调整盈利标为稳定经济利润。",
+      "security_notes": "USD普通股/报表；合同金额并非无条件现金，合同签日和首次披露日区分。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+        "https://www.sec.gov/Archives/edgar/data/1438423/000162828026028432/mram-20260424.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Everspin Technologies",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MRAM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MRAM_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "15.28",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "24.35M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "CC",
+      "published": "2026-08-04",
+      "event_3m": "约11月Q3财报估计；FY26调整EBITDA775–825M为公司指引",
+      "event_6m": "约2月检验去杠杆和环境现金支出，未找到AI冷却液已定放量日",
+      "independent_finding": "Q3调整EBITDA175–205M，TSS售后去库存压力；年底杠杆3.8倍是目标非已实现。",
+      "value_mechanism": "债务下降和盈利正常化可对高杠杆权益产生较大影响。",
+      "counterevidence_unclosed": "环境/诉讼实际现金支出不会因非GAAP剔除而消失；周期部门抵消新品贡献。",
+      "local_correction": "不能把AI浸没冷却选择权扩张为集团近半年利润的主要来源。",
+      "security_notes": "USD普通股/报表；净债务须加环境现金需求场景，不可凭调整EBITDA忽略。",
+      "source_urls": [
+        "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "The Chemours Company",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/CC_The_Chemours_Company_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CC_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "13.39",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "150.50M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "ALNY",
+      "published": "2026-07-30",
+      "event_3m": "10/23 EHDN ALN-HTT02初期数据、10/26 10ET圆桌为公司明确日程",
+      "event_6m": "TTR新患者增长及合作资产进展，财报约2月估计",
+      "independent_finding": "首次人体早期数据并非确证疗效；Q2已下调TTR年度收入指引至4.2–4.5B。",
+      "value_mechanism": "早期靶点敲低/安全性可增加管线价值；商业药放量决定近端现金。",
+      "counterevidence_unclosed": "早期临床结果与功能获益/获批差很远；商业增速已不及旧预期。",
+      "local_correction": "不得沿用未下调TTR指引或把HTT早期数据称三期成功；cemdisiran监管时间仅按公司援引合作方信息。",
+      "security_notes": "USD普通股/报表；合作产品权益仅本公司份额，不计全部销售。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000060/alny2026q2earningsrelease.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Alnylam Pharmaceuticals",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ALNY_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ALNY_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "227.02",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "133.81M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "IONS",
+      "published": "2026-07-29；GSK2026-04-28",
+      "event_3m": "bepirovirsen 10/26 FDA行动目标日，合作方官方确认，非保证批准",
+      "event_6m": "若批准后的里程碑/早期版税、已上市自有药表现；收入时间未硬定",
+      "independent_finding": "GSK已宣布受理、优先审评和10/26目标；Ionis仅合同权益，不能把GSK销售全归Ionis。",
+      "value_mechanism": "新适应症监管去风险及版税可改善经营价值。",
+      "counterevidence_unclosed": "审评结果、标签、患者规模及分成比例；临床失败必须已计入。",
+      "local_correction": "本地10/11已纳入CARDIO-TTRansform和pelacarsen失败，不得将失败试验复活成未来阳性催化。",
+      "security_notes": "USD普通股/报表；授权销售、预付款、里程碑、版税是不同现金和确认时点。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/874015/000114036126029960/ef20078953_ex99-1.htm",
+        "https://us.gsk.com/en-us/media/press-releases/bepirovirsen-accepted-for-priority-review-and-granted-breakthrough-therapy-designation-by-the-us-fda/"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Ionis Pharmaceuticals",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IONS_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IONS_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "43.67",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "166.18M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "POET",
+      "published": "2026-08-13",
+      "event_3m": "H2生产数量显著增长用于客户qualification为公司计划",
+      "event_6m": "约3月观察验收后商业订单/收入；未公告确定大规模收入日期",
+      "independent_finding": "Q2收入仅0.569925M；现金短投796.3M包含大额募资，经营现金流Q2约-12.2M。",
+      "value_mechanism": "通过客户认证并形成重复商业订单可改变平台价值。",
+      "counterevidence_unclosed": "原型/认证批次不等同大规模接受；极小收入与巨额期权估值之间跨度大。",
+      "local_correction": "830M募资累计口径不能替代796.3M期末现金；收入金额避免千元单位误读。",
+      "security_notes": "加拿大普通股非ADS；USD报表；权证公允价值5.5M收益不属经营利润，8/11RSU2.453M需稀释。",
+      "source_urls": [
+        "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "POET Technologies",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/POET_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/POET_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "6.41",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "173.06M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "ADBE",
+      "published": "2026-09-10",
+      "event_3m": "约12月FY26Q4/FY27展望为估计；Q4收入6.8–6.85B公司指引",
+      "event_6m": "约3月检Creative续费、AI付费和ARR转换",
+      "independent_finding": "Q3收入6.760B、增长13%、ARR27.5B；FY26 GAAP EPS18.12–18.17，调整24.45–24.50。",
+      "value_mechanism": "AI商业化及核心留存改善可能恢复估值，但没有单个确定翻倍事件。",
+      "counterevidence_unclosed": "竞争、SBC、订阅价格/席位迁移；ARR不是额外收入。",
+      "local_correction": "不得在总ARR之上再次加AI ARR；调整EPS不能直接当自由现金或普通股经济收益。",
+      "security_notes": "USD普通股/报表；回购现金和股数同步，不能只减少股数。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Adobe",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ADBE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ADBE_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-01"
+      ],
+      "snapshot_identity": {
+        "最新价格": "238.14",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "389.20M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "PNR",
+      "published": "2026-07-28",
+      "event_3m": "约10月Q3财报估计；收入-4%至-6%及去库存为公司展望",
+      "event_6m": "约2月FY27恢复计划；Taco交割日期为继承本地信息未本次证实",
+      "independent_finding": "Q2泳池销售-42%；FY26 GAAP EPS3.86–4.06、调整4.60–4.80，指引排除Taco。",
+      "value_mechanism": "去库存结束/订单恢复可推动正常盈利，但3–6月双倍缺少强经营幅度支撑。",
+      "counterevidence_unclosed": "管理层2027显著恢复不等于客户补库已发生；并购融资及执行。",
+      "local_correction": "不能用旧泳池增长逻辑或把未含并购的盈利和已合并收入混合。",
+      "security_notes": "爱尔兰普通股，USD价格/报表；并购后净债务须更新。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Pentair plc",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PNR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PNR_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "52.33",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "161.61M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "PLAB",
+      "published": "2026-08-26",
+      "event_3m": "约12月Q4财报估计；指引收入207–227M、调整EPS.40–.56",
+      "event_6m": "约3月高端掩模需求和资本开支现金回报",
+      "independent_finding": "Q3收入216M仅增2.7%；现金672.8M中503.5M在50.01%持有JV。",
+      "value_mechanism": "高端需求/产能利用率改善可促利润恢复，母公司可支配现金才构成安全边际。",
+      "counterevidence_unclosed": "大量现金归合营层面并有NCI/用途限制；收入增长幅度温和。",
+      "local_correction": "不能把集团全部现金当100%普通股净现金；旧GAAP归母和集团口径勿混。",
+      "security_notes": "USD普通股/报表；JV控制合并与母公司经济所有权两回事，扣NCI不可重复。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Photronics",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PLAB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PLAB_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "29.24",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "59.00M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "ICHR",
+      "published": "2026-08-04",
+      "event_3m": "约11月Q3财报估计，验证设备需求和毛利延续",
+      "event_6m": "约2月检自研流体平台贡献及FY27毛利",
+      "independent_finding": "Q2收入294.784M、毛利13.9%、经营率2.4%；毛利环比+260bp中130bp人员/规模、80bp不再发生重组、50bp工厂费用。",
+      "value_mechanism": "自研份额/供应效率若真实持续可提升低基数利润。",
+      "counterevidence_unclosed": "改善大部分来自规模和成本基数，不等于已获得定价权；20%毛利应作强成功情景。",
+      "local_correction": "不能把全部260bp归因产品平台护城河，或沿用融资前股数。",
+      "security_notes": "开曼普通股非ADR；USD；ATM/现金数继承控制器而非本卡独立逐条审计。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Ichor Holdings",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ICHR_Ichor_Holdings_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ICHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ICHR_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "54.38",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "37.45M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "NVDA",
+      "published": "2026-08-26",
+      "event_3m": "约11月FY27Q3财报为估计，最新GPU交付与指引",
+      "event_6m": "约2月Q4/下年展望为估计，财季多一周与正常化增长须分开",
+      "independent_finding": "FY27开始nonGAAP已经包含SBC，历史比较重述；Q2收入96.221B、经营利润63.734B；投资收益7.771B需剔除经营盈利。",
+      "value_mechanism": "持续需求/现金兑现仍可支持价值增长，但巨大基数下翻倍需更高盈利/倍数。",
+      "counterevidence_unclosed": "客户投入与供电制约、竞争、资本循环；股权投资与现金不同流动性。",
+      "local_correction": "nonGAAP利润不可再扣一次SBC；未独立确认11/17为官方日期，不能硬写。",
+      "security_notes": "USD普通股/报表；证券投资收益、现金/短投、私募投资分类分别处理。",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "NVIDIA",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NVDA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NVDA_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-21"
+      ],
+      "snapshot_identity": {
+        "最新价格": "226.32",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "24.15B"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "APLD",
+      "published": "2026-10-07",
+      "event_3m": "10/1 250MW ready-for-service已经发生；年底300MW为公司目标",
+      "event_6m": "约1–4月验证租约计费、建设融资及客户验收",
+      "independent_finding": "最新财报有2.010873B可赎回NCI及181.302M优先权益，现金2.949909B与受限.313385B必须分开。",
+      "value_mechanism": "项目如按时转租金并关闭融资缺口可提升普通股残余价值。",
+      "counterevidence_unclosed": "资本开支、优先分配和少数投资者退出权，不能只用企业价值减普通债。",
+      "local_correction": "Ready-for-service不是GPU客户全面验收；现金增加背后资本权利不能漏。",
+      "security_notes": "USD普通股/报表；NCI/优先股/受限现金是主要边界，留V2准确权益桥。",
+      "source_urls": [
+        "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Applied Digital",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/APLD_Applied_Digital_公司调研_2026-10-11.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/APLD_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/APLD_逐家公司投资思路对比_2026-10-11.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-10-11"
+      ],
+      "snapshot_identity": {
+        "最新价格": "23.25",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "302.39M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "NBIS",
+      "published": "2026-08-12",
+      "event_3m": "Q4资源扩张/客户交付为计划；无本卡确认的固定验收日",
+      "event_6m": "Q1容量与ARR，Tavily业绩归属和融资检验",
+      "independent_finding": "A288.585891M+B33.455053M须计经济权益；技术性C2.243621M不是同价值普通股简单再加；Tavily部分或有对价与2026/12和2027/3ARR挂钩。",
+      "value_mechanism": "签约容量转运营及资本支出可见性改善可重估。",
+      "counterevidence_unclosed": "功率/施工、地方许可、客户集中；NJDEP事件本卡继承控制器未独立重开。",
+      "local_correction": "不把全部收购或有对价当无成本资产，也不把C股机械全计经济股。",
+      "security_notes": "荷兰普通股、USD报表；A/B投票不同但经济权益合并，赔偿性earnout影响利润/稀释。",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Nebius Group",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/NBIS_Nebius_Group_公司调研_2026-09-26.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NBIS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NBIS_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-26"
+      ],
+      "snapshot_identity": {
+        "最新价格": "210.06",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "220.41M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "TTMI",
+      "published": "2026-09-30",
+      "event_3m": "Epiq收购已经完成；约11月核合并指引/整合成本",
+      "event_6m": "约2月财报验证交易后现金流与自有产能放量",
+      "independent_finding": "Epiq约1.1B现金交易；300M term A和800M term B融资结构需与其他债再融资用途区分。",
+      "value_mechanism": "RF/国防组合、PCB高端产能增长如兑现可改善持续盈利。",
+      "counterevidence_unclosed": "杠杆和整合；3年机会4.5B不可当年度保证收入，先进产能利用率需验证。",
+      "local_correction": "收购不再是未来待交割催化；M+N数量与4.5B机会来自本地/前轮，本卡未另开其原始段。",
+      "security_notes": "USD普通股/报表；新并购净债务、利息与增量利润同口径。",
+      "source_urls": [
+        "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "TTM Technologies",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/TTMI_TTM_Technologies_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TTMI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TTMI_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "110.33",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "105.35M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    },
+    {
+      "ticker": "AEIS",
+      "published": "2026-08-03",
+      "event_3m": "Q3收入640±20M、GAAP EPS2.38±.25为公司计划；约11月财报估计",
+      "event_6m": "约2月标准电源业务、Thai产能/认证；800V大收入2028说法继承S1",
+      "independent_finding": "Q2收入574M；GAAP净利55M含31.8M转债诱导转换成本。调整EPS分母对冲处理与GAAP不同。",
+      "value_mechanism": "更高销售利用率及产品组合改善推动近端盈利，非等待2028产品全部兑现。",
+      "counterevidence_unclosed": "认证/供应链/扩厂风险；调整每股收益及hedge效应不能复制为永久经济收益。",
+      "local_correction": "不应把2028年800V收入提前到半年；一次性转债成本和常态SBC须分开。",
+      "security_notes": "USD普通股/报表；转债与capped call、稀释股数需同目标价场景核算。",
+      "source_urls": [
+        "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf"
+      ],
+      "independent_access": "original_primary_relevant_sections",
+      "verdict": "事实/事件边界完成独立抽核；非目标价认证，残余问题逐卡保留",
+      "first_publication_scope": "published是本次使用公告/文件的首次公开日期；不声称已穷尽同事件更早所有披露。缺具体日则明示。",
+      "outside_opinion_review": "本角色未重读券商原研全文；前轮/控制器外部意见仅继承，不重复计独立多空核验",
+      "price_review": "继承控制器10/12正常收盘独立核验；本角色未重复获取报价",
+      "company_name": "Advanced Energy Industries",
+      "frozen_company_paths": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/AEIS_Advanced_Energy_Industries_公司调研_2026-09-22.md"
+      ],
+      "frozen_scenario_paths": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AEIS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "frozen_comparison_paths": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AEIS_逐家公司投资思路对比_2026-10-09.md"
+      ],
+      "local_read_scope": "公司报告身份、时间、催化与相关财务段；不是全文。情景/对比的结论主要继承前轮，未重新逐行读取。",
+      "source_dates_in_local_filenames": [
+        "2026-09-22"
+      ],
+      "snapshot_identity": {
+        "最新价格": "280.77",
+        "价格日期": "2026-10-12",
+        "currency": "USD",
+        "financial_currency": "USD",
+        "listing_type": "common/equity",
+        "adr_ratio": "不适用",
+        "shares_outstanding": "40.05M"
+      },
+      "security_verification_limit": "snapshot_identity为冻结输入，不保证最终完整经济股数；security_notes记录V1原文识别的边界，最终数值以V2权益桥为准。"
+    }
+  ],
+  "final20_review": "2026-10-13 UTC；原版保留于04_verification/V1_pre_final20_review，日历与ACMR股数修订，不改变其余证据状态。"
+}

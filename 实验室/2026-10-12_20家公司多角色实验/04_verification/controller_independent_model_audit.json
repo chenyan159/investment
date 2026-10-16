@@ -1,0 +1,794 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-13T03:39:07.348053+00:00",
+  "model_sha256": "53bf75813a86f394b435110bb6f02567a16df4c80502388ece5aa50a5a4d6448",
+  "companies": 29,
+  "scenarios": 87,
+  "method": "Separately implemented Decimal formulas; option model verified with erfc equation residual; no V2 builder imported or executed",
+  "limitations": "Arithmetic, identity, units and date controls only. Business forecasts, clinical probabilities, economic margins, funding and valuation multiples remain conditional. A bear price is not a maximum loss.",
+  "rows": [
+    {
+      "ticker": "NVDA",
+      "scenario": "bear",
+      "independent_price": 174.99166666666667,
+      "recorded_price": 174.991667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": -22.67953929539295,
+      "status": "PASS"
+    },
+    {
+      "ticker": "NVDA",
+      "scenario": "base",
+      "independent_price": 367.5615062761506,
+      "recorded_price": 367.561506,
+      "absolute_price_difference": 2.761506152637594e-07,
+      "independent_return_pct": 62.407876580130186,
+      "status": "PASS"
+    },
+    {
+      "ticker": "NVDA",
+      "scenario": "bull",
+      "independent_price": 569.1428571428571,
+      "recorded_price": 569.142857,
+      "absolute_price_difference": 1.4285706129157916e-07,
+      "independent_return_pct": 151.47704893198002,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "bear",
+      "independent_price": 487.06666666666666,
+      "recorded_price": 487.066667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": -50.75359270942867,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "base",
+      "independent_price": 1437.7383620689654,
+      "recorded_price": 1437.738362,
+      "absolute_price_difference": 6.896539161971305e-08,
+      "independent_return_pct": 45.36705917545958,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MU",
+      "scenario": "bull",
+      "independent_price": 2187.530172413793,
+      "recorded_price": 2187.530172,
+      "absolute_price_difference": 4.1379280446562916e-07,
+      "independent_return_pct": 121.17711845969761,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "bear",
+      "independent_price": 237.1656,
+      "recorded_price": 237.1656,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -33.14193893947509,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "base",
+      "independent_price": 483.5376,
+      "recorded_price": 483.5376,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 36.311448143658545,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "bull",
+      "independent_price": 744.5227722772278,
+      "recorded_price": 744.522772,
+      "absolute_price_difference": 2.7722774120775284e-07,
+      "independent_return_pct": 109.88435493959568,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "bear",
+      "independent_price": 212.12307692307692,
+      "recorded_price": 212.123077,
+      "absolute_price_difference": 7.692307235629414e-08,
+      "independent_return_pct": -38.9573879358052,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "base",
+      "independent_price": 513.6363636363636,
+      "recorded_price": 513.636364,
+      "absolute_price_difference": 3.636363317127689e-07,
+      "independent_return_pct": 47.80902550686723,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CLS",
+      "scenario": "bull",
+      "independent_price": 816.2962962962963,
+      "recorded_price": 816.296296,
+      "absolute_price_difference": 2.962963208119618e-07,
+      "independent_return_pct": 134.90540900612845,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "bear",
+      "independent_price": 45.85142857142857,
+      "recorded_price": 45.851429,
+      "absolute_price_difference": 4.28571432564695e-07,
+      "independent_return_pct": -77.17017099610209,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "base",
+      "independent_price": 170.68623853211008,
+      "recorded_price": 170.686239,
+      "absolute_price_difference": 4.6788991880930553e-07,
+      "independent_return_pct": -15.013822678694444,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "bull",
+      "independent_price": 307.5111111111111,
+      "recorded_price": 307.511111,
+      "absolute_price_difference": 1.1111109188277624e-07,
+      "independent_return_pct": 53.11248312642458,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "bear",
+      "independent_price": 5.1054545454545455,
+      "recorded_price": 5.105455,
+      "absolute_price_difference": 4.5454545460899e-07,
+      "independent_return_pct": -94.92902806371222,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "base",
+      "independent_price": 75.855,
+      "recorded_price": 75.855,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -24.657330154946365,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AAOI",
+      "scenario": "bull",
+      "independent_price": 168.264,
+      "recorded_price": 168.264,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 67.1275327771156,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "bear",
+      "independent_price": 26.25,
+      "recorded_price": 26.25,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -47.60479041916168,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "base",
+      "independent_price": 83.78571428571429,
+      "recorded_price": 83.785714,
+      "absolute_price_difference": 2.857142931134149e-07,
+      "independent_return_pct": 67.23695466210438,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "bull",
+      "independent_price": 166.32,
+      "recorded_price": 166.32,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 231.9760479041916,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "bear",
+      "independent_price": 570.5625,
+      "recorded_price": 570.5625,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -61.638472968339244,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "base",
+      "independent_price": 1855.8333333333333,
+      "recorded_price": 1855.833333,
+      "absolute_price_difference": 3.3333321880490985e-07,
+      "independent_return_pct": 24.776164895035624,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "bull",
+      "independent_price": 3037.3333333333335,
+      "recorded_price": 3037.333333,
+      "absolute_price_difference": 3.333334461785853e-07,
+      "independent_return_pct": 104.21381491218047,
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "bear",
+      "independent_price": 267.71098265895955,
+      "recorded_price": 267.710983,
+      "absolute_price_difference": 3.410404474379902e-07,
+      "independent_return_pct": -39.75222624981218,
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "base",
+      "independent_price": 543.73795761079,
+      "recorded_price": 543.737958,
+      "absolute_price_difference": 3.892100721714087e-07,
+      "independent_return_pct": 22.367043459162804,
+      "status": "PASS"
+    },
+    {
+      "ticker": "TSM",
+      "scenario": "bull",
+      "independent_price": 819.4450867052024,
+      "recorded_price": 819.445087,
+      "absolute_price_difference": 2.947975872302777e-07,
+      "independent_return_pct": 84.41433255433833,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "bear",
+      "independent_price": 172.26,
+      "recorded_price": 172.26,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -27.664399092970527,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "base",
+      "independent_price": 378.6078947368421,
+      "recorded_price": 378.607895,
+      "absolute_price_difference": 2.6315785817132564e-07,
+      "independent_return_pct": 58.9854265292862,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ADBE",
+      "scenario": "bull",
+      "independent_price": 542.0688,
+      "recorded_price": 542.0688,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 127.62610229276899,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "bear",
+      "independent_price": 37.096296296296295,
+      "recorded_price": 37.096296,
+      "absolute_price_difference": 2.9629629239025235e-07,
+      "independent_return_pct": -29.110842162628902,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "base",
+      "independent_price": 81.47540372670805,
+      "recorded_price": 81.475404,
+      "absolute_price_difference": 2.7329194551839464e-07,
+      "independent_return_pct": 55.69540173267353,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PNR",
+      "scenario": "bull",
+      "independent_price": 123.51249999999999,
+      "recorded_price": 123.5125,
+      "absolute_price_difference": 1.4210854715202004e-14,
+      "independent_return_pct": 136.02618001146567,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "bear",
+      "independent_price": 540.4724409448819,
+      "recorded_price": 540.472441,
+      "absolute_price_difference": 5.511810741154477e-08,
+      "independent_return_pct": -33.463936852778296,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "base",
+      "independent_price": 1167.075,
+      "recorded_price": 1167.075,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 43.675366243998525,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ARGX",
+      "scenario": "bull",
+      "independent_price": 1689.732,
+      "recorded_price": 1689.732,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 108.01821986950632,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "bear",
+      "independent_price": 80.35714285714286,
+      "recorded_price": 80.357143,
+      "absolute_price_difference": 1.4285713234585273e-07,
+      "independent_return_pct": -64.60349623066564,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "base",
+      "independent_price": 281.6,
+      "recorded_price": 281.6,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 24.041934631310014,
+      "status": "PASS"
+    },
+    {
+      "ticker": "ALNY",
+      "scenario": "bull",
+      "independent_price": 471.2,
+      "recorded_price": 471.2,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 107.55880539159546,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "bear",
+      "independent_price": 55.23380281690141,
+      "recorded_price": 55.233803,
+      "absolute_price_difference": 1.8309859228793357e-07,
+      "independent_return_pct": -47.129508167989464,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "base",
+      "independent_price": 155.4788732394366,
+      "recorded_price": 155.478873,
+      "absolute_price_difference": 2.3943661631165014e-07,
+      "independent_return_pct": 48.82633601937074,
+      "status": "PASS"
+    },
+    {
+      "ticker": "AGCO",
+      "scenario": "bull",
+      "independent_price": 237.7111111111111,
+      "recorded_price": 237.711111,
+      "absolute_price_difference": 1.1111112030448567e-07,
+      "independent_return_pct": 127.54006998287655,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "bear",
+      "independent_price": 32.045508982035926,
+      "recorded_price": 32.045509,
+      "absolute_price_difference": 1.7964076448606647e-08,
+      "independent_return_pct": -42.176995701847844,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "base",
+      "independent_price": 71.85414634146342,
+      "recorded_price": 71.854146,
+      "absolute_price_difference": 3.414634193177335e-07,
+      "independent_return_pct": 29.65381873234105,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CARR",
+      "scenario": "bull",
+      "independent_price": 109.54666666666667,
+      "recorded_price": 109.546667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": 97.66630578611813,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "bear",
+      "independent_price": 26.457142857142856,
+      "recorded_price": 26.457143,
+      "absolute_price_difference": 1.4285714300399377e-07,
+      "independent_return_pct": -64.16478009326445,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "base",
+      "independent_price": 78.71578947368421,
+      "recorded_price": 78.715789,
+      "absolute_price_difference": 4.7368421007831785e-07,
+      "independent_return_pct": 6.61762085017501,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MCHP",
+      "scenario": "bull",
+      "independent_price": 125.94110169491526,
+      "recorded_price": 125.941102,
+      "absolute_price_difference": 3.0508473969348415e-07,
+      "independent_return_pct": 70.5825568128339,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "bear",
+      "independent_price": 18.6825,
+      "recorded_price": 18.6825,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -53.270385192596294,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "base",
+      "independent_price": 71.26607142857142,
+      "recorded_price": 71.266071,
+      "absolute_price_difference": 4.2857142545926763e-07,
+      "independent_return_pct": 78.2543057242907,
+      "status": "PASS"
+    },
+    {
+      "ticker": "SMCI",
+      "scenario": "bull",
+      "independent_price": 163.24,
+      "recorded_price": 163.24,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 308.304152076038,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "bear",
+      "independent_price": 30.24390243902439,
+      "recorded_price": 30.243902,
+      "absolute_price_difference": 4.3902439017529105e-07,
+      "independent_return_pct": -71.27561740048971,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "base",
+      "independent_price": 153.79573170731706,
+      "recorded_price": 153.795732,
+      "absolute_price_difference": 2.9268292678352736e-07,
+      "independent_return_pct": 46.06869760406216,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BDC",
+      "scenario": "bull",
+      "independent_price": 254.46428571428572,
+      "recorded_price": 254.464286,
+      "absolute_price_difference": 2.8571426469170547e-07,
+      "independent_return_pct": 141.67944317056293,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "bear",
+      "independent_price": 49.65017857142857,
+      "recorded_price": 49.650179,
+      "absolute_price_difference": 4.28571432564695e-07,
+      "independent_return_pct": -71.21728778467909,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "base",
+      "independent_price": 214.91071428571428,
+      "recorded_price": 214.910714,
+      "absolute_price_difference": 2.8571426469170547e-07,
+      "independent_return_pct": 24.58592132505175,
+      "status": "PASS"
+    },
+    {
+      "ticker": "MOD",
+      "scenario": "bull",
+      "independent_price": 339.6140350877193,
+      "recorded_price": 339.614035,
+      "absolute_price_difference": 8.771928605710855e-08,
+      "independent_return_pct": 96.87770150012713,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "bear",
+      "independent_price": 11.516666666666667,
+      "recorded_price": 11.516667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": -66.90613026819922,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "base",
+      "independent_price": 48.075471698113205,
+      "recorded_price": 48.075472,
+      "absolute_price_difference": 3.018867928972213e-07,
+      "independent_return_pct": 38.14790717848624,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IREN",
+      "scenario": "bull",
+      "independent_price": 86.16666666666667,
+      "recorded_price": 86.166667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": 147.60536398467434,
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "bear",
+      "independent_price": 1.6,
+      "recorded_price": 1.6,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -77.36916548797737,
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "base",
+      "independent_price": 8.318181818181818,
+      "recorded_price": 8.318182,
+      "absolute_price_difference": 1.81818181843596e-07,
+      "independent_return_pct": 17.654622605117652,
+      "status": "PASS"
+    },
+    {
+      "ticker": "FLNC",
+      "scenario": "bull",
+      "independent_price": 17.318181818181817,
+      "recorded_price": 17.318182,
+      "absolute_price_difference": 1.8181818361995283e-07,
+      "independent_return_pct": 144.9530667352449,
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "bear",
+      "independent_price": 107.76162790697674,
+      "recorded_price": 107.761628,
+      "absolute_price_difference": 9.302326020588225e-08,
+      "independent_return_pct": -31.8525087542043,
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "base",
+      "independent_price": 194.24778761061947,
+      "recorded_price": 194.247788,
+      "absolute_price_difference": 3.8938054558457225e-07,
+      "independent_return_pct": 22.84056637615852,
+      "status": "PASS"
+    },
+    {
+      "ticker": "VST",
+      "scenario": "bull",
+      "independent_price": 288.53731343283584,
+      "recorded_price": 288.537313,
+      "absolute_price_difference": 4.328358613747696e-07,
+      "independent_return_pct": 82.46842056082708,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "bear",
+      "independent_price": 141.1764705882353,
+      "recorded_price": 141.176471,
+      "absolute_price_difference": 4.117646881240944e-07,
+      "independent_return_pct": -39.64754164319626,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "base",
+      "independent_price": 295.7142857142857,
+      "recorded_price": 295.714286,
+      "absolute_price_difference": 2.857142931134149e-07,
+      "independent_return_pct": 26.416845808090695,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRM",
+      "scenario": "bull",
+      "independent_price": 466.6666666666667,
+      "recorded_price": 466.666667,
+      "absolute_price_difference": 3.3333333249174757e-07,
+      "independent_return_pct": 99.49840401276792,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "bear",
+      "independent_price": 135.89078498293514,
+      "recorded_price": 135.890785,
+      "absolute_price_difference": 1.7064849089365453e-08,
+      "independent_return_pct": -38.30997594745998,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "base",
+      "independent_price": 263.94657534246574,
+      "recorded_price": 263.946575,
+      "absolute_price_difference": 3.424657393225061e-07,
+      "independent_return_pct": 19.823213792657413,
+      "status": "PASS"
+    },
+    {
+      "ticker": "PGR",
+      "scenario": "bull",
+      "independent_price": 426.43711340206187,
+      "recorded_price": 426.437113,
+      "absolute_price_difference": 4.0206185758506763e-07,
+      "independent_return_pct": 93.5886659715189,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "bear",
+      "independent_price": 57.983193277310924,
+      "recorded_price": 57.983193,
+      "absolute_price_difference": 2.773109244458283e-07,
+      "independent_return_pct": -47.6591503183689,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "base",
+      "independent_price": 138.0,
+      "recorded_price": 138.0,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 24.57122224228201,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BABA",
+      "scenario": "bull",
+      "independent_price": 249.76819407008085,
+      "recorded_price": 249.768194,
+      "absolute_price_difference": 7.008085844972811e-08,
+      "independent_return_pct": 125.46325516345989,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "bear",
+      "independent_price": 69.30320675649997,
+      "recorded_price": 69.303207,
+      "absolute_price_difference": 2.4350002547635086e-07,
+      "independent_return_pct": -27.68864069647332,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "base",
+      "independent_price": 131.68410115048496,
+      "recorded_price": 131.684101,
+      "absolute_price_difference": 1.5048496493363928e-07,
+      "independent_return_pct": 37.399938596081974,
+      "status": "PASS"
+    },
+    {
+      "ticker": "BNTX",
+      "scenario": "bull",
+      "independent_price": 273.45604908246185,
+      "recorded_price": 273.456049,
+      "absolute_price_difference": 8.246183824667241e-08,
+      "independent_return_pct": 185.3255937838709,
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "bear",
+      "independent_price": 0.9531064209274673,
+      "recorded_price": 0.953106,
+      "absolute_price_difference": 4.209274673261376e-07,
+      "independent_return_pct": -84.6520705164659,
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "base",
+      "independent_price": 8.373722108222129,
+      "recorded_price": 8.373722,
+      "absolute_price_difference": 1.0822212814787235e-07,
+      "independent_return_pct": 34.84254602612125,
+      "status": "PASS"
+    },
+    {
+      "ticker": "KYTX",
+      "scenario": "bull",
+      "independent_price": 27.606647656337056,
+      "recorded_price": 27.606648,
+      "absolute_price_difference": 3.4366294343612935e-07,
+      "independent_return_pct": 344.55149205051623,
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "bear",
+      "independent_price": 3.292072,
+      "recorded_price": 3.292072,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -48.641622464898596,
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "base",
+      "independent_price": 7.075124,
+      "recorded_price": 7.075124,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 10.376349453978161,
+      "status": "PASS"
+    },
+    {
+      "ticker": "POET",
+      "scenario": "bull",
+      "independent_price": 19.021371,
+      "recorded_price": 19.021371,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 196.7452574102964,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "bear",
+      "independent_price": 15.39875,
+      "recorded_price": 15.39875,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": -64.73837874971376,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "base",
+      "independent_price": 50.84761904761905,
+      "recorded_price": 50.847619,
+      "absolute_price_difference": 4.761904648376003e-08,
+      "independent_return_pct": 16.436040869290245,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IONS",
+      "scenario": "bull",
+      "independent_price": 103.4,
+      "recorded_price": 103.4,
+      "absolute_price_difference": 0.0,
+      "independent_return_pct": 136.77581863979847,
+      "status": "PASS"
+    }
+  ]
+}

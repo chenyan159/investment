@@ -1,0 +1,5462 @@
+{
+  "blind_reports": [
+    {
+      "role": "R1_cashflows",
+      "screened": 245,
+      "deep_count": 27,
+      "nominations": 20
+    },
+    {
+      "role": "R2_valuation",
+      "screened": 245,
+      "deep_count": 28,
+      "nominations": 20
+    },
+    {
+      "role": "R3_external",
+      "screened": 245,
+      "deep_count": 30,
+      "nominations": 20
+    },
+    {
+      "role": "R4_upside",
+      "screened": 245,
+      "deep_count": 30,
+      "nominations": 20
+    },
+    {
+      "role": "R5_diversification",
+      "screened": 245,
+      "deep_count": 29,
+      "nominations": 20
+    }
+  ],
+  "unique_blind_deep_read": 85,
+  "source_url_records": 277,
+  "unique_source_urls": 161,
+  "coverage": [
+    {
+      "ticker": "AAOI",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V2_numeric_verification.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "AAON",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ABBNY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ACLS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ACMR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ADBE",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R2_sources",
+        "R3_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "ADI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AEHR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AEIS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AEP",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AGCO",
+      "blind_nominations": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_非AI需求交叉核验.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R5_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "AJNMY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ALAB",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "ALGM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ALLE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ALNY",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R2_sources",
+        "R3_sources",
+        "R5_sources",
+        "S2_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AMBA",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AMD",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AMKR",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AMPX",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AMZN",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AOSL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "APD",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "APH",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\Controller_10月12日产业新证据.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "APLD",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "ARGX",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R5_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASGLY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASMIY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASML",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASMVY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASTS",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ASX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ATEYY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ATKR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AVAV",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "AVGO",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R2_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "BABA",
+      "blind_nominations": [
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R2_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "BDC",
+      "blind_nominations": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "S2_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "BELFB",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "BESIY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "BJ",
+      "blind_nominations": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R3_sources"
+      ]
+    },
+    {
+      "ticker": "BNTX",
+      "blind_nominations": [
+        "R2_valuation",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_BNTX权益追加核验.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_BNTX_rights_correction.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R2_sources",
+        "R3_sources",
+        "R4_sources",
+        "R5_sources",
+        "S2_sources",
+        "V1_BNTX_addendum_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "BWXT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CAMT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CARR",
+      "blind_nominations": [
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CB",
+      "blind_nominations": [
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CBRS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CCJ",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CDNS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CEG",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CGNX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CIEN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CLS",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B2_sources",
+        "R2_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "CMI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "04_verification\\V1_primary_verification.md"
+      ],
+      "source_log_mentions": [
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R4_sources",
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "COHU",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "COST",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CRDO",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R4_sources",
+        "S1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "R3_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "CRWD",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CRWV",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "04_verification\\V1_primary_verification.md"
+      ],
+      "source_log_mentions": [
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "CW",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "CWST",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DCI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DD",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DDOG",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "DELL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DHR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DIOD",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DKILY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DLR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DOV",
+      "blind_nominations": [
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R3_sources"
+      ]
+    },
+    {
+      "ticker": "DSCSY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "DTE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ECL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "EME",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "EMR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ENPH",
+      "blind_nominations": [
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "R3_sources"
+      ]
+    },
+    {
+      "ticker": "ENS",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "ENTG",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "EQIX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ET",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ETN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ETR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FANUY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FCEL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FIX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FLEX",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FLNC",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R3_external",
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R4_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "FN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FORM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "FTV",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "GEV",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "GFS",
+      "blind_nominations": [
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "GNRC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "GOOGL",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "HOCPY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "HPE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "HTHIY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "HUBB",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "IBM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ICHR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "IESC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "IFNNY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "IMOS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "INTC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "IONS",
+      "blind_nominations": [
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R3_sources",
+        "R5_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R4_sources",
+        "S1_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "ITT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "JBL",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "JCI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "KEYS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "KLAC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "KLIC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "KR",
+      "blind_nominations": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R5_sources"
+      ]
+    },
+    {
+      "ticker": "KTOS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "KYTX",
+      "blind_nominations": [
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_KYTX临床外部交叉核验.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "controller_clinical_sources",
+        "controller_memo_sources",
+        "R4_sources",
+        "R5_sources",
+        "S2_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "LEU",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "LFUS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "LIN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "LITE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "LWLG",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MCHP",
+      "blind_nominations": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "META",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "04_verification\\V1_primary_verification.md"
+      ],
+      "source_log_mentions": [
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "MICLF",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MIELY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MKSI",
+      "blind_nominations": [
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "MMM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MOD",
+      "blind_nominations": [
+        "R2_valuation",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R4_upside",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "R4_sources",
+        "S1_sources",
+        "S2_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "MPWR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MRAAY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MRAM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MRNA",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": [
+        "R5_sources"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "MSI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MTRN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MTSI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MU",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R2_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "MXL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "MYRG",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NBIS",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "NDSN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NET",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NOK",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NOW",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NTAP",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NTNX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NVDA",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R2_sources",
+        "R3_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "NVMI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NVT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "NVTS",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "OKLO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ON",
+      "blind_nominations": [
+        "R2_valuation",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "ONTO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ORCL",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "P",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_KYTX临床外部交叉核验.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\Controller_非AI需求交叉核验.md",
+        "03_round2\\S1_ai_upside.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_BNTX权益追加核验.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_BNTX_rights_correction.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "controller_clinical_sources",
+        "R1_sources",
+        "R2_sources",
+        "R3_sources",
+        "S1_sources",
+        "S2_sources",
+        "V1_BNTX_addendum_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PCRHY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PENG",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PGR",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "R5_sources",
+        "S2_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "PH",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PL",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PLAB",
+      "blind_nominations": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PNR",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_非AI需求交叉核验.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R2_sources",
+        "R3_sources",
+        "S2_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "POET",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "R4_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "POWI",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "POWL",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "PSIX",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B2_sources",
+        "R4_sources",
+        "S1_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "Q",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "03_round2\\S2_nonai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md"
+      ],
+      "source_log_mentions": [
+        "B1_sources",
+        "B2_sources",
+        "R1_sources",
+        "R2_sources",
+        "R3_sources",
+        "R4_sources",
+        "S1_sources",
+        "S2_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R4_sources"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "RMBS",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "RNR",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external",
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "ROG",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ROK",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "RSG",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "RYCEY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SANM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SBGSY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SHECY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SIMO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SITM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SKHY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [
+        "03_round2\\S1_ai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "SMCAY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SMCI",
+      "blind_nominations": [
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "SMR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SMTC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SMTOY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SNDK",
+      "blind_nominations": [
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "B2_sources",
+        "R2_sources",
+        "S1_sources",
+        "V1_sources"
+      ]
+    },
+    {
+      "ticker": "SNOW",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SNPS",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SOMMY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SPCX",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "SPXC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "ST",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "STM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "STX",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R2_valuation"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "SYM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TDY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TE",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TEL",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TER",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TJX",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TMO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TOELY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TRV",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TSEM",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TSLA",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TSM",
+      "blind_nominations": [
+        "R1_cashflows"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\Controller_平台候补复活审查.md",
+        "03_round2\\S1_ai_upside.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "TT",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TTDKY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "TTMI",
+      "blind_nominations": [
+        "R4_upside"
+      ],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R4_sources"
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "UCTT",
+      "blind_nominations": [
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "UMC",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VECO",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VIAV",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VICR",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VISN",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VRT",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R4_upside"
+      ],
+      "document_mentions": [
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_10月12日产业新证据.md",
+        "03_round2\\S1_ai_upside.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "S1_sources"
+      ]
+    },
+    {
+      "ticker": "VSH",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "VST",
+      "blind_nominations": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external"
+      ],
+      "blind_deep_read": [
+        "R1_cashflows",
+        "R2_valuation",
+        "R3_external"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\B2_valuation_rebuttal.md",
+        "03_round2\\Controller_非AI需求交叉核验.md",
+        "04_verification\\V1_primary_verification.md",
+        "04_verification\\V2_numeric_verification.md",
+        "05_chair\\主席最终裁决.md",
+        "05_chair\\主席阶段A_竞争池.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources",
+        "R3_sources",
+        "V1_sources",
+        "V2_sources"
+      ]
+    },
+    {
+      "ticker": "WCN",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\S2_nonai_upside.md"
+      ],
+      "source_log_mentions": [
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "blind_nominations": [
+        "R2_valuation"
+      ],
+      "blind_deep_read": [
+        "R2_valuation"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md"
+      ],
+      "source_log_mentions": [
+        "R2_sources"
+      ]
+    },
+    {
+      "ticker": "WM",
+      "blind_nominations": [
+        "R5_diversification"
+      ],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [
+        "03_round2\\B1_business_rebuttal.md",
+        "03_round2\\S2_nonai_upside.md"
+      ],
+      "source_log_mentions": [
+        "R5_sources",
+        "S2_sources"
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "WOLF",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "WRB",
+      "blind_nominations": [],
+      "blind_deep_read": [
+        "R5_diversification"
+      ],
+      "document_mentions": [],
+      "source_log_mentions": []
+    },
+    {
+      "ticker": "YASKY",
+      "blind_nominations": [],
+      "blind_deep_read": [],
+      "document_mentions": [],
+      "source_log_mentions": []
+    }
+  ],
+  "sources": [
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+      "canonical_url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen",
+      "ticker": [
+        "IONS"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-04"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+      "canonical_url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b",
+      "ticker": [
+        "IONS"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-24"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "canonical_url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "ticker": [
+        "IONS"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-23"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "canonical_url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "ticker": [
+        "NVDA",
+        "AVGO"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/",
+      "canonical_url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results",
+      "ticker": [
+        "NVDA"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-16"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+      "canonical_url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud",
+      "ticker": [
+        "BABA"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-09"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "canonical_url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs",
+      "ticker": [
+        "PNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results-and-Confirms-2026-Guidance/default.aspx",
+      "canonical_url": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results-and-Confirms-2026-Guidance/default.aspx",
+      "ticker": [
+        "PNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-29"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen/",
+      "canonical_url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen",
+      "ticker": [
+        "FLNC"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-31"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "ticker": [
+        "IREN"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-02-05"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+      "canonical_url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+      "ticker": [
+        "POET",
+        "CRDO",
+        "AAOI",
+        "COHR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-03-10"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": [
+        "BNTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "canonical_url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "ticker": [
+        "ADBE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-10"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "canonical_url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "ticker": [
+        "MU"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-30"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "canonical_url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "ticker": [
+        "ALNY",
+        "IONS"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-09"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3376934",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3376934",
+      "ticker": [
+        "ARGX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-08"
+    },
+    {
+      "file": "07_logs\\B1_sources.json",
+      "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "canonical_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-06"
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "canonical_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "canonical_url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "canonical_url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "canonical_url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "canonical_url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "canonical_url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\B2_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_clinical_sources.json",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38885382/",
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/38885382",
+      "ticker": "KYTX",
+      "status": "opened PubMed primary case-report abstract; full PMC blocked",
+      "event_id": "2024 single patient; company employee coauthor",
+      "date": "2024-06-17"
+    },
+    {
+      "file": "07_logs\\controller_clinical_sources.json",
+      "url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "canonical_url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "ticker": "KYTX",
+      "status": "opened original conference abstract",
+      "event_id": "KYSA-8 26 patients; same study as later corporate release",
+      "date": "2026-04"
+    },
+    {
+      "file": "07_logs\\controller_clinical_sources.json",
+      "url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "canonical_url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "ticker": "KYTX",
+      "status": "opened public preview only; not separate clinical evidence",
+      "event_id": "KYSA-8 same conference trial, editorial interpretation",
+      "date": "2026-05-06"
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://blogs.cisco.com/news/cisco-and-nvidia-announce-usfp-expanding-the-path-to-ai-connectivity",
+      "canonical_url": "https://blogs.cisco.com/news/cisco-and-nvidia-announce-usfp-expanding-the-path-to-ai-connectivity",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "canonical_url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38885382/",
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/38885382",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "canonical_url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "canonical_url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/07/alphabet-postq-ai-growth-accelerates-as-spending-weighs-on-cash-flow",
+      "canonical_url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/07/alphabet-postq-ai-growth-accelerates-as-spending-weighs-on-cash-flow",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.investing.com/news/stock-market-news/google-quarterly-cloud-revenue-growth-beats-expectations-4806844",
+      "canonical_url": "https://www.investing.com/news/stock-market-news/google-quarterly-cloud-revenue-growth-beats-expectations-4806844",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "canonical_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "canonical_url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "canonical_url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.pjm.com/markets-and-operations/rpm",
+      "canonical_url": "https://www.pjm.com/markets-and-operations/rpm",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://services.pjm.com/annualreport2025/markets/",
+      "canonical_url": "https://services.pjm.com/annualreport2025/markets",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf",
+      "canonical_url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\controller_memo_sources.json",
+      "url": "https://rss.globenewswire.com/news-release/2026/08/05/3339712/0/en/talen-energy-reports-second-quarter-2026-results-raises-2026-guidance.html",
+      "canonical_url": "https://rss.globenewswire.com/news-release/2026/08/05/3339712/0/en/talen-energy-reports-second-quarter-2026-results-raises-2026-guidance.html",
+      "ticker": null,
+      "status": "cited in controller memo; consult memo for exact read/failure status",
+      "event_id": "not automatically independent of other sources",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "canonical_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+      "canonical_url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "canonical_url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000308/pgr-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000308/pgr-20260630.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "canonical_url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "ticker": "ADBE",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-10"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "canonical_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027",
+      "ticker": "NVDA",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": "AVGO",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-02"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": "ALNY",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "ticker": "PNR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-28"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investor.belden.com/financials/quarterly-results/default.aspx",
+      "canonical_url": "https://investor.belden.com/financials/quarterly-results/default.aspx",
+      "ticker": "BDC",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": "BNTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "canonical_url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "ticker": "MOD",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-01"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "ticker": "PNR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-01"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+      "ticker": "MU",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-30"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "canonical_url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "ticker": "SMCI",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-11"
+    },
+    {
+      "file": "07_logs\\R2_sources.json",
+      "url": "https://investor.sandisk.com/static-files/c75d1bee-c5c9-4e5a-8605-302c1aeac59b",
+      "canonical_url": "https://investor.sandisk.com/static-files/c75d1bee-c5c9-4e5a-8605-302c1aeac59b",
+      "ticker": "SNDK",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-05"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "canonical_url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "ticker": "ADBE",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-10"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": "ALNY",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investors.pentair.com/node/27096/pdf",
+      "canonical_url": "https://investors.pentair.com/node/27096/pdf",
+      "ticker": "PNR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-28"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-reports-first-quarter-2026-financial-results-and",
+      "canonical_url": "https://ir.ionis.com/news-releases/news-release-details/ionis-reports-first-quarter-2026-financial-results-and",
+      "ticker": "IONS",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-04-29"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026",
+      "canonical_url": "https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026",
+      "ticker": "ENPH",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-28"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investors.biontech.de/node/18731/pdf",
+      "canonical_url": "https://investors.biontech.de/node/18731/pdf",
+      "ticker": "BNTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investors.bjs.com/press-releases/press-release-details/2026/BJs-Wholesale-Club-Holdings-Inc--Announces-Second-Quarter-Fiscal-2026-Results/default.aspx",
+      "canonical_url": "https://investors.bjs.com/press-releases/press-release-details/2026/BJs-Wholesale-Club-Holdings-Inc--Announces-Second-Quarter-Fiscal-2026-Results/default.aspx",
+      "ticker": "BJ",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-21"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "ticker": "PNR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-01"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+      "canonical_url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+      "ticker": "DOV",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-28"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "canonical_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "ticker": "NVDA",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://www.novartis.com/news/media-releases/novartis-announces-lpahorizon-phase-iii-topline-results-pelacarsen-patients-elevated-lpa-and-established-cardiovascular-disease-cvd",
+      "canonical_url": "https://www.novartis.com/news/media-releases/novartis-announces-lpahorizon-phase-iii-topline-results-pelacarsen-patients-elevated-lpa-and-established-cardiovascular-disease-cvd",
+      "ticker": "IONS",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-04"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000017/vistra-20260630xearningsre.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000017/vistra-20260630xearningsre.htm",
+      "ticker": "VST",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-07"
+    },
+    {
+      "file": "07_logs\\R3_sources.json",
+      "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+      "canonical_url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+      "ticker": "CRM",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "ticker": "CRDO",
+      "status": "opened_and_read",
+      "event_id": "CRDO_2026-09-01",
+      "date": "2026-09-01"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx",
+      "canonical_url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx",
+      "ticker": "MOD",
+      "status": "opened_and_read",
+      "event_id": "MOD_2026-07-29",
+      "date": "2026-07-29"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "canonical_url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "ticker": "POET",
+      "status": "opened_and_read",
+      "event_id": "POET_2026-08-13",
+      "date": "2026-08-13"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+      "canonical_url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+      "ticker": "TTMI",
+      "status": "opened_and_read",
+      "event_id": "TTMI_2026-08-05",
+      "date": "2026-08-05"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://ir.rdw.com/news-events/press-releases/detail/240/redwire-corporation-reports-second-quarter-2026-financial",
+      "canonical_url": "https://ir.rdw.com/news-events/press-releases/detail/240/redwire-corporation-reports-second-quarter-2026-financial",
+      "ticker": "RDW",
+      "status": "opened_and_read",
+      "event_id": "RDW_2026-08-06",
+      "date": "2026-08-06"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "ticker": "KYTX",
+      "status": "opened_and_read",
+      "event_id": "KYTX_2026-08",
+      "date": "2026-08"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": "BNTX",
+      "status": "opened_and_read",
+      "event_id": "BNTX_2026-08-04",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054328/psix-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054328/psix-20260630.htm",
+      "ticker": "PSIX",
+      "status": "opened_and_read",
+      "event_id": "PSIX_2026-08",
+      "date": "2026-08"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+      "ticker": "IREN",
+      "status": "opened_and_read",
+      "event_id": "IREN_2026-08",
+      "date": "2026-08"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "ticker": "FLNC",
+      "status": "opened_and_read",
+      "event_id": "FLNC_2026-09-16",
+      "date": "2026-09-16"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+      "canonical_url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+      "ticker": "COHR",
+      "status": "opened_and_read",
+      "event_id": "COHR_2026-03-02",
+      "date": "2026-03-02"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks",
+      "canonical_url": "https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks",
+      "ticker": "POET",
+      "status": "opened_and_read",
+      "event_id": "POET_Lumilens",
+      "date": "2026-05-14"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "ticker": "IREN",
+      "status": "opened_and_read",
+      "event_id": "IREN_2025-11-02",
+      "date": "2025-11-02"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://www.globenewswire.com/de/news-release/2026/09/24/3368111/0/en/kyverna-therapeutics-reports-positive-one-year-data-demonstrating-durable-clinical-responses-and-favorable-safety-profile-for-miv-cel-in-stiff-person-syndrome-and-generalized-myast.html",
+      "canonical_url": "https://www.globenewswire.com/de/news-release/2026/09/24/3368111/0/en/kyverna-therapeutics-reports-positive-one-year-data-demonstrating-durable-clinical-responses-and-favorable-safety-profile-for-miv-cel-in-stiff-person-syndrome-and-generalized-myast.html",
+      "ticker": "KYTX",
+      "status": "opened_and_read",
+      "event_id": "KYTX_oneyear",
+      "date": "2026-09-24"
+    },
+    {
+      "file": "07_logs\\R4_sources.json",
+      "url": "https://newsletter.stablebread.com/p/fluence-guidance-cut-update",
+      "canonical_url": "https://newsletter.stablebread.com/p/fluence-guidance-cut-update",
+      "ticker": "FLNC",
+      "status": "opened_and_read",
+      "event_id": "FLNC_guidancecut",
+      "date": "2026-09-16"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": "BNTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526126216/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526126216/kytx-ex99_1.htm",
+      "ticker": "KYTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-03-26"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "ticker": "IONS",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-29"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000147/exhibit9912026q2pressrelea.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000147/exhibit9912026q2pressrelea.htm",
+      "ticker": "MRNA",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-31"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "ticker": "PGR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-18"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/56873/000110465926108926/kr-20260815x10q.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/56873/000110465926108926/kr-20260815x10q.htm",
+      "ticker": "KR",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-11"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "ticker": "ARGX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000068/agco-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000068/agco-20260630.htm",
+      "ticker": "AGCO",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "ticker": "KYTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-08-11"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+      "canonical_url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+      "ticker": "KYTX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-24"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3376934",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3376934",
+      "ticker": "ARGX",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-08"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+      "canonical_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+      "ticker": "IONS",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-09-03"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": "ALNY",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://investors.agcocorp.com/events/event-details/agco-2026-technology-event",
+      "canonical_url": "https://investors.agcocorp.com/events/event-details/agco-2026-technology-event",
+      "ticker": "AGCO",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-10-06"
+    },
+    {
+      "file": "07_logs\\R5_sources.json",
+      "url": "https://investors.wm.com/static-files/7330b8ac-17d7-4959-bdb4-f05f7cb39906",
+      "canonical_url": "https://investors.wm.com/static-files/7330b8ac-17d7-4959-bdb4-f05f7cb39906",
+      "ticker": "WM",
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": "2026-07-28"
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "canonical_url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "ticker": [
+        "MU"
+      ],
+      "status": "unspecified",
+      "event_id": "MU_FY26Q4",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "canonical_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "ticker": [
+        "MU"
+      ],
+      "status": "unspecified",
+      "event_id": "MU_FY26Q4",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "canonical_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027",
+      "ticker": [
+        "NVDA"
+      ],
+      "status": "unspecified",
+      "event_id": "NVDA_FY27Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "canonical_url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "ticker": [
+        "NVDA"
+      ],
+      "status": "unspecified",
+      "event_id": "NVDA_FY27Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": [
+        "AVGO"
+      ],
+      "status": "unspecified",
+      "event_id": "AVGO_Q3",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "ticker": [
+        "CRDO"
+      ],
+      "status": "unspecified",
+      "event_id": "CRDO_Q1",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "canonical_url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "ticker": [
+        "CLS"
+      ],
+      "status": "unspecified",
+      "event_id": "CLS_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2026-results",
+      "canonical_url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2026-results",
+      "ticker": [
+        "AAOI"
+      ],
+      "status": "unspecified",
+      "event_id": "AAOI_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-secures-financing-of-us-400-million-in-a-registered-direct-offering-of-common-shares-and-warrant",
+      "canonical_url": "https://www.poet-technologies.com/news/poet-technologies-secures-financing-of-us-400-million-in-a-registered-direct-offering-of-common-shares-and-warrant",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "POET_MAY_FINANCE",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326005485/exh_991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326005485/exh_991.htm",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "POET_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "POET_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "POET_MAY_FINANCE",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "canonical_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "ticker": [
+        "POET"
+      ],
+      "status": "unspecified",
+      "event_id": "LUMILENS",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "ticker": [
+        "PSIX"
+      ],
+      "status": "unspecified",
+      "event_id": "PSIX_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "canonical_url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "ticker": [
+        "FLNC"
+      ],
+      "status": "unspecified",
+      "event_id": "FLNC_Q3",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "ticker": [
+        "FLNC"
+      ],
+      "status": "unspecified",
+      "event_id": "FLNC_RESET",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "canonical_url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "ticker": [
+        "IREN"
+      ],
+      "status": "unspecified",
+      "event_id": "IREN_FY26",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+      "canonical_url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+      "ticker": [
+        "NBIS"
+      ],
+      "status": "unspecified",
+      "event_id": "NBIS_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "canonical_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "ticker": [
+        "CRWV"
+      ],
+      "status": "unspecified",
+      "event_id": "CRWV_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "canonical_url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "ticker": [
+        "APLD"
+      ],
+      "status": "unspecified",
+      "event_id": "APLD_Q1",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "canonical_url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "ticker": [
+        "MU",
+        "SNDK",
+        "SKHY"
+      ],
+      "status": "unspecified",
+      "event_id": "TF_MEMORY",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+      "canonical_url": "https://news.skhynix.com/en/q2-2026-business-results",
+      "ticker": [
+        "SKHY",
+        "MU"
+      ],
+      "status": "unspecified",
+      "event_id": "SKHY_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "canonical_url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "ticker": [
+        "SNDK"
+      ],
+      "status": "unspecified",
+      "event_id": "SNDK_Q4",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2026-results",
+      "canonical_url": "https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2026-results",
+      "ticker": [
+        "COHR"
+      ],
+      "status": "unspecified",
+      "event_id": "COHR_Q4",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000033/q226exhibit991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000033/q226exhibit991.htm",
+      "ticker": [
+        "ALAB"
+      ],
+      "status": "unspecified",
+      "event_id": "ALAB_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx",
+      "canonical_url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx",
+      "ticker": [
+        "VRT"
+      ],
+      "status": "unspecified",
+      "event_id": "VRT_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.marvell.com/company/events/investor-day-2026.html",
+      "canonical_url": "https://www.marvell.com/company/events/investor-day-2026.html",
+      "ticker": [
+        "MRVL"
+      ],
+      "status": "unspecified",
+      "event_id": "MRVL_DAY",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.channelnewsasia.com/business/marvell-raises-2028-revenue-forecast-strong-ai-data-center-demand-6436891",
+      "canonical_url": "https://www.channelnewsasia.com/business/marvell-raises-2028-revenue-forecast-strong-ai-data-center-demand-6436891",
+      "ticker": [
+        "MRVL"
+      ],
+      "status": "unspecified",
+      "event_id": "MRVL_REUTERS",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investor.lumentum.com/quarterly-results/default.aspx/1000/default.aspx",
+      "canonical_url": "https://investor.lumentum.com/quarterly-results/default.aspx/1000/default.aspx",
+      "ticker": [
+        "LITE"
+      ],
+      "status": "unspecified",
+      "event_id": "LITE_RESULTS",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investors.modine.com/financials/quarterly-results/default.aspx",
+      "canonical_url": "https://investors.modine.com/financials/quarterly-results/default.aspx",
+      "ticker": [
+        "MOD"
+      ],
+      "status": "unspecified",
+      "event_id": "MOD_RESULTS",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://ir.supermicro.com/financials/quarterly-results/",
+      "canonical_url": "https://ir.supermicro.com/financials/quarterly-results",
+      "ticker": [
+        "SMCI"
+      ],
+      "status": "unspecified",
+      "event_id": "SMCI_RESULTS",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "canonical_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "ticker": [
+        "TSM"
+      ],
+      "status": "unspecified",
+      "event_id": "TSM_Q2",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "ticker": [
+        "TSM"
+      ],
+      "status": "unspecified",
+      "event_id": "TSM_SEPT",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S1_sources.json",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-04/5b6b7f218129782a5bf0366e7fd06aadc5c1515a/FS.pdf",
+      "canonical_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-04/5b6b7f218129782a5bf0366e7fd06aadc5c1515a/FS.pdf",
+      "ticker": [
+        "TSM"
+      ],
+      "status": "unspecified",
+      "event_id": "TSM_ADR",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "ticker": [
+        "ADBE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.canva.com/newsroom/news/all-new-affinity/",
+      "canonical_url": "https://www.canva.com/newsroom/news/all-new-affinity",
+      "ticker": [
+        "ADBE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+      "canonical_url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+      "ticker": [
+        "ADBE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "ticker": [
+        "PNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-acquire-taco-group-holdings-accelerating-growth-and",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-acquire-taco-group-holdings-accelerating-growth-and",
+      "ticker": [
+        "PNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "canonical_url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs",
+      "ticker": [
+        "PNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": [
+        "ALNY"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "canonical_url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "ticker": [
+        "ALNY"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.fiercepharma.com/pharma/alnylam-shares-tank-27-amvuttra-disappoints-attr-outlook-cut-2026",
+      "canonical_url": "https://www.fiercepharma.com/pharma/alnylam-shares-tank-27-amvuttra-disappoints-attr-outlook-cut-2026",
+      "ticker": [
+        "ALNY"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "canonical_url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "ticker": [
+        "ALNY"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf",
+      "canonical_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf",
+      "ticker": [
+        "ALNY"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "ticker": [
+        "ARGX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3345813",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3345813",
+      "ticker": [
+        "ARGX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=527316",
+      "canonical_url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=527316",
+      "ticker": [
+        "ARGX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "ticker": [
+        "KYTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "ticker": [
+        "KYTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": [
+        "BNTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/09/BioNTech-and-OncoC4-Present-Updated-Data-Showing-Gotistobart-Nearly-Doubled-Median-Overall-Survival-versus-Standard-of-Care-Chemotherapy-in-Previously-Treated-Squamous-Non-Small-Cell-Lung-Cancer-Patients.html",
+      "canonical_url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/09/BioNTech-and-OncoC4-Present-Updated-Data-Showing-Gotistobart-Nearly-Doubled-Median-Overall-Survival-versus-Standard-of-Care-Chemotherapy-in-Previously-Treated-Squamous-Non-Small-Cell-Lung-Cancer-Patients.html",
+      "ticker": [
+        "BNTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://news.bms.com/news/details/2026/Global-Data-for-BioNTech-and-Bristol-Myers-Squibbs-PD-L1xVEGF-A-Bispecific-Pumitamig-Shows-Encouraging-Efficacy-in-Patients-with-Non-Small-Cell-Lung-Cancer-in-ROSETTA-Lung-02-Trial-2026-TW53rMYYjx/default.aspx",
+      "canonical_url": "https://news.bms.com/news/details/2026/Global-Data-for-BioNTech-and-Bristol-Myers-Squibbs-PD-L1xVEGF-A-Bispecific-Pumitamig-Shows-Encouraging-Efficacy-in-Patients-with-Non-Small-Cell-Lung-Cancer-in-ROSETTA-Lung-02-Trial-2026-TW53rMYYjx/default.aspx",
+      "ticker": [
+        "BNTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "ticker": [
+        "BNTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "ticker": [
+        "AGCO"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://news.agcocorp.com/2026-10-05-AGCO-Tech-Day-2026-Spotlights-Autonomy%2C-AI-and-Mixed-Fleet-Solutions-to-Enhance-Farmer-Profitability",
+      "canonical_url": "https://news.agcocorp.com/2026-10-05-AGCO-Tech-Day-2026-Spotlights-Autonomy%2C-AI-and-Mixed-Fleet-Solutions-to-Enhance-Farmer-Profitability",
+      "ticker": [
+        "AGCO"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "canonical_url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "ticker": [
+        "AGCO",
+        "DE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.kansascityfed.org/agriculture/ag-credit-survey/steady-tightening-of-agricultural-credit-conditions-persists/",
+      "canonical_url": "https://www.kansascityfed.org/agriculture/ag-credit-survey/steady-tightening-of-agricultural-credit-conditions-persists",
+      "ticker": [
+        "AGCO",
+        "DE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "ticker": [
+        "BDC"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "ticker": [
+        "CARR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "canonical_url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "ticker": [
+        "MCHP"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "canonical_url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "ticker": [
+        "MOD"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "canonical_url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings",
+      "ticker": [
+        "CRM"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-411-points-as-nvidia-stock-soars-stock-market-today",
+      "canonical_url": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-411-points-as-nvidia-stock-soars-stock-market-today",
+      "ticker": [
+        "CRM"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "ticker": [
+        "PGR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investor.renre.com/news-events/press-releases/detail/393/renaissancere-reports-654-2-million-of-net-income-available-to-common-shareholders-and-547-8-million-of-operating-income-available-to-common-shareholders-in-q2-2026",
+      "canonical_url": "https://investor.renre.com/news-events/press-releases/detail/393/renaissancere-reports-654-2-million-of-net-income-available-to-common-shareholders-and-547-8-million-of-operating-income-available-to-common-shareholders-in-q2-2026",
+      "ticker": [
+        "RNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.howdenre.com/news-insights/capacity-competition-and-structural-innovation-howden-res-1-july-2026-latin-america-reinsurance",
+      "canonical_url": "https://www.howdenre.com/news-insights/capacity-competition-and-structural-innovation-howden-res-1-july-2026-latin-america-reinsurance",
+      "ticker": [
+        "RNR"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "ticker": [
+        "BABA"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://apnews.com/article/china-alibaba-earnings-ai-cloud-8a30302d23a96fc7b9aab664b9c1897d",
+      "canonical_url": "https://apnews.com/article/china-alibaba-earnings-ai-cloud-8a30302d23a96fc7b9aab664b9c1897d",
+      "ticker": [
+        "BABA"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm",
+      "ticker": [
+        "DE"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465926087575/tm2621414d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/823768/000110465926087575/tm2621414d1_ex99-1.htm",
+      "ticker": [
+        "WM"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-Outlook/default.aspx",
+      "canonical_url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-Outlook/default.aspx",
+      "ticker": [
+        "WCN"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "ticker": [
+        "KYTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\S2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526298979/kytx-20260708.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526298979/kytx-20260708.htm",
+      "ticker": [
+        "KYTX"
+      ],
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698523000016/ex991230320proncoc4.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698523000016/ex991230320proncoc4.htm",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2023-03-20"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit448oncoc4agreementr.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit448oncoc4agreementr.htm",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2023-03-17"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2023-03-16"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2023-03"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0426/2026042600131.pdf",
+      "canonical_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0426/2026042600131.pdf",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-04-26"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://en.dualitybiologics.com/news/615.html",
+      "canonical_url": "https://en.dualitybiologics.com/news/615.html",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-28"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://investors.biontech.de/static-files/242c45fc-69f7-4abb-b1a5-f29ab19c590d",
+      "canonical_url": "https://investors.biontech.de/static-files/242c45fc-69f7-4abb-b1a5-f29ab19c590d",
+      "ticker": "BNTX",
+      "status": "body_opened_partial_followup_failure",
+      "event_id": "unassigned",
+      "date": "2026-03-10"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/03/biontech-announces-fourth-quarter-and-full-year-2025-financial.html",
+      "canonical_url": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/03/biontech-announces-fourth-quarter-and-full-year-2025-financial.html",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-03-10"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2016-09-20"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "canonical_url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "ticker": "BNTX",
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-28"
+    },
+    {
+      "file": "07_logs\\V1_BNTX_addendum_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "ticker": "BNTX",
+      "status": "inherited_prior_V1_independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "canonical_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "canonical_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-30"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-02"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "canonical_url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-27"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-10"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investors.pentair.com/node/27181/pdf",
+      "canonical_url": "https://investors.pentair.com/node/27181/pdf",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-10-01"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "canonical_url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-10-01"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "canonical_url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-27"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-02-05"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "canonical_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "canonical_url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-05"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-06"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3345813",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3345813",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-17"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3376934",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3376934",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-10-08"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "canonical_url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-24"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-28"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-20"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-18"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-16"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-30"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "canonical_url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-06"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "canonical_url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-10-08"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-13"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "canonical_url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-11"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-31"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "canonical_url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-07"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+      "canonical_url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-24"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "canonical_url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-23"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "canonical_url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-09"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+      "canonical_url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-04"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "canonical_url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "canonical_url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-30"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.canva.com/newsroom/news/all-new-affinity/",
+      "canonical_url": "https://www.canva.com/newsroom/news/all-new-affinity",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2025-10-29"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "canonical_url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-10"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "canonical_url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "canonical_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-06"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+      "canonical_url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-09"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/",
+      "canonical_url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-01-09"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-07-22-ti-reports-second-quarter-2026-financial-results-and-shareholder-returns.html",
+      "canonical_url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-07-22-ti-reports-second-quarter-2026-financial-results-and-shareholder-returns.html",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07-22"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000117/allcorp63026earningsreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000117/allcorp63026earningsreleas.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-05"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "canonical_url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-09-03"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-10-12"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen/",
+      "canonical_url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-31"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-07 (Q2 filing)"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+      "canonical_url": "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investor.cisco.com/files/doc_presentation/2026/02/Cisco-Investor-Relations-Deck-2-19-26.pdf",
+      "canonical_url": "https://investor.cisco.com/files/doc_presentation/2026/02/Cisco-Investor-Relations-Deck-2-19-26.pdf",
+      "ticker": null,
+      "status": "independent_body_read",
+      "event_id": "unassigned",
+      "date": "2026-02-19"
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "canonical_url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V1_sources.json",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "canonical_url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "ticker": null,
+      "status": "unspecified",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "canonical_url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-09-30"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "canonical_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-26"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "canonical_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-09-02"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-09-01"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "canonical_url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-07-27"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-13"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "canonical_url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-05"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-11"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-04"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "canonical_url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-07"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-07"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix",
+      "canonical_url": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-01-05"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "canonical_url": "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-07-29"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "canonical_url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-11"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/press-releases/2023/03/biontech-and-oncoc4-announce-strategic-collaboration-co-develop.html",
+      "canonical_url": "https://www.biontech.com/au/en/home/mediaroom/news/press-releases/2023/03/biontech-and-oncoc4-announce-strategic-collaboration-co-develop.html",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2023-03-20"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://en.dualitybiologics.com/news/615.html",
+      "canonical_url": "https://en.dualitybiologics.com/news/615.html",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-28"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "canonical_url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "ticker": null,
+      "status": "V2 independently opened and relevant table/body read",
+      "event_id": "unassigned",
+      "date": "2026-08-28"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "ticker": null,
+      "status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "ticker": null,
+      "status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "ticker": null,
+      "status": "Inherited V1 direct contract reading; not independently opened byV2",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "ticker": null,
+      "status": "opened; strikefind8.25notreturned; do notcountasindependentlyverifiedcontractterms",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "canonical_url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "ticker": null,
+      "status": "opened; ADSratiofindnotreturned; inheritS1/V1ratioverification",
+      "event_id": "unassigned",
+      "date": ""
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "ticker": null,
+      "status": "opened; detailedrights inheritedfrozenreportandV1; do notclaimfulldocumentread",
+      "event_id": "unassigned",
+      "date": ""
+    }
+  ],
+  "warning": "Mentions are navigation only, not a completed verification or independent-source count. Same corporate event may have multiple URLs. Inspect each decisive evidence chain manually."
+}

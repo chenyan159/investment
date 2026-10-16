@@ -1,0 +1,13 @@
+{
+  "status": "sealed",
+  "company_count": 36,
+  "new_source_accesses": 22,
+  "checks": "36 unique, double price, finite branch prices, all source references, ordinary scenario arithmetic passed; LEU variable warrant equation used",
+  "files": {
+    "03_round2/B2_valuation_rebuttal.json": "ad7aa74e0f7c0cf32a361da2b3ab08b6f7edf68c98a58a76cba661b02ab4b777",
+    "03_round2/B2_valuation_rebuttal.md": "9d28abb03f56515297dbdc2695cf03799692a820c976236a7c09754d8e89ecd8",
+    "07_logs/B2_sources.json": "4430750ed6557620f9d1c0a63cc2d9875ff9f3ee4c36dceaadec9ef3b34851f0",
+    "07_logs/B2_build.py": "3f3441c7e43599026ace70c88feb849086a992c39230d120c5f90cadf9bb3a44",
+    "07_logs/B2_sources_build.py": "09404fc123dae12de3c4bade570c0cc59805d630b1a2a8e507fc3c1f48e1456b"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "role": "R1_cashflows",
+  "access_date": "2026-10-12 America/Los_Angeles",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "method": "从冻结正文的源链接直接打开IR/SEC，再检索现金及股本行；未依赖搜索摘要作为最终决定证据。下列均实读，未保存外部文章全文。",
+  "sources": [
+    {
+      "id": "R1-W01",
+      "query": "NVIDIA FY2027 Q2 official results and cash flow",
+      "publication_date": "2026-08-26",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "read_locator": "财务表，web lines 139-240",
+      "summary": "Q2收入96.221B、营业利润63.734B、CFO24.077B；应收63.059B。FY27非GAAP开始保留SBC。",
+      "supports": "实际交付和经营价值捕获强。",
+      "refutes": "GAAP净利润等于可分现金；H1股权投资净流出不应忽略。"
+    },
+    {
+      "id": "R1-W02",
+      "query": "Broadcom FY2026 Q3 official FCF 13665",
+      "publication_date": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "read_locator": "现金流调节及股本，web lines 1238-1307",
+      "summary": "Q3 CFO14.197B、FCF13.665B；九个月FCF31.937B；GAAP与非GAAP股本分母不同。",
+      "supports": "扩张已有现金支撑。",
+      "refutes": "可以混合不同EPS股本分母；高FCF不自动扣除了SBC。"
+    },
+    {
+      "id": "R1-W03",
+      "query": "Salesforce FY27 Q2 FCF SBC guidance",
+      "publication_date": "2026-08-26",
+      "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+      "read_locator": "指引及SBC调节web lines 64-101、现金表514-518",
+      "summary": "全年收入46.1–46.4B；GAAP营业率20.1%、非GAAP34.3%，SBC差9个百分点；H1 FCF7.654B。",
+      "supports": "成熟订阅仍有造血。",
+      "refutes": "34.3%利润率等于股东经济利润；收入增速含并购，不能全称有机。"
+    },
+    {
+      "id": "R1-W04",
+      "query": "Adobe Q3 FY2026 official release cash flow",
+      "publication_date": "2026-09-10",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "read_locator": "10页业绩PDF财务表；由IR页面Q3 link 51进入",
+      "summary": "实读当季公告，核对收入、利润和现金表；非GAAP调整不能免除SBC经济成本。",
+      "supports": "订阅实际收费和现金仍在。",
+      "refutes": "纯因生成AI出现就假定Adobe收入已崩塌。"
+    },
+    {
+      "id": "R1-W05",
+      "query": "EMCOR second quarter 2026 revenue EPS guidance",
+      "publication_date": "2026-07-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm",
+      "read_locator": "web lines 14-38、62-70",
+      "summary": "Q2收入5.15B、有机增长19.6%，营业率10.6%；全年EPS指引32–33.25、收入20–20.5B。",
+      "supports": "现场交付能力已有利润证明。",
+      "refutes": "把17.14B RPO作为全部当年收入或现金。"
+    },
+    {
+      "id": "R1-W06",
+      "query": "Progressive June 2026 10-Q cash flow 7974",
+      "publication_date": "2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000308/pgr-20260630.htm",
+      "read_locator": "现金流web lines 234-275",
+      "summary": "H1 CFO7.974B；未赚保费增2.182B、赔款准备金增2.257B，应收保费占用1.744B。",
+      "supports": "资金流入有真实保费来源。",
+      "refutes": "CFO减资本开支可以全部归普通股自由分配。",
+      "date_note": "本轮未独立核实具体提交日，经济期间明确截至2026-06-30。"
+    },
+    {
+      "id": "R1-W07",
+      "query": "Pentair 2026 proxy 2025 free cash flow 748",
+      "publication_date": "2026-03-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm",
+      "read_locator": "web lines 3145-3153及1203-1205",
+      "summary": "2025 CFO814.8M、capex68.8M、处置2.4M，FCF748.4M；收入4.176B。",
+      "supports": "过滤/泳池业务有历史现金产生基础。",
+      "refutes": "季度高现金等于终端复苏，历史现金不能证明2027渠道恢复。"
+    }
+  ],
+  "unverified": [
+    "所有公司10月12日股价来自冻结快照而非本轮逐笔交易所核验。",
+    "公司正文的2026后续事实若未列在上述官方源，仍属上游研究输入，不标成R1独立外证。",
+    "R1估值倍数、2027利润与股数为条件假设；不能将引用的经营报告模型误称公司指引。"
+  ]
+}

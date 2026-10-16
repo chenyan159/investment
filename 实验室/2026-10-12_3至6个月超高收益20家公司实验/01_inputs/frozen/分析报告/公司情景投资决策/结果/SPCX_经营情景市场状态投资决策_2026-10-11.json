@@ -1,0 +1,57 @@
+{
+  "ticker": "SPCX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:45:00-07:00",
+  "reference_price": {
+    "value": 162.57,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        13.29,
+        13.29
+      ],
+      "target_price": [
+        5.83,
+        10.42
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        74.98,
+        74.98
+      ],
+      "target_price": [
+        59.75,
+        84.13
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        159.61,
+        159.61
+      ],
+      "target_price": [
+        153.19,
+        217.45
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        290.33,
+        290.33
+      ],
+      "target_price": [
+        325.29,
+        465.14
+      ],
+      "evidence": "weak"
+    }
+  }
+}

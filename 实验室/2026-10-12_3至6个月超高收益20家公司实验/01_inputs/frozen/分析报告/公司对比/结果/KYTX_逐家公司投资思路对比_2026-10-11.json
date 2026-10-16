@@ -1,0 +1,131 @@
+{
+  "ticker": "KYTX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:47:57-07:00",
+  "reference_price": {
+    "value": 6.39,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0.57,
+        0.57
+      ],
+      "target_price": [
+        0,
+        0.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        12.81,
+        12.81
+      ],
+      "target_price": [
+        10.91,
+        14.71
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        49.18,
+        49.18
+      ],
+      "target_price": [
+        41.86,
+        56.49
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        58.1,
+        58.1
+      ],
+      "target_price": [
+        58.1,
+        75.07
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ARGX",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "KYTX在有限亏损的小仓右尾策略下优先；要求已商业化现金流与本金韧性时ARGX优先，但其现价基准赔率偏低。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "正常持有预算优先ALNY：已兑现产品和经营现金流降低融资反身性；KYTX只补充一次性免疫重置的更高右尾。"
+    },
+    {
+      "peer": "IONS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "偏好多资产商业化与较温和融资风险时IONS优先；只追求SPS先发和gMG免疫重置的数倍右尾时KYTX小仓优先。"
+    },
+    {
+      "peer": "MRNA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "以当前买价配置高风险预算时KYTX优先，MRNA现价225美元接近其突破上沿，临床进步难转成足够股东回报。"
+    },
+    {
+      "peer": "BNTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "优先融资续航和多项目试错时BNTX胜出；接受临床失败及增发损失以追求右尾时KYTX小仓胜出。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "防御与现金流配置优先DHR；追求有限仓位的非线性收益优先KYTX，DHR现价基准年化不足以充当高回报替代。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重视盈利连续性与客户分散时TMO优先；仅在高风险右尾预算中KYTX优先，TMO现价基准赔率较薄。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心配置顺位优先MSFT，其内生融资和商业壁垒更强；KYTX可作独立小仓催化补充，不能替代核心仓。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "成熟平台与本金韧性配置优先GOOGL；若要求现价的高弹性催化收益则KYTX小仓更合适，GOOGL亦需检验AI资本回收。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "进攻主仓优先NVDA：基准年化回报有竞争力且由已实现利润融资；KYTX仅提供由临床事件驱动的更极端右尾补充。"
+    }
+  ]
+}

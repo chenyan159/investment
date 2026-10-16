@@ -1,0 +1,137 @@
+{
+  "ticker": "AVAV",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:46:59-07:00",
+  "reference_price": {
+    "value": 137.11,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-04-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        130.76,
+        130.76
+      ],
+      "target_price": [
+        35.59,
+        49.52
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        326.69,
+        326.69
+      ],
+      "target_price": [
+        164.61,
+        200.03
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        550.1,
+        550.1
+      ],
+      "target_price": [
+        314.39,
+        372.41
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        818.41,
+        818.41
+      ],
+      "target_price": [
+        507.53,
+        637.76
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "RDW",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在共同买价下AVAV生产采购与获利兑现较近且基准赔率更好，RDW的空间复购价值仍受成本及现金验证约束。"
+    },
+    {
+      "peer": "TDY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "以资本保全和现金稳定为目标优先TDY，以可承受大回撤的防务非线性进攻为目标优先AVAV。"
+    },
+    {
+      "peer": "KTOS",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价下AVAV已有生产项目和基准每股回报优于KTOS尚待规模制造的推进及喷气路线，KTOS更宽现金跑道不足以抵消高经营估值。"
+    },
+    {
+      "peer": "PLTR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "PLTR的软件复用和现金质量更强，但在当前价格的基准及乐观赔率上AVAV优先。"
+    },
+    {
+      "peer": "CW",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健长项目与高现金转化优先CW，追求自主装备放量右尾并能承受采购和融资风险时优先AVAV。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "均衡成长配置中APH基准年化、客户分散与现金自给优于AVAV，AVAV仅作为防务专项风险源补充。"
+    },
+    {
+      "peer": "TTMI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "TTMI现金及客户风险未解时偏AVAV，若合格交付和回款支持稳定17至21倍全成本盈利则TTMI与AVAV回报重叠且可反超。"
+    },
+    {
+      "peer": "MTSI",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "MTSI现金自给和器件复用较强，但当前价格支付了较长久期，现价进攻赔率优先AVAV。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "均衡成长资金优先NVDA的基准年化、已实现规模利润与融资弹性，AVAV保留非AI防务右尾补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健成长配置优先MSFT的企业工作流壁垒、成熟底盘和较高基准年化，AVAV仅在防务弹性上占优。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视搜索变现及业务分散时优先GOOGL，追求防务右尾与本次中心价格弹性时优先AVAV，两者都需验证新增资本回收。"
+    }
+  ]
+}

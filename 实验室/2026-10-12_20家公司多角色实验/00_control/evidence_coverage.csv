@@ -1,0 +1,246 @@
+﻿ticker,blind_nominations,blind_deep_read,document_mentions,source_log_mentions
+AAOI,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 04_verification\V2_numeric_verification.md,B1_sources; S1_sources
+AAON,,,,
+ABBNY,,,,
+ACLS,,,,
+ACMR,,,,
+ADBE,R1_cashflows; R2_valuation; R3_external; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R2_sources; R3_sources; S2_sources
+ADI,,,,
+AEHR,,,,
+AEIS,,,,
+AEP,,,,
+AGCO,R3_external; R5_diversification,R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_非AI需求交叉核验.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R5_sources; S2_sources
+AJNMY,,,,
+ALAB,,R4_upside,03_round2\S1_ai_upside.md,S1_sources
+ALGM,,,,
+ALLE,,,,
+ALNY,R1_cashflows; R3_external; R4_upside; R5_diversification,R1_cashflows; R2_valuation; R3_external; R4_upside; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R2_sources; R3_sources; R5_sources; S2_sources; V1_sources
+AMAT,,,,
+AMBA,,R4_upside,,
+AMD,,,03_round2\B1_business_rebuttal.md,
+AMKR,,R3_external,,
+AMPX,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,
+AMZN,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 05_chair\主席阶段A_竞争池.md,R2_sources
+ANET,,,,
+AOSL,,,,
+APD,,,,
+APH,,,03_round2\Controller_10月12日产业新证据.md,
+APLD,,R4_upside,03_round2\S1_ai_upside.md,S1_sources
+ARGX,R1_cashflows; R5_diversification,R1_cashflows; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R5_sources; S2_sources
+ARM,,,,
+ASGLY,,,,
+ASMIY,,,,
+ASML,,,,
+ASMVY,,,,
+ASTS,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,
+ASX,,,,
+ATEYY,,,,
+ATKR,,,,
+AVAV,,R3_external,,
+AVGO,R1_cashflows; R2_valuation; R3_external; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R2_sources; S1_sources; V1_sources; V2_sources
+AXTI,,R4_upside,,
+BABA,R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R2_sources; S2_sources
+BDC,R2_valuation; R3_external,R2_valuation; R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; S2_sources; V1_sources
+BE,,,,
+BELFB,,,,
+BESIY,,,,
+BJ,R3_external; R5_diversification,R3_external; R5_diversification,03_round2\B1_business_rebuttal.md,R3_sources
+BNTX,R2_valuation; R3_external; R4_upside; R5_diversification,R2_valuation; R3_external; R4_upside; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_BNTX权益追加核验.md; 04_verification\V1_primary_verification.md; 04_verification\V2_BNTX_rights_correction.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R2_sources; R3_sources; R4_sources; R5_sources; S2_sources; V1_BNTX_addendum_sources; V1_sources; V2_sources
+BWXT,,,,
+CAMT,,,,
+CARR,R3_external,R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,S2_sources
+CAT,,,,
+CB,R5_diversification,R5_diversification,03_round2\B1_business_rebuttal.md,
+CBRS,,,,
+CC,,,,
+CCJ,,,,
+CDNS,,,,
+CEG,,,,
+CGNX,,,,
+CIEN,,,,
+CLS,,R1_cashflows; R2_valuation,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B2_sources; R2_sources; S1_sources; V1_sources; V2_sources
+CMI,,,04_verification\V1_primary_verification.md,V1_sources
+COHR,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\S1_ai_upside.md,B1_sources; R4_sources; S1_sources
+COHU,,,,
+COST,,R5_diversification,03_round2\B1_business_rebuttal.md,
+CRDO,R4_upside,R1_cashflows; R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S1_ai_upside.md; 04_verification\V2_numeric_verification.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R4_sources; S1_sources; V2_sources
+CRM,R1_cashflows; R2_valuation; R3_external,R1_cashflows; R2_valuation; R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; R3_sources; S2_sources
+CRWD,,,,
+CRWV,,R4_upside,03_round2\S1_ai_upside.md,S1_sources
+CSCO,,,04_verification\V1_primary_verification.md,V1_sources
+CW,,,,
+CWST,,R5_diversification,,
+DCI,,,,
+DD,,,,
+DDOG,,,,
+DE,,,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 05_chair\主席阶段A_竞争池.md,S2_sources
+DELL,,,,
+DHR,,,,
+DIOD,,,,
+DKILY,,,,
+DLR,,,,
+DOV,R3_external,R3_external,03_round2\B1_business_rebuttal.md,R3_sources
+DSCSY,,,,
+DT,,,,
+DTE,,,,
+ECL,,,,
+EME,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md,
+EMR,,,,
+ENPH,R3_external,R2_valuation; R3_external,03_round2\B1_business_rebuttal.md,R2_sources; R3_sources
+ENS,,R3_external,,R2_sources
+ENTG,,,,
+EQIX,,,,
+ET,,,,
+ETN,,,,
+ETR,,,,
+FANUY,,,,
+FCEL,,,,
+FIX,,,,
+FLEX,,R1_cashflows,,
+FLNC,R4_upside,R3_external; R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R4_sources; S1_sources; V1_sources; V2_sources
+FN,,,,
+FORM,,,,
+FTV,,,,
+GEV,,,,
+GFS,R2_valuation,R2_valuation,03_round2\B1_business_rebuttal.md,R2_sources
+GLW,,,,
+GNRC,,,,
+GOOGL,,R1_cashflows,03_round2\B1_business_rebuttal.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 05_chair\主席阶段A_竞争池.md,
+HOCPY,,,,
+HPE,,,,
+HTHIY,,,,
+HUBB,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md,
+IBM,,,,
+ICHR,,,,
+IESC,,,,
+IFNNY,,,,
+IMOS,,,,
+INTC,,,,
+IONS,R4_upside; R5_diversification,R3_external; R4_upside; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R3_sources; R5_sources; V2_sources
+IREN,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R4_sources; S1_sources; V1_sources
+ITT,,,,
+JBL,R1_cashflows,R1_cashflows; R2_valuation,03_round2\B1_business_rebuttal.md,R2_sources
+JCI,,,,
+KEYS,,,,
+KLAC,,,,
+KLIC,,,,
+KR,R3_external; R5_diversification,R3_external; R5_diversification,03_round2\B1_business_rebuttal.md,R5_sources
+KTOS,,,,
+KYTX,R4_upside; R5_diversification,R4_upside; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_KYTX临床外部交叉核验.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,controller_clinical_sources; controller_memo_sources; R4_sources; R5_sources; S2_sources; V2_sources
+LEU,,R4_upside,,
+LFUS,,,,
+LIN,,,,
+LITE,,,03_round2\S1_ai_upside.md,S1_sources
+LRCX,,,,
+LWLG,,R4_upside,,
+MCHP,R2_valuation; R3_external,R2_valuation; R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席阶段A_竞争池.md,R2_sources; S2_sources
+META,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md; 04_verification\V1_primary_verification.md,V1_sources
+MICLF,,,,
+MIELY,,,,
+MKSI,R2_valuation,R2_valuation,03_round2\B1_business_rebuttal.md,R2_sources
+MMM,,,,
+MOD,R2_valuation; R3_external; R4_upside; R5_diversification,R1_cashflows; R2_valuation; R3_external; R4_upside; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; R4_sources; S1_sources; S2_sources; V1_sources
+MPWR,,,,
+MRAAY,,,,
+MRAM,,,,
+MRNA,,R5_diversification,,R5_sources
+MRVL,,,03_round2\S1_ai_upside.md,S1_sources
+MSFT,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 05_chair\主席阶段A_竞争池.md,R2_sources
+MSI,,,,
+MTRN,,,,
+MTSI,,,,
+MU,R1_cashflows; R2_valuation; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R2_sources; S1_sources; V1_sources; V2_sources
+MXL,,,,
+MYRG,,,,
+NBIS,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\S1_ai_upside.md; 05_chair\主席阶段A_竞争池.md,S1_sources
+NDSN,,,,
+NET,,,,
+NOK,,,,
+NOW,,,,
+NTAP,,,,
+NTNX,,,,
+NVDA,R1_cashflows; R2_valuation; R3_external; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; R2_sources; R3_sources; S1_sources; V1_sources; V2_sources
+NVMI,,,,
+NVT,,,,
+NVTS,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,
+OKLO,,,,
+ON,R2_valuation; R5_diversification,R2_valuation; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md,R2_sources
+ONTO,,,,
+ORCL,,R1_cashflows; R2_valuation; R3_external,,R2_sources
+P,,,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_KYTX临床外部交叉核验.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\Controller_非AI需求交叉核验.md; 03_round2\S1_ai_upside.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_BNTX权益追加核验.md; 04_verification\V1_primary_verification.md; 04_verification\V2_BNTX_rights_correction.md; 04_verification\V2_numeric_verification.md; 05_chair\主席阶段A_竞争池.md,B1_sources; B2_sources; controller_clinical_sources; R1_sources; R2_sources; R3_sources; S1_sources; S2_sources; V1_BNTX_addendum_sources; V1_sources; V2_sources
+PANW,,,,
+PCRHY,,,,
+PENG,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,
+PGR,R1_cashflows; R2_valuation; R3_external; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; R5_sources; S2_sources; V1_sources
+PH,,,,
+PL,,R4_upside,,
+PLAB,R2_valuation; R3_external,R2_valuation; R3_external,03_round2\B1_business_rebuttal.md,R2_sources
+PLTR,,,,
+PNR,R1_cashflows; R2_valuation; R3_external; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_非AI需求交叉核验.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R2_sources; R3_sources; S2_sources; V1_sources
+POET,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席阶段A_竞争池.md,B1_sources; R4_sources; S1_sources; V1_sources; V2_sources
+POWI,,,,
+POWL,,,,
+PSIX,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B2_sources; R4_sources; S1_sources; V1_sources
+PWR,,,,
+Q,,,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S1_ai_upside.md; 03_round2\S2_nonai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md,B1_sources; B2_sources; R1_sources; R2_sources; R3_sources; R4_sources; S1_sources; S2_sources; V1_sources; V2_sources
+QCOM,R1_cashflows; R2_valuation,R1_cashflows; R2_valuation,03_round2\B1_business_rebuttal.md,R2_sources
+RDW,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,R4_sources
+RKLB,,R4_upside,03_round2\B1_business_rebuttal.md,
+RMBS,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,
+RNR,R1_cashflows; R5_diversification,R1_cashflows; R2_valuation; R3_external; R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S2_nonai_upside.md,R2_sources; S2_sources
+ROG,,,,
+ROK,,,,
+RSG,,R5_diversification,,
+RYCEY,,,,
+SANM,,,,
+SBGSY,,,,
+SHECY,,,,
+SIMO,,,,
+SITM,,,,
+SKHY,,,03_round2\S1_ai_upside.md,S1_sources
+SMCAY,,,,
+SMCI,R2_valuation,R2_valuation; R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; S1_sources; V1_sources; V2_sources
+SMR,,,,
+SMTC,,,,
+SMTOY,,,,
+SNDK,R2_valuation,R2_valuation,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,B2_sources; R2_sources; S1_sources; V1_sources
+SNOW,,,,
+SNPS,,,,
+SOMMY,,,,
+SPCX,,,,
+SPXC,,,,
+ST,,,,
+STM,,,,
+STX,,R2_valuation,,R2_sources
+SYM,,,,
+TDY,,,,
+TE,,,,
+TEL,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md,
+TER,,,,
+TJX,,R5_diversification,,
+TMO,,,,
+TOELY,,,,
+TRV,,R5_diversification,,
+TSEM,,,,
+TSLA,,,,
+TSM,R1_cashflows,R1_cashflows,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\Controller_平台候补复活审查.md; 03_round2\S1_ai_upside.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,S1_sources; V1_sources; V2_sources
+TT,,,,
+TTDKY,,,,
+TTMI,R4_upside,R4_upside,03_round2\B1_business_rebuttal.md,R4_sources
+TXN,,,,
+UCTT,R3_external,R3_external,03_round2\B1_business_rebuttal.md,
+UMC,,,,
+VECO,,,,
+VIAV,,,,
+VICR,,,,
+VISN,,,,
+VRT,,R4_upside,03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_10月12日产业新证据.md; 03_round2\S1_ai_upside.md; 05_chair\主席阶段A_竞争池.md,S1_sources
+VSH,,,,
+VST,R1_cashflows; R2_valuation; R3_external,R1_cashflows; R2_valuation; R3_external,03_round2\B1_business_rebuttal.md; 03_round2\B2_valuation_rebuttal.md; 03_round2\Controller_非AI需求交叉核验.md; 04_verification\V1_primary_verification.md; 04_verification\V2_numeric_verification.md; 05_chair\主席最终裁决.md; 05_chair\主席阶段A_竞争池.md,R2_sources; R3_sources; V1_sources; V2_sources
+WCN,,R5_diversification,03_round2\S2_nonai_upside.md,S2_sources
+WDC,R2_valuation,R2_valuation,03_round2\B1_business_rebuttal.md,R2_sources
+WM,R5_diversification,R5_diversification,03_round2\B1_business_rebuttal.md; 03_round2\S2_nonai_upside.md,R5_sources; S2_sources
+WMT,,R5_diversification,,
+WOLF,,,,
+WRB,,R5_diversification,,
+YASKY,,,,

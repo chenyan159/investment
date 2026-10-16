@@ -1,0 +1,57 @@
+{
+  "ticker": "WCN",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:52:02-07:00",
+  "reference_price": {
+    "value": 152.83,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        139,
+        139
+      ],
+      "target_price": [
+        93,
+        117
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        211,
+        211
+      ],
+      "target_price": [
+        180,
+        214
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        243,
+        243
+      ],
+      "target_price": [
+        237,
+        276
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        263,
+        263
+      ],
+      "target_price": [
+        266,
+        308
+      ],
+      "evidence": "weak"
+    }
+  }
+}

@@ -1,0 +1,772 @@
+{
+  "role": "B1_business_rebuttal",
+  "status": "sealed_for_controller_next_round",
+  "cutoff": "2026-10-12T20:50:00-07:00",
+  "price_date": "2026-10-12",
+  "check_dates": [
+    "2027-01-12",
+    "2027-04-12"
+  ],
+  "coverage": 46,
+  "pool_rule": "五位独立首轮提名并集44家，另加RKLB与控制器遗漏复活ICHR；不按票数定名单",
+  "scope": "业务/事件反驳。不是最终20，不把未重新独立查源公司伪称已核验；价格不重复采集，沿用控制器历史收盘核验。",
+  "local_read_scope": "已读根AGENTS、实验章程、控制器争议清单。5份首轮JSON读取重点排名/事件/论证字段，5份MD读开篇而非逐字全篇。控制器相关证据作线索，主要决定事实独立再开原文。独立形成结论后仅按指定字段读S1，未读S2全文。",
+  "independence_note": "公司IR、SEC附件与通讯社代发同稿只算同一来源；公司转录是管理层证词，不算客户证明；root/S1/S2不算外部独立来源。",
+  "severity_definitions": {
+    "致命事实/口径错误": "具体论据必须删除或重算，并非整只股票必然淘汰",
+    "概率折扣": "商业路线可能成立，但兑现时间/利润/现金降低成功概率或要求额外条件",
+    "尚待核验": "证据访问或关键合同条款不足，不能因未找到就声称没有，也不能将其计为已证实"
+  },
+  "high_priority_business_cases": [
+    "MU",
+    "SNDK",
+    "KYTX",
+    "AMPX",
+    "IREN",
+    "AAOI",
+    "SMCI",
+    "PSIX",
+    "ENPH",
+    "VISN",
+    "BNTX",
+    "UCTT"
+  ],
+  "twenty_slot_contest": [
+    "ACMR",
+    "CC",
+    "ICHR",
+    "TTMI",
+    "AVAV",
+    "RDW",
+    "AOSL",
+    "FLNC",
+    "LEU",
+    "CLS",
+    "CRDO",
+    "COHR",
+    "ASTS"
+  ],
+  "resurrections": [
+    {
+      "ticker": "UCTT",
+      "why": "真实Q3收入/EPS加速，低票不应输给远期量产叙事",
+      "versus": "AEIS/MRAM/PLAB"
+    },
+    {
+      "ticker": "TTMI",
+      "why": "AI网络占比与现实利润改善，先核新收购对EPS/现金的影响",
+      "versus": "MRAM/POET"
+    },
+    {
+      "ticker": "CC",
+      "why": "盈利低谷修复及自由现金流可形成跨行业右尾",
+      "versus": "VISN/FLNC"
+    },
+    {
+      "ticker": "ICHR",
+      "why": "首轮未提名；小股权与毛利/自制内容改善有两季可验路径",
+      "versus": "UCTT/AOSL"
+    },
+    {
+      "ticker": "GNRC",
+      "why": "客户原始采购/权证条款真实，作为PSIX对照；暂不足正式20",
+      "versus": "PSIX"
+    },
+    {
+      "ticker": "RKLB",
+      "why": "已有航天收入与新火箭去风险，不能仅因未获首轮票忽略；首飞日期待核",
+      "versus": "ASTS/RDW"
+    }
+  ],
+  "required_controller_actions": [
+    "SMCI撤销EPS乘股数推集团净利下降41%的错误算例；转用毛利/费用/税/优先分配桥。",
+    "对MU/SNDK不要把当前超高利润否认成数据异常，已开原始披露；但52周、证券收益、履约现金及周期持续性逐项调整。",
+    "ENPH将11月演示与2027试点分列；6m模型可给技术期权，不能给无依据量产收入。",
+    "PSIX以9/25已生效融资取代旧135M/2027说法，220M并非现金。",
+    "AVAV既有Titan/LOCUST奖项已在FY27指引；新厂spring2027不保证4/12前产量，旧LMS miss不能不核就复述。",
+    "ACMR保留面板H1而非Q1纠错，同时纳入9/30 backlog和10/28真实更新日，不以单一面板日期否决。",
+    "WOLF按债转股、配套股权、政府权证全体重算；不能只扣7.5%。",
+    "POET将募集额、现金、条件订单、框架潜力、产能五口径拆开。",
+    "ICHR是新复活候选，现有毛利桥不能外推20%，需要新品/自制内容/回款证据。",
+    "Maia10/12原文小时未核，只作背景，严格截时模型可不使用其特定新增事实。",
+    "AOSL失望价格仍高于现价不能证明下行小，应重算真实利润/销售倍数失望情景；MRAM需保留SBC/研发成本，旧空头百分比按当日价重新核算。"
+  ],
+  "peer_challenges": [
+    "S1的盈利约束与B1独立业务查源方向一致，但‘42%或25% NOPAT过高’只否定原倍数算式，不自动否定CRDO/COHR路线；可通过较高收入/较低利润率/不同时间提前定价重构尾部。",
+    "SMCI高增长+10.6%毛利只能留较窄费用空间，不能同时采用异常Q4毛利和AI大客户规模。正常利润率与SBC/优先分配必须一套口径。",
+    "AVGO与NVDA不能对NG统一再扣股酬：NVDA FY27 NG已包含SBC，AVGO仍剔除，需公司分别处理。",
+    "将CRWV/APLD融资复杂度当概率折扣；若客户合同和分配瀑布支持高杠杆普通股右尾，可保留，不能转为‘只买净现金’规则。",
+    "ENPH/POET/MRAM等收入前估值不是禁用，但需具名客户/量产资格等信息跃迁，而不能以公布技术参数本身推断2x。"
+  ],
+  "companies": [
+    {
+      "ticker": "AAOI",
+      "recommendation": "保留条件，增长不等于40%毛利",
+      "classification": "事实更新+概率折扣",
+      "decisive_rebuttal": "10/5 ATM已完成约5.695M股、净588M，不能再算未融资灾难或未来一次新现金；扩产资本与良率、定价决定盈利，融资完成本身已发生。",
+      "strongest_bull": "现金融资显著降低短窗扩产断档，真实收发模块交付可在收入确认前后上修远期盈利，客户认证的价值大于仅有样品。",
+      "decision_changing_question": "1.6T出货增长能否带来单位毛利和经营现金改善，还是高产能低良率？",
+      "test_method_and_window": "下一两季对照产能、良率、认证→生产出货、GM、存货和CapEx；对650k/月与930k/月媒体口径另核不可合并。",
+      "alternative_comparison": "相对POET商业化阶段更成熟；相对CRDO当下盈利弱但未来产能兑现右尾更大。",
+      "source_ids": [
+        "P15",
+        "L01"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "ACMR",
+      "recommendation": "保留并上调短窗，面板日期纠错不等于淘汰",
+      "classification": "事实时间纠错+概率折扣",
+      "decisive_rebuttal": "8/7面板量产机写H1 2027不是Q1，不能锁定4/12之前。但9/30披露25亿美元backlog+88.2%和10/28预报是真正新短窗信息；含已发未确认与待发，不是半年新增收入。",
+      "strongest_bull": "国产替代及多产品装机能提前提高全年预期，回款与验收证明后美股控股折价可能收敛。",
+      "decision_changing_question": "10/28/11月报告能否把backlog转换成美国合并口径收入及可归母现金，而非确认滞留？",
+      "test_method_and_window": "逐项拆China GAAP定义/已发待验收/订单取消、美国控股比例与A+B全部经济股；首报与下一季双验。",
+      "alternative_comparison": "比ICHR/UCTT需求政策更有右尾但监管/归母折价更大；不因一个面板工具时点否决整个订单池。",
+      "source_ids": [
+        "P34",
+        "P49"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "ADBE",
+      "recommendation": "暂不进20，保留客户付费反证观察",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "AI ARR是总ARR内的子集，不能相加；回购减少股数不能独立修复产品需求被替代带来的倍数折价。",
+      "strongest_bull": "若AI新工具拉动付费席位、价格和留存，真实高现金业务可快速逆转‘被替代’叙事。",
+      "decision_changing_question": "新AI产品付费究竟增量还是现有套餐重标签，净新ARR/续订率能否超出市场衰退假设？",
+      "test_method_and_window": "下一两次财报核付费用户、净新ARR与续费/折扣，按总ARR统一口径；不以AI功能发布次数代替订单。",
+      "alternative_comparison": "比VISN/CC现金稳，但缺少同等强2x短窗事件，不因大盘蓝筹低下行默认选入。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "本轮业务命题继承，未重新打开Adobe财报"
+    },
+    {
+      "ticker": "AEIS",
+      "recommendation": "候选后段，撤去800V半年销售想象",
+      "classification": "概率折扣+尚待核验",
+      "decisive_rebuttal": "800V大规模收入若最早2028不能解释本窗；转录搜索提示IEEPA关税退款改善现金，复苏毛利须剔退款/一次性项。",
+      "strongest_bull": "既有数据中心/半导体电源可先推动利润，未来800V只是追加期权，不一定要等待它量产。",
+      "decision_changing_question": "剔关税退款后，现有产品毛利和订单能否持续上修经济EPS，支持翻倍估值？",
+      "test_method_and_window": "回到原10Q和客户设计文件核退款、存货、经常费用；两季检验本业经营增量，独立于800V样品。",
+      "alternative_comparison": "相比UCTT同受半导体CapEx但估值门槛更高；若只能用远期新架构解释，应让位UCTT/ICHR。",
+      "source_ids": [
+        "P35",
+        "L01"
+      ],
+      "verification_status": "本轮转录搜索，尚未独立读完整公司财报"
+    },
+    {
+      "ticker": "ALNY",
+      "recommendation": "候补临床，机制数据不能等同患者获益",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "首轮10月HTT数据/讨论日需再次对官方确认；降低HTT属于靶点参与，不自动证明长期功能改善。现有TTR收入与管线估值不能混加。",
+      "strongest_bull": "递送平台一旦在CNS获得可重复生物学效果，市场会在后期临床前给跨疾病价值；并非必须收入实现。",
+      "decision_changing_question": "HTT项目是否给出可解释剂量效应、安全性和临床一致性，足以越过仅生物标志物阶段？",
+      "test_method_and_window": "读试验设计/人数/对照/CSF标志物及临床量表，后续验证计划；精确日期以官方为准，不能把2027晚期项目提前。",
+      "alternative_comparison": "比KYTX股权基数高、当期经营风险低，但同等2x短窗必须更大平台惊喜。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "本轮未独立打开项目正文，日期与资料待专项核验"
+    },
+    {
+      "ticker": "AMBA",
+      "recommendation": "候補，需新订单强于SAM上修",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q2 GAAP研发含项目终止9M一次性负债释放，不能说费用永久降低；七年渠道协议是销售通路不是七年买货保证。Q3指引是渐进增长。",
+      "strongest_bull": "CV75/CV72实际边缘AI销售和低功耗优势已在增长，新产品X7若拿到规模客户有非线性右尾。",
+      "decision_changing_question": "X7/5nm产品是否出现可量化设计胜利，销量和毛利足以抵消持续研发，而非仅五年SAM变大？",
+      "test_method_and_window": "两季产品销售/GAAP费用正常化、渠道订单和终端出货验证；将9M返还单列。",
+      "alternative_comparison": "与AOSL相比毛利高而市场进入周期长；若只有渠道和demo证据，优先本窗盈利拐点更近的ICHR。",
+      "source_ids": [
+        "P44"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "AMPX",
+      "recommendation": "保留高优先，撤回‘全部2028以后’的淘汰理由",
+      "classification": "事实纠错+概率折扣",
+      "decisive_rebuttal": "CAMINUS伙伴10/5披露资格认证中、量产计划1Q27，是独立于75M补贴远期产线的近端路径；但合作代工不等同已获等额终端订单或高毛利。",
+      "strongest_bull": "美国制造/国防合规与高能量密度若同时获客户验证，收入前可产生溢价；相对自建大厂，代工缩短时间和资本占用。",
+      "decision_changing_question": "1Q27量产是否真正通过客户资格，出货、良率和加工成本是否让订单变现？",
+      "test_method_and_window": "追CAMINUS/Amprius两方及终端客户资格、首批出货与应收；区分宣布产能、合格产能、销售。3m认证，6m初批兑现。",
+      "alternative_comparison": "比TE/WOLF更少依赖巨额新融资闭合；比ENPH更接近窗口内量产，但电池制造良率是硬门槛。",
+      "source_ids": [
+        "P03"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "AOSL",
+      "recommendation": "保留高尾但盈利拐点下移，候选后段",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q1中值收入176M×24.5% NG毛利=43.12M，小于46.5M NG费用；约189.8M收入才NG经营打平，高于指引上沿186M。AI标签不等于下季盈利。",
+      "strongest_bull": "组合与价格改善可在再下一两季跨过固定成本，低基数形成非线性盈利，保留无需当季赚钱。",
+      "decision_changing_question": "AI电源增长是否把毛利/季度收入推进约190M盈亏平衡之上，同时不增加费用和占款？",
+      "test_method_and_window": "两季拆Computing份额、毛利与费用，GAAP还需更高门槛；任何盈利桥均标NG还是含SBC经济利润。",
+      "alternative_comparison": "比NVTS有近端销售/产能基础；比ICHR拐点尚弱，若后者现金和毛利更稳应换位。",
+      "source_ids": [
+        "P22"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "APLD",
+      "recommendation": "候补保留复活，母公司分配瀑布未清前不入核心",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "250MW已于10/1通电不是未来催化；Q1 NOI58.8M、NG EBITDA64.4M不是普通股收益，账面可赎回NCI2.011B和债6.377B先于普通股。",
+      "strongest_bull": "通电租赁模式比自己卖GPU服务可减少设备价格风险，后续300MW目标与新租户能推动资产重估。",
+      "decision_changing_question": "扣项目债务服务、Macquarie优先及施工后，新增MW带给母公司普通股的年现金到底多少？",
+      "test_method_and_window": "逐项目NOI→利息本金→优先收益→母公司剩余，对非经常融资会计损失不机械当经营烧钱；3m看300MW，6m看租金。",
+      "alternative_comparison": "比IREN较少GPU商业风险但普通股分配更复杂；只有融资后现金收益更优才换入。",
+      "source_ids": [
+        "P25"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "ARGX",
+      "recommendation": "候补，等待积极对照数据的实质优势",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "MMN事件若为IVIg活性对照，非劣/便利性并不自动产生新大市场；必须区分统计设计和商业切换成本。",
+      "strongest_bull": "已商业化平台可用新适应症拓展，若疗效/负担优势显著，医生转换速度可超预期。",
+      "decision_changing_question": "EMPASSION结果能否证明足够大且耐久的临床/使用优势，而不是仅达最低终点？",
+      "test_method_and_window": "官方临床终点、效应量、对照用药、患者亚组与付款证据，读出后再反解需新增收入；日期未在本轮独验。",
+      "alternative_comparison": "与BNTX/KYTX相比下行可能小，但本任务所需股权增量大，优先较小事件基数除非平台惊喜。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "本轮继承临床候选逻辑，未独立全文复核"
+    },
+    {
+      "ticker": "ASTS",
+      "recommendation": "保留高尾候补，发射能力与商业收费分开",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "early2027约45颗是目标而非保证；beta explicitly非商业使用，发射/生产目标不自动转成付费覆盖。2025伙伴原H1 beta预期提示计划曾后移。",
+      "strongest_bull": "轨道规模和终端真实连接每跨一步均可明显降低技术风险，市场可以在付费大收入之前重估。",
+      "decision_changing_question": "45颗所需制造/发射节奏是否可实现，且具名运营商付费商用期限和频谱许可到位？",
+      "test_method_and_window": "逐颗已在轨/待发/排期/已覆盖国家和实际商业套餐，区分网络测试与收入；3m看节奏，6m看商用证据。",
+      "alternative_comparison": "比RDW事件更二元、右尾更强，不能只因未赚钱删除；若只有发射后故事而无收费证据则选RDW。",
+      "source_ids": [
+        "P19",
+        "P20",
+        "P21"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "AVAV",
+      "recommendation": "保留条件，不可重复叠加已含指引奖项",
+      "classification": "致命重复计算+概率折扣",
+      "decisive_rebuttal": "官方9/9电话会明确Titan/LOCUST奖项已入FY27指引；全年CapEx12–14%销售、FCF仍负，盐湖新厂spring2027并非4/12前必达。旧LMS miss口径不可直接移植新分部。",
+      "strongest_bull": "已有国防生产采购与新用途、funded backlog比纯研发强，政府需求可使市场提前折现FY28产能。",
+      "decision_changing_question": "追加funded订单及产能验证能否超越已含LOCUST的原全年指引，同时降低SCDE固定成本拖累？",
+      "test_method_and_window": "下一两季区分funded、unfunded与IDIQ上限；用交付进度和毛利/CFO验证，不能将3月SCAR终止当未来催化。",
+      "alternative_comparison": "比RDW经营规模/军工客户更成熟，RDW更小股权有更陡弹性；两者比较并购前后增长和融资后股数。",
+      "source_ids": [
+        "P50"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "AVGO",
+      "recommendation": "候补，强执行但经济利润与倍数同时扩张要求高",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q4 AI21.7B/总34.8B指引已强，不能把客户总CapEx全部变成本公司订单。NG经营率66%排SBC等，不能直接变成接近同水平税后经济NOPAT。",
+      "strongest_bull": "定制ASIC和网络均有真正收入，AI占比升高使新增需求敏感，软件现金帮助融资供给。",
+      "decision_changing_question": "系统级收入增加是否维持每股经济利润与现金，而非毛利被内存/系统转售稀释？",
+      "test_method_and_window": "后两季分芯片/网络/系统内容，扣经常SBC并核软件前置收入；比较毛利/回款而不只增长率。",
+      "alternative_comparison": "NVDA受ASIC竞争而AVGO可能受益，但不意味着两者都按最高份额；MU可作为架构中立的盈利替代。",
+      "source_ids": [
+        "P47"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "BNTX",
+      "recommendation": "保留高优先多事件，但净现金不等同保底",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "gotistobart Stage1 HR0.46早已披露且属非关键剂量确认；2026 Stage2 interim依赖事件数。T-Pam Q4终点也不自动等于可申报注册组合。",
+      "strongest_bull": "现金足以承受研发，多个临床事件在窗口内，某一靶点有效可改变平台而非单适应症估值。",
+      "decision_changing_question": "Stage2及T-Pam关键读出是否在窗口内发生，效应量/安全性支持可批准竞争优势？",
+      "test_method_and_window": "读随机对照设计、事件数、统计界限与不良事件；现金按欧元、ADS/股数统一，扣六个月研发消耗，不用先前剂量阶段代替关键读出。",
+      "alternative_comparison": "比KYTX多元且资金更稳，右尾较分散；比ARGX/ALNY收入基数更小、管线事件更显性。",
+      "source_ids": [
+        "P17"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "CC",
+      "recommendation": "复活/上调，作为跨行业替代",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q2 EBITDA247M不宜四倍年化，Q3指引175–205M；Opteon337M同比-10%，库存调整仍在。高杠杆放大恢复，也放大诉讼和现金波动。",
+      "strongest_bull": "Q2经营现金158M/FCF114M显示并非纯纸面修复；产品价格与渠道去库存可在两季改变债务风险折价。",
+      "decision_changing_question": "剔资产出售/一次税项后，TiO2提价与Opteon去库存能否带来可重复FCF并降债？",
+      "test_method_and_window": "两季分部价格/销量/库存，PFAS现金支付、利息与净债桥；判定盈利修复是否真正归股东。",
+      "alternative_comparison": "与VISN比较同为低谷但机制不同；若两者2x可能性相近优先更清晰现金，不能因非AI排除。",
+      "source_ids": [
+        "P30"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "CLS",
+      "recommendation": "保留20竞争后段，投资者日不是自动估值重置",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "10/26业绩与10/27投资者日是已确认日期，但HPS属于CCS不能另加；客户器件转售可能放大收入而不放大利润。",
+      "strongest_bull": "明确近端更新日、有现实制造利润和复杂系统设计能力，FY27指引上修可使市场提前定价更远收入。",
+      "decision_changing_question": "投资者日给出的2027盈利上修是否来自真实增值内容/利润率，而非客户转售收入和NG激励剔除？",
+      "test_method_and_window": "财报按GAAP与管理口径两条桥，单位增值毛利/现金结算激励/经营现金逐项；3m用新指引，6m兑现验证。",
+      "alternative_comparison": "比SMCI收入组合稳定但2x经济率也需提升；比COHR较少光学专利风险但增值比例可能低。",
+      "source_ids": [
+        "P46",
+        "L01"
+      ],
+      "verification_status": "财报日独立确认；业务口径取首轮和后读S1，尚需完整财务原文复核"
+    },
+    {
+      "ticker": "COHR",
+      "recommendation": "候选后段，利润率门槛高于产品可行性门槛",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "PhotonLink Q4 CY26收入开始爬坡，十多个engagement不是十个量产大客户；已签anchor长期协议比样品强，但金额/毛利未披露。",
+      "strongest_bull": "跨InP激光/光学组件/平台可受益多种架构，CPO/NPO并行不必押唯一胜者；窗口内有真正收入启动。",
+      "decision_changing_question": "Q4启动能否形成可量化订单收入，且高资本开支后每股现金盈利随量上升？",
+      "test_method_and_window": "财报拆PhotonLink增量与原业务重分类、毛利和CapEx；客户确认优于只用公司engagement总数，6m看连续出货。",
+      "alternative_comparison": "比POET客户基础成熟；比CRDO新平台右尾强但25%经济NOPAT须解释，不默认光学利润全归其所有。",
+      "source_ids": [
+        "P41"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "CRDO",
+      "recommendation": "降低成功经济利润率，候选后段",
+      "classification": "致命口径错误+概率折扣",
+      "decisive_rebuttal": "Q1 GAAP利润129.4M低于上季169.1M而收入479M增长；NG费用与GAAP差约93M，不可默认股酬全无成本。Q2指引525–535M，不是更高的535–555M。",
+      "strongest_bull": "AEC销量和高毛利已验证，光电共存并不意味着铜全部被替代；设计胜利与新客户可继续拉升远期利润。",
+      "decision_changing_question": "增长是否足以使含正常股酬/收购后费用的经济经营率上升，而非只NG利润高？",
+      "test_method_and_window": "两季核每大客户、AEC/光模块组合、SBC和并购摊销；电连接长度/功率实际部署验证替代边界。",
+      "alternative_comparison": "比POET盈利证据强，但若2x依赖近50%经济EBIT则门槛高于AAOI/UCTT重新盈利路径。",
+      "source_ids": [
+        "P26"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "CRWV",
+      "recommendation": "条件候补，需资本消耗桥胜过IREN",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q2收入2.575B但净利息640M、折旧摊销1.393B；调整EBITDA忽略最大经济成本，预付款带来现金也对应未来履约。六年会计折旧不能直接等同所有GPU经济寿命。",
+      "strongest_bull": "长期合同和旧卡续约可延长资产收益，平台及大客户规模真实，不能因会计净亏损自动剔除。",
+      "decision_changing_question": "扣设备替换资本、利息、租赁及股酬后，已运营GPU组合是否创造可重复普通股现金？",
+      "test_method_and_window": "按GPU代际/合同期限/价格/更新需求分组；债融资与客户预付款分别桥接，避免FCF与未偿债双计或漏计。3m合同验收，6m同批资产现金回报。",
+      "alternative_comparison": "相对IREN成熟客户收入强，但财务层次更厚；相对APLD商业模式不同不能同一EBITDA倍数排序。",
+      "source_ids": [
+        "P42"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "ENPH",
+      "recommendation": "保留技术期权，撤销‘窗口内商业大规模收入’假设",
+      "classification": "致命时间错误+概率折扣",
+      "decisive_rebuttal": "官方是2026年11月完整系统演示、2027客户试点，未限定一季度，不能将800V SST大量营收塞入4月前。多角色共同看好不增加事件独立性。",
+      "strongest_bull": "市值重估可发生在高功率系统演示、客户设计选型之时，不必等待收入；现有电力电子能力能降低跨领域失败概率。",
+      "decision_changing_question": "11月是否有可复现整机效率/热/可靠性结果及具名客户、明确试点排期，而不只是模块演示？",
+      "test_method_and_window": "官方演示+客户独立确认；查功率、效率曲线、冗余、局放及预计订单，3m验证演示，6m验证客户采纳而非要求销售爆发。",
+      "alternative_comparison": "与NVTS/MRAM比较ENPH近端系统验证更具体；与PSIX比较收入滞后，必须用期权折价而非同类PE。",
+      "source_ids": [
+        "P02",
+        "L02"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "FLNC",
+      "recommendation": "保留小比例高尾候选，等待FY27计划与现金证据",
+      "classification": "致命旧指引错误+概率折扣",
+      "decisive_rebuttal": "9/16收入2.4B、调整EBITDA-200M已取代旧3B/-10M；FY27经营现金中性至正是计划不是保证。旧UBS/MS乐观目标不能当降指引后赞同。",
+      "strongest_bull": "若Houston瓶颈可修复、合同履约而非需求消失，亏损缩窄+没有新股权融资就能使低谷估值迅速反弹。",
+      "decision_changing_question": "FY27首季产能/项目交付恢复是否有客户验收和经营现金佐证，而非将亏损改列调整项？",
+      "test_method_and_window": "11月附近年报与下一季跟踪项目延迟→交付、赔偿、取消、保函和营运资本；现金转正桥必须从-200M新基线开始。",
+      "alternative_comparison": "比TE融资结构易审但执行受损；PSIX已有利润更强，FLNC的优势只能是更大修复斜率。",
+      "source_ids": [
+        "P04",
+        "P38"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "GNRC",
+      "recommendation": "次级复活观察，订单真但半年盈利弹性未证",
+      "classification": "致命订单口径错误+概率折扣",
+      "decisive_rebuttal": "Amazon认股权归属最高对应8B累计支付，不是8B无条件订单；初始2.4B交货2027–28，不能全部映射半年利润。",
+      "strongest_bull": "真实客户采购与工厂产能扩张可在2026/27两季上调远期预测，成熟经营可减少融资风险。",
+      "decision_changing_question": "2027交付中有多少已排产及毛利确定，新增利润能否覆盖厂房/营运资金及权证稀释？",
+      "test_method_and_window": "8K逐条映射已订采购与权证里程碑，拿交期/产能/利润率反解2x，不按8B全算。",
+      "alternative_comparison": "比PSIX资金稳但股权起点更大；相似收入兑现概率下PSIX或有更陡右尾，GNRC仍是替代基准。",
+      "source_ids": [
+        "P31"
+      ],
+      "verification_status": "SEC搜索正文，PDF未全篇或视觉核验"
+    },
+    {
+      "ticker": "ICHR",
+      "recommendation": "遗漏复活，直接挑战UCTT/AOSL",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q2毛利13.9%，改善260bp中80bp来自去年重组不重现；H1销售组合反而-50bp。2x所需约20%毛利不能照抄已有改善斜率。",
+      "strongest_bull": "当前盈利接近盈亏线，更小市值使自制含量/规模恢复带来更大EPS弹性；两季可观察，不必等新技术量产。",
+      "decision_changing_question": "自制内容/新品和工厂利用率能否把毛利由14%向至少17%推进，并展示20%成功路径，且回款改善？",
+      "test_method_and_window": "root反解是R1.8B/GM20%/费用140M/利息8M/税20%/39M股/25PE支持108.76；这些是研究假设。两季看毛利桥、现金占款和股份。",
+      "alternative_comparison": "比UCTT当前盈利更弱但股权门槛低；比AOSL行业需求更直接，若毛利只留15%则不优先UCTT。",
+      "source_ids": [
+        "P48",
+        "L03"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "IONS",
+      "recommendation": "候补，剔已失败/超窗事件并查竞争",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "Roche9月CV失败如已披露不可留在成功催化；HAE一次性疗法潜在竞争会改变DAWNZERA长期份额，不能只看批准和市场规模。",
+      "strongest_bull": "多款药商业化和特许权组合可使市场从研发消耗重估为现金产生，竞争疗法并非立即取代所有患者。",
+      "decision_changing_question": "近两季自销药真实处方/净价及持续用药是否支持现金盈亏路径，竞争产品数据是否改变选择？",
+      "test_method_and_window": "分药处方、毛净价格、销售费用和合作里程碑；竞争FDA日期/适应症另核；不用一次性milestone作经常利润。",
+      "alternative_comparison": "比BNTX多元商业化但催化爆发度或较弱；如现金转正可信则可替换监管二元性过高候选。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "失败与竞争线索继承首轮，本轮未独开监管原文"
+    },
+    {
+      "ticker": "IREN",
+      "recommendation": "保留条件核心，验收优先于ARR标题",
+      "classification": "致命重复计算+概率折扣",
+      "decisive_rebuttal": "4B contracted ARR内含1B operating ARR，不能相加；设备交付、通电、客户验收至GAAP收入存在月份时差。3.6B融资6%和2.4B融资9%对应不同项目，不能全套最低资金成本。",
+      "strongest_bull": "Horizon1已交付微软、2调试/3–4建设，客户预付及GPU融资覆盖大部分GPU CapEx，关键事件确在Q4而非2028。",
+      "decision_changing_question": "Horizon2–4能否按计划验收开票，实际利用率及经济折旧后盈利是否支持ARR估值？",
+      "test_method_and_window": "逐站MW/GPU交付→验收→营收桥；只把已签合同计入、扣设备更新及非GPU CapEx，3m看开票，6m看连续季度。",
+      "alternative_comparison": "相对CRWV新建场址时间更集中且微软验证强；相对APLD不应混用地主NOI与算力毛利。",
+      "source_ids": [
+        "P09"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "KYTX",
+      "recommendation": "保留高优先，按提交/受理而非已批准定价",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "单臂KYSA8可提交是公司转述监管沟通，不是审批成功、CMC无缺陷或4月前获批保证。正式BLA/Q4完成、优先审评获准与实际启动商业化是不同事件。",
+      "strongest_bull": "SPS严重未满足需求、注册路径已沟通，临床/CMC合包和多适应症平台可在收入前重估；当前亏损不是否决理由。",
+      "decision_changing_question": "完整BLA能否按Q4提交并获受理，无重大CMC/可比性补件？",
+      "test_method_and_window": "查公司与FDA公开受理/审评指定，核提交完成时间、CMC可生产批次及后续患者持续性；199.4M现金/贷款和90M股由S2另核，不假设必然增发。",
+      "alternative_comparison": "比ALNY/ARGX股权基数小、事件敏感；与BNTX比较单资产二元性更高但右尾更陡。",
+      "source_ids": [
+        "P16",
+        "L02"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "LEU",
+      "recommendation": "保留能源右尾，删除重复900M授予催化",
+      "classification": "已发生事实+概率折扣",
+      "decisive_rebuttal": "900M DOE合同7/1已签，新规模首产2029超窗；170M购买选项不是确定销售。演示级商业过渡可近端但取决于租赁等条件。",
+      "strongest_bull": "真实美国浓缩能力稀缺，现有级联商业化和新客户长期合同可提前缩窄政策/融资折价，不必等2029现金流。",
+      "decision_changing_question": "6m内是否有有约束力的商业HALEU采购和可融资价格/数量，而非重复政府总奖项？",
+      "test_method_and_window": "DOE+公司+买方合同交叉核验，分分期拨款/购买选择权/现有级联，避免承诺总额进营收。",
+      "alternative_comparison": "比OKLO更接近可交易燃料/既有收入；两者都受同一政策和核产业建设相关风险不能当分散。",
+      "source_ids": [
+        "P18"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "MOD",
+      "recommendation": "候补，分拆与冷却内容变迁均需重新定价",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "10/1分拆若已完成不能当未来事件；温水/直接液冷可能减少传统机械冷水机内容，不能把CDU、冷却和被替代产品全叠加。",
+      "strongest_bull": "高功率设施冷却仍不可缺，业务纯化和产能追加可令远期利润提前上修，客户预付可降低一部分资金需求。",
+      "decision_changing_question": "新架构下每MW可归MOD的订单价值/毛利是否提高，分拆后股权价值有没有重复计入旧业务？",
+      "test_method_and_window": "复核分拆最终8K及客户架构，按机房水温/系统BOM重算每MW内容；剔165M预付款错当经常FCF（S1线索）。",
+      "alternative_comparison": "与PSIX都是电力热瓶颈，但PSIX近端已盈利，MOD纯化后的高利润率须额外证据。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "本轮未独立打开分拆原文；引用为待核命题"
+    },
+    {
+      "ticker": "MRAM",
+      "recommendation": "候补，演示不能替代量产收入门槛",
+      "classification": "尚待核验+时间折扣",
+      "decisive_rebuttal": "9/29 CXL客户工作负载演示说明技术可测试，不等于客户签订单。首轮的UNISYST年末流片/2027样片尚待逐项核原文，不保留旧‘Q4样片必到’断言。 控制器封卷补充核验：Q2仅剔诉讼、保留SBC与工程费用的经济净利约0.438M；40M合同跨2026-04至2028-11约30个月，不能全部入半年。5月空头14美元目标的‘60%跌幅’基于当时价格，不可套10/12。此补充为继承，B1未二次独开财表。",
+      "strongest_bull": "小股权与差异化非易失存储若被客户认证，收入前就有技术期权重估。",
+      "decision_changing_question": "窗口内是否有真实客户量产承诺/样片验收，且产品功耗、耐久、成本具有可替代优势？",
+      "test_method_and_window": "演示→流片→样片→客户设计win时间链；未取得订单则用期权估值，不能套成熟存储PE。",
+      "alternative_comparison": "相对MU/SNDK现金盈利更遥远；与POET相比都需客户侧验证，只有独特验证事件才占有限名额。",
+      "source_ids": [
+        "P32",
+        "L01",
+        "L02"
+      ],
+      "verification_status": "官方目录搜索，产品关键进度未独立全文核验"
+    },
+    {
+      "ticker": "MU",
+      "recommendation": "保留高优先，利润持续性而非AI口号决定",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q4超高毛利与Q1指引已公布，不能再当全新催化；短期2x要求后两季证明盈利平台持续及周期折价收窄。先进HBM强不保证普通DRAM/NAND超额价永久。",
+      "strongest_bull": "实际Q4收入54.229B和FY27Q1 61.5B中值已提供巨大盈利底座，半年无需等新建厂，连续交付可令市场给更长持续期。",
+      "decision_changing_question": "12月/3月披露是否维持价格与毛利，而非只由14周季度/客户预付支撑？",
+      "test_method_and_window": "以52周年化、分产品量价、客户合同负债和净CapEx复算；至少两季判断可持续现金。Maia只作日期级背景，不用作指定供应商订单。",
+      "alternative_comparison": "比SNDK分散但右尾或稍缓；比NVDA在当前利润与估值折价之间更易出现短窗倍数变化。",
+      "source_ids": [
+        "P07",
+        "P10"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "NVDA",
+      "recommendation": "候补优质对照，不因安全自动占名额",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q2盈利强但2x股权绝对增量巨大，需要Rubin持续兑现并维持高份额。GAAP含投资收益，FY27 nonGAAP已包含SBC，不能沿用旧NG排SBC假设二次扣除。",
+      "strongest_bull": "Q3 108B收入/74%GM指引是真实商业平台，不是仅TAM；CUDA、互连和系统交付可减弱单芯片ASIC替代。",
+      "decision_changing_question": "两季Rubin订单转现金是否仍支持前瞻盈利大幅上修，客户自研是否只是增量市场？",
+      "test_method_and_window": "AI收入/利润/客户融资条款一起审，控制股酬已含与未含口径；Maia日级背景不能作为具体订单流失事实。",
+      "alternative_comparison": "比多数小票经营可靠但本任务看2x时点；MU/SNDK利润折价修复或有更高短窗机会。",
+      "source_ids": [
+        "P43",
+        "P10"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "NVTS",
+      "recommendation": "候补，10/20技术验证可看但不硬凑短期订单",
+      "classification": "已发生事实+概率折扣",
+      "decisive_rebuttal": "Claros收购10/6已完成，10/20 webinar是技术展示；不能把并购再交割一次或将更远量产收入搬到半年。",
+      "strongest_bull": "800V至xPU全链条若获得关键客户，技术平台估值可先走，早期公司不需要利润才有右尾。",
+      "decision_changing_question": "webinar是否出现具名客户设计导入、可量产可靠性及2027内收入时间表？",
+      "test_method_and_window": "区分技术demo/设计win/量产订单，查客户反向确认与近端费用现金；若只是扩大TAM，则仍候补。",
+      "alternative_comparison": "ENPH系统演示、AOSL现有电源销售均更接近可核路径；NVTS须以客户验证补差距。",
+      "source_ids": [
+        "P37",
+        "L01"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "OKLO",
+      "recommendation": "候补，不以长远机组容量排进短窗核心",
+      "classification": "尚待核验+时间折扣",
+      "decisive_rebuttal": "发电收入量产在更远期；NRC搜索为预申请，DOE示范授权与NRC商业许可不可互换；本轮未获取截止时点许可全链，不能称已排除审批风险。",
+      "strongest_bull": "政府示范、燃料设施与具名大客户预付可以收入前重估，监管节点比等商业电量更适合半年交易。",
+      "decision_changing_question": "4月前是否有能解除核心建造/燃料障碍的正式许可或可融资购买协议？",
+      "test_method_and_window": "分别核DOE与NRC程序、客户合同撤销权和预付款义务，不用最大GW公告作销售；3m/6m追实际文书。",
+      "alternative_comparison": "LEU有现有燃料商业化桥，优先；OKLO若许可跃迁独特且估值可承载，可重新竞争。",
+      "source_ids": [
+        "P29",
+        "L01"
+      ],
+      "verification_status": "监管搜索片段、直接打开失败；商业数据继承，尚待核验"
+    },
+    {
+      "ticker": "PLAB",
+      "recommendation": "暂不进20，除非订单兑现早于新厂技术进度",
+      "classification": "尚待核验+时间折扣",
+      "decisive_rebuttal": "韩国8nm能力若到2027年末超窗；JV持有现金并不100%归母，美国投资者不能按合并净现金/流通股全额享有。",
+      "strongest_bull": "既有掩模需求恢复与高端组合可先抬利润，新厂远期并不阻止目前业务改善。",
+      "decision_changing_question": "两季内高端订单/利用率能否带来归母EPS跃升，而非远期工艺口号？",
+      "test_method_and_window": "分区域/JV股比、毛利、可分配现金与资本开支，客户先进节点量产日期反查；新厂收入不入6m。",
+      "alternative_comparison": "相对UCTT/ICHR现有指引加速证据弱，本轮让位，允许订单超预期复活。",
+      "source_ids": [
+        "L01"
+      ],
+      "verification_status": "本轮未独立打开公司原文，继承命题标未核"
+    },
+    {
+      "ticker": "PNR",
+      "recommendation": "暂不进20，交易已完成，需盈利规模新证据",
+      "classification": "已发生事实+概率折扣",
+      "decisive_rebuttal": "Taco14亿美元收购10/1已完成，不再是未来交割催化；水处理/泵类组合扩展也不等于所有数据中心液冷收入归PNR。",
+      "strongest_bull": "并购可用渠道交叉销售、成本改善和水基础设施增长提高持续盈利，有现金基础而非纯概念。",
+      "decision_changing_question": "Taco在前两季贡献的经济EPS/订单是否足以显著抬升2027预测，融资成本/整合是否侵蚀？",
+      "test_method_and_window": "按购买价格、融资、摊销和协同逐项，跟踪有机订单与整合进度；近期不能只用完成新闻再估一次。",
+      "alternative_comparison": "相对PSIX/AMPX右尾斜率不足；适合作为更稳替代，但需证明相近翻倍可能性才优先低下行。",
+      "source_ids": [
+        "P45"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "POET",
+      "recommendation": "降为候补事件期权，客户验证后可复活",
+      "classification": "致命现金/订单口径错误+概率折扣",
+      "decisive_rebuttal": "官网FAQ同时用830M现金标题及830M过去12月募资正文，不能直接作当期净现金；Lumilens五年500M框架与初始50M订单均有开发/资格/制造条件。2026目标30,000引擎与2027产能不等于可立即确认大额收入。",
+      "strongest_bull": "光引擎封装若通过客户认证可跨越制造/成本门槛，股权基数小，即使只实现初始订单的部分收入，也可能令远期收入概率骤升。",
+      "decision_changing_question": "是否有具名最终客户确认的可量产产品、不可随意取消订单与验收/付款，而非伙伴框架声明？",
+      "test_method_and_window": "3m核Infinity800G原5M+订单H2发货及Lumilens资格，6m核已确认收入/毛利/应收回款；830M按每次融资净额、消耗与受限资金逐项桥接，勿由标题代账表。",
+      "alternative_comparison": "AAOI/COHR已有更强制造/客户基础，POET只有验证信息跳跃足够大才胜过；不得因尚无利润单独否决，但不能用500M五年潜力当本期订单。",
+      "source_ids": [
+        "P01"
+      ],
+      "verification_status": "已独立读取官方FAQ主文，未取得客户产品拆解或独立验收证明"
+    },
+    {
+      "ticker": "PSIX",
+      "recommendation": "上调保留，现金/成本验证后可进20",
+      "classification": "过时事实纠错+概率折扣",
+      "decisive_rebuttal": "旧135M且2027到期授信已被9月关闭的新220M/2029额度替换；220M含70M信用证不能当现金。Q2毛利27.1%改善部分SG&A含SAR估值/非经常报酬，不能全部年化。",
+      "strongest_bull": "Q2收入同比跌而利润环比改善并不矛盾，Wisconsin爬坡+H2超过H1可产生显著经营杠杆，新融资解除近端到期问题。",
+      "decision_changing_question": "H2约束下数据中心发动机收入能否恢复且毛利不回落、周转资金不吞利润？",
+      "test_method_and_window": "次两季比较产品销售、保修、库存/应收、CFO；新利息覆盖≥3/杠杆≤3与Weichai控制条款逐季算，不重复加220M现金。",
+      "alternative_comparison": "比GNRC体量小、边际盈利对股权更敏感；比FLNC制造问题有更近的真实盈利证据。",
+      "source_ids": [
+        "P05",
+        "P40",
+        "P39"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "RDW",
+      "recommendation": "保留条件，反驳过时濒临现金枯竭论",
+      "classification": "事实更新+概率折扣",
+      "decisive_rebuttal": "Q2增长含收购而非全有机；607.8M liquidity含50M借款及0.8M受限，实际现金557M。优先股清零/普通股大增必须用最新股本重算，不能旧股本分新现金。",
+      "strongest_bull": "backlog542.1M、GM27.8%和接近调整EBITDA盈亏线说明规模可经营，不必等航天远期工程成功。",
+      "decision_changing_question": "订单转化是否在同口径有机业务带来毛利/CFO改善，而不是靠收购填营收？",
+      "test_method_and_window": "两季拆Edge Autonomy并表、原业务订单、研发与现金消耗；249.221M期末普通股由控制器核验，不能用220.467M加权股作未来分母。",
+      "alternative_comparison": "比ASTS商业事件不那么二元；比AVAV更小基数和弱现金盈利，选择由新的订单利润桥决定。",
+      "source_ids": [
+        "P06",
+        "L02"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "RKLB",
+      "recommendation": "复活观察，先纠正‘到场=首飞’",
+      "classification": "尚待核验+时间折扣",
+      "decisive_rebuttal": "Q4 Neutron运至发射场不等于Q4首飞，不能把旧2月目标忽略后续更新；发射签约额也不等于2026收入。",
+      "strongest_bull": "火箭与航天系统已有商业基础，Neutron关键测试/到场可提前解除工程风险，收入前仍可能显著重估。",
+      "decision_changing_question": "到场后的发动机、综合静态点火和许可是否允许窗口内首飞，且客户付费里程碑不依赖大幅再融资？",
+      "test_method_and_window": "按生产→运场→静态点火→许可→首飞逐项日期，要求最新官方叙述，不用旧目标；本轮未独立取得完整最新首飞排期。",
+      "alternative_comparison": "比ASTS分散而有现有合同，若无明确窗内里程碑则RDW/AVAV业务兑现优先。",
+      "source_ids": [
+        "P28",
+        "L01"
+      ],
+      "verification_status": "官方搜索正文和后续媒体线索；未独立完整验证Neutron最新日程"
+    },
+    {
+      "ticker": "SMCI",
+      "recommendation": "保留，降低成功利润率，不能直接年化Q4",
+      "classification": "致命口径错误+概率折扣",
+      "decisive_rebuttal": "Q4毛利17.5%不能配FY27更高AI占比无限外推；管理层Q1毛利10.4–10.8%，75%环比毛利改善来自组合、25%低关税/库存准备，未计关税退款。EPS×稀释股与集团净利因两类法不同比较，初步‘净利降41%’推断撤回。",
+      "strongest_bull": "大项目延迟使Q4企业渠道比重异常；Q1收入14.5–15.5B及全年65–72B仍是真实规模跃升，10%以上毛利若稳定亦有盈利弹性。",
+      "decision_changing_question": "高AI占比季度能否将毛利守在10.5%以上，并以回款而非持续应收融资支撑增长？",
+      "test_method_and_window": "未来两次财报对照GM/企业比例/库存应收/CFO；两类法单独列优先股分配，再反解普通股EPS。3m看Q1，6m看Q2与全年目标更新。",
+      "alternative_comparison": "相对CLS增长更猛但毛利/资本占款更脆；比POET已有大规模交付，不因治理折价自动淘汰。",
+      "source_ids": [
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "SNDK",
+      "recommendation": "保留高优先，剔证券收益与客户现金义务",
+      "classification": "致命口径错误+概率折扣",
+      "decisive_rebuttal": "Q4 GAAP EPS43.97高于nonGAAP39.25，不可用含非经营收益的EPS永续；Edge销售仍高于DC，不能把全部NAND等同AI需求。客户退款及合同负债不能当无义务净现金。",
+      "strongest_bull": "NAND价格/企业SSD升级在两季内真实兑现，Q1收入10.3–10.8B、NG EPS44–46给强证据，NBM即使更远也不妨碍本业重估。",
+      "decision_changing_question": "高价格期能否持续至次年一季度，客户预付款是否转为收入与毛利而非返款/降价？",
+      "test_method_and_window": "两季追踪Edge/DC结构、毛利、客户退款负债与现金兑现，剔非经营收益；区分当期财务和更远NBM期权。",
+      "alternative_comparison": "比MU周期更集中而弹性更强；不以较高波动否决，应分配在盈利持续性而非纳米技术宣传上。",
+      "source_ids": [
+        "P08"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "TE",
+      "recommendation": "条件等待，不把国内化订单等同已融资投产",
+      "classification": "尚待核验+概率折扣",
+      "decisive_rebuttal": "Q2已有250.1M收入/935MW产出，与G2新硅片产线是两个商业阶段；Clearway国内组件订单不自动证明G2按期满产。融资闭合与关联销售现金最关键。",
+      "strongest_bull": "美国本土政策和供应稀缺令签约订单可提前反映，若融资落实，低股权基数可能高倍。",
+      "decision_changing_question": "G2所需资本在普通股可接受条款下是否全额闭合，终端现金是否足以支持关联链条？",
+      "test_method_and_window": "核最终融资合同、资本开支分期、关联方应收及客户预付；未闭合不按全产能利润。3m看融资与建设，6m看真实资格/生产。",
+      "alternative_comparison": "比AMPX需更多自建资本；只有明确融资与客户验证后才挑战AMPX/PSIX。",
+      "source_ids": [
+        "P27",
+        "L01"
+      ],
+      "verification_status": "本轮仅搜索正文，关键融资继承首轮，非完整独立核验"
+    },
+    {
+      "ticker": "TTMI",
+      "recommendation": "低票复活，进入20竞争但收购EPS须审",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "DC/network占比升至40%伴随GAAP毛利21.1/经营率10.9是实业改善，但10/12扩厂400M是资本投入非订单；Epiq EBITDA增厚不代表利息后EPS增厚。",
+      "strongest_bull": "Q3收入1.10–1.14B、NG EPS1.23–1.27的已披露加速，比演示型AI期权更近。",
+      "decision_changing_question": "新订单/价格和产能利用率能否覆盖扩厂、收购利息与正常股酬，让每股盈利继续上修？",
+      "test_method_and_window": "下一两季核DC板单价/组合、CapEx/存货、Epiq交易融资桥；不将旧本业EPS与新EBITDA简单相加。",
+      "alternative_comparison": "优先于MRAM/PLAB远期量产叙事；与UCTT竞争而非自动行业配额，两者都依赖客户CapEx。",
+      "source_ids": [
+        "P33",
+        "L01"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "UCTT",
+      "recommendation": "复活/上调，优先进入20竞争",
+      "classification": "概率折扣",
+      "decisive_rebuttal": "Q3非GAAP EPS0.83–1.03有真实加速，但不能跳到长期8%税后利润而忽略当前GAAP经营率4.6%、少数权益和股酬。4B产能不是4B订单。",
+      "strongest_bull": "Q2 644.9M到Q3 700–750M指引是短窗可验的盈利恢复，WFE需求回归比远期概念更能改变市场预测。",
+      "decision_changing_question": "Q3/Q4能否从收入增长转换到产品毛利与归母经济EPS，税/少数权益不吃掉增量？",
+      "test_method_and_window": "两季逐层GAAP→可持续经济盈利，区分产品/服务及一过性税率；客户下单和库存去化双向核验。",
+      "alternative_comparison": "比ICHR当前毛利/盈利更成熟但起点可能更高；比MRAM/AEHR催化更接近现有利润，不能因只有低票落选。",
+      "source_ids": [
+        "P23"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "VISN",
+      "recommendation": "保留反向重估，但下调6m可动用现金",
+      "classification": "致命时间/现金错误+概率折扣",
+      "decisive_rebuttal": "160M退税H2 2027超出观察窗；公告现金展望与已付特别分配不是新额外分红。Aurora调整利润仍被每季保留成本消耗；mid2027修复不能当4月前完成。",
+      "strongest_bull": "市场可提前资本化2027成本消除与税收现值，小残余股权对经营企稳非常敏感；退税超窗不是价值为零。",
+      "decision_changing_question": "去掉160M未来现金后，存续业务利润和现金消耗是否仍支持2x普通股价值？",
+      "test_method_and_window": "单列存续/终止经营CFO、保留成本消除排期、年末现金与税收折现，3m看新组织指引，6m看剥离后真实成本。",
+      "alternative_comparison": "比CC偏结构简化而非全行业上行；二者都需看可归股东现金，不能把总账现金当股价底。",
+      "source_ids": [
+        "P14",
+        "L02"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    },
+    {
+      "ticker": "WOLF",
+      "recommendation": "候补事件交易，融资生效前不列核心",
+      "classification": "致命稀释错误+概率折扣",
+      "decisive_rebuttal": "1.5B仅conditional commitment，初始600M主要再融资旧担保债，非全部新现金；需750M配套来源、初始150M股权安排、可转债大量股权化，7.5%政府权证绝非全部稀释。",
+      "strongest_bull": "若政府降低资金成本、订单及债转股落地，可显著压低破产风险，普通股在非常低估值下仍可能大涨。",
+      "decision_changing_question": "全部融资与股权化后每股价值能否仍达2x，且有明确成交时间/合格承购合同？",
+      "test_method_and_window": "读最终文书、首次50M/后100M股权与转债换股价格；同一完全稀释分母算政府权证，不以旧市值评1.5B。",
+      "alternative_comparison": "比TE风险资本结构更复杂；若仅赌公告情绪，期内触及与4月站稳须分开。",
+      "source_ids": [
+        "P36"
+      ],
+      "verification_status": "已独立读取原始相关段"
+    }
+  ]
+}

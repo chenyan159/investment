@@ -1,0 +1,2644 @@
+{
+  "role": "B1_business_rebuttal",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "covered_tickers": [
+    "ADBE",
+    "ALNY",
+    "AVGO",
+    "BNTX",
+    "MOD",
+    "NVDA",
+    "PGR",
+    "PNR",
+    "CRM",
+    "MU",
+    "VST",
+    "AGCO",
+    "ARGX",
+    "BDC",
+    "BJ",
+    "IONS",
+    "KR",
+    "KYTX",
+    "MCHP",
+    "ON",
+    "PLAB",
+    "QCOM",
+    "RNR",
+    "AAOI",
+    "AMPX",
+    "AMZN",
+    "ASTS",
+    "BABA",
+    "CARR",
+    "CB",
+    "COHR",
+    "CRDO",
+    "DOV",
+    "EME",
+    "ENPH",
+    "FLNC",
+    "GFS",
+    "HUBB",
+    "IREN",
+    "JBL",
+    "META",
+    "MKSI",
+    "MSFT",
+    "NBIS",
+    "NVTS",
+    "PENG",
+    "POET",
+    "PSIX",
+    "RDW",
+    "RMBS",
+    "SMCI",
+    "SNDK",
+    "TEL",
+    "TSM",
+    "TTMI",
+    "UCTT",
+    "WDC",
+    "WM",
+    "CLS"
+  ],
+  "disputes": [
+    {
+      "id": "B1-D01",
+      "ticker": "ADBE",
+      "claim": "创意残差减速已承认；Acrobat及企业工作流收费、扣SBC后仍强现金，使低价不必依赖AI新故事。 / 保留SBC后的现有订阅盈利就可支持修复，无需AI业务成为独立巨头。 / 成熟订阅被AI替代叙事折价，真实文档与企业收费尚在增长。用保留SBC的盈利估值，不为AI ARR单独再加价。 / 低倍数订阅现金流与AI付费修复",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CRM竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "创意残差减速已承认；Acrobat及企业工作流收费、扣SBC后仍强现金，使低价不必依赖AI新故事。",
+      "challenge": "低估值修复需要创意净收费稳定，集团和AI ARR增长会被并购、文档、提价掩盖",
+      "verification_method": "按恒汇率剔Semrush，跟踪非BP&C数字媒体残差、续约席位与积分净收入、保留SBC利润",
+      "primary_sources": [
+        {
+          "id": "B1-13",
+          "tickers": [
+            "ADBE"
+          ],
+          "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+          "published_date": "2026-09-10",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "Q3收入6.76B、GAAP经营利润2.35B、ARR27.50B、CFO2.52B；当前收费真实。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-10-01.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CRM",
+      "provisional_verdict": "保留核心；倍数修复不能独立担负全部上涨",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 238.14,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 336
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 334.05
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 315
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 330
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D02",
+      "ticker": "ALNY",
+      "claim": "AMVUTTRA增长是真实患者支付，RNAi技术有后续选择权；主要价值捕获被版税削弱，排名靠后。 / 已盈利RNAi平台是对AI资本开支链的独立替代；下调TTR指引后需证明一线患者持续增长，非无条件低PE。 / 已上市TTR收入与现金流提供底座，肝外/新适应症临床读出带来额外上行，较纯临床更能自我供血。 / 已盈利TTR商业化遭去积压预期打击后再增长",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ARGX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "AMVUTTRA增长是真实患者支付，RNAi技术有后续选择权；主要价值捕获被版税削弱，排名靠后。",
+      "challenge": "上市积压释放转一线患者决定增速；30%高段版税限制利润，nucresiran不能提前贡献2027CM盈利",
+      "verification_method": "按初治/转药、患者持续年、净价核销售；从PN/CM注册日期桥接批准与收入",
+      "primary_sources": [
+        {
+          "id": "B1-15",
+          "tickers": [
+            "ALNY",
+            "IONS"
+          ],
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+          "published_date": "2026-07-09",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "主要CM复合终点失败；基线稳定剂患者无治疗效果；不能以所有沉默疗法自动优于标准治疗。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "ARGX",
+      "provisional_verdict": "保留成长名额；RNAi平台不整体赋成功概率",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 227.02,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 224
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": null
+        },
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 285.71
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 289.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D03",
+      "ticker": "AVGO",
+      "claim": "软件现金支持ASIC和网络放量；明确扣SBC、营运资金与客户信用支持，仍有利润扩张。 / ASIC与软件形成真实获利，但股价弹性必须跨过FY28交付与信用暴露。 / 定制计算与基础软件双利润池，作为昂贵ASIC设计与光互联个股的替代；折扣估值需保留SBC与战略投入。 / 定制芯片放量与软件现金并存",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与NVDA竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "软件现金支持ASIC和网络放量；明确扣SBC、营运资金与客户信用支持，仍有利润扩张。",
+      "challenge": "前置软件许可证与ASIC整机收入增长可能没有同等经常性利润；采购和租赁信用暴露相关",
+      "verification_method": "拆软件前置/经常收入与现金；逐客户验收及支持义务匹配，不将126.8B承诺当当期损失",
+      "primary_sources": [
+        {
+          "id": "B1-04",
+          "tickers": [
+            "NVDA",
+            "AVGO"
+          ],
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "published_date": "2026-08-26",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "客户侧计划2027–28追加200万GPU，同时使用AWS自研芯片及EFA；支持需求，不提供不可取消采购金额。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-18.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "保留；低于只按AI收入总量排序",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 354.73,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 391.5
+        },
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 426.53
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 391
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 434.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D04",
+      "ticker": "BNTX",
+      "claim": "足够现金支持多项随机临床验证，现金烧损后仍提供部分缓冲；18月收益来自临床去风险而非近期盈利。 / 大型现金与多资产肿瘤读数给非AI右尾，但mRNA标签不是整个平台成功，BMS分享权益必须扣除。 / 现金支持肿瘤组合读出，能以多个独立机制取得右尾；价值来源须区别PD-L1/VEGF与已失败的mRNA项目。 / 有消耗但资本充足的多资产肿瘤临床期权",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与KYTX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "足够现金支持多项随机临床验证，现金烧损后仍提供部分缓冲；18月收益来自临床去风险而非近期盈利。",
+      "challenge": "近端临床去风险可以重估，但pumitamig主要全球验证在2028–29，现金烧损与权益分享不可遗漏",
+      "verification_method": "逐资产3–18月读出、随机性、经济权益；现金扣18月预算，BMS利润50%而非总销售相加",
+      "primary_sources": [
+        {
+          "id": "B1-12",
+          "tickers": [
+            "BNTX"
+          ],
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+          "published_date": "2026-08-04",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "现金证券16634.2m欧元、251.204m流通股、ADS1:1；回购不能等同未来全面缩股。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\BNTX_BioNTech_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "KYTX",
+      "provisional_verdict": "保留分散右尾；不是2027盈利反转股",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 95.84,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 95.12
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": null
+        },
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": null
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 119.42
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D05",
+      "ticker": "MOD",
+      "claim": "独立热管理业务有真实放量，但当前价格已经要求利润率修复；等待更佳价或交付证据。 / 有预付款支持的实际数据中心交付比多数冷却概念更强，盈利爬坡形成弹性。 / 数据中心热管理已有高速交付，组件齐套解除可使利润增长快于收入；分拆提高业务纯度。 / 冷却交付与利润率恢复的经营杠杆",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CARR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "独立热管理业务有真实放量，但当前价格已经要求利润率修复；等待更佳价或交付证据。",
+      "challenge": "液冷总需求不保证冷水机内容；拆分后不能重复计算MOD与分给股东的Gentherm",
+      "verification_method": "核最新分拆交割证券、每MW冷机/CDU净内容、14.8%利润率回升、剔预收现金",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\热管理_流体_水处理\\MOD_Modine_Manufacturing_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "保留；必须独立证券核验再定目标",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 172.5,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 188.15
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 207
+        },
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 212.95
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": null
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D06",
+      "ticker": "NVDA",
+      "claim": "CUDA与整机网络价值捕获仍强，FY27Q2实际利润支持；主动削弱现金转换，避免把投资收益资本化。 / 以低于上游FY28工作利润估值，当前价格对高增长的容错优于多数AI半导体。 / 平台收费能力与当前盈利比高PS小型光芯片更可核验；反共识在相对估值，不在否认市场已经预期高增长。 / 平台现金创造与估值压缩后的盈利增长",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与AVGO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "CUDA与整机网络价值捕获仍强，FY27Q2实际利润支持；主动削弱现金转换，避免把投资收益资本化。",
+      "challenge": "客户GPU采购意愿有AWS交叉证明，真正争议是供货商支持融资后现金何时回收，而非AI有没有需求",
+      "verification_method": "逐季核应收天数、经营现金/经营利润、担保兑现；将AWS 2027–28部署按季度而非一次确认",
+      "primary_sources": [
+        {
+          "id": "B1-04",
+          "tickers": [
+            "NVDA",
+            "AVGO"
+          ],
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "published_date": "2026-08-26",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "客户侧计划2027–28追加200万GPU，同时使用AWS自研芯片及EFA；支持需求，不提供不可取消采购金额。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-05",
+          "tickers": [
+            "NVDA"
+          ],
+          "url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/",
+          "published_date": "2026-09-16",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "Rubin/Vera Rubin为Preview，性能成绩与商业规模验收分开。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-21.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "AVGO",
+      "provisional_verdict": "保留核心；现金折扣不等于推翻增长",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 226.32,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 322
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 294.63
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 294
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 360
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D07",
+      "ticker": "PGR",
+      "claim": "数据、定价与渠道建立可重复承保；保费先收不当利润，仍可用正常化承保盈利估值。 / 高频再定价与成本优势支持存量盈利，但准备金释放与车险硬周期正常化需先扣。 / 高频重新定价与车险份额增长提供独立利润源，组合价值来自降低AI共同因子，而非浮存金作价格底线。 / 风险定价优势与家庭捆绑份额增长",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与RNR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "数据、定价与渠道建立可重复承保；保费先收不当利润，仍可用正常化承保盈利估值。",
+      "challenge": "极低CR可能包含准备金释放；份额优势可延续但近期增长不等于新单持续强劲",
+      "verification_method": "剔往年有利发展，分承保批次留存/新单/获客；常态CR+2/4点敏感性",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\保险_财产险_特色险_再保险\\PGR_The_Progressive_Corporation_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "RNR",
+      "provisional_verdict": "保留一个保险名额；不是浮存金现金底",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 220.28,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 249.6
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 264.98
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 255
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 272
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D08",
+      "ticker": "PNR",
+      "claim": "泳池去库存后恢复和过滤耗材现金，非AI利润来源；低价允许只实现温和修复。 / 泳池渠道纠偏叠加非泳池现金，估值无需把Taco全部当AI业务。 / 渠道修复与Taco现金整合可在18个月内检验，买价不需要把全部水业务重估为AI。 / 泳池去库后恢复加成熟水业务现金",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CARR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "泳池去库存后恢复和过滤耗材现金，非AI利润来源；低价允许只实现温和修复。",
+      "challenge": "同行销售增长使仅去库存解释不足；2027恢复可能其实要求夺回份额",
+      "verification_method": "连续两季PNR渠道售出、售入及库存联查；剔34.9m退款、Taco新增息费后复算",
+      "primary_sources": [
+        {
+          "id": "B1-07",
+          "tickers": [
+            "PNR"
+          ],
+          "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+          "published_date": "2026-07-23",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "Q2销售+2%，维护稳定，库存同比+4%由Q1+14%下降；不是PNR专属库存。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-08",
+          "tickers": [
+            "PNR"
+          ],
+          "url": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results-and-Confirms-2026-Guidance/default.aspx",
+          "published_date": "2026-07-29",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "北美销售+9%，价格及数量共同增长；反对把PNR下跌全归宏观。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\热管理_流体_水处理\\PNR_Pentair_plc_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "保留但降低确定性；若份额持续丢失由CARR替代",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 52.33,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 75
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 70.31
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 70
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 79.5
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D09",
+      "ticker": "CRM",
+      "claim": "成熟订阅续费仍有现金，AI流程收费能延缓席位侵蚀；只在资本配置收敛下有价值。 / 旧订阅和数据工作流现金可对抗AI替代叙事，但必须扣SBC及新增债息。 / 企业数据权限与执行层仍有续费价值；折价成熟平台优于高倍数应用叙事，但仅列ADBE后的补充。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ADBE竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "成熟订阅续费仍有现金，AI流程收费能延缓席位侵蚀；只在资本配置收敛下有价值。",
+      "challenge": "Agentforce ARR口径扩展与并购令增长难比；GAAP经营利润停滞且债息上升",
+      "verification_method": "恒口径ARR、付费消耗减席位流失；剔战略投资收益，新增息费/SBC后EPS",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\CRM_Salesforce_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "ADBE",
+      "provisional_verdict": "候补；暂由ADBE承担软件价值修复",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 233.92,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 273
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 265.04
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 276
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D10",
+      "ticker": "MU",
+      "claim": "短缺正在变成真实现金，SCA客户押金不计经营FCF；对成熟存储给低倍数，保留高弹性。 / 近期高利润存在原始财报支持，但以正常化利润折扣承担价格周期；高弹性而非下行有限。 / 存储供需错配仍可能持续但用周期估值",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与SNDK竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "短缺正在变成真实现金，SCA客户押金不计经营FCF；对成熟存储给低倍数，保留高弹性。",
+      "challenge": "高利润已实现；35%累计收入协议不是每年35%锁价，更不能把HBM当全部利润",
+      "verification_method": "拆DRAM/NAND/HBM价格和位元、SCA保障、税及资本支出；普通存储ASP回落10/20%单变量敏感性",
+      "primary_sources": [
+        {
+          "id": "B1-14",
+          "tickers": [
+            "MU"
+          ],
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "published_date": "2026-09-30",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "Q4收入54.23B、GAAP净利37.70B、CFO43.97B；高利润非只分析师远期预测。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-10-01.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "SNDK",
+      "provisional_verdict": "保留核心；不采用无证据腰斩基准",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 989.04,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 1360
+        },
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 1275.86
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 1120
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D11",
+      "ticker": "VST",
+      "claim": "现成核电/燃气与零售对冲有真实现金；Meta PPA只计2027逐步重定价。 / 现有电源/容量收入和已签PPA比远期新核项目更可估，18月观察交割与现金。 / 现成发电资产及对冲现金优于未商业化SMR；容量和并购贡献可观察，但不把AI现货涨价作用到全部已锁价电量。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PNR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "现成核电/燃气与零售对冲有真实现金；Meta PPA只计2027逐步重定价。",
+      "challenge": "PPA是更强客户证据，但已对冲电量不会同步吃到AI现货价上涨",
+      "verification_method": "逐电厂2027–28解锁电量/容量价格、PPA起期、并购债息与普通股FCF",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\VST_Vistra_Corp_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "PNR",
+      "provisional_verdict": "保留；低于直接全部重估电量的估值",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 158.13,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 174.6
+        },
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 201.01
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 190
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D12",
+      "ticker": "AGCO",
+      "claim": "农业下行中欧洲品牌和跨品牌PTx提供复苏期权，比近28倍远期PE的DE要求更低；利润恢复仍有区域差异。 / 农机库存周期拐点与PTx跨品牌升级",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MCHP竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "农业下行中欧洲品牌和跨品牌PTx提供复苏期权，比近28倍远期PE的DE要求更低；利润恢复仍有区域差异。",
+      "challenge": "PTx跨品牌能力真实，但20亿美元目标已后移；核心利润主要在欧洲",
+      "verification_method": "剔汇率、关税退款与融资收益；北美去库存和经销商售出，PTx付费安装/毛利",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\AGCO_AGCO_Corporation_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "保留非AI周期弹性；不以2029目标当12月成果",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 104.47,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 128
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 136.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D13",
+      "ticker": "ARGX",
+      "claim": "VYVGART已有多适应症持续患者付款，扩张无需押注全部管线；应收现金要追踪。 / CIDP和gMG盈利增长为临床扩张供资",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ALNY竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "VYVGART已有多适应症持续患者付款，扩张无需押注全部管线；应收现金要追踪。",
+      "challenge": "UNITY无效已发生，肌炎DM亚组不显著；现有gMG/CIDP收费仍独立有效",
+      "verification_method": "剔Sjögren收入；分IMNM/DM标签；CIDP12周87%留存不代替一年续费",
+      "primary_sources": [
+        {
+          "id": "B1-16",
+          "tickers": [
+            "ARGX"
+          ],
+          "url": "https://argenx.com/news/2026/press-release-3376934",
+          "published_date": "2026-10-08",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "UNITY因无效停止，无新安全信号；不推翻既有gMG/CIDP收入。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\ARGX_argenx_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "ALNY",
+      "provisional_verdict": "保留；收购与新适应症只作有条件上行",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 812.3,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 928
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 992
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D14",
+      "ticker": "BDC",
+      "claim": "工业自动化利润加RUCKUS整合可产生去杠杆权益弹性；承认收购后下行放大。 / 工业网络现金基础加RUCKUS整合，优于纯靠光模块远期份额的定价；但大收购意味着必须按利息后收益估值。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CARR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "工业自动化利润加RUCKUS整合可产生去杠杆权益弹性；承认收购后下行放大。",
+      "challenge": "RUCKUS整合提高规模也提高利息与执行负担，工业底座不自动保护杠杆权益",
+      "verification_method": "用收购后债务和息费，拆RUCKUS有机收入/EBITDA与协同，核FCF去杠杆",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BDC_Belden_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "候补；执行改善后可替换周期名额",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 105.29,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 128.29
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 136.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D15",
+      "ticker": "BJ",
+      "claim": "约20倍快照PE与COST约38倍形成会员制直接替代；新市场复制比纯消费防御更有成长弹性。 / 较合理估值的会员新店复制",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与AGCO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "约20倍快照PE与COST约38倍形成会员制直接替代；新市场复制比纯消费防御更有成长弹性。",
+      "challenge": "新店复制有成长，会员数/费收入可能被促销和新店成本抵消",
+      "verification_method": "核同店、续费与新店回收期",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\零售_会员制_食品_折扣渠道\\BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "AGCO",
+      "provisional_verdict": "候补；高收益偏好下让位周期弹性",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 99.8,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 119.6
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 122.4
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D16",
+      "ticker": "IONS",
+      "claim": "已获批新产品和伙伴版税形成多个增长入口，失败心血管项目不等于整个平台归零。 / 自主药品采用与新批准产品代替失败管线",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ALNY竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "已获批新产品和伙伴版税形成多个增长入口，失败心血管项目不等于整个平台归零。",
+      "challenge": "pelacarsen失败不等于平台失效；bepirovirsen日本批准、sefaxersen三期中期阳性有真实新价值",
+      "verification_method": "删除失败里程碑；TRYNGOLZA4万美元标价下付费治疗年/净价，DAWNZERA竞争；分GSK/Roche权益及2028债务",
+      "primary_sources": [
+        {
+          "id": "B1-01",
+          "tickers": [
+            "IONS"
+          ],
+          "url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+          "published_date": "2026-09-04",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "HORIZON主要终点失败；不预计再付里程碑；Spinraza分享2028升45%，累计550m后回归。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-02",
+          "tickers": [
+            "IONS"
+          ],
+          "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+          "published_date": "2026-08-24",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "日本首次批准；限定病毒标志物和前治疗条件，三期功能性治愈19%；Ionis授权，不是全部GSK销售归Ionis。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-03",
+          "tickers": [
+            "IONS"
+          ],
+          "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+          "published_date": "2026-09-23",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "37周蛋白尿中期终点阳性；105周eGFR仍继续，不能当已确证长期肾功能获益。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-15",
+          "tickers": [
+            "ALNY",
+            "IONS"
+          ],
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+          "published_date": "2026-07-09",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "主要CM复合终点失败；基线稳定剂患者无治疗效果；不能以所有沉默疗法自动优于标准治疗。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\IONS_Ionis_Pharmaceuticals_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "ALNY",
+      "provisional_verdict": "第一梯队回归候补；新药现金桥通过可替换FLNC/较低回报防御股",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 43.67,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 45.97
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 58
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D17",
+      "ticker": "KR",
+      "claim": "低倍数食品现金业务与效率修复，比为零售AI广告支付高增长倍数更朴素；回报主要是现金和温和重估。 / 低估食品零售的电商盈利与资本回报修复",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PNR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "低倍数食品现金业务与效率修复，比为零售AI广告支付高增长倍数更朴素；回报主要是现金和温和重估。",
+      "challenge": "低PE可修复但食品竞争与资本回报决定重估",
+      "verification_method": "核电商边际利润、同店销量与债务后回购",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\零售_会员制_食品_折扣渠道\\KR_The_Kroger_Co._克罗格_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PNR",
+      "provisional_verdict": "候补；稳定但右尾不足",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 62.56,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 75.6
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 81.2
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D18",
+      "ticker": "KYTX",
+      "claim": "26人SPS持续功能改善支持首个自身免疫CAR-T注册，3–12月BLA事件可在大规模销售前改变资产价值。 / 小额高风险SPS注册/免疫重置期权",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与BNTX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "26人SPS持续功能改善支持首个自身免疫CAR-T注册，3–12月BLA事件可在大规模销售前改变资产价值。",
+      "challenge": "26人单臂强信号足以支持高风险机会，但95%持续率有筛选分母，BLA/CMC比总TAM关键",
+      "verification_method": "核完整26人一年功能与免疫治疗停用、安全；申报受理和制造核查；融资后每股而非企业值",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\生物医药_核酸药物_免疫治疗\\KYTX_Kyverna_Therapeutics_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "BNTX",
+      "provisional_verdict": "保留小额事件名额；不能等批准才承认全部期权价值",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 6.21,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": null
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 11.41
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D19",
+      "ticker": "MCHP",
+      "claim": "嵌入式库存周期恢复而非2029纯AI兑现；已有现金提供生存缓冲，但债息和优先股压每股回报。 / MCU库存修复比机器人远期TAM更快兑现；PCIe定点提供附加弹性，不能把12个定点都按最大项目推算。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与AGCO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "嵌入式库存周期恢复而非2029纯AI兑现；已有现金提供生存缓冲，但债息和优先股压每股回报。",
+      "challenge": "库存修复已进财报，但固定成本吸收与PCIe定点不能都按最快兑现",
+      "verification_method": "核渠道天数、利用率与终端消耗；12定点逐项投产季度；扣优先股/利息",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MCHP_Microchip_Technology_公司调研_2026-09-21.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "AGCO",
+      "provisional_verdict": "候补；需更强每股收益或价格优势",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 73.83,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 74.34
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 88
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D20",
+      "ticker": "ON",
+      "claim": "汽车工业复苏与AI电源有机制，但并购稀释后需要更好的买价。 / 汽车工业周期恢复和电源内容提升",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MCHP竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "汽车工业复苏与AI电源有机制，但并购稀释后需要更好的买价。",
+      "challenge": "汽车/工业复苏与AI电源内容提升可共存，但并购与资本占用限制每股杠杆",
+      "verification_method": "核车用/工业终端消耗、SiC利用率、收购后股数债息与AI真实收入",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ON_onsemi_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "候补；盈利或价格更优再回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 76.0,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 88.9
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 94.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D21",
+      "ticker": "PLAB",
+      "claim": "DUV/AMOLED升级与部分归属现金提供缓冲，但美国扩产、少数权益和资本开支限制上行速度。 / 高端DUV/显示光罩升级较少被纯AI叙事定价，但晶圆数量不直接生成光罩费；真实高端设计订单才是驱动。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MCHP竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "DUV/AMOLED升级与部分归属现金提供缓冲，但美国扩产、少数权益和资本开支限制上行速度。",
+      "challenge": "现金含少数权益，扩产会消耗而不立即增利",
+      "verification_method": "归属现金、CAPEX与高端设计订单",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\封测_检测_计量_光罩\\PLAB_Photronics_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "候补；低风险叙事不足选进20",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 29.24,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 34.26
+        },
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 37.4
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D22",
+      "ticker": "QCOM",
+      "claim": "专利许可和汽车/IoT提供现金底盘，定制数据中心是期权；拒绝用一次性税项盈利。 / 专利现金支持转型，Amazon合作的真正价值在交付/利润，而非把60B支付门槛当订单。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与AVGO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "专利许可和汽车/IoT提供现金底盘，定制数据中心是期权；拒绝用一次性税项盈利。",
+      "challenge": "专利现金可靠，数据中心支付门槛不是确定销售",
+      "verification_method": "剔税项、逐合同资格及汽车/IoT利润",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-21.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "AVGO",
+      "provisional_verdict": "候补；新业务商业兑现回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 174.43,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 180
+        },
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 171.82
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D23",
+      "ticker": "RNR",
+      "claim": "软市中主动缩险而保留投资/资本管理费用，估值对平常年盈利较低；分散科技现金风险。 / 低倍数再保险与第三方资本收费右尾",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PGR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "软市中主动缩险而保留投资/资本管理费用，估值对平常年盈利较低；分散科技现金风险。",
+      "challenge": "低倍数受灾害和软市合理约束",
+      "verification_method": "分灾害常态损失、续约价格与第三方资本费用",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\保险_财产险_特色险_再保险\\RNR_RenaissanceRe_Holdings_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PGR",
+      "provisional_verdict": "候补；不同时堆多个保险",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 338.87,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 367.5
+        },
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 385
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D24",
+      "ticker": "AAOI",
+      "claim": "800G/1.6T从已付费小基数放量；美国制造与激光器垂直一体化具有多客户份额右尾。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CRDO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "800G/1.6T从已付费小基数放量；美国制造与激光器垂直一体化具有多客户份额右尾。",
+      "challenge": "800G仅Q2约12.8m，净利转正主要税收益，1.6T资格订单不能当已交付",
+      "verification_method": "核Q4 1.6T资格、70–80m实际发货、正税前利润、Digicomm回款及增发",
+      "primary_sources": [
+        {
+          "id": "B1-11",
+          "tickers": [
+            "POET",
+            "CRDO",
+            "AAOI",
+            "COHR"
+          ],
+          "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+          "published_date": "2026-03-10",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "3.2T原型及1.6T资格样品订单；替代路线推进，不证明大规模收入，但否定唯一技术路线。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\AAOI_Applied_Optoelectronics_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CRDO",
+      "provisional_verdict": "暂缓；产品兑现可迅速回归，非永久淘汰",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 100.68,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 83.49
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D25",
+      "ticker": "AMPX",
+      "claim": "高能量电池已形成航空/无人机收入；Stark2027供货新增渠道能形成小基数非线性放量。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PSIX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "高能量电池已形成航空/无人机收入；Stark2027供货新增渠道能形成小基数非线性放量。",
+      "challenge": "航空客户已有收入但新合同未必转为足额盈利",
+      "verification_method": "核Stark采购约束、交付和良率、现金跑道与股数",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\AMPX_Amprius_Technologies_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PSIX",
+      "provisional_verdict": "候补；毛利和批量订单过关回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 8.87,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 8.59
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D26",
+      "ticker": "AMZN",
+      "claim": "AWS和广告是已付费利润池，零售规模产生协同；现金回收慢但经营选择权广。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与NVDA竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "AWS和广告是已付费利润池，零售规模产生协同；现金回收慢但经营选择权广。",
+      "challenge": "AWS增长不能独立证明新增AI资本回报",
+      "verification_method": "折旧更新周期与资本开支后FCF，客户付费而非供给容量",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "优质候补；现价相对上行不足",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 259.53,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 279.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D27",
+      "ticker": "ASTS",
+      "claim": "直连手机在发射、覆盖和运营商计费节点有非线性重估；保留与AI制造共因不同的技术事件。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与KYTX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "直连手机在发射、覆盖和运营商计费节点有非线性重估；保留与AI制造共因不同的技术事件。",
+      "challenge": "发射成功与运营商计费之间仍有覆盖及容量门槛",
+      "verification_method": "逐卫星运行/许可/覆盖、付费用户和资费分成，不以测试通话替代收入",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\ASTS_AST_SpaceMobile_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "KYTX",
+      "provisional_verdict": "非AI右尾候补；商业收费证据可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 51.46,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": null
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D28",
+      "ticker": "BABA",
+      "claim": "电商现金与中国云重估的不同地域驱动",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ADBE竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "电商现金与中国云重估的不同地域驱动",
+      "challenge": "保诚真实上线反驳AI全无采用，但云利润与模型应用亏损/扩股现金缺口必须合并",
+      "verification_method": "分云外部收入、AI应用亏损、capex与电商补贴；用扩股后ADS及汇率桥",
+      "primary_sources": [
+        {
+          "id": "B1-06",
+          "tickers": [
+            "BABA"
+          ],
+          "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+          "published_date": "2026-09-09",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "真实客户全面上线；数日缩至分钟，未披露阿里净合同收入/利润。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\BABA_Alibaba_阿里巴巴_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "ADBE",
+      "provisional_verdict": "保留地域/估值分散；不能称净现金无下行",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 110.78,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 150
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D29",
+      "ticker": "CARR",
+      "claim": "数据中心订单与住宅修复两条路径，当前16.8倍快照远期PE低于纯数据中心热管理；集团基数降低单一技术风险。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MOD竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "数据中心订单与住宅修复两条路径，当前16.8倍快照远期PE低于纯数据中心热管理；集团基数降低单一技术风险。",
+      "challenge": "2026数据中心20亿目标意味着H2约15亿交付；非数据中心仍左右集团利润",
+      "verification_method": "核H2验收/产能、住宅售出与欧洲利润；不要把跨分部DC重复加总",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\热管理_流体_水处理\\CARR_Carrier_Global_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "MOD",
+      "provisional_verdict": "保留；相对较低预期且有双恢复路径",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 55.42,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 73.5
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D30",
+      "ticker": "CB",
+      "claim": "分散承保与数字效率的较低倍数复利",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PGR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "分散承保与数字效率的较低倍数复利",
+      "challenge": "承保分散有质素但价格未提供足够右尾",
+      "verification_method": "核事故年盈利和保费增长质量",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\保险_财产险_特色险_再保险\\CB_Chubb_Limited_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PGR",
+      "provisional_verdict": "候补；估值回落或增长上修",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 345.06,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 406
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D31",
+      "ticker": "COHR",
+      "claim": "NVIDIA客户侧采购和融资支持激光/光互联，PhotonLink及OCS使内容价值扩张。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CRDO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "NVIDIA客户侧采购和融资支持激光/光互联，PhotonLink及OCS使内容价值扩张。",
+      "challenge": "客户支持增强量产，但融资/采购支持与经营现金是不同证据",
+      "verification_method": "核激光/模块产能良率、订单兑现、客户支持条款；每股现金而非客户总capex",
+      "primary_sources": [
+        {
+          "id": "B1-11",
+          "tickers": [
+            "POET",
+            "CRDO",
+            "AAOI",
+            "COHR"
+          ],
+          "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+          "published_date": "2026-03-10",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "3.2T原型及1.6T资格样品订单；替代路线推进，不证明大规模收入，但否定唯一技术路线。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CRDO",
+      "provisional_verdict": "候补；光学二选一需价格优势",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 288.02,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 289.52
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D32",
+      "ticker": "CRDO",
+      "claim": "AEC已有现金盈利，光DSP/PIC/模块形成第二支柱；右尾来自新增内容量而非简单铜缆涨价。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CLS竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "AEC已有现金盈利，光DSP/PIC/模块形成第二支柱；右尾来自新增内容量而非简单铜缆涨价。",
+      "challenge": "AEC已盈利，光是第二引擎而非已同等成熟；SBC后盈利与200.84价格的基准空间不足",
+      "verification_method": "核新光产品独立收入/毛利、大客户应收集中，新增采购变现；反算价格需要的经济EPS",
+      "primary_sources": [
+        {
+          "id": "B1-11",
+          "tickers": [
+            "POET",
+            "CRDO",
+            "AAOI",
+            "COHR"
+          ],
+          "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+          "published_date": "2026-03-10",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "3.2T原型及1.6T资格样品订单；替代路线推进，不证明大规模收入，但否定唯一技术路线。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CLS",
+      "provisional_verdict": "强候补；收入与利润超模型或降价回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 200.84,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 189.07
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D33",
+      "ticker": "DOV",
+      "claim": "成熟工业耗材和制冷交付修复提供现金支持；剔除已延后的法规强制替换，液冷只是补充。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CARR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "成熟工业耗材和制冷交付修复提供现金支持；剔除已延后的法规强制替换，液冷只是补充。",
+      "challenge": "液冷是增量，法规强制替换延后影响兑现",
+      "verification_method": "核真实订单/耗材需求，剔法规拉货",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\热管理_流体_水处理\\DOV_Dover_Corporation_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "候补；较低经营弹性",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 190.88,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 231
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D34",
+      "ticker": "EME",
+      "claim": "复杂机电工程的现场组织和预制能力可收费，低设备资本开支；以真实利润而非RPO全额估值。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MOD竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "复杂机电工程的现场组织和预制能力可收费，低设备资本开支；以真实利润而非RPO全额估值。",
+      "challenge": "积压高但工程合同风险在成本及现场人力",
+      "verification_method": "按项目固定价比例/人工成本/现金预付款拆积压",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\工程建设_机电安装\\EME_EMCOR_Group_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MOD",
+      "provisional_verdict": "候补；价格要求较高",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 779.16,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 864
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D35",
+      "ticker": "ENPH",
+      "claim": "仅保留受损住宅渠道修复的高弹性期权；AI SST不计入基准收益，safe-harbor和45X必须拆开。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与FLNC竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "仅保留受损住宅渠道修复的高弹性期权；AI SST不计入基准收益，safe-harbor和45X必须拆开。",
+      "challenge": "住宅修复是近端核心，AI SST主要不在12个月利润窗口",
+      "verification_method": "剔safe-harbor提前备货和45X，核安装消耗与欧洲渠道",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\ENPH_Enphase_Energy_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "FLNC",
+      "provisional_verdict": "候补；终端复苏可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 31.49,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 36
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D36",
+      "ticker": "FLNC",
+      "claim": "制造修复叠加储能真实需求；估值已允许较弱盈利，若赔偿收敛可同时修复利润和现金。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PSIX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "制造修复叠加储能真实需求；估值已允许较弱盈利，若赔偿收敛可同时修复利润和现金。",
+      "challenge": "9月预警1.9亿美元EBITDA下降仅6500万是递延毛利，其余损失不会随收入自动回来",
+      "verification_method": "逐项重算延迟赔偿65m/新品35m/质量25m；现金与质保准备；订单验收而非管线",
+      "primary_sources": [
+        {
+          "id": "B1-09",
+          "tickers": [
+            "FLNC"
+          ],
+          "url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen/",
+          "published_date": "2026-08-31",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "Boxberg 400MW/1600MWh，HyperStrong合作；客户多供应商，不是FLNC独占。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\FLNC_Fluence_Energy_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "PSIX",
+      "provisional_verdict": "第20条件名额；先验证修复，不因风险高直接否决",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 7.07,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 7.63
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D37",
+      "ticker": "GFS",
+      "claim": "特色制造/硅光机会比通用成熟制程更强，但现价不能由低forward PE独立证明。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MCHP竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "特色制造/硅光机会比通用成熟制程更强，但现价不能由低forward PE独立证明。",
+      "challenge": "硅光增长不能直接填平成熟制造回报",
+      "verification_method": "核长期协议最低量、利用率与补贴后资本回报",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\GFS_GlobalFoundries_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "候补；盈利兑现再比较",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 48.34,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 51.72
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D38",
+      "ticker": "HUBB",
+      "claim": "电网更新提供独立需求，高压项目及NSI扩展渠道；资本回报优于单纯AI概念。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与VST竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "电网更新提供独立需求，高压项目及NSI扩展渠道；资本回报优于单纯AI概念。",
+      "challenge": "电网需求持久但基准上行偏薄",
+      "verification_method": "核公用事业订单交期和并购有机增长",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\HUBB_Hubbell_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "VST",
+      "provisional_verdict": "候补；价格改善",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 474.05,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 506
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D39",
+      "ticker": "IREN",
+      "claim": "微软可执行合同、GPU融资与自有电力基础形成规模转型；融资解决后收入可以从小基数跳变。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与NBIS竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "微软可执行合同、GPU融资与自有电力基础形成规模转型；融资解决后收入可以从小基数跳变。",
+      "challenge": "最低付款有约束力但需验收；设施成本/更新GPU/本金会削弱GPU两年回本说法",
+      "verification_method": "按各期SOW验收、最低量、延迟抵扣、退款与融资做项目股权现金；设施残值另作敏感性",
+      "primary_sources": [
+        {
+          "id": "B1-10",
+          "tickers": [
+            "IREN"
+          ],
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+          "published_date": "2026-02-05",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "SOW验收最低GPU数量、5天验收/15工作日修复及延期抵扣/终止条款，合同不是无条件现金。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\IREN_IREN_Limited_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "NBIS",
+      "provisional_verdict": "保留右尾；排位高于更昂贵且未闭合融资者",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 34.8,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 43.75
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D40",
+      "ticker": "JBL",
+      "claim": "低毛利但制造组织与客户供料可令资本回报良好；比单一客户AI代工现金更成熟。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CLS竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "低毛利但制造组织与客户供料可令资本回报良好；比单一客户AI代工现金更成熟。",
+      "challenge": "成熟现金优于纯故事但当前基准约等于价格",
+      "verification_method": "分客户供料、AI增量利润与回购",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-10-01.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CLS",
+      "provisional_verdict": "候补；价格或盈利出现差异",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 312.01,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 306
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D41",
+      "ticker": "META",
+      "claim": "广告推荐实际增加成交和付款，价值捕获比免费AI更直接；但资本配置决定普通股回报。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与ADBE竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "广告推荐实际增加成交和付款，价值捕获比免费AI更直接；但资本配置决定普通股回报。",
+      "challenge": "广告收费真实但AI支出缺少单独回收披露",
+      "verification_method": "增量广告利润减AI capex、SBC和折旧",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\企业软件_数据平台\\META_Meta_Platforms_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "ADBE",
+      "provisional_verdict": "候补；估值空间不够",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 742.96,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 750
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D42",
+      "ticker": "MKSI",
+      "claim": "前道、PCB、化学耗材复苏与降债可合力提高权益价值，不能只套调整EPS。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与BDC竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "前道、PCB、化学耗材复苏与降债可合力提高权益价值，不能只套调整EPS。",
+      "challenge": "复苏与降债有双弹性但现金回收需实现",
+      "verification_method": "核WFE/PCB分项销量、净债及息费",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\MKSI_MKS_Inc_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "BDC",
+      "provisional_verdict": "候补；周期订单更强可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 249.91,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 285.38
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D43",
+      "ticker": "MSFT",
+      "claim": "企业身份、Office与云分发入口最稳；Copilot确有付费规模，但只按经营盈利给有限增长溢价。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与NVDA竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "企业身份、Office与云分发入口最稳；Copilot确有付费规模，但只按经营盈利给有限增长溢价。",
+      "challenge": "质量高不等于12个月高收益",
+      "verification_method": "核Azure增长对capex/折旧与Copilot净增付费",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "候补；高预期限制回报",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 541.15,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 580
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D44",
+      "ticker": "NBIS",
+      "claim": "已签大客户和跨区域扩建保留最大规模上修机会；不能仅因重资产而错过收入跃迁。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与IREN竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "已签大客户和跨区域扩建保留最大规模上修机会；不能仅因重资产而错过收入跃迁。",
+      "challenge": "签约增长真，当前价格可能已资本化多数乐观部署",
+      "verification_method": "按实际已供电机房验收、capex资金与完全稀释股数对合同爬坡建模",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NBIS_Nebius_Group_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "IREN",
+      "provisional_verdict": "候补；融资无损闭合或价格修正回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 210.06,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": null
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D45",
+      "ticker": "NVTS",
+      "claim": "800V/GaN/SiC和近芯片供电保留架构切换右尾，但不能把2028–29量产视作2027利润。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与POET竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "800V/GaN/SiC和近芯片供电保留架构切换右尾，但不能把2028–29量产视作2027利润。",
+      "challenge": "800V架构右尾合理但量产2028–29多在窗口外",
+      "verification_method": "核已付费设计NRE、订单投产表及2027收入不重复计TAM",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\NVTS_Navitas_Semiconductor_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "POET",
+      "provisional_verdict": "等待；3–18月实际定点收入足够才回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 9.99,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": null
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D46",
+      "ticker": "PENG",
+      "claim": "内存真实利润增长与非超大云AI运维潜力；区别采购流水与净收入，现金修复可触发重估。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MU竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "内存真实利润增长与非超大云AI运维潜力；区别采购流水与净收入，现金修复可触发重估。",
+      "challenge": "内存与系统集成经济不同不能混用高倍数",
+      "verification_method": "拆过账采购与自有毛利、运营现金",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\PENG_Penguin_Solutions_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MU",
+      "provisional_verdict": "候补；现金转正再升位",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 79.16,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 74.75
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D47",
+      "ticker": "POET",
+      "claim": "现金充裕的小型光学中介层商业化；当前企业价值较小，成功认证可使新订单价值显著重估。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CRDO竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "现金充裕的小型光学中介层商业化；当前企业价值较小，成功认证可使新订单价值显著重估。",
+      "challenge": "Lumilens客户融资真实增强需求，但下游数十亿合同不是POET收入；OpenLight替代路线已送样",
+      "verification_method": "核不可取消采购与客户激励抵减后收入、良率和毛利；充分稀释股数；不能套完整光模块单价",
+      "primary_sources": [
+        {
+          "id": "B1-11",
+          "tickers": [
+            "POET",
+            "CRDO",
+            "AAOI",
+            "COHR"
+          ],
+          "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+          "published_date": "2026-03-10",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "3.2T原型及1.6T资格样品订单；替代路线推进，不证明大规模收入，但否定唯一技术路线。",
+          "independent_visit": true
+        },
+        {
+          "id": "B1-17",
+          "tickers": [
+            "POET"
+          ],
+          "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+          "published_date": "2026-08-06",
+          "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+          "reading_notes": "客户宣布累计融资超过900m、生产数据中心交付及数十亿协议；自身披露不等于POET供应份额。",
+          "independent_visit": true
+        }
+      ],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\POET_POET_Technologies_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "CRDO",
+      "provisional_verdict": "候补；订单及净收入兑现后可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 6.41,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 6.69
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D48",
+      "ticker": "PSIX",
+      "claim": "机罩集成和数据中心备用电源交付恢复；小市值使同一工厂效率改善带来强盈利弹性。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MOD竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "机罩集成和数据中心备用电源交付恢复；小市值使同一工厂效率改善带来强盈利弹性。",
+      "challenge": "毛利回升真实；电力不等于数据中心，税备抵转回不可支持持续EPS",
+      "verification_method": "剔38.3m税利好，跟踪电力收入、订单/机罩交付、27%毛利与应收、关联交易",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\PSIX_Power_Solutions_International_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "MOD",
+      "provisional_verdict": "保留进攻名额；需正常税率后盈利",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 50.1,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 63.75
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D49",
+      "ticker": "RDW",
+      "claim": "国防无人系统比纯火箭叙事更接近盈利；较强现金缓冲允许航天修复，避免仅追RKLB高倍数。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PSIX竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "国防无人系统比纯火箭叙事更接近盈利；较强现金缓冲允许航天修复，避免仅追RKLB高倍数。",
+      "challenge": "国防无人机比航天远景更近，但整合/合同利润决定权益",
+      "verification_method": "分已拨款订单与管线、并购后现金及新股",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\RDW_Redwire_公司调研_2026-09-26.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PSIX",
+      "provisional_verdict": "候补；有资金订单转现金可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 9.22,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 9.63
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D50",
+      "ticker": "RMBS",
+      "claim": "MRDIMM增加每条模组价值，RCD和长期IP合同提供较稳基础；2027平台采用可证伪。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MU竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "MRDIMM增加每条模组价值，RCD和长期IP合同提供较稳基础；2027平台采用可证伪。",
+      "challenge": "内容提升真实但新平台采用是时间门槛",
+      "verification_method": "核MRDIMM出货、IP收入确认及每DIMM价值",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MU",
+      "provisional_verdict": "候补；基准低于价格",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 101.04,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 94.06
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D51",
+      "ticker": "SMCI",
+      "claim": "股价对收入不收费、对薄利润及资本占用收费；交付/回款恢复有大弹性，绝非便宜即安全。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CLS竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "股价对收入不收费、对薄利润及资本占用收费；交付/回款恢复有大弹性，绝非便宜即安全。",
+      "challenge": "收入增长能很大但普通股回报取决薄利润及资金占用，不能因过往争议机械排除",
+      "verification_method": "独立审计和客户验收、存货应收、每季经营现金；边际毛利覆盖融资成本",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CLS",
+      "provisional_verdict": "候补；现金/审计核验通过可争夺第20",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 39.98,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 51.04
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D52",
+      "ticker": "SNDK",
+      "claim": "NBM底价与财务保障比普通订单更强，但必须给NAND正常化及履约风险定价。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MU竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "NBM底价与财务保障比普通订单更强，但必须给NAND正常化及履约风险定价。",
+      "challenge": "NBM比普通订单更强；上涨仍依赖高价执行、现金税正常化与客户履约",
+      "verification_method": "读底价/上限/担保和位元覆盖，拆价格/数量及JV投入；不把HBF样品计入2027大收入",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "B1 local segment read"
+        }
+      ],
+      "alternative_ticker": "MU",
+      "provisional_verdict": "保留；与MU共同存储风险须限合计",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "重点论辩",
+      "price_anchor": 1487.33,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 12,
+          "base_price": 1686.67
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D53",
+      "ticker": "TEL",
+      "claim": "复杂连接器、车用和电力产品使AI增量不承担全部估值；设计认证与多行业现金分散。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CARR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "复杂连接器、车用和电力产品使AI增量不承担全部估值；设计认证与多行业现金分散。",
+      "challenge": "多行业底座增强但稀释AI弹性",
+      "verification_method": "核AI实际连接器内容、车用订单和利润",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "候补；相对回报不足",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 217.28,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 256.0
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D54",
+      "ticker": "TSM",
+      "claim": "先进制造与封装同时收费，客户不能轻易复制；有盈利及现金实证，制造资本密度已扣。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与NVDA竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "先进制造与封装同时收费，客户不能轻易复制；有盈利及现金实证，制造资本密度已扣。",
+      "challenge": "先进制造实证强但当前价格与地缘尾部限制名额",
+      "verification_method": "核海外成本/折旧、先进封装利用率与ADR",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "候补；价格改善可回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 444.35,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R1_cashflows",
+          "months": 15,
+          "base_price": 514.8
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D55",
+      "ticker": "TTMI",
+      "claim": "M+N高层板是AI系统交付中具付费证据的瓶颈；扩产和国防组合提供新增利润。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与CLS竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "M+N高层板是AI系统交付中具付费证据的瓶颈；扩产和国防组合提供新增利润。",
+      "challenge": "高层板真实瓶颈但收购后净债增加",
+      "verification_method": "核良率、M+N交付、收购债息/股数",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\TTMI_TTM_Technologies_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "CLS",
+      "provisional_verdict": "候补；现金与去杠杆达标回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 110.33,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R4_upside",
+          "months": 15,
+          "base_price": 121.43
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D56",
+      "ticker": "UCTT",
+      "claim": "先进设备外包扩张的较低倍数载体，提供高弹性但不把40亿产能当收入。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与MKSI竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "先进设备外包扩张的较低倍数载体，提供高弹性但不把40亿产能当收入。",
+      "challenge": "产能不是订单，应收库存可能先吞现金",
+      "verification_method": "核客户采购、库存变现、经营现金和融资",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\UCTT_Ultra_Clean_Holdings_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "MKSI",
+      "provisional_verdict": "候补；现金流转正回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 63.51,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R3_external",
+          "months": 12,
+          "base_price": 75
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D57",
+      "ticker": "WDC",
+      "claim": "纯HDD供给纪律和密度升级可产生现金，但必须把Sandisk证券收益及高forward EPS剔掉。",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与SNDK竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "纯HDD供给纪律和密度升级可产生现金，但必须把Sandisk证券收益及高forward EPS剔掉。",
+      "challenge": "供给纪律强但高盈利锚可能仍在高估正常现金",
+      "verification_method": "剔SNDK证券收益、每TB价格/成本与现金税",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\WDC_WesternDigital_公司调研_2026-09-22.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "SNDK",
+      "provisional_verdict": "候补；合同价格与更优买价回归",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 386.94,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R2_valuation",
+          "months": 18,
+          "base_price": 351.34
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D58",
+      "ticker": "WM",
+      "claim": "再投资高峰回落、医疗整合和自动化兑现",
+      "why_it_changes_selection": "直接改变近端收入/现金/每股兑现或当前价格容错；与PGR竞争同一风险预算，而不是单列无后果风险",
+      "bull_case_fairly_stated": "再投资高峰回落、医疗整合和自动化兑现",
+      "challenge": "成熟收费及capex下行利好，收益弹性不如进攻候选",
+      "verification_method": "核医疗整合协同/客户留存、RNG实际利润",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\环境服务_固废_回收_资源化\\WM_Waste_Management_WM_公司调研_2026-10-11.md",
+          "locator": "正文核心判断及决定性观察，约5–30行；明确仅重点27家实际段落深读，其余读取首轮主张后快速差异审查",
+          "access": "inherited R1-R5 thesis / not claimed full body read"
+        }
+      ],
+      "alternative_ticker": "PGR",
+      "provisional_verdict": "候补；防守价值不等于本轮最优名额",
+      "unresolved": "以上执行核验尚未全完成；外部已实读事实见primary_sources，未读原始来源的事项仍属冻结上游主张",
+      "depth": "快速差异图",
+      "price_anchor": 211.14,
+      "price_interpretation": "不由股票涨跌断言市场隐含；首轮条件基准/现价仅检验容错",
+      "horizon": "3–6月看季度/事件验证；6–12月看收入和现金；12–18月看经营兑现，窗口外平台价值只作期权",
+      "original_model_horizons": [
+        {
+          "role": "R5_diversification",
+          "months": [
+            12,
+            18
+          ],
+          "base_price": 256.5
+        }
+      ],
+      "normalized_comparison": "主席统一18个月；原12/15/18月目标不可直接比较总上行或机械按时间放大。须重建截至2028-04-12现金/股数/临床事件；B1未完成此独立计算。"
+    },
+    {
+      "id": "B1-D59",
+      "ticker": "CLS",
+      "claim": "S1补充：网络/AI系统交付利润在窗口内放量",
+      "why_it_changes_selection": "S1中枢483.08相对347.5存在约39%条件空间，优于部分光学高PS候选；非本轮独立估值",
+      "bull_case_fairly_stated": "现有HPS/CCS交付真实，新客户平台已进入生产阶段",
+      "challenge": "新平台进入生产不是CLS取得全部系统价值；HPS包含于CCS且客户高度集中",
+      "verification_method": "分1.6T网络/AMD/OpenAI量产份额、物料过账与8–9%经营率；核客户供料/营运资金",
+      "primary_sources": [],
+      "local_evidence": [
+        {
+          "path": "01_inputs\\frozen\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\CLS_Celestica_Inc_公司调研_2026-09-21.md",
+          "locator": "正文9–25行，B1实读"
+        }
+      ],
+      "alternative_ticker": "JBL",
+      "provisional_verdict": "保留；S1补充支持其取代部分高PS光学股",
+      "unresolved": "继承S1估值和外部核验，不算B1独立访问；需终轮证券计算",
+      "depth": "重点补充",
+      "price_anchor": 347.5,
+      "horizon": "6–18月"
+    }
+  ],
+  "resurrection_candidates": [
+    {
+      "ticker": "IONS",
+      "condition": "删除失败里程碑；TRYNGOLZA4万美元标价下付费治疗年/净价，DAWNZERA竞争；分GSK/Roche权益及2028债务",
+      "alternative_to_replace": "FLNC",
+      "reason": "pelacarsen失败不等于平台失效；bepirovirsen日本批准、sefaxersen三期中期阳性有真实新价值"
+    },
+    {
+      "ticker": "POET",
+      "condition": "核不可取消采购与客户激励抵减后收入、良率和毛利；充分稀释股数；不能套完整光模块单价",
+      "alternative_to_replace": "CRDO",
+      "reason": "Lumilens客户融资真实增强需求，但下游数十亿合同不是POET收入；OpenLight替代路线已送样"
+    },
+    {
+      "ticker": "AAOI",
+      "condition": "核Q4 1.6T资格、70–80m实际发货、正税前利润、Digicomm回款及增发",
+      "alternative_to_replace": "CRDO",
+      "reason": "800G仅Q2约12.8m，净利转正主要税收益，1.6T资格订单不能当已交付"
+    },
+    {
+      "ticker": "CRDO",
+      "condition": "核新光产品独立收入/毛利、大客户应收集中，新增采购变现；反算价格需要的经济EPS",
+      "alternative_to_replace": "CLS",
+      "reason": "AEC已盈利，光是第二引擎而非已同等成熟；SBC后盈利与200.84价格的基准空间不足"
+    },
+    {
+      "ticker": "SMCI",
+      "condition": "独立审计和客户验收、存货应收、每季经营现金；边际毛利覆盖融资成本",
+      "alternative_to_replace": "CLS",
+      "reason": "收入增长能很大但普通股回报取决薄利润及资金占用，不能因过往争议机械排除"
+    },
+    {
+      "ticker": "BDC",
+      "condition": "用收购后债务和息费，拆RUCKUS有机收入/EBITDA与协同，核FCF去杠杆",
+      "alternative_to_replace": "CARR",
+      "reason": "RUCKUS整合提高规模也提高利息与执行负担，工业底座不自动保护杠杆权益"
+    },
+    {
+      "ticker": "MCHP",
+      "condition": "核渠道天数、利用率与终端消耗；12定点逐项投产季度；扣优先股/利息",
+      "alternative_to_replace": "AGCO",
+      "reason": "库存修复已进财报，但固定成本吸收与PCIe定点不能都按最快兑现"
+    },
+    {
+      "ticker": "NBIS",
+      "condition": "按实际已供电机房验收、capex资金与完全稀释股数对合同爬坡建模",
+      "alternative_to_replace": "IREN",
+      "reason": "签约增长真，当前价格可能已资本化多数乐观部署"
+    },
+    {
+      "ticker": "ASTS",
+      "condition": "逐卫星运行/许可/覆盖、付费用户和资费分成，不以测试通话替代收入",
+      "alternative_to_replace": "KYTX",
+      "reason": "发射成功与运营商计费之间仍有覆盖及容量门槛"
+    }
+  ],
+  "provisional_top20": [
+    "NVDA",
+    "MU",
+    "ADBE",
+    "AVGO",
+    "PNR",
+    "CLS",
+    "ALNY",
+    "SNDK",
+    "IREN",
+    "PSIX",
+    "BNTX",
+    "ARGX",
+    "MOD",
+    "CARR",
+    "AGCO",
+    "BABA",
+    "VST",
+    "KYTX",
+    "PGR",
+    "FLNC"
+  ],
+  "excluded_reasons": {
+    "POET": "候补；订单及净收入兑现后可回归；回归核验：核不可取消采购与客户激励抵减后收入、良率和毛利；充分稀释股数；不能套完整光模块单价",
+    "CRDO": "强候补；收入与利润超模型或降价回归；回归核验：核新光产品独立收入/毛利、大客户应收集中，新增采购变现；反算价格需要的经济EPS",
+    "AAOI": "暂缓；产品兑现可迅速回归，非永久淘汰；回归核验：核Q4 1.6T资格、70–80m实际发货、正税前利润、Digicomm回款及增发",
+    "BDC": "候补；执行改善后可替换周期名额；回归核验：用收购后债务和息费，拆RUCKUS有机收入/EBITDA与协同，核FCF去杠杆",
+    "MCHP": "候补；需更强每股收益或价格优势；回归核验：核渠道天数、利用率与终端消耗；12定点逐项投产季度；扣优先股/利息",
+    "CRM": "候补；暂由ADBE承担软件价值修复；回归核验：恒口径ARR、付费消耗减席位流失；剔战略投资收益，新增息费/SBC后EPS",
+    "IONS": "第一梯队回归候补；新药现金桥通过可替换FLNC/较低回报防御股；回归核验：删除失败里程碑；TRYNGOLZA4万美元标价下付费治疗年/净价，DAWNZERA竞争；分GSK/Roche权益及2028债务",
+    "SMCI": "候补；现金/审计核验通过可争夺第20；回归核验：独立审计和客户验收、存货应收、每季经营现金；边际毛利覆盖融资成本",
+    "COHR": "候补；光学二选一需价格优势；回归核验：核激光/模块产能良率、订单兑现、客户支持条款；每股现金而非客户总capex",
+    "NBIS": "候补；融资无损闭合或价格修正回归；回归核验：按实际已供电机房验收、capex资金与完全稀释股数对合同爬坡建模",
+    "ASTS": "非AI右尾候补；商业收费证据可回归；回归核验：逐卫星运行/许可/覆盖、付费用户和资费分成，不以测试通话替代收入",
+    "AMPX": "候补；毛利和批量订单过关回归；回归核验：核Stark采购约束、交付和良率、现金跑道与股数",
+    "ENPH": "候补；终端复苏可回归；回归核验：剔safe-harbor提前备货和45X，核安装消耗与欧洲渠道",
+    "RDW": "候补；有资金订单转现金可回归；回归核验：分已拨款订单与管线、并购后现金及新股",
+    "NVTS": "等待；3–18月实际定点收入足够才回归；回归核验：核已付费设计NRE、订单投产表及2027收入不重复计TAM",
+    "AMZN": "优质候补；现价相对上行不足；回归核验：折旧更新周期与资本开支后FCF，客户付费而非供给容量",
+    "BJ": "候补；高收益偏好下让位周期弹性；回归核验：核同店、续费与新店回收期",
+    "KR": "候补；稳定但右尾不足；回归核验：核电商边际利润、同店销量与债务后回购",
+    "QCOM": "候补；新业务商业兑现回归；回归核验：剔税项、逐合同资格及汽车/IoT利润",
+    "RNR": "候补；不同时堆多个保险；回归核验：分灾害常态损失、续约价格与第三方资本费用",
+    "CB": "候补；估值回落或增长上修；回归核验：核事故年盈利和保费增长质量",
+    "DOV": "候补；较低经营弹性；回归核验：核真实订单/耗材需求，剔法规拉货",
+    "EME": "候补；价格要求较高；回归核验：按项目固定价比例/人工成本/现金预付款拆积压",
+    "GFS": "候补；盈利兑现再比较；回归核验：核长期协议最低量、利用率与补贴后资本回报",
+    "HUBB": "候补；价格改善；回归核验：核公用事业订单交期和并购有机增长",
+    "JBL": "候补；价格或盈利出现差异；回归核验：分客户供料、AI增量利润与回购",
+    "META": "候补；估值空间不够；回归核验：增量广告利润减AI capex、SBC和折旧",
+    "MKSI": "候补；周期订单更强可回归；回归核验：核WFE/PCB分项销量、净债及息费",
+    "MSFT": "候补；高预期限制回报；回归核验：核Azure增长对capex/折旧与Copilot净增付费",
+    "PENG": "候补；现金转正再升位；回归核验：拆过账采购与自有毛利、运营现金",
+    "PLAB": "候补；低风险叙事不足选进20；回归核验：归属现金、CAPEX与高端设计订单",
+    "RMBS": "候补；基准低于价格；回归核验：核MRDIMM出货、IP收入确认及每DIMM价值",
+    "TEL": "候补；相对回报不足；回归核验：核AI实际连接器内容、车用订单和利润",
+    "TSM": "候补；价格改善可回归；回归核验：核海外成本/折旧、先进封装利用率与ADR",
+    "TTMI": "候补；现金与去杠杆达标回归；回归核验：核良率、M+N交付、收购债息/股数",
+    "UCTT": "候补；现金流转正回归；回归核验：核客户采购、库存变现、经营现金和融资",
+    "WDC": "候补；合同价格与更优买价回归；回归核验：剔SNDK证券收益、每TB价格/成本与现金税",
+    "WM": "候补；防守价值不等于本轮最优名额；回归核验：核医疗整合协同/客户留存、RNG实际利润",
+    "ON": "候补；盈利或价格更优再回归；回归核验：核车用/工业终端消耗、SiC利用率、收购后股数债息与AI真实收入"
+  },
+  "factor_concentration": {
+    "AI_capex_direct": [
+      "NVDA",
+      "MU",
+      "AVGO",
+      "CLS",
+      "SNDK",
+      "IREN",
+      "PSIX",
+      "MOD"
+    ],
+    "AI_secondary": [
+      "CARR",
+      "VST",
+      "FLNC",
+      "BABA"
+    ],
+    "biopharma": [
+      "ALNY",
+      "ARGX",
+      "BNTX",
+      "KYTX"
+    ],
+    "not_equal_weight_recommendation": true,
+    "warning": "20个名称远少于20个独立风险；GPU部署/客户融资冲击会同时影响芯片、内存、代工、电力设备和云。MU+SNDK同一存储价因子；生物医药仍分临床与支付，不是完全独立。"
+  },
+  "external_independent_body_reads": 17,
+  "inherited_reports": [
+    "02_round1/R1_cashflows.json",
+    "02_round1/R2_valuation.json",
+    "02_round1/R3_external.json",
+    "02_round1/R4_upside.json",
+    "02_round1/R5_diversification.json",
+    "03_round2/S1_ai_upside.md"
+  ],
+  "limitations": "经营反驳与条件名额，不是完成估值核验或最终可立即买入20；未读取S2，尚未生成时不等待。"
+}

@@ -1,0 +1,527 @@
+{
+  "role": "S2_nonai_upside",
+  "sources": [
+    {
+      "id": "S2-01",
+      "tickers": [
+        "ADBE"
+      ],
+      "publication_date": "2026-09-10",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "short_findings": "FY26 GAAP EPS18.12–18.17，调整24.45–24.50；Q3收入6.76B、CFO2.52B、ARR27.50B。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-02",
+      "tickers": [
+        "ADBE"
+      ],
+      "publication_date": "2025-10-29",
+      "source_type": "competitor",
+      "url": "https://www.canva.com/newsroom/news/all-new-affinity/",
+      "short_findings": "Affinity专业设计核心免费；竞争不能只限AI生成图。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-03",
+      "tickers": [
+        "ADBE"
+      ],
+      "publication_date": "2026-09 (exact day not resolved)",
+      "source_type": "independent_industry",
+      "url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+      "short_findings": "Affinity3.3增加60多项功能；作者同时认为Adobe集成、插件生态及专业习惯仍强。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-04",
+      "tickers": [
+        "PNR"
+      ],
+      "publication_date": "2026-10-01",
+      "source_type": "company",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "short_findings": "Taco以1.4B已交割；Water Solutions并表，非pending。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-05",
+      "tickers": [
+        "PNR"
+      ],
+      "publication_date": "2026-07-28",
+      "source_type": "company",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-acquire-taco-group-holdings-accelerating-growth-and",
+      "short_findings": "Taco2026收入约540M，含预期协同EBITDA率>20%；协同不是历史利润。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-06",
+      "tickers": [
+        "PNR"
+      ],
+      "publication_date": "2026-07-23",
+      "source_type": "customer_channel",
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "short_findings": "POOL收入+2%、库存同比+4%较Q1+14%放缓；维护需求稳定、可选消费弱。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-07",
+      "tickers": [
+        "ALNY"
+      ],
+      "publication_date": "2026-07-30",
+      "source_type": "company",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "short_findings": "TTR指导4.2–4.5B；美国需求环增129M，库存约-20M；Rare142M。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-08",
+      "tickers": [
+        "ALNY"
+      ],
+      "publication_date": "2026-08-10",
+      "source_type": "competitor",
+      "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "short_findings": "Attruby美国Q2销售222.4M，增长由初治人群带动；一线竞争真实。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-09",
+      "tickers": [
+        "ALNY"
+      ],
+      "publication_date": "2026-07-30",
+      "source_type": "independent_media",
+      "url": "https://www.fiercepharma.com/pharma/alnylam-shares-tank-27-amvuttra-disappoints-attr-outlook-cut-2026",
+      "short_findings": "市场原预期低个位数超预期；公司称依从性>90%、已有处方医生的新启动份额>50%。后者是选择样本而非总体份额。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-10",
+      "tickers": [
+        "ALNY"
+      ],
+      "publication_date": "2026-07-09",
+      "source_type": "competitor",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "short_findings": "eplontersen CM三期未达主要终点，单药预设亚组HR0.71仅名义显著；降低近期沉默剂竞争。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-11",
+      "tickers": [
+        "ALNY"
+      ],
+      "publication_date": "2025-03",
+      "source_type": "regulator",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf",
+      "short_findings": "AMVUTTRA正式标签，适应症和临床结局的监管依据；不证明商业净价。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-12",
+      "tickers": [
+        "ARGX"
+      ],
+      "publication_date": "2026-07-23",
+      "source_type": "company",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "short_findings": "H1产品销售2.8B、经营现金0.7B、现金及流动金融资产5.2B；持续盈利已出现。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-13",
+      "tickers": [
+        "ARGX"
+      ],
+      "publication_date": "2026-08-17",
+      "source_type": "company",
+      "url": "https://argenx.com/news/2026/press-release-3345813",
+      "short_findings": "ALKIVIA联合IMNM/DM TIS改善比安慰剂多15.4点；不能泛化DM单独成功。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-14",
+      "tickers": [
+        "ARGX"
+      ],
+      "publication_date": "2026-05-08 (approval)",
+      "source_type": "regulator",
+      "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=527316",
+      "short_findings": "FDA数据库列扩展成人gMG适应症；页面旧2021条目和新2026条目须区别。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-15",
+      "tickers": [
+        "KYTX"
+      ],
+      "publication_date": "2026-08-11",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "short_findings": "现金199.4M，2028跑道包括Oxford可提款额；BLA Q4完成目标；Q2亏38.3M。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-16",
+      "tickers": [
+        "KYTX"
+      ],
+      "publication_date": "2026-09-24",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "short_findings": "KYSA8一年T25FW中位改善49%；已获临床改善者95%维持；92%免慢性免疫治疗。仍是小样本非随机注册路径。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-17",
+      "tickers": [
+        "BNTX"
+      ],
+      "publication_date": "2026-08-04",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "short_findings": "现金及证券16.6B欧元；2026收入1.6–1.9B、调整R&D2.0–2.3B；14项关键试验。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-18",
+      "tickers": [
+        "BNTX"
+      ],
+      "publication_date": "2026-09-14",
+      "source_type": "company_trial",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/09/BioNTech-and-OncoC4-Present-Updated-Data-Showing-Gotistobart-Nearly-Doubled-Median-Overall-Survival-versus-Standard-of-Care-Chemotherapy-in-Previously-Treated-Squamous-Non-Small-Cell-Lung-Cancer-Patients.html",
+      "short_findings": "Gotistobart探索阶段87人，OS18.5 vs10月、HR0.56；不是独立新确证样本。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-19",
+      "tickers": [
+        "BNTX"
+      ],
+      "publication_date": "2026-05-30",
+      "source_type": "partner_joint_trial",
+      "url": "https://news.bms.com/news/details/2026/Global-Data-for-BioNTech-and-Bristol-Myers-Squibbs-PD-L1xVEGF-A-Bispecific-Pumitamig-Shows-Encouraging-Efficacy-in-Patients-with-Non-Small-Cell-Lung-Cancer-in-ROSETTA-Lung-02-Trial-2026-TW53rMYYjx/default.aspx",
+      "short_findings": "Pumitamig全球二期低剂量ORR非鳞63.6%、鳞72.7%；联合稿与BioNTech非独立试验佐证。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Joint BioNTech/BMS release: same clinical dataset; not independent clinical replication"
+    },
+    {
+      "id": "S2-20",
+      "tickers": [
+        "BNTX"
+      ],
+      "publication_date": "2026-07 (Q2 filing)",
+      "source_type": "partner_financial",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "short_findings": "BMS记载全球利润亏损平分；2026–28合计2B周年付款以未提前终止为条件，7.6B里程碑不确定。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-21",
+      "tickers": [
+        "AGCO"
+      ],
+      "publication_date": "2026-07-30",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "short_findings": "Q2收入2.6B同比-1%；年度已下调，不应把技术日当上调指导。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-22",
+      "tickers": [
+        "AGCO"
+      ],
+      "publication_date": "2026-10-05",
+      "source_type": "company_product",
+      "url": "https://news.agcocorp.com/2026-10-05-AGCO-Tech-Day-2026-Spotlights-Autonomy%2C-AI-and-Mixed-Fleet-Solutions-to-Enhance-Farmer-Profitability",
+      "short_findings": "OutRun混合机队改装适配收获物流和耕作；演示不等于付费装机。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-23",
+      "tickers": [
+        "AGCO",
+        "DE"
+      ],
+      "publication_date": "2026-09-03",
+      "source_type": "government_industry",
+      "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "short_findings": "2026净现金农收176.4B名义+0.4%、实质-2.5%；政府款47.4B。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-24",
+      "tickers": [
+        "AGCO",
+        "DE"
+      ],
+      "publication_date": "2026-08-14",
+      "source_type": "central_bank",
+      "url": "https://www.kansascityfed.org/agriculture/ag-credit-survey/steady-tightening-of-agricultural-credit-conditions-persists/",
+      "short_findings": "农业信用继续收紧；总量政府款不等于每位作物农户采购预算。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-25",
+      "tickers": [
+        "BDC"
+      ],
+      "publication_date": "2026-07-30",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "short_findings": "订单836M同比+19%、book/bill1.11；Q3含Ruckus收入950–970M；调整EPS2.15–2.30。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-26",
+      "tickers": [
+        "CARR"
+      ],
+      "publication_date": "2026-07-28",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "short_findings": "Q2优于预期，住宅恢复与数据中心订单需分开；未来订单非已收入。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-27",
+      "tickers": [
+        "MCHP"
+      ],
+      "publication_date": "2026-08-06",
+      "source_type": "company",
+      "url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "short_findings": "收入1.485B环增13.2%，库存175天对185天；Gen6项目6→12；净债降170M。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-28",
+      "tickers": [
+        "MOD"
+      ],
+      "publication_date": "2026-10-01",
+      "source_type": "company_action",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "short_findings": "PT分拆完成；每旧股分0.44619THRM；Oct12买家不再享历史分派。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-29",
+      "tickers": [
+        "CRM"
+      ],
+      "publication_date": "2026-08-26",
+      "source_type": "company",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "short_findings": "FY27收入46.1–46.4B，cRPO固定汇率+14%；Agentforce ARR扩大定义含Slackbot等。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-30",
+      "tickers": [
+        "CRM"
+      ],
+      "publication_date": "2026-08-27",
+      "source_type": "independent_media",
+      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-411-points-as-nvidia-stock-soars-stock-market-today",
+      "short_findings": "业绩后股票+22.6%；与Anthropic扩展合作。叙事修复部分已定价。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-31",
+      "tickers": [
+        "PGR"
+      ],
+      "publication_date": "2026-09-18",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "short_findings": "8月综合成本率89.3%，同比83.1%；不能外推极低灾损利润。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-32",
+      "tickers": [
+        "RNR"
+      ],
+      "publication_date": "2026-07-22",
+      "source_type": "company",
+      "url": "https://investor.renre.com/news-events/press-releases/detail/393/renaissancere-reports-654-2-million-of-net-income-available-to-common-shareholders-and-547-8-million-of-operating-income-available-to-common-shareholders-in-q2-2026",
+      "short_findings": "Q2普通股经营利润547.8M；按正常灾损和资本留存估值。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-33",
+      "tickers": [
+        "RNR"
+      ],
+      "publication_date": "2026-07",
+      "source_type": "broker_industry",
+      "url": "https://www.howdenre.com/news-insights/capacity-competition-and-structural-innovation-howden-res-1-july-2026-latin-america-reinsurance",
+      "short_findings": "拉美巨灾超赔续保费率降15–20%；地域样本不可直接等同RNR组合。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-34",
+      "tickers": [
+        "BABA"
+      ],
+      "publication_date": "2026-08-20",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "short_findings": "云48.437B人民币+45%、EBITA5.628B；集团EBITA27.329B-30%；SBC3.304B。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-35",
+      "tickers": [
+        "BABA"
+      ],
+      "publication_date": "2026-08-20",
+      "source_type": "independent_media",
+      "url": "https://apnews.com/article/china-alibaba-earnings-ai-cloud-8a30302d23a96fc7b9aab664b9c1897d",
+      "short_findings": "季度资本开支67.7B人民币+75%；现金投资规模是反证，资本开支不是当期利润的直接扣项。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-36",
+      "tickers": [
+        "DE"
+      ],
+      "publication_date": "2026-08-20",
+      "source_type": "competitor",
+      "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm",
+      "short_findings": "FY26净利指导4.75–5B，管理层称周期底部；PPA收入-6%、营利-9%。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-37",
+      "tickers": [
+        "WM"
+      ],
+      "publication_date": "2026-07-28",
+      "source_type": "company",
+      "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465926087575/tm2621414d1_ex99-1.htm",
+      "short_findings": "Q2收入6.684B，调整EBITDA2.067B+5.5%；CFO近+12%。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-38",
+      "tickers": [
+        "WCN"
+      ],
+      "publication_date": "2026-07-22",
+      "source_type": "company",
+      "url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-Outlook/default.aspx",
+      "short_findings": "2026调整FCF1.40–1.45B；该口径仍有费用加回。",
+      "access_result": "read: browser open or detailed source body; not merely unvisited link",
+      "accessed_on": "2026-10-13 UTC; information cutoff 2026-10-12 19:40 America/Los_Angeles",
+      "independence_note": "Company/SEC versions and syndications count as one source chain; source classification is not an endorsement"
+    },
+    {
+      "id": "S2-39",
+      "tickers": [
+        "KYTX"
+      ],
+      "publication_date": "2026-08-11",
+      "source_type": "company_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "short_findings": "期末现金199.427M，本金贷款25M；现有奖励与反摊薄股必须计经济稀释",
+      "access_result": "read browser open; frozen dossier detailed cross-check",
+      "accessed_on": "2026-10-13 UTC"
+    },
+    {
+      "id": "S2-40",
+      "tickers": [
+        "KYTX"
+      ],
+      "publication_date": "2026-07-09",
+      "source_type": "loan_amendment_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526298979/kytx-20260708.htm",
+      "short_findings": "Oxford分层节点额度；酌情D50M不是无条件承诺",
+      "access_result": "read browser open; frozen dossier detailed cross-check",
+      "accessed_on": "2026-10-13 UTC"
+    }
+  ],
+  "source_count": 40,
+  "limitations": "公司财报源较多；仅ADBE、PNR、ALNY、ARGX、AGCO、BNTX、CRM、RNR、BABA完成跨源链。KYTX/BDC/CARR/MCHP/MOD独立客户数据较弱，不宣称均有三方独立验证。"
+}

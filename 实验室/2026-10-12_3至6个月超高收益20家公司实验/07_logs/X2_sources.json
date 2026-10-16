@@ -1,0 +1,173 @@
+[
+  {
+    "id": "S01",
+    "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+    "published_date": "2026-10-12",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "客户原始披露",
+    "root_event": "Maia 300",
+    "claim_supported_or_challenged": "Maia200已生产、300于2027生产部署，8HBM4/96芯片/167kW；未证明选定供应商订单；确切盘前盘后时分未取得"
+  },
+  {
+    "id": "S02",
+    "url": "https://ir.coherent.com/news-releases/news-release-details/coherent-launches-photonlinktm-integrated-optics-platform-ai",
+    "published_date": "2026-09-21",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "PhotonLink",
+    "claim_supported_or_challenged": "超过10 CPO及10 NPO接洽、锚定LTA、Q4收入爬坡目标；接洽不是独立收入"
+  },
+  {
+    "id": "S03",
+    "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-closes-365bn-investment-grade-gpu-financing",
+    "published_date": "2026-06-01",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "IREN微软GPU融资",
+    "claim_supported_or_challenged": "36.5亿融资债息6%，含预款3.31%；仅GPU资本开支覆盖96%"
+  },
+  {
+    "id": "S04",
+    "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+    "published_date": "2026-08-27",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "IREN FY26",
+    "claim_supported_or_challenged": "Horizon1交付、2调试、3–4Q4目标；4B签约ARR与1B运行ARR分开"
+  },
+  {
+    "id": "S05",
+    "url": "https://business.thepilotnews.com/thepilotnews/article/bizwire-2026-10-9-credo-to-showcase-broad-portfolio-of-connectivity-solutions-for-ai-scale-out-and-scale-up-fabrics-at-2026-ocp-global-summit",
+    "published_date": "2026-10-09",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司BusinessWire稿转载，非独立媒体验证",
+    "root_event": "Credo OCP",
+    "claim_supported_or_challenged": "1.6T ALC/AEC/光模块、Weaver FPGA展示；没有新增订单数量"
+  },
+  {
+    "id": "S06",
+    "url": "https://247wallst.com/investing/2026/10/09/applied-optoelectronics-has-fallen-hard-for-6-months-this-wall-street-analyst-expects-its-going-to-double-soon/",
+    "published_date": "2026-10-09",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "具名媒体Alex Sirois转述Rosenblatt Mike Genovese",
+    "root_event": "AAOI多头券商观点",
+    "claim_supported_or_challenged": "220目标作灵感；文内1.6T 17M与冻结电话会70–80M冲突，未擅自消除；目标期限非本轮6m"
+  },
+  {
+    "id": "S07",
+    "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+    "published_date": "2026-10-05",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "AAOI第三次ATM",
+    "claim_supported_or_challenged": "完成600M、5,694,845股、均价105.36、净588M；覆盖旧报告未售状态"
+  },
+  {
+    "id": "S08",
+    "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+    "published_date": "2026-09-30",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始财报",
+    "root_event": "MU FY26Q4",
+    "claim_supported_or_challenged": "收入54.23B，GAAP EPS32.87，CFO43.97B；短期盈利已实现，非未来模拟"
+  },
+  {
+    "id": "S09",
+    "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+    "published_date": "2026-08-05",
+    "access_status": "已打开但正文未充分展开/部分失败，见claim",
+    "source_type": "公司原始披露",
+    "root_event": "SNDK FY26Q4",
+    "claim_supported_or_challenged": "首次open返回415行但未返回正文，后续403；不计独立实读，数字继承冻结原文待复核"
+  },
+  {
+    "id": "S10",
+    "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+    "published_date": "2026-09-30",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "专业研究机构原始调查",
+    "root_event": "Q4内存价格",
+    "claim_supported_or_challenged": "DRAM10–15%、NAND15–20%预测；企业SSD强同时消费端承压，预测不等于成交价格"
+  },
+  {
+    "id": "S11",
+    "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+    "published_date": "2026-09-01",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始财报",
+    "root_event": "CRDO FY27Q1",
+    "claim_supported_or_challenged": "479M收入；Q2官方525–535M，不能把本地535–555M研究路径标官方"
+  },
+  {
+    "id": "S12",
+    "url": "https://investor.enphase.com/news-releases/news-release-details/enphase-advances-iq-solid-state-transformer-development-ai-data",
+    "published_date": "2026-09-08",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "ENPH SST",
+    "claim_supported_or_challenged": "11月完整演示、2027试点为计划，模块在造不是大型订单"
+  },
+  {
+    "id": "S13",
+    "url": "https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-energy-announces-revised-guidance-fiscal-year-2026",
+    "published_date": "2026-09-16",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "FLNC预警",
+    "claim_supported_or_challenged": "FY26收入2.4B、EBITDA亏200M；FY27现金中性至正是目标"
+  },
+  {
+    "id": "S14",
+    "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+    "published_date": "2026-08-11",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始财报",
+    "root_event": "CRWV Q2",
+    "claim_supported_or_challenged": "收入2.575B、调整EBITDA1.510B、调整经营利润128M、净利息640M；backlog104B"
+  },
+  {
+    "id": "S15",
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+    "published_date": "2026-10-07",
+    "access_status": "已打开但正文未充分展开/部分失败，见claim",
+    "source_type": "供应商原始披露",
+    "root_event": "APLD FY27Q1",
+    "claim_supported_or_challenged": "已交付/基础租金路线；首次open正文未展开，具体250MW继承冻结原文，待进一步重读"
+  },
+  {
+    "id": "S16",
+    "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+    "published_date": "2026-10-01",
+    "access_status": "已实读返回正文主要相关段落",
+    "source_type": "公司原始披露",
+    "root_event": "MOD分拆",
+    "claim_supported_or_challenged": "已完成，每旧股0.44619THRM；156M现金用于还债；10/12新购不含旧分派"
+  },
+  {
+    "id": "S17",
+    "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+    "published_date": "2026-09-24",
+    "access_status": "已打开但正文未充分展开/部分失败，见claim",
+    "source_type": "公司原始披露",
+    "root_event": "KYTX一年随访",
+    "claim_supported_or_challenged": "已打开133行待进一步展开；Q4BLA与26人疗效继承冻结原文，非独立全表核验"
+  },
+  {
+    "id": "S18",
+    "url": "https://www.zacks.com/stock/news/3002016/aaoi-stock-gains-17-in-a-month-should-you-buy-sell-or-hold",
+    "published_date": "2026-10-07",
+    "access_status": "访问失败，仅线索",
+    "source_type": "具名媒体线索",
+    "root_event": "AAOI相反观点",
+    "claim_supported_or_challenged": "访问反爬，未读正文，不据此证明Hold细节"
+  },
+  {
+    "id": "S19",
+    "url": "https://finance.yahoo.com/technology/ai/articles/iren-stock-gains-report-names-180840206.html",
+    "published_date": "2026-10-12",
+    "access_status": "访问失败，仅线索",
+    "source_type": "媒体转载线索",
+    "root_event": "IREN Anthropic传闻",
+    "claim_supported_or_challenged": "429未读正文；可能只是8月匿名客户身份揭示，不增算新合同"
+  }
+]

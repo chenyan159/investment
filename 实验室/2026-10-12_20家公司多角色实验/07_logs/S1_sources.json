@@ -1,0 +1,448 @@
+{
+  "role": "S1_ai_upside",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "sources": [
+    {
+      "id": "MU_Q4",
+      "tickers": [
+        "MU"
+      ],
+      "published": "2026-09-30",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "reading_notes": "Q4 revenue54.23B; Q1 revenue61.5B GM86.25%; fact and guidance",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "MU_FY26Q4"
+    },
+    {
+      "id": "MU_REMARKS",
+      "tickers": [
+        "MU"
+      ],
+      "published": "2026-09-30",
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "reading_notes": "26 SCAs;32B customer commitments;35% revenue through2030;Q1 GM floor target;15.5% tax;1.15B shares;deposits financing not CFO",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "MU_FY26Q4"
+    },
+    {
+      "id": "NVDA_Q2",
+      "tickers": [
+        "NVDA"
+      ],
+      "published": "2026-08-26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "reading_notes": "Revenue96.221B GM75%;next108B GM74%;Rubin production",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "NVDA_FY27Q2"
+    },
+    {
+      "id": "NVDA_10Q",
+      "tickers": [
+        "NVDA"
+      ],
+      "published": "2026-08-27",
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "reading_notes": "36B cloud commitments;20B leases;105B guarantee starts phased FY29;279B supply commitments",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "NVDA_FY27Q2"
+    },
+    {
+      "id": "AVGO_Q3",
+      "tickers": [
+        "AVGO"
+      ],
+      "published": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "reading_notes": "29.591B revenue;13.665B FCF;Q4 34.8B revenue66% adjusted OP margin",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "AVGO_Q3"
+    },
+    {
+      "id": "CRDO_Q1",
+      "tickers": [
+        "CRDO"
+      ],
+      "published": "2026-09-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "reading_notes": "479M revenue;GAAP GM64.5/nonGAAP68;Q2 525-535M;SBC exclusion material",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "CRDO_Q1"
+    },
+    {
+      "id": "CLS_Q2",
+      "tickers": [
+        "CLS"
+      ],
+      "published": "2026-07-27",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "reading_notes": "4.7B quarterly revenue;2026 20.5B;2027 growth acceleration target",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "CLS_Q2"
+    },
+    {
+      "id": "AAOI_Q2",
+      "tickers": [
+        "AAOI"
+      ],
+      "published": "2026-08-06",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2026-results",
+      "reading_notes": "191.9M revenue;GM29.8 adjusted;Q3 255-290M;target650k units/month yearend",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "AAOI_Q2"
+    },
+    {
+      "id": "POET_FINANCE",
+      "tickers": [
+        "POET"
+      ],
+      "published": "2026-05-15",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-secures-financing-of-us-400-million-in-a-registered-direct-offering-of-common-shares-and-warrant",
+      "reading_notes": "400M gross;19.04762M shares plus matching warrants;announcement strike26.15 conflicts final26.25",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "POET_MAY_FINANCE"
+    },
+    {
+      "id": "POET_Q2",
+      "tickers": [
+        "POET"
+      ],
+      "published": "2026-08-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326005485/exh_991.htm",
+      "reading_notes": "569925 revenue;796.3M cash+STI",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "POET_Q2"
+    },
+    {
+      "id": "POET_FS",
+      "tickers": [
+        "POET"
+      ],
+      "published": "2026-08-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "reading_notes": "Cash432.531904M+STI363.809999M;cash debt5.8M;customer consideration30.142069M;full security ledger",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "POET_Q2"
+    },
+    {
+      "id": "POET_WARRANT",
+      "tickers": [
+        "POET"
+      ],
+      "published": "2026-05-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm",
+      "reading_notes": "Final legal strike26.25 expiry2029-05-18 controls over announcement",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "POET_MAY_FINANCE"
+    },
+    {
+      "id": "LUMILENS",
+      "tickers": [
+        "POET"
+      ],
+      "published": "2026-08-06",
+      "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "reading_notes": "Customer >900M cumulative funding;does not prove POET inclusion in delivered module",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "LUMILENS"
+    },
+    {
+      "id": "PSIX_Q2",
+      "tickers": [
+        "PSIX"
+      ],
+      "published": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "reading_notes": "152.5M rev GM27.1%;GM+420bp sequential;H2>H1 production expectation;no DC revenue guidance",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "PSIX_Q2"
+    },
+    {
+      "id": "FLNC_Q3",
+      "tickers": [
+        "FLNC"
+      ],
+      "published": "2026-08-05",
+      "url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results",
+      "reading_notes": "649.8M revenue;6.4B backlog;850M DC wins;5.9% adjusted GM",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "FLNC_Q3"
+    },
+    {
+      "id": "FLNC_RESET",
+      "tickers": [
+        "FLNC"
+      ],
+      "published": "2026-09-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "reading_notes": "Supersedes Q3 guidance:2.4B revenue and -200M EBITDA;Houston bottleneck",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "FLNC_RESET"
+    },
+    {
+      "id": "IREN_FY26",
+      "tickers": [
+        "IREN"
+      ],
+      "published": "2026-08-27",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "reading_notes": "4B contracted ARR/1B operating;Horizon1 delivered;prepayment45-55% GPU capex;90% financing on specified equipment",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "IREN_FY26"
+    },
+    {
+      "id": "NBIS_Q2",
+      "tickers": [
+        "NBIS"
+      ],
+      "published": "2026-08-12",
+      "url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+      "reading_notes": "582M revenue8B cash;70% new deals prepayment;50-60% capex funded by prepay;expected>9B 2026;not recurring CFO",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "NBIS_Q2"
+    },
+    {
+      "id": "CRWV_Q2",
+      "tickers": [
+        "CRWV"
+      ],
+      "published": "2026-08-11",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "reading_notes": "104B backlog excludes25B earlyQ3;delivery/availability conditioned",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "CRWV_Q2"
+    },
+    {
+      "id": "APLD_Q1",
+      "tickers": [
+        "APLD"
+      ],
+      "published": "2026-10-07",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "reading_notes": "Latest Q1;ChronoScale consolidated but nonGAAP excluded;project cash minority claims required",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "APLD_Q1"
+    },
+    {
+      "id": "TF_MEMORY",
+      "tickers": [
+        "MU",
+        "SNDK",
+        "SKHY"
+      ],
+      "published": "2026-09-30",
+      "url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "reading_notes": "Q4 DRAM+10-15%,NAND+15-20% forecasts;enterprise SSD demand+80%2026;LTA ceilings constrain ASP",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "industry_primary",
+      "root_event": "TF_MEMORY"
+    },
+    {
+      "id": "SKHY_Q2",
+      "tickers": [
+        "SKHY",
+        "MU"
+      ],
+      "published": "2026-07-29",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+      "reading_notes": "Competitor strong memory results;currency must not be inferred from USD quote",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "SKHY_Q2"
+    },
+    {
+      "id": "SNDK_Q4",
+      "tickers": [
+        "SNDK"
+      ],
+      "published": "2026-08-05",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "reading_notes": "8.965B revenue;Q1 10.3-10.8B GM83-85%155M FD shares",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "SNDK_Q4"
+    },
+    {
+      "id": "COHR_Q4",
+      "tickers": [
+        "COHR"
+      ],
+      "published": "2026-08-12",
+      "url": "https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2026-results",
+      "reading_notes": "2.05B revenue40.2% adjusted GM1.74 EPS;scale optics",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "COHR_Q4"
+    },
+    {
+      "id": "ALAB_Q2",
+      "tickers": [
+        "ALAB"
+      ],
+      "published": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000033/q226exhibit991.htm",
+      "reading_notes": "392.4M revenue;73.7%adj GM39.1%adj OP margin;Scorpio largestQ3",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "ALAB_Q2"
+    },
+    {
+      "id": "VRT_Q2",
+      "tickers": [
+        "VRT"
+      ],
+      "published": "2026-07-29",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx",
+      "reading_notes": "2026 revenue13.8-14.2B EPS6.65-6.75 FCF2.4-2.6B",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "VRT_Q2"
+    },
+    {
+      "id": "MRVL_DAY",
+      "tickers": [
+        "MRVL"
+      ],
+      "published": "2026-10-06",
+      "url": "https://www.marvell.com/company/events/investor-day-2026.html",
+      "reading_notes": "Event verified;deck retrieval failed;targets corroborated Reuters separately",
+      "access": "2026-10-12 session",
+      "read_status": "event_page_only",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "MRVL_DAY"
+    },
+    {
+      "id": "MRVL_REUTERS",
+      "tickers": [
+        "MRVL"
+      ],
+      "published": "2026-10-06",
+      "url": "https://www.channelnewsasia.com/business/marvell-raises-2028-revenue-forecast-strong-ai-data-center-demand-6436891",
+      "reading_notes": "FY28 revenue20B versus18.2B consensus;FY31 70-90B not near-term",
+      "access": "2026-10-12 session",
+      "read_status": "body_read",
+      "tier": "professional_media",
+      "root_event": "MRVL_REUTERS"
+    },
+    {
+      "id": "LITE_RESULTS",
+      "tickers": [
+        "LITE"
+      ],
+      "published": "2026-08",
+      "url": "https://investor.lumentum.com/quarterly-results/default.aspx/1000/default.aspx",
+      "reading_notes": "Search-visible Q1 FY27 1.225-1.275B and4.05-4.35EPS;dynamic page not full-read",
+      "access": "2026-10-12 session",
+      "read_status": "search_extract_only",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "LITE_RESULTS"
+    },
+    {
+      "id": "MOD_RESULTS",
+      "tickers": [
+        "MOD"
+      ],
+      "published": "2026-07-29",
+      "url": "https://investors.modine.com/financials/quarterly-results/default.aspx",
+      "reading_notes": "Search-visible climate sales+51%;dynamic page not full-read",
+      "access": "2026-10-12 session",
+      "read_status": "search_extract_only",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "MOD_RESULTS"
+    },
+    {
+      "id": "SMCI_RESULTS",
+      "tickers": [
+        "SMCI"
+      ],
+      "published": "2026-08",
+      "url": "https://ir.supermicro.com/financials/quarterly-results/",
+      "reading_notes": "Search-visible adjusted Q4 GM17.6 EPS1.70;dynamic page not full-read",
+      "access": "2026-10-12 session",
+      "read_status": "search_extract_only",
+      "tier": "issuer_or_customer_primary",
+      "root_event": "SMCI_RESULTS"
+    },
+    {
+      "id": "TSM_Q2",
+      "tickers": [
+        "TSM"
+      ],
+      "published": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+      "reading_notes": "40.2BUSD revenue67.7%GM4.31USD ADR EPS",
+      "read_status": "body_read",
+      "tier": "issuer_primary",
+      "root_event": "TSM_Q2"
+    },
+    {
+      "id": "TSM_SEPT",
+      "tickers": [
+        "TSM"
+      ],
+      "published": "2026-10-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "reading_notes": "September511.86B TWD+54.6%;independent monthly root event",
+      "read_status": "body_read",
+      "tier": "issuer_primary",
+      "root_event": "TSM_SEPT"
+    },
+    {
+      "id": "TSM_ADR",
+      "tickers": [
+        "TSM"
+      ],
+      "published": "2026-04",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-04/5b6b7f218129782a5bf0366e7fd06aadc5c1515a/FS.pdf",
+      "reading_notes": "1ADR=5ordinary;search extract",
+      "read_status": "search_extract_only",
+      "tier": "issuer_primary",
+      "root_event": "TSM_ADR"
+    }
+  ]
+}

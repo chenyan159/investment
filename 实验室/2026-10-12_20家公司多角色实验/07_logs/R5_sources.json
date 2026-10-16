@@ -1,0 +1,150 @@
+{
+  "role": "R5",
+  "retrieved_at_local_date": "2026-10-12",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "queries": [
+    "直接打开冻结正文引用的SEC/IR/FDA网址；逐项find cash、2028、87.2、1676、2813、2180、futility、September",
+    "site.investors.alnylam.com 2026 July 30 second quarter TTR 4.2 4.5",
+    "site.investors.agcocorp.com 2026 October technology day PTx",
+    "site.ir.bjs.com 2026 September 14 financial policy（未取得可用新增结果）",
+    "site.investors.wm.com 2026 second quarter 2027 synergies"
+  ],
+  "sources": [
+    {
+      "id": "R5-S01",
+      "ticker": "BNTX",
+      "published_date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "fact": "现金和证券EUR16.6342bn；ADS 1:1；251.204m股；FY26收入指引1.6–1.9bn；2026晚期读数计划",
+      "research_inference": "现金支持多轮验证，但不能视作股价地板；管线EV为独立假设",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S02",
+      "ticker": "KYTX",
+      "published_date": "2026-03-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526126216/kytx-ex99_1.htm",
+      "fact": "旧公告279.3m现金，贷款150m只有初始25m；原计划H1完整提交",
+      "research_inference": "旧融资跑道不覆盖最新支出与提交延迟；不沿用旧日期",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S03",
+      "ticker": "IONS",
+      "published_date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "fact": "2028年6月575m债券本金；2030年770m；RP 2028起SPINRAZA分享45%",
+      "research_inference": "新销售盈利不能替代债务再融资；模型保留融资/版税",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S04",
+      "ticker": "MRNA",
+      "published_date": "2026-07-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000147/exhibit9912026q2pressrelea.htm",
+      "fact": "年底现金指引4.7–5.2bn且不含剩余贷款提款；norovirus中期未达提前成功",
+      "research_inference": "其后新增可转债只增加现金与债务，不创造经营价值",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S05",
+      "ticker": "PGR",
+      "published_date": "2026-09-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "fact": "8月累计CR87.2；此前事故有利发展1393m",
+      "research_inference": "正常化CR比报告高；仍保留份额增长积极分支",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S06",
+      "ticker": "KR",
+      "published_date": "2026-09-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/56873/000110465926108926/kr-20260815x10q.htm",
+      "fact": "现金1676m；流动债1838m及长期债15159m（含融资租赁）",
+      "research_inference": "简化净债15321m；低PE并非低资本风险",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S07",
+      "ticker": "ARGX",
+      "published_date": "2026-07-23",
+      "url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "fact": "H1产品销售2813m，经营利润887m",
+      "research_inference": "已商业盈利的增长路径与纯临床赌博应区别；未来价量仍假设",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S08",
+      "ticker": "AGCO",
+      "published_date": "2026-07-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000068/agco-20260630.htm",
+      "fact": "长债2180.3m、短债546.7m；2027年400m票据；循环授信2027-12到期",
+      "research_inference": "周期拐点要同时观察终端和融资",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S09",
+      "ticker": "KYTX",
+      "published_date": "2026-08-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "fact": "二季度资产负债、现金流、债务与潜在稀释原文已打开；199.427m合计需现金和证券相加",
+      "research_inference": "不把150m额度全部加现金；首轮金额交叉使用冻结公司正文，终轮应复加",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S10",
+      "ticker": "KYTX",
+      "published_date": "2026-09-24",
+      "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+      "fact": "标题及原文页面可打开；单独find暂返回internal error；一年临床结果见冻结正文并保留同源边界",
+      "research_inference": "26人单臂与gMG7人不能推永久治愈；积极证据允许小额右尾",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S11",
+      "ticker": "ARGX",
+      "published_date": "2026-10-08",
+      "url": "https://argenx.com/news/2026/press-release-3376934",
+      "fact": "UNITY独立委员会建议因无效停止；没有新安全信号",
+      "research_inference": "不推翻既有gMG/CIDP收入；不把全平台机会视作确定",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S12",
+      "ticker": "IONS",
+      "published_date": "2026-09-03",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+      "fact": "FDA批准Zanvastro治疗Alexander病，季度鞘内给药；49人随机研究及4名低龄子研究",
+      "research_inference": "新获批是正向事实；人群小，不能单药填整个集团收入",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S13",
+      "ticker": "ALNY",
+      "published_date": "2026-07-30",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "fact": "TTR收入1030m；全年指引降至4.2–4.5bn；美国需求增129m但库存约-20m；增长不完全是压货",
+      "research_inference": "同时承认去积压减速和真实新需求；不机械把下调解释终局",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S14",
+      "ticker": "AGCO",
+      "published_date": "2026-10-06",
+      "url": "https://investors.agcocorp.com/events/event-details/agco-2026-technology-event",
+      "fact": "技术日日期/演示与转录文件存在；仅索引实读，没有声称完成PDF核验",
+      "research_inference": "PTx机会依据冻结正文，索引不算技术商业化证明",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    },
+    {
+      "id": "R5-S15",
+      "ticker": "WM",
+      "published_date": "2026-07-28",
+      "url": "https://investors.wm.com/static-files/7330b8ac-17d7-4959-bdb4-f05f7cb39906",
+      "fact": "Q2调整EBITDA2.067bn、CFO1.73bn；RNG/回收增40m；上调利润率但降收入区间",
+      "research_inference": "现金改善与新增项目是实际亮点；仍需扣真实资本与环境责任",
+      "access": "原始来源页面打开及相关段落查读；明确限制见fact"
+    }
+  ],
+  "limitation": "未声称各公司全部事实外部双重核验；证券/资本公式需终轮审计；没有使用晚于截止的内容。搜索出现非原始来源，未作为事实证据。"
+}

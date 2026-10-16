@@ -1,0 +1,22 @@
+[
+  {
+    "path": "03_round2\\S1_ai_deep.md",
+    "bytes": 59270,
+    "sha256": "04BC5FC6D97DA468FD56E53A8860450F3920128E4E4B14C22B0D9A3446E56385"
+  },
+  {
+    "path": "03_round2\\S1_ai_deep.json",
+    "bytes": 92215,
+    "sha256": "7652165555B565747EC3B84BA9BA8171415E48B0C3E861079296AE0EDA9CFD66"
+  },
+  {
+    "path": "07_logs\\S1_sources.json",
+    "bytes": 28433,
+    "sha256": "FFE83F9D10B854448FFB70E5E56B559E18E72D2D04D96A084EC1DA2532BCA731"
+  },
+  {
+    "path": "07_logs\\S1_reading_notes.md",
+    "bytes": 3695,
+    "sha256": "1372302483DE56015E6FE59CF596D75F686182275D4ED2506047D5595A247F44"
+  }
+]

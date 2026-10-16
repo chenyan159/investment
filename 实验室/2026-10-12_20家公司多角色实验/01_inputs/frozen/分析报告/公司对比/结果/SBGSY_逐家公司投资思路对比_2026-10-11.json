@@ -1,0 +1,143 @@
+{
+  "ticker": "SBGSY",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:49:39-07:00",
+  "reference_price": {
+    "value": 59.7,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        50.5,
+        50.5
+      ],
+      "target_price": [
+        34,
+        43
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        88.6,
+        88.6
+      ],
+      "target_price": [
+        73,
+        89
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        106.0,
+        106.0
+      ],
+      "target_price": [
+        102,
+        120
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        126.3,
+        126.3
+      ],
+      "target_price": [
+        132,
+        153
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价配置电气成长时施耐德的基准回报优于Eaton，但Eaton的美洲渠道及航空业务仍有独立优势。"
+    },
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价追求电气与工业软件组合成长优先施耐德，ABB的净现金和运动控制优势不足以弥补较低基准赔率。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "多终端稳健配置优先施耐德，追求更纯AI电力热管理敞口并接受客户及项目集中风险时优先Vertiv。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "施耐德的综合壁垒及基准价格回报更好，nVent的小基数液冷弹性尚不能消除竞争和收购回报约束。"
+    },
+    {
+      "peer": "HUBB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "成长资金优先施耐德的配电软件组合与基准赔率，Hubbell只在电网维护和公用事业敞口上更适配。"
+    },
+    {
+      "peer": "POWL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "施耐德在现金持续性、客户分散及基准回报上更优，Powell的大订单弹性伴随更强项目集中风险。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "稳健及普通成长资金优先施耐德，能承受极深左尾且押多平台许可与Fab-2量产者才考虑Vicor小仓。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "GE Vernova的发电电网瓶颈更稀缺，但现价基准负回报使同一设备链资金优先施耐德。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重视企业生态和较高基准年化并接受AI资本支出时优先微软，重视较低再投资负担及电气分散时选施耐德。"
+    },
+    {
+      "peer": "EME",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "产品软件价值与基准回报使施耐德优先，EMCOR只在轻债务工程执行和客户项目交付敞口上更适配。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "可承受台湾集中风险且追求AI瓶颈复利及右尾时优先台积电，需欧美电气分散和较轻扩产负担时选施耐德。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "现价稳健成长资金优先施耐德的基准赔率和现金路径，Meta的大额资本支出及监管风险要求更强广告兑现。"
+    }
+  ]
+}

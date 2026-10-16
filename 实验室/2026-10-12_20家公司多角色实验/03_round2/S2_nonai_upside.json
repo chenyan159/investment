@@ -1,0 +1,596 @@
+{
+  "role": "S2_nonai_upside",
+  "information_cutoff": "2026-10-12T19:40:00-07:00",
+  "price_anchor": "2026-10-12 close frozen",
+  "observation_date": "2028-04-12",
+  "covered_tickers": [
+    "ADBE",
+    "PNR",
+    "ARGX",
+    "ALNY",
+    "BNTX",
+    "KYTX",
+    "AGCO",
+    "BDC",
+    "CARR",
+    "MCHP",
+    "MOD",
+    "CRM",
+    "PGR",
+    "RNR",
+    "BABA",
+    "DE",
+    "WM",
+    "WCN"
+  ],
+  "deep_researched_tickers": [
+    "ADBE",
+    "PNR",
+    "ARGX",
+    "ALNY",
+    "BNTX",
+    "KYTX",
+    "AGCO",
+    "BDC",
+    "CARR",
+    "MCHP",
+    "MOD",
+    "CRM",
+    "PGR",
+    "RNR"
+  ],
+  "companies": [
+    {
+      "ticker": "ADBE",
+      "price_2026_10_12": 238.14,
+      "upside_thesis": "存量专业工作流+Acrobat形成现金桥，AI直接收费不是全部故事；付费效率提高和股份减少足以支持经济EPS增长。",
+      "source_triangulation": "S2-01/02/03：公司增长、Canva免费竞争、独立专业媒体对生态黏性评价。",
+      "disputes": "GAAP18.12–18.17不是24.45–24.50；AI-influenced不等于增量ARR；未取得总体客户流失队列。",
+      "valuation_bridge": "FY28收入27/31/34B，含SBC经营率29%/35%/36.5%；净息0/0/0，税22%，股份.390/.380/.375B；经济EPS15.66/22.27/25.81；PE11/17/21→172/379/542。经济EPS保留持续SBC，只容纳非现金并购摊销正常化；未把全部非GAAP调整加回，也不在EPS之外叠加净现金。份额缩小依赖实际回购，未使用授权全额。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          172,
+          379,
+          542
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 368,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月FY27初始指引与有机ARR；6–12月付费Firefly/Acrobat续费；12–18月FY28工作流商业化及净股数。",
+      "kill_criteria": "有机ARR连两季<5%且经济FCF下降；价格提高掩盖净付费用户持续流失。",
+      "selection_priority": "A：本组第一优先",
+      "confidence": "中高",
+      "alternative_win_condition": "胜CRM：同口径有机增长>=8%、经济EPS>=21；若Adobe存量流失且CRM核心有机cRPO>10%，CRM可替代。"
+    },
+    {
+      "ticker": "PNR",
+      "price_2026_10_12": 52.33,
+      "upside_thesis": "Pool渠道去库掩盖终端维护需求，修复可释放高增量利润；Taco商业/数据中心流体提供第二增长源。",
+      "source_triangulation": "S2-04/05/06：完成收购、原交易经营目标、POOL渠道库存与终端销售。",
+      "disputes": "旧9/26待交割已失效；Pool-42%不能等同整个终端市场-42%；高价收购及利息必须纳入。",
+      "valuation_bridge": "2027可持续年化供2028-04估值：收入4.32/4.82/5.25B；经营利润.871/1.146/1.38B，减净息.165/.150/.135、现金重组.080/.055/.040，税20/18/18%，股份.162/.161/.160B→经济EPS3.09/4.79/6.18；PE12/17/20→37/81/124。净债已通过融资利息进入EPS，不另重复扣；假设2027现金留存.2/.5/.65B用于降债，不再全部用于回购。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          37,
+          81,
+          124
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 80.75,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月Taco首个并表结果、春季订单；6–12月旺季sell-through和Pool净价；12–18月偿债及协同兑现。",
+      "kill_criteria": "Pool恢复只靠返利而净价持续下滑，Taco协同未覆盖利息；净债/EBITDA不降且回购继续。",
+      "selection_priority": "A：工业恢复首选",
+      "confidence": "中高",
+      "alternative_win_condition": "胜AGCO：Pool终端维护稳定且库存正常；若PNR丢份额而AGCO订单与付费PTx同时加速，则AGCO胜。"
+    },
+    {
+      "ticker": "ARGX",
+      "price_2026_10_12": 812.3,
+      "upside_thesis": "已盈利的免疫平台通过gMG全血清型、CIDP和肌炎多适应症扩大处方；经营现金转正降低外融依赖。",
+      "source_triangulation": "S2-12/13/14：财报、ALKIVIA原始披露、FDA已批准全成人gMG。",
+      "disputes": "肌炎IMNM与联合人群阳性不能推导DM单独阳性；收入按治疗年而非独立患者数；新适应症存在自身迁移。",
+      "valuation_bridge": "FY28产品收入7.0/8.8/10.3B，毛利90/90/89%；R&D+SG&A4.3/4.5/4.9B，经营利润2.0/3.42/4.267B，税22%得1.56/2.668/3.328B；63.5/64/65M股，PE22/28/33→540/1167/1690。SBC已在费用；利息及现金不加以避免现金余额双计。Forte及新增管线支出需更新，非5.2B全额可分配。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          540,
+          1167,
+          1690
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 1141,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月CIDP续治和肌炎完整标签路径；6–12月ITP/新给药；12–18月empasiprubart数据。",
+      "kill_criteria": "付费治疗年增长与净收入共同失速；CIDP大规模停药；新增标签费用持续超过净贡献。",
+      "selection_priority": "A：医药稳健增长首选",
+      "confidence": "中",
+      "alternative_win_condition": "胜ALNY：持续税后利润更直接，若ALNY一线净新增广泛改善、经济EPS>=12且ARGX标签收窄，ALNY可胜。"
+    },
+    {
+      "ticker": "ALNY",
+      "price_2026_10_12": 227.02,
+      "upside_thesis": "Q2降指引后仍有需求环增，临床结局标签与eplontersen失败维护竞争位置；第一线诊断扩张可重新拉升。",
+      "source_triangulation": "S2-07/08/09/10/11：本公司、BBIO一线增长、分析师预期、对手失败、FDA标签。",
+      "disputes": "此前超预期惯性不再适用；已用药医生>50%新启动不是全市场份额。Rare和中枢神经管线尚不足短期补TTR；Sanofi阶梯版税及Blackstone权益不可漏。",
+      "valuation_bridge": "FY28收入6.4/8.0/9.4B，Sanofi版税1.58/1.98/2.35B，其他直接成本.24/.28/.33B，含SBC研发销售3.9/4.1/4.45B→EBIT.68/1.64/2.27B；其他权益支付/净息后正常归母净利.45/1.25/1.75B；.140B股，PE25/32/38→80/286/475。净利桥已扣权益支付，未再次扣相同版税。下一代免版税是远期选项，不塞进18月基准。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          80,
+          286,
+          475
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.45,
+          0.3
+        ],
+        "expected_price_usd": 291.20000000000005,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月Q3/Q4净启动和处方医生覆盖；6–12月一线渗透及HELIOS长期证据；12–18月新适应症数据改变未来概率。",
+      "kill_criteria": "一线新增与净价同时低于模型；持续率显著跌破85%；费用增长快于贡献且再下调TTR。",
+      "selection_priority": "B+：保留右尾，低于ARGX",
+      "confidence": "中",
+      "alternative_win_condition": "赢ARGX需一线新增持续且FY28经济净利有>1.6B可见性；否则ARGX盈利和现金更扎实。"
+    },
+    {
+      "ticker": "BNTX",
+      "price_2026_10_12": 95.84,
+      "upside_thesis": "以在手资金支持多条临床路径，18月收益可来自去风险而非当期盈利；不应把每条路径全失败作为基准。",
+      "source_triangulation": "S2-17/18/19/20：财报、gotistobart随机探索、pumitamig全球二期、BMS财务权益验证；BMS联合临床稿不是独立复制。",
+      "disputes": "gotistobart87人随访不是新的确证；pumitamig权益50%，不能全销售归属；现金烧损与管线rNPV成本不可重复扣。",
+      "valuation_bridge": "18月rNPV（USD B）：可用金融资产按EUR16.6×1.10=18.26起点，扣至观察日净烧损/承诺4.5/3.6/2.7B=13.76/14.66/15.56；未来风险调整经营价值4.0/19.8/52B；.255/.258/.260B ADS→70/134/260。EURUSD1.10为共同研究假设非现价。管线经营价值拆基准：pumitamig9.07B、gotistobart5.33B、T-Pam/其他ADC4.76B、mRNA/BNT113及其他3.14B，减2028之后尚未包含的开发投入现值2.5B。每分支从成功销售×归属比例×税后利润率×终端倍数折现，再乘成功概率一次；共同研发只扣一次。基准不是2028已销售19.8B或公司指导。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          70,
+          134,
+          260
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 146.3,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月gotistobart确证中期/ADC读出；6–12月T-Pam申报与mRNA随机结果；12–18月全球pumitamig入组/事件与组合安全。",
+      "kill_criteria": "多个独立机制临床同时失败；可用现金下降快于预算且继续低回报收购；BMS合作提前终止。",
+      "selection_priority": "A-：分散事件风险的非AI席位",
+      "confidence": "中低",
+      "alternative_win_condition": "胜KYTX：多路径和现金支持；若KYTX获批/实销强而BNTX确证失效，KYTX可超越；不因BNTX当期亏损机械剔除。"
+    },
+    {
+      "ticker": "KYTX",
+      "price_2026_10_12": 6.21,
+      "upside_thesis": "SPS一次性免疫重置已有一年持续性数据，低市值可受BLA/获批大幅重估；gMG和PMS是额外期权。",
+      "source_triangulation": "S2-15/16：公司财务与9/24注册试验；独立随机/付款方核验缺口仍在。",
+      "disputes": "Q3读出已发生，Q4BLA完成仍是目标；199.4M不是足够无条件跑至2028的纯现金，含贷款；小样本非随机使审批尾部大。",
+      "valuation_bridge": "修订融资后18月估值：失败净权益.108B/90M FD=1.2；基准净经营rNPV加净现金.84B/100M FD=8.4；积极成功2.4B/90M FD=26.7。SPS成熟年200/1000/2000疗程×净价0.30M=60/300/600M收入，成功归母净利0/60/180M；并非2028已实现。融资采用150M净额、5%发行费用：基准6美元发26.32M股，现61.84M加约12M经济奖励及其他稀释≈100M；牛12美元发13.16M股，合计约87M取90M。现金自June199.4M扣2026H2消耗90M、2027消耗151M、2028Q1及4月约28M，新增条件A/B贷款35M后缺口约35M；加约50M缓冲、利息和下一阶段资金，150M融资合理。债务D50M酌情额度不计；.84B为用融资所得推进临床/商业后的净值，不另加融资现金为收益。旧70M股基准作废，只有里程碑后高价小额融资才能实现。详见MD最终修订。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          1.2,
+          8.4,
+          26.7
+        ],
+        "subjective_probabilities": [
+          0.35,
+          0.4,
+          0.25
+        ],
+        "expected_price_usd": 10.455,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月BLA完成/受理与CMC；6–12月审评及首批中心；12–18月SPS实际付款、gMG三期进度。",
+      "kill_criteria": "BLA重大CMC补件、不能形成可行上市资金；长期疗效明显回落或严重免疫毒性；增发>40%且无价值里程碑。",
+      "selection_priority": "B：小权重事件席位，不是现金防御",
+      "confidence": "低至中",
+      "alternative_win_condition": "胜BNTX需SPS批准路径清楚且融资后的FD权益值仍足够；现基准8.4对6.21仅35%上行，BNTX多路径通常优先，KYTX仅小事件席。"
+    },
+    {
+      "ticker": "AGCO",
+      "price_2026_10_12": 104.47,
+      "upside_thesis": "低周期设备恢复叠加混合机队改装，PTx无需等待农户购全新机器；零件收入降低纯整机波动。",
+      "source_triangulation": "S2-21/22/23/24/36：AGCO、USDA、联储信用、Deere订单周期相互校验。",
+      "disputes": "技术演示不证明付费；2026调整EPS5.5–5.75低于冻结forward7.45；PTx85%权益和赎回/融资必须保留。",
+      "valuation_bridge": "2028运行收入10/11.5/12.7B，经济EBIT率6%/10.5%/12.5%→.60/1.208/1.588B；净息及少数权益.17/.17/.18，税24%，股数.071/.071/.072B→EPS4.60/11.11/14.86；PE12/14/16→55/156/238。保留SBC，额外整合成本在低利润率；没有把2029PTx2B直接当2028收入。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          55,
+          156,
+          238
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 146.2,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月2027农机预订；6–12月付费OutRun/改装销售及欧洲交付；12–18月产能利用率与PTx归母现金。",
+      "kill_criteria": "作物农户信用恶化且订单再降；PTx外部收入停滞/支持成本上升，不能靠卖给自家整机重复算增长。",
+      "selection_priority": "B+：周期候补可进入最终20",
+      "confidence": "中",
+      "alternative_win_condition": "胜DE：现价对正常化EPS要求较低；若Deere精准农业收费显著加速而AGCO份额和PTx停滞，DE恢复竞争力。"
+    },
+    {
+      "ticker": "BDC",
+      "price_2026_10_12": 105.29,
+      "upside_thesis": "订单已增长、RUCKUS把有线工业网络扩至企业无线，交叉销售与去杠杆可放大权益。",
+      "source_triangulation": "S2-25和冻结收购资料；book/bill1.11是经营信号，但缺独立客户续约数据。",
+      "disputes": "调整EPS与GAAP差距大；不能以收入增长把收购和有机混同；铜价和退款影响基期。",
+      "valuation_bridge": "2028收入3.5/4.25/4.7B，经济EBITDA率13/18.5/21%=.455/.786/.987B；EV/EBITDA8/10.5/12.5；净债2.4/1.95/1.65B；41/41/42M股→30/154/254。EBITDA已预留持续SBC/整合成本；净债下降需真实FCF，不与回购双计。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          30,
+          154,
+          254
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 141.8,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月RUCKUS并表利润；6–12月订单转收入、现金降债；12–18月交叉销售留存。",
+      "kill_criteria": "净杠杆持续>4x，RUCKUS毛利/现金弱于收购桥；订单取消多。",
+      "selection_priority": "B：权益弹性高、债务尾部较大",
+      "confidence": "中",
+      "alternative_win_condition": "胜CARR需RUCKUS整合现金和净杠杆明显改善；若不能，CARR更大存量服务业务胜。"
+    },
+    {
+      "ticker": "CARR",
+      "price_2026_10_12": 55.42,
+      "upside_thesis": "住宅去库后盈利恢复，商业冷却订单和服务扩大；AI收入已嵌在集团，不再叠加第二次。",
+      "source_triangulation": "S2-26与冻结分部/资本桥；PNR/POOL辅助说明住宅消费仍弱，不能跨品类机械套用。",
+      "disputes": "订单不是收入；欧洲热泵和Viessmann回报、10.6B净债约束；数据中心收入快增仍不是集团全面复苏。",
+      "valuation_bridge": "2028收入22.5/25.5/28B，经济EBIT率12/16/18%→2.7/4.08/5.04B；净息.50/.42/.40；税23%，再减少数权益.12/.14/.16，股份.835/.82/.81B→EPS1.89/3.27/4.21；PE17/22/26→32/72/109。现金和净债不加于PE值；维持投资/重组含在利润率，额外责任可压低悲观。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          32,
+          72,
+          109
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 69.25,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月住宅sell-through；6–12月冷却订单交付和欧洲利润；12–18月服务附着与债务下降。",
+      "kill_criteria": "住宅去库后仍丢份额；数据中心扩产投入不能转毛利；债务回购不相容。",
+      "selection_priority": "B：中位收益不如PNR",
+      "confidence": "中",
+      "alternative_win_condition": "若PNRPool份额不恢复但CARR住宅订单和DC现金双改善，CARR胜PNR；否则PNR估值更有弹性。"
+    },
+    {
+      "ticker": "MCHP",
+      "price_2026_10_12": 73.83,
+      "upside_thesis": "库存175天且sell-through改善，工厂利用率经营杠杆已出现；Gen6设计胜利提供传统MCU外增量。",
+      "source_triangulation": "S2-27；收入环增、库存下降和净债下降相互支持，仍是同一公司链。",
+      "disputes": "非GAAP排除优先股股息，不能原样给普通股；设计项目数不等于客户量产订单。",
+      "valuation_bridge": "FY28收入5.8/7.2/8.5B，含SBC经济EBIT率25/35/39%=1.45/2.52/3.315；净息.23/.19/.17，税15%，扣优先股息.111B，股数.56/.57/.59B→EPS1.65/3.28/4.34；PE16/24/29→26/79/126。优先股转换后应改普通股数并停止扣相同股息，本桥假设观察日仍支付股息，额外股份只反映普通奖励/其他稀释。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          26,
+          79,
+          126
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 77.5,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月库存/工业订单；6–12月利用率和现金降债；12–18月Gen6产量与实际毛利。",
+      "kill_criteria": "补库后sell-through再次下降、库存回升；高分红导致净债回升；AI订单不能覆盖其他投资。",
+      "selection_priority": "C+：复苏真实但现价赔率一般",
+      "confidence": "中",
+      "alternative_win_condition": "胜BDC需FY28经济EPS>4且优先股/现金桥清楚；BDC整合顺利时权益上行更高。"
+    },
+    {
+      "ticker": "MOD",
+      "price_2026_10_12": 172.5,
+      "upside_thesis": "剥离汽车PT后热管理纯度提高，DC交付、产能释放和利润率扩张可推动收入利润双增长。",
+      "source_triangulation": "S2-28与冻结FY27Q1/剩余业务模型；公司行动直接核验，客户独立兑现证据不足。",
+      "disputes": "Oct12买不享THRM；旧集团TTM收入/PE失真；客户预付款并非自由现金。",
+      "valuation_bridge": "存续FY28收入2.87/3.9/4.7B，含经济SBC EBITDA率12.7/21/23%=.365/.819/1.081B；倍数9/15/18；净债.5/.25/.1B；56/56/57M股→50/215/340。无PT盈利，无0.44619THRM加项；较R2基准只因交付和正常化margin工作假设提高，尚非订单完全确认。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          50,
+          215,
+          340
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 196.75,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月分拆后正式指引；6–12月扩产合格交付；12–18月DC EBITDA率与不靠预付款现金。",
+      "kill_criteria": "增量毛利持续不及17%，温水/架构变化削弱每MW价值，现金增长只来自新预付。",
+      "selection_priority": "B：强右尾，价格较满",
+      "confidence": "中",
+      "alternative_win_condition": "胜CARR需DC可交付增长>35%且margin>=21%；否则CARR波动和估值较低。"
+    },
+    {
+      "ticker": "CRM",
+      "price_2026_10_12": 233.92,
+      "upside_thesis": "数据权限和工作流使代理商业化可回归既有平台；cRPO改善支持席位被AI全面替代叙事过度。",
+      "source_triangulation": "S2-29/30：公司指引与媒体价格反应；缺广泛独立客户AI净ROI。",
+      "disputes": "Agentforce ARR扩定义，收购不等于有机；投资收益非经营EPS；新增债息和SBC要扣。",
+      "valuation_bridge": "FY28收入48/51/55B，CFO-capex付息后现金12/15.5/19B，减SBC4.5/4.7/5=经济FCFE7.5/10.8/14B；股份.85/.84/.84B；股权现金倍数16/23/28→141/296/467。不额外减同一净债，因为FCFE已含利息；收购支付/融资改变股份和未来息费，需另更新。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          141,
+          296,
+          467
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 300,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月同口径有机cRPO和收购整合；6–12月Agentforce付费消耗；12–18月经济FCFE增长与降债。",
+      "kill_criteria": "ARR定义继续扩但有机增长<5%，代理替代席位收入超过消耗收费；借债回购掩盖现金恶化。",
+      "selection_priority": "B+：可复活，优先级低于ADBE",
+      "confidence": "中",
+      "alternative_win_condition": "若同口径AI收费拉动有机cRPO>10%且经济FCFE>11B，胜增长停滞ADBE；未兑现时ADBE更便宜。"
+    },
+    {
+      "ticker": "PGR",
+      "price_2026_10_12": 220.28,
+      "upside_thesis": "直接渠道、风控和快速再定价带来持续承保规模优势，正常化后依然有盈利。",
+      "source_triangulation": "S2-31；RNR/Howden为行业资本供给背景，不能直接作为车险费率证据。",
+      "disputes": "8月89.3CR已较83.1正常化；浮存金对应赔付，不是净现金；不能用极端低灾损TTM57等口径。",
+      "valuation_bridge": "2027–28 NPE90/98/106B，CR95/92/89%；承保利润4.5/7.84/11.66B，加正常净投资/其他税前2.7/3.0/3.3；税21%后5.69/8.56/11.82B；.586/.584/.582B股，PE14/18/21→136/264/426。投资浮存金不另加，灾损与往年储备正常化。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          136,
+          264,
+          426
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 272.5,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月每月CR/PIF；6–12月新业务事故年赔付；12–18月资本分红及定价。",
+      "kill_criteria": "事故年CR>96并持续，保单增长依赖亏损价格；储备连续恶化。",
+      "selection_priority": "B：组合缓冲席位候选",
+      "confidence": "中高",
+      "alternative_win_condition": "胜RNR：成长和再定价更高频；若PGR价格竞争激烈而RNR续保利润稳定且估值折让扩大，RNR胜。"
+    },
+    {
+      "ticker": "RNR",
+      "price_2026_10_12": 338.87,
+      "upside_thesis": "低倍数承保和投资组合可形成回购复利，资本管理费不完全依赖自有灾损风险。",
+      "source_triangulation": "S2-32/33：公司利润与经纪人区域续保价格软化相互反证。",
+      "disputes": "低PE不等于低风险；低灾损与准备金释放不能永久年化；第三方资本的全部投资资产非普通股财产。",
+      "valuation_bridge": "2027–28自留承保、投资和手续费正常化归母利润0.8/1.55/2.2B，41/40/39M股；EPS19.5/38.75/56.4；PE8/10/12→156/388/677。基准收入约10.5–11B、正常巨灾/责任成本后承保约.6B，加retained投资1.25B和费收净利约.25B，扣税/优先股约.55B。浮存金不加，回购以可分配资本为限。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          156,
+          388,
+          677
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.5,
+          0.2
+        ],
+        "expected_price_usd": 376.20000000000005,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月灾损披露与1/1续保；6–12月6/1续保；12–18月净资本/股及实际回购。",
+      "kill_criteria": "降价与限额扩张共同恶化预期回报，责任险储备追补；大灾后资本不足。",
+      "selection_priority": "C+：便宜但预期差弱于PGR",
+      "confidence": "中",
+      "alternative_win_condition": "若费率下降趋缓且正常化EPS>=42、P/B<1.2，胜PGR；当前PGR商业可见度优先。"
+    },
+    {
+      "ticker": "BABA",
+      "price_2026_10_12": 110.78,
+      "upside_thesis": "复活为观察候选：云45%外部增长和盈利改善真实；电商补贴减少与云资本效率修复可能形成双反转。",
+      "source_triangulation": "S2-34/35：公司人民币分部与AP现金投入反证；配售事实来自冻结正文，不当回购缩股。",
+      "disputes": "FY28模型负FCF不能只用低PE遮盖；财报人民币/ADS美元，8普通股/ADS，后续增发已发生；AI Labs亏损须留。",
+      "valuation_bridge": "FY28收入1.18/1.30/1.43T人民币，调整EBITA100/160/230B，减SBC14/16/18B及持续整合/摊销经济成本6/7/8B，税20%，加净权益收益5/10/15B→归属经济利润69/119.6/178.2B人民币；ADS2.55/2.60/2.65B，FX7RMB/USD假设；EPS3.87/6.57/9.61USD，PE15/21/26→58/138/250。资本开支高于折旧令FCF弱，不把盈利等同可分配现金；模型需融资敏感性。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          58,
+          138,
+          250
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.45,
+          0.25
+        ],
+        "expected_price_usd": 142,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月同口径云增长和补贴；6–12月集群利用率/CPU交付；12–18月FCF亏损收窄。",
+      "kill_criteria": "云增长来自低价内需/内部重分组，Labs和零售亏损未减且再次大幅稀释。",
+      "selection_priority": "B：复活候补，暂非核心20优先",
+      "confidence": "中低",
+      "alternative_win_condition": "若云增长>=35%、资本开支/收入见顶且经济利润>=120B，胜MCHP/弱尾部候选；否则ADBE/ARGX更可比。"
+    },
+    {
+      "ticker": "DE",
+      "price_2026_10_12": 632.61,
+      "upside_thesis": "订单指向周期底部，精准农业与售后使盈利质量优于普通农机。",
+      "source_triangulation": "S2-36/23/24，并与AGCO产品路线比较。",
+      "disputes": "优质经营已反映在高倍数；关税退款不是持续运营改善。",
+      "valuation_bridge": "FY28收入46/54/60B、归母净率9/12/14%→净利4.14/6.48/8.4B；.27B股，PE22/26/30→337/624/933；设备与金融债务不同，不将金融债务机械全部减经营EV。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          337,
+          624,
+          933
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 629.5,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–12月早期订单、库存；12–18月精准农业实收/作业。",
+      "kill_criteria": "订单恢复但利润主要靠退款/会计；农户预算再恶化。",
+      "selection_priority": "C：AGCO替代比较，暂淘汰",
+      "confidence": "中",
+      "alternative_win_condition": "胜AGCO需其EPS增速/订阅收费足以补约两倍估值溢价，或价格回落至正常化EPS约20倍。"
+    },
+    {
+      "ticker": "WM",
+      "price_2026_10_12": 211.14,
+      "upside_thesis": "医疗整合和项目资本开支高峰回落产生现金加速，固废存量收费提供防御。",
+      "source_triangulation": "S2-37与WCN S2-38同业比较。",
+      "disputes": "剔除野火高基数后的增速更好但不能永久加回失去的收入；RNG内部权益不双计。",
+      "valuation_bridge": "2028收入27/29/31B，经济净率10/13/14%→2.7/3.77/4.34B；.40/.398/.395B股，PE22/27/30→149/256/330。SBC留费用，净息含净率，现金不再加。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          149,
+          256,
+          330
+        ],
+        "subjective_probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "expected_price_usd": 247.75,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "6–12月医疗协同与RNG实际利润；12–18月资本开支回落。",
+      "kill_criteria": "医疗续约失败，项目现金未兑现且资本开支不降。",
+      "selection_priority": "B-：低风险分散备选",
+      "confidence": "中",
+      "alternative_win_condition": "若风险预算紧胜KYTX；高收益目标下ARGX/PNR优先，除非WM经济FCF超当前桥20%。"
+    },
+    {
+      "ticker": "WCN",
+      "price_2026_10_12": 153.71,
+      "upside_thesis": "提价和小型市场网络质量，环境支出消退可能恢复FCF估值。",
+      "source_triangulation": "S2-38、S2-37与冻结环境负债记录。",
+      "disputes": "调整FCF1.40–1.45B不等于全额普通股可用；Chiquita监管支出和Seneca许可不能当结束。",
+      "valuation_bridge": "2028收入10/10.8/11.7B，经济归母净率10/14/16%→1/1.512/1.872B；.252/.253/.254B股，PE23/28/32→91/167/236；不把环境现金责任全部加回。",
+      "recommended_bear_base_bull": {
+        "observation_date": "2028-04-12",
+        "price_usd": [
+          91,
+          167,
+          236
+        ],
+        "subjective_probabilities": [
+          0.3,
+          0.5,
+          0.2
+        ],
+        "expected_price_usd": 158,
+        "not_calibrated": true,
+        "tail_note": "三点非连续分布；严重监管/信用/临床灾难可能低于悲观价。"
+      },
+      "catalysts": "3–6月环保要求执行；6–12月治理现金；12–18月新增许可和FCF。",
+      "kill_criteria": "治理支出持续、许可再次延迟，盈利增长但现金不增长。",
+      "selection_priority": "C：WM更优",
+      "confidence": "中低",
+      "alternative_win_condition": "环境现金支出可证实下降并且FCF>=1.7B时可胜WM；目前WM现金改进更清晰。"
+    }
+  ],
+  "recommended_additions": [
+    "ADBE",
+    "PNR",
+    "ARGX",
+    "BNTX",
+    "AGCO",
+    "CRM",
+    "BABA:复活候补",
+    "ALNY:保留高右尾"
+  ],
+  "removals": [
+    "DE:AGCO更高赔率",
+    "WCN:WM更可见",
+    "MCHP:现价基准回报低",
+    "RNR:软续保限制;可条件回归"
+  ],
+  "open_questions": [
+    "KYTX独立审评及付款方证据仍不足",
+    "BNTX每分支概率需主席临床审议，不能称校准rNPV",
+    "BABA FX及ADS比例沿冻结已核资料，未来稀释与投资资本回收仍不清",
+    "BDC/RUCKUS客户续约、MOD剩余公司客户交付、CARR DC确认周期",
+    "ADBE总体付费流失队列与真正独立AI增量收入未披露"
+  ],
+  "common_model_notes": [
+    "全部经营预测、倍数和概率为S2主观研究假设，不是官方指引",
+    "共同18月观察日；2028利润为估值时下一完整财年可见性代理。PNR使用2027持续年化，KYTX用临床rNPV，不把远期收入当18月实收",
+    "不直接把本组期望收益排名变成整个245池20席结论",
+    "所有持有期总收益尚未含股息，保险/PNR等股息可能增加但未保证"
+  ],
+  "source_log": "07_logs/S2_sources.json"
+}

@@ -1,0 +1,747 @@
+{
+  "role": "B2_valuation_rebuttal",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "price_date": "2026-10-12",
+  "proposed_common_observation_date": "2028-04-12",
+  "date_control": "章程原统一12个月；控制器提出最终18个月。S1仍为2027-10-12，所有价格必须重新建模而非改标签；2030目标禁直接平移。",
+  "covered_tickers": [
+    "NVDA",
+    "MU",
+    "ADBE",
+    "PNR",
+    "AVGO",
+    "CLS",
+    "IREN",
+    "PSIX",
+    "SNDK",
+    "ALNY",
+    "ARGX",
+    "BNTX",
+    "KYTX",
+    "BABA",
+    "MOD",
+    "VST",
+    "BDC",
+    "MCHP",
+    "AGCO",
+    "PGR",
+    "CRM",
+    "POET",
+    "FLNC",
+    "SMCI",
+    "IONS",
+    "CARR",
+    "CRDO",
+    "TSM",
+    "RNR",
+    "VRT",
+    "ON"
+  ],
+  "disputes": [
+    {
+      "id": "B2-01",
+      "ticker": "NVDA",
+      "claim": "R5收入600–680B却采用18EPS基准",
+      "why_it_changes_selection": "NVDA与AVGO争夺席位；600–680B、73%GM不足支持18EPS，投资收益也不能经常化",
+      "bull_case_fairly_stated": "Rubin与推理扩张可使收入越过680B；非GAAP已含SBC",
+      "challenge": "600–680B、73%GM不足支持18EPS，投资收益也不能经常化",
+      "verification_method": "按季度建rev×GM−含SBC费用−净利息，税16–18%，约24B股；18EPS反解收入",
+      "sources": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+      ],
+      "source_ids": [
+        "NVDA_Q2"
+      ],
+      "alternative_ticker": "AVGO",
+      "provisional_verdict": "保留高位，修正基准EPS而非否决公司",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-02",
+      "ticker": "MU",
+      "claim": "低倍数加结构性存储短缺",
+      "why_it_changes_selection": "MU与SNDK争夺席位；已修正219.3B EBIT/185.3085B净利，剩余争议是88%GM持续性与现金归属；不得复用90%OPM",
+      "bull_case_fairly_stated": "SCA和HBM可令高毛利维持超过传统周期",
+      "challenge": "已修正219.3B EBIT/185.3085B净利，剩余争议是88%GM持续性与现金归属；不得复用90%OPM",
+      "verification_method": "FY27Q1 GM86.25%为起点，分价格/bit/成本桥至2028；融资性客户存款单列、SBC保留",
+      "sources": [
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/"
+      ],
+      "source_ids": [
+        "MU_Q4"
+      ],
+      "alternative_ticker": "SNDK",
+      "provisional_verdict": "保留前列；不能因周期一律压回谷底",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-03",
+      "ticker": "ADBE",
+      "claim": "低调整PE意味着巨大预期差",
+      "why_it_changes_selection": "ADBE与CRM争夺席位；调整45%OP含8.3ppt薪酬加回；免费剔SBC高估经济利润；回购是否仅抵稀释",
+      "bull_case_fairly_stated": "存量订阅与AI增售、回购可同时驱动每股复苏",
+      "challenge": "调整45%OP含8.3ppt薪酬加回；免费剔SBC高估经济利润；回购是否仅抵稀释",
+      "verification_method": "GAAP35%→加合理非经常项→经济OP；与CRM同口径FCF减SBC比较，AI净增ARR单列",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+      ],
+      "source_ids": [
+        "S2-01"
+      ],
+      "alternative_ticker": "CRM",
+      "provisional_verdict": "保留，经济EPS倍数重排",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-04",
+      "ticker": "PNR",
+      "claim": "Taco提升水处理增长",
+      "why_it_changes_selection": "PNR与CARR争夺席位；1.4B已交割，不能只加540M收入及含协同20%EBITDA而不计债务利息",
+      "bull_case_fairly_stated": "交叉销售和泵阀组合可提升渠道价值",
+      "challenge": "1.4B已交割，不能只加540M收入及含协同20%EBITDA而不计债务利息",
+      "verification_method": "交易前后净债桥、利率与协同爬坡分开；54–84M假设年息做敏感性",
+      "sources": [
+        "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+        "https://investors.pentair.com/news-releases/news-release-details/pentair-acquire-taco-group-holdings-accelerating-growth-and"
+      ],
+      "source_ids": [
+        "S2-04",
+        "S2-05"
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "保留，融资后EPS过关才领先CARR",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-05",
+      "ticker": "AVGO",
+      "claim": "高调整OPM及ASIC放量",
+      "why_it_changes_selection": "AVGO与NVDA争夺席位；Q3调整OP20.095B剔除2.019B SBC后经济OP18.076B；FD股数不替代持续薪酬成本",
+      "bull_case_fairly_stated": "定制ASIC与软件共同支持现金利润扩张",
+      "challenge": "Q3调整OP20.095B剔除2.019B SBC后经济OP18.076B；FD股数不替代持续薪酬成本",
+      "verification_method": "GAAP15.955B→无形摊销及合理一次性调整→18.076B；2028 SBC用收入占比/授予计划预测",
+      "sources": [
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+      ],
+      "source_ids": [
+        "AVGO_Q3"
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "保留，经济估值可能逊NVDA",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-06",
+      "ticker": "CLS",
+      "claim": "AI交换机业务强增长及经营杠杆",
+      "why_it_changes_selection": "CLS与SMCI争夺席位；GAAP Q2 OP458.3M含TRS收益，现金流反向调整104.1M；调整利润又剔SBC，两端都不能照搬",
+      "bull_case_fairly_stated": "产品组合升级可提高毛利与周转",
+      "challenge": "GAAP Q2 OP458.3M含TRS收益，现金流反向调整104.1M；调整利润又剔SBC，两端都不能照搬",
+      "verification_method": "剔TRS非经营重估，保留SBC；拆现金结算与股权结算薪酬，核营运资本和新股",
+      "sources": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results"
+      ],
+      "source_ids": [
+        "CLS_Q2"
+      ],
+      "alternative_ticker": "SMCI",
+      "provisional_verdict": "保留；不能用被TRS抬高GAAP证明低估",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-07",
+      "ticker": "IREN",
+      "claim": "合同ARR与预付降低扩张资金压力",
+      "why_it_changes_selection": "IREN与NVDA争夺席位；ARR非收入，45–55%预付和90%特定融资不能叠加为全部135%；现金附履约义务",
+      "bull_case_fairly_stated": "按时验收和较高利用率可实现极强经营杠杆",
+      "challenge": "ARR非收入，45–55%预付和90%特定融资不能叠加为全部135%；现金附履约义务",
+      "verification_method": "逐项目capex/预付款/贷款/权益融资桥；扣GPU经济更新、利息、稀释后与NVDA比较",
+      "sources": [
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results"
+      ],
+      "source_ids": [
+        "IREN_FY26"
+      ],
+      "alternative_ticker": "NVDA",
+      "provisional_verdict": "小额条件保留，净现金底不成立",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-08",
+      "ticker": "PSIX",
+      "claim": "发电瓶颈使低市值利润弹性大",
+      "why_it_changes_selection": "PSIX与CARR争夺席位；同比销售−21%、毛利27.1%，2025税收益1.27EPS不重现；SAR重估也影响费用",
+      "bull_case_fairly_stated": "Q2较Q1销售+18.6%、毛利+420bp，H2生产计划向上",
+      "challenge": "同比销售−21%、毛利27.1%，2025税收益1.27EPS不重现；SAR重估也影响费用",
+      "verification_method": "去税收益及SAR非持续收益，订单转收入再扣工厂爬坡成本；不用40%GM",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm"
+      ],
+      "source_ids": [
+        "PSIX_Q2"
+      ],
+      "alternative_ticker": "CARR",
+      "provisional_verdict": "保留高弹性；要真实订单门槛",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-09",
+      "ticker": "SNDK",
+      "claim": "NAND超景气与大回购",
+      "why_it_changes_selection": "SNDK与MU争夺席位；Q4增长约2/3来自价格，不能全归结构性bit增长；GAAP43.97高于调整39.25需剔非持续项",
+      "bull_case_fairly_stated": "企业SSD和新商务协议延长现金兑现",
+      "challenge": "Q4增长约2/3来自价格，不能全归结构性bit增长；GAAP43.97高于调整39.25需剔非持续项",
+      "verification_method": "对价格/bit/成本三维敏感性；Q1 EPS44–46与高点PE折价分别列，回购须资金约束",
+      "sources": [
+        "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results"
+      ],
+      "source_ids": [
+        "SNDK_Q4"
+      ],
+      "alternative_ticker": "MU",
+      "provisional_verdict": "候补偏保留，MU优先但可逆",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-10",
+      "ticker": "ALNY",
+      "claim": "AMVUTTRA扩张将利润杠杆兑现",
+      "why_it_changes_selection": "ALNY与ARGX争夺席位；账面未来版税/开发融资负债约1.720B与1.011B可转债；不能既全扣负债又重复扣全部同现金流，或完全忽略",
+      "bull_case_fairly_stated": "沉默剂竞争减弱及心肌病新患者持续增长",
+      "challenge": "账面未来版税/开发融资负债约1.720B与1.011B可转债；不能既全扣负债又重复扣全部同现金流，或完全忽略",
+      "verification_method": "产品净价×患者数→COGS/商业/R&D/SBC→版税融资实际支付、现金税、FD；对手ARGX用同口径",
+      "sources": [
+        "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4"
+      ],
+      "source_ids": [
+        "S2-07"
+      ],
+      "alternative_ticker": "ARGX",
+      "provisional_verdict": "保留；12.42EPS不能直接作证据",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-11",
+      "ticker": "ARGX",
+      "claim": "商业化现金与适应症扩张兼具",
+      "why_it_changes_selection": "ARGX与ALNY争夺席位；H1基本EPS13.47不等于摊薄未来EPS；税益、地区权益、特许权成本决定31EPS质量",
+      "bull_case_fairly_stated": "H1已真实盈利并有0.7B经营现金，扩适应症不是全靠融资",
+      "challenge": "H1基本EPS13.47不等于摊薄未来EPS；税益、地区权益、特许权成本决定31EPS质量",
+      "verification_method": "USD报表，ADS比例由20F核；税前产品利润→正常税→FD，新增适应症仅按时点贡献",
+      "sources": [
+        "https://argenx.com/news/2026/press-release-3331862.html"
+      ],
+      "source_ids": [
+        "S2-12"
+      ],
+      "alternative_ticker": "ALNY",
+      "provisional_verdict": "保留；盈利质量暂优临床期权",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-12",
+      "ticker": "BNTX",
+      "claim": "现金缓冲与肿瘤读出右尾",
+      "why_it_changes_selection": "BNTX与KYTX争夺席位；16.6342B欧元证券不是美元；剩余烧钱、合作权益和或有里程碑不得三重叠加",
+      "bull_case_fairly_stated": "多条管线成功及合作分担研发减少单点风险",
+      "challenge": "16.6342B欧元证券不是美元；剩余烧钱、合作权益和或有里程碑不得三重叠加",
+      "verification_method": "ADS1:1已核，251.204M流通股；欧元净现金滚到2028后换汇，管线分地区/权益/概率计rNPV",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+        "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm"
+      ],
+      "source_ids": [
+        "S2-17",
+        "S2-20"
+      ],
+      "alternative_ticker": "KYTX",
+      "provisional_verdict": "保留但现金不是无损底",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-13",
+      "ticker": "KYTX",
+      "claim": "小市值一次治疗临床期权",
+      "why_it_changes_selection": "KYTX与BNTX争夺席位；2028跑道包含未提款；rNPV0.9B必须展示成功概率与销售峰值，不能纯指派EV",
+      "bull_case_fairly_stated": "若SPS注册批准及制造支付顺利，小体量可有多倍收益",
+      "challenge": "2028跑道包含未提款；rNPV0.9B必须展示成功概率与销售峰值，不能纯指派EV",
+      "verification_method": "现金199.427M−烧钱−债务+融资；分审批/制造/支付概率，融资价格4–8美元影响新股",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm"
+      ],
+      "source_ids": [
+        "S2-15"
+      ],
+      "alternative_ticker": "BNTX",
+      "provisional_verdict": "仅小额期权；不作缓冲核心",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-14",
+      "ticker": "BABA",
+      "claim": "云与电商现金双驱动重估",
+      "why_it_changes_selection": "BABA与CRM争夺席位；RMB利润/USD ADS错配及配售会造假低PE；云资本开支与快商补贴不能同时零化",
+      "bull_case_fairly_stated": "外部云收入与利润加速可抵消零售补贴",
+      "challenge": "RMB利润/USD ADS错配及配售会造假低PE；云资本开支与快商补贴不能同时零化",
+      "verification_method": "8普通股/ADS逐条原文件核，19.8925B普通股转2.4866B ADS，净利归属/汇率/资本开支敏感性",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm"
+      ],
+      "source_ids": [
+        "S2-34"
+      ],
+      "alternative_ticker": "CRM",
+      "provisional_verdict": "保留条件席位，证券桥须通过",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-15",
+      "ticker": "MOD",
+      "claim": "分拆后纯冷却业务重估",
+      "why_it_changes_selection": "MOD与PNR争夺席位；Oct1分拆后买家没有旧股0.44619THRM分配；旧合并EPS不能估新MOD",
+      "bull_case_fairly_stated": "数据中心增长更集中可享更高经营质量倍数",
+      "challenge": "Oct1分拆后买家没有旧股0.44619THRM分配；旧合并EPS不能估新MOD",
+      "verification_method": "交割公告/备考持续业务EPS、对价及净债、FD股数桥；旧回报含THRM只用于原股东",
+      "sources": [
+        "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx"
+      ],
+      "source_ids": [
+        "S2-28"
+      ],
+      "alternative_ticker": "PNR",
+      "provisional_verdict": "待持续业务模型，不能用错误高目标抢席",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-16",
+      "ticker": "VST",
+      "claim": "稀缺电力资产和并购提升现金收益",
+      "why_it_changes_selection": "VST与PNR争夺席位；并购EBITDA若加全额而净债留交易前，EV/EBITDA会虚低；套保/核燃料成本不可漏",
+      "bull_case_fairly_stated": "数据中心长期合同可锁价并提高利用率",
+      "challenge": "并购EBITDA若加全额而净债留交易前，EV/EBITDA会虚低；套保/核燃料成本不可漏",
+      "verification_method": "交易交割前后债务、现金、少数权益/回购；EBITDA到维护capex、税、利息的股权FCF",
+      "sources": [
+        "02_round1/R5_diversification.json",
+        "03_round2/S1_ai_upside.json",
+        "03_round2/round1_union.json"
+      ],
+      "source_ids": [
+        "LOCAL"
+      ],
+      "alternative_ticker": "PNR",
+      "provisional_verdict": "条件保留；与PNR比较融资后收益",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-17",
+      "ticker": "BDC",
+      "claim": "订单改善与解决方案转型",
+      "why_it_changes_selection": "BDC与MCHP争夺席位；订单836M不能按全部当年收入；调整EPS受收购摊销及SBC口径影响",
+      "bull_case_fairly_stated": "工业网络/数据基础设施需求推动毛利质量提升",
+      "challenge": "订单836M不能按全部当年收入；调整EPS受收购摊销及SBC口径影响",
+      "verification_method": "订单取消/交付、毛利、营运资本、收购债务后每股经济FCF；MCHP用同口径",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm"
+      ],
+      "source_ids": [
+        "S2-25"
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "保留，需订单转现金",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-18",
+      "ticker": "MCHP",
+      "claim": "库存去化后利润修复",
+      "why_it_changes_selection": "MCHP与BDC争夺席位；低谷后调整EPS大升可能主要吸收改善，净债及支付利息/股息限制回购",
+      "bull_case_fairly_stated": "固定成本吸收带来大于收入的盈利弹性",
+      "challenge": "低谷后调整EPS大升可能主要吸收改善，净债及支付利息/股息限制回购",
+      "verification_method": "渠道sell-through、库存天数、产能利用、GAAP到经济EPS；扣债务利息不省略",
+      "sources": [
+        "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027"
+      ],
+      "source_ids": [
+        "S2-27"
+      ],
+      "alternative_ticker": "BDC",
+      "provisional_verdict": "保留，比较真实去库存速度",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-19",
+      "ticker": "AGCO",
+      "claim": "农业低谷与精准技术期权",
+      "why_it_changes_selection": "AGCO与DE争夺席位；Q2名义收入−1%但剔FX−3.7%；22M关税退款不可年化，技术展示非销售",
+      "bull_case_fairly_stated": "渠道正常化、成本控制带来EPS复苏",
+      "challenge": "Q2名义收入−1%但剔FX−3.7%；22M关税退款不可年化，技术展示非销售",
+      "verification_method": "区域量价/FX、退款、融资利息及经销商库存独立；以正常化利润比较DE",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm"
+      ],
+      "source_ids": [
+        "S2-21"
+      ],
+      "alternative_ticker": "DE",
+      "provisional_verdict": "条件保留，需库存周期证据",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-20",
+      "ticker": "PGR",
+      "claim": "承保优势与规模复利",
+      "why_it_changes_selection": "PGR与RNR争夺席位；低灾害CR及投资收益不可永续；投资资产绝非股东净现金",
+      "bull_case_fairly_stated": "保单份额扩张、家庭捆绑可抵消费率软化",
+      "challenge": "低灾害CR及投资收益不可永续；投资资产绝非股东净现金",
+      "verification_method": "已赚保费×正常化承保率+经常投资收益−税，扣优先/少数；与RNR统一灾损概率",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm"
+      ],
+      "source_ids": [
+        "S2-31"
+      ],
+      "alternative_ticker": "RNR",
+      "provisional_verdict": "保留分散席位，排名取决正常化EPS",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-21",
+      "ticker": "CRM",
+      "claim": "低估现金流与Agentforce变现",
+      "why_it_changes_selection": "CRM与ADBE争夺席位；含收购ARR不等于有机AI收入；FCF加回SBC不能与ADBE经济利润直接比较",
+      "bull_case_fairly_stated": "既有客户分发与数据平台提供增售入口",
+      "challenge": "含收购ARR不等于有机AI收入；FCF加回SBC不能与ADBE经济利润直接比较",
+      "verification_method": "拆有机ARR/收购/转签，FCF减持续SBC及并购投入，收入增长与回购贡献分开",
+      "sources": [
+        "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/"
+      ],
+      "source_ids": [
+        "S2-29"
+      ],
+      "alternative_ticker": "ADBE",
+      "provisional_verdict": "强候补可复活，ADBE并非天然更好",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-22",
+      "ticker": "POET",
+      "claim": "光引擎认证成功后的非线性增长",
+      "why_it_changes_selection": "POET与CRDO争夺席位；basic173.058M/全潜在261.415M已含78.734968M权证，不再加客户22.921408M；不得全用26.25行权价",
+      "bull_case_fairly_stated": "融资带来跑道，多客户量产可支撑明显高于现金的EV",
+      "challenge": "basic173.058M/全潜在261.415M已含78.734968M权证，不再加客户22.921408M；不得全用26.25行权价",
+      "verification_method": "逐批行权价/归属/采购条件表；模型选全转换股数+对应现金或库藏股法，不能混搭",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024093/ex4-1.htm"
+      ],
+      "source_ids": [
+        "POET_FS",
+        "POET_WARRANT"
+      ],
+      "alternative_ticker": "CRDO",
+      "provisional_verdict": "候补小额右尾，股数核验后才排序",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-23",
+      "ticker": "FLNC",
+      "claim": "储能订单与低价反转",
+      "why_it_changes_selection": "FLNC与BDC争夺席位；9/16已将收入降2.4B、EBITDA−200M；旧−10M模型作废，现金中性是目标",
+      "bull_case_fairly_stated": "制造改善与库存释放可带来经营现金迅速改善",
+      "challenge": "9/16已将收入降2.4B、EBITDA−200M；旧−10M模型作废，现金中性是目标",
+      "verification_method": "逐季度GM/违约赔款/担保现金/预付款，穿透Up-C及税收应收协议；融资后FD",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm"
+      ],
+      "source_ids": [
+        "FLNC_RESET"
+      ],
+      "alternative_ticker": "BDC",
+      "provisional_verdict": "暂候补，恢复证据可复活",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-24",
+      "ticker": "SMCI",
+      "claim": "低价服务器和液冷放量",
+      "why_it_changes_selection": "SMCI与CLS争夺席位；单季EPS1.70和GM17.6%未由本角色原10K复核；收入增长可被应收/存货吃掉",
+      "bull_case_fairly_stated": "若17.6%GM及现金回收持续，估值可迅速超CLS",
+      "challenge": "单季EPS1.70和GM17.6%未由本角色原10K复核；收入增长可被应收/存货吃掉",
+      "verification_method": "V1核原10K；V2剔一次性毛利、供应商返点/融资，FCF对净利、稀释和客户集中",
+      "sources": [
+        "02_round1/R5_diversification.json",
+        "03_round2/S1_ai_upside.json",
+        "03_round2/round1_union.json"
+      ],
+      "source_ids": [
+        "LOCAL"
+      ],
+      "alternative_ticker": "CLS",
+      "provisional_verdict": "强复活，证据不足是待核不是否决",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-25",
+      "ticker": "IONS",
+      "claim": "自主商业化抵消失败管线",
+      "why_it_changes_selection": "IONS与ALNY争夺席位；版税融资和2028债务不能被销售倍数模型隐藏；失败CM试验需从资产价值剔除",
+      "bull_case_fairly_stated": "多产品启动成功可显著提升可控利润",
+      "challenge": "版税融资和2028债务不能被销售倍数模型隐藏；失败CM试验需从资产价值剔除",
+      "verification_method": "按产品权益收入减商业/R&D/版税分出，债务575M及到期安排；付费患者而非启动数",
+      "sources": [
+        "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults"
+      ],
+      "source_ids": [
+        "S2-10"
+      ],
+      "alternative_ticker": "ALNY",
+      "provisional_verdict": "候补复活，赔率可能优于ALNY但缓冲弱",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-26",
+      "ticker": "CARR",
+      "claim": "制冷和热管理渠道转型",
+      "why_it_changes_selection": "CARR与PNR争夺席位；并购整合及有机/汇率增长需拆；不能直接给全部业务数据中心倍数",
+      "bull_case_fairly_stated": "数据中心与商业HVAC可抵消住宅周期",
+      "challenge": "并购整合及有机/汇率增长需拆；不能直接给全部业务数据中心倍数",
+      "verification_method": "分部利润与净债/利息、商誉摊销桥；同期限PNR融资后EPS比较",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm"
+      ],
+      "source_ids": [
+        "S2-26"
+      ],
+      "alternative_ticker": "PNR",
+      "provisional_verdict": "强候补，PNR融资后若不占优应回归",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-27",
+      "ticker": "CRDO",
+      "claim": "AEC渗透及高增毛利",
+      "why_it_changes_selection": "CRDO与POET争夺席位；调整OP48.2%不含87.979M SBC，经济OP约29.8%；当季收购授予可能不全经常",
+      "bull_case_fairly_stated": "客户扩张和组合改善仍可保持高增长",
+      "challenge": "调整OP48.2%不含87.979M SBC，经济OP约29.8%；当季收购授予可能不全经常",
+      "verification_method": "授予归属明细拆一次性与持续，保持两种SBC敏感性，不把87.979M直接永久四倍",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm"
+      ],
+      "source_ids": [
+        "CRDO_Q1"
+      ],
+      "alternative_ticker": "POET",
+      "provisional_verdict": "候补；经济利润核后与POET比较",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-28",
+      "ticker": "TSM",
+      "claim": "先进工艺稀缺性",
+      "why_it_changes_selection": "TSM与AVGO争夺席位；USD ADR对应5普通股；TWD净利不能除ADR股数后不换汇，非经营收益不可年化",
+      "bull_case_fairly_stated": "高利用率及定价可覆盖海外厂成本",
+      "challenge": "USD ADR对应5普通股；TWD净利不能除ADR股数后不换汇，非经营收益不可年化",
+      "verification_method": "净利TWD÷普通股×5÷USD/TWD；经营利润/税/海外补贴敏感性",
+      "sources": [
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-04/5b6b7f218129782a5bf0366e7fd06aadc5c1515a/FS.pdf"
+      ],
+      "source_ids": [
+        "TSM_Q2",
+        "TSM_ADR"
+      ],
+      "alternative_ticker": "AVGO",
+      "provisional_verdict": "复活候选；可替代最高估值AI供应链",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-29",
+      "ticker": "RNR",
+      "claim": "低倍数和回购",
+      "why_it_changes_selection": "RNR与PGR争夺席位；合并利润含外部资本，低灾害/投资涨价不等于普通股经常EPS",
+      "bull_case_fairly_stated": "费率韧性与第三方收费能支持高ROE",
+      "challenge": "合并利润含外部资本，低灾害/投资涨价不等于普通股经常EPS",
+      "verification_method": "净利→非控股/优先/已实现与未实现→正常化灾损；同PGR风险资本比较",
+      "sources": [
+        "https://investor.renre.com/news-events/press-releases/detail/393/renaissancere-reports-654-2-million-of-net-income-available-to-common-shareholders-and-547-8-million-of-operating-income-available-to-common-shareholders-in-q2-2026"
+      ],
+      "source_ids": [
+        "S2-32"
+      ],
+      "alternative_ticker": "PGR",
+      "provisional_verdict": "候补；不可机械取最低PE",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-30",
+      "ticker": "VRT",
+      "claim": "液冷和电力系统积压订单",
+      "why_it_changes_selection": "VRT与MOD争夺席位；高估值已反映部分增长，backlog不等FCF；重组加回不可常年零成本",
+      "bull_case_fairly_stated": "规模服务与交付可推动超预期利润",
+      "challenge": "高估值已反映部分增长，backlog不等FCF；重组加回不可常年零成本",
+      "verification_method": "积压订单转化GM/营运资本、SBC和持续重组成本；MOD持续业务同倍数比较",
+      "sources": [
+        "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+      ],
+      "source_ids": [
+        "VRT_Q2"
+      ],
+      "alternative_ticker": "MOD",
+      "provisional_verdict": "复活候选，MOD权益不清可优先",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    },
+    {
+      "id": "B2-31",
+      "ticker": "ON",
+      "claim": "工业汽车复苏加并购",
+      "why_it_changes_selection": "ON与MCHP争夺席位；旧ON 4.7EPS不能用于交换股及融资后的新权益；稀释是否抵消协同",
+      "bull_case_fairly_stated": "终端恢复与组合升级带来利润弹性",
+      "challenge": "旧ON 4.7EPS不能用于交换股及融资后的新权益；稀释是否抵消协同",
+      "verification_method": "原公告交换比例、FD、债务利息/整合费用，分期协同；同MCHP利润恢复比较",
+      "sources": [
+        "02_round1/R5_diversification.json",
+        "03_round2/S1_ai_upside.json",
+        "03_round2/round1_union.json"
+      ],
+      "source_ids": [
+        "LOCAL"
+      ],
+      "alternative_ticker": "MCHP",
+      "provisional_verdict": "复活候选，先核证券桥",
+      "unresolved": "2028-04-12观察点的完整证券/经济利润桥与替代同口径模型仍交V1/V2；本反驳不宣称已完成全部模型"
+    }
+  ],
+  "independent_demonstration_recalculations": [
+    {
+      "id": "NVDA-EPS",
+      "formula": "(revenue*0.73-opex)*(1-0.17)/24",
+      "unit": "USD B / B shares",
+      "inputs": {
+        "revenue": [
+          600,
+          680
+        ],
+        "opex": [
+          40,
+          50
+        ],
+        "tax": 0.17,
+        "shares": 24
+      },
+      "result_range": [
+        13.418333333333331,
+        15.783833333333332
+      ],
+      "eps18_required_revenue": 774.6327776860868,
+      "interpretation": "经济利润示范；opex40–50、税17%、24B股为可辩护测试假设不是指导；不扣重复SBC，不计公允价值收益"
+    },
+    {
+      "id": "AVGO-OP",
+      "formula": "20.095-2.019",
+      "economic_op_B": 18.076,
+      "economic_margin": 0.6108614105640229,
+      "gaap_op_B": 15.955,
+      "interpretation": "允许无形摊销/一次性重组加回但保留SBC；不是纯GAAP估值"
+    },
+    {
+      "id": "CRDO-OP",
+      "formula": "230.641-87.979",
+      "economic_op_M": 142.66199999999998,
+      "economic_margin": 0.29783298538622127,
+      "interpretation": "收购相关加速SBC需拆，不能机械永久年化本季度高点"
+    },
+    {
+      "id": "ADBE-OP",
+      "formula": "45%-8.3%",
+      "economic_op_margin": 0.367,
+      "interpretation": "非经常成本允许加回，持续薪酬保留；税口径仍需另桥"
+    },
+    {
+      "id": "BNTX-CASH",
+      "formula": "16634.2/251.204366",
+      "cash_EUR_per_share": 66.21779814129505,
+      "interpretation": "ADS1:1；未扣未来烧钱/负债，不是美元下限；FX须情景化"
+    },
+    {
+      "id": "PNR-INTEREST",
+      "formula": "1.4B*rate*(1-24%)/160M",
+      "rates": [
+        0.04,
+        0.05,
+        0.06
+      ],
+      "eps_drag": [
+        0.266,
+        0.3325,
+        0.399
+      ],
+      "interpretation": "全债务融资与160M股为压力示范非已核融资事实；若现金支付须计现金机会成本；另计协同，不能双扣"
+    },
+    {
+      "id": "KYTX-DILUTION",
+      "formula": "150M / issue_price",
+      "issue_prices": [
+        4,
+        6,
+        8
+      ],
+      "new_shares_M": [
+        37.5,
+        25.0,
+        18.75
+      ],
+      "interpretation": "仅演示150M融资不固定25M股；融资净现金加入但同时扣烧钱/债务；不能凭空得到rNPV"
+    },
+    {
+      "id": "POET-COUNTS",
+      "formula": "261.415-173.058",
+      "incremental_potential_M": 88.35700000000003,
+      "warrants_M": 78.734968,
+      "other_potential_M": 9.622032000000033,
+      "interpretation": "父控制器已纠正股数作为待原文件逐批核验输入；22.921408M客户权证不能再加；现金依各行权价和实现条件"
+    }
+  ],
+  "provisional_top20": [
+    "NVDA",
+    "MU",
+    "ADBE",
+    "AVGO",
+    "PNR",
+    "ALNY",
+    "ARGX",
+    "BNTX",
+    "IREN",
+    "PSIX",
+    "CLS",
+    "BABA",
+    "BDC",
+    "MCHP",
+    "PGR",
+    "AGCO",
+    "KYTX",
+    "SNDK",
+    "CRM",
+    "VST"
+  ],
+  "top20_status": "讨论席位，非已证实排序或立即买入清单；未经V1/V2及主席不得终选",
+  "resurrection_candidates": [
+    "SMCI",
+    "CARR",
+    "MOD",
+    "IONS",
+    "CRDO",
+    "POET",
+    "FLNC",
+    "TSM",
+    "RNR",
+    "VRT",
+    "ON"
+  ],
+  "method": "纠正事实/算术确定错误；对预测保留多路径，不能以最悲观假设叠加成基准；经济利润保留持续SBC同时允许合理非现金摊销调整。",
+  "late_round_evidence": {
+    "source": "03_round2/Controller_10月12日产业新证据.md",
+    "read_status": "B2读取控制器短证据记录，非再次独立外部核验",
+    "implication": "Maia2027多GW及N2P/8HBM4增加NVDA份额与定价敏感性；TSM/HBM跨架构受益但不能锁定MU份额。NVDA OCP平台与网络扩张保留上行情景；USFP光架构并存不等于POET订单。",
+    "model_action": "NVDA收入情景拆AI总支出增长/供应商份额/系统网络附加价值；不因Maia公告直接假定GPU收入下降。"
+  }
+}

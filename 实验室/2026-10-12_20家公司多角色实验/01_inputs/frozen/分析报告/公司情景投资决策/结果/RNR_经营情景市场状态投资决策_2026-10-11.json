@@ -1,0 +1,57 @@
+{
+  "ticker": "RNR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:22:59-07:00",
+  "reference_price": {
+    "value": 331.38,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        175.6,
+        175.6
+      ],
+      "target_price": [
+        147.1,
+        189.1
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        447.2,
+        447.2
+      ],
+      "target_price": [
+        428.2,
+        535.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        570.0,
+        570.0
+      ],
+      "target_price": [
+        614.0,
+        750.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        611.9,
+        611.9
+      ],
+      "target_price": [
+        732.3,
+        878.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}

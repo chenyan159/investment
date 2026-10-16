@@ -1,0 +1,143 @@
+{
+  "ticker": "CBRS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:36:14-07:00",
+  "reference_price": {
+    "value": 164.17,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        17,
+        17
+      ],
+      "target_price": [
+        16,
+        17
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        96,
+        96
+      ],
+      "target_price": [
+        80,
+        106
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        236,
+        236
+      ],
+      "target_price": [
+        235,
+        321
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        353,
+        353
+      ],
+      "target_price": [
+        397,
+        531
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "NVDA",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "广义AI计算配置优先NVDA，其现金与客户广度强于CBRS；CBRS只在独立高速推理解码份额兑现时提供补充。"
+    },
+    {
+      "peer": "AMD",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "稳健兑现与现金底盘优先AMD；若追求独立低延迟解码路线且完整成本和追加收费验证成功，CBRS可作小仓补充，两者现价都不适合无条件重仓。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若XPU净开票、行业扩池及采购成本证实原高净内容路径，优先AVGO；若同池数量和成本约束成立，AVGO现价也缺乏稳健赔率，CBRS仅在独立低延迟付费和降本验证后作小仓补充。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "现价两者都需验证，但MRVL已有盈利与多客户互连收入，更新后的基准仍正回报；CBRS基准负回报，稳健配置顺位更低。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "推理成本下降与模型分发趋势优先GOOGL，其搜索现金底盘、TPU及云渠道更完整；CBRS只有独立解码溢价成立时具局部优势。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾地缘风险且看好多架构算力扩张时优先TSM，其制造卡位与自筹资本强于CBRS；CBRS仅提供更集中的架构右尾。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "企业算力与代理需求趋势优先AMZN，其AWS渠道和零售现金来源更广；CBRS在低延迟细分有优势但现价基准赔率不足。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "能承担项目融资与再融资失败风险时CRWV的基准及右尾赔率更高；担忧融资关闭而坚持独立推理架构时CBRS现金更强，但这不使其现价符合稳健标准。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "稳健企业AI配置优先MSFT，其办公续约和云分发证据更强且基准年化回报为正；CBRS仅在解码平台突破下提供更高弹性。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "跨行业稳健资金优先ADBE，其低倍数经济现金流和净回购支持基准正回报；CBRS的技术增长更快但当前价格需乐观路径。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视长期合同、现金韧性和较小经营左尾时优先LIN；愿意承担约九成情景损失以博弈高速推理突破时CBRS弹性更大。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求广告现金变现与成熟渠道时优先META；仅当独立高速推理追加容量及完整成本获得验证、并接受集中客户风险时CBRS适合进攻补充。"
+    }
+  ]
+}

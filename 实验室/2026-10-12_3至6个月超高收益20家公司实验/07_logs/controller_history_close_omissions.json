@@ -1,0 +1,5 @@
+[
+ {"ticker":"ICHR","price_date":"2026-10-12","normal_close":54.38,"access_date_utc":"2026-10-13","url":"https://stockanalysis.com/stocks/ichr/history/","has_dated_close":true,"matches_frozen":true},
+ {"ticker":"PENG","price_date":"2026-10-12","normal_close":79.16,"access_date_utc":"2026-10-13","url":"https://stockanalysis.com/stocks/peng/history/","has_dated_close":true,"matches_frozen":true},
+ {"ticker":"AEHR","price_date":"2026-10-12","normal_close":78.18,"access_date_utc":"2026-10-13","url":"https://stockanalysis.com/stocks/aehr/history/","has_dated_close":true,"matches_frozen":true}
+]

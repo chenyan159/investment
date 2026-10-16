@@ -1,0 +1,131 @@
+{
+  "ticker": "WCN",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:05:29-07:00",
+  "reference_price": {
+    "value": 152.83,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        138.98,
+        138.98
+      ],
+      "target_price": [
+        93.19,
+        117.13
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        211.31,
+        211.31
+      ],
+      "target_price": [
+        179.98,
+        214.31
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        243.46,
+        243.46
+      ],
+      "target_price": [
+        237.11,
+        276.18
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        263.13,
+        263.13
+      ],
+      "target_price": [
+        266.82,
+        309.15
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WM",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "WCN在买价及基准/乐观赔率占优；重视当期现金与降低单址责任集中则WM更优，非全面胜负"
+    },
+    {
+      "peer": "RSG",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "WCN在当前买价基准赔率占优；若优先经营证据确定性和较少Chiquita集中风险，选RSG"
+    },
+    {
+      "peer": "CWST",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "WCN在稳健资本保全和基准赔率明显占优；CWST右尾更大但许可/融资风险不足以支持现价替换"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "进攻及每股增长选CMI；经常性需求和弱周期防御选WCN；WCN并非AI电源最佳载体"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "现价稳健配置优先WCN；CAT爆发力更强但基准价格区间低于现价，待价格或盈利再验证"
+    },
+    {
+      "peer": "DTE",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "收益型配置及接受增发选DTE；自主定价、较少外部股权融资依赖选WCN，须比较含息收益"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "优先合同型ROIC质量和责任分散选LIN；当前买价中期赔率及恢复空间选WCN"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "WCN在当前价格的基准赔率占优；COST在本金长期韧性和经营质量更强，质量预算优先则选COST"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "接受承保周期、重视含息赔率选PGR；低客户周期波动的服务现金选WCN，PGR不是无风险全面替代"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "进攻、平台复利和更高基准年化选MSFT；弱技术替代及区域服务防御选WCN"
+    }
+  ]
+}

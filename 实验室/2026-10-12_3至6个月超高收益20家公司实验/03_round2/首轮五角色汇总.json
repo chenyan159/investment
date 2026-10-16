@@ -1,0 +1,6410 @@
+{
+  "sealed_utc": "2026-10-13T04:23:42.511953+00:00",
+  "roles": [
+    {
+      "role": "X1_event_dislocations",
+      "nominations": 20,
+      "deep_read_count": 29,
+      "screen_rows": 245,
+      "scope": "structured initial scan plus disclosed targeted deep reading; not 245 full manual research reports"
+    },
+    {
+      "role": "X2_AI供应链与短期盈利错价",
+      "nominations": 20,
+      "deep_read_count": 30,
+      "screen_rows": 245,
+      "scope": "structured initial scan plus disclosed targeted deep reading; not 245 full manual research reports"
+    },
+    {
+      "role": "X3_clinical_events",
+      "nominations": 20,
+      "deep_read_count": 28,
+      "screen_rows": 245,
+      "scope": "structured initial scan plus disclosed targeted deep reading; not 245 full manual research reports"
+    },
+    {
+      "role": "X4_space_energy_independent_round1",
+      "nominations": 20,
+      "deep_read_count": 32,
+      "screen_rows": 245,
+      "scope": "structured initial scan plus disclosed targeted deep reading; not 245 full manual research reports"
+    },
+    {
+      "role": "X5_reverse_valuation",
+      "nominations": 20,
+      "deep_read_count": 32,
+      "screen_rows": 245,
+      "scope": "structured initial scan plus disclosed targeted deep reading; not 245 full manual research reports"
+    }
+  ],
+  "nominated_unique": 44,
+  "warning": "Nomination counts are a search priority and disagreement map, not a vote-based final ranking.",
+  "candidate_union": [
+    {
+      "ticker": "ENPH",
+      "name": "Enphase Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "31.49",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 12,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 9,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 10,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 1,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 4,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "7.07",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 6,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 10,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 5,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 9,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 14,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KYTX",
+      "name": "Kyverna Therapeutics",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "6.21",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 2,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 8,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 1,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 3,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 2,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMPX",
+      "name": "Amprius Technologies",
+      "category": "电力_发电_能源_储能",
+      "anchor": "8.87",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 8,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 4,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 2,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 8,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AOSL",
+      "name": "Alpha and Omega Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "26.58",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 19,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 6,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 16,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 13,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "131.51",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 14,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 11,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 5,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 17,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BNTX",
+      "name": "BioNTech",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "95.84",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 18,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 2,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 12,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 12,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN Limited",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "34.80",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 3,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 3,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 13,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 13,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LEU",
+      "name": "Centrus Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "135.31",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 9,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 15,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 4,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 19,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "name": "Power Solutions International",
+      "category": "电力_发电_能源_储能",
+      "anchor": "50.10",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 11,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 18,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 3,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 8,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "9.22",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 10,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 12,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 7,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 20,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "39.98",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 1,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 5,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 7,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 3,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ACMR",
+      "name": "ACM Research",
+      "category": "晶圆制造_前道设备",
+      "anchor": "68.10",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 8,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 15,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 18,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "POET",
+      "name": "POET Technologies",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "6.41",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 5,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 19,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 18,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMBA",
+      "name": "Ambarella",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "64.81",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 19,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 15,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "23.25",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 14,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 14,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "51.46",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 15,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 17,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CC",
+      "name": "The Chemours Company",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "13.39",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 13,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 7,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IONS",
+      "name": "Ionis Pharmaceuticals",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "43.67",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 17,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 16,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MRAM",
+      "name": "Everspin Technologies",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "15.28",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 9,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 20,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology 美光科技",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "989.04",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 1,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 5,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "226.32",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 14,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 11,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "9.99",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 20,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 19,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TE",
+      "name": "T1 Energy Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "3.21",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 7,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 10,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "UCTT",
+      "name": "Ultra Clean Holdings",
+      "category": "晶圆制造_前道设备",
+      "anchor": "63.51",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 17,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 6,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VISN",
+      "name": "Vistance Networks",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "6.08",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 4,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 1,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "28.03",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 16,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 11,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "100.68",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 4,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "category": "企业软件_数据平台",
+      "anchor": "238.14",
+      "nominations": [
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 10,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AEIS",
+      "name": "Advanced Energy Industries",
+      "category": "晶圆制造_前道设备",
+      "anchor": "280.77",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 16,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "227.02",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 17,
+          "file": "02_round1\\X1_event.json"
+        }
+      ],
+      "reserves": [
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ARGX",
+      "name": "argenx",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "812.30",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 16,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "354.73",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 20,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "347.50",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 12,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "288.02",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 11,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "200.84",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 6,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "80.26",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 7,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings",
+      "category": "电力_发电_能源_储能",
+      "anchor": "218.37",
+      "nominations": [
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 18,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MOD",
+      "name": "Modine Manufacturing",
+      "category": "热管理_流体_水处理",
+      "anchor": "172.50",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 13,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "32.21",
+      "nominations": [
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 6,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PLAB",
+      "name": "Photronics",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "29.24",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 20,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair plc",
+      "category": "热管理_流体_水处理",
+      "anchor": "52.33",
+      "nominations": [
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 9,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "name": "SanDisk",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "1487.33",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 2,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TTMI",
+      "name": "TTM Technologies",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "110.33",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 15,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    }
+  ],
+  "all245": [
+    {
+      "ticker": "ALAB",
+      "name": "AsteraLabs",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "324.11",
+      "nominations": [],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMBA",
+      "name": "Ambarella",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "64.81",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 19,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 15,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "594.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "255.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "354.73",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 20,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems Inc",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "146.62",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "348.42",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation 英特尔",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "101.35",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "73.83",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "265.86",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MXL",
+      "name": "MaxLinear",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "88.99",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "226.32",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 14,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 11,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "174.43",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "anchor": "502.51",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "347.50",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 12,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "576.76",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex Ltd",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "117.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FN",
+      "name": "Fabrinet",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "456.40",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "HPE",
+      "name": "惠普企业",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "70.33",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "JBL",
+      "name": "Jabil Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "312.01",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MRAM",
+      "name": "Everspin Technologies",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "15.28",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 9,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 20,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology 美光科技",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "989.04",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 1,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 5,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "239.18",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "155.31",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PENG",
+      "name": "Penguin Solutions",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "79.16",
+      "nominations": [],
+      "reserves": [
+        "X1_event_dislocations"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RMBS",
+      "name": "Rambus",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "101.04",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SANM",
+      "name": "Sanmina Corporation",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "213.74",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SIMO",
+      "name": "Silicon Motion Technology",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "246.95",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SKHY",
+      "name": "SK hynix Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "162.23",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer Inc",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "39.98",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 1,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 5,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 7,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 3,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "name": "SanDisk",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "1487.33",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 2,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "753.25",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "name": "WesternDigital",
+      "category": "AI服务器_存储_EMS",
+      "anchor": "386.94",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "100.68",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 4,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "210.88",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol 安费诺",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "86.19",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BDC",
+      "name": "Belden",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "105.29",
+      "nominations": [],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BELFB",
+      "name": "Bel Fuse Inc",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "238.41",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "405.01",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "288.02",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 11,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "200.84",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 6,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "115.34",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "147.28",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "995.41",
+      "nominations": [],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LWLG",
+      "name": "Lightwave Logic",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "4.48",
+      "nominations": [],
+      "reserves": [
+        "X1_event_dislocations",
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "306.36",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "诺基亚",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "9.90",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "POET",
+      "name": "POET Technologies",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "6.41",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 5,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 19,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 18,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SITM",
+      "name": "SiTime Corporation",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "570.07",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMTC",
+      "name": "Semtech Corporation",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "168.28",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "217.28",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VIAV",
+      "name": "VIAVI Solutions",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "41.75",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VISN",
+      "name": "Vistance Networks",
+      "category": "AI网络_光互联_连接器",
+      "anchor": "6.08",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 4,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 1,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AJNMY",
+      "name": "味之素 Ajinomoto",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "34.01",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "APD",
+      "name": "Air Products and Chemicals",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "283.87",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASGLY",
+      "name": "AGC Inc",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "7.43",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "name": "AXT Inc",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "61.98",
+      "nominations": [],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CC",
+      "name": "The Chemours Company",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "13.39",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 13,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 7,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont de Nemours",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "129.37",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "221.20",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ENTG",
+      "name": "Entegris",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "160.01",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "HOCPY",
+      "name": "HOYA Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "157.16",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "487.35",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "160.89",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MTRN",
+      "name": "Materion",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "270.15",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PCRHY",
+      "name": "Panasonic Holdings 松下控股",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "27.88",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "123.21",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ROG",
+      "name": "Rogers Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "145.84",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SHECY",
+      "name": "Shin-Etsu Chemical 信越化学",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "19.08",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMTOY",
+      "name": "住友电工 Sumitomo Electric Industries",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "7.27",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SOMMY",
+      "name": "住友化学 Sumitomo Chemical",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "18.48",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TTMI",
+      "name": "TTM Technologies",
+      "category": "电子材料_化学品_基板_PCB",
+      "anchor": "110.33",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 15,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ACLS",
+      "name": "Axcelis Technologies",
+      "category": "晶圆制造_前道设备",
+      "anchor": "127.63",
+      "nominations": [],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ACMR",
+      "name": "ACM Research",
+      "category": "晶圆制造_前道设备",
+      "anchor": "68.10",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 8,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 15,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 18,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AEIS",
+      "name": "Advanced Energy Industries",
+      "category": "晶圆制造_前道设备",
+      "anchor": "280.77",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 16,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "category": "晶圆制造_前道设备",
+      "anchor": "497.53",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASMIY",
+      "name": "ASM International",
+      "category": "晶圆制造_前道设备",
+      "anchor": "978.26",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding NV",
+      "category": "晶圆制造_前道设备",
+      "anchor": "1750.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DSCSY",
+      "name": "DISCO",
+      "category": "晶圆制造_前道设备",
+      "anchor": "37.63",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries",
+      "category": "晶圆制造_前道设备",
+      "anchor": "48.34",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ICHR",
+      "name": "Ichor Holdings",
+      "category": "晶圆制造_前道设备",
+      "anchor": "54.38",
+      "nominations": [],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "category": "晶圆制造_前道设备",
+      "anchor": "190.12",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "category": "晶圆制造_前道设备",
+      "anchor": "309.56",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MKSI",
+      "name": "MKS Inc",
+      "category": "晶圆制造_前道设备",
+      "anchor": "249.91",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVMI",
+      "name": "Nova Ltd",
+      "category": "晶圆制造_前道设备",
+      "anchor": "340.40",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TOELY",
+      "name": "Tokyo Electron",
+      "category": "晶圆制造_前道设备",
+      "anchor": "172.15",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "category": "晶圆制造_前道设备",
+      "anchor": "216.50",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "name": "台积电",
+      "category": "晶圆制造_前道设备",
+      "anchor": "444.35",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "UCTT",
+      "name": "Ultra Clean Holdings",
+      "category": "晶圆制造_前道设备",
+      "anchor": "63.51",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 17,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 6,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "UMC",
+      "name": "United Microelectronics 联华电子",
+      "category": "晶圆制造_前道设备",
+      "anchor": "22.55",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VECO",
+      "name": "Veeco Instruments",
+      "category": "晶圆制造_前道设备",
+      "anchor": "49.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "78.18",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor Technology",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "48.11",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASMVY",
+      "name": "ASMPT",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "60.70",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASX",
+      "name": "ASE Technology Holding",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "47.53",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ATEYY",
+      "name": "Advantest",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "252.90",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BESIY",
+      "name": "BE Semiconductor",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "195.59",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CAMT",
+      "name": "Camtek",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "147.63",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "COHU",
+      "name": "Cohu Inc",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "65.21",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FORM",
+      "name": "FormFactor",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "130.28",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IMOS",
+      "name": "ChipMOS Technologies 南茂科技",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "75.19",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "377.70",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KLIC",
+      "name": "Kulicke Soffa",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "88.39",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MICLF",
+      "name": "Mycronic AB",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "32.82",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NDSN",
+      "name": "Nordson",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "330.44",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ONTO",
+      "name": "Onto Innovation",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "273.74",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PLAB",
+      "name": "Photronics",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "29.24",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 20,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TDY",
+      "name": "Teledyne Technologies",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "613.66",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "383.85",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "category": "封测_检测_计量_光罩",
+      "anchor": "662.24",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "406.25",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ALGM",
+      "name": "Allegro MicroSystems",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "33.79",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AOSL",
+      "name": "Alpha and Omega Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "26.58",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 19,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 6,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 16,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 13,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DIOD",
+      "name": "Diodes Incorporated",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "90.62",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IFNNY",
+      "name": "Infineon Technologies AG 英飞凌科技",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "63.74",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LFUS",
+      "name": "Littelfuse",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "413.84",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "1319.23",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MRAAY",
+      "name": "Murata Manufacturing",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "24.63",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "9.99",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 20,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 19,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ON",
+      "name": "onsemi",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "76.00",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "POWI",
+      "name": "Power Integrations",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "47.11",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ST",
+      "name": "Sensata Technologies",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "42.10",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "STM",
+      "name": "STMicroelectronics",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "50.48",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TTDKY",
+      "name": "TDK Corporation",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "20.35",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "name": "德州仪器",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "281.74",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VSH",
+      "name": "Vishay Intertechnology",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "32.03",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "category": "功率半导体_电源管理_传感器",
+      "anchor": "28.03",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 16,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 11,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ABBNY",
+      "name": "ABB Ltd",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "95.54",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ATKR",
+      "name": "Atkore",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "94.88",
+      "nominations": [],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "426.69",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "474.05",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MIELY",
+      "name": "三菱电机 Mitsubishi Electric",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "64.38",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "162.78",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "185.38",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SBGSY",
+      "name": "Schneider Electric 施耐德",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "58.69",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VICR",
+      "name": "Vicor Corporation",
+      "category": "配电_电源系统_电气设备",
+      "anchor": "259.40",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power",
+      "category": "电力_发电_能源_储能",
+      "anchor": "124.23",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMPX",
+      "name": "Amprius Technologies",
+      "category": "电力_发电_能源_储能",
+      "anchor": "8.87",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 8,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 4,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 2,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 8,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "262.28",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BWXT",
+      "name": "BWX Technologies",
+      "category": "电力_发电_能源_储能",
+      "anchor": "139.92",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "799.37",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco",
+      "category": "电力_发电_能源_储能",
+      "anchor": "86.12",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "293.89",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "527.86",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DTE",
+      "name": "DTE Energy Company",
+      "category": "电力_发电_能源_储能",
+      "anchor": "128.05",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ENPH",
+      "name": "Enphase Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "31.49",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 12,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 9,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 10,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 1,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 4,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ENS",
+      "name": "EnerSys",
+      "category": "电力_发电_能源_储能",
+      "anchor": "178.25",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer LP",
+      "category": "电力_发电_能源_储能",
+      "anchor": "20.41",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ETR",
+      "name": "Entergy Corporation",
+      "category": "电力_发电_能源_储能",
+      "anchor": "103.99",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FCEL",
+      "name": "FuelCell Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "16.37",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "7.07",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 6,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 10,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 5,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 9,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 14,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "category": "电力_发电_能源_储能",
+      "anchor": "996.80",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings",
+      "category": "电力_发电_能源_储能",
+      "anchor": "218.37",
+      "nominations": [
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 18,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "HTHIY",
+      "name": "Hitachi Ltd",
+      "category": "电力_发电_能源_储能",
+      "anchor": "35.81",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "LEU",
+      "name": "Centrus Energy",
+      "category": "电力_发电_能源_储能",
+      "anchor": "135.31",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 9,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 15,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 4,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 19,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "32.21",
+      "nominations": [
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 6,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "name": "Power Solutions International",
+      "category": "电力_发电_能源_储能",
+      "anchor": "50.10",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 11,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 18,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 3,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 8,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RYCEY",
+      "name": "Rolls-Royce Holdings",
+      "category": "电力_发电_能源_储能",
+      "anchor": "18.38",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale Power",
+      "category": "电力_发电_能源_储能",
+      "anchor": "6.70",
+      "nominations": [],
+      "reserves": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TE",
+      "name": "T1 Energy Inc",
+      "category": "电力_发电_能源_储能",
+      "anchor": "3.21",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 7,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 10,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp",
+      "category": "电力_发电_能源_储能",
+      "anchor": "158.13",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AAON",
+      "name": "AAON",
+      "category": "热管理_流体_水处理",
+      "anchor": "84.77",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CARR",
+      "name": "Carrier Global",
+      "category": "热管理_流体_水处理",
+      "anchor": "55.42",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DCI",
+      "name": "Donaldson Company",
+      "category": "热管理_流体_水处理",
+      "anchor": "86.47",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DKILY",
+      "name": "Daikin Industries",
+      "category": "热管理_流体_水处理",
+      "anchor": "13.30",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DOV",
+      "name": "Dover Corporation",
+      "category": "热管理_流体_水处理",
+      "anchor": "190.88",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab",
+      "category": "热管理_流体_水处理",
+      "anchor": "284.30",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ITT",
+      "name": "ITT",
+      "category": "热管理_流体_水处理",
+      "anchor": "201.90",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "JCI",
+      "name": "Johnson Controls",
+      "category": "热管理_流体_水处理",
+      "anchor": "155.41",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MOD",
+      "name": "Modine Manufacturing",
+      "category": "热管理_流体_水处理",
+      "anchor": "172.50",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 13,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin",
+      "category": "热管理_流体_水处理",
+      "anchor": "956.89",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair plc",
+      "category": "热管理_流体_水处理",
+      "anchor": "52.33",
+      "nominations": [
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 9,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SPXC",
+      "name": "SPX Technologies",
+      "category": "热管理_流体_水处理",
+      "anchor": "168.45",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies",
+      "category": "热管理_流体_水处理",
+      "anchor": "477.55",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "category": "热管理_流体_水处理",
+      "anchor": "239.36",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "EME",
+      "name": "EMCOR Group",
+      "category": "工程建设_机电安装",
+      "anchor": "779.16",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA",
+      "category": "工程建设_机电安装",
+      "anchor": "1638.05",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IESC",
+      "name": "IES Holdings",
+      "category": "工程建设_机电安装",
+      "anchor": "287.79",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MYRG",
+      "name": "MYR Group",
+      "category": "工程建设_机电安装",
+      "anchor": "313.18",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "category": "工程建设_机电安装",
+      "anchor": "694.79",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion plc",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "150.04",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CGNX",
+      "name": "Cognex",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "61.82",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "162.46",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FANUY",
+      "name": "FANUC 发那科",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "19.27",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "FTV",
+      "name": "Fortive Corporation",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "57.37",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MSI",
+      "name": "Motorola Solutions",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "446.33",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "433.97",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SMCAY",
+      "name": "SMC",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "23.13",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "40.78",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "378.03",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "YASKY",
+      "name": "Yaskawa Electric 安川电机",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "62.35",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "51.46",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 15,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 17,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CW",
+      "name": "Curtiss-Wright",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "504.16",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "15.96",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "9.22",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 10,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 12,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 7,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 20,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "65.71",
+      "nominations": [],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "163.42",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "259.53",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "23.25",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 14,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 14,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BABA",
+      "name": "Alibaba 阿里巴巴",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "110.78",
+      "nominations": [],
+      "reserves": [
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "80.26",
+      "nominations": [
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 7,
+          "file": "02_round1\\X2_ai.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "180.16",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "1032.60",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "352.72",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN Limited",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "34.80",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 3,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 3,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 13,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 13,
+          "file": "02_round1\\X4_space_energy.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "微软",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "541.15",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "210.06",
+      "nominations": [],
+      "reserves": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "deep_read_roles": [
+        "X2_AI供应链与短期盈利错价"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NET",
+      "name": "Cloudflare",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "350.87",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "category": "云算力_IDC_边缘云",
+      "anchor": "137.39",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "category": "企业软件_数据平台",
+      "anchor": "238.14",
+      "nominations": [
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 10,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "category": "企业软件_数据平台",
+      "anchor": "233.92",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "category": "企业软件_数据平台",
+      "anchor": "287.29",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DT",
+      "name": "Dynatrace",
+      "category": "企业软件_数据平台",
+      "anchor": "65.25",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines",
+      "category": "企业软件_数据平台",
+      "anchor": "227.02",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "category": "企业软件_数据平台",
+      "anchor": "742.96",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "category": "企业软件_数据平台",
+      "anchor": "140.32",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "NTNX",
+      "name": "Nutanix",
+      "category": "企业软件_数据平台",
+      "anchor": "74.14",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "category": "企业软件_数据平台",
+      "anchor": "209.00",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "category": "企业软件_数据平台",
+      "anchor": "360.37",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "category": "网络安全_身份权限_治理",
+      "anchor": "263.01",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "category": "网络安全_身份权限_治理",
+      "anchor": "403.83",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna 莫德纳",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "213.74",
+      "nominations": [],
+      "reserves": [
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BNTX",
+      "name": "BioNTech",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "95.84",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 18,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 2,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 12,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 12,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "227.02",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 17,
+          "file": "02_round1\\X1_event.json"
+        }
+      ],
+      "reserves": [
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "IONS",
+      "name": "Ionis Pharmaceuticals",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "43.67",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 17,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 16,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [
+        "X1_event_dislocations",
+        "X4_space_energy_independent_round1"
+      ],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "ARGX",
+      "name": "argenx",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "812.30",
+      "nominations": [
+        {
+          "role": "X3_clinical_events",
+          "rank": 16,
+          "file": "02_round1\\X3_clinical.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X3_clinical_events"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KYTX",
+      "name": "Kyverna Therapeutics",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "anchor": "6.21",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 2,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X2_AI供应链与短期盈利错价",
+          "rank": 8,
+          "file": "02_round1\\X2_ai.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 1,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 3,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 2,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale 好市多",
+      "category": "零售_会员制_食品_折扣渠道",
+      "anchor": "959.44",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart 沃尔玛",
+      "category": "零售_会员制_食品_折扣渠道",
+      "anchor": "113.08",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "BJ",
+      "name": "BJ's Wholesale Club Holdings",
+      "category": "零售_会员制_食品_折扣渠道",
+      "anchor": "99.80",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KR",
+      "name": "The Kroger Co. 克罗格",
+      "category": "零售_会员制_食品_折扣渠道",
+      "anchor": "62.56",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies",
+      "category": "零售_会员制_食品_折扣渠道",
+      "anchor": "141.92",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "PGR",
+      "name": "The Progressive Corporation",
+      "category": "保险_财产险_特色险_再保险",
+      "anchor": "220.28",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "TRV",
+      "name": "The Travelers Companies",
+      "category": "保险_财产险_特色险_再保险",
+      "anchor": "371.68",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb Limited",
+      "category": "保险_财产险_特色险_再保险",
+      "anchor": "345.06",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WRB",
+      "name": "W. R. Berkley Corporation",
+      "category": "保险_财产险_特色险_再保险",
+      "anchor": "72.90",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RNR",
+      "name": "RenaissanceRe Holdings",
+      "category": "保险_财产险_特色险_再保险",
+      "anchor": "338.87",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "131.51",
+      "nominations": [
+        {
+          "role": "X1_event_dislocations",
+          "rank": 14,
+          "file": "02_round1\\X1_event.json"
+        },
+        {
+          "role": "X3_clinical_events",
+          "rank": 11,
+          "file": "02_round1\\X3_clinical.json"
+        },
+        {
+          "role": "X4_space_energy_independent_round1",
+          "rank": 5,
+          "file": "02_round1\\X4_space_energy.json"
+        },
+        {
+          "role": "X5_reverse_valuation",
+          "rank": 17,
+          "file": "02_round1\\X5_reverse.json"
+        }
+      ],
+      "reserves": [],
+      "deep_read_roles": [
+        "X1_event_dislocations",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "KTOS",
+      "name": "Kratos Defense & Security Solutions",
+      "category": "航空航天_卫星_高可靠系统",
+      "anchor": "41.62",
+      "nominations": [],
+      "reserves": [
+        "X3_clinical_events"
+      ],
+      "deep_read_roles": [
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1"
+      ],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company 迪尔",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "632.61",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "AGCO",
+      "name": "AGCO Corporation",
+      "category": "机器人_工业自动化_智能硬件",
+      "anchor": "104.47",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management WM",
+      "category": "环境服务_固废_回收_资源化",
+      "anchor": "211.14",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "RSG",
+      "name": "Republic Services",
+      "category": "环境服务_固废_回收_资源化",
+      "anchor": "219.75",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "WCN",
+      "name": "Waste Connections",
+      "category": "环境服务_固废_回收_资源化",
+      "anchor": "153.71",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    },
+    {
+      "ticker": "CWST",
+      "name": "Casella Waste Systems",
+      "category": "环境服务_固废_回收_资源化",
+      "anchor": "85.20",
+      "nominations": [],
+      "reserves": [],
+      "deep_read_roles": [],
+      "screen_roles": [
+        "X1_event_dislocations",
+        "X2_AI供应链与短期盈利错价",
+        "X3_clinical_events",
+        "X4_space_energy_independent_round1",
+        "X5_reverse_valuation"
+      ]
+    }
+  ],
+  "sealed_files": [
+    {
+      "path": "02_round1\\X1_event.json",
+      "sha256": "b47fe9a630adbd2f384e248b13a015fb85cf994fb039729f33bcdced56380527",
+      "bytes": 65731
+    },
+    {
+      "path": "02_round1\\X1_event.md",
+      "sha256": "0d69acb530c0bb3e6aaaf8fd877b4f514cac1239e07d699440b947ced40001d3",
+      "bytes": 39897
+    },
+    {
+      "path": "07_logs\\X1_full245_screen.csv",
+      "sha256": "92a8a009dc70ba4f78fa3b3c1aff51518bedf0371c6236486998733778ced378",
+      "bytes": 226307
+    },
+    {
+      "path": "07_logs\\X1_sources.json",
+      "sha256": "dbbd78c41097f54325ca2d87bb08790e814ab286b31f3506d9fbc838c04d40d2",
+      "bytes": 13426
+    },
+    {
+      "path": "07_logs\\X1_reading_notes.md",
+      "sha256": "46f61425da21cddf5615301c12bab0dc3992ba33c9d91467d25427a3c98bcd03",
+      "bytes": 391478
+    },
+    {
+      "path": "02_round1\\X2_ai.json",
+      "sha256": "42a300ee8059cbd6363829ce05abd9285978d871035fab6d14f814e41ecd5ab2",
+      "bytes": 97170
+    },
+    {
+      "path": "02_round1\\X2_ai.md",
+      "sha256": "99b92ad4b525c07bfc53a4f8c9aee6d8d794f3f29bcaa60d56ed6c77238c29da",
+      "bytes": 53103
+    },
+    {
+      "path": "07_logs\\X2_full245_screen.csv",
+      "sha256": "6e1b18d0a9808950ccad483b8edade5b7cf0356a1bbf2031fad0230df66a1321",
+      "bytes": 66483
+    },
+    {
+      "path": "07_logs\\X2_sources.json",
+      "sha256": "d3faa43b7136a0a1417d53b4172715df16ec7d5aa0040708130c1cf495a2ac39",
+      "bytes": 9160
+    },
+    {
+      "path": "07_logs\\X2_reading_notes.md",
+      "sha256": "3db2665d8fa5e48e5dcde648bc87ba2b5318c6b9e8eac22164effb68dd35c3f5",
+      "bytes": 25457
+    },
+    {
+      "path": "02_round1\\X3_clinical.json",
+      "sha256": "b3d6f510e1959e1d9beea08ac39ed26bbe7a9651b2c62dd0aa1dea73434d95eb",
+      "bytes": 44997
+    },
+    {
+      "path": "02_round1\\X3_clinical.md",
+      "sha256": "b368f9aae794f46e8e730c27b8c6c8221c25058f4660c90956ce2050f6367a6e",
+      "bytes": 32646
+    },
+    {
+      "path": "07_logs\\X3_full245_screen.csv",
+      "sha256": "1be6efbcc7c61f69baa7f875a5b4ae57c616acdc926860943fbc7c5ca5bebc4d",
+      "bytes": 177088
+    },
+    {
+      "path": "07_logs\\X3_sources.json",
+      "sha256": "136dadbfe81622c6c8ee392ea7bea7800b54b265e03391c31d8bb2517c17e74e",
+      "bytes": 6715
+    },
+    {
+      "path": "07_logs\\X3_reading_notes.md",
+      "sha256": "a0e297915389a4fef698c148e6e259151fbe1d23152a0e85ce8497fedd5c3ce5",
+      "bytes": 88568
+    },
+    {
+      "path": "02_round1\\X4_space_energy.json",
+      "sha256": "253416b24525bf314fa573e064984b128c89401bf1a0a53da2f01b4317bfcb74",
+      "bytes": 52413
+    },
+    {
+      "path": "02_round1\\X4_space_energy.md",
+      "sha256": "7da475f2733d4f7ada5badfb16e0e9ee14c28ce2b2e5ed57860252df0d33f36f",
+      "bytes": 36862
+    },
+    {
+      "path": "07_logs\\X4_full245_screen.csv",
+      "sha256": "e1d53535714915631a6b1511be9e159d2ca9d37044021d52c5a3ee96bb9be08b",
+      "bytes": 69751
+    },
+    {
+      "path": "07_logs\\X4_sources.json",
+      "sha256": "91dd17a5008e8e95caf4c76c08373d308b4ce9fc73f08dddcc896488a50b061e",
+      "bytes": 9918
+    },
+    {
+      "path": "07_logs\\X4_reading_notes.md",
+      "sha256": "f46c2e54025ca442e25c1e271c2197741e0b35f2721d201f156e4fd42b7add9b",
+      "bytes": 13913
+    },
+    {
+      "path": "02_round1\\X5_reverse.json",
+      "sha256": "2342897f4bea6014c491516bd09e70cf884863d986299f431f338c396ef29439",
+      "bytes": 64953
+    },
+    {
+      "path": "02_round1\\X5_reverse.md",
+      "sha256": "372fb5e4f0cc73e297e97d5b916182f6fcb48592ce1e5c3ee562b68236a14255",
+      "bytes": 41229
+    },
+    {
+      "path": "07_logs\\X5_full245_screen.csv",
+      "sha256": "290ee7407bba1faa8afc6da89112038c6952fb13ef5e5db1e5afd54e34544ab0",
+      "bytes": 100076
+    },
+    {
+      "path": "07_logs\\X5_sources.json",
+      "sha256": "83e779b557c2c9053a48805494a75007d35b9573489d62e2a30eb1762394c96a",
+      "bytes": 15014
+    },
+    {
+      "path": "07_logs\\X5_reading_notes.md",
+      "sha256": "f3000d7356cb8e5314476881483b09ed044c2b23dd404785f3760598c04150d7",
+      "bytes": 23624
+    }
+  ]
+}

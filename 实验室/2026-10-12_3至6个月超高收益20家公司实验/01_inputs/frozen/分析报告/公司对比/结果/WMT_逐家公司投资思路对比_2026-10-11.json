@@ -1,0 +1,137 @@
+{
+  "ticker": "WMT",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:30:55-07:00",
+  "reference_price": {
+    "value": 111.35,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-01-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        104.1,
+        104.1
+      ],
+      "target_price": [
+        57.1,
+        68.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        146.6,
+        146.6
+      ],
+      "target_price": [
+        96.5,
+        112.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        175.9,
+        175.9
+      ],
+      "target_price": [
+        125.5,
+        144.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        208.8,
+        208.8
+      ],
+      "target_price": [
+        160.4,
+        183.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "COST",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "会员纯度和现金底线COST胜，近期低价覆盖与NTM倍数WMT胜；现价均非核心新资金首选，若只买会员复利优先COST、若要广谱食品防御且WMT降至85以下则优先WMT"
+    },
+    {
+      "peer": "BJ",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在接受区域扩店和续费风险的会员渠道增长配置中，BJ基准年化和右尾更高且倍数低，现价优先BJ；极度重视全球食品防御时WMT质量仍更强"
+    },
+    {
+      "peer": "KR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "接受客流修复和GE整合风险以追求食品赛道基准回报时优先KR；对恢复依赖低且强调经营确定性的组合优先WMT，但WMT现价仍需等待"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求云与商业平台上行且接受巨额资本兑现风险时AMZN优先；仅需食品现金防御、降低技术资本敞口时WMT更适合作补充"
+    },
+    {
+      "peer": "TJX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "Marmaxx恢复正成交且资本回报保持时，TJX较低倍数和更高基准回报优先；可选消费衰退或纯食品防御需求下WMT更优"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "投资购物发现与广告预算迁移并接受搜索/AI资本风险时GOOGL右尾优先；若要控制技术和监管敞口并获取实际食品履约则WMT更优"
+    },
+    {
+      "peer": "META",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "偏高风险进攻且广告ROI与资本效率同步改善时优先META；稳健基准其回报也偏低，广谱消费防御时WMT仍有独立用途"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "同一Walmart自动化逻辑下稳健配置优先WMT：客户集中、工程验收、Up-C稀释与负现金使SYM基准回报更弱；SYM只在验收及非WMT复用证实后适合另列进攻小仓"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "有2–4年期限且技术敞口未超限的复利核心配置中，MSFT壁垒、基准年化及上行更优；WMT仅在食品防御需求或MSFT仓位受限时补充"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "能承受承保周期和灾害尾部且准备金质量稳定时，PGR正常化估值及含息收益优先；不愿承担保险左尾的消费防御组合用WMT补充"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "地方网络复利且可承受债务/环保责任时WM现价的基准上沿与现金回报更好；WMT负债压力较轻、需求更广，75–85价格带才可明显提高替代吸引力"
+    }
+  ]
+}

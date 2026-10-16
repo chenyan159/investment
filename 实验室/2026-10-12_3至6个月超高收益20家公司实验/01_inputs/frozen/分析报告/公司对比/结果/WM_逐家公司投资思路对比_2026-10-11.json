@@ -1,0 +1,137 @@
+{
+  "ticker": "WM",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:05:42-07:00",
+  "reference_price": {
+    "value": 208.83,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        200,
+        200
+      ],
+      "target_price": [
+        122,
+        141
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        275,
+        275
+      ],
+      "target_price": [
+        199,
+        275
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        303,
+        303
+      ],
+      "target_price": [
+        248,
+        331
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        321,
+        321
+      ],
+      "target_price": [
+        292,
+        379
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "RSG",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求更低医疗整合风险及较强基准证据选RSG；WM获得估值折价且医疗现金修复时再优先WM。"
+    },
+    {
+      "peer": "WCN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "Chiquita追加治理资金和再融资得到覆盖时优先WCN的每股增长；超出可承受现金预算时优先WM。"
+    },
+    {
+      "peer": "CWST",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "WM的基准现金底线、资产分散及融资韧性胜出，CWST较大右尾不足以补偿当前许可和资本风险。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价下WM基准回报较好且成熟服务兑现较稳，ECL的CoolIT高价整合和收费附着尚未提供足够补偿。"
+    },
+    {
+      "peer": "PNR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "能承担泳池渠道修复与Taco交割流动性风险时优先PNR的赔率；必须以需求稳定为先时选WM。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "CAT现价正常化倍数下的基准目标低于买价，WM对估值收敛的承受能力较强。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "以可承受周期波动的基准回报与进攻资本效率衡量，CMI的正常供电增长及右尾给予更充分价格补偿。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "要求工业长约与客户认证复利时选LIN；WM获得折价且医疗修复兑现时更适合收运防御配置。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "租赁调整后资本产出和FCF改善时优先MSFT的长期及右尾；只要求近端稳定经营现金时选WM。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "COST业务和基准证据更强，但WM目标经济现金相对买价较高、交易价对DCF的溢价较小，当前稳健价格取舍优先WM。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "综合成本率正常化至约92且法定资本支持分配时优先PGR；不承受灾损和浮动分红风险时选WM。"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "V2 final sealed; change only to correct errors",
+  "sealed_utc": "2026-10-13T03:29:04.6639384Z",
+  "files": [
+    {
+      "file": "04_verification\\V2_models.json",
+      "sha256": "BEFFC2F575E9220F41603F6ACFD038BD46D15D1FCCAA50C0B7903A40D41390E8"
+    },
+    {
+      "file": "04_verification\\V2_numeric_verification.json",
+      "sha256": "357DAC00888C1366736E6693D63AE4B09981EE490665042EE986A7616AA7BB3E"
+    },
+    {
+      "file": "04_verification\\V2_numeric_verification.md",
+      "sha256": "1219F79D887D6BD63E6D9CE11ECD5A5D46367CF57C6C00B6EF216A1DB3EEA586"
+    },
+    {
+      "file": "04_verification\\V2_calculation_audit.json",
+      "sha256": "CA47CF5C2B5AB2BFCD5AE851F5C0BC04450F72694D972B6D795FE5B9EA28452B"
+    },
+    {
+      "file": "07_logs\\V2_sources.json",
+      "sha256": "7DCC69F77B59FF495E741A3BD97A6259B030D503EB809DC90F0B68BD8E959EB5"
+    },
+    {
+      "file": "scripts\\V2_recalculate.py",
+      "sha256": "9D883E34180FA862A7F6568815C5BCC560F52C4444CD327BC094803094F8008C"
+    }
+  ]
+}

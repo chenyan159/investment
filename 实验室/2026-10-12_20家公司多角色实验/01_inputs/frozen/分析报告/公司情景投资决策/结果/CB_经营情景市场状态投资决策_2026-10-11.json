@@ -1,0 +1,57 @@
+{
+  "ticker": "CB",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:36:33-07:00",
+  "reference_price": {
+    "value": 341.2,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        255,
+        255
+      ],
+      "target_price": [
+        205,
+        250
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        438,
+        438
+      ],
+      "target_price": [
+        430,
+        485
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "business_price": [
+        499,
+        499
+      ],
+      "target_price": [
+        530,
+        595
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        541,
+        541
+      ],
+      "target_price": [
+        600,
+        670
+      ],
+      "evidence": "weak"
+    }
+  }
+}

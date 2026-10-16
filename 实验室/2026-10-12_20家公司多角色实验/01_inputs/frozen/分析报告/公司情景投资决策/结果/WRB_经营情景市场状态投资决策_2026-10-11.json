@@ -1,0 +1,57 @@
+{
+  "ticker": "WRB",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:19:25-07:00",
+  "reference_price": {
+    "value": 71.91,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        63.58,
+        63.58
+      ],
+      "target_price": [
+        42.39,
+        50.87
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        89.02,
+        89.02
+      ],
+      "target_price": [
+        83.08,
+        94.95
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        102.61,
+        102.61
+      ],
+      "target_price": [
+        102.61,
+        116.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        119.53,
+        119.53
+      ],
+      "target_price": [
+        127.5,
+        143.44
+      ],
+      "evidence": "weak"
+    }
+  }
+}

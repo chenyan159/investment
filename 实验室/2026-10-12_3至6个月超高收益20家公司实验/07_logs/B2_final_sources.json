@@ -1,0 +1,160 @@
+{
+  "cutoff": "2026-10-12 20:50 America/Los_Angeles",
+  "sources": [
+    {
+      "id": "F01",
+      "ticker": "CLS",
+      "published": "2026-10-06",
+      "type": "primary",
+      "access_status": "opened_relevant_body",
+      "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and",
+      "note": "10/26盘后业绩；10/27 8ET会议，官方已定",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F02",
+      "ticker": "CLS",
+      "published": "2026-07-27",
+      "type": "primary",
+      "access_status": "opened_relevant_body",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "note": "20.5B/2027增长超过65%；8.2%调整/9.8%GAAP与TRS",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F03",
+      "ticker": "CLS",
+      "published": "2026-10-06",
+      "type": "opinion",
+      "access_status": "opened_relevant_body",
+      "url": "https://www.fool.ca/2026/10/06/celesticas-revenue-jumped-62-and-i-like-the-stocks-outlook/",
+      "note": "Rajiv Nanjapla多头，扩产需求",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F04",
+      "ticker": "CLS",
+      "published": "2026-09-30",
+      "type": "opinion_secondary",
+      "access_status": "search_excerpt",
+      "url": "https://trendonify.com/news/ratings/bernstein-initiates-coverage-on-celestica-to-outperform-rating-655372",
+      "note": "Bernstein520；非券商原全文",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F05",
+      "ticker": "MOD",
+      "published": "2026-07-29",
+      "type": "primary",
+      "access_status": "opened_relevant_body",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx",
+      "note": "Q1 DC348.6M/14.8%EBITDA，FCF-5M，总部费用不可漏；页面顶端直接核对7/29公告，具体时刻未标",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F06",
+      "ticker": "MOD",
+      "published": "2026-10-02",
+      "type": "opinion_secondary",
+      "access_status": "search_excerpt_open_failed",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/modine-advances-pure-play-transformation-150159919.html",
+      "note": "Oppenheimer供给约束与收入利好；Yahoo打开Internal Error",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F07",
+      "ticker": "MOD",
+      "published": "2026-10-02",
+      "type": "opinion_secondary",
+      "access_status": "opened_public_short_body",
+      "url": "https://www.streetinsider.com/Analyst%2BPT%2BChange/Modine%2BManufacturing%2B(MOD)%2BPT%2BLowered%2Bto%2B$260%2Bat%2BOppenheimer/27138928.html?classic=1",
+      "note": "Noah Kaye Outperform300降260；不是付费全文",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F08",
+      "ticker": "SMCI",
+      "published": "2026-08-11",
+      "type": "primary",
+      "access_status": "opened_relevant_body",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "note": "FY27 65–72B原始",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F09",
+      "ticker": "SMCI",
+      "published": "2026-08-11",
+      "type": "management_transcript_third_party_host",
+      "access_status": "opened_relevant_body",
+      "url": "https://stockanalysis.com/stocks/smci/transcripts/660964-q4-2026/",
+      "note": "CEO80B以上可能更多资金；CFO改现金条款，非券商推测",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F10",
+      "ticker": "SMCI",
+      "published": "2026-09-08",
+      "type": "opinion",
+      "access_status": "opened_relevant_body",
+      "url": "https://www.aol.com/articles/don-t-fall-supermicro-margin-111002000.html",
+      "note": "Trey Thoelcke反方，Yahoo同稿打开失败但AOL正文成功；一篇只计一次",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F11",
+      "ticker": "ENPH",
+      "published": "2026-09-14",
+      "type": "primary",
+      "access_status": "opened_relevant_body",
+      "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+      "note": "11月演示2027pilot；无Q1承诺",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F12",
+      "ticker": "ENPH",
+      "published": "2026-09-21",
+      "type": "opinion_secondary",
+      "access_status": "opened_public_short_body_date_inherited",
+      "url": "https://www.tipranks.com/news/the-fly/enphase-energy-price-target-lowered-to-47-from-55-at-goldman-sachs-thefly-news",
+      "note": "Buy保留但55降47，日期由搜索结果及先轮核验；本轮日期未显示，公开短正文已读，不声称券商全文",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F13",
+      "ticker": "CLS",
+      "published": "2026-07-28",
+      "type": "opinion_secondary",
+      "access_status": "search_excerpt_rejected_numeric_conflict",
+      "url": "https://www.investing.com/news/analyst-ratings/stifel-raises-celestica-stock-price-target-to-500-on-ai-demand-93CH-4817857",
+      "note": "转载6.63B/3.58与原始4.70B/2.54冲突，财务数字不用",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    },
+    {
+      "id": "F14",
+      "ticker": "ENPH",
+      "published": "2026-10-05",
+      "type": "opinion_secondary",
+      "access_status": "search_excerpt",
+      "url": "https://aryafin.com/stockappnews/",
+      "note": "Oppenheimer55线索；未读券商全文",
+      "eligible_before_cutoff": true,
+      "accessed_utc": "2026-10-13T05:12:11.485747+00:00"
+    }
+  ],
+  "access_rule": "相关正文非宣称整页全文；搜索片段/失败单列；同稿不算多份独立证据"
+}

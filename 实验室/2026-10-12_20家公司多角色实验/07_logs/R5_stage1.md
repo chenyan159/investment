@@ -1,0 +1,1 @@
+R5 first stage: full 245-row screen completed; focus 20 new non-AI names plus industrial/software/semiconductor alternatives. Price fields are frozen anchors, forward EPS not independently verified. No other researcher files read.

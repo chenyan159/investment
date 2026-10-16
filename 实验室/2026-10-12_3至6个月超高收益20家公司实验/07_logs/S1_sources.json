@@ -1,0 +1,730 @@
+[
+  {
+    "id": "P01",
+    "tickers": [
+      "MU"
+    ],
+    "event_date": "2026-09-30",
+    "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "财报、资产负债表及现金流指定段；非10-K全文。现金及投资73.453B、债5.179B、长期客户负债12.895B。"
+  },
+  {
+    "id": "P02",
+    "tickers": [
+      "SNDK"
+    ],
+    "event_date": "2026-08-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q4业绩/指引、资产负债表、现金流；Q4 CFO7.126B中refund1.360、contract0.731、应付税0.730B的贡献。"
+  },
+  {
+    "id": "P03",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-06-01",
+    "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-closes-365bn-investment-grade-gpu-financing",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "正文及脚注：6%债息；3.31%把1.94B预付当0%资金，均不含费用。"
+  },
+  {
+    "id": "P04",
+    "tickers": [
+      "AAOI"
+    ],
+    "event_date": "2026-10-05",
+    "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "ATM完成：5,694,845股，净587,999,985.89美元。"
+  },
+  {
+    "id": "P05",
+    "tickers": [
+      "CRDO"
+    ],
+    "event_date": "2026-09-01",
+    "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "业绩、指引、GAAP桥；Q2 525–535M，GAAP经营利润120.7M/479M，调整EPS不能直接等于经济NOPAT。"
+  },
+  {
+    "id": "P06",
+    "tickers": [
+      "SMCI"
+    ],
+    "event_date": "2026-08-11",
+    "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "初步公告正文财表，Q4 CFO0.747B/全年-6.810B，FY27收入65–72B。公告明确未经审计，最终10-K优先。"
+  },
+  {
+    "id": "P07",
+    "tickers": [
+      "CRWV"
+    ],
+    "event_date": "2026-08-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "打开10-Q并定向读折旧/技术基础设施费用，Q2 PP&E D&A1.4B；未读3399行全文。"
+  },
+  {
+    "id": "P08",
+    "tickers": [
+      "POET"
+    ],
+    "event_date": "2026-08-13",
+    "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q2收入0.570M、现金短投796.3M；同比高增长基数极小。"
+  },
+  {
+    "id": "P09",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": "2026-07-27",
+    "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "直接打开业绩首段，收入4.70B同比62%；财务细节另继承冻结公司。"
+  },
+  {
+    "id": "P10",
+    "tickers": [
+      "MOD"
+    ],
+    "event_date": "2026-10-01",
+    "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "分拆完成、现金约156M用于还债；10/12新购不能享旧分派。"
+  },
+  {
+    "id": "P11",
+    "tickers": [
+      "UCTT"
+    ],
+    "event_date": "2026-08-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q2收入644.9M、GAAP经营率4.6%；Q3收入700–750M、调整EPS0.83–1.03。"
+  },
+  {
+    "id": "P12",
+    "tickers": [
+      "COHR"
+    ],
+    "event_date": "2026-03-02",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "客户联合公告：非独家多年采购承诺另2B股权投资；与供应商同一联合事件不算两项独立订单。"
+  },
+  {
+    "id": "P13",
+    "tickers": [
+      "APLD"
+    ],
+    "event_date": "2026-10-07",
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q1业绩、10/1 250MW Ready for Service、权益与现金段；不是CRWV终端客户GPU验收。"
+  },
+  {
+    "id": "P14",
+    "tickers": [
+      "NBIS"
+    ],
+    "event_date": "2026-08-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "半年财表指定段：非受限现金8.0421B、受限1.056B；股权重估收益非云现金。未读全文。"
+  },
+  {
+    "id": "P15",
+    "tickers": [
+      "NVDA"
+    ],
+    "event_date": "2026-08-26",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q2收入96.221B、Q3指引108B±2%；Rubin生产部署，公司披露不等于终端资本回报。"
+  },
+  {
+    "id": "P16",
+    "tickers": [
+      "AVGO"
+    ],
+    "event_date": "2026-09-02",
+    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q3收入29.591B、FCF13.665B；Q4收入34.8B为指引。"
+  },
+  {
+    "id": "P17",
+    "tickers": [
+      "TTMI"
+    ],
+    "event_date": "2026-09-30",
+    "url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Epiq完成1.1B现金并购，300M TLA+800M TLB和6.75%票据融资。"
+  },
+  {
+    "id": "P18",
+    "tickers": [
+      "AEIS"
+    ],
+    "event_date": "2026-08-03",
+    "url": "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "PDF首页与资产负债表；Q2收入574M、现金1,396.5M、账面债1,264.2M。未做全PDF视觉复核。"
+  },
+  {
+    "id": "P19",
+    "tickers": [
+      "MU",
+      "SNDK"
+    ],
+    "event_date": "2026-09-30",
+    "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+    "access_status": "opened_relevant_body",
+    "source_type": "industry_primary",
+    "access_date_utc": "2026-10-13",
+    "note": "独立行业预测：Q4 DRAM+10–15%、NAND+15–20%；消费弱/涨幅放缓亦在正文。"
+  },
+  {
+    "id": "P20",
+    "tickers": [
+      "MU",
+      "CRDO",
+      "AAOI",
+      "NVDA",
+      "AVGO",
+      "MOD"
+    ],
+    "event_date": "2026-10-12",
+    "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "2027部署、8堆HBM4、167kW；支持需求同时展示降低每任务内存消耗，没有名单供应商分单证据。精确发布时间未核。"
+  },
+  {
+    "id": "P21",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-08-27",
+    "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Horizon1交付、H2–4 Q4目标；1B operating ARR/4B contracted ARR，脚注要求随后测试验收，不能当FY收入。"
+  },
+  {
+    "id": "P22",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-05-07",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "30M股五年购买权@$70，最大2.1B，非现有现金/强制认购。"
+  },
+  {
+    "id": "P23",
+    "tickers": [
+      "POET"
+    ],
+    "event_date": "2026-08-06",
+    "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "客户披露累计900M+融资及首款产品已商业交付，未确认该产品含POET。"
+  },
+  {
+    "id": "P24",
+    "tickers": [
+      "SNDK"
+    ],
+    "event_date": "2026-09-29",
+    "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "成功打开官方财报日公告，确认10/29。"
+  },
+  {
+    "id": "P25",
+    "tickers": [
+      "SMCI"
+    ],
+    "event_date": "2026-08-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+    "access_status": "opened_index_and_partial_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "成功打开10-K，长正文未全读；具体采购/最终稀释条款仍送V1。"
+  },
+  {
+    "id": "P26",
+    "tickers": [
+      "COHR"
+    ],
+    "event_date": "2026-08-12",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/august-12/earnings-release-fy26-q4.pdf",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "PDF首页：Q4收入2.05B、GAAP GM38.5%、EPS1.19；非全15页阅读。"
+  },
+  {
+    "id": "P27",
+    "tickers": [
+      "COHR"
+    ],
+    "event_date": "2026-09-21",
+    "url": "https://www.coherent.com/news/press-releases/launches-photonlink-integrated-optics-platform-ai-infrastructure",
+    "access_status": "opened_partial_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "成功打开产品发布；本轮未完整提取所有时间，Q4收入目标继承冻结公司段。"
+  },
+  {
+    "id": "P28",
+    "tickers": [
+      "AAOI"
+    ],
+    "event_date": "2026-08-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "Q3 255–290M、非GAAP GM29–30.5%、92.8M指引股数；公告年底高速产能650k/月，媒体930k口径须对比电话会。"
+  },
+  {
+    "id": "P29",
+    "tickers": [
+      "AAOI"
+    ],
+    "event_date": null,
+    "url": "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+    "access_status": "opened_partial_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "原始订单页面已打开；正文日期/金额将在V1追核，本轮不据此增加新订单。"
+  },
+  {
+    "id": "P30",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": "2026-10-06",
+    "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "财报及投资者日正式公告已打开，10/27会议为官方日历。"
+  },
+  {
+    "id": "P31",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": "2026-10-12",
+    "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged",
+    "access_status": "opened_partial_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "DS6005 CPO发布原始页面打开；没有新增量产收入金额，不能把演示增加到FY27模型。"
+  },
+  {
+    "id": "P32",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-02-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+    "access_status": "opened_relevant_body",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "合同2025-11-02生效；本轮查退款段：一般不退款但明确例外，未逐项重新阅读优先顺位。"
+  },
+  {
+    "id": "E01",
+    "tickers": [
+      "MU",
+      "SNDK"
+    ],
+    "event_date": "2026-07-13",
+    "url": "https://www.axios.com/2026/07/13/stocks-memory-earnings-ai",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Bernstein Mark Newman认为低倍数定价盈利将崩塌；Gil Luria认为AI改变商业。报道不是独立订单证明；百字限额只作简述。"
+  },
+  {
+    "id": "E02",
+    "tickers": [
+      "MU",
+      "SNDK"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://www.tipranks.com/news/why-memory-stocks-micron-sandisk-and-sk-hynix-are-moving-lower-today-october-8-and-what-wall-street-sees-next?mod=mw_quote_news",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "搜索署名Ben Yoffe但打开为Auto-Generated，署名冲突。Citi Atif Malik SNDK2100，MU共识1630.19为12个月；现货小跌与HDD扩产不直接等于NAND崩塌。"
+  },
+  {
+    "id": "E03",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://www.tipranks.com/news/why-is-iren-stock-sinking-today-october-8",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Solomon Oladipupo：BTIG Gregory Lewis Buy电力/续约多头；Jones Kevin Dede Hold客户信用反方。研报未取得。"
+  },
+  {
+    "id": "E04",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-10-07",
+    "url": "https://www.tipranks.com/news/iren-stock-plunges-as-semianalysis-flags-data-center-problems",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Solomon Oladipupo引SemiAnalysis加拿大GPU故障，也载Texas设施较好；不是已核实SLA违约。"
+  },
+  {
+    "id": "E05",
+    "tickers": [
+      "IREN"
+    ],
+    "event_date": "2026-10-07",
+    "url": "https://www.ai-primer.com/engineer/stories/iren-canadian-gpu-reliability",
+    "access_status": "opened_relevant_body_original_x_failed",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "打开二手正文与原X链接入口；原X三帖点击均Internal Error。未获得原作者持仓/做空利益披露，不能自称已读空头原文。"
+  },
+  {
+    "id": "E06",
+    "tickers": [
+      "CRWV"
+    ],
+    "event_date": "2026-10-05",
+    "url": "https://www.tipranks.com/news/can-coreweave-stock-rally-180-crwv-gets-wall-street-high-250-price-target",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Solomon Oladipupo引John McPeake10/1 Buy250：旧A100三年合同/涨价/企业软件是多头机制；研报全文与明确目标期限未取得，不当6月目标。"
+  },
+  {
+    "id": "E07",
+    "tickers": [
+      "CRWV"
+    ],
+    "event_date": "2026-10-12",
+    "url": "https://www.zacks.com/stock/news/3004943/crwv-shares-slide-25-in-6-months-time-to-buy-hold-or-cut-losses",
+    "access_status": "search_excerpt_open_blocked",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Shreya Majumder：资本开支35–39B、亏损融资压力；搜索可见摘要，打开反爬。精确发布时间未核，不断言收盘前。"
+  },
+  {
+    "id": "E08",
+    "tickers": [
+      "AAOI"
+    ],
+    "event_date": "2026-10-09",
+    "url": "https://247wallst.com/investing/2026/10/09/applied-optoelectronics-has-fallen-hard-for-6-months-this-wall-street-analyst-expects-its-going-to-double-soon/",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Alex Sirois转述Rosenblatt Mike Genovese220，12月目标不是6月；800G/1.6T/40%GM为路径，媒体产能口径930k须核。"
+  },
+  {
+    "id": "E09",
+    "tickers": [
+      "SMCI"
+    ],
+    "event_date": "2026-08-12",
+    "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/08/61150761/super-micros-guidance-signals-a-sharp-acceleration-easing-fears-its-losing-ground-to-rivals",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Priya Nigam：Rosenblatt Sajal Dogra51 Buy、Needham Quinn Bolton46 Buy；Wedbush Matt Bryson40 Neutral，强调Q4组合毛利不可外推。未读券商全文，目标期限不明。"
+  },
+  {
+    "id": "E10",
+    "tickers": [
+      "CRDO"
+    ],
+    "event_date": "2026-09-02",
+    "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61572886/these-analysts-revise-their-forecasts-on-credo-technology-group-following-q1-results",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Avi Kapoor：Vivek Arya Buy275由340降、Mike Genovese Neutral235由215升；没有共同支持半年400。"
+  },
+  {
+    "id": "E11",
+    "tickers": [
+      "POET"
+    ],
+    "event_date": "2026-09-22",
+    "url": "https://247wallst.com/investing/2026/09/22/one-under-the-radar-stock-with-100-upside-potential/",
+    "access_status": "opened_relevant_body",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Vandita Jadeja：12个月18.11是媒体算法目标，50%信心未校准，不继承；有资金/客户多头，也指出产能时间风险。"
+  },
+  {
+    "id": "E12",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": "2026-10-06",
+    "url": "https://www.fool.ca/2026/10/06/celesticas-revenue-jumped-62-and-i-like-the-stocks-outlook/",
+    "access_status": "search_excerpt_open_failed",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Rajiv Nanjapla多头以业绩/扩产为据；搜索摘要可见，打开失败；长期buy非半年2x。"
+  },
+  {
+    "id": "E13",
+    "tickers": [
+      "MOD"
+    ],
+    "event_date": "2026-10-02",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/modine-advances-pure-play-transformation-150159919.html",
+    "access_status": "search_excerpt_open_failed",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Oppenheimer纯业务分拆/11月分析师日多头，二手摘要；打开失败，目标日期不可移植。"
+  },
+  {
+    "id": "E14",
+    "tickers": [
+      "UCTT"
+    ],
+    "event_date": "2026-09-18",
+    "url": "https://www.zacks.com/stock/news/2991879/uctt-rides-on-solid-growth-dynamics-should-you-buy-the-stock-now?cid=CS-MKTWTCH-HL-analyst_blog%7Cinvestment_ideas-2991879&mod=mw_quote_news",
+    "access_status": "search_excerpt_open_blocked",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Supriyo Bose：2027 EPS估计6.59，2026 3.04；行业/盈利上修多头。打开反爬，仅搜索摘要。"
+  },
+  {
+    "id": "E15",
+    "tickers": [
+      "UCTT"
+    ],
+    "event_date": "2026-09-16",
+    "url": "https://uk.finance.yahoo.com/research/reports/ARGUS_3475_QuantitativeReport_1789516800000",
+    "access_status": "search_excerpt_only",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Argus量化目标下调62；仅搜索结果/付费下载入口，未读原因，不伪造空头论据。"
+  },
+  {
+    "id": "E16",
+    "tickers": [
+      "COHR"
+    ],
+    "event_date": "2026-09-30",
+    "url": "https://www.benzinga.com/quote/COHR/price-targets",
+    "access_status": "search_excerpt_only",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "搜索评级表：Daniel Zhu Outperform350；9/24 Genovese Buy500；8/13 Meta Marshall EW375、Dave Kang Neutral345。各机构原文未取得。"
+  },
+  {
+    "id": "E17",
+    "tickers": [
+      "APLD"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/applied-digital-apld-stock-gets-121122243.html",
+    "access_status": "search_excerpt_open_429",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "SimplyWallSt汇总：Needham70下调83，监管融资；打开429，只搜索摘要。"
+  },
+  {
+    "id": "E18",
+    "tickers": [
+      "APLD"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://www.streetinsider.com/Analyst%2BComments/Applied%2BDigital%2B%28APLD%29%2BReiterated%2Bat%2BMarket%2BOutperform%2Bby%2BCitizens%2Bas%2BDevelopment%2BPipeline%2BTurns%2BInto%2BOperational%2BCapacity/27162627.html",
+    "access_status": "search_excerpt_only",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Gregory Miller60 Market Outperform，摘要显示21x FY28 EBITDA；原付费全文未读，需权益瀑布。"
+  },
+  {
+    "id": "E19",
+    "tickers": [
+      "NBIS"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://finance.yahoo.com/quote/NBIS/analyst-insights/",
+    "access_status": "search_excerpt_only",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "搜索表：Rosenblatt Buy304(10/8)、Rothschild Sell(9/21)、DA Davidson Neutral250(8/18)；未取得各自投资推理全文。"
+  },
+  {
+    "id": "E20",
+    "tickers": [
+      "NVDA"
+    ],
+    "event_date": "2026-10-05",
+    "url": "https://www.zacks.com/stock/news/2999969/nvidia-corporation-nvda-is-attracting-investor-attention-here-is-what-you-should-know?cid=CS-CHARTMILL-FT-fundamental_analysis%7Cmost_searched_stocks-2999969",
+    "access_status": "search_excerpt_open_blocked",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Zacks Equity Research，搜索只有标题/有限正文，打开反爬；不据此捏造目标或多空，外部观点覆盖不足。"
+  },
+  {
+    "id": "E21",
+    "tickers": [
+      "AVGO"
+    ],
+    "event_date": "2026-10-02",
+    "url": "https://www.zacks.com/stock/news/2999575/why-is-broadcom-inc-avgo-down-38-since-last-earnings-report?art_rec=blog-realtime_blog-up_next-ID01-txt-2999575",
+    "access_status": "search_excerpt_open_blocked",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Zacks Equity Research：搜索显示FY26 AI收入上修，打开反爬；外部空方独立全文不足。"
+  },
+  {
+    "id": "E22",
+    "tickers": [
+      "TTMI"
+    ],
+    "event_date": "2026-09-21",
+    "url": "https://trendonify.com/news/ratings/needham-lowers-price-target-on-ttm-technologies-to-175-from-220-maintains-buy-rating-256070",
+    "access_status": "search_excerpt_only",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "James Ricchiuti Buy175由220降，搜索摘要；原因未取得不编造。"
+  },
+  {
+    "id": "E23",
+    "tickers": [
+      "AEIS"
+    ],
+    "event_date": "2026-10-08",
+    "url": "https://www.zacks.com/stock/news/3003142/advanced-energy-soars-40-ytd-is-the-stock-worth-buying-now",
+    "access_status": "search_excerpt_open_blocked",
+    "source_type": "external_view",
+    "access_date_utc": "2026-10-13",
+    "note": "Nilanshi Mukherjee：forward12m PE25.05高于板块21.39；搜索摘要可見，打开反爬，不直接沿用异期EPS。"
+  },
+  {
+    "id": "F01",
+    "tickers": [
+      "SNDK"
+    ],
+    "event_date": "2026-08-05",
+    "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+    "access_status": "open_internal_error",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "IR失败后SEC P02成功。"
+  },
+  {
+    "id": "F02",
+    "tickers": [
+      "AAOI"
+    ],
+    "event_date": null,
+    "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2026-financial",
+    "access_status": "open_internal_error",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "失败后SEC P28成功。"
+  },
+  {
+    "id": "F03",
+    "tickers": [
+      "POET"
+    ],
+    "event_date": null,
+    "url": "https://www.poet-technologies.com/news/poet-technologies-provides-business-update",
+    "access_status": "open_internal_error",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "尝试业务更新失败，不声称9/30新增已核。"
+  },
+  {
+    "id": "F04",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": null,
+    "url": "https://celestica.gcs-web.com/node/17621/html",
+    "access_status": "initial_open_then_failed",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "初次返回2217行元信息，二次打开/查找失败；不能算内容已充分核验，改用P09/P30。"
+  },
+  {
+    "id": "F05",
+    "tickers": [
+      "CLS"
+    ],
+    "event_date": "2026-09-08",
+    "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-host-2026-investor-and-analyst-day-october-27-2026",
+    "access_status": "open_internal_error",
+    "source_type": "primary",
+    "access_date_utc": "2026-10-13",
+    "note": "失败；改用10/6官方会议公告。"
+  }
+]

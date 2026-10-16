@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-13T03:40:31.220245+00:00",
+  "selected_count": 20,
+  "universe_count": 245,
+  "all_five_full_screens_verified": true,
+  "unique_and_in_universe": true,
+  "role_evidence_gates": 20,
+  "independently_recalculated_models": 29,
+  "independently_recalculated_scenarios": 87,
+  "model_sha256": "53bf75813a86f394b435110bb6f02567a16df4c80502388ece5aa50a5a4d6448",
+  "excluded_meaning": "Unselected companies were screened at differing depth, not proven poor investments. Role gate verifies documented review chain, not future success.",
+  "report_cards": 20,
+  "per_card_source_min": 3,
+  "per_card_source_max": 9,
+  "chair_status": "final_chair_decision_subject_to_future_operating_conditions",
+  "markdown_draft_markers": false
+}

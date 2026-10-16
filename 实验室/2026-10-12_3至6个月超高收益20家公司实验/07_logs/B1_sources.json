@@ -1,0 +1,547 @@
+{
+  "role": "B1",
+  "cutoff": "2026-10-12T20:50:00-07:00",
+  "access_policy": "只陈述实际已访问范围。所有正文/搜索状态逐条登记，后续网站动态内容及未确切截时信息不视为截止前新事实。",
+  "sources": [
+    {
+      "id": "P01",
+      "title": "POET FAQ",
+      "publication_date": "2026-07-14",
+      "url": "https://www.poet-technologies.com/blog/faq-production-orders-cash-position-and-the-path-to-greater-revenue",
+      "access_status": "primary_body",
+      "read_scope": "订单/产量/融资段已读；830M标题与正文募集口径不同",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P02",
+      "title": "ENPH IQ SST",
+      "publication_date": "2026-09-08",
+      "url": "https://investor.enphase.com/news-releases/news-release-details/enphase-advances-iq-solid-state-transformer-development-ai-data",
+      "access_status": "primary_body",
+      "read_scope": "演示、客户试点、系统验证段已读；newsroom域曾403，investor域成功",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P03",
+      "title": "CAMINUS–Amprius",
+      "publication_date": "2026-10-05",
+      "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+      "access_status": "partner_primary_body",
+      "read_scope": "合作方发布，正文资格与Q1量产；与公司新闻不是两个订单",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P04",
+      "title": "FLNC guidance cut",
+      "publication_date": "2026-09-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "access_status": "primary_body",
+      "read_scope": "降指引及现金计划正文",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P05",
+      "title": "PSIX refinancing 8-K",
+      "publication_date": "2026-09-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000119312526408371/d28951d8k.htm",
+      "access_status": "primary_sections",
+      "read_scope": "Item1.01融资条件与旧额度终止；不是全附件审计",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P06",
+      "title": "RDW Q2",
+      "publication_date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "access_status": "primary_sections",
+      "read_scope": "业绩与现金概况；未独立逐格审计股数/优先股表",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P07",
+      "title": "MU Q4 FY26",
+      "publication_date": "2026-09-30",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "access_status": "primary_sections",
+      "read_scope": "财务摘要、Q1指引和现金，未全篇附注",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P08",
+      "title": "SNDK Q4 FY26",
+      "publication_date": "2026-08-05",
+      "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "access_status": "primary_sections",
+      "read_scope": "收入分部、利润口径、负债和指引",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P09",
+      "title": "IREN FY26",
+      "publication_date": "2026-08-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+      "access_status": "primary_sections",
+      "read_scope": "ARR定义脚注、Horizon验收、GPU融资成本",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P10",
+      "title": "Microsoft Maia",
+      "publication_date": "2026-10-12",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "access_status": "customer_primary_body_date_only",
+      "read_scope": "正文已读；确切发布时间未得，仅作日期级行业背景，不能认定20:50之前已公开或指定某供应商",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P11",
+      "title": "SMCI Q4 FY26",
+      "publication_date": "2026-08-11",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "access_status": "primary_sections",
+      "read_scope": "业绩、指引、资本结构；发布当日未经审计不等于截止日仍无10K",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P12",
+      "title": "SMCI earnings call transcript",
+      "publication_date": "2026-08-11",
+      "url": "https://stockanalysis.com/stocks/smci/transcripts/660964-q4-2026/",
+      "access_status": "management_transcript_third_party_sections",
+      "read_scope": "管理层原话转录，读mix/关税/E&O/两类法相关准备发言与Q&A；非独立经营证明",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P13",
+      "title": "SMCI 10-K",
+      "publication_date": "2026-08-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "access_status": "primary_sections",
+      "read_scope": "仅EPS两类法政策相关段；非全文10K审计",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P14",
+      "title": "VISN Q2",
+      "publication_date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+      "access_status": "primary_sections",
+      "read_scope": "Aurora/保留成本/现金展望/调整指引段；H2退税时点继承控制器电话会核验",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P15",
+      "title": "AAOI ATM",
+      "publication_date": "2026-10-05",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+      "access_status": "primary_body",
+      "read_scope": "ATM完成股数、净募资、用途",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P16",
+      "title": "KYTX rolling BLA",
+      "publication_date": "2026-05-12",
+      "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
+      "access_status": "primary_body",
+      "read_scope": "pre-BLA沟通系公司转述FDA；临床/CMC与提交计划，不等于批准承诺",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P17",
+      "title": "BNTX Q2",
+      "publication_date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "access_status": "primary_sections",
+      "read_scope": "现金、gotistobart与T-Pam项目计划，未全篇审计",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P18",
+      "title": "LEU DOE",
+      "publication_date": "2026-07-01",
+      "url": "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+      "access_status": "primary_body",
+      "read_scope": "900M签署/选项/2029新产能/演示级商业化过渡",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P19",
+      "title": "ASTS Q2 presentation",
+      "publication_date": "2026-08-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342540/asts-ex99_2.htm",
+      "access_status": "primary_sections",
+      "read_scope": "45颗目标和生产进度脚注",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P20",
+      "title": "ASTS Q2 release",
+      "publication_date": "2026-08-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342540/asts-ex99_1.htm",
+      "access_status": "primary_search_body",
+      "read_scope": "搜索返回正文；非全文打开；非商业beta/收入指引",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P21",
+      "title": "AT&T satellite progress",
+      "publication_date": "2025-12-29",
+      "url": "https://about.att.com/blogs/2025/att-satellite-successes.html",
+      "access_status": "partner_search_body",
+      "read_scope": "搜索正文旧H1 beta计划；只用于识别计划已后移",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P22",
+      "title": "AOSL Q4",
+      "publication_date": "2026-08-12",
+      "url": "https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Reports-Financial-Results-for-Fiscal-Fourth-Quarter-and-Fiscal-Year-Ended-June-30-2026/default.aspx",
+      "access_status": "primary_sections",
+      "read_scope": "Q4与下季毛利/费用/现金指引",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P23",
+      "title": "UCTT Q2",
+      "publication_date": null,
+      "url": "https://www.prnewswire.com/news-releases/ultra-clean-reports-second-quarter-2026-financial-results-302841520.html",
+      "access_status": "primary_sections",
+      "read_scope": "业绩及Q3指引经find返回正文；日期需以页面时间为准；本轮未另核具体发布日，使用财报期间/冻结与原页上下文，勿将猜测日当已核。",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P24",
+      "title": "AVAV Q1 FY27",
+      "publication_date": "2026-09-09",
+      "url": "https://investor.avinc.com/node/21391",
+      "access_status": "partial_then_failed",
+      "read_scope": "初次页有338行，正文关键LMS检索失败；不当独立经营核验",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P25",
+      "title": "APLD Q1 FY27",
+      "publication_date": "2026-10-07",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "access_status": "primary_sections",
+      "read_scope": "通电/租赁/NOI/普通股损益与NCI表",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P26",
+      "title": "CRDO Q1 FY27",
+      "publication_date": "2026-09-01",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "access_status": "primary_sections",
+      "read_scope": "收入利润及费用调节表、Q2指引",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P27",
+      "title": "TE Q2",
+      "publication_date": null,
+      "url": "https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-second-quarter-2026-results",
+      "access_status": "search_body_open_failed",
+      "read_scope": "收入250.1M等来自搜索返回；融资及G2细项继承首轮，未全篇核验，日期待确认；本轮未另核具体发布日，使用财报期间/冻结与原页上下文，勿将猜测日当已核。",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P28",
+      "title": "RKLB Q2",
+      "publication_date": "2026-08-10",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts",
+      "access_status": "search_body_open_failed",
+      "read_scope": "437M发射签约正文搜索；Neutron最新首飞日期未独立确认",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P29",
+      "title": "OKLO NRC preapplication",
+      "publication_date": null,
+      "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
+      "access_status": "regulator_search_only_open_failed",
+      "read_scope": "当前页面检索为预申请，页面时间动态；不能当截至日许可状态完整证明",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P30",
+      "title": "CC Q2",
+      "publication_date": "2026-08-04",
+      "url": "https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-second-quarter-results",
+      "access_status": "primary_search_body",
+      "read_scope": "搜索正文财务/分部/指引；未全文打开",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P31",
+      "title": "GNRC Amazon 8-K",
+      "publication_date": "2026-09-16",
+      "url": "https://investors.generac.com/static-files/7fd7f15a-24c2-4822-b08b-9a2b3319dab6",
+      "access_status": "primary_search_body",
+      "read_scope": "搜索返回认股权和采购里程碑；未视觉审计PDF",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P32",
+      "title": "MRAM news list",
+      "publication_date": "2026-09-29",
+      "url": "https://www.everspin.com/press-releases",
+      "access_status": "primary_search_only",
+      "read_scope": "CXL演示条目；未取得量产订单证明",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P33",
+      "title": "TTMI Q2 10-Q",
+      "publication_date": null,
+      "url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-335107/ttmi-20260629.htm",
+      "access_status": "primary_search_body",
+      "read_scope": "搜索正文DC网络占比/毛利/经营利润；补充Q3指引来自IR首页搜索；本轮未另核具体发布日，使用财报期间/冻结与原页上下文，勿将猜测日当已核。",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P34",
+      "title": "ACMR panel tools",
+      "publication_date": "2026-08-07",
+      "url": "https://ir.acmr.com/news-releases/news-release-details/acm-researchs-ultra-ecp-ap-p-horizontal-panel-electroplating/",
+      "access_status": "primary_body",
+      "read_scope": "量产机H1 2027、评估机Q4 2026",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P35",
+      "title": "AEIS Q2 transcript",
+      "publication_date": null,
+      "url": "https://stockanalysis.com/stocks/aeis/transcripts/660299-q2-2026/",
+      "access_status": "management_transcript_search_only",
+      "read_scope": "关税退款片段；非完整原始核验，准确日期待复核；本轮未另核具体发布日，使用财报期间/冻结与原页上下文，勿将猜测日当已核。",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P36",
+      "title": "WOLF conditional commitment",
+      "publication_date": "2026-10-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526416987/d122407d8k.htm",
+      "access_status": "primary_sections",
+      "read_scope": "Item8.01及条件/稀释风险完整相关段",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P37",
+      "title": "NVTS Claros close",
+      "publication_date": "2026-10-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926114051/tm2626897d3_ex99-1.htm",
+      "access_status": "primary_body",
+      "read_scope": "已交割及10/20 webinar；未提供近端大额量产收入",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P38",
+      "title": "FLNC BMO reduction",
+      "publication_date": "2026-09-17",
+      "url": "https://ca.investing.com/news/stock-market-news/bmo-cuts-fluence-energy-stock-price-target-on-guidance-reduction-93CH-4843030",
+      "access_status": "external_opinion_body",
+      "read_scope": "BMO分析师意见二手摘要；AI-assisted/edited，不是原研报；旧UBS/MS附带意见非降指引后新意见",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "外部观点，事实须回原源"
+    },
+    {
+      "id": "P39",
+      "title": "PSIX bull commentary",
+      "publication_date": "2026-10-08",
+      "url": "https://disruptorinvesting.com/daily-disruptor-psix-the-data-center-generator-builder-whose-operating-profit-doubled-in-one-quarter/",
+      "access_status": "external_opinion_sections",
+      "read_scope": "读开头经营杠杆论；站点品牌署名，未取得个人实名；旧融资口径不采用，实时行情不采用",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "外部观点，事实须回原源"
+    },
+    {
+      "id": "P40",
+      "title": "PSIX Q2 SEC",
+      "publication_date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "access_status": "primary_sections",
+      "read_scope": "Q2毛利/SG&A及H2计划；现金为6月底非融资后",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P41",
+      "title": "COHR PhotonLink",
+      "publication_date": "2026-09-21",
+      "url": "https://ir.coherent.com/news-releases/news-release-details/coherent-launches-photonlinktm-integrated-optics-platform-ai",
+      "access_status": "primary_body",
+      "read_scope": "客户engagement/anchor agreements和Q4营收启动",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P42",
+      "title": "CRWV Q2",
+      "publication_date": "2026-08-11",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "access_status": "primary_sections",
+      "read_scope": "合并利润、利息与折旧调节表；六年折旧细项本轮未重新取得",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P43",
+      "title": "NVDA Q2 FY27",
+      "publication_date": "2026-08-26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "access_status": "primary_sections",
+      "read_scope": "利润、指引、非GAAP方法已读；FY27开始NG亦含SBC",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P44",
+      "title": "AMBA Q2 FY27",
+      "publication_date": "2026-09-03",
+      "url": "https://investor.ambarella.com/news-releases/news-release-details/ambarella-inc-announces-second-quarter-fiscal-year-2027",
+      "access_status": "primary_sections",
+      "read_scope": "利润、指引、9M项目终止抵减与渠道协议",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P45",
+      "title": "PNR Taco close",
+      "publication_date": "2026-10-01",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "access_status": "primary_search_body",
+      "read_scope": "搜索正文明确14亿美元已交割",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P46",
+      "title": "CLS earnings calendar",
+      "publication_date": "2026-10-06",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and",
+      "access_status": "primary_search_body",
+      "read_scope": "10/26收盘后业绩，10/27管理层会议",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P47",
+      "title": "AVGO Q3",
+      "publication_date": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "access_status": "primary_sections",
+      "read_scope": "财务摘要、Q4指引、NG定义段",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P48",
+      "title": "ICHR Q2 10-Q",
+      "publication_date": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm",
+      "access_status": "primary_sections",
+      "read_scope": "收入/毛利桥/税损益，继承root反解但自己重新读源；本轮未另核具体发布日，使用财报期间/冻结与原页上下文，勿将猜测日当已核。",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "P49",
+      "title": "ACMR Shanghai backlog",
+      "publication_date": "2026-09-30",
+      "url": "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+      "access_status": "primary_body",
+      "read_scope": "独立读backlog定义、10/28预报及11月全报时点；S2先提供线索不是独立第二份原始证据",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "原始披露/载体，管理层预期不等于实现"
+    },
+    {
+      "id": "L01",
+      "title": "首轮X1–X5",
+      "publication_date": null,
+      "url": "02_round1/",
+      "access_status": "local_inherited",
+      "read_scope": "读5JSON重点事件字段与5MD开篇；非全部MD逐字阅读，不能算5个原始来源",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "继承线索，非独立外源"
+    },
+    {
+      "id": "L02",
+      "title": "控制器AMPX/PSIX/RDW/FLNC/ENPH/VISN/POET证据",
+      "publication_date": null,
+      "url": "04_verification/",
+      "access_status": "local_inherited",
+      "read_scope": "初始线索，决定性事实另开原文；价格沿用控制器已核历史收盘",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "继承线索，非独立外源"
+    },
+    {
+      "id": "L03",
+      "title": "控制器ICHR/PENG/AEHR复活审查",
+      "publication_date": null,
+      "url": "04_verification/控制器_未提名公司复活审查_ICHR_PENG_AEHR.md",
+      "access_status": "local_inherited",
+      "read_scope": "全文读取；ICHR毛利原文另核，PENG/AEHR未重复核验",
+      "accessed_date": "2026-10-12 America/Los_Angeles (访问晚于事实截止)",
+      "independence": "继承线索，非独立外源"
+    },
+    {
+      "id": "P50",
+      "title": "AVAV Q1 FY27 corrected transcript",
+      "publication_date": "2026-09-09",
+      "url": "https://investor.avinc.com/static-files/2e8254ff-1cc6-4041-bd07-943248b7820d",
+      "access_status": "issuer_hosted_transcript_sections",
+      "read_scope": "通过IR首页点击获得；读管理层准备段页3–9及部分Q&A，未全读29页也未截图视觉审计；重点已纳入指引奖项、CapEx和现金、产能时点",
+      "accessed_date": "2026-10-12 America/Los_Angeles",
+      "independence": "公司托管管理层转录，非独立客户认可"
+    },
+    {
+      "id": "L04",
+      "title": "S1专项结论后置挑战",
+      "publication_date": null,
+      "url": "03_round2/S1_ai_deep.json",
+      "access_status": "local_inherited",
+      "read_scope": "先完成独立争议池与主要查源，再读18公司recommendation/strongest_bear/valuation_constraint以及MU开篇；未读全文59KB MD，非独立原源",
+      "accessed_date": "2026-10-12 America/Los_Angeles",
+      "independence": "同任务同行推理"
+    }
+  ]
+}

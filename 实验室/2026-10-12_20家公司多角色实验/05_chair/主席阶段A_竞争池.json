@@ -1,0 +1,571 @@
+{
+  "phase": "A",
+  "status": "provisional_competition_pool_not_final",
+  "information_cutoff": "2026-10-12T19:40:00-07:00",
+  "observation_date": "2028-04-12",
+  "pool_count": 25,
+  "selection_method": "经营价值捕获、期限内催化、每股权益闭环和替代比较；不用票数或单一均值",
+  "source_scope": "五盲评表及重点正文、S1/S2、B1/B2、控制器三份补充；无新增独立外部访问；V1/V2未作为完成",
+  "candidates": [
+    {
+      "ticker": "NVDA",
+      "conditional_order": 1,
+      "status": "conditional_top20_not_final",
+      "mechanism": "平台利润核心",
+      "alternatives": [
+        "MU",
+        "AVGO",
+        "TSM"
+      ],
+      "decisive_issue": "费用已含SBC，不能二扣；540至680B收入对应EPS重新桥接，18EPS需要更高收入；区分Maia份额压力与总需求增长",
+      "verification_required": "季度收入/毛利/现金回收、FY28前瞻盈利、担保分期及非经营收益剔除",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S1",
+        "B1",
+        "B2",
+        "Controller产业"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "MU",
+      "conditional_order": 2,
+      "status": "conditional_top20_not_final",
+      "mechanism": "存储高盈利核心",
+      "alternatives": [
+        "SNDK",
+        "TSM"
+      ],
+      "decisive_issue": "纠正90%OP而保留官方强毛利；260B×88%-9.5B只是研究基准；SCA35%非每年全锁价",
+      "verification_required": "位元/价格/毛利单变量敏感性，客户押金不属股东现金，2028盈利锚与倍数",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R5",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "ADBE",
+      "conditional_order": 3,
+      "status": "conditional_top20_not_final",
+      "mechanism": "订阅价值修复",
+      "alternatives": [
+        "CRM",
+        "GOOGL"
+      ],
+      "decisive_issue": "保留持续SBC但不机械全用GAAP；AI收费与存量净席位分开；回购不能与现金双计",
+      "verification_required": "FY28收入31B/35%经济率与约380M股可辩护性；Canva竞争下有机ARR",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "PNR",
+      "conditional_order": 4,
+      "status": "conditional_top20_not_final",
+      "mechanism": "低预期工业恢复",
+      "alternatives": [
+        "CARR",
+        "AGCO"
+      ],
+      "decisive_issue": "Taco已交割，增加收入和债息同列；渠道回补不能掩盖份额损失",
+      "verification_required": "融资后经济EPS4.79桥、Pool售出和返利净价，独立渠道差异",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "Controller非AI"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "AVGO",
+      "conditional_order": 5,
+      "status": "conditional_top20_not_final",
+      "mechanism": "ASIC与软件盈利",
+      "alternatives": [
+        "NVDA",
+        "TSM"
+      ],
+      "decisive_issue": "SBC只扣一次；软件前置许可证与经常现金分开；ASIC整机转售不全享芯片毛利",
+      "verification_required": "FY28经济OP与FD、客户支持义务及净债，18个月与S1原12个月分开",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "CLS",
+      "conditional_order": 6,
+      "status": "conditional_top20_not_final",
+      "mechanism": "网络制造交付",
+      "alternatives": [
+        "SMCI",
+        "CRDO"
+      ],
+      "decisive_issue": "TRS重估剔除与薪酬经济成本不能混淆；HPS不能在CCS上重复加",
+      "verification_required": "36B收入/9%经营率是否已含持续SBC；客户供料、营运资金、130M股",
+      "read_role_links": [
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "ARGX",
+      "conditional_order": 7,
+      "status": "conditional_top20_not_final",
+      "mechanism": "商业化医药增长",
+      "alternatives": [
+        "ALNY",
+        "IONS"
+      ],
+      "decisive_issue": "8/17联合肌炎阳性不等于DM单独成功；UNITY失败单列；已有利润不能由税益虚增",
+      "verification_required": "ADS比例，FY28收入8.8B对8.1B分歧、正常税与64M股，额外竞争链",
+      "read_role_links": [
+        "R1",
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "BNTX",
+      "conditional_order": 8,
+      "status": "conditional_top20_not_final",
+      "mechanism": "有资金的临床组合",
+      "alternatives": [
+        "KYTX",
+        "IONS"
+      ],
+      "decisive_issue": "18月重估由临床去风险触发；现金欧元转美元且扣烧损；合作利润50%只算一次",
+      "verification_required": "134美元基准四分支权益和适应症扣重；2032/33终值不是2028现金；独立竞争链",
+      "read_role_links": [
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "SNDK",
+      "conditional_order": 9,
+      "status": "conditional_top20_not_final",
+      "mechanism": "NAND合同利润",
+      "alternatives": [
+        "MU",
+        "MCHP"
+      ],
+      "decisive_issue": "NBM保障较强，但价格贡献约2/3且JV投入/现金税需扣；与MU同风险",
+      "verification_required": "价格/位元/成本，合同保障边界、回购资金；2028正常化而非强制腰斩",
+      "read_role_links": [
+        "R2",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "PSIX",
+      "conditional_order": 10,
+      "status": "conditional_top20_not_final",
+      "mechanism": "发电设备小市值弹性",
+      "alternatives": [
+        "MOD",
+        "FLNC"
+      ],
+      "decisive_issue": "27.1%毛利已有证据，不用40%；1.27EPS税收益不年化，SAR与关联交易",
+      "verification_required": "订单交付到正常税EPS、应收及工厂爬坡；行业供电需求不自动等于PSIX销售",
+      "read_role_links": [
+        "R4",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "IREN",
+      "conditional_order": 11,
+      "status": "conditional_top20_not_final",
+      "mechanism": "算力合同右尾",
+      "alternatives": [
+        "SMCI",
+        "AMZN",
+        "NBIS"
+      ],
+      "decisive_issue": "预付款与90%GPU融资不能叠加覆盖135%；最低付款有验收条件",
+      "verification_required": "逐项目capex/贷款/权益融资/更新GPU与FD；5.5B净债及480M股需解释",
+      "read_role_links": [
+        "R4",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "AGCO",
+      "conditional_order": 12,
+      "status": "conditional_top20_not_final",
+      "mechanism": "非AI周期恢复",
+      "alternatives": [
+        "MCHP",
+        "DE",
+        "BDC"
+      ],
+      "decisive_issue": "补贴不等于订单，PTx2029目标不提前；退款和FX剔除",
+      "verification_required": "2028收入11.5B、10.5%经济率、少数权益/融资桥与付费安装",
+      "read_role_links": [
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "Controller非AI"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "ALNY",
+      "conditional_order": 13,
+      "status": "conditional_top20_not_final",
+      "mechanism": "TTR需求再加速",
+      "alternatives": [
+        "ARGX",
+        "IONS"
+      ],
+      "decisive_issue": "收入增长与归母利润分开，Sanofi/Blackstone权益付款不能漏或双扣",
+      "verification_required": "FY28 8B销售到1.25B净利；新增患者年、净价与BBIO竞争；12.42旧EPS不自动用",
+      "read_role_links": [
+        "R1",
+        "R3",
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "SMCI",
+      "conditional_order": 14,
+      "status": "conditional_top20_not_final",
+      "mechanism": "重新入场的服务器修复",
+      "alternatives": [
+        "CLS",
+        "IREN"
+      ],
+      "decisive_issue": "财报无保留与ITGC否定并存，旧弱点已修复不意味着无风险；摘要毛利仍需原表",
+      "verification_required": "17.6%GM/1.70EPS是否当季可持续，收入利润现金与FD完整桥；禁止只用5EPS×12",
+      "read_role_links": [
+        "R2",
+        "S1",
+        "B1",
+        "B2",
+        "控制器V1进展转述"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "BABA",
+      "conditional_order": 15,
+      "status": "conditional_top20_not_final",
+      "mechanism": "中国云与电商修复",
+      "alternatives": [
+        "CRM",
+        "GOOGL"
+      ],
+      "decisive_issue": "RMB利润美元ADS，8:1；已增发、快商补贴和Labs亏损保留",
+      "verification_required": "119.6B经济利润/2.60B ADS/FX7；资本开支高于折旧时资金缺口和追加股数",
+      "read_role_links": [
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "VST",
+      "conditional_order": 16,
+      "status": "conditional_top20_not_final",
+      "mechanism": "现有发电资产重定价",
+      "alternatives": [
+        "PNR",
+        "TSM"
+      ],
+      "decisive_issue": "已套保不能全部现货重定价；收购EBITDA与债务同日；容量价非电能价",
+      "verification_required": "交易后净债、维护capex/燃料/利息/税到普通股FCF，2027-28逐厂解锁",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "B1",
+        "B2",
+        "Controller非AI"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "CRM",
+      "conditional_order": 17,
+      "status": "conditional_top20_not_final",
+      "mechanism": "软件第二竞争席",
+      "alternatives": [
+        "ADBE",
+        "MOD"
+      ],
+      "decisive_issue": "有机Agentforce与并购ARR分开；新增息费/SBC保留，不用投资收益",
+      "verification_required": "同口径经济EPS和FCF，FY28每股利润相对ADBE；为何多一个软件席胜冷却席",
+      "read_role_links": [
+        "R1",
+        "R2",
+        "R3",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "CARR",
+      "conditional_order": 18,
+      "status": "conditional_top20_not_final",
+      "mechanism": "住宅与商业冷却双恢复",
+      "alternatives": [
+        "PNR",
+        "MOD",
+        "BDC"
+      ],
+      "decisive_issue": "数据中心订单转交付但不重复分部，集团不能套纯DC倍数",
+      "verification_required": "3.27经济EPS及净债息费，H2交付目标可见性；补客户/竞争原文链",
+      "read_role_links": [
+        "R3",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "BDC",
+      "conditional_order": 19,
+      "status": "conditional_top20_not_final",
+      "mechanism": "杠杆整合恢复",
+      "alternatives": [
+        "CARR",
+        "AGCO",
+        "MOD"
+      ],
+      "decisive_issue": "高杠杆放大收益也放大失败；订单不等同收入，收购有机分开",
+      "verification_required": "RUCKUS债务/利息/现金降债后1.95B净债、41M股及0.786B EBITDA；补独立客户链",
+      "read_role_links": [
+        "R2",
+        "R3",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "KYTX",
+      "conditional_order": 20,
+      "status": "conditional_top20_not_final",
+      "mechanism": "临床事件条件席",
+      "alternatives": [
+        "POET",
+        "FLNC",
+        "IONS"
+      ],
+      "decisive_issue": "一年读出已发生，旧70M股作废；100M FD基准8.4，弱融资105M更差",
+      "verification_required": "SPS注册/CMC路线、150M净融资和可提贷款、事件成功概率敏感性；补独立竞争/监管链",
+      "read_role_links": [
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "MOD",
+      "conditional_order": 21,
+      "status": "competitive_reserve",
+      "mechanism": "冷却替补，强上行仍在",
+      "alternatives": [
+        "CARR",
+        "BDC",
+        "CRM"
+      ],
+      "decisive_issue": "Oct12新买家无THRM；S2 215基准的3.9B收入/21%率未完全兑现",
+      "verification_required": "持续业务资产/净债/FD及客户交付；对215上行25%与50悲观风险的中枢取舍",
+      "read_role_links": [
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "S1",
+        "S2",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "IONS",
+      "conditional_order": 22,
+      "status": "competitive_reserve",
+      "mechanism": "多药商业化回归",
+      "alternatives": [
+        "ALNY",
+        "KYTX",
+        "BDC"
+      ],
+      "decisive_issue": "HORIZON/pelacarsen与CARDIO-TTRansform/eplontersen是不同失败；GSK/Roche独立新证据应加入",
+      "verification_required": "分产品权益净价/付费治疗年/商业费用、2028 575M到期债务及版税融资；不能只乘P/S",
+      "read_role_links": [
+        "R4",
+        "R5",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "POET",
+      "conditional_order": 23,
+      "status": "competitive_reserve",
+      "mechanism": "光学资格事件右尾",
+      "alternatives": [
+        "KYTX",
+        "FLNC",
+        "CRDO"
+      ],
+      "decisive_issue": "173M不是FD；权证78.735M含客户22.921M；RSU存在261.4与264.2M冲突",
+      "verification_required": "分档权证/行权现金或库藏股法，客户激励抵收入与权益只计一次；第二客户及净合同价",
+      "read_role_links": [
+        "R4",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "FLNC",
+      "conditional_order": 24,
+      "status": "competitive_reserve",
+      "mechanism": "储能执行反转",
+      "alternatives": [
+        "PSIX",
+        "KYTX",
+        "BDC"
+      ],
+      "decisive_issue": "最新亏200M，6500万递延之外1.25亿损失不能自动回补",
+      "verification_required": "Up-C经济单位/TAR/担保现金、赔偿/新品/质量成本终止，融资后恢复EPS和订单验收",
+      "read_role_links": [
+        "R4",
+        "S1",
+        "B1",
+        "B2"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    },
+    {
+      "ticker": "TSM",
+      "conditional_order": 25,
+      "status": "competitive_reserve",
+      "mechanism": "跨架构制造候补",
+      "alternatives": [
+        "AVGO",
+        "NVDA",
+        "SNDK"
+      ],
+      "decisive_issue": "Maia利好制造需求不保证份额或利润；9月收入强但444.35价格要每股桥",
+      "verification_required": "TWD普通股净利×5/FX到ADS，海外成本/折旧与2028盈利；若超40%基准可换边缘AI席",
+      "read_role_links": [
+        "R1",
+        "B1",
+        "B2",
+        "Controller平台",
+        "Controller产业"
+      ],
+      "v1_complete": false,
+      "v2_complete": false
+    }
+  ],
+  "outside_pool_watch": [
+    "PGR",
+    "MCHP",
+    "CRDO",
+    "VRT",
+    "GOOGL",
+    "AMZN",
+    "MSFT",
+    "RNR"
+  ],
+  "pending": "阶段B必须读取V1/V2完整产物，必要补证后重新排序，不继承本表为默认最终答案",
+  "v1_delivery_received": "V1已交付；主席已读摘要及前六家，完整吸收留阶段B。v1_complete表示主席吸收状态。"
+}

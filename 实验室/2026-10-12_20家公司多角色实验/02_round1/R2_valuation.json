@@ -1,0 +1,1774 @@
+{
+  "role": "R2_valuation",
+  "screened_count": 245,
+  "deep_read_tickers": [
+    "ADBE",
+    "CRM",
+    "ORCL",
+    "BABA",
+    "NVDA",
+    "AVGO",
+    "ALNY",
+    "BNTX",
+    "PNR",
+    "ENPH",
+    "PGR",
+    "RNR",
+    "ON",
+    "MCHP",
+    "SMCI",
+    "BDC",
+    "CLS",
+    "MOD",
+    "JBL",
+    "MKSI",
+    "MU",
+    "SNDK",
+    "STX",
+    "WDC",
+    "PLAB",
+    "GFS",
+    "QCOM",
+    "VST"
+  ],
+  "nominations": [
+    {
+      "rank": 1,
+      "ticker": "ADBE",
+      "thesis": "保留SBC后的现有订阅盈利就可支持修复，无需AI业务成为独立巨头。",
+      "horizon_months": 12,
+      "operating_assumptions": "FY27基准收入28.7B、GAAP EBIT10.15B；扣净费用0.2B与23%税约7.66B净利。悲观收入约26B/创意缩水，净利6B；乐观收入30B/利润8.74B。12月价格资本化FY27获利，未搬用2029目标。",
+      "catalysts": [
+        "3–6月：年报/CEO交接、提价周年后的ARR",
+        "6–12月：文档与企业付费抵消创意席位流失"
+      ],
+      "kill_criteria": [
+        "连续两季有机ARR低于5%且创意订阅下降",
+        "GAAP利润率跌破30%而费用无法调整"
+      ],
+      "key_risks": [
+        "专业席位被替代",
+        "净债务及并购占用现金",
+        "倍数不修复"
+      ],
+      "confidence": "中",
+      "status": "条件参与",
+      "price": 238.14,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md",
+          "lines": "315–350；首部17–24",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+          "published_date": "2026-09-10",
+          "id": "R2-W01",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 165.0,
+      "base_price": 334.05,
+      "bull_price": 506.0,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 165.0,
+            "formula": "归属正常化净利6.0B / 稀释股数0.4B × P/E 11 = 165.00",
+            "inputs": [
+              6.0,
+              0.4,
+              11
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -30.7
+          },
+          "base": {
+            "price": 334.05,
+            "formula": "归属正常化净利7.6635B / 稀释股数0.39B × P/E 17 = 334.05",
+            "inputs": [
+              7.6635,
+              0.39,
+              17
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 40.3
+          },
+          "bull": {
+            "price": 506.0,
+            "formula": "归属正常化净利8.74B / 稀释股数0.38B × P/E 22 = 506.00",
+            "inputs": [
+              8.74,
+              0.38,
+              22
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 112.5
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 256.96
+    },
+    {
+      "rank": 2,
+      "ticker": "PNR",
+      "thesis": "泳池渠道纠偏叠加非泳池现金，估值无需把Taco全部当AI业务。",
+      "horizon_months": 12,
+      "operating_assumptions": "2027收入4.322/4.822/5.132B；调整EBIT .871/1.146/1.316B。分别扣持续摊销重组.12/.10/.08B、利息.14/.12/.11B、税18%，净利=(EBIT-摊销重组-利息)×82%=.50102/.75932/.92332B。摊销和重组桥为R2假设，须核实公司原adjusted口径避免重复扣减。",
+      "catalysts": [
+        "3–6月：2027泳池季订单、渠道库存",
+        "6–12月：Taco全年贡献及偿债"
+      ],
+      "kill_criteria": [
+        "Pool终端份额连续两季落后同业且去库不收敛",
+        "Taco协同不及利息负担且杠杆上升"
+      ],
+      "key_risks": [
+        "非全面终端复苏",
+        "新增收购债务",
+        "退款不可重复"
+      ],
+      "confidence": "中",
+      "status": "条件参与",
+      "price": 52.33,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md",
+          "lines": "260–300；340–348",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+          "published_date": "2026-07-28",
+          "id": "R2-W05",
+          "level": "本轮已打开原始来源"
+        },
+        {
+          "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+          "published_date": "2026-10-01",
+          "id": "R2-W09",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 33.61,
+      "base_price": 70.31,
+      "bull_price": 109.64,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 33.61,
+            "formula": "归属正常化净利0.50102B / 稀释股数0.164B × P/E 11 = 33.61",
+            "inputs": [
+              0.50102,
+              0.164,
+              11
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -35.8
+          },
+          "base": {
+            "price": 70.31,
+            "formula": "归属正常化净利0.75932B / 稀释股数0.162B × P/E 15 = 70.31",
+            "inputs": [
+              0.75932,
+              0.162,
+              15
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 34.4
+          },
+          "bull": {
+            "price": 109.64,
+            "formula": "归属正常化净利0.92332B / 稀释股数0.16B × P/E 19 = 109.64",
+            "inputs": [
+              0.92332,
+              0.16,
+              19
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 109.5
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 54.08
+    },
+    {
+      "rank": 3,
+      "ticker": "NVDA",
+      "thesis": "以低于上游FY28工作利润估值，当前价格对高增长的容错优于多数AI半导体。",
+      "horizon_months": 12,
+      "operating_assumptions": "FY28收入410/600/760B；含SBC及特殊损失后的经营利润约185/378/525B，税与净费用合计后净利150/310/430B。上游640B收入/415.7B EBIT作为经营参照，基准下调交付量；不是现成共识EPS。",
+      "catalysts": [
+        "3–6月：Rubin交付及回款",
+        "6–12月：客户投产和FY28收入指引"
+      ],
+      "kill_criteria": [
+        "DSO连续两季超过75天且客户融资恶化",
+        "关键客户资本支出削减同时库存/采购承诺增加"
+      ],
+      "key_risks": [
+        "客户/供应商融资同向",
+        "担保或有损失",
+        "ASIC替代和毛利下滑"
+      ],
+      "confidence": "中",
+      "status": "条件参与",
+      "price": 226.32,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md",
+          "lines": "305–360",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "published_date": "2026-08-26",
+          "id": "R2-W02",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 97.96,
+      "base_price": 294.63,
+      "bull_price": 501.67,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 97.96,
+            "formula": "归属正常化净利150B / 稀释股数24.5B × P/E 16 = 97.96",
+            "inputs": [
+              150,
+              24.5,
+              16
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -56.7
+          },
+          "base": {
+            "price": 294.63,
+            "formula": "归属正常化净利310B / 稀释股数24.2B × P/E 23 = 294.63",
+            "inputs": [
+              310,
+              24.2,
+              23
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 30.2
+          },
+          "bull": {
+            "price": 501.67,
+            "formula": "归属正常化净利430B / 稀释股数24.0B × P/E 28 = 501.67",
+            "inputs": [
+              430,
+              24.0,
+              28
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 121.7
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 226.64
+    },
+    {
+      "rank": 4,
+      "ticker": "MU",
+      "thesis": "近期高利润存在原始财报支持，但以正常化利润折扣承担价格周期；高弹性而非下行有限。",
+      "horizon_months": 12,
+      "operating_assumptions": "悲观取FY28快速降价EBIT53.6B×80%=42.9B；基准185B EBIT×80%=148B，低于上游FY28 232.3B；乐观275B×80%=220B。基准普通DRAM/NAND净价回落且位元增长，PE也降至10。",
+      "catalysts": [
+        "3–6月：Q1及后续ASP/位元",
+        "6–12月：长协履约和竞争供应量"
+      ],
+      "kill_criteria": [
+        "连续两个季度同口径普通内存ASP下降且位元增长不足以补偿",
+        "押金退出、客户取消与资本支出同时上升"
+      ],
+      "key_risks": [
+        "80%以上毛利不可当永久常态",
+        "FY28供给增加",
+        "高资本承诺"
+      ],
+      "confidence": "中低",
+      "status": "条件参与",
+      "price": 989.04,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-01.md",
+          "lines": "305–356",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+          "published_date": "2026-09-30",
+          "id": "R2-W10",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 256.67,
+      "base_price": 1275.86,
+      "bull_price": 2295.65,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 256.67,
+            "formula": "归属正常化净利42.9B / 稀释股数1.17B × P/E 7 = 256.67",
+            "inputs": [
+              42.9,
+              1.17,
+              7
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -74.0
+          },
+          "base": {
+            "price": 1275.86,
+            "formula": "归属正常化净利148B / 稀释股数1.16B × P/E 10 = 1275.86",
+            "inputs": [
+              148,
+              1.16,
+              10
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 29.0
+          },
+          "bull": {
+            "price": 2295.65,
+            "formula": "归属正常化净利220B / 稀释股数1.15B × P/E 12 = 2295.65",
+            "inputs": [
+              220,
+              1.15,
+              12
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 132.1
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 981.43
+    },
+    {
+      "rank": 5,
+      "ticker": "BNTX",
+      "thesis": "足够现金支持多项随机临床验证，现金烧损后仍提供部分缓冲；18月收益来自临床去风险而非近期盈利。",
+      "horizon_months": 18,
+      "operating_assumptions": "起点净现金16.5213B EUR，18个月后净资金11.5/13.5/15B假设。2033利润0.5/2/4B是权益、支付、持续研发后的正常化估值桥；基准明显高于上游2033约1.07B突破算例，因此仅作为更强临床组合重估状态，不能称最可能。5年折现包含未来投入风险，附加兑现折扣。",
+      "catalysts": [
+        "3–6月：gotistobart/T-Pam/BNT113数据与CEO接任",
+        "6–18月：随机证据、注册路径及合作权利明确"
+      ],
+      "kill_criteria": [
+        "核心随机结果无效或不可接受安全性",
+        "净资金低于10B EUR且现金烧损不受控",
+        "重要IP以不利条款转出"
+      ],
+      "key_risks": [
+        "药物独立失败",
+        "BMS分成",
+        "长期研发吃掉现金",
+        "基准模型要求较强临床去风险"
+      ],
+      "confidence": "低",
+      "status": "小额事件型；等待完整随机证据",
+      "price": 95.84,
+      "currency": "USD",
+      "financial_currency": "EUR",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md",
+          "lines": "318–419；情景221–223",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+          "published_date": "2026-08-04",
+          "id": "R2-W07",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 51.38,
+      "base_price": 95.12,
+      "bull_price": 170.72,
+      "valuation_formula": {
+        "method": "bntx",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 51.38,
+            "formula": "(2028-04目标净资金EUR 11.5B + 2033归属正常化NOPAT EUR 0.5B × 10倍 × 临床/支付兑现折扣0.25 / 1.14^5) × USD/EUR 1.1206 / 0.265B ADS = 51.38",
+            "inputs": [
+              11.5,
+              0.5,
+              10,
+              0.25,
+              0.265
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -46.4
+          },
+          "base": {
+            "price": 95.12,
+            "formula": "(2028-04目标净资金EUR 13.5B + 2033归属正常化NOPAT EUR 2.0B × 15倍 × 临床/支付兑现折扣0.55 / 1.14^5) × USD/EUR 1.1206 / 0.26B ADS = 95.12",
+            "inputs": [
+              13.5,
+              2.0,
+              15,
+              0.55,
+              0.26
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -0.8
+          },
+          "bull": {
+            "price": 170.72,
+            "formula": "(2028-04目标净资金EUR 15.0B + 2033归属正常化NOPAT EUR 4.0B × 18倍 × 临床/支付兑现折扣0.65 / 1.14^5) × USD/EUR 1.1206 / 0.258B ADS = 170.72",
+            "inputs": [
+              15.0,
+              4.0,
+              18,
+              0.65,
+              0.258
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 78.1
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 73.17
+    },
+    {
+      "rank": 6,
+      "ticker": "AVGO",
+      "thesis": "ASIC与软件形成真实获利，但股价弹性必须跨过FY28交付与信用暴露。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY27收入107/157/197B及净利27/66/89B为起点；18月看FY28年化收入170/230/290B、扣SBC/摊销/利息后净利40/95/135B。基准约230.5B收入和139.8B业务利润，扣10B SBC、5.8B摊销、2B利息及17%税，约101B；再留6B风险余量。",
+      "catalysts": [
+        "3–6月：ASIC客户量产",
+        "6–18月：软件续约现金和FY28订单转交付"
+      ],
+      "kill_criteria": [
+        "软件前置许可没有后续现金",
+        "客户支持安排发生实质损失且采购义务无法削减"
+      ],
+      "key_risks": [
+        "客户集中",
+        "担保与采购承诺",
+        "含材料内容压利润率"
+      ],
+      "confidence": "中",
+      "status": "条件参与",
+      "price": 354.73,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-18.md",
+          "lines": "290–344",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+          "published_date": "2026-09-02",
+          "id": "R2-W03",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 129.29,
+      "base_price": 426.53,
+      "bull_price": 716.33,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 129.29,
+            "formula": "归属正常化净利40B / 稀释股数4.95B × P/E 16 = 129.29",
+            "inputs": [
+              40,
+              4.95,
+              16
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -63.6
+          },
+          "base": {
+            "price": 426.53,
+            "formula": "归属正常化净利95B / 稀释股数4.9B × P/E 22 = 426.53",
+            "inputs": [
+              95,
+              4.9,
+              22
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 20.2
+          },
+          "bull": {
+            "price": 716.33,
+            "formula": "归属正常化净利135B / 稀释股数4.9B × P/E 26 = 716.33",
+            "inputs": [
+              135,
+              4.9,
+              26
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 101.9
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 328.1
+    },
+    {
+      "rank": 7,
+      "ticker": "MKSI",
+      "thesis": "前道、PCB、化学耗材复苏与降债可合力提高权益价值，不能只套调整EPS。",
+      "horizon_months": 12,
+      "operating_assumptions": "2027收入4.4/5.75/6.5B；含SBC的调整EBIT .766/1.548/1.897B，扣摊销重组及利息、20%税后净利 .239/.921/1.208B。股份假设高于当前67.62M以容纳转换净稀释。",
+      "catalysts": [
+        "3–6月：设备/PCB订单交付与可转债安排",
+        "6–12月：经济FCF用于降债"
+      ],
+      "kill_criteria": [
+        "经济FCF低于600M且应收周转恶化",
+        "转债本金现金需求缺乏覆盖"
+      ],
+      "key_risks": [
+        "周期共同回落",
+        "再融资",
+        "客户议价"
+      ],
+      "confidence": "中",
+      "status": "条件参与",
+      "price": 249.91,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-09-22.md",
+          "lines": "364–419",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 53.11,
+      "base_price": 285.38,
+      "bull_price": 446.79,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 53.11,
+            "formula": "归属正常化净利0.239B / 稀释股数0.072B × P/E 16 = 53.11",
+            "inputs": [
+              0.239,
+              0.072,
+              16
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -78.7
+          },
+          "base": {
+            "price": 285.38,
+            "formula": "归属正常化净利0.921B / 稀释股数0.071B × P/E 22 = 285.38",
+            "inputs": [
+              0.921,
+              0.071,
+              22
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 14.2
+          },
+          "bull": {
+            "price": 446.79,
+            "formula": "归属正常化净利1.208B / 稀释股数0.073B × P/E 27 = 446.79",
+            "inputs": [
+              1.208,
+              0.073,
+              27
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 78.8
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 219.52
+    },
+    {
+      "rank": 8,
+      "ticker": "SMCI",
+      "thesis": "股价对收入不收费、对薄利润及资本占用收费；交付/回款恢复有大弹性，绝非便宜即安全。",
+      "horizon_months": 12,
+      "operating_assumptions": "FY27收入42/60/73B，净利 .480/3.790/5.792B，再扣优先股现金股息 .302B；将普通股稀释代理提高到.95/.82/.85B。当前646.87M不是完全稀释口径。目标中转换本金/利息需V2按合约重建；不确定精确FD不伪装为事实。",
+      "catalysts": [
+        "3–6月：新财报与内控整改",
+        "6–12月：库存/应收转现金及优先证券稀释"
+      ],
+      "kill_criteria": [
+        "经营现金持续大额为负且新增融资不可得",
+        "出口/审计调查导致客户或融资中断"
+      ],
+      "key_risks": [
+        "灾难尾部可接近零",
+        "客户订单可取消而采购刚性",
+        "股数模型误差大"
+      ],
+      "confidence": "低",
+      "status": "仅卫星；现金及FD核验前等待",
+      "price": 39.98,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-22.md",
+          "lines": "315–359",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+          "published_date": "2026-08-11",
+          "id": "R2-W11",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 1.5,
+      "base_price": 51.04,
+      "bull_price": 96.88,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 1.5,
+            "formula": "归属正常化净利0.178B / 稀释股数0.95B × P/E 8 = 1.50",
+            "inputs": [
+              0.178,
+              0.95,
+              8
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -96.3
+          },
+          "base": {
+            "price": 51.04,
+            "formula": "归属正常化净利3.488B / 稀释股数0.82B × P/E 12 = 51.04",
+            "inputs": [
+              3.488,
+              0.82,
+              12
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 27.7
+          },
+          "bull": {
+            "price": 96.88,
+            "formula": "归属正常化净利5.49B / 稀释股数0.85B × P/E 15 = 96.88",
+            "inputs": [
+              5.49,
+              0.85,
+              15
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 142.3
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 39.26
+    },
+    {
+      "rank": 9,
+      "ticker": "SNDK",
+      "thesis": "NBM底价与财务保障比普通订单更强，但必须给NAND正常化及履约风险定价。",
+      "horizon_months": 12,
+      "operating_assumptions": "FY28经营模型收入29.38/约43/55.58B，税后净利13.97/23/32.89B；基准低于上游26.9B并提高股数。合同覆盖为位元约2/3，非所有收入无条件保底。",
+      "catalysts": [
+        "3–6月：NBM交付及现金税",
+        "6–12月：客户实际采购、2027下半年供需"
+      ],
+      "kill_criteria": [
+        "NBM集中重谈底价或延期且现金保障不足",
+        "供给增加与消费/客户端位元下降持续并发"
+      ],
+      "key_risks": [
+        "异常高毛利",
+        "JV资金义务",
+        "保证金不是可自由分配现金"
+      ],
+      "confidence": "中低",
+      "status": "等待更低价或合同兑现；不凭5.59x买入",
+      "price": 1487.33,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-22.md",
+          "lines": "298–350",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://investor.sandisk.com/static-files/c75d1bee-c5c9-4e5a-8605-302c1aeac59b",
+          "published_date": "2026-08-05",
+          "id": "R2-W12",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 647.62,
+      "base_price": 1686.67,
+      "bull_price": 3049.4,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 647.62,
+            "formula": "归属正常化净利13.97B / 稀释股数0.151B × P/E 7 = 647.62",
+            "inputs": [
+              13.97,
+              0.151,
+              7
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -56.5
+          },
+          "base": {
+            "price": 1686.67,
+            "formula": "归属正常化净利23B / 稀释股数0.15B × P/E 11 = 1686.67",
+            "inputs": [
+              23,
+              0.15,
+              11
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 13.4
+          },
+          "bull": {
+            "price": 3049.4,
+            "formula": "归属正常化净利32.89B / 稀释股数0.151B × P/E 14 = 3049.40",
+            "inputs": [
+              32.89,
+              0.151,
+              14
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 105.0
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 1297.44
+    },
+    {
+      "rank": 10,
+      "ticker": "CRM",
+      "thesis": "旧订阅和数据工作流现金可对抗AI替代叙事，但必须扣SBC及新增债息。",
+      "horizon_months": 12,
+      "operating_assumptions": "FY28工作收入49.7B、GAAP EBIT11.519B、FCF14.54B；扣SBC4.3B后10.24B。悲观旧业务低增/AI不能抵消席位，经济FCFE7B；乐观收费与成本改善13B；不计战略投资估值收益。",
+      "catalysts": [
+        "3–6月：有机cRPO、同口径AI ARR",
+        "6–12月：付费消耗、现金降债"
+      ],
+      "kill_criteria": [
+        "有机增长低于3%且经济FCFE下降",
+        "继续借债大幅回购同时主营停滞"
+      ],
+      "key_risks": [
+        "高净债务",
+        "AI指标定义变动",
+        "收购整合"
+      ],
+      "confidence": "中",
+      "status": "偏价值修复；较低价更佳",
+      "price": 233.92,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-09-26.md",
+          "lines": "325–401",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 130.23,
+      "base_price": 265.04,
+      "bull_price": 417.86,
+      "valuation_formula": {
+        "method": "cash",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 130.23,
+            "formula": "付息后且扣SBC经济成本的FCFE 7B / 经济稀释股数0.86B × 股权现金倍数16 = 130.23",
+            "inputs": [
+              7,
+              0.86,
+              16
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -44.3
+          },
+          "base": {
+            "price": 265.04,
+            "formula": "付息后且扣SBC经济成本的FCFE 10.24B / 经济稀释股数0.85B × 股权现金倍数22 = 265.04",
+            "inputs": [
+              10.24,
+              0.85,
+              22
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 13.3
+          },
+          "bull": {
+            "price": 417.86,
+            "formula": "付息后且扣SBC经济成本的FCFE 13B / 经济稀释股数0.84B × 股权现金倍数27 = 417.86",
+            "inputs": [
+              13,
+              0.84,
+              27
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 78.6
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 203.88
+    },
+    {
+      "rank": 11,
+      "ticker": "BDC",
+      "thesis": "工业自动化利润加RUCKUS整合可产生去杠杆权益弹性；承认收购后下行放大。",
+      "horizon_months": 12,
+      "operating_assumptions": "2027收入3.24/4.035/4.38B，EBITDA .423/.736/.893B；目标净债2.5/2.1/1.9B仅为偿债假设，非已披露余额。倍数8/10/12兼顾设备与网络，不赋软件ARR倍数。",
+      "catalysts": [
+        "3–6月：RUCKUS盈利及周转",
+        "6–12月：净杠杆走向2.9x目标"
+      ],
+      "kill_criteria": [
+        "净债/EBITDA持续高于4x",
+        "RUCKUS EBITDA不足以覆盖新增债息和整合"
+      ],
+      "key_risks": [
+        "高杠杆",
+        "退款影响基期",
+        "匿名AI客户合同"
+      ],
+      "confidence": "中",
+      "status": "小额杠杆修复；不作下行缓冲核心",
+      "price": 105.29,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-09-22.md",
+          "lines": "342–393",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://investor.belden.com/financials/quarterly-results/default.aspx",
+          "published_date": "2026-07-30",
+          "id": "R2-W06",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 21.56,
+      "base_price": 128.29,
+      "bull_price": 215.02,
+      "valuation_formula": {
+        "method": "ev",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 21.56,
+            "formula": "(EBITDA 0.423B × EV/EBITDA 8 - 净优先索取权2.5B) / 稀释股数0.041B = 21.56",
+            "inputs": [
+              0.423,
+              8,
+              2.5,
+              0.041
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -79.5
+          },
+          "base": {
+            "price": 128.29,
+            "formula": "(EBITDA 0.736B × EV/EBITDA 10 - 净优先索取权2.1B) / 稀释股数0.041B = 128.29",
+            "inputs": [
+              0.736,
+              10,
+              2.1,
+              0.041
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 21.8
+          },
+          "bull": {
+            "price": 215.02,
+            "formula": "(EBITDA 0.893B × EV/EBITDA 12 - 净优先索取权1.9B) / 稀释股数0.041B = 215.02",
+            "inputs": [
+              0.893,
+              12,
+              1.9,
+              0.041
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 104.2
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 98.68
+    },
+    {
+      "rank": 12,
+      "ticker": "PGR",
+      "thesis": "高频再定价与成本优势支持存量盈利，但准备金释放与车险硬周期正常化需先扣。",
+      "horizon_months": 12,
+      "operating_assumptions": "2027工作NPE增长、CR走向约92%区间；正常化净利9.103B。压力CR接近95%、税后6.5B；较强承保和增长12B。无证券价格收益，无浮存金净现金加项。",
+      "catalysts": [
+        "3–6月：每月CR/保单增长",
+        "6–12月：竞争加剧后的事故年盈利"
+      ],
+      "kill_criteria": [
+        "剔除往年准备金后CR持续超过96%且保单增长失速",
+        "损失通胀系统性高于费率"
+      ],
+      "key_risks": [
+        "准备金不足",
+        "房主险灾损",
+        "倍数已反映质量"
+      ],
+      "confidence": "中",
+      "status": "分散与质量候选，现价上行中等",
+      "price": 220.28,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-11.md",
+          "lines": "313–349",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 133.11,
+      "base_price": 264.98,
+      "bull_price": 432.99,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 133.11,
+            "formula": "归属正常化净利6.5B / 稀释股数0.586B × P/E 12 = 133.11",
+            "inputs": [
+              6.5,
+              0.586,
+              12
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -39.6
+          },
+          "base": {
+            "price": 264.98,
+            "formula": "归属正常化净利9.103B / 稀释股数0.584B × P/E 17 = 264.98",
+            "inputs": [
+              9.103,
+              0.584,
+              17
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 20.3
+          },
+          "bull": {
+            "price": 432.99,
+            "formula": "归属正常化净利12.0B / 稀释股数0.582B × P/E 21 = 432.99",
+            "inputs": [
+              12.0,
+              0.582,
+              21
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 96.6
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 203.83
+    },
+    {
+      "rank": 13,
+      "ticker": "VST",
+      "thesis": "现有电源/容量收入和已签PPA比远期新核项目更可估，18月观察交割与现金。",
+      "horizon_months": 18,
+      "operating_assumptions": "2027EBITDA工作8.4B来自既有7.6+Cogentrix .55+Meta .25；18月基准8.7B，不把Meta全量和容量收入重复相加。压力6.7B含停机/成本，上行9.8B要求兑现。净优先索取权25/22/20B含收购和优先权益的研究代理，须核验完整债务桥。",
+      "catalysts": [
+        "3–6月：Cogentrix交割、年度指引",
+        "6–18月：Meta既有电量爬坡及现金偿债"
+      ],
+      "kill_criteria": [
+        "机组可用率持续低于假设且补购电支出上升",
+        "全资本开支后现金不覆盖债务及强制分配"
+      ],
+      "key_risks": [
+        "Moss环境责任",
+        "政策压电价",
+        "对冲限制短期上涨"
+      ],
+      "confidence": "中低",
+      "status": "条件参与",
+      "price": 158.13,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-09-26.md",
+          "lines": "374–409",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 81.71,
+      "base_price": 201.01,
+      "bull_price": 282.9,
+      "valuation_formula": {
+        "method": "ev",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 81.71,
+            "formula": "(EBITDA 6.7B × EV/EBITDA 8 - 净优先索取权25B) / 稀释股数0.35B = 81.71",
+            "inputs": [
+              6.7,
+              8,
+              25,
+              0.35
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -48.3
+          },
+          "base": {
+            "price": 201.01,
+            "formula": "(EBITDA 8.7B × EV/EBITDA 10.5 - 净优先索取权22B) / 稀释股数0.345B = 201.01",
+            "inputs": [
+              8.7,
+              10.5,
+              22,
+              0.345
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 27.1
+          },
+          "bull": {
+            "price": 282.9,
+            "formula": "(EBITDA 9.8B × EV/EBITDA 12 - 净优先索取权20B) / 稀释股数0.345B = 282.90",
+            "inputs": [
+              9.8,
+              12,
+              20,
+              0.345
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 78.9
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 154.62
+    },
+    {
+      "rank": 14,
+      "ticker": "MOD",
+      "thesis": "独立热管理业务有真实放量，但当前价格已经要求利润率修复；等待更佳价或交付证据。",
+      "horizon_months": 18,
+      "operating_assumptions": "存续FY28收入2.87/3.73/4.37B、EBITDA .365/.757/.977B，净债假设.50/.25/.10B；SBC由55–56M稀释代理体现并须防止重复经济扣除。已剔除PT，不加THRM历史分派。",
+      "catalysts": [
+        "3–6月：存续公司指引与投资者日",
+        "6–18月：DC利润率和现金不靠新增预付"
+      ],
+      "kill_criteria": [
+        "DC毛利/EBITDA率连续低于17%且现金弱",
+        "温水架构降低单位MW价值又未由CDU补足"
+      ],
+      "key_risks": [
+        "大客户集中",
+        "已含强增长估值",
+        "扩产/预付款负担"
+      ],
+      "confidence": "中",
+      "status": "等待≤145美元或经营上修",
+      "price": 172.5,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md",
+          "lines": "316–386；情景10、20",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        },
+        {
+          "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+          "published_date": "2026-10-01",
+          "id": "R2-W08",
+          "level": "本轮已打开原始来源"
+        }
+      ],
+      "bear_price": 49.73,
+      "base_price": 188.15,
+      "bull_price": 317.93,
+      "valuation_formula": {
+        "method": "ev",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 49.73,
+            "formula": "(EBITDA 0.365B × EV/EBITDA 9 - 净优先索取权0.5B) / 稀释股数0.056B = 49.73",
+            "inputs": [
+              0.365,
+              9,
+              0.5,
+              0.056
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -71.2
+          },
+          "base": {
+            "price": 188.15,
+            "formula": "(EBITDA 0.757B × EV/EBITDA 14 - 净优先索取权0.25B) / 稀释股数0.055B = 188.15",
+            "inputs": [
+              0.757,
+              14,
+              0.25,
+              0.055
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 9.1
+          },
+          "bull": {
+            "price": 317.93,
+            "formula": "(EBITDA 0.977B × EV/EBITDA 18 - 净优先索取权0.1B) / 稀释股数0.055B = 317.93",
+            "inputs": [
+              0.977,
+              18,
+              0.1,
+              0.055
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 84.3
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 144.73
+    },
+    {
+      "rank": 15,
+      "ticker": "MCHP",
+      "thesis": "嵌入式库存周期恢复而非2029纯AI兑现；已有现金提供生存缓冲，但债息和优先股压每股回报。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY28收入5.4/7/8.3B，扣SBC EBIT1.229/2.454/3.158B；减利息约.23/.19/.17、税约15%、优先股息.111后净利近 .77/1.81/2.43B，保留摊销口径差异作为风险。",
+      "catalysts": [
+        "3–6月：渠道/公司库存",
+        "6–18月：PCIe Gen6订单转收款"
+      ],
+      "kill_criteria": [
+        "渠道库存与公司库存同时回升而收入失速",
+        "维持分红导致净债上升"
+      ],
+      "key_risks": [
+        "周期反转",
+        "优先股",
+        "Hailo投入"
+      ],
+      "confidence": "中",
+      "status": "等待≤57美元或FY28盈利上修",
+      "price": 73.83,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-09-21.md",
+          "lines": "357–426",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 19.25,
+      "base_price": 74.34,
+      "bull_price": 123.63,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 19.25,
+            "formula": "归属正常化净利0.77B / 稀释股数0.56B × P/E 14 = 19.25",
+            "inputs": [
+              0.77,
+              0.56,
+              14
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -73.9
+          },
+          "base": {
+            "price": 74.34,
+            "formula": "归属正常化净利1.81B / 稀释股数0.56B × P/E 23 = 74.34",
+            "inputs": [
+              1.81,
+              0.56,
+              23
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 0.7
+          },
+          "bull": {
+            "price": 123.63,
+            "formula": "归属正常化净利2.43B / 稀释股数0.57B × P/E 29 = 123.63",
+            "inputs": [
+              2.43,
+              0.57,
+              29
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 67.5
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 57.18
+    },
+    {
+      "rank": 16,
+      "ticker": "ON",
+      "thesis": "汽车工业复苏与AI电源有机制，但并购稀释后需要更好的买价。",
+      "horizon_months": 18,
+      "operating_assumptions": "原ON2027净利 .85/1.62/1.98B；合并后Synaptics与协同净贡献假设-.03/.10/.17B；445M股近似当前389M÷88%并留少量稀释，非已完成交割FD。基准毛利约44.1%，不提前使用2030年53%。",
+      "catalysts": [
+        "3–6月：利用率、SiC净价",
+        "6–18月：并购后含SBC协同/AI实际销售"
+      ],
+      "kill_criteria": [
+        "汽车/工业改善只来自补库",
+        "并购后的含SBC净协同为负并持续增加股数"
+      ],
+      "key_risks": [
+        "换股稀释",
+        "SiC过剩",
+        "AI内容宣传口径"
+      ],
+      "confidence": "中",
+      "status": "等待≤65美元或合并数据",
+      "price": 76.0,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-09-22.md",
+          "lines": "320–386",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 25.8,
+      "base_price": 88.9,
+      "bull_price": 140.11,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 25.8,
+            "formula": "归属正常化净利0.82B / 稀释股数0.445B × P/E 14 = 25.80",
+            "inputs": [
+              0.82,
+              0.445,
+              14
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -66.1
+          },
+          "base": {
+            "price": 88.9,
+            "formula": "归属正常化净利1.72B / 稀释股数0.445B × P/E 23 = 88.90",
+            "inputs": [
+              1.72,
+              0.445,
+              23
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 17.0
+          },
+          "bull": {
+            "price": 140.11,
+            "formula": "归属正常化净利2.15B / 稀释股数0.445B × P/E 29 = 140.11",
+            "inputs": [
+              2.15,
+              0.445,
+              29
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 84.4
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 68.38
+    },
+    {
+      "rank": 17,
+      "ticker": "PLAB",
+      "thesis": "DUV/AMOLED升级与部分归属现金提供缓冲，但美国扩产、少数权益和资本开支限制上行速度。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY28收入.788/.973/1.151B、EBIT .097/.217/.308B；正常化归母净利.0434/.1209/.1727B，已扣少数股东。现金不再追加，避免利息收入与净现金双计。",
+      "catalysts": [
+        "6–12月：高端IC外部净增与工具利用",
+        "12–18月：韩国8nm客户资格与FPD复购"
+      ],
+      "kill_criteria": [
+        "高端占比升但集团利润继续降",
+        "合资分红不可得且资本开支持续超现金"
+      ],
+      "key_risks": [
+        "50.01%合资现金非全归母",
+        "技术外包边界",
+        "高资本开支"
+      ],
+      "confidence": "中",
+      "status": "等待≤26美元或现金分配证据",
+      "price": 29.24,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-09-22.md",
+          "lines": "299–331",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 8.68,
+      "base_price": 34.26,
+      "bull_price": 62.29,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 8.68,
+            "formula": "归属正常化净利0.0434B / 稀释股数0.06B × P/E 12 = 8.68",
+            "inputs": [
+              0.0434,
+              0.06,
+              12
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -70.3
+          },
+          "base": {
+            "price": 34.26,
+            "formula": "归属正常化净利0.1209B / 稀释股数0.06B × P/E 17 = 34.26",
+            "inputs": [
+              0.1209,
+              0.06,
+              17
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 17.2
+          },
+          "bull": {
+            "price": 62.29,
+            "formula": "归属正常化净利0.1727B / 稀释股数0.061B × P/E 22 = 62.29",
+            "inputs": [
+              0.1727,
+              0.061,
+              22
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 113.0
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 26.35
+    },
+    {
+      "rank": 18,
+      "ticker": "QCOM",
+      "thesis": "专利现金支持转型，Amazon合作的真正价值在交付/利润，而非把60B支付门槛当订单。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY27研究净利7.50B；18月FY28取正常化5.2/9/12.5B，基准汽车增长及DC初步放量但不提前用FY29 15B DC目标。含SBC及客户激励；1.10–1.12B股预留认股权证稀释。",
+      "catalysts": [
+        "3–6月：Android与苹果基带替代净影响",
+        "6–18月：定制业务收入与毛利、付款"
+      ],
+      "kill_criteria": [
+        "新定制收入不能补苹果利润且营运资本占用扩大",
+        "QTL实收或费率持续恶化"
+      ],
+      "key_risks": [
+        "股权激励客户",
+        "大客户议价",
+        "低毛利材料转售"
+      ],
+      "confidence": "中",
+      "status": "等待≤132美元或新业务利润核验",
+      "price": 174.43,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-09-21.md",
+          "lines": "308–380",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 66.18,
+      "base_price": 171.82,
+      "bull_price": 301.34,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 66.18,
+            "formula": "归属正常化净利5.2B / 稀释股数1.1B × P/E 14 = 66.18",
+            "inputs": [
+              5.2,
+              1.1,
+              14
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -62.1
+          },
+          "base": {
+            "price": 171.82,
+            "formula": "归属正常化净利9.0B / 稀释股数1.1B × P/E 21 = 171.82",
+            "inputs": [
+              9.0,
+              1.1,
+              21
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -1.5
+          },
+          "bull": {
+            "price": 301.34,
+            "formula": "归属正常化净利12.5B / 稀释股数1.12B × P/E 27 = 301.34",
+            "inputs": [
+              12.5,
+              1.12,
+              27
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 72.8
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 132.17
+    },
+    {
+      "rank": 19,
+      "ticker": "GFS",
+      "thesis": "特色制造/硅光机会比通用成熟制程更强，但现价不能由低forward PE独立证明。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY28收入6.45/8.7/10.1B、调整EBIT .436/1.656/2.532B；保留SBC/净息税调整后净利 .32/1.25/1.95B研究假设。股数580M含政府发行与持续奖励，2028年末10亿硅光runrate不当全年收入。",
+      "catalysts": [
+        "6–12月：光通信实际放量",
+        "12–18月：汽车恢复、补助/稀释和ROIC"
+      ],
+      "kill_criteria": [
+        "硅光收入增长但资本回报不改善",
+        "新投资持续依赖发股且原客户下调长约"
+      ],
+      "key_risks": [
+        "控制股东",
+        "资本密集",
+        "政府股票与补助里程碑"
+      ],
+      "confidence": "中",
+      "status": "等待≤40美元或更强盈利证据",
+      "price": 48.34,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-09-22.md",
+          "lines": "266–322",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 8.83,
+      "base_price": 51.72,
+      "bull_price": 96.67,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 8.83,
+            "formula": "归属正常化净利0.32B / 稀释股数0.58B × P/E 16 = 8.83",
+            "inputs": [
+              0.32,
+              0.58,
+              16
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -81.7
+          },
+          "base": {
+            "price": 51.72,
+            "formula": "归属正常化净利1.25B / 稀释股数0.58B × P/E 24 = 51.72",
+            "inputs": [
+              1.25,
+              0.58,
+              24
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 7.0
+          },
+          "bull": {
+            "price": 96.67,
+            "formula": "归属正常化净利1.95B / 稀释股数0.585B × P/E 29 = 96.67",
+            "inputs": [
+              1.95,
+              0.585,
+              29
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 100.0
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 39.78
+    },
+    {
+      "rank": 20,
+      "ticker": "WDC",
+      "thesis": "纯HDD供给纪律和密度升级可产生现金，但必须把Sandisk证券收益及高forward EPS剔掉。",
+      "horizon_months": 18,
+      "operating_assumptions": "FY28收入12.792/20.23/25.14B、EBIT3.515/9.350/13.286B，扣.06净息和17%税=2.87/7.71/10.98B。基准EPS19.52显著低于快照32.91；不能为了现价反推高利润。",
+      "catalysts": [
+        "3–6月：40TB交付与合同价格",
+        "6–18月：HAMR资格、可用TB与客户库存"
+      ],
+      "kill_criteria": [
+        "每TB净价下降快于成本且客户消化库存",
+        "合同重议或质量赔偿侵蚀高毛利"
+      ],
+      "key_risks": [
+        "市场已计更高盈利",
+        "SSD替代",
+        "转债股数"
+      ],
+      "confidence": "中",
+      "status": "等待≤270美元或经营超越模型",
+      "price": 386.94,
+      "currency": "USD",
+      "financial_currency": "USD",
+      "price_date": "2026-10-12",
+      "evidence": [
+        {
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-09-22.md",
+          "lines": "297–332；408–410",
+          "level": "冻结上游研究，事实与其经营模型分开；本轮仅对部分事实重新打开原始来源"
+        }
+      ],
+      "bear_price": 72.66,
+      "base_price": 351.34,
+      "bull_price": 631.35,
+      "valuation_formula": {
+        "method": "earnings",
+        "unit": "USD/share；经营金额B、股数B；BNTX经营为EUR并单独换汇",
+        "scenarios": {
+          "bear": {
+            "price": 72.66,
+            "formula": "归属正常化净利2.87B / 稀释股数0.395B × P/E 10 = 72.66",
+            "inputs": [
+              2.87,
+              0.395,
+              10
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -81.2
+          },
+          "base": {
+            "price": 351.34,
+            "formula": "归属正常化净利7.71B / 稀释股数0.395B × P/E 18 = 351.34",
+            "inputs": [
+              7.71,
+              0.395,
+              18
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": -9.2
+          },
+          "bull": {
+            "price": 631.35,
+            "formula": "归属正常化净利10.98B / 稀释股数0.4B × P/E 23 = 631.35",
+            "inputs": [
+              10.98,
+              0.4,
+              23
+            ],
+            "input_status": "E：R2条件假设；非公司指引/非校准概率",
+            "upside_pct": 63.2
+          }
+        },
+        "net_debt_treatment": "利润/FCFE倍数已扣利息，不能再次全额扣净债；EV方法另扣目标日净债及优先索取权。",
+        "share_treatment": "目标股数均为明确假设；当前快照股数仅作起点，不把回购授权视为已执行。",
+        "probability": "不计算机械概率加权收益；BNTX兑现折扣为估值敏感参数，非统计成功率。"
+      },
+      "wait_price_for_30pct_base_upside": 270.26
+    }
+  ],
+  "alternates": [
+    {
+      "ticker": "AMZN",
+      "reason": "AWS与广告经营强，但现金资本开支220B及2027–28投产回收尚未给当前价格明显现金赔率；候补平台"
+    },
+    {
+      "ticker": "MSFT",
+      "reason": "成熟软件现金与30M付费Copilot有证据；资本密度、租赁及OpenAI集中限制短窗上行，候补质量平台"
+    },
+    {
+      "ticker": "JBL",
+      "reason": "FY27管理层core EPS17.55低于快照forward22.17；312美元对应更远利润，1.51B现金不能直接支持极低估值"
+    },
+    {
+      "ticker": "CLS",
+      "reason": "真实增长但FY27上游模型扣融资类股酬/租赁后资金变化约-0.438B；8月34.5亿美元发股后需重新计算每股现金"
+    },
+    {
+      "ticker": "RNR",
+      "reason": "8.15x forward PE受低灾损及准备金释放影响；2027普通股利润正常化约1.49B，不视为净现金地板"
+    }
+  ],
+  "exclusions": [
+    {
+      "ticker": "ORCL",
+      "reason": "12.49x forward PE掩盖新增租赁、预付款和资本开支；现金缓冲不符合本角色优先级"
+    },
+    {
+      "ticker": "BABA",
+      "reason": "人民币财报/美元ADS、增发及负FCF需重建；低PE不足以证明AI投资回报"
+    },
+    {
+      "ticker": "ALNY",
+      "reason": "商业化真实但Sanofi超1.5B部分30%版税与研发使独立2028 GAAP EBIT约1.6B；12.42 forward EPS口径需核验"
+    },
+    {
+      "ticker": "ENPH",
+      "reason": "2027收入11.53亿模型仅0.29亿近GAAP EBIT；45X和safe harbor依赖，不把SST试点作为2027盈利"
+    },
+    {
+      "ticker": "STX",
+      "reason": "HAMR优势与行业高价不可混同；当前753美元已经要求FY27/28高利润延续"
+    },
+    {
+      "ticker": "TSLA",
+      "reason": "173x forward PE主要由远期新业务支持，当前现金盈利无法提供短窗估值缓冲"
+    },
+    {
+      "ticker": "SKHY",
+      "reason": "币种/上市证券/ADR比例未充分重建，P/S明确currency_mismatch，不做相对便宜排名"
+    },
+    {
+      "ticker": "CBRS",
+      "reason": "市值/股数校验bad53%且远期倍数高，先核实证券总股本"
+    }
+  ],
+  "open_questions": [
+    "V2核验所有目标稀释股数，特别SMCI优先股、MCHP优先股、ON换股、WDC转债。",
+    "PNR目标净利取整与费用桥、VST收购后净优先索取权、BDC净债路径须逐项复核。",
+    "BNTX核心基准盈利依赖高于上游2033模型的临床组合，若不接受应降为候补或以现金/更低买价等待。",
+    "所有目标倍数均为研究判断，未做历史分位或统计校准；需用10–20%倍数压缩敏感性。",
+    "报价沿用冻结10/12收盘，未逐一向交易所复核；数据商forward EPS时期/调整口径不透明，不用作决定性定价。"
+  ],
+  "reasoning_summary": [
+    "先完整245筛选，深读28并额外读3公司概览。",
+    "优先正常化盈利/现金能支持价格，不将上游2029–2030目标缩短。",
+    "20名是独立送审名单，排名末端明确等待，不宣称均适合现价买入。",
+    "对于周期、药物与杠杆股票悲观损失可达50–90%，高风险偏好不等于这些有可靠下行底。"
+  ],
+  "assumptions": {
+    "all_targets": "12或18个月目标日市场价格情景；BNTX采用远期经营桥折回目标日，其余主要资本化目标附近年度获利。",
+    "prices_not_total_returns": "目标价不含未确认未来股息；美元税前总收益比较需主席加入同口径股息、成本并对照SPY/QQQ。",
+    "multiples": "所有倍数是估值假设；跌价不是经营反证但会改变安全边际。",
+    "no_probabilities": "不以主观概率制造精确期望收益；BNTX折扣仅参数。"
+  }
+}

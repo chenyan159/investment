@@ -1,0 +1,516 @@
+{
+  "role": "V1_primary_verification",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "sources": [
+    {
+      "id": "NVDA_Q2",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "published_date": "2026-08-26",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "FY27 non-GAAP包含SBC；Q2收入96.221B，CFO24.077B，AR占用22.346B；投资证券净收益7.771B非经常经营利润。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "MU_REMARKS",
+      "source_url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "published_date": "2026-09-30",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "26份SCA；32B客户承诺；约35%至2030累计收入、其3/4有定价框架。Q1GM86.25%为公司预计全年低点，Q4客户存款12.3B在融资现金流。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "AVGO_Q3",
+      "source_url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "published_date": "2026-09-02",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q3调整OP20.095B与SBC2.019B，经济OP18.076B是保留SBC、允许其他调整的研究口径。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "CLS_Q2",
+      "source_url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "published_date": "2026-07-27",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2收入4.70B；GAAP EPS3.17含TRS税前0.90/股；TRS104.1M、SBC19.3M不同项目。2027收入增长超过65%为管理层展望。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "published_date": "2026-09-10",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "收入6.76B、ARR27.50B，GAAP与non-GAAP EPS4.62/6.13；用经济薪酬口径估值。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "PNR_CLOSE",
+      "source_url": "https://investors.pentair.com/node/27181/pdf",
+      "published_date": "2026-10-01",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Taco10/1按1.4B完成；并表Water Solutions；协同/交叉销售未变成既有利润。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-28",
+      "source_url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "published_date": "2026-10-01",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "已交割；0.44619 THRM/旧MOD股，9/28登记；新购MOD不含该历史分派。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "IREN_FY26",
+      "source_url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "published_date": "2026-08-27",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "4B contracted ARR vs1B operating；两年回收期仅GPU与配套除直接成本；FY26 CFO2.1004B含递延收入增加1.8417B。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "published_date": "2026-02-05",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "逐期最低GPU、5天验收、15工作日纠正、延期抵扣及终止权；公司IR与同合同SEC不算独立根事件。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-07",
+      "source_url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "published_date": "2026-07-30",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "TTR销售指引从4.4–4.7B降4.2–4.5B；二线积压需求正常化，仍为高增长。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "SNDK_Q4",
+      "source_url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+      "published_date": "2026-08-05",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q1收入10.3–10.8B、nonGAAP GM83–85%、EPS44–46、约155M股均为公司指引。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "PSIX_Q2",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+      "published_date": "2026-08-06",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2收入152.5M、GM27.1%、净利16.9M/EPS0.73。2026Q2税费5.6M；29.2M税备抵释放是2025同期，不能再从2026Q2扣。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "published_date": "2026-08-04",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "现金证券EUR16.6342B、流通251.204M；H1净亏EUR1.3527B。不能把欧元当美元或现金全算永久底。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-13",
+      "source_url": "https://argenx.com/news/2026/press-release-3345813",
+      "published_date": "2026-08-17",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "ALKIVIA联合IMNM/DM主要终点p=.0011、优势15.4点；IMNM p=.0048、DM p=.1093。DM效应相似但未单独显著。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-16",
+      "source_url": "https://argenx.com/news/2026/press-release-3376934",
+      "published_date": "2026-10-08",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "UNITY 10/8因无效停止，属于Sjögren项目；不抹除gMG/CIDP已销售价值。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-12",
+      "source_url": "https://argenx.com/news/2026/press-release-3331862.html",
+      "published_date": "2026-07-23",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2全球产品销售1.516B，H1 2.813B；已扩gMG全血清型；MMN Q4读出为预期。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+      "published_date": "2026-09-24",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "9/24 KYSA8一年已公布，26人单臂；49% T25FW改善，95%持续率分母是早期改善者，92%免慢性免疫治疗。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+      "published_date": "2026-07-28",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2 DC订单+300%以上；有机收入+3%，调整OP同比-6%，全年23B收入/2.90调整EPS为指引。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+      "published_date": "2026-07-30",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2收入2.6097B同比-1%，恒汇率-3.7%；22M关税退款、20M融资未来收入前置；2026 EPS5.50–5.75为指引。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-34",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "published_date": "2026-08-20",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "云收入RMB48.437B+45%；重划分云包含T-Head，不可将新增分部口径不加辨别地拼旧年数据。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+      "published_date": "2026-09-18",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "8月CR89.3 vs83.1，事故年损失率70.6 vs日历68.8；往年有利发展131M，净已赚保费7.354B。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "FLNC_RESET",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "published_date": "2026-09-16",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "9/16覆盖8月指引：收入2.4B，调整EBITDA亏200M；2027 CFO中性或正仅目标。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+      "published_date": "2026-07-30",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Q2收入750M、有机+8%，订单836M、B/B1.11；RUCKUS7/1在季后交割。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-27",
+      "source_url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+      "published_date": "2026-08-06",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "收入1.485B、环比13.2%，库存185→175天，Gen6定点6→12；定点不等收入。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-29",
+      "source_url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "published_date": "2026-08-26",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Agentforce ARR改含Slackbot/Headless360；FY27收入46.1–46.4B含待收购，cRPO指导不含二项待收购。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "TSM_SEPT",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "published_date": "2026-10-08",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "9月NT511.857B、同比54.6%，1–9月+41.1%；月收入不是利润或ADR EPS。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "POET_FS",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+      "published_date": "2026-08-13",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "客户供应协议预期采购up to500M，不是无条件确认收入；22.921408M客户权证、30.142069M客户对价按收入摊销。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "SMCI_Q4",
+      "source_url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "published_date": "2026-08-11",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "8/11发布Q4 GM17.5%、调整17.6%，EPS1.62/1.70，FY27收入65–72B指引；当时属未审计估计。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "SMCI_10K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "published_date": "2026-08-31",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "8/31 BDO财报无保留、内控否定；3旧弱点修复，1ITGC仍存；FY26 CFO-6.8099B，净利2.2305B。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "VST_Q2",
+      "source_url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "published_date": "2026-08-07",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "8/3套保2027 94%、2028 72%；2027 EBITDA7.4–7.8B机会中点区间排除Cogentrix及Meta PPA增量。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-02",
+      "source_url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+      "published_date": "2026-08-24",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "GSK日本批准bepirovirsen；≤3000 HBsAg群体19%功能性治愈，非全部HBV人群，批准不等Ionis全销售。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-03",
+      "source_url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "published_date": "2026-09-23",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Roche sefaxersen三期37周蛋白尿主要终点阳性，105周eGFR仍盲法继续，不能宣称长期肾功能终点已成功。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-15",
+      "source_url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "published_date": "2026-07-09",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "AZ原文CM主要终点失败；不同药物/项目价值不能连带归零。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-01",
+      "source_url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+      "published_date": "2026-09-04",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "9/4 pelacarsen Lp(a) HORIZON主要终点失败；不预计里程碑；Spinraza分给RPRX比例2028从25%升45%，累计550M后归还。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-04",
+      "source_url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "published_date": "2026-08-26",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "AWS 2027–28计划额外200万GPU，需求外部根链；计划不等不可取消合同，也不排斥自研。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "TF_MEMORY",
+      "source_url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+      "published_date": "2026-09-30",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "9/30行业预测Q4DRAM+10–15%、NAND+15–20%；AI与消费分化，LTA上限可能限制ASP涨幅。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-02",
+      "source_url": "https://www.canva.com/newsroom/news/all-new-affinity/",
+      "published_date": "2025-10-29",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Affinity专业photo/vector/layout工具免费；竞争存在，不证明Adobe必然无法收费。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-08",
+      "source_url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+      "published_date": "2026-08-10",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "BridgeBio Q2 Attruby222.4M，初治增长；ALNY一线竞争根链，不能跨试验判优。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-06",
+      "source_url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "published_date": "2026-07-23",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "POOL Q2销售1.822938B vs1.784530B、库存+4%；不能以宏观下行解释全部PNR表现。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "LUMILENS",
+      "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "published_date": "2026-08-06",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "客户累计融资>900M，已生产数据中心交付；不证明每个Lumilens模块含POET或所获份额。",
+      "discovery": "S1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-06",
+      "source_url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+      "published_date": "2026-09-09",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "保诚9/9全面推出阿里云AI核保；客户实际采用，不披露阿里盈利或合同金额。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "META_POWER",
+      "source_url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/",
+      "published_date": "2026-01-09",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "客户20年PPA、2.1GW现有核电；433MW扩容预计2030年代初，不能计18个月新增出力。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "TI_Q2",
+      "source_url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-07-22-ti-reports-second-quarter-2026-financial-results-and-shareholder-returns.html",
+      "published_date": "2026-07-22",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "竞争者收入5.46B、环比13%同比23%，工业/数据中心/汽车推动，独立支持嵌入式周期复苏。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "ALL_Q2",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000117/allcorp63026earningsreleas.htm",
+      "published_date": "2026-08-05",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "Allstate汽车CR83.3、underlying87.6；新单+8.8%、保单+2.8%，PGR仍受价格/渠道竞争。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-23",
+      "source_url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "published_date": "2026-09-03",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "USDA9/3净现金农收176.4B名义+.4%，实际-2.5%；不能由总农收推每地区大机械预算。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "MAIA",
+      "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "published_date": "2026-10-12",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "10/12微软客户自研推理多GW计划；2027 Maia300 N2P+8HBM4，支持TSM/HBM机制但没锁MU份额。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "B1-09",
+      "source_url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen/",
+      "published_date": "2026-08-31",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "8/31 LEAG Boxberg400MW/1.6GWh，HyperStrong与Siemens参与；FLNC客户市场是多供应商。",
+      "discovery": "B1_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "S2-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "published_date": "2026-07 (Q2 filing)",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "BMS10Q合约记载全球利润亏损平分；与BNTX联合临床稿非两项独立试验，独立核经济权利。",
+      "discovery": "S2_sources",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "CMI_Q2",
+      "source_url": "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+      "published_date": "2026-08-04",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "竞争者向Circe HPC提供天然气机组，2026–30交付；需求真实且有大竞争者，不能替PSIX背书订单。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    },
+    {
+      "id": "CSCO_DECK",
+      "source_url": "https://investor.cisco.com/files/doc_presentation/2026/02/Cisco-Investor-Relations-Deck-2-19-26.pdf",
+      "published_date": "2026-02-19",
+      "access_status": "independent_body_read",
+      "read_by": "V1",
+      "reading_note": "2/19材料校园订单加速、下一代产品ramp；WiFi7及工业以太网与RUCKUS/BDC竞争，非BDC订单佐证。",
+      "discovery": "V1 new discovery",
+      "accessed": "2026-10-12 LA, cutoff 19:40; accessed after freeze, use only pre-cutoff publication"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "result": "HTML internal error; official PDF success"
+    },
+    {
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "result": "internal error; AZ partner primary used"
+    }
+  ]
+}

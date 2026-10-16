@@ -1,0 +1,143 @@
+{
+  "ticker": "AMD",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:39:47-07:00",
+  "reference_price": {
+    "value": 608.1,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        175.34,
+        175.34
+      ],
+      "target_price": [
+        84.07,
+        106.89
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        606.1,
+        657
+      ],
+      "target_price": [
+        545.59,
+        722.57
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        977.85,
+        977.85
+      ],
+      "target_price": [
+        1010.6,
+        1239.85
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1348.62,
+        1348.62
+      ],
+      "target_price": [
+        1531.13,
+        1850.54
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "NVDA",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在同一通用AI加速器配置逻辑下优先NVDA，其已兑现利润、生态与基准年化赔率均优于AMD，AMD仅补充大内存和第二供方份额跃迁敞口。"
+    },
+    {
+      "peer": "INTC",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "在服务器CPU与AI计算配置中优先AMD，AMD的利润率、资本负担及四情景回报优于仍需证明外部代工盈利的INTC。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在大客户持续部署且信用承诺受控的AI预算配置逻辑下优先AVGO，其ASIC网络组合及基准年化赔率胜过AMD，AMD更适合可编程和大内存工作负载。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "若FY28达到20B且FY31目标的互连份额、毛利和稀释得到验证则MRVL可优先于AMD，否则AMD的CPU利润底座更可靠，旧MRVL基准模型不能代表最新目标。"
+    },
+    {
+      "peer": "ARM",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "在现价下优先AMD，ARM的IP壁垒未转化为足够完整成本每股利润且基准交易价显著低于现价，其153倍机械业务参考价不能作为可实现收益。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在看好AI硬件总需求且接受台湾供应链风险的条件下优先TSM，其跨GPU和ASIC收租及基准赔率优于AMD，AMD只提供单一挑战者份额突破弹性。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若内存价带及合格产能约束持续则进攻资金优先MU，若普通内存降价而GPU需求保持则AMD受益于成本缓解并可反向优先，MU低倍数不能自动代表周期底部。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "稳健AI配置优先MSFT，其工作流收入与基准年化回报优于AMD，但若专门追求GPU第二供方份额跃迁则AMD可作为进攻补充。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "资本保全优先AMD，只有ORCL项目融资已落实且OCI实付使用覆盖租赁和折旧时才优先ORCL的更高条件回报，RPO不能替代融资闭合。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "在创意工作流维持且追求现金流性价比的条件下优先ADBE，其基准回报显著高于AMD，AMD仅在AI硬件份额突破逻辑上不可替代。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "收入和资本保全目标优先PGR并另计现金股息，若追求技术平台突破且接受大回撤则AMD占优，PGR当前也不是基准股价高回报标的。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若组合目标为低波动刚需则优先WM，若追求高增长右尾则AMD占优，WM现价基准区间下沿仍无资本利得且需医疗协同兑现。"
+    }
+  ]
+}

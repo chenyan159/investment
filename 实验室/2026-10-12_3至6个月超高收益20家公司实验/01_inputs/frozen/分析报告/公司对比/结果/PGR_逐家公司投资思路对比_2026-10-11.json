@@ -1,0 +1,131 @@
+{
+  "ticker": "PGR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:08:18-07:00",
+  "reference_price": {
+    "value": 217.43,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        125.55,
+        125.55
+      ],
+      "target_price": [
+        102.94,
+        121.65
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        240.3,
+        240.3
+      ],
+      "target_price": [
+        241.79,
+        277.61
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        323.18,
+        323.18
+      ],
+      "target_price": [
+        373.36,
+        421.53
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        376.62,
+        376.62
+      ],
+      "target_price": [
+        477.2,
+        533.34
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "TRV",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若优先车险份额与右尾选择PGR；若优先多业务分散、较高基准年化回报选择TRV。"
+    },
+    {
+      "peer": "CB",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "普通稳健保险新资金优先CB的分散利润与每股增长；专门押注美国车险份额扩张时PGR仍有不可替代的优势。"
+    },
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价下PGR正常化估值较低、赔案反馈更快且右尾更大，WRB长尾准备金与经济稀释股数削弱赔率。"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "容忍巨灾与第三方资本周期时RNR基准赔率更高；要求事故年反馈快及较少单次灾损时优先PGR。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "PGR有可验证承保现金能力；TSLA现价仍要求无人车和机器人规模盈利，最新交付并未验证该利润机制。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "能承担AI资本回收与较高估值风险时MSFT基准增长和右尾更强；需要较低起始估值与保险分散时选择PGR。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "AI资本效率与搜索商业化验证后GOOGL进攻顺位更高；需要较少重资本及证券利润干扰时选择PGR。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "本次价格下PGR的基准与乐观赔率更高；LIN仅在优先长合同稳定性而主动牺牲回报时更合适。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "PGR基准下沿和右尾优于WM，WM当前价格需要医疗协同和资源化兑现且负债负担较高。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "COST会员壁垒更稳定但起始估值与现金流折价不足，PGR在本次价格下提供更高回报空间。"
+    }
+  ]
+}

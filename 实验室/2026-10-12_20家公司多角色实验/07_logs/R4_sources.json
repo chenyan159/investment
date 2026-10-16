@@ -1,0 +1,161 @@
+{
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "sources": [
+    {
+      "id": "R4S01",
+      "ticker": "CRDO",
+      "date": "2026-09-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+      "fact": "FY27Q1收入479m，GAAP EPS0.67与非GAAP1.20差异大；Q2指引525–535m。",
+      "type": "primary",
+      "event_id": "CRDO_2026-09-01",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S02",
+      "ticker": "MOD",
+      "date": "2026-07-29",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx",
+      "fact": "DC增长90%，供应约束压低利润；既有需求并非只有意向。",
+      "type": "primary",
+      "event_id": "MOD_2026-07-29",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S03",
+      "ticker": "POET",
+      "date": "2026-08-13",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "fact": "Q2收入0.570m，现金和短期投资796.3m，五月400m融资；资金强与商业收入弱同时成立。",
+      "type": "primary",
+      "event_id": "POET_2026-08-13",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S04",
+      "ticker": "TTMI",
+      "date": "2026-08-05",
+      "url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+      "fact": "Q2收入1004.054m，GAAP经营利润109.055m。",
+      "type": "primary",
+      "event_id": "TTMI_2026-08-05",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S05",
+      "ticker": "RDW",
+      "date": "2026-08-06",
+      "url": "https://ir.rdw.com/news-events/press-releases/detail/240/redwire-corporation-reports-second-quarter-2026-financial",
+      "fact": "现金557m、受限0.8m；Q2国防收入61.882m且利润优于航天。",
+      "type": "primary",
+      "event_id": "RDW_2026-08-06",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S06",
+      "ticker": "KYTX",
+      "date": "2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+      "fact": "尚无产品销售；现金证券199.427m，2027贷款现金/收入契约、gMG入组和制造供应需跟踪。",
+      "type": "primary",
+      "event_id": "KYTX_2026-08",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S07",
+      "ticker": "BNTX",
+      "date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "fact": "现金证券16634.2m欧元，251.204m股，1ADS=1普通股；研发消耗不能视为闲置现金。",
+      "type": "primary",
+      "event_id": "BNTX_2026-08-04",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S08",
+      "ticker": "PSIX",
+      "date": "2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054328/psix-20260630.htm",
+      "fact": "半年现金流与供应/客户集中风险；续贷及客户退款款项须区别可分配现金。",
+      "type": "primary",
+      "event_id": "PSIX_2026-08",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S09",
+      "ticker": "IREN",
+      "date": "2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+      "fact": "GPU融资有有限母公司保证及验收释放条件；预付款不能等同利润。",
+      "type": "primary",
+      "event_id": "IREN_2026-08",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S10",
+      "ticker": "FLNC",
+      "date": "2026-09-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "fact": "FY26收入降至2.4bn、调整EBITDA负200m；FY27不增外部资本和CFO不负是目标非已兑现。",
+      "type": "primary",
+      "event_id": "FLNC_2026-09-16",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S11",
+      "ticker": "COHR",
+      "date": "2026-03-02",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+      "fact": "客户侧证实非独家多年采购承诺及2bn投资；融资与采购分开。",
+      "type": "primary",
+      "event_id": "COHR_2026-03-02",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S12",
+      "ticker": "POET",
+      "date": "2026-05-14",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks",
+      "fact": "Lumilens初始50m采购，晚2026样品/2027量产，依赖资格；500m五年框架不当年化。",
+      "type": "primary",
+      "event_id": "POET_Lumilens",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S13",
+      "ticker": "IREN",
+      "date": "2025-11-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "fact": "微软签署合同明确验收、最低量、延期条件，是比ARR标题更直接的客户权利证据。",
+      "type": "primary",
+      "event_id": "IREN_2025-11-02",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S14",
+      "ticker": "KYTX",
+      "date": "2026-09-24",
+      "url": "https://www.globenewswire.com/de/news-release/2026/09/24/3368111/0/en/kyverna-therapeutics-reports-positive-one-year-data-demonstrating-durable-clinical-responses-and-favorable-safety-profile-for-miv-cel-in-stiff-person-syndrome-and-generalized-myast.html",
+      "fact": "SPS26人一年随访，步行时间中位改善49%；单臂，gMG仅7人；BLA完成目标Q4。公司原稿镜像。",
+      "type": "primary",
+      "event_id": "KYTX_oneyear",
+      "status": "opened_and_read"
+    },
+    {
+      "id": "R4S15",
+      "ticker": "FLNC",
+      "date": "2026-09-16",
+      "url": "https://newsletter.stablebread.com/p/fluence-guidance-cut-update",
+      "fact": "外部观点提供低收入倍数修复思路；其价格未直接采用，以官方成本/资本结构重算。",
+      "type": "external_opinion",
+      "event_id": "FLNC_guidancecut",
+      "status": "opened_and_read"
+    }
+  ],
+  "failed_opens": [
+    "Fluence IR 403/internal error; SEC替代成功",
+    "Kyverna IR 403; 公司新闻稿镜像成功",
+    "NewStreet附件无法取得，不计实读"
+  ],
+  "dedup": "相同公司新闻稿及镜像同根事件只算一次；媒体转述非新独立事实。"
+}

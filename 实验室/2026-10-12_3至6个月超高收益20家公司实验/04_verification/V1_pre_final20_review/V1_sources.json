@@ -1,0 +1,1464 @@
+{
+  "role": "V1",
+  "access_date_utc": "2026-10-13",
+  "asof": "2026-10-12T20:50:00-07:00",
+  "access_policy": "只用截止前披露的文件事实；当日无小时资料不作截止前独有决定性事实；搜索结果/403/重复开同源不能计独立支持。",
+  "decisive_sources": [
+    {
+      "ticker": "MU",
+      "published": "2026-09-30",
+      "source_urls": [
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "FY26Q4收入54.229B、GAAP EPS32.87；现金及证券73.453B、债务5.179B。客户保证金12.747B列融资现金流。"
+    },
+    {
+      "ticker": "SNDK",
+      "published": "2026-08-05；财报日历2026-09-29",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+        "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q4收入8.965B，GAAP EPS43.97高于调整39.25，存在投资收益；Q1指引基于155M稀释股。"
+    },
+    {
+      "ticker": "SMCI",
+      "published": "2026-08-31最终10-K；8/11初步业绩",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "2028债转股价61.06、2030为55.20；条件触发/主动转换须区别。7%强制可转优先股2029年强转，价高于32.9989时每1000优先股本金最低30.304普通股。"
+    },
+    {
+      "ticker": "IREN",
+      "published": "2026-08-27",
+      "source_urls": [
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "40亿美元签约ARR对比10亿美元运营ARR；AI季度收入70.5M。公告脚注：交付后数月仍须调试、测试和客户验收。"
+    },
+    {
+      "ticker": "AAOI",
+      "published": "2026-03-09；ATM2026-10-05",
+      "source_urls": [
+        "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+        "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "200M以上1.6T首笔订单是3/9旧公告，并先需资格认证；10/5已净募587.999986M、发行5.694845M股。"
+    },
+    {
+      "ticker": "CRDO",
+      "published": "2026-09-01",
+      "source_urls": [
+        "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2 GAAP毛利62.9–64.9% vs调整67–69%；GAAP费用199–204M vs调整100–105M，主要差距含约97M费用端SBC。"
+    },
+    {
+      "ticker": "CRWV",
+      "published": "2026-08-12",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "RPO103.7B，约41%未来24月确认、39%随后24月；延迟交付罚则/可变对价可减少收入。"
+    },
+    {
+      "ticker": "UCTT",
+      "published": "2026-08-03",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入644.9M，GAAP毛利16.1%、经营利润率4.6%，调整7%。"
+    },
+    {
+      "ticker": "CLS",
+      "published": "2026-07-27 16:38EDT",
+      "source_urls": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入4.7B；GAAP经营率9.8%高于调整8.2%，TRS正向收益影响GAAP。"
+    },
+    {
+      "ticker": "MOD",
+      "published": "2026-10-01",
+      "source_urls": [
+        "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "10/1原股东每股获0.44619 THRM；MOD收到156M用于偿债，原股东直接拥有THRM43.62%而非MOD持有。"
+    },
+    {
+      "ticker": "COHR",
+      "published": "2026-03-02",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "NVIDIA原始伙伴公告：非排他、多年数十亿美元采购承诺及20亿美元投资；并非9–10月新获订单。"
+    },
+    {
+      "ticker": "KYTX",
+      "published": "2026-08-11",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "CMC已提交，Q4完成BLA计划；gMG三期mid2027是完成入组，不是读出且超6月窗。"
+    },
+    {
+      "ticker": "AMPX",
+      "published": "2026-10-05 08:00ET",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "新合同是CAMINUS美国软包电芯代工，资格批次正在开展，Q1/27预计逐步放量。"
+    },
+    {
+      "ticker": "ENPH",
+      "published": "2026-09-14",
+      "source_urls": [
+        "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "官方明确区分11月演示与2027年试点。"
+    },
+    {
+      "ticker": "PSIX",
+      "published": "2026-08-06",
+      "source_urls": [
+        "https://investors.psiengines.com/node/13891"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入152.5M，同比降21%、毛利27.1%；扩厂成本仍在，SAR公允价值变化影响费用。"
+    },
+    {
+      "ticker": "FLNC",
+      "published": "2026-09-16",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "FY26收入指引从3B降2.4B，调整EBITDA从-10M降-200M；生产问题已造成下修。"
+    },
+    {
+      "ticker": "VISN",
+      "published": "2026-08-06",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+        "https://stockanalysis.com/stocks/visn/transcripts/658038-q2-2026/"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2公告集团调整EBITDA35.8M而AuroraCore45.5M；电话会重复明确退税2027下半年。"
+    },
+    {
+      "ticker": "BNTX",
+      "published": "2026-08-04",
+      "source_urls": [
+        "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "公司把肿瘤关键数据与2026申报均列为依赖数据/事件累积的计划，非必定阳性。现金证券16.6342B欧元。"
+    },
+    {
+      "ticker": "LEU",
+      "published": "2026-07-01",
+      "source_urls": [
+        "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "900M DOE合同已签，含可选170M合计1.07B；新增大规模产能首产2029。"
+    },
+    {
+      "ticker": "RDW",
+      "published": "2026-08-05",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入117.1M、毛利27.8%、亏损41M，firm backlog542.1M。6/30优先股余额为零。"
+    },
+    {
+      "ticker": "AVAV",
+      "published": "2026-09-09",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d1.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q1收入480.5M仅增6%，funded backlog1.5B；FY27收入2.125–2.225B、GAAP EPS.21–.53、调整3.02–3.34。"
+    },
+    {
+      "ticker": "AOSL",
+      "published": "2026-08-12",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "官方prepared remarks：6月advanced占计算31%，计算占集团49.8%，相乘约15.4%；9月预期advanced超计算40%。"
+    },
+    {
+      "ticker": "ACMR",
+      "published": "2026-09-30 07:00ET；10-Q2026-08",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+        "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "9/30公告Shanghai backlog17.1B RMB约2.5B USD、同比+88.2%，含已出货待验收。6/30对Shanghai持股73.2%。"
+    },
+    {
+      "ticker": "AMBA",
+      "published": "2026-09-04",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "客户5/12终止研发项目：13.5M预收退4.5M，剩9M冲减Q2研发费；报告经营亏损8.1M正常化约17.1M。H1 OCF-25.9M。"
+    },
+    {
+      "ticker": "MRAM",
+      "published": "2026-08-05；政府协议4/24签、4/29披露",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+        "https://www.sec.gov/Archives/edgar/data/1438423/000162828026028432/mram-20260424.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q3收入19.5–20.5M；GAAP EPS-.10至-.05而调整+.10至+.15。40M政府项目周期约30个月至2028/11，按里程碑支付。"
+    },
+    {
+      "ticker": "CC",
+      "published": "2026-08-04",
+      "source_urls": [
+        "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q3调整EBITDA175–205M，TSS售后去库存压力；年底杠杆3.8倍是目标非已实现。"
+    },
+    {
+      "ticker": "ALNY",
+      "published": "2026-07-30",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000060/alny2026q2earningsrelease.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "首次人体早期数据并非确证疗效；Q2已下调TTR年度收入指引至4.2–4.5B。"
+    },
+    {
+      "ticker": "IONS",
+      "published": "2026-07-29；GSK2026-04-28",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/874015/000114036126029960/ef20078953_ex99-1.htm",
+        "https://us.gsk.com/en-us/media/press-releases/bepirovirsen-accepted-for-priority-review-and-granted-breakthrough-therapy-designation-by-the-us-fda/"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "GSK已宣布受理、优先审评和10/26目标；Ionis仅合同权益，不能把GSK销售全归Ionis。"
+    },
+    {
+      "ticker": "POET",
+      "published": "2026-08-13",
+      "source_urls": [
+        "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入仅0.569925M；现金短投796.3M包含大额募资，经营现金流Q2约-12.2M。"
+    },
+    {
+      "ticker": "ADBE",
+      "published": "2026-09-10",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q3收入6.760B、增长13%、ARR27.5B；FY26 GAAP EPS18.12–18.17，调整24.45–24.50。"
+    },
+    {
+      "ticker": "PNR",
+      "published": "2026-07-28",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2泳池销售-42%；FY26 GAAP EPS3.86–4.06、调整4.60–4.80，指引排除Taco。"
+    },
+    {
+      "ticker": "PLAB",
+      "published": "2026-08-26",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q3收入216M仅增2.7%；现金672.8M中503.5M在50.01%持有JV。"
+    },
+    {
+      "ticker": "ICHR",
+      "published": "2026-08-04",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入294.784M、毛利13.9%、经营率2.4%；毛利环比+260bp中130bp人员/规模、80bp不再发生重组、50bp工厂费用。"
+    },
+    {
+      "ticker": "NVDA",
+      "published": "2026-08-26",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "FY27开始nonGAAP已经包含SBC，历史比较重述；Q2收入96.221B、经营利润63.734B；投资收益7.771B需剔除经营盈利。"
+    },
+    {
+      "ticker": "APLD",
+      "published": "2026-10-07",
+      "source_urls": [
+        "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "最新财报有2.010873B可赎回NCI及181.302M优先权益，现金2.949909B与受限.313385B必须分开。"
+    },
+    {
+      "ticker": "NBIS",
+      "published": "2026-08-12",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "A288.585891M+B33.455053M须计经济权益；技术性C2.243621M不是同价值普通股简单再加；Tavily部分或有对价与2026/12和2027/3ARR挂钩。"
+    },
+    {
+      "ticker": "TTMI",
+      "published": "2026-09-30",
+      "source_urls": [
+        "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Epiq约1.1B现金交易；300M term A和800M term B融资结构需与其他债再融资用途区分。"
+    },
+    {
+      "ticker": "AEIS",
+      "published": "2026-08-03",
+      "source_urls": [
+        "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf"
+      ],
+      "access": "original_primary_relevant_sections",
+      "notes": "Q2收入574M；GAAP净利55M含31.8M转债诱导转换成本。调整EPS分母对冲处理与GAAP不同。"
+    }
+  ],
+  "web_access_manifest": [
+    {
+      "batch": 1,
+      "title": "Micron Technology, Inc. - Micron Technology, Inc. Reports Record Fiscal Fourth-Quarter and Full-Year 2026 Results",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "tool_reference": "turn394view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 1,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+      "tool_reference": "turn394view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 1,
+      "title": "IREN Reports FY26 Results | IREN",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "tool_reference": "turn394view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 1,
+      "title": "AOI Receives First Volume Order of 1.6T Data Center Transceivers from Major Hyperscale Customer - AOI Newsroom",
+      "url": "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+      "tool_reference": "turn394view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 2,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+      "tool_reference": "turn395view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 2,
+      "title": "IREN Reports FY26 Results | IREN",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "tool_reference": "turn395view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 2,
+      "title": "AOI Receives First Volume Order of 1.6T Data Center Transceivers from Major Hyperscale Customer - AOI Newsroom",
+      "url": "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+      "tool_reference": "turn395view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 3,
+      "title": "AOI Receives First Volume Order of 1.6T Data Center Transceivers from Major Hyperscale Customer - AOI Newsroom",
+      "url": "https://newsroom.ao-inc.com/news-releases/aoi-receives-first-volume-order-of-1-6t-data-center-transceivers-from-major-hyperscale-customer/",
+      "tool_reference": "turn396view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 4,
+      "title": "Super Micro Computer, Inc. - Supermicro Announces Fourth Quarter and Full Fiscal Year 2026 Financial Results",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "tool_reference": "turn397view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 4,
+      "title": "Credo Technology Group Holding Ltd - Credo Technology Group Holding Ltd Reports First Quarter of Fiscal Year 2027 Financial Results",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "tool_reference": "turn397view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 4,
+      "title": "crwv-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "tool_reference": "turn397view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 4,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm",
+      "tool_reference": "turn397view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 5,
+      "title": "Credo Technology Group Holding Ltd - Credo Technology Group Holding Ltd Reports First Quarter of Fiscal Year 2027 Financial Results",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "tool_reference": "turn398view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 5,
+      "title": "crwv-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "tool_reference": "turn398view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 5,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm",
+      "tool_reference": "turn398view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 5,
+      "title": "Micron Technology, Inc. - Micron Technology, Inc. Reports Record Fiscal Fourth-Quarter and Full-Year 2026 Results",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "tool_reference": "turn398view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 6,
+      "title": "Celestica Announces Second Quarter 2026 Financial Results | Celestica Inc.",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "tool_reference": "turn399view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 6,
+      "title": "Modine Manufacturing Company - Modine Completes Spin-off and Combination of its Performance Technologies Business with Gentherm",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "tool_reference": "turn399view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 6,
+      "title": "NVIDIA and Coherent Announce Strategic Partnership to Develop Optics Technology to Scale Next-Generation Data Center Architecture | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+      "tool_reference": "turn399view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 6,
+      "title": "smci-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "tool_reference": "turn399view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 7,
+      "title": "Modine Manufacturing Company - Modine Completes Spin-off and Combination of its Performance Technologies Business with Gentherm",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "tool_reference": "turn400view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 7,
+      "title": "NVIDIA and Coherent Announce Strategic Partnership to Develop Optics Technology to Scale Next-Generation Data Center Architecture | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture",
+      "tool_reference": "turn400view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 7,
+      "title": "smci-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "tool_reference": "turn400view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 7,
+      "title": "crwv-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "tool_reference": "turn400view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 8,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "tool_reference": "turn402view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 8,
+      "title": "CAMINUS Signs Contract Manufacturing Agreement with Amprius Technologies for U.S. Pouch Cell Production",
+      "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+      "tool_reference": "turn402view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 8,
+      "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 | Enphase Energy",
+      "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+      "tool_reference": "turn402view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 8,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "tool_reference": "turn402view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 9,
+      "title": "CAMINUS Signs Contract Manufacturing Agreement with Amprius Technologies for U.S. Pouch Cell Production",
+      "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+      "tool_reference": "turn403view0",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 9,
+      "title": "Enphase Energy to Showcase IQ Solid-State Transformer at AI Infra Summit 2026 | Enphase Energy",
+      "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+      "tool_reference": "turn403view1",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 9,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+      "tool_reference": "turn403view2",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 10,
+      "title": "Power Solutions International Announces Second Quarter 2026 Financial Results – Power Solutions International, Inc.",
+      "url": "https://investors.psiengines.com/node/13891",
+      "tool_reference": "turn405view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 10,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+      "tool_reference": "turn405view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 10,
+      "title": "BioNTech Announces Second Quarter 2026 Financial Results and Corporate Update",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+      "tool_reference": "turn405view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 10,
+      "title": "CAMINUS Signs Contract Manufacturing Agreement with Amprius Technologies for U.S. Pouch Cell Production",
+      "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+      "tool_reference": "turn405view3",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 11,
+      "title": "Power Solutions International Announces Second Quarter 2026 Financial Results – Power Solutions International, Inc.",
+      "url": "https://investors.psiengines.com/node/13891",
+      "tool_reference": "turn407view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 11,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+      "tool_reference": "turn407view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 11,
+      "title": "BioNTech Announces Second Quarter 2026 Financial Results and Corporate Update",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+      "tool_reference": "turn407view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 11,
+      "title": "BioNTech Announces Second Quarter 2026 Financial Results and Corporate Update",
+      "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/08/BioNTech-Announces-Second-Quarter-2026-Financial-Results-and-Corporate-Update.html",
+      "tool_reference": "turn407view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 12,
+      "title": "Centrus Signs Contract with Department of Energy for $900 Million Award; Intends to Transition HALEU Production Cascade to Commercial Operation - Centrus Energy Corp",
+      "url": "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+      "tool_reference": "turn410view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 12,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "tool_reference": "turn410view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 12,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm",
+      "tool_reference": "turn410view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 13,
+      "title": "ACM Research’s Operating Subsidiary ACM Research (Shanghai)",
+      "url": "https://www.globenewswire.com/news-release/2026/09/30/3371760/0/en/index.html",
+      "tool_reference": "turn411view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 13,
+      "title": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm",
+      "tool_reference": "turn411view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 13,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+      "tool_reference": "turn411view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 13,
+      "title": "The Chemours Company Reports Second Quarter Results | Chemours",
+      "url": "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results",
+      "tool_reference": "turn411view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 14,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000060/alny2026q2earningsrelease.htm",
+      "tool_reference": "turn412view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 14,
+      "title": "POET Technologies Reports Second Quarter 2026 Results: Revenue Up 112% Year-Over-Year in Sixth Consecutive Quarter of Sequential Growth | POET Technologies",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "tool_reference": "turn412view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 14,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm",
+      "tool_reference": "turn412view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs | Ionis Pharmaceuticals, Inc.",
+      "url": "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "tool_reference": "turn413search0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs",
+      "url": "https://ir.ionispharma.com/node/34996/pdf",
+      "tool_reference": "turn413search12",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs | Ionis Pharmaceuticals, Inc.",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "tool_reference": "turn413search1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Quarterly Results | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/node/5986",
+      "tool_reference": "turn413search2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Investor Relations | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/investor-relations",
+      "tool_reference": "turn413search3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Events & Presentations | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/news-events/events-and-presentations",
+      "tool_reference": "turn413search4",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "AeroVironment, Inc. First Quarter Fiscal Year 2027 Earnings Call | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/events/event-details/aerovironment-inc-first-quarter-fiscal-year-2027-earnings-call",
+      "tool_reference": "turn413search5",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "SEC Filing | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/node/21386/html",
+      "tool_reference": "turn413search6",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Q1 2026 AeroVironment Inc Earnings Call on September 09, 2025 / 8:30PM",
+      "url": "https://investor.avinc.com/static-files/8684ea3c-379b-47d3-a495-a0b3a7420e7a",
+      "tool_reference": "turn413search13",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "AeroVironment Announces Fiscal 2027 First Quarter Results | AeroVironment, Inc.",
+      "url": "https://investor.avinc.com/node/21391",
+      "tool_reference": "turn413search7",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "0001140361-26-029960 | 8-K | iXBRL Viewer | Ionis Pharmaceuticals INC",
+      "url": "https://ir.ionis.com/node/35006/ixbrl-viewer",
+      "tool_reference": "turn413search8",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "AeroVironment Announces Fiscal 2027 First Quarter Results - AeroVironment",
+      "url": "https://www.avinc.com/2026/09/09/aerovironment-announces-fiscal-2027-first-quarter-results/",
+      "tool_reference": "turn413search9",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "AeroVironment, Inc. to Announce First Quarter of Fiscal Year 2027 Earnings and Host Conference Call - AeroVironment",
+      "url": "https://www.avinc.com/2026/08/26/aerovironment-inc-to-announce-first-quarter-of-fiscal-year-2027-earnings-and-host-conference-call/",
+      "tool_reference": "turn413search10",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d1.htm",
+      "tool_reference": "turn413search11",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Wolters Kluwer First-Quarter 2026 Trading Update",
+      "url": "https://assets.contenthub.wolterskluwer.com/api/public/content/3316098-2026-05-06-wolters-kluwer-first-quarter-2026-trading-update-a6a04158be?v=9092ad42",
+      "tool_reference": "turn413search14",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "UNITED STATES",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001176334/ec98fd52-08c0-4072-bd43-0390c3069b7b.pdf",
+      "tool_reference": "turn413search15",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "Talos Energy Announces First Quarter 2026 Operational and Financial Results",
+      "url": "https://s204.q4cdn.com/780283343/files/doc_financials/2026/q1/TALO-1Q26-Earnings-Press-Release-vFinal.pdf",
+      "tool_reference": "turn413search16",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "HAMILTON LANE INCORPORATED REPORTS FIRST QUARTER FISCAL 2027 RESULTS - Aug 4, 2026",
+      "url": "https://shareholders.hamiltonlane.com/2026-08-04-HAMILTON-LANE-INCORPORATED-REPORTS-FIRST-QUARTER-FISCAL-2027-RESULTS?asPDF=",
+      "tool_reference": "turn413search17",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm",
+      "tool_reference": "turn413view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 15,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+      "tool_reference": "turn413view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 16,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "tool_reference": "turn414view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 16,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "tool_reference": "turn414view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 16,
+      "title": "ichr-20260626",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm",
+      "tool_reference": "turn414view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 16,
+      "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "tool_reference": "turn414view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 17,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d1.htm",
+      "tool_reference": "turn415view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 17,
+      "title": "Applied Digital Reports Fiscal First Quarter 2027 Results :: Applied Digital Corporation (APLD)",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "tool_reference": "turn415view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 17,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "tool_reference": "turn415view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 18,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "tool_reference": "turn416view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 18,
+      "title": "ichr-20260626",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm",
+      "tool_reference": "turn416view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 18,
+      "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "tool_reference": "turn416view2",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 18,
+      "title": "Power Solutions International Announces Second Quarter 2026 Financial Results – Power Solutions International, Inc.",
+      "url": "https://investors.psiengines.com/node/13891",
+      "tool_reference": "turn416view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 19,
+      "title": "The Chemours Company Reports Second Quarter Results | Chemours",
+      "url": "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results",
+      "tool_reference": "turn417view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 19,
+      "title": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm",
+      "tool_reference": "turn417view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 19,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+      "tool_reference": "turn417view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 19,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm",
+      "tool_reference": "turn417view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 20,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs",
+      "url": "https://ir.ionispharma.com/node/34996/pdf",
+      "tool_reference": "turn419view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 20,
+      "title": "September 30, 2026 - EX-99.1 - 8-K: Current report | TTM Technologies, Inc. (TTMI)",
+      "url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm",
+      "tool_reference": "turn419view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 20,
+      "title": "",
+      "url": "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf",
+      "tool_reference": "turn419view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 20,
+      "title": "POET Technologies Reports Second Quarter 2026 Results: Revenue Up 112% Year-Over-Year in Sixth Consecutive Quarter of Sequential Growth | POET Technologies",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "tool_reference": "turn419view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 20,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/810136/000081013626000006/plabQ32026EarningsEx99-1PR.htm",
+      "tool_reference": "turn419view4",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 21,
+      "title": "September 30, 2026 - EX-99.1 - 8-K: Current report | TTM Technologies, Inc. (TTMI)",
+      "url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm",
+      "tool_reference": "turn421view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 21,
+      "title": "",
+      "url": "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf",
+      "tool_reference": "turn421view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 21,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm",
+      "tool_reference": "turn421view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 21,
+      "title": "ichr-20260626",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm",
+      "tool_reference": "turn421view4",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 22,
+      "title": "",
+      "url": "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf",
+      "tool_reference": "turn423view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 22,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1387467/000162828026056197/exhibit992earningreleaseju.htm",
+      "tool_reference": "turn423view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 22,
+      "title": "Applied Digital Reports Fiscal First Quarter 2027 Results :: Applied Digital Corporation (APLD)",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "tool_reference": "turn423view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000114036126029960/ef20078953_ex99-1.htm",
+      "tool_reference": "turn425search0",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "FF-007: FDA approves bepirovirsen for chronic hepatitis B on or before the disclosed PDUFA goal date of 2026-10-26 | NextConsensus",
+      "url": "https://nextconsensus.com/forecast/ff-007/",
+      "tool_reference": "turn425search1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Ionis partner GSK announces bepirovirsen accepted for Priority Review and granted Breakthrough Therapy Designation by U.S. FDA as a potential first-in-class medicine for chronic hepatitis B | Ionis Pharmaceuticals, Inc.",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-partner-gsk-announces-bepirovirsen-accepted-priority",
+      "tool_reference": "turn425search2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Corporate Presentation",
+      "url": "https://ir.ionis.com/static-files/21bb1591-8b81-4eab-bf68-19a5e39e7e5b",
+      "tool_reference": "turn425search12",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Bepirovirsen accepted for priority review and granted Breakthrough Therapy Designation by the US FDA | GSK US",
+      "url": "https://us.gsk.com/en-us/media/press-releases/bepirovirsen-accepted-for-priority-review-and-granted-breakthrough-therapy-designation-by-the-us-fda/",
+      "tool_reference": "turn425search3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Form 8-K for Ionis Pharmaceuticals INC filed 07/29/2026",
+      "url": "https://ir.ionispharma.com/static-files/024c804c-89db-4eee-a502-405d7ca9cea6",
+      "tool_reference": "turn425search13",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Ionis partner GSK announces bepirovirsen accepted for Priority Review and granted Breakthrough Therapy Designation by U.S. FDA as a potential first-in-class medicine for chronic hepatitis B",
+      "url": "https://ir.ionis.com/node/34516/pdf",
+      "tool_reference": "turn425search14",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "October 2026 biotech catalyst calendar · Biotech Tracker",
+      "url": "https://app.biotechtracker.dev/calendar/2026/10",
+      "tool_reference": "turn425search4",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Press release",
+      "url": "https://us.gsk.com/media/vdzmc13b/bepi_filingacceptance_btd_usrelease-42726_final.pdf",
+      "tool_reference": "turn425search15",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Bepirovirsen FDA Decision Date: 2026-10-26 | GSK",
+      "url": "https://biopharmsignal.com/pdufa-calendar/GSK/bepirovirsen-chronic-hepatitis-b",
+      "tool_reference": "turn425search5",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Ionis reports first quarter 2026 financial results and highlights progress on key programs",
+      "url": "https://ir.ionis.com/node/34531/pdf",
+      "tool_reference": "turn425search16",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "",
+      "url": "https://app.boardroomalpha.com/sec_feed/2026/QTR2/0001140361-26-017637/ef20071749_ex99-1.htm",
+      "tool_reference": "turn425search6",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs",
+      "url": "https://ir.ionispharma.com/node/34996/pdf",
+      "tool_reference": "turn425search17",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Bepirovirsen FDA Decision Date: 2026-10-26 | GSK",
+      "url": "https://biopharmsignal.com/ja/pdufa-calendar/GSK/bepirovirsen-chronic-hepatitis-b",
+      "tool_reference": "turn425search7",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Bepirovirsen FDA Decision Date: 2026-10-26 | GSK",
+      "url": "https://biopharmsignal.com/zh-hans/pdufa-calendar/GSK/bepirovirsen-chronic-hepatitis-b",
+      "tool_reference": "turn425search8",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Bepirovirsen FDA Decision Date: 2026-10-26 | GSK",
+      "url": "https://biopharmsignal.com/zh-hant/pdufa-calendar/GSK/bepirovirsen-chronic-hepatitis-b",
+      "tool_reference": "turn425search9",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Glaxosmithkline News Headlines. GSK Share News. Financial News Articles for Gsk Plc Ord 31 1/4p updated throughout the day.",
+      "url": "https://www.lse.co.uk/news/GSK/gsks-chronic-hepatitis-b-drug-helps-one-in-five-achieve-functional-cure-in-key-studies-2eov3e1ugeycbom.html?page=23",
+      "tool_reference": "turn425search10",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Ionis reports second quarter 2026 financial results and highlights progress on key programs | MarketMinute",
+      "url": "https://www.tyust.edu.cwpta.marketminute.com/article/bizwire-2026-7-29-ionis-reports-second-quarter-2026-financial-results-and-highlights-progress-on-key-programs",
+      "tool_reference": "turn425search11",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "tool_reference": "turn425view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 23,
+      "title": "Applied Digital Reports Fiscal First Quarter 2027 Results :: Applied Digital Corporation (APLD)",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "tool_reference": "turn425view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 24,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000114036126029960/ef20078953_ex99-1.htm",
+      "tool_reference": "turn428view0",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 24,
+      "title": "Bepirovirsen accepted for priority review and granted Breakthrough Therapy Designation by the US FDA | GSK US",
+      "url": "https://us.gsk.com/en-us/media/press-releases/bepirovirsen-accepted-for-priority-review-and-granted-breakthrough-therapy-designation-by-the-us-fda/",
+      "tool_reference": "turn428view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 24,
+      "title": "crwv-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "tool_reference": "turn428view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 24,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "tool_reference": "turn428view3",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 25,
+      "title": "Sandisk to Report First Quarter Fiscal Year 2027 Results on October 29, 2026 | Sandisk",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
+      "tool_reference": "turn430view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 25,
+      "title": "Bepirovirsen accepted for priority review and granted Breakthrough Therapy Designation by the US FDA | GSK US",
+      "url": "https://us.gsk.com/en-us/media/press-releases/bepirovirsen-accepted-for-priority-review-and-granted-breakthrough-therapy-designation-by-the-us-fda/",
+      "tool_reference": "turn430view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 25,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000114036126029960/ef20078953_ex99-1.htm",
+      "tool_reference": "turn430view2",
+      "access": "failed_or_partial",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 25,
+      "title": "Modine Manufacturing Company - Modine Completes Spin-off and Combination of its Performance Technologies Business with Gentherm",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "tool_reference": "turn430view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 26,
+      "title": "mram-20260424",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026028432/mram-20260424.htm",
+      "tool_reference": "turn431view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 26,
+      "title": "Vistance Networks (VISN) Q2 2026 Earnings Call Transcript & Audio",
+      "url": "https://stockanalysis.com/stocks/visn/transcripts/658038-q2-2026/",
+      "tool_reference": "turn431view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 26,
+      "title": "acmr-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm",
+      "tool_reference": "turn431view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 27,
+      "title": "Applied Optoelectronics Announces Completion of Previously Announced At the Market Offering | Applied Optoelectronics, Inc.",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+      "tool_reference": "turn435view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 27,
+      "title": "Sandisk to Report First Quarter Fiscal Year 2027 Results on October 29, 2026 | Sandisk",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
+      "tool_reference": "turn435view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 27,
+      "title": "Vistance Networks (VISN) Q2 2026 Earnings Call Transcript & Audio",
+      "url": "https://stockanalysis.com/stocks/visn/transcripts/658038-q2-2026/",
+      "tool_reference": "turn435view2",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 27,
+      "title": "acmr-20260630",
+      "url": "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm",
+      "tool_reference": "turn435view3",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 27,
+      "title": "www.sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "tool_reference": "turn435view4",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 28,
+      "title": "Applied Optoelectronics Announces Completion of Previously Announced At the Market Offering | Applied Optoelectronics, Inc.",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously",
+      "tool_reference": "turn436view0",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 28,
+      "title": "Sandisk to Report First Quarter Fiscal Year 2027 Results on October 29, 2026 | Sandisk",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-09-29-sandisk-to-report-first-quarter-fiscal-year-2027-results-on-october-29-2026",
+      "tool_reference": "turn436view1",
+      "access": "opened_or_find_sections",
+      "read_scope": "仅工具返回相关段及随后定点复开，不声称全文"
+    },
+    {
+      "batch": 29,
+      "tool_reference": "turn445view0",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "access": "find_relevant_sections",
+      "notes": "复核Pool下降42%，非4.2%"
+    },
+    {
+      "batch": 29,
+      "tool_reference": "turn445view1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "access": "find_relevant_sections",
+      "notes": "现金等价物557.0M、受限约0.8M"
+    },
+    {
+      "batch": 29,
+      "tool_reference": "turn445view2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm",
+      "access": "find_relevant_sections",
+      "notes": "披露日8/3已独立确认"
+    },
+    {
+      "batch": 30,
+      "tool_reference": "turn447view0",
+      "url": "https://investors.psiengines.com/node/13891",
+      "access": "open_relevant_sections",
+      "notes": "披露日8/6，H2计划、SAR及现金债务复核"
+    }
+  ],
+  "limitations": [
+    "原始IR/SEC事实核验与外部独立投资意见不同；券商多空仅继承，不称V1全文复核。",
+    "IONS IR原页/PDF与AVAV IR node发生读取失败，已切换SEC同公告；失败源不支撑结论。",
+    "多数财报未来月份为V1按财季估计；仅明确日历才标官方定日。"
+  ]
+}

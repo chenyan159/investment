@@ -1,0 +1,5 @@
+[
+ {"id":"ROOT_MEM_REUTERS","ticker":["MU"],"url":"https://uk.marketscreener.com/news/micron-forecasts-quarterly-revenue-above-estimates-ce785ad3d881f42c","published":"2026-09-30 updated 2026-10-01","access":"opened relevant body paragraphs","type":"Reuters syndicated reporting","note":"Guide vs LSEG; commitments not equal balance-sheet liability"},
+ {"id":"ROOT_MEM_SNDK","ticker":["SNDK","MU"],"url":"https://www.sandisk.com/company/newsroom/blogs/2026/nand-flash-finds-new-value-in-volume","published":"2026-10-07","access":"opened body and publication date","type":"company primary opinion","note":"Management market forecast, not independent consensus"},
+ {"id":"ROOT_MEM_AXIOS","ticker":["SNDK","MU"],"url":"https://www.axios.com/2026/07/06/ai-memory-chips-stocks","published":"2026-07-06","access":"opened relevant body paragraphs","type":"independent journalism quoting analyst","note":"High prices encourage substitutes; 25-word derivation limit respected"}
+]

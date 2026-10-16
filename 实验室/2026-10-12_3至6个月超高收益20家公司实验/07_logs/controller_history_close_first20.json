@@ -1,0 +1,222 @@
+[
+  {
+    "ticker": "MU",
+    "url": "https://stockanalysis.com/stocks/mu/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn243view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/mu/history/\",\"lineno\":65}); Total lines: 229",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 1,002.45  | 1,002.67  | 978.50  | 989.04  | 989.04  | -3.88%  | 23,984,584"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "SNDK",
+    "url": "https://stockanalysis.com/stocks/sndk/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn243view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/sndk/history/\",\"lineno\":65}); Total lines: 229",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 1,538.12  | 1,539.10  | 1,464.43  | 1,487.33  | 1,487.33  | -5.97%  | 8,801,727"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "IREN",
+    "url": "https://stockanalysis.com/stocks/iren/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn243view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/iren/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 36.31  | 36.69  | 34.66  | 34.80  | 34.80  | -1.11%  | 49,658,868"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "AAOI",
+    "url": "https://stockanalysis.com/stocks/aaoi/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn243view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/aaoi/history/\",\"lineno\":65}); Total lines: 229",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 106.20  | 106.41  | 99.22  | 100.68  | 100.68  | -8.17%  | 11,030,855"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "SMCI",
+    "url": "https://stockanalysis.com/stocks/smci/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn243view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/smci/history/\",\"lineno\":65}); Total lines: 229",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 41.29  | 41.38  | 39.24  | 39.98  | 39.98  | -4.48%  | 25,516,190"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "CRDO",
+    "url": "https://stockanalysis.com/stocks/crdo/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn244view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/crdo/history/\",\"lineno\":65}); Total lines: 228",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L99: Oct 12, 2026  | 212.41  | 212.46  | 200.24  | 200.84  | 200.84  | -7.25%  | 8,382,018"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "CRWV",
+    "url": "https://stockanalysis.com/stocks/crwv/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn244view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/crwv/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 80.33  | 81.25  | 79.03  | 80.26  | 80.26  | -2.22%  | 19,023,443"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "FLNC",
+    "url": "https://stockanalysis.com/stocks/flnc/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn244view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/flnc/history/\",\"lineno\":65}); Total lines: 230",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L101: Oct 12, 2026  | 7.32  | 7.33  | 7.05  | 7.07  | 7.07  | -4.85%  | 5,216,433"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "POET",
+    "url": "https://stockanalysis.com/stocks/poet/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn244view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/poet/history/\",\"lineno\":65}); Total lines: 226",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L97: Oct 12, 2026  | 6.81  | 6.87  | 6.40  | 6.41  | 6.41  | -8.03%  | 10,665,953"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "PSIX",
+    "url": "https://stockanalysis.com/stocks/psix/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn244view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/psix/history/\",\"lineno\":65}); Total lines: 229",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 49.55  | 50.56  | 48.62  | 50.10  | 50.10  | 0.06%  | 325,766"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "KYTX",
+    "url": "https://stockanalysis.com/stocks/kytx/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn242view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/kytx/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 6.34  | 6.46  | 6.19  | 6.21  | 6.21  | -2.82%  | 417,108"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "BNTX",
+    "url": "https://stockanalysis.com/stocks/bntx/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn242view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/bntx/history/\",\"lineno\":65}); Total lines: 228",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L99: Oct 12, 2026  | 97.61  | 98.60  | 95.75  | 95.84  | 95.84  | -1.16%  | 1,276,960"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "VISN",
+    "url": "https://stockanalysis.com/stocks/visn/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn242view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/visn/history/\",\"lineno\":65}); Total lines: 228",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L99: Oct 12, 2026  | 6.02  | 6.10  | 5.98  | 6.08  | 6.08  | 0.50%  | 4,214,869"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "ENPH",
+    "url": "https://stockanalysis.com/stocks/enph/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn242view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/enph/history/\",\"lineno\":65}); Total lines: 228",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L99: Oct 12, 2026  | 32.78  | 32.81  | 31.34  | 31.49  | 31.49  | -4.02%  | 4,201,136"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "AMPX",
+    "url": "https://stockanalysis.com/stocks/ampx/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn242view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/ampx/history/\",\"lineno\":65}); Total lines: 229",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 9.40  | 9.40  | 8.86  | 8.87  | 8.87  | -6.04%  | 5,616,232"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "LEU",
+    "url": "https://stockanalysis.com/stocks/leu/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn241view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/leu/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 140.12  | 141.20  | 134.46  | 135.31  | 135.31  | -5.01%  | 769,063"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "RDW",
+    "url": "https://stockanalysis.com/stocks/rdw/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn241view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/rdw/history/\",\"lineno\":65}); Total lines: 228",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L99: Oct 12, 2026  | 9.58  | 9.65  | 9.20  | 9.22  | 9.22  | -3.76%  | 8,673,311"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "NVTS",
+    "url": "https://stockanalysis.com/stocks/nvts/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn241view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/nvts/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 10.53  | 10.57  | 9.80  | 9.99  | 9.99  | -7.33%  | 21,371,351"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "AOSL",
+    "url": "https://stockanalysis.com/stocks/aosl/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn241view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/aosl/history/\",\"lineno\":65}); Total lines: 227",
+      "L73: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L98: Oct 12, 2026  | 27.33  | 27.33  | 26.53  | 26.58  | 26.58  | -4.63%  | 313,119"
+    ],
+    "has_dated_close": true
+  },
+  {
+    "ticker": "MRAM",
+    "url": "https://stockanalysis.com/stocks/mram/history/",
+    "access_date_utc": "2026-10-13",
+    "excerpts": [
+      "citeturn241view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://stockanalysis.com/stocks/mram/history/\",\"lineno\":65}); Total lines: 229",
+      "L75: At close: Oct 12, 2026, 4:00 PM EDT",
+      "L100: Oct 12, 2026  | 16.44  | 16.44  | 15.15  | 15.28  | 15.28  | -7.11%  | 697,716"
+    ],
+    "has_dated_close": true
+  }
+]

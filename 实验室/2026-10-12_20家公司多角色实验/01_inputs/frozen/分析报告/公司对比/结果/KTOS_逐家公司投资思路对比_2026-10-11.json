@@ -1,0 +1,143 @@
+{
+  "ticker": "KTOS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:29:41-07:00",
+  "reference_price": {
+    "value": 42.36,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        41.11,
+        41.11
+      ],
+      "target_price": [
+        11.16,
+        13.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        91.84,
+        91.84
+      ],
+      "target_price": [
+        36.86,
+        50.16
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        141.04,
+        141.04
+      ],
+      "target_price": [
+        68.5,
+        85.93
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        187.88,
+        187.88
+      ],
+      "target_price": [
+        99.01,
+        127.36
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "AVAV",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "广义无人作战量产与进攻赔率优先AVAV；专押喷气发动机并重视净现金缓冲时KTOS优先。"
+    },
+    {
+      "peer": "TDY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "要求成熟现金流与稳健持有时TDY优先；需要喷气发动机和CCA突破敞口时KTOS优先。"
+    },
+    {
+      "peer": "RDW",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "按现价及正常兑现路径KTOS的资金缓冲和订单机制更扎实，RDW须先改善Space现金与有机增长。"
+    },
+    {
+      "peer": "PLTR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "当前买价下KTOS正常兑现损失较小且右尾尚有空间，PLTR的优质软件利润已被更高估值要求吸收。"
+    },
+    {
+      "peer": "RKLB",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "HASTE受益真实但RKLB现价已要求远超正常兑现的成功，KTOS在同一试验预算逻辑下赔率更好。"
+    },
+    {
+      "peer": "CW",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健国防和核电复购配置优先CW；低成本喷气推进批量化的高弹性敞口优先KTOS。"
+    },
+    {
+      "peer": "MTSI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "重视已盈利射频与光前端升级时MTSI更合适；专注发动机量产的现价右尾弹性时KTOS更合适。"
+    },
+    {
+      "peer": "TTMI",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "AI互连产能、验收与回款兑现后TTMI更有盈利承载；防务推进主题及资金缓冲偏好下KTOS优先。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "核心成长配置中APH的正常兑现回报和现金承载更强，KTOS仅适合补充其缺少的喷气推进主题。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心持有优先MSFT的复购和现金底盘，但需保持资本支出与价格纪律；KTOS只适合国防非线性补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "正常AI预算延续下NVDA的基准与右尾承载优于KTOS，但须验证远期收入、客户回款和信用支持风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "接受台湾地区尾部且追求制造复利时TSM优先；需要美国本土防务敞口时KTOS可作补充。"
+    }
+  ]
+}

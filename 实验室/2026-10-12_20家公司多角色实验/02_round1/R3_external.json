@@ -1,0 +1,973 @@
+{
+  "role": "R3_external",
+  "screened_count": 245,
+  "deep_read_tickers": [
+    "ADBE",
+    "ALNY",
+    "IONS",
+    "PNR",
+    "BNTX",
+    "PGR",
+    "RNR",
+    "BJ",
+    "KR",
+    "AGCO",
+    "ENPH",
+    "FLNC",
+    "BABA",
+    "ORCL",
+    "CRM",
+    "MCHP",
+    "SMCI",
+    "NVDA",
+    "AVGO",
+    "MU",
+    "VST",
+    "ENS",
+    "MOD",
+    "BDC",
+    "UCTT",
+    "AMKR",
+    "PLAB",
+    "CARR",
+    "DOV",
+    "AVAV"
+  ],
+  "nominations": [
+    {
+      "rank": 1,
+      "ticker": "ADBE",
+      "price_anchor": 238.14,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "成熟订阅被AI替代叙事折价，真实文档与企业收费尚在增长。用保留SBC的盈利估值，不为AI ARR单独再加价。",
+      "horizon_months": 12,
+      "bear_price": 170,
+      "base_price": 315,
+      "bull_price": 480,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          17,
+          21,
+          24
+        ],
+        "pe_bear_base_bull": [
+          10,
+          15,
+          20
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "6–12月FY27续约与提价周年；12–18月净席位和积分收费",
+      "kill_criteria": "连续两季可比ARR低于5%且经济利润下滑",
+      "key_risks": "创意席位减少、并购掩盖有机增速、管理交接",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S01",
+          "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+          "published_date": "2026-09-10"
+        }
+      ],
+      "confidence": "高",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 32.3
+    },
+    {
+      "rank": 2,
+      "ticker": "NVDA",
+      "price_anchor": 226.32,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "平台收费能力与当前盈利比高PS小型光芯片更可核验；反共识在相对估值，不在否认市场已经预期高增长。",
+      "horizon_months": 12,
+      "bear_price": 117,
+      "base_price": 294,
+      "bull_price": 486,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          9,
+          14,
+          18
+        ],
+        "pe_bear_base_bull": [
+          13,
+          21,
+          27
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月Rubin交付与回款；6–12月FY28预算",
+      "kill_criteria": "DSO持续高于70天且现金转换继续恶化，或毛利跌破65%",
+      "key_risks": "客户融资、资本开支循环、出口与集中度",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S10",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+          "published_date": "2026-08-26"
+        }
+      ],
+      "confidence": "中高",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 29.9
+    },
+    {
+      "rank": 3,
+      "ticker": "PNR",
+      "price_anchor": 52.33,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "渠道修复与Taco现金整合可在18个月内检验，买价不需要把全部水业务重估为AI。",
+      "horizon_months": 12,
+      "bear_price": 35.0,
+      "base_price": 70,
+      "bull_price": 102,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          3.5,
+          5,
+          6
+        ],
+        "pe_bear_base_bull": [
+          10,
+          14,
+          17
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月2027指引；6–12月泳池季；12–18月去杠杆",
+      "kill_criteria": "泳池sell-through持续落后竞争者或并购后净债务未按计划下降",
+      "key_risks": "品牌份额损失、债务、一次关税退款",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S03",
+          "url": "https://investors.pentair.com/node/27096/pdf",
+          "published_date": "2026-07-28"
+        },
+        {
+          "source_id": "R3S08",
+          "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+          "published_date": "2026-10-01"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 33.8
+    },
+    {
+      "rank": 4,
+      "ticker": "BDC",
+      "price_anchor": 105.29,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "工业网络现金基础加RUCKUS整合，优于纯靠光模块远期份额的定价；但大收购意味着必须按利息后收益估值。",
+      "horizon_months": 12,
+      "bear_price": 65.0,
+      "base_price": 136.0,
+      "bull_price": 220,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          6.5,
+          8.5,
+          11
+        ],
+        "pe_bear_base_bull": [
+          10,
+          16,
+          20
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月RUCKUS独立现金桥；6–12月交叉销售与光订单交付",
+      "kill_criteria": "并购毛利提升但利息后现金持续减少",
+      "key_risks": "杠杆、整合、关税退款、匿名大客户",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-09-22.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "等待并购后现金验证",
+      "base_price_return_pct": 29.2
+    },
+    {
+      "rank": 5,
+      "ticker": "MCHP",
+      "price_anchor": 73.83,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "MCU库存修复比机器人远期TAM更快兑现；PCIe定点提供附加弹性，不能把12个定点都按最大项目推算。",
+      "horizon_months": 12,
+      "bear_price": 39.2,
+      "base_price": 88,
+      "bull_price": 135.2,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          2.8,
+          4,
+          5.2
+        ],
+        "pe_bear_base_bull": [
+          14,
+          22,
+          26
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月库存与产能利用率；6–12月Gen6订单",
+      "kill_criteria": "库存金额继续增加而收入转降；债务契约余量缩小",
+      "key_risks": "约54亿债务、分红占款、订单取消",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-09-21.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 19.2
+    },
+    {
+      "rank": 6,
+      "ticker": "CARR",
+      "price_anchor": 55.42,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "数据中心订单与住宅修复两条路径，当前16.8倍快照远期PE低于纯数据中心热管理；集团基数降低单一技术风险。",
+      "horizon_months": 12,
+      "bear_price": 35.0,
+      "base_price": 73.5,
+      "bull_price": 100,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          2.5,
+          3.5,
+          4
+        ],
+        "pe_bear_base_bull": [
+          14,
+          21,
+          25
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月数据中心交付加速；6–12月住宅补库",
+      "kill_criteria": "下半年数据中心销售显著无法接近公司目标且住宅再次转弱",
+      "key_risks": "欧洲低利润、交付、回购与债务争现金",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/CARR_Carrier_Global_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 32.6
+    },
+    {
+      "rank": 7,
+      "ticker": "MOD",
+      "price_anchor": 172.5,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "有预付款支持的实际数据中心交付比多数冷却概念更强，盈利爬坡形成弹性。",
+      "horizon_months": 12,
+      "bear_price": 84,
+      "base_price": 207,
+      "bull_price": 336,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          6,
+          9,
+          12
+        ],
+        "pe_bear_base_bull": [
+          14,
+          23,
+          28
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月EBITDA率回升；6–12月新厂交付",
+      "kill_criteria": "收入高增但数据中心利润率长期低于15%或核心客户延迟",
+      "key_risks": "客户集中、165M预付款不可重复、技术配置变化",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "等待剔除预付款后现金改善",
+      "base_price_return_pct": 20.0
+    },
+    {
+      "rank": 8,
+      "ticker": "AVGO",
+      "price_anchor": 354.73,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "定制计算与基础软件双利润池，作为昂贵ASIC设计与光互联个股的替代；折扣估值需保留SBC与战略投入。",
+      "horizon_months": 12,
+      "bear_price": 180,
+      "base_price": 391,
+      "bull_price": 616,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          12,
+          17,
+          22
+        ],
+        "pe_bear_base_bull": [
+          15,
+          23,
+          28
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月AI交付和软件续约；6–12月多客户项目",
+      "kill_criteria": "AI收入增长但营运资本与客户信用支持吞噬现金",
+      "key_risks": "系统混合降低毛利、客户集中、软件提价反弹",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-18.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 10.2
+    },
+    {
+      "rank": 9,
+      "ticker": "VST",
+      "price_anchor": 158.13,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "现成发电资产及对冲现金优于未商业化SMR；容量和并购贡献可观察，但不把AI现货涨价作用到全部已锁价电量。",
+      "horizon_months": 12,
+      "bear_price": 100,
+      "base_price": 190,
+      "bull_price": 275,
+      "valuation_formula": {
+        "method": "all-investment-after equity FCF / diluted shares x P/FCF",
+        "fcf_bn": [
+          2.4,
+          4.2,
+          5.5
+        ],
+        "shares_bn": [
+          0.336,
+          0.331,
+          0.32
+        ],
+        "multiples": [
+          14,
+          15,
+          16
+        ],
+        "unrounded_prices": [
+          100,
+          190.33,
+          275
+        ],
+        "definition": "FCF须扣利息税、维护及增长资本支出、Helix承诺和其他权益分配；不可直接采用FCFbG。3个现金点均为研究假设，非公司指引。净债务不重复扣。",
+        "limitation": "基准全投资后4.2B需核验，故等待；稀释5%降低目标约4.8%。"
+      },
+      "catalysts": "3–6月2027现金指引；6–12月容量与并购协同",
+      "kill_criteria": "增长投资持续超过可用现金且净债务升高；重大非计划停机",
+      "key_risks": "对冲、气价、监管、1B Helix承诺",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S12",
+          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000017/vistra-20260630xearningsre.htm",
+          "published_date": "2026-08-07"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "等待全投资后现金桥",
+      "base_price_return_pct": 20.2
+    },
+    {
+      "rank": 10,
+      "ticker": "CRM",
+      "price_anchor": 233.92,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "企业数据权限与执行层仍有续费价值；折价成熟平台优于高倍数应用叙事，但仅列ADBE后的补充。",
+      "horizon_months": 12,
+      "bear_price": 135,
+      "base_price": 276,
+      "bull_price": 420,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          9,
+          12,
+          15
+        ],
+        "pe_bear_base_bull": [
+          15,
+          23,
+          28
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月同口径Agentforce收费；6–12月降债",
+      "kill_criteria": "剔除并购后的增长低于4%且净债务不降",
+      "key_risks": "39.5B债务、AI指标口径变化、投资收益",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S13",
+          "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+          "published_date": "2026-08-26"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "条件分批",
+      "base_price_return_pct": 18.0
+    },
+    {
+      "rank": 11,
+      "ticker": "ALNY",
+      "price_anchor": 227.02,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "已盈利RNAi平台是对AI资本开支链的独立替代；下调TTR指引后需证明一线患者持续增长，非无条件低PE。",
+      "horizon_months": 12,
+      "bear_price": null,
+      "base_price": null,
+      "bull_price": null,
+      "valuation_formula": {
+        "method": "暂不量化",
+        "reason": "ALNY快照forward EPS可能混税项/调整口径，缺近端经济盈利桥；BNTX需要同日EUR/USD、ADS比率和分资产rNPV。不能拿2030价格移到18个月。",
+        "needed": "最新完全稀释股数、净债务及受限制现金、2027费用、临床/销售节点"
+      },
+      "catalysts": "3–6月TTR新患者；6–12月净价与现金；12–18月PN试验进展",
+      "kill_criteria": "TTR再次实质下修且非一次因素；净价下降抵消患者增长",
+      "key_risks": "Sanofi高阶梯30%版税、稳定剂竞争、递延税项",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S02",
+          "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+          "published_date": "2026-07-30"
+        }
+      ],
+      "confidence": "中低",
+      "entry_status": "等待季度验证；目标价暂缺",
+      "base_price_return_pct": null
+    },
+    {
+      "rank": 12,
+      "ticker": "BNTX",
+      "price_anchor": 95.84,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "大型现金与多资产肿瘤读数给非AI右尾，但mRNA标签不是整个平台成功，BMS分享权益必须扣除。",
+      "horizon_months": 12,
+      "bear_price": null,
+      "base_price": null,
+      "bull_price": null,
+      "valuation_formula": {
+        "method": "暂不量化",
+        "reason": "ALNY快照forward EPS可能混税项/调整口径，缺近端经济盈利桥；BNTX需要同日EUR/USD、ADS比率和分资产rNPV。不能拿2030价格移到18个月。",
+        "needed": "最新完全稀释股数、净债务及受限制现金、2027费用、临床/销售节点"
+      },
+      "catalysts": "3–6月具体随机读数；6–18月注册推进",
+      "kill_criteria": "关键随机试验失败并持续扩大费用预算",
+      "key_risks": "现金消耗、双抗50%权益、ADC地域权利、创始人交接",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S06",
+          "url": "https://investors.biontech.de/node/18731/pdf",
+          "published_date": "2026-08-04"
+        }
+      ],
+      "confidence": "中低",
+      "entry_status": "等待明确读数与ADS/FX复算",
+      "base_price_return_pct": null
+    },
+    {
+      "rank": 13,
+      "ticker": "BJ",
+      "price_anchor": 99.8,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "约20倍快照PE与COST约38倍形成会员制直接替代；新市场复制比纯消费防御更有成长弹性。",
+      "horizon_months": 12,
+      "bear_price": 68.8,
+      "base_price": 119.6,
+      "bull_price": 162,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          4.3,
+          5.2,
+          6
+        ],
+        "pe_bear_base_bull": [
+          16,
+          23,
+          27
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月会员费和续费；6–18月Texas新店完整年度",
+      "kill_criteria": "成熟续费率低于88%或新店资本回报明显下修",
+      "key_risks": "汽油扰动、800M资本开支、费用共享",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S07",
+          "url": "https://investors.bjs.com/press-releases/press-release-details/2026/BJs-Wholesale-Club-Holdings-Inc--Announces-Second-Quarter-Fiscal-2026-Results/default.aspx",
+          "published_date": "2026-08-21"
+        }
+      ],
+      "confidence": "中高",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 19.8
+    },
+    {
+      "rank": 14,
+      "ticker": "AGCO",
+      "price_anchor": 104.47,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "农业下行中欧洲品牌和跨品牌PTx提供复苏期权，比近28倍远期PE的DE要求更低；利润恢复仍有区域差异。",
+      "horizon_months": 12,
+      "bear_price": 44,
+      "base_price": 128,
+      "bull_price": 199.5,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          4,
+          8,
+          10.5
+        ],
+        "pe_bear_base_bull": [
+          11,
+          16,
+          19
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月年末现金与渠道；6–18月北美/拉美减亏",
+      "kill_criteria": "欧洲利润实质衰退且其他区域继续烧现金",
+      "key_risks": "农户预算、汇率、关税退款与融资收益",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/AGCO_AGCO_Corporation_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "等待Q4现金证据",
+      "base_price_return_pct": 22.5
+    },
+    {
+      "rank": 15,
+      "ticker": "PGR",
+      "price_anchor": 220.28,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "高频重新定价与车险份额增长提供独立利润源，组合价值来自降低AI共同因子，而非浮存金作价格底线。",
+      "horizon_months": 12,
+      "bear_price": 120,
+      "base_price": 255,
+      "bull_price": 360,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          10,
+          15,
+          18
+        ],
+        "pe_bear_base_bull": [
+          12,
+          17,
+          20
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月月度保单和CR；6–12月续保与家庭捆绑",
+      "kill_criteria": "剔除准备金释放后CR持续超过97%且保单增长停滞",
+      "key_risks": "赔付通胀、准备金、竞争、巨灾",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 15.8
+    },
+    {
+      "rank": 16,
+      "ticker": "KR",
+      "price_anchor": 62.56,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "低倍数食品现金业务与效率修复，比为零售AI广告支付高增长倍数更朴素；回报主要是现金和温和重估。",
+      "horizon_months": 12,
+      "bear_price": 37.8,
+      "base_price": 75.6,
+      "bull_price": 105.4,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          4.2,
+          5.4,
+          6.2
+        ],
+        "pe_bear_base_bull": [
+          9,
+          14,
+          17
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月食品件数；6–12月电商盈利持续与资本纪律",
+      "kill_criteria": "食品实物销量持续流失且回购/收购提高杠杆",
+      "key_risks": "价格竞争、药房口径、收购执行、租赁",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/KR_The_Kroger_Co._克罗格_公司调研_2026-10-11.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 20.8
+    },
+    {
+      "rank": 17,
+      "ticker": "DOV",
+      "price_anchor": 190.88,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "成熟工业耗材和制冷交付修复提供现金支持；剔除已延后的法规强制替换，液冷只是补充。",
+      "horizon_months": 12,
+      "bear_price": 119.0,
+      "base_price": 231,
+      "bull_price": 312,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          8.5,
+          11,
+          13
+        ],
+        "pe_bear_base_bull": [
+          14,
+          21,
+          24
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月工厂整合；6–12月有机订单恢复",
+      "kill_criteria": "工厂交付延迟转为客户转单且有机增长停滞",
+      "key_risks": "工厂执行、并购增长、法规推迟",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/DOV_Dover_Corporation_公司调研_2026-09-26.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S09",
+          "url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+          "published_date": "2026-08-28"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "分批候选",
+      "base_price_return_pct": 21.0
+    },
+    {
+      "rank": 18,
+      "ticker": "UCTT",
+      "price_anchor": 63.51,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "先进设备外包扩张的较低倍数载体，提供高弹性但不把40亿产能当收入。",
+      "horizon_months": 12,
+      "bear_price": 27,
+      "base_price": 75,
+      "bull_price": 140,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          3,
+          5,
+          7
+        ],
+        "pe_bear_base_bull": [
+          9,
+          15,
+          20
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月库存转回款；6–12月合格产能放量",
+      "kill_criteria": "连续两季收入增长而库存/应收更快增长及ATM融资",
+      "key_risks": "采购义务非客户订单、集中度、可转债稀释",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-09-22.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中低",
+      "entry_status": "等待FCF转正，小额风险预算",
+      "base_price_return_pct": 18.1
+    },
+    {
+      "rank": 19,
+      "ticker": "PLAB",
+      "price_anchor": 29.24,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "高端DUV/显示光罩升级较少被纯AI叙事定价，但晶圆数量不直接生成光罩费；真实高端设计订单才是驱动。",
+      "horizon_months": 12,
+      "bear_price": 16.0,
+      "base_price": 37.4,
+      "bull_price": 58.8,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          1.6,
+          2.2,
+          2.8
+        ],
+        "pe_bear_base_bull": [
+          10,
+          17,
+          21
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "6–12月高端IC/FPD组合；12–18月韩国能力",
+      "kill_criteria": "高端增长无法抵销主流下滑且设备资本开支持续吃掉现金",
+      "key_risks": "中国政策、资本强度、汇兑收益与少数股东",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-09-22.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        }
+      ],
+      "confidence": "中",
+      "entry_status": "条件分批",
+      "base_price_return_pct": 27.9
+    },
+    {
+      "rank": 20,
+      "ticker": "ENPH",
+      "price_anchor": 31.49,
+      "price_date": "2026-10-12",
+      "currency": "USD",
+      "thesis": "仅保留受损住宅渠道修复的高弹性期权；AI SST不计入基准收益，safe-harbor和45X必须拆开。",
+      "horizon_months": 12,
+      "bear_price": 12,
+      "base_price": 36,
+      "bull_price": 72,
+      "valuation_formula": {
+        "method": "economic diluted EPS x conditional P/E",
+        "eps_bear_base_bull": [
+          1,
+          2,
+          3
+        ],
+        "pe_bear_base_bull": [
+          12,
+          18,
+          24
+        ],
+        "period": "2027年末前后可见的未来12个月经营盈利，目标交易日2027-10-12",
+        "definition": "独立估算，含利息税和正常SBC；剔除一次投资收益/关税退款。以现有资本结构附近为起点，不额外假设回购；稀释增加5%则价格除以1.05。债务利息已在EPS，不能再减净债务。",
+        "limitation": "首轮近端压缩模型；不是已完成收入-利润-股本三表模型。进入终选前须核验税率、SBC和完全稀释股数。"
+      },
+      "catalysts": "3–6月非safe-harbor收入止跌；6–12月G5区域交付",
+      "kill_criteria": "剔除safe-harbor后两季继续明显下降或45X资格受损",
+      "key_risks": "政策补助、安装融资、库存、SBC",
+      "evidence": [
+        {
+          "type": "frozen_company_analysis_not_primary",
+          "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-09-22.md",
+          "lines": "5-40及经营财务/风险相关段落"
+        },
+        {
+          "source_id": "R3S05",
+          "url": "https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026",
+          "published_date": "2026-07-28"
+        }
+      ],
+      "confidence": "低",
+      "entry_status": "严格等待，不能按现有14倍PE直接买入",
+      "base_price_return_pct": 14.3
+    }
+  ],
+  "alternates": [
+    {
+      "ticker": "ENS",
+      "reason": "剔除45X和关税退款后核心EPS远低于表观，成熟产品好但近端赔率不及PNR/CARR；若回到140附近且业务未坏可上调。"
+    },
+    {
+      "ticker": "RNR",
+      "reason": "8倍前瞻PE不足以排除价格软化与准备金风险；可替代PGR但先需正常灾损/归属普通股利润桥。"
+    },
+    {
+      "ticker": "AMKR",
+      "reason": "已有客户预付款支持，但美国120亿美元计划与近端FCF错配；18个月相对更偏MCHP/BDC。"
+    },
+    {
+      "ticker": "IONS",
+      "reason": "旧两大心血管管线失利与TRYNGOLZA降价必须重置基线；等待付费治疗年而非峰值目标。"
+    },
+    {
+      "ticker": "AVAV",
+      "reason": "LOCUST真实采购提高右尾，但BlueHalo减值、订单重授及负现金使现价不优于本名单。"
+    },
+    {
+      "ticker": "ORCL",
+      "reason": "OCI交付真实但预付款提高CFO而资本开支更大；低PE不代表低资金风险。"
+    },
+    {
+      "ticker": "BABA",
+      "reason": "AI云收费增长伴随AI实验室亏损与负FCF；仅低PE无法优于ADBE，另有ADS/币种约束。"
+    }
+  ],
+  "exclusions": [
+    {
+      "ticker": "MU",
+      "reason": "不因4.79倍远期PE列首选：FY26Q4毛利86.8%、普通存储超额利润是脆弱锚；需报价/合约与中周期利润模型。"
+    },
+    {
+      "ticker": "SMCI",
+      "reason": "7.51倍PE对应FY26负FCF约6.97B、不可取消采购与可取消订单错配，暂不接受低估值论。"
+    },
+    {
+      "ticker": "FLNC",
+      "reason": "9/16下修并非纯收入延后：赔偿/质量/新品成本不会自动回来，等现金与交付恢复。"
+    },
+    {
+      "ticker": "PLTR",
+      "reason": "81.59倍销售和89.16倍前瞻盈利要求持续高增长，3–18月容错不及成熟软件。"
+    },
+    {
+      "ticker": "RKLB",
+      "reason": "54.63倍销售已支付很大成功价值，发射成功不等于股东收益。"
+    },
+    {
+      "ticker": "BE",
+      "reason": "24.81倍销售与53倍前瞻盈利已反映很强短缺，改选现存发电VST/混合冷却CARR。"
+    },
+    {
+      "ticker": "MRNA",
+      "reason": "38.3倍销售且仍亏损，同医药风险预算优先ALNY/BNTX。"
+    },
+    {
+      "ticker": "TSLA",
+      "reason": "173倍前瞻PE内含远期自动驾驶机器人成功，与18个月可核验现金窗口不匹配。"
+    }
+  ],
+  "open_questions": [
+    "独立估值首轮是压缩敏感性，不能冒称完成收入/利润/资本三表核验。",
+    "ALNY forward EPS税项/调整口径须重新归一；BNTX近端rNPV/ADS/FX未完成，保留null和等待。",
+    "市场拥挤仅以倍数与明确共识基线推断；没有持仓/资金流证据，不能称实测拥挤。",
+    "一组主观概率尚未校准；本轮不报伪精确加权收益。",
+    "20家公司不是等权可执行组合：多只需等待现金/读数验证，金融快照价格仅作冻结锚未逐只外网核价。"
+  ],
+  "as_of": "2026-10-12T19:40:00-07:00",
+  "generated_at": "2026-10-12T19:48:02.017406-07:00"
+}

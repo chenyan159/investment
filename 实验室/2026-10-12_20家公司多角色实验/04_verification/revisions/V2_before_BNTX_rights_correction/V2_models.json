@@ -1,0 +1,3666 @@
+{
+  "role": "V2 independent numerical and securities verification",
+  "information_cutoff": "2026-10-12T19:40:00-07:00",
+  "observation_date": "2028-04-12",
+  "precision_note": "6decimals are audit precision not forecast confidence; display prices to nearestUSD or centsforlowprices",
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward annual operating earnings (mostly FY2029 ending Jan2029); FY27 realized base and FY28 ramp as bridge",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 226.32,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 430,
+            "economic_gross_margin": 0.7,
+            "opex_ex_SBC_B": 38,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 24,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 174.991667,
+          "return_pct": -22.679539,
+          "economic_EBIT_B": 253.0,
+          "economic_net_income_B": 209.98999999999998,
+          "economic_EPS": 8.749583333333332
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 600,
+            "economic_gross_margin": 0.74,
+            "opex_ex_SBC_B": 42,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 23.9,
+            "PE": 27,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 367.561506,
+          "return_pct": 62.407877,
+          "economic_EBIT_B": 392.0,
+          "economic_net_income_B": 325.35999999999996,
+          "economic_EPS": 13.613389121338912
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 760,
+            "economic_gross_margin": 0.75,
+            "opex_ex_SBC_B": 48,
+            "SBC_expense_B": 12,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 23.8,
+            "PE": 32,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 569.142857,
+          "return_pct": 151.477049,
+          "economic_EBIT_B": 510.0,
+          "economic_net_income_B": 423.29999999999995,
+          "economic_EPS": 17.785714285714285
+        }
+      ],
+      "assumptions": "CY2028 base600B vs S1 near-term540B reflects another two-quarter Rubin/next-platform delivery interval; upside requires continued customer spending. Opex52B includes10B SBC; FY27 nonGAAP already includes SBC, so there is no second reported-SBC deduction. No recurring portfolio gains, no net cash addition; buybacks assumed only modestly exceed issuance.",
+      "unresolved": "600/760B are V2 conditional budgets, not guidance; financing-backed customer demand and commitments remain a tail risk.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 334.1468,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        177.07,
+        328.31,
+        488.04
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "claim": "FY27 non-GAAP已含SBC；Q2 CFO24.077B远低于经营利润63.734B，AR占用22.346B；投资证券收益7.771B不能永续。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Aug2028 forward earnings, valued Apr2028; FY27 high-price contracts are operating anchor",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 989.04,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 180,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 8.5,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.17,
+            "PE": 6,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 487.066667,
+          "return_pct": -50.753593,
+          "economic_EBIT_B": 112.4,
+          "economic_net_income_B": 94.97800000000001,
+          "economic_EPS": 81.17777777777779
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 260,
+            "economic_gross_margin": 0.88,
+            "opex_ex_SBC_B": 8,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.16,
+            "PE": 9,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1437.738362,
+          "return_pct": 45.367059,
+          "economic_EBIT_B": 219.3,
+          "economic_net_income_B": 185.3085,
+          "economic_EPS": 159.74870689655174
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 315,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 9,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.16,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 2187.530172,
+          "return_pct": 121.177118,
+          "economic_EBIT_B": 273.0,
+          "economic_net_income_B": 230.685,
+          "economic_EPS": 198.86637931034485
+        }
+      ],
+      "assumptions": "Base retains strong219.3B economic EBIT:260*.88-9.5. Here9.5B total opex explicitly contains1.5B SBC; gross margin is economic after production SBC. This is a required budget, not a claim that reported nonGAAP automatically includes SBC. FY28 base holds FY27 high profitability rather than extrapolating another ASP doubling. Bear embodies FY28 supply/ASP normalization, bull demand and mix sustain scarcity.",
+      "unresolved": "Base88% economic GM and9.5B total cost need verification each quarter; reported Q1 adjusted86.25 vs GAAP85.95 demonstrates costs cannot silently disappear.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 1307.0349,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        568.19,
+        1437.74,
+        2187.53
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "claim": "26SCA与32B客户承诺原文成立；>35%至2030收入并非每年35%；Q1GM86.25%全年低点是公司预测。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "claim": "12.3B Q4存款在融资现金流、12.7B期末存款满足购买条件后归还；非收入/FCF。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Oct2028 forward annual earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 354.73,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 145,
+            "economic_gross_margin": 0.7,
+            "opex_ex_SBC_B": 15,
+            "SBC_expense_B": 9,
+            "net_interest_expense_B": 3.2,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.0,
+            "PE": 19,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 237.1656,
+          "return_pct": -33.141939,
+          "economic_EBIT_B": 77.5,
+          "economic_net_income_B": 62.41199999999999,
+          "economic_EPS": 12.482399999999998
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 190,
+            "economic_gross_margin": 0.73,
+            "opex_ex_SBC_B": 15,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 3,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.0,
+            "PE": 26,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 483.5376,
+          "return_pct": 36.311448,
+          "economic_EBIT_B": 113.69999999999999,
+          "economic_net_income_B": 92.98799999999999,
+          "economic_EPS": 18.597599999999996
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 240,
+            "economic_gross_margin": 0.75,
+            "opex_ex_SBC_B": 17,
+            "SBC_expense_B": 11,
+            "net_interest_expense_B": 2.8,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.05,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 744.522772,
+          "return_pct": 109.884355,
+          "economic_EBIT_B": 152.0,
+          "economic_net_income_B": 125.32799999999999,
+          "economic_EPS": 24.817425742574255
+        }
+      ],
+      "assumptions": "S1 revenue170B replaced by FY28 190B with10B recurring SBC; Q3 adjusted OP20.095 less SBC2.019 =18.076B (61.09%). Base economic OPM59.84% is below that quarter. Acquisition amortization normalized but employee pay not free; PE is after interest, no second net-debt subtraction.",
+      "unresolved": "Custom silicon customer concentration and future integration charges; larger SBC than budget reduces EPS.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 439.5796,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        251.69,
+        466.5,
+        706.86
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+          "claim": "Q3调整OP20.095B剔SBC2.019B后18.076B；Q4 AI21.7B/总34.8B为指引。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward earnings; CY2027 target expansion followed by capacity utilization",
+      "security": {
+        "type": "NYSE USD quoted common equity; Canadian issuer",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 347.5,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 29,
+            "economic_gross_margin": 0.115,
+            "opex_ex_SBC_B": 1.18,
+            "SBC_expense_B": 0.12,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.13,
+            "PE": 18,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 212.123077,
+          "return_pct": -38.957388,
+          "economic_EBIT_B": 2.035,
+          "economic_net_income_B": 1.532,
+          "economic_EPS": 11.784615384615384
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 39,
+            "economic_gross_margin": 0.13,
+            "opex_ex_SBC_B": 1.4,
+            "SBC_expense_B": 0.16,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.132,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 513.636364,
+          "return_pct": 47.809026,
+          "economic_EBIT_B": 3.5100000000000002,
+          "economic_net_income_B": 2.712,
+          "economic_EPS": 20.545454545454547
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 48,
+            "economic_gross_margin": 0.14,
+            "opex_ex_SBC_B": 1.65,
+            "SBC_expense_B": 0.2,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.135,
+            "PE": 29,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 816.296296,
+          "return_pct": 134.905409,
+          "economic_EBIT_B": 4.87,
+          "economic_net_income_B": 3.8000000000000003,
+          "economic_EPS": 28.14814814814815
+        }
+      ],
+      "assumptions": "Rebuilt real EMS gross-margin bridge (11.5/13/14%, not S1 synthetic19%). Q2 economic OP=458.3-104.1=354.2M retaining SBC19.3M; adding9.9M acquisition amortization gives364.1M. Base CY28 economic OPM9.0% requires mix/scale, excludes TRS gains. Future shares include financing/rewards.",
+      "unresolved": "39B delivery and13% economic GM are assumptions; working capital can lag EPS.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 466.9421,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        228.18,
+        483.08,
+        812.31
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+          "claim": "GAAP EPS3.17含TRS税前0.90/股；TRS104.1M和SBC19.3M应分离。2027>65%增长为公司展望。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results"
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2029 ending Apr2029 forward run-rate at Apr2028; FY27 current quarter anchor",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 200.84,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_gross_margin": 0.64,
+            "opex_ex_SBC_B": 0.55,
+            "SBC_expense_B": 0.45,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.21,
+            "PE": 24,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 45.851429,
+          "return_pct": -77.170171,
+          "economic_EBIT_B": 0.4719999999999999,
+          "economic_net_income_B": 0.40119999999999995,
+          "economic_EPS": 1.9104761904761902
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.7,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 0.7,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.218,
+            "PE": 36,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 170.686239,
+          "return_pct": -15.013823,
+          "economic_EBIT_B": 1.2160000000000006,
+          "economic_net_income_B": 1.0336000000000005,
+          "economic_EPS": 4.741284403669727
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 5,
+            "economic_gross_margin": 0.69,
+            "opex_ex_SBC_B": 0.88,
+            "SBC_expense_B": 0.72,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.225,
+            "PE": 44,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 307.511111,
+          "return_pct": 53.112483,
+          "economic_EBIT_B": 1.8499999999999999,
+          "economic_net_income_B": 1.5724999999999998,
+          "economic_EPS": 6.988888888888888
+        }
+      ],
+      "assumptions": "Revenue increased from S1 3.2 to3.7B for later horizon, but recurring SBC explicitly paid:Q1 economic OP230.641-87.979=142.662M. Base OPM32.86%, not S1 free-SBC43%. Gross margin after production SBC; no cash add.",
+      "unresolved": "Customer concentration and SBC budget are key; reserve rather than automatic exclusion.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 155.1693,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        69.06,
+        200.5,
+        342.17
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [],
+      "independent_V2_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward annual sales; capacity ramp through CY2027",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 100.68,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 1.2,
+            "economic_gross_margin": 0.28,
+            "opex_ex_SBC_B": 0.22,
+            "SBC_expense_B": 0.06,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.11,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 5.105455,
+          "return_pct": -94.929028,
+          "economic_EBIT_B": 0.05600000000000002,
+          "economic_net_income_B": 0.028080000000000015,
+          "economic_EPS": 0.25527272727272743
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_gross_margin": 0.33,
+            "opex_ex_SBC_B": 0.27,
+            "SBC_expense_B": 0.08,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.12,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 75.855,
+          "return_pct": -24.65733,
+          "economic_EBIT_B": 0.409,
+          "economic_net_income_B": 0.30341999999999997,
+          "economic_EPS": 2.5284999999999997
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 3.3,
+            "economic_gross_margin": 0.36,
+            "opex_ex_SBC_B": 0.33,
+            "SBC_expense_B": 0.1,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.13,
+            "PE": 38,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 168.264,
+          "return_pct": 67.127533,
+          "economic_EBIT_B": 0.7579999999999999,
+          "economic_net_income_B": 0.5756399999999999,
+          "economic_EPS": 4.427999999999999
+        }
+      ],
+      "assumptions": "Later horizon raises base sales2.0→2.3B but explicitSBC80M andFD120M replace free-SBC model; capacity is converted to shipped yield, never nameplate times full year.",
+      "unresolved": "Revenue ramp/customer warrants financing may exceed allowance; downside large.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 68.9591,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        12.64,
+        86.77,
+        185.21
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "PSIX",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward annual earnings; 2026H2/2027 delivery recovery anchor",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 50.1,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 0.62,
+            "economic_gross_margin": 0.25,
+            "opex_ex_SBC_B": 0.077,
+            "SBC_expense_B": 0.003,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.024,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 26.25,
+          "return_pct": -47.60479,
+          "economic_EBIT_B": 0.075,
+          "economic_net_income_B": 0.05249999999999999,
+          "economic_EPS": 2.1874999999999996
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 0.9,
+            "economic_gross_margin": 0.29,
+            "opex_ex_SBC_B": 0.091,
+            "SBC_expense_B": 0.004,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.0245,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 83.785714,
+          "return_pct": 67.236955,
+          "economic_EBIT_B": 0.166,
+          "economic_net_income_B": 0.12075,
+          "economic_EPS": 4.928571428571428
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 1.2,
+            "economic_gross_margin": 0.32,
+            "opex_ex_SBC_B": 0.108,
+            "SBC_expense_B": 0.007,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.025,
+            "PE": 21,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 166.32,
+          "return_pct": 231.976048,
+          "economic_EBIT_B": 0.269,
+          "economic_net_income_B": 0.198,
+          "economic_EPS": 7.92
+        }
+      ],
+      "assumptions": "S1 .82B base becomes .90B for CY28, GM29% versus2026Q2 actual27.1%; compensation retained. FY25 tax benefit38.3M excluded by normalized25% tax, never deducted again. Debt through interest only.",
+      "unresolved": "IncrementalDC orders not management guaranteed; customer concentration and manufacturing execution.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 76.1688,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        26.25,
+        71.51,
+        141.42
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+          "claim": "Q2 GM27.1%环比+420bp，EPS.73；Q2税费5.6M，税释放29.2M属2025同期。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+          "claim": "B1所称38.3M税益须先定位TTM/FY25；已核2026Q2税费5.6M与2025Q2税益29.2M。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "SNDK",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Jun2028 near-forward earnings; FY27 enterpriseSSD/contract anchor",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 1487.33,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 32,
+            "economic_gross_margin": 0.65,
+            "opex_ex_SBC_B": 2.5,
+            "SBC_expense_B": 0.4,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.16,
+            "PE": 6,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 570.5625,
+          "return_pct": -61.638473,
+          "economic_EBIT_B": 17.900000000000002,
+          "economic_net_income_B": 15.215000000000002,
+          "economic_EPS": 95.09375000000001
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 50,
+            "economic_gross_margin": 0.85,
+            "opex_ex_SBC_B": 2.65,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.162,
+            "PE": 9,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1855.833333,
+          "return_pct": 24.776165,
+          "economic_EBIT_B": 39.300000000000004,
+          "economic_net_income_B": 33.405,
+          "economic_EPS": 206.2037037037037
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 65,
+            "economic_gross_margin": 0.88,
+            "opex_ex_SBC_B": 2.95,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.165,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 3037.333333,
+          "return_pct": 104.213815,
+          "economic_EBIT_B": 53.6,
+          "economic_net_income_B": 45.56,
+          "economic_EPS": 276.1212121212121
+        }
+      ],
+      "assumptions": "18mo base50B modestly exceeds S1 48B, while economic opex3.2B includes.55B SBC. Bear allows earlier NAND supply response; base explicitly assumes high contract margins persist into FY28, not perpetuity.",
+      "unresolved": "Cycle peak cannot be treated as guaranteed; customer deposit/contract economics do not make all capex free.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 1687.1212,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        726.27,
+        1839.87,
+        2935.19
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+          "claim": "Q1收入10.3–10.8B、GM83–85%、EPS44–46是明确公司指引。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "TSM",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward earnings with 2026Q2 and 2027 capacity as bridge",
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 5,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "TWD",
+        "model": "USD",
+        "FX_treatment": "USD revenue forecasts; 25.95B ordinary / 5 = 5.19B ADS; no second FX conversion"
+      },
+      "reference_price": 444.35,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 185,
+            "economic_gross_margin": 0.6,
+            "opex_ex_SBC_B": 17,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 18,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 267.710983,
+          "return_pct": -39.752226,
+          "economic_EBIT_B": 93.0,
+          "economic_net_income_B": 77.19,
+          "economic_EPS": 14.872832369942195
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 240,
+            "economic_gross_margin": 0.65,
+            "opex_ex_SBC_B": 19,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 543.737958,
+          "return_pct": 22.367043,
+          "economic_EBIT_B": 136.0,
+          "economic_net_income_B": 112.88,
+          "economic_EPS": 21.749518304431597
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 285,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 22,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 819.445087,
+          "return_pct": 84.414333,
+          "economic_EBIT_B": 170.8,
+          "economic_net_income_B": 141.764,
+          "economic_EPS": 27.314836223506745
+        }
+      ],
+      "assumptions": "Rebuilt CY28 revenue240B rather than S1 CY27 220B; gross margin65% assumes overseas-cost dilution. All inputsUSD, divisor25.95B ordinary/5=5.19B ADS. SBC1B budget retained; no TWD→USD conversion after USD EPS.",
+      "unresolved": "Five ordinary shares per ADS inherited company disclosure; FX affects model economic margin; geopolitics non-Gaussian tail.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 494.3072,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        270.01,
+        508.55,
+        747.48
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+          "claim": "9月收入NT511.857B同比54.6%，1–9月+41.1%支持先进制造现实增长。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "ADBE",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Nov2028 forward",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 238.14,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 27,
+            "economic_gross_margin": 0.29,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.39,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 172.26,
+          "return_pct": -27.664399,
+          "economic_EBIT_B": 7.829999999999999,
+          "economic_net_income_B": 6.107399999999999,
+          "economic_EPS": 15.659999999999998
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 31,
+            "economic_gross_margin": 0.35,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.38,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 378.607895,
+          "return_pct": 58.985427,
+          "economic_EBIT_B": 10.85,
+          "economic_net_income_B": 8.463,
+          "economic_EPS": 22.271052631578947
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 34,
+            "economic_gross_margin": 0.365,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.375,
+            "PE": 21,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 542.0688,
+          "return_pct": 127.626102,
+          "economic_EBIT_B": 12.41,
+          "economic_net_income_B": 9.6798,
+          "economic_EPS": 25.8128
+        }
+      ],
+      "assumptions": "GM field here denotes economic EBIT margin after all opex including SBC (29/35/36.5%); SBC_expense field0 means already embedded, not absent. No cash addition; shrinking shares uses cash generated and modest buyback assumptions.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 344.189,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        172,
+        379,
+        542
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+          "claim": "Q3收入6.76B、ARR27.50B和持续收费已实现；调整EPS6.13高于GAAP4.62不可视全部经济利润。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "PNR",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2027 sustainable earnings valued Apr2028, not distant peak",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 52.33,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 4.32,
+            "economic_gross_margin": 0.20162037037037037,
+            "opex_ex_SBC_B": 0.08,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.165,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.162,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 37.096296,
+          "return_pct": -29.110842,
+          "economic_EBIT_B": 0.791,
+          "economic_net_income_B": 0.5008,
+          "economic_EPS": 3.091358024691358
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 4.82,
+            "economic_gross_margin": 0.23775933609958502,
+            "opex_ex_SBC_B": 0.055,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.15,
+            "tax_rate": 0.18,
+            "FD_shares_B": 0.161,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 81.475404,
+          "return_pct": 55.695402,
+          "economic_EBIT_B": 1.091,
+          "economic_net_income_B": 0.77162,
+          "economic_EPS": 4.7926708074534154
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 5.25,
+            "economic_gross_margin": 0.26285714285714284,
+            "opex_ex_SBC_B": 0.04,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.135,
+            "tax_rate": 0.18,
+            "FD_shares_B": 0.16,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 123.5125,
+          "return_pct": 136.02618,
+          "economic_EBIT_B": 1.3399999999999999,
+          "economic_net_income_B": 0.9881,
+          "economic_EPS": 6.175625
+        }
+      ],
+      "assumptions": "Margin field is operating profit after SBC before separately budgeted recurring cash restructuring. Taco1.4B purchase financing included in150M base net interest. Debt repayment.2/.5/.65B uses retained cash; not also used for full buyback or added cash value.",
+      "unresolved": "Taco synergy/Pool recovery assumptions not acquired historical earnings;166bp base interest sensitivity meaningful.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 74.0685,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        37,
+        81,
+        124
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investors.pentair.com/node/27181/pdf",
+          "claim": "Taco10/1以1.4B已交割，非pending；协同/融资后增利仍预测。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "ARGX",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward earnings",
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 1,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 812.3,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 7,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 3.8,
+            "SBC_expense_B": 0.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.0635,
+            "PE": 22,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 540.472441,
+          "return_pct": -33.463937,
+          "economic_EBIT_B": 2.0,
+          "economic_net_income_B": 1.56,
+          "economic_EPS": 24.566929133858267
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 8.8,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 3.95,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.064,
+            "PE": 28,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1167.075,
+          "return_pct": 43.675366,
+          "economic_EBIT_B": 3.420000000000001,
+          "economic_net_income_B": 2.6676000000000006,
+          "economic_EPS": 41.681250000000006
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 10.3,
+            "economic_gross_margin": 0.89,
+            "opex_ex_SBC_B": 4.3,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.065,
+            "PE": 33,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1689.732,
+          "return_pct": 108.01822,
+          "economic_EBIT_B": 4.267000000000002,
+          "economic_net_income_B": 3.3282600000000016,
+          "economic_EPS": 51.20400000000002
+        }
+      ],
+      "assumptions": "R&D/SG&A total4.3/4.5/4.9B includesSBC. No excesscash or interest income add. ADS1:1 financialUSD. Base8.8B requires established indications plus expansion; UNITY failure not restored.",
+      "unresolved": "Share1:1 ratio inherited; actual full-year total recurring cost may rise;8.1B alternate revenue cuts base valuation materially.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 1060.9773,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        540,
+        1167,
+        1690
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://argenx.com/news/2026/press-release-3345813",
+          "claim": "ALKIVIA联合组及IMNM显著；DM单独p=.1093；不能把全试验否定或称DM单独成功。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://argenx.com/news/2026/press-release-3376934",
+          "claim": "10/8 UNITY因无效停止，与8/17 ALKIVIA为不同适应症。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "ALNY",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 227.02,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 6.4,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 5.17,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0.08,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.14,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 80.357143,
+          "return_pct": -64.603496,
+          "economic_EBIT_B": 0.6800000000000004,
+          "economic_net_income_B": 0.4500000000000003,
+          "economic_EPS": 3.214285714285716
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 8,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 5.76,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0.1,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.14,
+            "PE": 32,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 281.6,
+          "return_pct": 24.041935,
+          "economic_EBIT_B": 1.6400000000000001,
+          "economic_net_income_B": 1.2320000000000002,
+          "economic_EPS": 8.8
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 9.4,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 6.48,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0.1,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.14,
+            "PE": 38,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 471.2,
+          "return_pct": 107.558805,
+          "economic_EBIT_B": 2.27,
+          "economic_net_income_B": 1.736,
+          "economic_EPS": 12.399999999999999
+        }
+      ],
+      "assumptions": "Costs separately includeSanofi royalties1.58/1.98/2.35, directcost.24/.28/.33, andR&D/SG&A3.9/4.1/4.45 includingSBC. Interest.08/.10/.10 plus aftertax equity financing/other payments below; no second royalty liability EV haircut. V2 makes previously opaqueEBIT→NI bridge explicit.",
+      "unresolved": "S2 opaque EBIT→NI residual replaced with explicit20% normalized tax inbase/bull and100M netinterest/financingexpense; royaltiesnotdeductedagain. FutureBlackstone/royaltyfinancingcashtermsmayrequirehighercharge; V2doesnotinventpositiveotherincometopreservetarget.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 256.0,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        80,
+        286,
+        475
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+          "claim": "TTR年度指导降至4.2–4.5B，原因二线积压需求正常化；降指引与持续高增长并存。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "AGCO",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward recovery earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 104.47,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 10,
+            "economic_gross_margin": 0.06,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.071,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 55.233803,
+          "return_pct": -47.129508,
+          "economic_EBIT_B": 0.6,
+          "economic_net_income_B": 0.3268,
+          "economic_EPS": 4.602816901408451
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 11.5,
+            "economic_gross_margin": 0.105,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.071,
+            "PE": 14,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 155.478873,
+          "return_pct": 48.826336,
+          "economic_EBIT_B": 1.2075,
+          "economic_net_income_B": 0.7885000000000001,
+          "economic_EPS": 11.105633802816904
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 12.7,
+            "economic_gross_margin": 0.125,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.18,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.072,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 237.711111,
+          "return_pct": 127.54007,
+          "economic_EBIT_B": 1.5875,
+          "economic_net_income_B": 1.0697,
+          "economic_EPS": 14.856944444444446
+        }
+      ],
+      "assumptions": "Margin already containsSBC/integration costs; net interest plus minority proxy pre-tax consistent withS2. Financial-services debt not blindly subtracted from equipment enterprise value; PTx2029 target not imported.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 141.3444,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        55,
+        156,
+        238
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+          "claim": "Q2恒汇率收入-3.7%，关税退款22M，融资业务前置收益20M需辨认。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "CARR",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 55.42,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 22.5,
+            "economic_gross_margin": 0.12,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.5,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.835,
+            "PE": 17,
+            "other_after_tax_B": -0.12,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 32.045509,
+          "return_pct": -42.176996,
+          "economic_EBIT_B": 2.6999999999999997,
+          "economic_net_income_B": 1.5739999999999998,
+          "economic_EPS": 1.8850299401197603
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 25.5,
+            "economic_gross_margin": 0.16,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.42,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.82,
+            "PE": 22,
+            "other_after_tax_B": -0.14,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 71.854146,
+          "return_pct": 29.653819,
+          "economic_EBIT_B": 4.08,
+          "economic_net_income_B": 2.6782,
+          "economic_EPS": 3.2660975609756098
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 28,
+            "economic_gross_margin": 0.18,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.4,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.81,
+            "PE": 26,
+            "other_after_tax_B": -0.16,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 109.546667,
+          "return_pct": 97.666306,
+          "economic_EBIT_B": 5.04,
+          "economic_net_income_B": 3.4128,
+          "economic_EPS": 4.213333333333333
+        }
+      ],
+      "assumptions": "EBITmargin is afterSBC/recurring costs. Minority equity deducted after tax. PE afterinterest, no netcash addition.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 65.322,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        32,
+        72,
+        109
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+          "claim": "DC订单同比>300%，有机收入+3%，调整OP同比-6%；不能用订单涨幅当集团利润涨幅。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "MCHP",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Mar2028 sustainable earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 73.83,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 5.8,
+            "economic_gross_margin": 0.25,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.23,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.56,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 26.457143,
+          "return_pct": -64.16478,
+          "economic_EBIT_B": 1.45,
+          "economic_net_income_B": 0.9259999999999999,
+          "economic_EPS": 1.6535714285714282
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 7.2,
+            "economic_gross_margin": 0.35,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.19,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.57,
+            "PE": 24,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 78.715789,
+          "return_pct": 6.617621,
+          "economic_EBIT_B": 2.52,
+          "economic_net_income_B": 1.8695,
+          "economic_EPS": 3.279824561403509
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 8.5,
+            "economic_gross_margin": 0.39,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.59,
+            "PE": 29,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 125.941102,
+          "return_pct": 70.582557,
+          "economic_EBIT_B": 3.315,
+          "economic_net_income_B": 2.5622499999999997,
+          "economic_EPS": 4.342796610169491
+        }
+      ],
+      "assumptions": "Economic EBITmargin includesSBC.111M preferreddividend deducted; selected shares exclude preferredconversion. Ifconvert, addcommonshares AND stopsame dividend; never both.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 71.5598,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        26,
+        79,
+        126
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+          "claim": "库存185→175天、销售环比+13.2%、净债降170M；12个PCIe6定点尚非收入。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "SMCI",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Jun2028 near-forward annual earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 39.98,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economic EPS x PE",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 55,
+            "economic_gross_margin": 0.09,
+            "opex_ex_SBC_B": 1.75,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0.3,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.8,
+            "PE": 8,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 18.6825,
+          "return_pct": -53.270385,
+          "economic_EBIT_B": 2.6500000000000004,
+          "economic_net_income_B": 1.8682500000000004,
+          "economic_EPS": 2.3353125000000006
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 75,
+            "economic_gross_margin": 0.125,
+            "opex_ex_SBC_B": 2.15,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0.3,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.84,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 71.266071,
+          "return_pct": 78.254306,
+          "economic_EBIT_B": 6.574999999999999,
+          "economic_net_income_B": 4.988625,
+          "economic_EPS": 5.938839285714286
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 95,
+            "economic_gross_margin": 0.16,
+            "opex_ex_SBC_B": 2.65,
+            "SBC_expense_B": 0.75,
+            "net_interest_expense_B": 0.25,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.9,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 163.24,
+          "return_pct": 308.304152,
+          "economic_EBIT_B": 11.8,
+          "economic_net_income_B": 9.182250000000002,
+          "economic_EPS": 10.202500000000002
+        }
+      ],
+      "assumptions": "Full revenue/GM/expense reconstruction replacesS1 naked3/5/7EPS. Base75B only modestly aboveFY27 guided65–72B;12.5%GM belowQ4actual17.5 but aboveFY26average10.8. Opex2.8B includes650MSBC; shares840M budget for awards/converts, interest assumes nonconverted debt. No one-off taxaddback or cashadd.",
+      "unresolved": "Final2026-08-31 audited10K status inheritedV1/root, not August11 preliminary financials; BDO unqualifiedfinancialaudit with ITGC weakness is not all-audit failure. FY26NI2.2305B vsCFO-6.8099B: base71.27requiresworkingcapitalconversion, notmerelyQ4positive747MCFO. Exportinvestigationrequiresconditions.",
+      "verdict": "可复活但等待现金转换；全年CFO负6.81B使EPS模型不可单独支持立即行动",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 64.7873,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        24,
+        60,
+        112
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+          "claim": "BDO8/31财报无保留；三旧内控弱点修复，ITGC一项仍未修复；FY26 CFO-6.8099B。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+          "claim": "Q4财报新闻稿GM17.5%、调整17.6%；当时未审计；最终10K财报已审计，不沿用新闻稿未审计状态。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ]
+    },
+    {
+      "ticker": "BDC",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward EBITDA",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 105.29,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "EV/EBITDA",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 3.5,
+            "economic_margin": 0.13,
+            "multiple": 8,
+            "net_debt_B": 2.4,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.041
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 30.243902,
+          "return_pct": -71.275617,
+          "economic_metric_B": 0.455
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 4.25,
+            "economic_margin": 0.185,
+            "multiple": 10.5,
+            "net_debt_B": 1.95,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.041
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 153.795732,
+          "return_pct": 46.068698,
+          "economic_metric_B": 0.78625
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.7,
+            "economic_margin": 0.21,
+            "multiple": 12.5,
+            "net_debt_B": 1.65,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.042
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 254.464286,
+          "return_pct": 141.679443,
+          "economic_metric_B": 0.987
+        }
+      ],
+      "assumptions": "Margins are economic EBITDA after recurringSBC/integration. Netdebt scenario includes acquireddebt; cashdeleveraging cannot simultaneouslyfundbuybacks. BaseD&A90M,interest150M,tax25% givesNI409.7M/EPS9.99;154target≈15.4PE, a cross-check.",
+      "unresolved": "Acquisition integration and netdebt1.95B dependFCF; neither refinancing nor synergycertain.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 139.8143,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        30,
+        154,
+        254
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+          "claim": "订单836M、B/B1.11和有机收入+8%真实；RUCKUS7/1季后并表。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "MOD",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Mar2028 continuing business",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 172.5,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "EV/EBITDA",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.87,
+            "economic_margin": 0.127,
+            "multiple": 9,
+            "net_debt_B": 0.5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.056
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 49.650179,
+          "return_pct": -71.217288,
+          "economic_metric_B": 0.36449000000000004
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.9,
+            "economic_margin": 0.21,
+            "multiple": 15,
+            "net_debt_B": 0.25,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.056
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 214.910714,
+          "return_pct": 24.585921,
+          "economic_metric_B": 0.819
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.7,
+            "economic_margin": 0.23,
+            "multiple": 18,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.057
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 339.614035,
+          "return_pct": 96.877702,
+          "economic_metric_B": 1.0810000000000002
+        }
+      ],
+      "assumptions": "OnlycontinuingClimateSolutions, noPTearnings and no0.44619THRMvalue. EBITDAafterSBC; debtposttransaction budget. Base3.9Brevenue and21%margin independent deliveryassumptions; historical spunassetsnotfreevalue.",
+      "unresolved": "21%economicEBITDAmargin needs mix/utilization; no repeatTRS style nonoperatinggains.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 195.3734,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        126,
+        230,
+        364
+      ],
+      "S2_prior_18month_prices_preserved": [
+        50,
+        215,
+        340
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+          "claim": "10/1已拆PT并组合Gentherm；0.44619THRM属旧股分派。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "IREN",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Jun2028 recognized revenue, not ARR",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 34.8,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "EV/EBITDA",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 3.2,
+            "economic_margin": 0.47,
+            "multiple": 7,
+            "net_debt_B": 5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.48
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 11.516667,
+          "return_pct": -66.90613,
+          "economic_metric_B": 1.504,
+          "crosscheck": {
+            "depreciation_B": 1.1,
+            "interest_B": 0.55,
+            "growth_capex_B": 3,
+            "maintenance_GPU_capex_B": 0.8,
+            "tax_rate": 0.2,
+            "net_income_B": -0.11680000000000011,
+            "cash_after_total_capex_B": -2.846
+          }
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 5.8,
+            "economic_margin": 0.56,
+            "multiple": 10,
+            "net_debt_B": 7,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.53
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 48.075472,
+          "return_pct": 38.147907,
+          "economic_metric_B": 3.248,
+          "crosscheck": {
+            "depreciation_B": 1.65,
+            "interest_B": 0.75,
+            "growth_capex_B": 5,
+            "maintenance_GPU_capex_B": 1.3,
+            "tax_rate": 0.2,
+            "net_income_B": 0.6784000000000003,
+            "cash_after_total_capex_B": -3.9715999999999996
+          }
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 8.5,
+            "economic_margin": 0.6,
+            "multiple": 12,
+            "net_debt_B": 9.5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.6
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 86.166667,
+          "return_pct": 147.605364,
+          "economic_metric_B": 5.1,
+          "crosscheck": {
+            "depreciation_B": 2.35,
+            "interest_B": 1.0,
+            "growth_capex_B": 7,
+            "maintenance_GPU_capex_B": 2.0,
+            "tax_rate": 0.2,
+            "net_income_B": 1.3999999999999997,
+            "cash_after_total_capex_B": -5.25
+          }
+        }
+      ],
+      "assumptions": "Laterhorizon5.8Brevenue vs S1 5.0B, economicEBITDAmargin56% includesSBCbudget. DebtcoversGPUfinancing/projectobligations; equity530M; customerprepayments carry deliverycosts, not surpluscash. Cannot add45–55%prepay and90%GPUfinance as135%fundingofsameasset.",
+      "unresolved": "Fullsignedproject capex/funding waterfallsnotclosed; conditionalonly. EBITDA is not shareholdercash; maintenanceGPUreplacement deducted in crosscheck, may forcefuturefunding.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 43.705,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        14.44,
+        48.96,
+        93.85
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+          "claim": "4B contracted ARR和1B operating ARR不同；FY26 CFO2.1004B含递延收入增加1.8417B。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+          "claim": "验收/最低数量/延期抵扣/终止条款已独立实读；融资+预付覆盖率不可跨合同相加。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "FLNC",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 ending Sep2028 restoration sales",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "Class A plus exchangeable LLC economic units",
+        "current_economic_units_B": 0.184569672
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 7.07,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "EV/Sales",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_margin": 1,
+            "multiple": 0.2,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.225
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 1.6,
+          "return_pct": -77.369165,
+          "economic_metric_B": 2.3,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.07,
+            "opex_including_SBC_B": 0.34,
+            "economic_EBIT_B": -0.17900000000000002,
+            "interest_B": 0.015,
+            "net_income_B": -0.14550000000000002,
+            "EPS": -0.6466666666666667
+          }
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.6,
+            "economic_margin": 1,
+            "multiple": 0.55,
+            "net_debt_B": 0.15,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.22
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 8.318182,
+          "return_pct": 17.654623,
+          "economic_metric_B": 3.6,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.14,
+            "opex_including_SBC_B": 0.37,
+            "economic_EBIT_B": 0.13400000000000012,
+            "interest_B": 0.015,
+            "net_income_B": 0.0892500000000001,
+            "EPS": 0.4056818181818186
+          }
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.6,
+            "economic_margin": 1,
+            "multiple": 0.85,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.22
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 17.318182,
+          "return_pct": 144.953067,
+          "economic_metric_B": 4.6,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.18,
+            "opex_including_SBC_B": 0.42,
+            "economic_EBIT_B": 0.408,
+            "interest_B": 0.015,
+            "net_income_B": 0.29474999999999996,
+            "EPS": 1.3397727272727271
+          }
+        }
+      ],
+      "assumptions": "EVsales crosschecked with trueprofit. Currenteconomicunits184.569672M, notClassA143.137M; target220–225Mincludesaward/financing. $392Mconverts retainedin future netdebt budget, not bothconvertedandsubtracted. Exclude restrictedcash/customerdepositsfromexcesscash.",
+      "unresolved": "FY26Septreset2.4Brevenue/-200MEBITDA supersedesAug. Futurefunding/TRAobligations andwarranttermssensitivity unresolved; onlyconditionalrepairseat.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 7.562,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        2.1,
+        8.63,
+        17.17
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+          "claim": "9/16指引收入2.4B、调整EBITDA-200M，2027 CFO中性正为目标。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-inc-reports-third-fiscal-quarter-2026-results"
+      ]
+    },
+    {
+      "ticker": "VST",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forward normalizedFCFE",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 158.13,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "FCFE multiple",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "legacy_EBITDA_B": 7.3,
+            "Cogentrix_EBITDA_B": 0.5,
+            "incremental_Meta_EBITDA_B": 0.05,
+            "SBC_B": 0.15,
+            "maintenance_capex_B": 1.25,
+            "cash_interest_B": 1.35,
+            "cash_tax_B": 0.65,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.65,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.344,
+            "FCFE_multiple": 11
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 107.761628,
+          "return_pct": -31.852509,
+          "economic_FCFE_B": 3.369999999999999
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "legacy_EBITDA_B": 8,
+            "Cogentrix_EBITDA_B": 0.7,
+            "incremental_Meta_EBITDA_B": 0.15,
+            "SBC_B": 0.18,
+            "maintenance_capex_B": 1.2,
+            "cash_interest_B": 1.3,
+            "cash_tax_B": 0.8,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.55,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.339,
+            "FCFE_multiple": 15
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 194.247788,
+          "return_pct": 22.840566,
+          "economic_FCFE_B": 4.39
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "legacy_EBITDA_B": 8.8,
+            "Cogentrix_EBITDA_B": 0.85,
+            "incremental_Meta_EBITDA_B": 0.3,
+            "SBC_B": 0.2,
+            "maintenance_capex_B": 1.25,
+            "cash_interest_B": 1.25,
+            "cash_tax_B": 0.95,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.5,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.335,
+            "FCFE_multiple": 18
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 288.537313,
+          "return_pct": 82.468421,
+          "economic_FCFE_B": 5.370000000000001
+        }
+      ],
+      "assumptions": "2027 managementopportunity7.4–7.8B excludesCogentrix/Meta, is NOTformal2027guidance. Q22026hedges94%/72%2027/28. Modellegacy EBITDA7.3/8.0/8.8 plusCogentrix.5/.7/.85 plusincrementalMeta.05/.15/.3 minusSBC.15/.18/.2. Debtinterestandpreferredcashdeductedonce; no netdebtsubtractionfromFCFEvalue. Acquisitioncash2.3B+assumeddebt1.5B+5Mshares; existingpre-financingcannotbeaddedagain.",
+      "unresolved": "Interest1.25–1.35B conditionalpostdealbudget; cashclosure/decommissioningandgrowthspendincluded. Needactualdebtbridgewhencloseoccurs; no full2030PPAmargin.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "postdeal_capital_bridge": {
+        "June2026_gross_debt_B": 19.764,
+        "accounts_receivable_financing_B": 0.3,
+        "forward_repurchase_obligation_B": 0.613,
+        "cash_B": 0.435,
+        "June_net_financial_claims_ex_preferred_B": 20.242,
+        "Cogentrix_cash_consideration_B": 2.3,
+        "Cogentrix_assumed_debt_B": 1.5,
+        "Cogentrix_new_common_shares_B": 0.005,
+        "mechanical_no_interim_FCF_proforma_claims_B": 24.042,
+        "preferred_liquidation_B": 2.476066,
+        "preferred_annual_current_cash_B": 0.1922508575,
+        "preferred_model_cash_B": 0.23,
+        "note": "GrossdebtalreadyincludesJanuaryprefinancing; do notaddthe2.25Bissuanceagain. PurchasecashconsumesfutureFCForfunding; above24.042BmechanicalclaimsisbeforeinterimFCFandfutureredemption. FCFEmodelinterest1.3B≈5.4%onthisgrossclaimscale. Preferredresetriskraisesmodelcash230M; preferredprincipalnotdeductedagainfromFCFEvaluation."
+      },
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 176.5889,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+          "claim": "最新套保2027 94%、2028 72%；2027 EBITDA7.4–7.8B机会区间排除Cogentrix和Meta增量。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+        "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+        "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix"
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 endingJan2028 sustainablecashflow",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 233.92,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "economicFCFE multiple",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 12,
+            "SBC_B": 4.5,
+            "FD_shares_B": 0.85,
+            "equity_cash_multiple": 16
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 141.176471,
+          "return_pct": -39.647542,
+          "economic_FCFE_B": 7.5
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 15.5,
+            "SBC_B": 4.7,
+            "FD_shares_B": 0.84,
+            "equity_cash_multiple": 23
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 295.714286,
+          "return_pct": 26.416846,
+          "economic_FCFE_B": 10.8
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 19,
+            "SBC_B": 5,
+            "FD_shares_B": 0.84,
+            "equity_cash_multiple": 28
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 466.666667,
+          "return_pct": 99.498404,
+          "economic_FCFE_B": 14
+        }
+      ],
+      "assumptions": "CFO-capex12/15.5/19B is aftercashinterest; subtractSBC4.5/4.7/5B. No secondnetdebtdeduction. RepurchasesfinancedwithremainingFCFE, notentirebuybackauthorization.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 268.8312,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        141,
+        296,
+        467
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+          "claim": "Agentforce ARR定义扩至Slackbot/Headless360，收入指导纳入待收购；增长不能简单全部有机AI化。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "PGR",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2027–2028 normalized earnings",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 220.28,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "underwritingEPS multiple",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "net_premiums_earned_B": 90,
+            "combined_ratio": 0.95,
+            "investment_other_income_B": 2.7,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.586,
+            "PE": 14
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 135.890785,
+          "return_pct": -38.309976,
+          "economic_net_income_B": 5.688000000000003
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "net_premiums_earned_B": 98,
+            "combined_ratio": 0.92,
+            "investment_other_income_B": 3,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.584,
+            "PE": 18
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 263.946575,
+          "return_pct": 19.823214,
+          "economic_net_income_B": 8.563599999999997
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "net_premiums_earned_B": 106,
+            "combined_ratio": 0.89,
+            "investment_other_income_B": 3.3,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.582,
+            "PE": 21
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 426.437113,
+          "return_pct": 93.588666,
+          "economic_net_income_B": 11.818399999999999
+        }
+      ],
+      "assumptions": "NPE*(1-CR)+normalinvestmentincome tax21%; reserves/catastrophenormalizationincludedinCR. No floataddition; investmentincomeandportfolioassetcannotbothbecounted.",
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 239.9514,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        136,
+        264,
+        426
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm",
+          "claim": "8月CR89.3，往年有利发展131M使事故年损失率比日历年高1.8点。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "BABA",
+      "observation_date": "2028-04-12",
+      "earnings_period": "FY2028 endingMar2028 sustainableearnings",
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 8,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "RMB",
+        "model": "USD",
+        "FX_assumption_RMB_per_USD": 7.0
+      },
+      "reference_price": 110.78,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "RMB economicEPS convertedonce",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_RMB_B": 1180,
+            "adjusted_EBITA_RMB_B": 100,
+            "SBC_RMB_B": 14,
+            "economic_recurring_cost_RMB_B": 6,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 5,
+            "ordinary_shares_B": 20.4,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 15
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 57.983193,
+          "return_pct": -47.65915,
+          "economic_net_income_RMB_B": 69.0,
+          "economic_EPS_USD_per_ADS": 3.8655462184873954
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_RMB_B": 1300,
+            "adjusted_EBITA_RMB_B": 160,
+            "SBC_RMB_B": 16,
+            "economic_recurring_cost_RMB_B": 7,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 10,
+            "ordinary_shares_B": 20.8,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 21
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 138.0,
+          "return_pct": 24.571222,
+          "economic_net_income_RMB_B": 119.60000000000001,
+          "economic_EPS_USD_per_ADS": 6.571428571428571
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_RMB_B": 1430,
+            "adjusted_EBITA_RMB_B": 230,
+            "SBC_RMB_B": 18,
+            "economic_recurring_cost_RMB_B": 8,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 15,
+            "ordinary_shares_B": 21.2,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 26
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 249.768194,
+          "return_pct": 125.463255,
+          "economic_net_income_RMB_B": 178.20000000000002,
+          "economic_EPS_USD_per_ADS": 9.60646900269542
+        }
+      ],
+      "assumptions": "ADS1:8; ordinaryequivalent20.4/20.8/21.2B becomes2.55/2.60/2.65B ADS. AdjustedEBITA lessSBC andongoingeconomiccosts. Taxthenattributablenetequityincome. HighcapexmeansEPSnotFCFE; no freecashaddition.",
+      "unresolved": "S2 residualnetequityincome5/10/15B mustbenetofminorities/interest; V2 preserves as explicitbudget, notverifiedforecast.",
+      "verdict": "条件模型通过；预测仍须经营兑现",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 125.4545,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        58,
+        138,
+        250
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "B:conditionaloperatingbridge;notcompanyforecast",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+          "claim": "云48.437B人民币同比45%；新分部合并T-Head，集团资本与应用亏损不能忽略。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": []
+    },
+    {
+      "ticker": "BNTX",
+      "observation_date": "2028-04-12",
+      "earnings_period": "Apr2028 rNPV of2032–2033 commercial earnings; not2028sales",
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 1,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "EUR",
+        "model": "USD",
+        "FX_assumption_USD_per_EUR": 1.1
+      },
+      "reference_price": 95.84,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "pipeline rNPV plusremainingfinancialassets",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 4.5,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 1.6,
+            "ADS_B": 0.255,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_sales_B": 6,
+                "ownership": 0.5,
+                "after_tax_margin": 0.28,
+                "terminal_PE": 18,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.3,
+                "rNPV_B": 2.5738482175395663
+              },
+              {
+                "name": "gotistobart",
+                "success_sales_B": 1.8,
+                "ownership": 0.8,
+                "after_tax_margin": 0.32,
+                "terminal_PE": 18,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.25,
+                "rNPV_B": 1.317810287380258
+              },
+              {
+                "name": "T-Pam_other_ADC",
+                "success_sales_B": 3,
+                "ownership": 0.5,
+                "after_tax_margin": 0.28,
+                "terminal_PE": 18,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.25,
+                "rNPV_B": 1.2011291681851308
+              },
+              {
+                "name": "mRNA_BNT113_other",
+                "success_sales_B": 1.8,
+                "ownership": 0.8,
+                "after_tax_margin": 0.32,
+                "terminal_PE": 20,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.15,
+                "rNPV_B": 0.7844108853453916
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn_to_observation+sum(success_sales*ownership*margin*PE*discount*probability)-post_observation_developmentPV)/ADS",
+          "price": 70.881641,
+          "return_pct": -26.041693,
+          "remaining_cash_USD_B": 13.797620000000002,
+          "pipeline_rNPV_B": 4.277198558450346
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 3.6,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 2.5,
+            "ADS_B": 0.258,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_sales_B": 10,
+                "ownership": 0.5,
+                "after_tax_margin": 0.32,
+                "terminal_PE": 20,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.5,
+                "rNPV_B": 9.078829691497587
+              },
+              {
+                "name": "gotistobart",
+                "success_sales_B": 3,
+                "ownership": 0.8,
+                "after_tax_margin": 0.35,
+                "terminal_PE": 20,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.5,
+                "rNPV_B": 5.338351858600581
+              },
+              {
+                "name": "T-Pam_other_ADC",
+                "success_sales_B": 5,
+                "ownership": 0.5,
+                "after_tax_margin": 0.3,
+                "terminal_PE": 20,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.5,
+                "rNPV_B": 4.766385588036234
+              },
+              {
+                "name": "mRNA_BNT113_other",
+                "success_sales_B": 3,
+                "ownership": 0.8,
+                "after_tax_margin": 0.35,
+                "terminal_PE": 22,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.3,
+                "rNPV_B": 3.145814488103914
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn_to_observation+sum(success_sales*ownership*margin*PE*discount*probability)-post_observation_developmentPV)/ADS",
+          "price": 133.825588,
+          "return_pct": 39.634378,
+          "remaining_cash_USD_B": 14.697620000000002,
+          "pipeline_rNPV_B": 19.829381626238316
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 2.7,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 3.5,
+            "ADS_B": 0.26,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_sales_B": 14,
+                "ownership": 0.5,
+                "after_tax_margin": 0.35,
+                "terminal_PE": 22,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.75,
+                "rNPV_B": 22.93823064242437
+              },
+              {
+                "name": "gotistobart",
+                "success_sales_B": 5,
+                "ownership": 0.8,
+                "after_tax_margin": 0.38,
+                "terminal_PE": 23,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.7,
+                "rNPV_B": 15.552398414723026
+              },
+              {
+                "name": "T-Pam_other_ADC",
+                "success_sales_B": 7,
+                "ownership": 0.5,
+                "after_tax_margin": 0.33,
+                "terminal_PE": 22,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.65,
+                "rNPV_B": 10.496534341973392
+              },
+              {
+                "name": "mRNA_BNT113_other",
+                "success_sales_B": 5,
+                "ownership": 0.8,
+                "after_tax_margin": 0.37,
+                "terminal_PE": 24,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.5,
+                "rNPV_B": 10.07750095756232
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn_to_observation+sum(success_sales*ownership*margin*PE*discount*probability)-post_observation_developmentPV)/ADS",
+          "price": 273.701094,
+          "return_pct": 185.581275,
+          "remaining_cash_USD_B": 15.597620000000003,
+          "pipeline_rNPV_B": 55.56466435668311
+        }
+      ],
+      "assumptions": "Financialassets16.6342BEUR exactdisclosure; EURUSD1.10 assumptiononce. DeductburntoApr2028onlyincash; postApr2028 developmentPV onlyinpipeline. Fourdisjointopportunitybudgets andownershipweights; probabilityonce perbranch. No outer probabilityweightedtarget.",
+      "unresolved": "Gotistobart80% andADC50% are S2 mixedrightsproxies, notfullyauditedregionalrights. Terminalvalue/marketoverlap dominate; conditionalonly, notprecisecashfloor.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 121.6596,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        70,
+        134,
+        260
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+          "claim": "EUR16.6342B现金证券、251.204M股与H1净亏EUR1.3527B；平台有资金但需要继续烧钱。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm"
+      ]
+    },
+    {
+      "ticker": "KYTX",
+      "observation_date": "2028-04-12",
+      "earnings_period": "Apr2028 conditionalclinicalvalue with2030 SPSmatureearnings discounted2years",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 6.21,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "financedclinical rNPV",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 4,
+            "FD_shares_B": 0.11331368421052632,
+            "SPS_mature_treatments": 200,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0,
+            "PE": 18,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.1,
+            "other_pipeline_net_rNPV_B": 0.04,
+            "remaining_cash_B": 0.128,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 0.953106,
+          "return_pct": -84.652071,
+          "SPS_rNPV_B": 0.0,
+          "equity_value_B": 0.10800000000000001
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 6,
+            "FD_shares_B": 0.10015578947368421,
+            "SPS_mature_treatments": 1000,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0.06,
+            "PE": 22,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.7,
+            "other_pipeline_net_rNPV_B": 0.24,
+            "remaining_cash_B": 0.11,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0.15
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 8.373722,
+          "return_pct": 34.842546,
+          "SPS_rNPV_B": 0.6986767485822306,
+          "equity_value_B": 0.8386767485822305
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 12,
+            "FD_shares_B": 0.08699789473684211,
+            "SPS_mature_treatments": 2000,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0.18,
+            "PE": 25,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.65,
+            "other_pipeline_net_rNPV_B": 0.3,
+            "remaining_cash_B": 0.1,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0.15
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 27.606648,
+          "return_pct": 344.551492,
+          "SPS_rNPV_B": 2.2117202268431004,
+          "equity_value_B": 2.4017202268431004
+        }
+      ],
+      "assumptions": "150M netequityraised requires150/(1-.05)Mgross. FD=current61.84M+12Mfutureawards+newshares; financingcashfundsdevelopment, notaddedasfreeprofit. Loanavailableisnotreceived. Prospective35Mconditionaldrawand60Mdebtmustbeconsistent; discretionary50Mloanexcluded.",
+      "unresolved": "SPSsuccessprobability70% subjective; rewards12Mbudget notawardvaluation. Bear assumesfundingbeforefailure; financingfailurecouldapproachzero. Unknownclinicalprice/approvalrights.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "financing_stress": [
+        {
+          "issue_price": 3,
+          "FD_shares_M": 126.47157894736843,
+          "base_price": 6.633901521456869
+        },
+        {
+          "issue_price": 4,
+          "FD_shares_M": 113.31368421052632,
+          "base_price": 7.404224881093936
+        },
+        {
+          "issue_price": 6,
+          "FD_shares_M": 100.15578947368421,
+          "base_price": 8.376949594316223
+        },
+        {
+          "issue_price": 8,
+          "FD_shares_M": 93.57684210526315,
+          "base_price": 8.965893495916669
+        },
+        {
+          "issue_price": 12,
+          "FD_shares_M": 86.99789473684211,
+          "base_price": 9.64391152840964
+        }
+      ],
+      "cash_runway_check_B": -0.03457299999999999,
+      "post_financing_cash_check_B": 0.115427,
+      "cash_rounding_note": "Cashbridge115.427M after150Mnetraise; modelbase110M leaves5.427Madditionalfinancing/launchslippage. Prospective60Mdebt includescurrent25M+conditional35M; laterpostApr2028developmentPVdeductedseparately.",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 7.6125,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "S2_prior_18month_prices_preserved": [
+        1.2,
+        8.4,
+        26.7
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+          "claim": "KYSA8一年26人数据9/24已发布：T25FW改善49%、92%免治疗；95%是早期改善者子集持续率。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm"
+      ]
+    },
+    {
+      "ticker": "POET",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 expectedproductsalesandApr2028remainingcash",
+      "security": {
+        "type": "NASDAQ USD quoted common equity; Canadian issuer",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 6.41,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "EVsales + cash minusdilutiveoptionvalue",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "sales_B": 0.012,
+            "EV_sales": 4,
+            "remaining_net_cash_B": 0.64,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 3.292072,
+          "return_pct": -48.641617,
+          "total_warrant_option_value_B": 0.07896661743545338,
+          "economic_operating_profit_B": -0.0564
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "sales_B": 0.08,
+            "EV_sales": 12,
+            "remaining_net_cash_B": 0.6,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 7.075124,
+          "return_pct": 10.376352,
+          "total_warrant_option_value_B": 0.2511020242718096,
+          "economic_operating_profit_B": -0.046400000000000004
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "sales_B": 0.22,
+            "EV_sales": 18,
+            "remaining_net_cash_B": 0.53,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 19.021371,
+          "return_pct": 196.745254,
+          "total_warrant_option_value_B": 0.97104640924999,
+          "economic_operating_profit_B": 0.009999999999999995
+        }
+      ],
+      "assumptions": "11warranttranches total78.734968M alreadyincludes22.921408Mcustomerwarrant. Base185M includesordinary173.058M plusawards/expectedSBC; no second full261.415Mdivisor. SolveP*base_shares+sum(N*BlackScholescall(P,K,T))=EV+cash. Exerciseproceedsalreadyinsidecallpayoff; no separatelyaddedcash or optionreservedoublecount. Contractsalegrossamount notagainreducedbycustomerwarrant.",
+      "unresolved": "BSvolatility/rate/modelandconditionalcustomervestingnotobservablefuturefacts; tableMay2029 expiry vs narrativefiveyearsfor26.25trancheconflict retained. Allvested assumptionoverchargesbear; sensitivityrequired; modelnotprecisefairvalue.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 6.4319,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "prior_12month_prices_preserved": [
+        3.46,
+        6.38,
+        17.08
+      ],
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm",
+          "claim": "客户协议expected up-to500M及客户权证是有条件安排；客户对价30.142M以后摊销。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1437424/000149315226037615/ex99-1.htm"
+      ]
+    },
+    {
+      "ticker": "IONS",
+      "observation_date": "2028-04-12",
+      "earnings_period": "CY2028 forwardretainedrevenue;Apr2028clinicaloptionalvalue",
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "reference_price": 43.67,
+      "reference_price_date": "2026-10-12",
+      "price_verification": "Inherited controller independent web historical close; not independently fetched by V2",
+      "model_type": "retainedrevenueEV withcash/profitcrosscheck",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 14000,
+            "TRYNGOLZA_net_price": 27000,
+            "DAWNZERA_paid_years": 650,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 60,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.18,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 0.4,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 0.2,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.12,
+            "EV_retained_sales": 3.5,
+            "net_debt_B": 0.45,
+            "FD_shares_B": 0.2,
+            "economic_opex_including_SBC_B": 1.25
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 15.39875,
+          "return_pct": -64.738379,
+          "own_sales_B": 0.6355,
+          "retained_royalties_B": 0.21300000000000002,
+          "retained_revenue_B": 1.0085000000000002,
+          "economic_EBIT_B": -0.40347500000000003
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 25000,
+            "TRYNGOLZA_net_price": 30000,
+            "DAWNZERA_paid_years": 1100,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 140,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.2,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 0.7,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 0.65,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0.1,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0.05,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.2,
+            "EV_retained_sales": 6,
+            "net_debt_B": 0.2,
+            "FD_shares_B": 0.21,
+            "economic_opex_including_SBC_B": 1.45
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 50.847619,
+          "return_pct": 16.436041,
+          "own_sales_B": 1.205,
+          "retained_royalties_B": 0.368,
+          "retained_revenue_B": 1.813,
+          "economic_EBIT_B": 0.08384999999999998
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 38000,
+            "TRYNGOLZA_net_price": 32000,
+            "DAWNZERA_paid_years": 1700,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 230,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.22,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 1.0,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 1.2,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0.4,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0.15,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.3,
+            "EV_retained_sales": 8,
+            "net_debt_B": 0,
+            "FD_shares_B": 0.22,
+            "economic_opex_including_SBC_B": 1.7
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 103.4,
+          "return_pct": 136.775819,
+          "own_sales_B": 1.926,
+          "retained_royalties_B": 0.5775,
+          "retained_revenue_B": 2.8434999999999997,
+          "economic_EBIT_B": 0.7157250000000002
+        }
+      ],
+      "assumptions": "OwnUSsales frompaidtreatmentyears×netprice. PartnerdrugworldsalesonlytimesIonisroyaltyrate; SPINRAZAgrossroyaltiesretained55%afterRP2028share. FailedCM/HORIZONzerovalue. Netdebtincludes575M2028maturity; refinancingnotassumedfree. Salesmultiplevaluationvalidonlyifcommercialscaleandlongerprofitpotential; noautomaticexclusionfromsinglefailedtrial.",
+      "unresolved": "HighEVsalesrequires growthbeyond2028; basecashflowstillnearbreakeven. No expensiveopaque2030targetimport. Otherroyaltyrates .11/.18/.15 are disclosedrangeproxies, require productrightsauditforprecisevaluation.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口",
+      "return_basis": "USD price return, excluding dividends, fees and taxes; not total return",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "sensitivity": {
+        "base_equity_value_unchanged_shares_plus10pct_price": 46.2251,
+        "note": "Uncompensated10%newcommonshareswhileholdingtotalcommonequityvalueconstant; notamultiple/operatingsensitivityandnotnormalfairpricecapitalraise. Foroptionmodelrerunallclaimspricing."
+      },
+      "evidence_grade": {
+        "facts": "A:primaryfinancial/operatinganchorverifiedbyV1and/orV2;CRDO/AAOIuseS1/B2plusV2selectedreads",
+        "forecast": "C:financing/clinical/deliveryconditionsmaterial;precisepredictionnotverified",
+        "valuation": "C:subjectiveforwardmultiple"
+      },
+      "inherited_primary_checks": [
+        {
+          "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+          "claim": "日本bepirovirsen批准及19%特定群体功能性治愈真实；失败CM/pelacarsen不等全部管线失败。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+          "claim": "37周蛋白尿终点阳性；105周eGFR未读出。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+          "claim": "pelacarsen：Lp(a) HORIZON主要终点失败；Royalty Pharma不预计支付里程碑，2028 Spinraza分成45%、累计550M后归还。",
+          "read_by": "V1; inheritedbyV2"
+        },
+        {
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+          "claim": "eplontersen：CARDIO-TTRansform ATTR-CM主要复合终点失败；单药预设亚组仅名义显著；既有hATTR-PN适应症不能随之归零。",
+          "read_by": "V1; inheritedbyV2"
+        }
+      ],
+      "independent_V2_sources": [
+        "https://ir.ionispharma.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-13T05:16:00.144249+00:00",
+  "previous_experiment": {
+    "checked": 1321,
+    "unchanged": 1321,
+    "differences": []
+  },
+  "frozen_core": {
+    "checked": 945,
+    "unchanged": 945,
+    "differences": []
+  },
+  "frozen_extra": {
+    "checked": 200,
+    "unchanged": 200,
+    "differences": []
+  },
+  "upstream_core_current": {
+    "checked": 945,
+    "unchanged": 945,
+    "differences": []
+  },
+  "upstream_extra_current": {
+    "checked": 200,
+    "unchanged": 200,
+    "differences": []
+  },
+  "sealed_round1": {
+    "checked": 25,
+    "unchanged": 25,
+    "differences": []
+  },
+  "note": "An upstream difference may be another writer; frozen hashes remain the research version. This audit itself writes only this JSON in the experiment."
+}

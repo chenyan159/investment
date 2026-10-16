@@ -1,0 +1,6990 @@
+[
+  {
+    "ticker": "ALAB",
+    "name": "AsteraLabs",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-09-18.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ALAB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ALAB_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMBA",
+    "name": "Ambarella",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 19,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 15,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMBA_Ambarella_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMBA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMBA_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced_Micro_Devices_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMD_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMD_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ARM",
+    "name": "Arm Holdings",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ARM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ARM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 20,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-18.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AVGO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AVGO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CBRS",
+    "name": "Cerebras Systems Inc",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CBRS_Cerebras_Systems_Inc_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CBRS_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CBRS_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CDNS",
+    "name": "Cadence Design Systems",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CDNS_Cadence_Design_Systems_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CDNS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CDNS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "INTC",
+    "name": "Intel Corporation 英特尔",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/INTC_Intel_Corporation_英特尔_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/INTC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/INTC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MCHP",
+    "name": "Microchip Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MCHP_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MCHP_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MRVL_Marvell_Technology_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MRVL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MRVL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MXL",
+    "name": "MaxLinear",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MXL_MaxLinear_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MXL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MXL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 14,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 11,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NVDA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NVDA_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "QCOM",
+    "name": "Qualcomm",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/QCOM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/QCOM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SNPS",
+    "name": "Synopsys",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/SNPS_Synopsys_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SNPS_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SNPS_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CLS",
+    "name": "Celestica Inc",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 12,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 18,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CLS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CLS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DELL",
+    "name": "Dell Technologies",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/DELL_Dell_Technologies_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DELL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DELL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FLEX",
+    "name": "Flex Ltd",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/FLEX_Flex_Ltd_公司调研_2026-09-21.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FLEX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FLEX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FN",
+    "name": "Fabrinet",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/FN_Fabrinet_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "HPE",
+    "name": "惠普企业",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/HPE_惠普企业_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/HPE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/HPE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "JBL",
+    "name": "Jabil Inc",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/JBL_Jabil_Inc_公司调研_2026-10-01.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/JBL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/JBL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MRAM",
+    "name": "Everspin Technologies",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 9,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 20,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MRAM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MRAM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology 美光科技",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 1,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 5,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 1,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-01.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MU_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NTAP",
+    "name": "NetApp",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/NTAP_NetApp_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NTAP_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NTAP_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "P",
+    "name": "Everpure",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/P_Everpure_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/P_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/P_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PENG",
+    "name": "Penguin Solutions",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X1_event_dislocations"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/PENG_Penguin_Solutions_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PENG_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PENG_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RMBS",
+    "name": "Rambus",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RMBS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RMBS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SANM",
+    "name": "Sanmina Corporation",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SANM_Sanmina_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SANM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SANM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SIMO",
+    "name": "Silicon Motion Technology",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SIMO_Silicon_Motion_Technology_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SIMO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SIMO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SKHY",
+    "name": "SK hynix Inc",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SKHY_SK_hynix_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SKHY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SKHY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SMCI",
+    "name": "Super Micro Computer Inc",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 1,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 5,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 7,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 3,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 5,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMCI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMCI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SNDK",
+    "name": "SanDisk",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 2,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 3,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SNDK_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "STX",
+    "name": "Seagate Technology",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/STX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/STX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WDC",
+    "name": "WesternDigital",
+    "category": "AI服务器_存储_EMS",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WDC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WDC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AAOI",
+    "name": "Applied Optoelectronics",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 4,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 6,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AAOI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AAOI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ANET",
+    "name": "Arista Networks",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/ANET_Arista_Networks_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ANET_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ANET_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "APH",
+    "name": "Amphenol 安费诺",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/APH_Amphenol_安费诺_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/APH_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/APH_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BDC",
+    "name": "Belden",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BDC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BDC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BELFB",
+    "name": "Bel Fuse Inc",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/BELFB_Bel_Fuse_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BELFB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BELFB_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/CIEN_Ciena_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CIEN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CIEN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "COHR",
+    "name": "Coherent",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 11,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/COHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/COHR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CRDO",
+    "name": "Credo Technology Group",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 6,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRDO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRDO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CSCO",
+    "name": "Cisco Systems",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/CSCO_Cisco_Systems_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CSCO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CSCO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "GLW",
+    "name": "Corning",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/GLW_Corning_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/GLW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/GLW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LITE",
+    "name": "Lumentum",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/LITE_Lumentum_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LITE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LITE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LWLG",
+    "name": "Lightwave Logic",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X3_clinical_events"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LWLG_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LWLG_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MTSI",
+    "name": "MACOM Technology Solutions",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/MTSI_MACOM_Technology_Solutions_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MTSI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MTSI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NOK",
+    "name": "诺基亚",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/NOK_诺基亚_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NOK_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NOK_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "POET",
+    "name": "POET Technologies",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 5,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 19,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 18,
+        "file": "02_round1\\X3_clinical.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/POET_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/POET_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SITM",
+    "name": "SiTime Corporation",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/SITM_SiTime_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SITM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SITM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SMTC",
+    "name": "Semtech Corporation",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/SMTC_Semtech_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMTC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMTC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TEL",
+    "name": "TE Connectivity",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/TEL_TE_Connectivity_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TEL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TEL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VIAV",
+    "name": "VIAVI Solutions",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/VIAV_VIAVI_Solutions_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VIAV_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VIAV_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VISN",
+    "name": "Vistance Networks",
+    "category": "AI网络_光互联_连接器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 4,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 1,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 10,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/VISN_Vistance_Networks_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VISN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VISN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AJNMY",
+    "name": "味之素 Ajinomoto",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/AJNMY_味之素_Ajinomoto_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AJNMY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AJNMY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "APD",
+    "name": "Air Products and Chemicals",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/APD_Air_Products_and_Chemicals_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/APD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/APD_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASGLY",
+    "name": "AGC Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/ASGLY_AGC_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASGLY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASGLY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AXTI",
+    "name": "AXT Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/AXTI_AXT_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AXTI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AXTI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CC",
+    "name": "The Chemours Company",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 13,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 7,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/CC_The_Chemours_Company_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DD",
+    "name": "DuPont de Nemours",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/DD_DuPont_de_Nemours_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DD_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DHR",
+    "name": "Danaher Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/DHR_Danaher_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DHR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ENTG",
+    "name": "Entegris",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/ENTG_Entegris_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ENTG_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ENTG_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "HOCPY",
+    "name": "HOYA Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/HOCPY_HOYA_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/HOCPY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/HOCPY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LIN",
+    "name": "Linde plc",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/LIN_Linde_plc_公司调研_2026-09-18.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LIN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LIN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MMM",
+    "name": "3M",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/MMM_3M_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MMM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MMM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MTRN",
+    "name": "Materion",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/MTRN_Materion_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MTRN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MTRN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PCRHY",
+    "name": "Panasonic Holdings 松下控股",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/PCRHY_Panasonic_Holdings_松下控股_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PCRHY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PCRHY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "Q",
+    "name": "Qnity Electronics",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/Q_Qnity_Electronics_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/Q_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/Q_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ROG",
+    "name": "Rogers Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/ROG_Rogers_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ROG_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ROG_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SHECY",
+    "name": "Shin-Etsu Chemical 信越化学",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SHECY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SHECY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SMTOY",
+    "name": "住友电工 Sumitomo Electric Industries",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMTOY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMTOY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SOMMY",
+    "name": "住友化学 Sumitomo Chemical",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SOMMY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SOMMY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TTMI",
+    "name": "TTM Technologies",
+    "category": "电子材料_化学品_基板_PCB",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 15,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/TTMI_TTM_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TTMI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TTMI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ACLS",
+    "name": "Axcelis Technologies",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ACLS_Axcelis_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ACLS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ACLS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ACMR",
+    "name": "ACM Research",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 8,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 15,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 18,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 13,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ACMR_ACM_Research_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ACMR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ACMR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AEIS",
+    "name": "Advanced Energy Industries",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 16,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/AEIS_Advanced_Energy_Industries_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AEIS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AEIS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMAT",
+    "name": "Applied Materials",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/AMAT_Applied_Materials_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMAT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMAT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASMIY",
+    "name": "ASM International",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ASMIY_ASM_International_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASMIY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASMIY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASML",
+    "name": "ASML Holding NV",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ASML_ASML_Holding_NV_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASML_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASML_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DSCSY",
+    "name": "DISCO",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/DSCSY_DISCO_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DSCSY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DSCSY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "GFS",
+    "name": "GlobalFoundries",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/GFS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/GFS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ICHR",
+    "name": "Ichor Holdings",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/ICHR_Ichor_Holdings_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ICHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ICHR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KLAC",
+    "name": "KLA Corporation",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/KLAC_KLA_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KLAC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KLAC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LRCX",
+    "name": "Lam Research",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/LRCX_Lam_Research_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LRCX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LRCX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MKSI",
+    "name": "MKS Inc",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MKSI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MKSI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NVMI",
+    "name": "Nova Ltd",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/NVMI_Nova_Ltd_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NVMI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NVMI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TOELY",
+    "name": "Tokyo Electron",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/TOELY_Tokyo_Electron_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TOELY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TOELY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TSEM",
+    "name": "Tower Semiconductor",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/TSEM_Tower_Semiconductor_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TSEM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TSEM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TSM",
+    "name": "台积电",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/TSM_台积电_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TSM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TSM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "UCTT",
+    "name": "Ultra Clean Holdings",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 17,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 6,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 9,
+    "status": "最终20",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/UCTT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/UCTT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "UMC",
+    "name": "United Microelectronics 联华电子",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/UMC_United_Microelectronics_联华电子_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/UMC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/UMC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VECO",
+    "name": "Veeco Instruments",
+    "category": "晶圆制造_前道设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/VECO_Veeco_Instruments_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VECO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VECO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AEHR",
+    "name": "Aehr Test Systems",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/AEHR_Aehr_Test_Systems_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AEHR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AEHR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMKR",
+    "name": "Amkor Technology",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/AMKR_Amkor_Technology_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMKR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMKR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASMVY",
+    "name": "ASMPT",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASMVY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASMVY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASX",
+    "name": "ASE Technology Holding",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/ASX_ASE_Technology_Holding_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ATEYY",
+    "name": "Advantest",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/ATEYY_Advantest_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ATEYY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ATEYY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BESIY",
+    "name": "BE Semiconductor",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/BESIY_BE_Semiconductor_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BESIY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BESIY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CAMT",
+    "name": "Camtek",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/CAMT_Camtek_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CAMT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CAMT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "COHU",
+    "name": "Cohu Inc",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/COHU_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/COHU_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FORM",
+    "name": "FormFactor",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FORM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FORM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IMOS",
+    "name": "ChipMOS Technologies 南茂科技",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-10-01.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IMOS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IMOS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KEYS",
+    "name": "Keysight Technologies",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/KEYS_Keysight_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KEYS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KEYS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KLIC",
+    "name": "Kulicke Soffa",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/KLIC_Kulicke_Soffa_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KLIC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KLIC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MICLF",
+    "name": "Mycronic AB",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/MICLF_Mycronic_AB_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MICLF_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MICLF_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NDSN",
+    "name": "Nordson",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/NDSN_Nordson_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NDSN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NDSN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ONTO",
+    "name": "Onto Innovation",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/ONTO_Onto_Innovation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ONTO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ONTO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PLAB",
+    "name": "Photronics",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 20,
+        "file": "02_round1\\X3_clinical.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PLAB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PLAB_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TDY",
+    "name": "Teledyne Technologies",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/TDY_Teledyne_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TDY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TDY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TER",
+    "name": "Teradyne",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/TER_Teradyne_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TER_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TER_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TMO",
+    "name": "Thermo Fisher Scientific",
+    "category": "封测_检测_计量_光罩",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/TMO_Thermo_Fisher_Scientific_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TMO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TMO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ADI",
+    "name": "Analog Devices",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ADI_Analog_Devices_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ADI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ADI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ALGM",
+    "name": "Allegro MicroSystems",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ALGM_Allegro_MicroSystems_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ALGM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ALGM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AOSL",
+    "name": "Alpha and Omega Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 19,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 6,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 16,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 13,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 17,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AOSL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AOSL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DIOD",
+    "name": "Diodes Incorporated",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/DIOD_Diodes_Incorporated_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DIOD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DIOD_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IFNNY",
+    "name": "Infineon Technologies AG 英飞凌科技",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IFNNY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IFNNY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LFUS",
+    "name": "Littelfuse",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/LFUS_Littelfuse_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LFUS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LFUS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/MPWR_Monolithic_Power_Systems_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MPWR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MPWR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MRAAY",
+    "name": "Murata Manufacturing",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/MRAAY_Murata_Manufacturing_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MRAAY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MRAAY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NVTS",
+    "name": "Navitas Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 20,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 19,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events"
+    ],
+    "later_roles": [
+      "S2",
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/NVTS_Navitas_Semiconductor_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NVTS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NVTS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ON",
+    "name": "onsemi",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ON_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ON_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "POWI",
+    "name": "Power Integrations",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/POWI_Power_Integrations_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/POWI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/POWI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ST",
+    "name": "Sensata Technologies",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ST_Sensata_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ST_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ST_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "STM",
+    "name": "STMicroelectronics",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/STM_STMicroelectronics_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/STM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/STM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TTDKY",
+    "name": "TDK Corporation",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/TTDKY_TDK_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TTDKY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TTDKY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TXN",
+    "name": "德州仪器",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/TXN_德州仪器_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TXN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TXN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VSH",
+    "name": "Vishay Intertechnology",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/VSH_Vishay_Intertechnology_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VSH_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VSH_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WOLF",
+    "name": "Wolfspeed",
+    "category": "功率半导体_电源管理_传感器",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 16,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 11,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/WOLF_Wolfspeed_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WOLF_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WOLF_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ABBNY",
+    "name": "ABB Ltd",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/ABBNY_ABB_Ltd_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ABBNY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ABBNY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ATKR",
+    "name": "Atkore",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/ATKR_Atkore_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ATKR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ATKR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ETN",
+    "name": "Eaton Corporation",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/ETN_Eaton_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ETN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ETN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "HUBB",
+    "name": "Hubbell",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/HUBB_Hubbell_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/HUBB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/HUBB_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MIELY",
+    "name": "三菱电机 Mitsubishi Electric",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MIELY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MIELY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NVT",
+    "name": "nVent Electric",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/NVT_nVent_Electric_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NVT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NVT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "POWL",
+    "name": "Powell Industries",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/POWL_Powell_Industries_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/POWL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/POWL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SBGSY",
+    "name": "Schneider Electric 施耐德",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/SBGSY_Schneider_Electric_施耐德_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SBGSY_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SBGSY_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VICR",
+    "name": "Vicor Corporation",
+    "category": "配电_电源系统_电气设备",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/配电_电源系统_电气设备/VICR_Vicor_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VICR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VICR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AEP",
+    "name": "American Electric Power",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/AEP_American_Electric_Power_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AEP_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AEP_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMPX",
+    "name": "Amprius Technologies",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 8,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 4,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 2,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 8,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 7,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMPX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMPX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BE",
+    "name": "Bloom Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/BE_Bloom_Energy_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BWXT",
+    "name": "BWX Technologies",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/BWXT_BWX_Technologies_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BWXT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BWXT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CAT",
+    "name": "Caterpillar Inc",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/CAT_Caterpillar_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CAT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CAT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CCJ",
+    "name": "Cameco",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/CCJ_Cameco_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CCJ_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CCJ_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CEG",
+    "name": "Constellation Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/CEG_Constellation_Energy_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CEG_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CEG_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CMI",
+    "name": "Cummins Inc",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/CMI_Cummins_Inc_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CMI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CMI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DTE",
+    "name": "DTE Energy Company",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/DTE_DTE_Energy_Company_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DTE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DTE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ENPH",
+    "name": "Enphase Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 12,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 9,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 10,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 1,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 4,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 12,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ENPH_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ENPH_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ENS",
+    "name": "EnerSys",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ENS_EnerSys_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ENS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ENS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ET",
+    "name": "Energy Transfer LP",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ET_Energy_Transfer_LP_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ET_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ET_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ETR",
+    "name": "Entergy Corporation",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ETR_Entergy_Corporation_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ETR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ETR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FCEL",
+    "name": "FuelCell Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/FCEL_FuelCell_Energy_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FCEL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FCEL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FLNC",
+    "name": "Fluence Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 6,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 10,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 5,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 9,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 14,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FLNC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FLNC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "GEV",
+    "name": "GE Vernova",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/GEV_GE_Vernova_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/GEV_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/GEV_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "GNRC",
+    "name": "Generac Holdings",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 18,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-09-22.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/GNRC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/GNRC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "HTHIY",
+    "name": "Hitachi Ltd",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/HTHIY_Hitachi_Ltd_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/HTHIY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/HTHIY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "LEU",
+    "name": "Centrus Energy",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 9,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 15,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 4,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 19,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 15,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/LEU_Centrus_Energy_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/LEU_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/LEU_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "OKLO",
+    "name": "Oklo Inc",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 6,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X3_clinical_events"
+    ],
+    "later_roles": [
+      "S2",
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/OKLO_Oklo_Inc_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/OKLO_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/OKLO_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PSIX",
+    "name": "Power Solutions International",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 11,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 18,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 3,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 8,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 8,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PSIX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PSIX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RYCEY",
+    "name": "Rolls-Royce Holdings",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/RYCEY_Rolls-Royce_Holdings_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RYCEY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RYCEY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SMR",
+    "name": "NuScale Power",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/SMR_NuScale_Power_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TE",
+    "name": "T1 Energy Inc",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 7,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 10,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/TE_T1_Energy_Inc_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VST",
+    "name": "Vistra Corp",
+    "category": "电力_发电_能源_储能",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VST_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VST_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AAON",
+    "name": "AAON",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/AAON_AAON_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AAON_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AAON_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CARR",
+    "name": "Carrier Global",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/CARR_Carrier_Global_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CARR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CARR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DCI",
+    "name": "Donaldson Company",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/DCI_Donaldson_Company_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DCI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DCI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DKILY",
+    "name": "Daikin Industries",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/DKILY_Daikin_Industries_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DKILY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DKILY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DOV",
+    "name": "Dover Corporation",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/DOV_Dover_Corporation_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DOV_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DOV_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ECL",
+    "name": "Ecolab",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/ECL_Ecolab_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ECL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ECL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ITT",
+    "name": "ITT",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/ITT_ITT_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ITT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ITT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "JCI",
+    "name": "Johnson Controls",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/JCI_Johnson_Controls_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/JCI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/JCI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MOD",
+    "name": "Modine Manufacturing",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 13,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 20,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MOD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MOD_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PH",
+    "name": "Parker-Hannifin",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PH_Parker-Hannifin_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PH_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PH_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PNR",
+    "name": "Pentair plc",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 9,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PNR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PNR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SPXC",
+    "name": "SPX Technologies",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/SPXC_SPX_Technologies_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SPXC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SPXC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TT",
+    "name": "Trane Technologies",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/TT_Trane_Technologies_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "VRT",
+    "name": "Vertiv",
+    "category": "热管理_流体_水处理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/VRT_Vertiv_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/VRT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/VRT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "EME",
+    "name": "EMCOR Group",
+    "category": "工程建设_机电安装",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/工程建设_机电安装/EME_EMCOR_Group_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/EME_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/EME_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FIX",
+    "name": "Comfort Systems USA",
+    "category": "工程建设_机电安装",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/工程建设_机电安装/FIX_Comfort_Systems_USA_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FIX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FIX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IESC",
+    "name": "IES Holdings",
+    "category": "工程建设_机电安装",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/工程建设_机电安装/IESC_IES_Holdings_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IESC_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IESC_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MYRG",
+    "name": "MYR Group",
+    "category": "工程建设_机电安装",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/工程建设_机电安装/MYRG_MYR_Group_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MYRG_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MYRG_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PWR",
+    "name": "Quanta Services",
+    "category": "工程建设_机电安装",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/工程建设_机电安装/PWR_Quanta_Services_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PWR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PWR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ALLE",
+    "name": "Allegion plc",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/ALLE_Allegion_plc_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ALLE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ALLE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CGNX",
+    "name": "Cognex",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/CGNX_Cognex_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CGNX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CGNX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "EMR",
+    "name": "Emerson Electric",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/EMR_Emerson_Electric_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/EMR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/EMR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FANUY",
+    "name": "FANUC 发那科",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/FANUY_FANUC_发那科_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FANUY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FANUY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "FTV",
+    "name": "Fortive Corporation",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/FTV_Fortive_Corporation_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/FTV_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/FTV_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MSI",
+    "name": "Motorola Solutions",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/MSI_Motorola_Solutions_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MSI_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MSI_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ROK",
+    "name": "Rockwell Automation",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/ROK_Rockwell_Automation_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ROK_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ROK_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SMCAY",
+    "name": "SMC",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/SMCAY_SMC_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SMCAY_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SMCAY_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SYM",
+    "name": "Symbotic",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/SYM_Symbotic_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SYM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SYM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/TSLA_Tesla_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TSLA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TSLA_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "YASKY",
+    "name": "Yaskawa Electric 安川电机",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/YASKY_Yaskawa_Electric_安川电机_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/YASKY_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/YASKY_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ASTS",
+    "name": "AST SpaceMobile",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 15,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 17,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/ASTS_AST_SpaceMobile_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ASTS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ASTS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CW",
+    "name": "Curtiss-Wright",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/CW_Curtiss-Wright_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PL",
+    "name": "Planet Labs",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/PL_Planet_Labs_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RDW",
+    "name": "Redwire",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 10,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 12,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 7,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 20,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 19,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/RDW_Redwire_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RDW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RDW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RKLB",
+    "name": "Rocket Lab",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S2",
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/RKLB_Rocket_Lab_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RKLB_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RKLB_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SPCX",
+    "name": "SpaceX",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/SPCX_SpaceX_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SPCX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SPCX_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/AMZN_Amazon_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AMZN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AMZN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "APLD",
+    "name": "Applied Digital",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 14,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 14,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/APLD_Applied_Digital_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/APLD_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/APLD_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BABA",
+    "name": "Alibaba 阿里巴巴",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/BABA_Alibaba_阿里巴巴_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BABA_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BABA_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CRWV",
+    "name": "CoreWeave",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 7,
+        "file": "02_round1\\X2_ai.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 14,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRWV_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRWV_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DLR",
+    "name": "Digital Realty",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/DLR_Digital_Realty_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DLR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DLR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "EQIX",
+    "name": "Equinix",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/EQIX_Equinix_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/EQIX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/EQIX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/GOOGL_Alphabet_Inc_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/GOOGL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/GOOGL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IREN",
+    "name": "IREN Limited",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 3,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 3,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 13,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 13,
+        "file": "02_round1\\X4_space_energy.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S1",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 4,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/IREN_IREN_Limited_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IREN_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IREN_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "name": "微软",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/MSFT_微软_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MSFT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MSFT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NBIS",
+    "name": "Nebius Group",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X2_AI供应链与短期盈利错价"
+    ],
+    "later_roles": [
+      "S1",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/NBIS_Nebius_Group_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NBIS_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NBIS_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NET",
+    "name": "Cloudflare",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/NET_Cloudflare_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NET_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NET_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation",
+    "category": "云算力_IDC_边缘云",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/ORCL_Oracle_Corporation_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ORCL_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ORCL_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ADBE",
+    "name": "Adobe",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 10,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 16,
+    "status": "最终20",
+    "revival": true,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ADBE_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ADBE_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DDOG",
+    "name": "Datadog",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/DDOG_Datadog_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DDOG_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DDOG_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DT",
+    "name": "Dynatrace",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/DT_Dynatrace_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DT_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DT_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IBM",
+    "name": "International Business Machines",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/IBM_International_Business_Machines_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IBM_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IBM_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/META_Meta_Platforms_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/META_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/META_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NOW",
+    "name": "ServiceNow",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/NOW_ServiceNow_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NOW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NOW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "NTNX",
+    "name": "Nutanix",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/NTNX_Nutanix_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/NTNX_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/NTNX_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PLTR",
+    "name": "Palantir Technologies",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/PLTR_Palantir_Technologies_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PLTR_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PLTR_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "SNOW",
+    "name": "Snowflake",
+    "category": "企业软件_数据平台",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/SNOW_Snowflake_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/SNOW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/SNOW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CRWD",
+    "name": "CrowdStrike",
+    "category": "网络安全_身份权限_治理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/网络安全_身份权限_治理/CRWD_CrowdStrike_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CRWD_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CRWD_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PANW",
+    "name": "Palo Alto Networks",
+    "category": "网络安全_身份权限_治理",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/网络安全_身份权限_治理/PANW_Palo_Alto_Networks_公司调研_2026-09-26.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PANW_经营情景市场状态投资决策_2026-10-02.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PANW_逐家公司投资思路对比_2026-10-09.md"
+      ]
+    }
+  },
+  {
+    "ticker": "MRNA",
+    "name": "Moderna 莫德纳",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X3_clinical_events"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X3_clinical_events"
+    ],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/MRNA_Moderna_莫德纳_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/MRNA_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/MRNA_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BNTX",
+    "name": "BioNTech",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 18,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 2,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 12,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 12,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 11,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BNTX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BNTX_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ALNY",
+    "name": "Alnylam Pharmaceuticals",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 17,
+        "file": "02_round1\\X1_event.json"
+      }
+    ],
+    "round1_reserves": [
+      "X3_clinical_events",
+      "X5_reverse_valuation"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ALNY_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ALNY_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "IONS",
+    "name": "Ionis Pharmaceuticals",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 17,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 16,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [
+      "X1_event_dislocations",
+      "X4_space_energy_independent_round1"
+    ],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/IONS_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/IONS_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "ARGX",
+    "name": "argenx",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X3_clinical_events"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X3_clinical_events",
+        "rank": 16,
+        "file": "02_round1\\X3_clinical.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ARGX_argenx_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/ARGX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/ARGX_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KYTX",
+    "name": "Kyverna Therapeutics",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X2_AI供应链与短期盈利错价",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 2,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X2_AI供应链与短期盈利错价",
+        "rank": 8,
+        "file": "02_round1\\X2_ai.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 1,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 3,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 2,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": 2,
+    "status": "最终20",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KYTX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KYTX_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "COST",
+    "name": "Costco Wholesale 好市多",
+    "category": "零售_会员制_食品_折扣渠道",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/COST_Costco_Wholesale_好市多_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/COST_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/COST_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart 沃尔玛",
+    "category": "零售_会员制_食品_折扣渠道",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/WMT_Walmart_沃尔玛_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WMT_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WMT_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "BJ",
+    "name": "BJ's Wholesale Club Holdings",
+    "category": "零售_会员制_食品_折扣渠道",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/BJ_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/BJ_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KR",
+    "name": "The Kroger Co. 克罗格",
+    "category": "零售_会员制_食品_折扣渠道",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/KR_The_Kroger_Co._克罗格_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KR_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KR_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TJX",
+    "name": "The TJX Companies",
+    "category": "零售_会员制_食品_折扣渠道",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/TJX_The_TJX_Companies_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TJX_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TJX_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "PGR",
+    "name": "The Progressive Corporation",
+    "category": "保险_财产险_特色险_再保险",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/PGR_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/PGR_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "TRV",
+    "name": "The Travelers Companies",
+    "category": "保险_财产险_特色险_再保险",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/TRV_The_Travelers_Companies_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/TRV_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/TRV_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CB",
+    "name": "Chubb Limited",
+    "category": "保险_财产险_特色险_再保险",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/CB_Chubb_Limited_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CB_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CB_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WRB",
+    "name": "W. R. Berkley Corporation",
+    "category": "保险_财产险_特色险_再保险",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/WRB_W._R._Berkley_Corporation_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WRB_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WRB_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RNR",
+    "name": "RenaissanceRe Holdings",
+    "category": "保险_财产险_特色险_再保险",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/RNR_RenaissanceRe_Holdings_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RNR_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RNR_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AVAV",
+    "name": "AeroVironment",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X1_event_dislocations",
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1",
+      "X5_reverse_valuation"
+    ],
+    "round1_nominations": [
+      {
+        "role": "X1_event_dislocations",
+        "rank": 14,
+        "file": "02_round1\\X1_event.json"
+      },
+      {
+        "role": "X3_clinical_events",
+        "rank": 11,
+        "file": "02_round1\\X3_clinical.json"
+      },
+      {
+        "role": "X4_space_energy_independent_round1",
+        "rank": 5,
+        "file": "02_round1\\X4_space_energy.json"
+      },
+      {
+        "role": "X5_reverse_valuation",
+        "rank": 17,
+        "file": "02_round1\\X5_reverse.json"
+      }
+    ],
+    "round1_reserves": [],
+    "later_roles": [
+      "S2",
+      "B1",
+      "B2",
+      "V1",
+      "V2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/AVAV_AeroVironment_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AVAV_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AVAV_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "KTOS",
+    "name": "Kratos Defense & Security Solutions",
+    "category": "航空航天_卫星_高可靠系统",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [
+      "X3_clinical_events",
+      "X4_space_energy_independent_round1"
+    ],
+    "round1_nominations": [],
+    "round1_reserves": [
+      "X3_clinical_events"
+    ],
+    "later_roles": [
+      "S2"
+    ],
+    "final_rank": null,
+    "status": "深研后候补/未入选",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/KTOS_Kratos_Defense_&_Security_Solutions_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/KTOS_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/KTOS_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "DE",
+    "name": "Deere & Company 迪尔",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/DE_Deere_&_Company_迪尔_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/DE_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/DE_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "AGCO",
+    "name": "AGCO Corporation",
+    "category": "机器人_工业自动化_智能硬件",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/AGCO_AGCO_Corporation_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/AGCO_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/AGCO_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WM",
+    "name": "Waste Management WM",
+    "category": "环境服务_固废_回收_资源化",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/环境服务_固废_回收_资源化/WM_Waste_Management_WM_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WM_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WM_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "RSG",
+    "name": "Republic Services",
+    "category": "环境服务_固废_回收_资源化",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/环境服务_固废_回收_资源化/RSG_Republic_Services_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/RSG_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/RSG_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "WCN",
+    "name": "Waste Connections",
+    "category": "环境服务_固废_回收_资源化",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/环境服务_固废_回收_资源化/WCN_Waste_Connections_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/WCN_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/WCN_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  },
+  {
+    "ticker": "CWST",
+    "name": "Casella Waste Systems",
+    "category": "环境服务_固废_回收_资源化",
+    "round1_scan_count": 5,
+    "round1_targeted_roles": [],
+    "round1_nominations": [],
+    "round1_reserves": [],
+    "later_roles": [],
+    "final_rank": null,
+    "status": "初筛后未进入本轮重点，不等于无投资价值",
+    "revival": false,
+    "source_paths": {
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/环境服务_固废_回收_资源化/CWST_Casella_Waste_Systems_公司调研_2026-10-11.md"
+      ],
+      "scenario": [
+        "01_inputs/frozen/分析报告/公司情景投资决策/结果/CWST_经营情景市场状态投资决策_2026-10-11.md"
+      ],
+      "comparison": [
+        "01_inputs/frozen/分析报告/公司对比/结果/CWST_逐家公司投资思路对比_2026-10-11.md"
+      ]
+    }
+  }
+]

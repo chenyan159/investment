@@ -1,0 +1,36 @@
+{
+  "mode": "apply",
+  "batchId": "refresh34-three-domains-20261016-012454",
+  "sourceDate": "2026-10-16",
+  "companyCount": 34,
+  "itemCount": 102,
+  "domains": {
+    "company": 34,
+    "company-investment-decision": 34,
+    "company-comparison": 34
+  },
+  "reasoningEffort": "max",
+  "plans": {
+    "company": {
+      "version": "20261009_225000",
+      "sha256": "74ef18b5115b2c775568857743a6ba9030dd42ac8bd0d7fa32d4c592088a178a",
+      "snapshot": "基本面/公司调研/研究方案/20261009_225000/研究方案_20261009_225000.md"
+    },
+    "company-investment-decision": {
+      "version": "20261011_044451",
+      "sha256": "ca73ede7ffc6071f82e039c3b87aae69ec8ac7a0cf458e3e7874a78087257300",
+      "snapshot": "分析报告/公司情景投资决策/研究方案/20261011_044451/研究方案_20261011_044451.md"
+    },
+    "company-comparison": {
+      "version": "20261011_044451",
+      "sha256": "43596de5e645d7e1483a58508cb7d41f108f3806a46d40e9e60dc74ecfd1f533",
+      "snapshot": "分析报告/公司对比/研究方案/20261011_044451/研究方案_20261011_044451.md"
+    }
+  },
+  "backupDirectory": "tools/research-runner/queue-backups/refresh34-three-domains-20261016-012454",
+  "pending": 102,
+  "running": 0,
+  "runnerLockPresent": false,
+  "afterQueueSha256": "e29d1818751bd58a600719dd1757b2961ea248099135258b3ca95f3a06da57ae",
+  "archiveAndControlUnchanged": true
+}

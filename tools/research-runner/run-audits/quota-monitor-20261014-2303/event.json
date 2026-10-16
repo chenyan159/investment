@@ -1,0 +1,27 @@
+{
+  "automationId": "quota",
+  "type": "quota_recovered",
+  "previousObservation": {
+    "automationId": "quota",
+    "observedAtUtc": "2026-10-15T06:12:58Z",
+    "usedPercent": 40,
+    "remainingPercent": 60,
+    "windowDurationMins": 10080,
+    "resetsAt": 1792472310,
+    "observedAtLocal": "2026-10-14T23:12:58-07:00"
+  },
+  "currentObservation": {
+    "automationId": "quota",
+    "observedAtUtc": "2026-10-15T06:13:59Z",
+    "usedPercent": 0,
+    "remainingPercent": 100,
+    "windowDurationMins": 10080,
+    "resetsAt": 1792649586,
+    "observedAtLocal": "2026-10-14T23:13:59-07:00"
+  },
+  "recoveryInterval": {
+    "after": "2026-10-14T23:12:58-07:00",
+    "onOrBefore": "2026-10-14T23:13:59-07:00"
+  },
+  "exactRecoveryTimeKnown": false
+}

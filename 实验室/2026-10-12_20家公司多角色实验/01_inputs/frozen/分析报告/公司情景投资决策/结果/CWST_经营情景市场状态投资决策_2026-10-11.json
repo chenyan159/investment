@@ -1,0 +1,57 @@
+{
+  "ticker": "CWST",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:35:25-07:00",
+  "reference_price": {
+    "value": 83.78,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        60.35,
+        60.35
+      ],
+      "target_price": [
+        24.14,
+        33.09
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        114.54,
+        114.54
+      ],
+      "target_price": [
+        80.64,
+        99.63
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        149.19,
+        149.19
+      ],
+      "target_price": [
+        130.52,
+        154.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        178.49,
+        178.49
+      ],
+      "target_price": [
+        170.48,
+        198.56
+      ],
+      "evidence": "weak"
+    }
+  }
+}

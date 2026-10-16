@@ -1,0 +1,98 @@
+{
+  "reason": "Salesroyalty/territoriallicense cannot be modeled as uniform profitshare; DB1311May2026optionexercise changesUSclaim",
+  "old_BNTX_prices": [
+    70.881641,
+    133.825588,
+    273.701094
+  ],
+  "new_BNTX_prices": [
+    69.303207,
+    131.684101,
+    273.456049
+  ],
+  "unchanged_other_company_scenarios": [
+    "NVDA",
+    "MU",
+    "AVGO",
+    "CLS",
+    "CRDO",
+    "AAOI",
+    "PSIX",
+    "SNDK",
+    "TSM",
+    "ADBE",
+    "PNR",
+    "ARGX",
+    "ALNY",
+    "AGCO",
+    "CARR",
+    "MCHP",
+    "SMCI",
+    "BDC",
+    "MOD",
+    "IREN",
+    "FLNC",
+    "VST",
+    "CRM",
+    "PGR",
+    "BABA",
+    "KYTX",
+    "POET",
+    "IONS"
+  ],
+  "rights_sensitivity": [
+    {
+      "common_sales_royalty_assumption": 0.1,
+      "DB1311_US_profit_share_assumption": 0.4,
+      "price": 137.23133647051472
+    },
+    {
+      "common_sales_royalty_assumption": 0.1,
+      "DB1311_US_profit_share_assumption": 0.5,
+      "price": 137.94075199989686
+    },
+    {
+      "common_sales_royalty_assumption": 0.1,
+      "DB1311_US_profit_share_assumption": 0.6,
+      "price": 138.65016752927897
+    },
+    {
+      "common_sales_royalty_assumption": 0.15,
+      "DB1311_US_profit_share_assumption": 0.4,
+      "price": 130.97468562110282
+    },
+    {
+      "common_sales_royalty_assumption": 0.15,
+      "DB1311_US_profit_share_assumption": 0.5,
+      "price": 131.68410115048496
+    },
+    {
+      "common_sales_royalty_assumption": 0.15,
+      "DB1311_US_profit_share_assumption": 0.6,
+      "price": 132.39351667986708
+    },
+    {
+      "common_sales_royalty_assumption": 0.2,
+      "DB1311_US_profit_share_assumption": 0.4,
+      "price": 124.71803477169092
+    },
+    {
+      "common_sales_royalty_assumption": 0.2,
+      "DB1311_US_profit_share_assumption": 0.5,
+      "price": 125.42745030107307
+    },
+    {
+      "common_sales_royalty_assumption": 0.2,
+      "DB1311_US_profit_share_assumption": 0.6,
+      "price": 126.13686583045518
+    }
+  ],
+  "source_ids": [
+    "V2_BNTX_ONCO_RIGHTS",
+    "V2_BNTX_DUALITY_INTERIM",
+    "V2_BNTX_CRC_STOP",
+    "V1_BNTX_HER2_CONTRACT",
+    "V1_BNTX_B7H3_CONTRACT",
+    "V1_BNTX_GENENTECH_CONTRACT"
+  ]
+}

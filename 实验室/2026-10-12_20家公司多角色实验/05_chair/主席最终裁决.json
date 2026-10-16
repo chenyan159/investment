@@ -1,0 +1,4440 @@
+{
+  "status": "final_chair_decision_subject_to_future_operating_conditions",
+  "information_cutoff": "2026-10-12T19:40:00-07:00",
+  "observation_date": "2028-04-12",
+  "ranked_companies": [
+    {
+      "ticker": "NVDA",
+      "thesis": "平台、网络与机架一起收费，利润增长和价格容错兼具",
+      "action_status": "分阶段参与候选；先核后续收现，不把订单当现金",
+      "strongest_bull": "FY27真实高盈利与AWS追加部署支持需求，OCP生态扩张提高系统价值捕获；Maia出现也不意味着总GPU收入收缩",
+      "strongest_bear": "Q2经营现金24.077B显著低于经营利润63.734B，应收占用22.346B；客户融资与自主推理芯片同时挑战收现和份额",
+      "why_preferred": "AVGO：两者均有AI增长，NVDA当前完整系统生态与较高模型利润增量暂胜；TSM跨架构更稳，但当前每股增长弹性较小",
+      "minority_view": "若客户自研更快、GPU价格让利或担保兑现，TSM/AVGO可胜；不能靠CUDA口号免除现金问题",
+      "forecast_caveat": "600B收入、74%毛利与27倍PE均是研究预算，760B牛收入不是指导；费用52B已含10B SBC",
+      "rank": 1,
+      "company_name": "NVIDIA",
+      "project_member": true,
+      "reference_price": 226.32,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 430,
+            "economic_gross_margin": 0.7,
+            "opex_ex_SBC_B": 38,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 24,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 174.991667,
+          "return_pct": -22.679539,
+          "economic_EBIT_B": 253.0,
+          "economic_net_income_B": 209.98999999999998,
+          "economic_EPS": 8.749583333333332
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 600,
+            "economic_gross_margin": 0.74,
+            "opex_ex_SBC_B": 42,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 23.9,
+            "PE": 27,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 367.561506,
+          "return_pct": 62.407877,
+          "economic_EBIT_B": 392.0,
+          "economic_net_income_B": 325.35999999999996,
+          "economic_EPS": 13.613389121338912
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 760,
+            "economic_gross_margin": 0.75,
+            "opex_ex_SBC_B": 48,
+            "SBC_expense_B": 12,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 23.8,
+            "PE": 32,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 569.142857,
+          "return_pct": 151.477049,
+          "economic_EBIT_B": 510.0,
+          "economic_net_income_B": 423.29999999999995,
+          "economic_EPS": 17.785714285714285
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward annual operating earnings (mostly FY2029 ending Jan2029); FY27 realized base and FY28 ramp as bridge",
+      "closest_alternative": "AVGO",
+      "catalysts": [
+        "3–6月：季度收入、毛利和应收回款",
+        "6–12月：Rubin量产与客户部署",
+        "12–18月：下一平台及网络附加价值转现金"
+      ],
+      "kill_conditions": [
+        "连续两季收入环比停滞同时应收上升",
+        "客户融资支持增长持续快于终端付费",
+        "毛利下滑不能靠量补"
+      ],
+      "verified_facts": [
+        "FY27 non-GAAP已含SBC；Q2 CFO24.077B远低于经营利润63.734B，AR占用22.346B；投资证券收益7.771B不能永续。"
+      ],
+      "external_chain_limitations": "AWS支持需求、Maia提供竞争反证；都不是NVDA600B收入的独立预测。OCP与Cisco联合生态属于一个根事件。",
+      "material_unresolved": "600B收入、74%毛利与27倍PE均是研究预算，760B牛收入不是指导；费用52B已含10B SBC；客户融资及应收何时收回，Maia侵蚀多少推理份额无法真值核定。",
+      "numerical_unresolved_original": "600/760B are V2 conditional budgets, not guidance; financing-backed customer demand and commitments remain a tail risk.",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S1",
+        "B1",
+        "B2",
+        "Controller产业",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "published_date": "2026-08-26",
+          "key_information": "FY27 non-GAAP已含SBC；Q2 CFO24.077B远低于经营利润63.734B，AR占用22.346B；投资证券收益7.771B不能永续。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "published_date": "2026-08-26",
+          "key_information": "AWS额外GPU部署与微软自研同时成立；不能二选一讲产业。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "published_date": "2026-10-12",
+          "key_information": "AWS额外GPU部署与微软自研同时成立；不能二选一讲产业。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "ADBE",
+      "thesis": "存量专业工作流的低预期价格加实际回购，不依赖AI成为独立巨头",
+      "action_status": "分阶段参与候选；季度检查有机ARR与净席位",
+      "strongest_bull": "Q3收入6.76B、ARR27.50B、持续经营现金表明付费业务仍在；保留SBC后也可由温和增长支撑修复",
+      "strongest_bear": "Canva/Affinity免费核心降低进入成本；集团ARR会掩盖创意席位流失、收购与提价，AI-influenced不等于新增收费",
+      "why_preferred": "CRM：Adobe现有经济利润对应价格更低，基准修复无需Agentforce定义持续扩张；可保留第二软件席，但优先ADBE",
+      "minority_view": "若创意净用户持续流失而CRM核心有机cRPO和付费消耗改善，CRM更优；并购摊销正常化并非全部无成本",
+      "forecast_caveat": "31B收入、35%含SBC经营率、380M股与17倍PE是条件预算；不在EPS外再加净现金",
+      "rank": 2,
+      "company_name": "Adobe",
+      "project_member": true,
+      "reference_price": 238.14,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 27,
+            "economic_gross_margin": 0.29,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.39,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 172.26,
+          "return_pct": -27.664399,
+          "economic_EBIT_B": 7.829999999999999,
+          "economic_net_income_B": 6.107399999999999,
+          "economic_EPS": 15.659999999999998
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 31,
+            "economic_gross_margin": 0.35,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.38,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 378.607895,
+          "return_pct": 58.985427,
+          "economic_EBIT_B": 10.85,
+          "economic_net_income_B": 8.463,
+          "economic_EPS": 22.271052631578947
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 34,
+            "economic_gross_margin": 0.365,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.375,
+            "PE": 21,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 542.0688,
+          "return_pct": 127.626102,
+          "economic_EBIT_B": 12.41,
+          "economic_net_income_B": 9.6798,
+          "economic_EPS": 25.8128
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "FY2028 ending Nov2028 forward",
+      "closest_alternative": "CRM",
+      "catalysts": [
+        "3–6月：FY27指引与剔并购有机ARR",
+        "6–12月：Firefly/Acrobat付费续约",
+        "12–18月：FY28工作流收入及净股数"
+      ],
+      "kill_conditions": [
+        "两季有机ARR低于5%且经济现金下降",
+        "提价伴净付费人数持续减少",
+        "回购不能抵消稀释"
+      ],
+      "verified_facts": [
+        "Q3收入6.76B、ARR27.50B和持续收费已实现；调整EPS6.13高于GAAP4.62不可视全部经济利润。"
+      ],
+      "external_chain_limitations": "Canva提供真实替代方案，专业媒体评价不等于客户流失队列；公司ARR不拆全部AI增量。",
+      "material_unresolved": "31B收入、35%含SBC经营率、380M股与17倍PE是条件预算；不在EPS外再加净现金；AI积分真实增收与既有席位流失、Semrush并表贡献未完全披露。",
+      "numerical_unresolved_original": "",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+          "published_date": "2026-09-10",
+          "key_information": "Q3收入6.76B、ARR27.50B和持续收费已实现；调整EPS6.13高于GAAP4.62不可视全部经济利润。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.canva.com/newsroom/news/all-new-affinity/",
+          "published_date": "2025-10-29",
+          "key_information": "免费Affinity建立真实替代压力，不能仅拿AI图像新工具作竞争全集。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.creativebloq.com/design/design-software/affinity-3-3-shows-that-canva-is-serious-about-taking-on-adobe",
+          "published_date": "2026-09 (exact day not resolved)",
+          "key_information": "Affinity3.3增加60多项功能；作者同时认为Adobe集成、插件生态及专业习惯仍强。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "thesis": "短缺已转成利润和现金，合同与供给爬坡支持强中枢延续",
+      "action_status": "周期进攻候选；与SNDK合看存储风险",
+      "strongest_bull": "官方Q1高毛利展望、26份SCA、行业SSD需求形成相互支持；Q4客户存款列融资现金，不能把高CFO全部判作押金",
+      "strongest_bear": "至2030累计收入35%以上覆盖并非每年35%固定价；普通DRAM/NAND仍会受供给与客户履约影响",
+      "why_preferred": "SNDK：MU产品组合与HBM/普通内存相互作用更广，基准弹性高于纯NAND；SNDK可作独立合同机制补充但不是独立风险",
+      "minority_view": "若HBM竞争、成本或普通存储ASP弱于假设，SNDK的NBM保障可能更优；不能用传统周期标签直接把全部利润腰斩",
+      "forecast_caveat": "260B×88%减9.5B费用含1.5B SBC，219.3B EBIT；90%营业率旧错误作废，88%仍属预测",
+      "rank": 3,
+      "company_name": "Micron Technology 美光科技",
+      "project_member": true,
+      "reference_price": 989.04,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 180,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 8.5,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.17,
+            "PE": 6,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 487.066667,
+          "return_pct": -50.753593,
+          "economic_EBIT_B": 112.4,
+          "economic_net_income_B": 94.97800000000001,
+          "economic_EPS": 81.17777777777779
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 260,
+            "economic_gross_margin": 0.88,
+            "opex_ex_SBC_B": 8,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.16,
+            "PE": 9,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1437.738362,
+          "return_pct": 45.367059,
+          "economic_EBIT_B": 219.3,
+          "economic_net_income_B": 185.3085,
+          "economic_EPS": 159.74870689655174
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 315,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 9,
+            "SBC_expense_B": 1.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.155,
+            "FD_shares_B": 1.16,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 2187.530172,
+          "return_pct": 121.177118,
+          "economic_EBIT_B": 273.0,
+          "economic_net_income_B": 230.685,
+          "economic_EPS": 198.86637931034485
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "FY2028 ending Aug2028 forward earnings, valued Apr2028; FY27 high-price contracts are operating anchor",
+      "closest_alternative": "SNDK",
+      "catalysts": [
+        "3–6月：GM和合同执行",
+        "6–12月：HBM量价、客户押金返还和capex",
+        "12–18月：新增有效供给与FY28价格"
+      ],
+      "kill_conditions": [
+        "SCA保障实质恶化",
+        "连续价格下降并且位元不足补",
+        "高毛利失效又无法减少资本需求"
+      ],
+      "verified_facts": [
+        "26SCA与32B客户承诺原文成立；>35%至2030收入并非每年35%；Q1GM86.25%全年低点是公司预测。",
+        "12.3B Q4存款在融资现金流、12.7B期末存款满足购买条件后归还；非收入/FCF。"
+      ],
+      "external_chain_limitations": "TrendForce支持当前供需，微软HBM路线不锁定MU份额；合同价格持续到FY28仍需假设。",
+      "material_unresolved": "260B×88%减9.5B费用含1.5B SBC，219.3B EBIT；90%营业率旧错误作废，88%仍属预测；ASP、位元、合同覆盖及客户履约；存款融资不等股东FCF。",
+      "numerical_unresolved_original": "Base88% economic GM and9.5B total cost need verification each quarter; reported Q1 adjusted86.25 vs GAAP85.95 demonstrates costs cannot silently disappear.",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R5",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "published_date": "2026-09-30",
+          "key_information": "26SCA与32B客户承诺原文成立；>35%至2030收入并非每年35%；Q1GM86.25%全年低点是公司预测。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+          "published_date": "2026-09-30",
+          "key_information": "独立行业仍看涨价格；微软架构用HBM但供应商未知。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "published_date": "2026-10-12",
+          "key_information": "独立行业仍看涨价格；微软架构用HBM但供应商未知。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "published_date": "",
+          "key_information": "V2原始经营/证券核验",
+          "role": "V2来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "PNR",
+      "thesis": "泳池渠道修复与水业务现金，收购后仍具低预期弹性",
+      "action_status": "分阶段参与候选；以Pool售出及融资后盈利验证",
+      "strongest_bull": "Taco10月1日已交割；POOL维护稳定、销售增长和库存放缓支持渠道问题可能修复；并购提供第二增长源",
+      "strongest_bear": "PNR Pool下降42%远弱渠道和同行，可能不只是去库存；Taco协同若不足，利息和整合拖累直接落到普通股",
+      "why_preferred": "CARR：PNR基准要求的温和修复与较低利润倍数，给出更大价格容错；若失份额则让CARR替代",
+      "minority_view": "POOL不是PNR自身sell-through，不能证明份额无损；Taco含协同利润率不等历史经营利润",
+      "forecast_caveat": "2027持续利润供18月估值，基准经营利润1.146B减重组55M及利息150M；融资利率是预算而非全条款已定",
+      "rank": 4,
+      "company_name": "Pentair plc",
+      "project_member": true,
+      "reference_price": 52.33,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 4.32,
+            "economic_gross_margin": 0.20162037037037037,
+            "opex_ex_SBC_B": 0.08,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.165,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.162,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 37.096296,
+          "return_pct": -29.110842,
+          "economic_EBIT_B": 0.791,
+          "economic_net_income_B": 0.5008,
+          "economic_EPS": 3.091358024691358
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 4.82,
+            "economic_gross_margin": 0.23775933609958502,
+            "opex_ex_SBC_B": 0.055,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.15,
+            "tax_rate": 0.18,
+            "FD_shares_B": 0.161,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 81.475404,
+          "return_pct": 55.695402,
+          "economic_EBIT_B": 1.091,
+          "economic_net_income_B": 0.77162,
+          "economic_EPS": 4.7926708074534154
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 5.25,
+            "economic_gross_margin": 0.26285714285714284,
+            "opex_ex_SBC_B": 0.04,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.135,
+            "tax_rate": 0.18,
+            "FD_shares_B": 0.16,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 123.5125,
+          "return_pct": 136.02618,
+          "economic_EBIT_B": 1.3399999999999999,
+          "economic_net_income_B": 0.9881,
+          "economic_EPS": 6.175625
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2027 sustainable earnings valued Apr2028, not distant peak",
+      "closest_alternative": "CARR",
+      "catalysts": [
+        "3–6月：Taco并表与融资费用",
+        "6–12月：旺季渠道售出、净价和库存",
+        "12–18月：偿债及协同现金"
+      ],
+      "kill_conditions": [
+        "Pool恢复靠大额返利但净价持续跌",
+        "Taco增量利润不能覆盖利息",
+        "净杠杆不降却继续激进回购"
+      ],
+      "verified_facts": [
+        "Taco10/1以1.4B已交割，非pending；协同/融资后增利仍预测。"
+      ],
+      "external_chain_limitations": "渠道POOL、同行Hayward与PNR品类和客户结构不同，支持反问而不直接证明失份额或恢复。",
+      "material_unresolved": "2027持续利润供18月估值，基准经营利润1.146B减重组55M及利息150M；融资利率是预算而非全条款已定；是否丢份额、各期融资真实利率与协同达产速度。",
+      "numerical_unresolved_original": "Taco synergy/Pool recovery assumptions not acquired historical earnings;166bp base interest sensitivity meaningful.",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "Controller非AI",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.pentair.com/node/27181/pdf",
+          "published_date": "2026-10-01",
+          "key_information": "Taco10/1以1.4B已交割，非pending；协同/融资后增利仍预测。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+          "published_date": "2026-07-23",
+          "key_information": "渠道POOL销售与库存改善；不能证明PNR库存或份额一定正常。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+          "published_date": "2026-10-01",
+          "key_information": "Taco以1.4B已交割；Water Solutions并表，非pending。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-acquire-taco-group-holdings-accelerating-growth-and",
+          "published_date": "2026-07-28",
+          "key_information": "Taco2026收入约540M，含预期协同EBITDA率>20%；协同不是历史利润。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "thesis": "已量产的AI网络制造，从系统增长获得利润与现金",
+      "action_status": "进攻候选；现金回收与客户份额需伴随收入",
+      "strongest_bull": "HPS/CCS真实交付和新平台量产提供经营基础；在剔TRS后仍有经济利润，不是只靠高PS叙事",
+      "strongest_bear": "GAAP利润含104.1M TRS重估收益；低毛利代工收入可能吞营运资金，客户集中削弱定价",
+      "why_preferred": "SMCI：CLS当前经营质量更清晰，SMCI更大上行由巨额负CFO和控制缺陷换取；CRDO扣SBC后当前价格中枢更弱",
+      "minority_view": "若SMCI高毛利持续并收回应收，其更低利润倍数可胜；CLS不应获得芯片平台全部毛利",
+      "forecast_caveat": "39B收入×13%真实EMS毛利减费用后9%经营率；132M股已预算融资/奖励，TRS不得重复计",
+      "rank": 5,
+      "company_name": "Celestica Inc",
+      "project_member": true,
+      "reference_price": 347.5,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "NYSE USD quoted common equity; Canadian issuer",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 29,
+            "economic_gross_margin": 0.115,
+            "opex_ex_SBC_B": 1.18,
+            "SBC_expense_B": 0.12,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.13,
+            "PE": 18,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 212.123077,
+          "return_pct": -38.957388,
+          "economic_EBIT_B": 2.035,
+          "economic_net_income_B": 1.532,
+          "economic_EPS": 11.784615384615384
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 39,
+            "economic_gross_margin": 0.13,
+            "opex_ex_SBC_B": 1.4,
+            "SBC_expense_B": 0.16,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.132,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 513.636364,
+          "return_pct": 47.809026,
+          "economic_EBIT_B": 3.5100000000000002,
+          "economic_net_income_B": 2.712,
+          "economic_EPS": 20.545454545454547
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 48,
+            "economic_gross_margin": 0.14,
+            "opex_ex_SBC_B": 1.65,
+            "SBC_expense_B": 0.2,
+            "net_interest_expense_B": 0.12,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.135,
+            "PE": 29,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 816.296296,
+          "return_pct": 134.905409,
+          "economic_EBIT_B": 4.87,
+          "economic_net_income_B": 3.8000000000000003,
+          "economic_EPS": 28.14814814814815
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward earnings; CY2027 target expansion followed by capacity utilization",
+      "closest_alternative": "SMCI",
+      "catalysts": [
+        "3–6月：网络交付与经济利润率",
+        "6–12月：新增客户平台规模",
+        "12–18月：CY28产能利用及回款"
+      ],
+      "kill_conditions": [
+        "订单增长下调、经济经营率持续低于8%",
+        "增量营运资金长期吞掉全部利润"
+      ],
+      "verified_facts": [
+        "GAAP EPS3.17含TRS税前0.90/股；TRS104.1M和SBC19.3M应分离。2027>65%增长为公司展望。"
+      ],
+      "external_chain_limitations": "SMCI与Cisco提供竞争和需求环境，不能证明CLS全部新客户份额；HPS嵌于CCS不得重复计。",
+      "material_unresolved": "39B收入×13%真实EMS毛利减费用后9%经营率；132M股已预算融资/奖励，TRS不得重复计；新客户量产份额、物料过账与资金占用。",
+      "numerical_unresolved_original": "39B delivery and13% economic GM are assumptions; working capital can lag EPS.",
+      "round_chain": [
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+          "published_date": "2026-07-27",
+          "key_information": "GAAP EPS3.17含TRS税前0.90/股；TRS104.1M和SBC19.3M应分离。2027>65%增长为公司展望。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+          "published_date": "2026-08-11",
+          "key_information": "制造竞争者毛利恢复、网络平台资本投入支持需求但不保证CLS独占。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investor.cisco.com/files/doc_presentation/2026/02/Cisco-Investor-Relations-Deck-2-19-26.pdf",
+          "published_date": "2026-02-19",
+          "key_information": "制造竞争者毛利恢复、网络平台资本投入支持需求但不保证CLS独占。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "thesis": "定制ASIC、网络与软件三类利润共同扩张",
+      "action_status": "进攻候选；季度核经济利润而非调整利润",
+      "strongest_bull": "Q3调整OP20.095B扣SBC2.019B仍有18.076B；软件现金支持ASIC放量，客户多架构部署打开定制路径",
+      "strongest_bear": "客户集中、信用支持和前置软件许可证会使收入与可持续现金分离；收入增量有物料转售",
+      "why_preferred": "TSM：AVGO更大价值捕获和软件现金使当前上行更高；TSM跨架构分散客户有优势，若定制项目让利可换位",
+      "minority_view": "微软Maia使用TSMC不等于AVGO设计胜利；不能把客户自研全当Broadcom订单",
+      "forecast_caveat": "FY28收入190B、SBC10B、经济OP率59.84%；持续SBC扣一次，不再在PE权益价减净债",
+      "rank": 6,
+      "company_name": "Broadcom",
+      "project_member": true,
+      "reference_price": 354.73,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 145,
+            "economic_gross_margin": 0.7,
+            "opex_ex_SBC_B": 15,
+            "SBC_expense_B": 9,
+            "net_interest_expense_B": 3.2,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.0,
+            "PE": 19,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 237.1656,
+          "return_pct": -33.141939,
+          "economic_EBIT_B": 77.5,
+          "economic_net_income_B": 62.41199999999999,
+          "economic_EPS": 12.482399999999998
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 190,
+            "economic_gross_margin": 0.73,
+            "opex_ex_SBC_B": 15,
+            "SBC_expense_B": 10,
+            "net_interest_expense_B": 3,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.0,
+            "PE": 26,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 483.5376,
+          "return_pct": 36.311448,
+          "economic_EBIT_B": 113.69999999999999,
+          "economic_net_income_B": 92.98799999999999,
+          "economic_EPS": 18.597599999999996
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 240,
+            "economic_gross_margin": 0.75,
+            "opex_ex_SBC_B": 17,
+            "SBC_expense_B": 11,
+            "net_interest_expense_B": 2.8,
+            "tax_rate": 0.16,
+            "FD_shares_B": 5.05,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 744.522772,
+          "return_pct": 109.884355,
+          "economic_EBIT_B": 152.0,
+          "economic_net_income_B": 125.32799999999999,
+          "economic_EPS": 24.817425742574255
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "FY2028 ending Oct2028 forward annual earnings",
+      "closest_alternative": "TSM",
+      "catalysts": [
+        "3–6月：AI21.7B目标兑现及软件续约",
+        "6–12月：ASIC验收",
+        "12–18月：CY28经济利润、营运资本和客户信用"
+      ],
+      "kill_conditions": [
+        "AI验收连续失速",
+        "软件现金下滑",
+        "经济利润高增但收现长期低于60%且客户融资扩张"
+      ],
+      "verified_facts": [
+        "Q3调整OP20.095B剔SBC2.019B后18.076B；Q4 AI21.7B/总34.8B为指引。"
+      ],
+      "external_chain_limitations": "云客户多架构部署支持定制需求，却不能自动证明Broadcom获取每一项ASIC设计。",
+      "material_unresolved": "FY28收入190B、SBC10B、经济OP率59.84%；持续SBC扣一次，不再在PE权益价减净债；系统物料收入、软件前置确认与客户支持义务现金影响待分季。",
+      "numerical_unresolved_original": "Custom silicon customer concentration and future integration charges; larger SBC than budget reduces EPS.",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+          "published_date": "2026-09-02",
+          "key_information": "Q3调整OP20.095B剔SBC2.019B后18.076B；Q4 AI21.7B/总34.8B为指引。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "published_date": "2026-10-12",
+          "key_information": "客户多架构部署支持定制机会，但微软并未证明使用AVGO或锁定份额。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "published_date": "2026-08-26",
+          "key_information": "客户多架构部署支持定制机会，但微软并未证明使用AVGO或锁定份额。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "thesis": "备用电源交付和工厂效率，小规模利润弹性显著",
+      "action_status": "小额进攻候选；确认订单与应收后增加研究优先级",
+      "strongest_bull": "Q2毛利27.1%环比提高420bp、EPS0.73已正常缴税；Cummins真实HPC机组需求支持产业并非空谈",
+      "strongest_bear": "电力收入不是全部数据中心；客户集中、关联交易、SAR和生产爬坡可使毛利改善反复",
+      "why_preferred": "FLNC：PSIX已有正常税利润与毛利改善，FLNC需要先消除新增赔偿/质量损失；MOD估值对高利润率要求更多",
+      "minority_view": "CMI需求同时代表强竞争者，不能替PSIX证明专属订单；低市值放大上涨也放大流动性和治理风险",
+      "forecast_caveat": "CY28收入900M、29%毛利、正常税25%及24.5M股；不能再扣2025税益一次",
+      "rank": 7,
+      "company_name": "Power Solutions International",
+      "project_member": true,
+      "reference_price": 50.1,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 0.62,
+            "economic_gross_margin": 0.25,
+            "opex_ex_SBC_B": 0.077,
+            "SBC_expense_B": 0.003,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.024,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 26.25,
+          "return_pct": -47.60479,
+          "economic_EBIT_B": 0.075,
+          "economic_net_income_B": 0.05249999999999999,
+          "economic_EPS": 2.1874999999999996
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 0.9,
+            "economic_gross_margin": 0.29,
+            "opex_ex_SBC_B": 0.091,
+            "SBC_expense_B": 0.004,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.0245,
+            "PE": 17,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 83.785714,
+          "return_pct": 67.236955,
+          "economic_EBIT_B": 0.166,
+          "economic_net_income_B": 0.12075,
+          "economic_EPS": 4.928571428571428
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 1.2,
+            "economic_gross_margin": 0.32,
+            "opex_ex_SBC_B": 0.108,
+            "SBC_expense_B": 0.007,
+            "net_interest_expense_B": 0.005,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.025,
+            "PE": 21,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 166.32,
+          "return_pct": 231.976048,
+          "economic_EBIT_B": 0.269,
+          "economic_net_income_B": 0.198,
+          "economic_EPS": 7.92
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward annual earnings; 2026H2/2027 delivery recovery anchor",
+      "closest_alternative": "FLNC",
+      "catalysts": [
+        "3–6月：机组/机罩交付",
+        "6–12月：订单到收入及27%以上毛利",
+        "12–18月：产能效率和应收现金"
+      ],
+      "kill_conditions": [
+        "毛利恢复逆转且订单兑现延迟",
+        "关联交易或应收增幅显著超销售",
+        "扩产费用压过新增利润"
+      ],
+      "verified_facts": [
+        "Q2 GM27.1%环比+420bp，EPS.73；Q2税费5.6M，税释放29.2M属2025同期。",
+        "B1所称38.3M税益须先定位TTM/FY25；已核2026Q2税费5.6M与2025Q2税益29.2M。"
+      ],
+      "external_chain_limitations": "Cummins是真实同行需求与竞争链；NVDA供电架构只说明需求场景，不证明PSIX专属订单。",
+      "material_unresolved": "CY28收入900M、29%毛利、正常税25%及24.5M股；不能再扣2025税益一次；power收入非全DC，客户验收、SAR及关联交易质量仍影响利润。",
+      "numerical_unresolved_original": "IncrementalDC orders not management guaranteed; customer concentration and manufacturing execution.",
+      "round_chain": [
+        "R4",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R4_upside.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+          "published_date": "2026-08-06",
+          "key_information": "Q2 GM27.1%环比+420bp，EPS.73；Q2税费5.6M，税释放29.2M属2025同期。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+          "published_date": "2026-08-04",
+          "key_information": "CMI真实HPC机组交付证明需求兼竞争，非PSIX专属订单。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+          "published_date": "2026-10-12",
+          "key_information": "供电/机架架构需求；不证明PSIX得到订单",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "ARGX",
+      "thesis": "已商业化免疫平台给多适应症扩张提供资金",
+      "action_status": "成长候选；用付费治疗年核对扩张",
+      "strongest_bull": "H1产品销售2.8B、经营现金0.7B；ALKIVIA联合组/IMNM阳性和现有gMG/CIDP形成增长入口",
+      "strongest_bear": "DM单独不显著p=.1093，UNITY因无效停止；标签窄和费用上升可大幅削弱利润",
+      "why_preferred": "ALNY：ARGX已有更直接的税后利润和较少版税漏损；ALNY的临床优势和一线渗透仍可挑战",
+      "minority_view": "若收入只有8.1B而非8.8B，估值会显著下降；KYTX免疫重置可能构成远期不同治疗机制",
+      "forecast_caveat": "8.8B收入、90%毛利、4.5B含SBC费用、22%税与64M ADS；不恢复UNITY失败价值",
+      "rank": 8,
+      "company_name": "argenx",
+      "project_member": true,
+      "reference_price": 812.3,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 1,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 7,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 3.8,
+            "SBC_expense_B": 0.5,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.0635,
+            "PE": 22,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 540.472441,
+          "return_pct": -33.463937,
+          "economic_EBIT_B": 2.0,
+          "economic_net_income_B": 1.56,
+          "economic_EPS": 24.566929133858267
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 8.8,
+            "economic_gross_margin": 0.9,
+            "opex_ex_SBC_B": 3.95,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.064,
+            "PE": 28,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1167.075,
+          "return_pct": 43.675366,
+          "economic_EBIT_B": 3.420000000000001,
+          "economic_net_income_B": 2.6676000000000006,
+          "economic_EPS": 41.681250000000006
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 10.3,
+            "economic_gross_margin": 0.89,
+            "opex_ex_SBC_B": 4.3,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.065,
+            "PE": 33,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1689.732,
+          "return_pct": 108.01822,
+          "economic_EBIT_B": 4.267000000000002,
+          "economic_net_income_B": 3.3282600000000016,
+          "economic_EPS": 51.20400000000002
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward earnings",
+      "closest_alternative": "ALNY",
+      "catalysts": [
+        "3–6月：CIDP付费续治及肌炎监管路径",
+        "6–12月：新标签/给药扩展",
+        "12–18月：平台后续试验与利润兑现"
+      ],
+      "kill_conditions": [
+        "治疗年与净收入共同失速",
+        "CIDP大规模停药",
+        "新增标签费用持续超过净贡献"
+      ],
+      "verified_facts": [
+        "ALKIVIA联合组及IMNM显著；DM单独p=.1093；不能把全试验否定或称DM单独成功。",
+        "10/8 UNITY因无效停止，与8/17 ALKIVIA为不同适应症。"
+      ],
+      "external_chain_limitations": "KYTX机制可形成远期竞争，不能否定当前FcRn付费；监管批准也不担保未来净价及治疗年。",
+      "material_unresolved": "8.8B收入、90%毛利、4.5B含SBC费用、22%税与64M ADS；不恢复UNITY失败价值；监管标签与商业转化，单独DM补证是否需要。",
+      "numerical_unresolved_original": "Share1:1 ratio inherited; actual full-year total recurring cost may rise;8.1B alternate revenue cuts base valuation materially.",
+      "round_chain": [
+        "R1",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://argenx.com/news/2026/press-release-3345813",
+          "published_date": "2026-08-17",
+          "key_information": "ALKIVIA联合组及IMNM显著；DM单独p=.1093；不能把全试验否定或称DM单独成功。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://argenx.com/news/2026/press-release-3376934",
+          "published_date": "2026-10-08",
+          "key_information": "10/8 UNITY因无效停止，与8/17 ALKIVIA为不同适应症。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+          "published_date": "2026-09-24",
+          "key_information": "KYTX小样本gMG持久缓解提供远期竞争，不能据此否定现有FcRn支付。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://argenx.com/news/2026/press-release-3331862.html",
+          "published_date": "2026-07-23",
+          "key_information": "H1产品销售2.8B、经营现金0.7B、现金及流动金融资产5.2B；持续盈利已出现。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=527316",
+          "published_date": "2026-05-08 (approval)",
+          "key_information": "FDA数据库列扩展成人gMG适应症；页面旧2021条目和新2026条目须区别。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "BNTX",
+      "thesis": "可用资金支持多资产临床去风险，18月不必先盈利",
+      "action_status": "事件分批候选；临床里程碑而非季度EPS决定增减",
+      "strongest_bull": "EUR16.6342B现金证券提供研发时间；多条不同机制和BMS合作减少单点依赖，随机探索有积极信号",
+      "strongest_bear": "地区销售、销售版税、利润分成和试验终止均会改变归属价值；真实阶梯费率部分保密，研发烧损与终端销售仍主导估值，现金不是股价底",
+      "why_preferred": "IONS：BNTX资金更充足、多分支临床和较少近端融资约束，当前条件基准和右尾更好；KYTX更大单事件弹性但融资尾部更重",
+      "minority_view": "修正并非统一砍价：gotistobart销售版税拖累与T-Pam较宽地区权益部分抵消，DB1311和mRNA分桶再校准；权益修订前133.83改131.68，核心资金/临床论点保留。CRC和尿路上皮已终止，不可用成功总管线掩盖；未公开费率不等最差值必发生",
+      "forecast_caveat": "现金从2026-06-30滚到2028-04-12约21.4个月。末审改六桶：pumitamig50%利润；gotistobart全球独家但扣销售版税；T-Pam除大陆港澳权益；DB1311美国五月已行使利润分成；BNT113全有；autogene仅存续胰腺50%。15%版税、85%区域销售、美国60%销售及DB1311美国50%分利均研究假设，非合同披露率。成功概率只乘一次",
+      "rank": 9,
+      "company_name": "BioNTech",
+      "project_member": true,
+      "reference_price": 95.84,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "EUR",
+        "model": "USD",
+        "FX_assumption_USD_per_EUR": 1.1
+      },
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 1,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 4.5,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 1.6,
+            "ADS_B": 0.255,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_global_product_sales_B": 6,
+                "terminal_PE": 18,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.3,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.35,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "50% profit share after collaboration costs, not licensed territory",
+                "success_BNTX_net_income_B": 0.8399999999999999,
+                "rNPV_B": 2.5738482175395654
+              },
+              {
+                "name": "gotistobart",
+                "success_global_product_sales_B": 1.8,
+                "terminal_PE": 18,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.25,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.4,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "Global exclusive license with double-digit tiered SALES royalty; 15% is assumption",
+                "success_BNTX_net_income_B": 0.36000000000000004,
+                "rNPV_B": 1.0295392870158264
+              },
+              {
+                "name": "T-Pam_BNT323",
+                "success_global_product_sales_B": 2.1,
+                "terminal_PE": 18,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.25,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.35,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 0.85,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "World except mainlandChina/HongKong/Macau; Taiwan included; region85% androyalty15% assumptions",
+                "success_BNTX_net_income_B": 0.28559999999999997,
+                "rNPV_B": 0.8167678343658888
+              },
+              {
+                "name": "elfe-D_BNT324",
+                "success_global_product_sales_B": 0.9,
+                "terminal_PE": 18,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.25,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.35,
+                "US_global_sales_fraction": 0.6,
+                "other_licensed_global_sales_fraction": 0.25,
+                "US_profit_share": 0.5,
+                "exUS_sales_royalty_rate": 0.15,
+                "rights_basis": "US cost/profit option exercisedMay2026;50%share undisclosed research assumption; no second US salesroyalty",
+                "success_BNTX_net_income_B": 0.11160000000000002,
+                "rNPV_B": 0.31915717897490625
+              },
+              {
+                "name": "BNT113",
+                "success_global_product_sales_B": 0.9,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.15,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "BNT113 whollyowned FixVac",
+                "success_BNTX_net_income_B": 0.28800000000000003,
+                "rNPV_B": 0.49025680334086974
+              },
+              {
+                "name": "autogene_pancreatic_only",
+                "success_global_product_sales_B": 0.9,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.15,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "Genentech50%profitshare; terminatedCRC/urothelial trialsZERO; pancreaticonly",
+                "success_BNTX_net_income_B": 0.14400000000000002,
+                "rNPV_B": 0.24512840167043487
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn+sum(branch_success_BNTX_net_income*PE*discount*probability)-post_observation_developmentPV)/ADS; branch net income uses territorialSALESroyalty or aftercostPROFITshare separately",
+          "price": 69.303207,
+          "return_pct": -27.688641,
+          "remaining_cash_USD_B": 13.797620000000002,
+          "pipeline_rNPV_B": 3.874697722907491
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 3.6,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 2.5,
+            "ADS_B": 0.258,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_global_product_sales_B": 10,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "50% profit share after collaboration costs, not licensed territory",
+                "success_BNTX_net_income_B": 1.6,
+                "rNPV_B": 9.078829691497587
+              },
+              {
+                "name": "gotistobart",
+                "success_global_product_sales_B": 3,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.45,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "Global exclusive license with double-digit tiered SALES royalty; 15% is assumption",
+                "success_BNTX_net_income_B": 0.7200000000000002,
+                "rNPV_B": 4.575730164514785
+              },
+              {
+                "name": "T-Pam_BNT323",
+                "success_global_product_sales_B": 3.5,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.4,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 0.85,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "World except mainlandChina/HongKong/Macau; Taiwan included; region85% androyalty15% assumptions",
+                "success_BNTX_net_income_B": 0.5950000000000001,
+                "rNPV_B": 3.7813325665087456
+              },
+              {
+                "name": "elfe-D_BNT324",
+                "success_global_product_sales_B": 1.5,
+                "terminal_PE": 20,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.4,
+                "US_global_sales_fraction": 0.6,
+                "other_licensed_global_sales_fraction": 0.25,
+                "US_profit_share": 0.5,
+                "exUS_sales_royalty_rate": 0.15,
+                "rights_basis": "US cost/profit option exercisedMay2026;50%share undisclosed research assumption; no second US salesroyalty",
+                "success_BNTX_net_income_B": 0.219,
+                "rNPV_B": 1.39178459170658
+              },
+              {
+                "name": "BNT113",
+                "success_global_product_sales_B": 1.5,
+                "terminal_PE": 22,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.3,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4375,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "BNT113 whollyowned FixVac",
+                "success_BNTX_net_income_B": 0.525,
+                "rNPV_B": 1.9661340550649462
+              },
+              {
+                "name": "autogene_pancreatic_only",
+                "success_global_product_sales_B": 1.5,
+                "terminal_PE": 22,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.3,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4375,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "Genentech50%profitshare; terminatedCRC/urothelial trialsZERO; pancreaticonly",
+                "success_BNTX_net_income_B": 0.2625,
+                "rNPV_B": 0.9830670275324731
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn+sum(branch_success_BNTX_net_income*PE*discount*probability)-post_observation_developmentPV)/ADS; branch net income uses territorialSALESroyalty or aftercostPROFITshare separately",
+          "price": 131.684101,
+          "return_pct": 37.399939,
+          "remaining_cash_USD_B": 14.697620000000002,
+          "pipeline_rNPV_B": 19.27687809682512
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "start_financial_assets_EUR_B": 16.6342,
+            "financial_assets_date": "2026-06-30",
+            "USD_per_EUR": 1.1,
+            "burn_to_observation_USD_B": 2.7,
+            "burn_period": "2026-06-30 to2028-04-12 (about21.4months; NOTonly18months)",
+            "post_observation_development_PV_B": 3.5,
+            "ADS_B": 0.26,
+            "branches": [
+              {
+                "name": "pumitamig",
+                "success_global_product_sales_B": 14,
+                "terminal_PE": 22,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.75,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4375,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "50% profit share after collaboration costs, not licensed territory",
+                "success_BNTX_net_income_B": 2.45,
+                "rNPV_B": 22.938230642424376
+              },
+              {
+                "name": "gotistobart",
+                "success_global_product_sales_B": 5,
+                "terminal_PE": 23,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.7,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.5,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "Global exclusive license with double-digit tiered SALES royalty; 15% is assumption",
+                "success_BNTX_net_income_B": 1.4000000000000001,
+                "rNPV_B": 14.324577487244895
+              },
+              {
+                "name": "T-Pam_BNT323",
+                "success_global_product_sales_B": 4.9,
+                "terminal_PE": 22,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.65,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.45,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 0.85,
+                "sales_royalty_rate": 0.15,
+                "rights_basis": "World except mainlandChina/HongKong/Macau; Taiwan included; region85% androyalty15% assumptions",
+                "success_BNTX_net_income_B": 0.9996000000000003,
+                "rNPV_B": 9.084273357780612
+              },
+              {
+                "name": "elfe-D_BNT324",
+                "success_global_product_sales_B": 2.1,
+                "terminal_PE": 22,
+                "discount_rate": 0.12,
+                "years_to_terminal": 4,
+                "discount_factor": 0.6355180784048311,
+                "subjective_success_probability": 0.65,
+                "tax_rate": 0.2,
+                "terminal_year": 2032,
+                "pre_partner_operating_margin": 0.45,
+                "US_global_sales_fraction": 0.6,
+                "other_licensed_global_sales_fraction": 0.25,
+                "US_profit_share": 0.5,
+                "exUS_sales_royalty_rate": 0.15,
+                "rights_basis": "US cost/profit option exercisedMay2026;50%share undisclosed research assumption; no second US salesroyalty",
+                "success_BNTX_net_income_B": 0.35280000000000006,
+                "rNPV_B": 3.2062141262755097
+              },
+              {
+                "name": "BNT113",
+                "success_global_product_sales_B": 2.5,
+                "terminal_PE": 24,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4625,
+                "profit_share": 1.0,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "BNT113 whollyowned FixVac",
+                "success_BNTX_net_income_B": 0.925,
+                "rNPV_B": 6.298438098476452
+              },
+              {
+                "name": "autogene_pancreatic_only",
+                "success_global_product_sales_B": 2.5,
+                "terminal_PE": 24,
+                "discount_rate": 0.12,
+                "years_to_terminal": 5,
+                "discount_factor": 0.5674268557185992,
+                "subjective_success_probability": 0.5,
+                "tax_rate": 0.2,
+                "terminal_year": 2033,
+                "pre_partner_operating_margin": 0.4625,
+                "profit_share": 0.5,
+                "licensed_global_sales_fraction": 1.0,
+                "sales_royalty_rate": 0,
+                "rights_basis": "Genentech50%profitshare; terminatedCRC/urothelial trialsZERO; pancreaticonly",
+                "success_BNTX_net_income_B": 0.4625,
+                "rNPV_B": 3.149219049238226
+              }
+            ]
+          },
+          "formula": "(start_financial_assets_EUR*USD_per_EUR-burn+sum(branch_success_BNTX_net_income*PE*discount*probability)-post_observation_developmentPV)/ADS; branch net income uses territorialSALESroyalty or aftercostPROFITshare separately",
+          "price": 273.456049,
+          "return_pct": 185.325594,
+          "remaining_cash_USD_B": 15.597620000000003,
+          "pipeline_rNPV_B": 55.50095276144007
+        }
+      ],
+      "model_type": "pipeline rNPV plusremainingfinancialassets",
+      "earnings_period": "Apr2028 rNPV of2032–2033 commercial earnings; not2028sales",
+      "closest_alternative": "IONS",
+      "catalysts": [
+        "3–6月：gotistobart确证及ADC读出",
+        "6–12月：T-Pam注册/mRNA随机结果",
+        "12–18月：pumitamig全球验证进度"
+      ],
+      "kill_conditions": [
+        "多个独立机制同时失败",
+        "烧损显著超预算且资本投向低效",
+        "合作提前终止"
+      ],
+      "verified_facts": [
+        "EUR16.6342B现金证券、251.204M股与H1净亏EUR1.3527B；平台有资金但需要继续烧钱。",
+        "gotistobart是全球独家授权加双位数销售版税；T-Pam排除大陆港澳而包含台湾；DB1311美国成本/利润期权2026年5月已行使；autogene CRC及尿路上皮试验终止。"
+      ],
+      "external_chain_limitations": "BMS及Duality自方财报、原协议验证不同经济权利；合作临床稿不算独立重复试验。精确版税/美国分利被删节，地区销售权重与净价仍需假设。",
+      "material_unresolved": "现金从2026-06-30滚到2028-04-12约21.4个月。末审改六桶：pumitamig50%利润；gotistobart全球独家但扣销售版税；T-Pam除大陆港澳权益；DB1311美国五月已行使利润分成；BNT113全有；autogene仅存续胰腺50%。15%版税、85%区域销售、美国60%销售及DB1311美国50%分利均研究假设，非合同披露率。成功概率只乘一次；各资产地域权益、随机读出、资本使用及2028后商业化时点。",
+      "numerical_unresolved_original": "ExactOncoC4/Dualityroyaltytiers andDB1311USprofitsharepercentage notdisclosedhere:15%salesroyalty/50%USprofitshare are assumptions, notfacts. Geographic85%exChina/60%USsales are estimates. Productbudgets exclude otherdrugsinthecombination, andT-Pam/DB1311 areseparatenonoverlappingproducts; commercialcannibalization remains. Postobservationdevelopment/milestonePV2.5B assumed, notauditedliability.",
+      "round_chain": [
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决",
+        "V1/V2权益追加与主席再裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "02_round1/R4_upside.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md",
+        "04_verification/V1_BNTX权益追加核验.md",
+        "04_verification/V2_BNTX_rights_correction.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+          "published_date": "2026-08-04",
+          "key_information": "EUR16.6342B现金证券、251.204M股与H1净亏EUR1.3527B；平台有资金但需要继续烧钱。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+          "published_date": "2026-07 (Q2 filing)",
+          "key_information": "BMS自方文件独立验证50/50经济分配；不把联合临床稿当独立重复证据。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698523000016/ex991230320proncoc4.htm",
+          "published_date": "2023-03-20",
+          "key_information": "gotistobart全球独家商业权与双位数阶梯销售版税，不能混成80%股权",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+          "published_date": "2023-03-16",
+          "key_information": "T-Pam授权排除大陆香港澳门但包含台湾，销售版税数字删节",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://en.dualitybiologics.com/news/615.html",
+          "published_date": "2026-08-28",
+          "key_information": "合作方确认DB1311美国利润/成本分成期权五月已行使，旧未行使状态作废",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+          "published_date": "2026-08-28",
+          "key_information": "autogene CRC试验终止，胰腺项目保留，不重新计入停止项目销售",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/09/BioNTech-and-OncoC4-Present-Updated-Data-Showing-Gotistobart-Nearly-Doubled-Median-Overall-Survival-versus-Standard-of-Care-Chemotherapy-in-Previously-Treated-Squamous-Non-Small-Cell-Lung-Cancer-Patients.html",
+          "published_date": "2026-09-14",
+          "key_information": "Gotistobart探索阶段87人，OS18.5 vs10月、HR0.56；不是独立新确证样本。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://news.bms.com/news/details/2026/Global-Data-for-BioNTech-and-Bristol-Myers-Squibbs-PD-L1xVEGF-A-Bispecific-Pumitamig-Shows-Encouraging-Efficacy-in-Patients-with-Non-Small-Cell-Lung-Cancer-in-ROSETTA-Lung-02-Trial-2026-TW53rMYYjx/default.aspx",
+          "published_date": "2026-05-30",
+          "key_information": "Pumitamig全球二期低剂量ORR非鳞63.6%、鳞72.7%；联合稿与BioNTech非独立试验佐证。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.biontech.com/au/en/home/mediaroom/news/press-releases/2023/03/biontech-and-oncoc4-announce-strategic-collaboration-co-develop.html",
+          "published_date": "",
+          "key_information": "V2原始经营/证券核验",
+          "role": "V2来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "thesis": "旧审计淘汰理由撤销后的利润与现金修复期权",
+      "action_status": "等待回款与毛利质量；仅条件入选，不因目标高立即买入",
+      "strongest_bull": "最终10K财报BDO无保留、三旧弱点修复；Q4 GAAP毛利17.5%，以低于该季的12.5%建基准仍有较大每股弹性",
+      "strongest_bear": "FY26净利2.2305B但CFO-6.8099B；ITGC仍未修复，返利、应收、库存和调查需要继续核查",
+      "why_preferred": "FLNC：SMCI已有审计财报和盈利，但现金未过关；FLNC重大执行损失尚不能按递延处理，当前机会成本偏向SMCI",
+      "minority_view": "若12.5%毛利不能持续或现金持续恶化，CLS胜出且SMCI撤出；审计无保留不等经营现金可信无疑",
+      "forecast_caveat": "75B收入、12.5%毛利、2.8B含SBC费用、840M股与12倍PE；71.27是条件价而非已证实现金价值",
+      "rank": 10,
+      "company_name": "Super Micro Computer Inc",
+      "project_member": true,
+      "reference_price": 39.98,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 55,
+            "economic_gross_margin": 0.09,
+            "opex_ex_SBC_B": 1.75,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0.3,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.8,
+            "PE": 8,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 18.6825,
+          "return_pct": -53.270385,
+          "economic_EBIT_B": 2.6500000000000004,
+          "economic_net_income_B": 1.8682500000000004,
+          "economic_EPS": 2.3353125000000006
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 75,
+            "economic_gross_margin": 0.125,
+            "opex_ex_SBC_B": 2.15,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0.3,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.84,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 71.266071,
+          "return_pct": 78.254306,
+          "economic_EBIT_B": 6.574999999999999,
+          "economic_net_income_B": 4.988625,
+          "economic_EPS": 5.938839285714286
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 95,
+            "economic_gross_margin": 0.16,
+            "opex_ex_SBC_B": 2.65,
+            "SBC_expense_B": 0.75,
+            "net_interest_expense_B": 0.25,
+            "tax_rate": 0.205,
+            "FD_shares_B": 0.9,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 163.24,
+          "return_pct": 308.304152,
+          "economic_EBIT_B": 11.8,
+          "economic_net_income_B": 9.182250000000002,
+          "economic_EPS": 10.202500000000002
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "FY2028 ending Jun2028 near-forward annual earnings",
+      "closest_alternative": "FLNC",
+      "catalysts": [
+        "3–6月：季度回款/存货及毛利分解",
+        "6–12月：65–72B收入指引交付与内控",
+        "12–18月：融资成本和FY28每股现金"
+      ],
+      "kill_conditions": [
+        "后续两季经营现金仍与利润严重背离",
+        "毛利依赖不可持续返利",
+        "重大审计/调查改变财务可信度"
+      ],
+      "verified_facts": [
+        "BDO8/31财报无保留；三旧内控弱点修复，ITGC一项仍未修复；FY26 CFO-6.8099B。",
+        "Q4财报新闻稿GM17.5%、调整17.6%；当时未审计；最终10K财报已审计，不沿用新闻稿未审计状态。"
+      ],
+      "external_chain_limitations": "最终10K与早期财报为同一财年根事件，不能重复计独立性；CLS是不同企业的资本效率对照。",
+      "material_unresolved": "75B收入、12.5%毛利、2.8B含SBC费用、840M股与12倍PE；71.27是条件价而非已证实现金价值；Q4高毛利能否维持及返利性质、应收库存回款、SEC调查后续。",
+      "numerical_unresolved_original": "Final2026-08-31 audited10K status inheritedV1/root, not August11 preliminary financials; BDO unqualifiedfinancialaudit with ITGC weakness is not all-audit failure. FY26NI2.2305B vsCFO-6.8099B: base71.27requiresworkingcapitalconversion, notmerelyQ4positive747MCFO. Exportinvestigationrequiresconditions.",
+      "round_chain": [
+        "R2",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R2_valuation.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+          "published_date": "2026-08-31",
+          "key_information": "BDO8/31财报无保留；三旧内控弱点修复，ITGC一项仍未修复；FY26 CFO-6.8099B。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+          "published_date": "2026-08-11",
+          "key_information": "Q4财报新闻稿GM17.5%、调整17.6%；当时未审计；最终10K财报已审计，不沿用新闻稿未审计状态。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+          "published_date": "2026-07-27",
+          "key_information": "CLS真实增长与经济利润可作直接制造替代，比较资本占用而非收入倍数。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "AGCO",
+      "thesis": "农机低谷经营杠杆与混合机队改装，提供不同于AI资本开支的盈利路径",
+      "action_status": "周期候选；等待预订与实销共同确认",
+      "strongest_bull": "欧洲业务基础、PTx跨品牌改装与售后可参与恢复；USDA作物收入/政府款提供积极条件但非全面繁荣",
+      "strongest_bear": "恒汇率收入下降3.7%，22M关税退款和20M融资前置收益需剔；美国农户信用仍紧",
+      "why_preferred": "MCHP：AGCO当前正常化EPS估值要求更低、模型恢复弹性更强；DE优质但当前价格对复苏要求更高",
+      "minority_view": "农场总收入不等农机订单，欧洲和美国周期不能互相替代；PTx技术演示尚未证明付费规模",
+      "forecast_caveat": "11.5B收入、10.5%含SBC经济率、少数/利息代理170M；不把2029PTx目标提前到观察日",
+      "rank": 11,
+      "company_name": "AGCO Corporation",
+      "project_member": true,
+      "reference_price": 104.47,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 10,
+            "economic_gross_margin": 0.06,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.071,
+            "PE": 12,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 55.233803,
+          "return_pct": -47.129508,
+          "economic_EBIT_B": 0.6,
+          "economic_net_income_B": 0.3268,
+          "economic_EPS": 4.602816901408451
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 11.5,
+            "economic_gross_margin": 0.105,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.071,
+            "PE": 14,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 155.478873,
+          "return_pct": 48.826336,
+          "economic_EBIT_B": 1.2075,
+          "economic_net_income_B": 0.7885000000000001,
+          "economic_EPS": 11.105633802816904
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 12.7,
+            "economic_gross_margin": 0.125,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.18,
+            "tax_rate": 0.24,
+            "FD_shares_B": 0.072,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 237.711111,
+          "return_pct": 127.54007,
+          "economic_EBIT_B": 1.5875,
+          "economic_net_income_B": 1.0697,
+          "economic_EPS": 14.856944444444446
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward recovery earnings",
+      "closest_alternative": "MCHP",
+      "catalysts": [
+        "3–6月：2027预订/经销商库存",
+        "6–12月：OutRun付费安装和欧洲交付",
+        "12–18月：PTx归母现金和利用率"
+      ],
+      "kill_conditions": [
+        "订单与终端实销同时再降",
+        "PTx外部收入停滞而支持费用升",
+        "农户融资恶化"
+      ],
+      "verified_facts": [
+        "Q2恒汇率收入-3.7%，关税退款22M，融资业务前置收益20M需辨认。"
+      ],
+      "external_chain_limitations": "USDA美国行业数据不能外推欧洲同幅变化；Deere订单是竞争参照，不是AGCO订单。",
+      "material_unresolved": "11.5B收入、10.5%含SBC经济率、少数/利息代理170M；不把2029PTx目标提前到观察日；北美经销商去库存、农民区域现金、PTx付费装机。",
+      "numerical_unresolved_original": "",
+      "round_chain": [
+        "R3",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "Controller非AI",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R3_external.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/880266/000088026626000066/a2026earningsreleaseq2.htm",
+          "published_date": "2026-07-30",
+          "key_information": "Q2恒汇率收入-3.7%，关税退款22M，融资业务前置收益20M需辨认。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+          "published_date": "2026-09-03",
+          "key_information": "USDA实际净现金农收-2.5%但高于长期均值，既非崩溃也非全面强复苏。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://news.agcocorp.com/2026-10-05-AGCO-Tech-Day-2026-Spotlights-Autonomy%2C-AI-and-Mixed-Fleet-Solutions-to-Enhance-Farmer-Profitability",
+          "published_date": "2026-10-05",
+          "key_information": "OutRun混合机队改装适配收获物流和耕作；演示不等于付费装机。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.kansascityfed.org/agriculture/ag-credit-survey/steady-tightening-of-agricultural-credit-conditions-persists/",
+          "published_date": "2026-08-14",
+          "key_information": "农业信用继续收紧；总量政府款不等于每位作物农户采购预算。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "thesis": "有客户验收和最低付款约束的算力跃迁",
+      "action_status": "等待项目资金瀑布闭合；小额高风险研究席",
+      "strongest_bull": "已交付与合同ARR证明存在真实客户，微软SOW的最低数量约束强于普通意向；预付款降低一部分融资需求",
+      "strongest_bear": "4B合同ARR不同1B运行ARR；FY26 CFO2.1004B含1.8417B递延收入增量，GPU更新和本金仍占现金",
+      "why_preferred": "NBIS/AMZN：比更昂贵的未闭合大规模部署有价格空间，比AMZN有更大单项目跃迁；AMZN融资韧性明显更好",
+      "minority_view": "完整项目资金尚未闭合，不能称净现金防御；Maia可能改变续约GPU需求/价格，而非马上毁约",
+      "forecast_caveat": "5.8B确认收入、56%经济EBITDA率、7B净债、530M股；45–55%预付与90%特定融资不可相加",
+      "rank": 12,
+      "company_name": "IREN Limited",
+      "project_member": true,
+      "reference_price": 34.8,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 3.2,
+            "economic_margin": 0.47,
+            "multiple": 7,
+            "net_debt_B": 5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.48
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 11.516667,
+          "return_pct": -66.90613,
+          "economic_metric_B": 1.504,
+          "crosscheck": {
+            "depreciation_B": 1.1,
+            "interest_B": 0.55,
+            "growth_capex_B": 3,
+            "maintenance_GPU_capex_B": 0.8,
+            "tax_rate": 0.2,
+            "net_income_B": -0.11680000000000011,
+            "cash_after_total_capex_B": -2.846
+          }
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 5.8,
+            "economic_margin": 0.56,
+            "multiple": 10,
+            "net_debt_B": 7,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.53
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 48.075472,
+          "return_pct": 38.147907,
+          "economic_metric_B": 3.248,
+          "crosscheck": {
+            "depreciation_B": 1.65,
+            "interest_B": 0.75,
+            "growth_capex_B": 5,
+            "maintenance_GPU_capex_B": 1.3,
+            "tax_rate": 0.2,
+            "net_income_B": 0.6784000000000003,
+            "cash_after_total_capex_B": -3.9715999999999996
+          }
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 8.5,
+            "economic_margin": 0.6,
+            "multiple": 12,
+            "net_debt_B": 9.5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.6
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 86.166667,
+          "return_pct": 147.605364,
+          "economic_metric_B": 5.1,
+          "crosscheck": {
+            "depreciation_B": 2.35,
+            "interest_B": 1.0,
+            "growth_capex_B": 7,
+            "maintenance_GPU_capex_B": 2.0,
+            "tax_rate": 0.2,
+            "net_income_B": 1.3999999999999997,
+            "cash_after_total_capex_B": -5.25
+          }
+        }
+      ],
+      "model_type": "EV/EBITDA",
+      "earnings_period": "FY2028 ending Jun2028 recognized revenue, not ARR",
+      "closest_alternative": "NBIS",
+      "catalysts": [
+        "3–6月：分期验收与融资到账",
+        "6–12月：已确认收入和单位资本收益",
+        "12–18月：续约、GPU更新与股东现金"
+      ],
+      "kill_conditions": [
+        "核心项目延期超过两季",
+        "融资和预付不足覆盖已承诺capex",
+        "租价下降同时融资成本升"
+      ],
+      "verified_facts": [
+        "4B contracted ARR和1B operating ARR不同；FY26 CFO2.1004B含递延收入增加1.8417B。",
+        "验收/最低数量/延期抵扣/终止条款已独立实读；融资+预付覆盖率不可跨合同相加。"
+      ],
+      "external_chain_limitations": "客户宏观投入与Maia路线支持需求且形成竞争，SOW才说明验收条件；仍不等于逐项目股东资金已闭合。",
+      "material_unresolved": "5.8B确认收入、56%经济EBITDA率、7B净债、530M股；45–55%预付与90%特定融资不可相加；GPU换代、设施投入、本金及验收，待逐项目股权现金模型。",
+      "numerical_unresolved_original": "Fullsignedproject capex/funding waterfallsnotclosed; conditionalonly. EBITDA is not shareholdercash; maintenanceGPUreplacement deducted in crosscheck, may forcefuturefunding.",
+      "round_chain": [
+        "R4",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R4_upside.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+          "published_date": "2026-08-27",
+          "key_information": "4B contracted ARR和1B operating ARR不同；FY26 CFO2.1004B含递延收入增加1.8417B。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+          "published_date": "2026-02-05",
+          "key_information": "验收/最低数量/延期抵扣/终止条款已独立实读；融资+预付覆盖率不可跨合同相加。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "published_date": "2026-10-12",
+          "key_information": "云客户确实扩算力且自研同时推进；不保证每家neo-cloud续约价。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "published_date": "2026-08-26",
+          "key_information": "云客户确实扩算力且自研同时推进；不保证每家neo-cloud续约价。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "thesis": "NAND合同保障与企业SSD需求带来高利润窗口",
+      "action_status": "存储进攻候选；与MU共享周期预算",
+      "strongest_bull": "Q1收入10.3–10.8B、GM83–85%、EPS44–46明确指引，NBM较一般订单保障强；行业企业SSD需求支持",
+      "strongest_bear": "价格而非位元解释大部分近期增长；JV资本、正常税率和客户履约限制自由现金，NAND供给或更早反应",
+      "why_preferred": "MCHP/TSM：SNDK上行源自正在兑现的合同利润，所需倍数9倍；TSM质量更稳但当下增量弹性较低",
+      "minority_view": "其基准24.8%并不特别高，较MU优先级低；若NAND价格保障弱化，TSM可替代以减少存储重复暴露",
+      "forecast_caveat": "50B收入、85%经济毛利、含SBC费用3.2B与162M股；强利润不等永续高利润",
+      "rank": 13,
+      "company_name": "SanDisk",
+      "project_member": true,
+      "reference_price": 1487.33,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 32,
+            "economic_gross_margin": 0.65,
+            "opex_ex_SBC_B": 2.5,
+            "SBC_expense_B": 0.4,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.16,
+            "PE": 6,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 570.5625,
+          "return_pct": -61.638473,
+          "economic_EBIT_B": 17.900000000000002,
+          "economic_net_income_B": 15.215000000000002,
+          "economic_EPS": 95.09375000000001
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 50,
+            "economic_gross_margin": 0.85,
+            "opex_ex_SBC_B": 2.65,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.162,
+            "PE": 9,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 1855.833333,
+          "return_pct": 24.776165,
+          "economic_EBIT_B": 39.300000000000004,
+          "economic_net_income_B": 33.405,
+          "economic_EPS": 206.2037037037037
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 65,
+            "economic_gross_margin": 0.88,
+            "opex_ex_SBC_B": 2.95,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.165,
+            "PE": 11,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 3037.333333,
+          "return_pct": 104.213815,
+          "economic_EBIT_B": 53.6,
+          "economic_net_income_B": 45.56,
+          "economic_EPS": 276.1212121212121
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "FY2028 ending Jun2028 near-forward earnings; FY27 enterpriseSSD/contract anchor",
+      "closest_alternative": "TSM",
+      "catalysts": [
+        "3–6月：合同价格和位元交付",
+        "6–12月：企业SSD产品组合及JV支出",
+        "12–18月：FY28供给与续约价格"
+      ],
+      "kill_conditions": [
+        "NBM最低保障不能执行",
+        "价格连降且供给超预期",
+        "资本消耗令回购依赖融资"
+      ],
+      "verified_facts": [
+        "Q1收入10.3–10.8B、GM83–85%、EPS44–46是明确公司指引。"
+      ],
+      "external_chain_limitations": "同业MU和行业报价能佐证周期，不能确认SNDK每份NBM最低付款或FY28合同实现。",
+      "material_unresolved": "50B收入、85%经济毛利、含SBC费用3.2B与162M股；强利润不等永续高利润；NBM实际最低保障、资本/JV现金、正常税率与价格持续。",
+      "numerical_unresolved_original": "Cycle peak cannot be treated as guaranteed; customer deposit/contract economics do not make all capex free.",
+      "round_chain": [
+        "R2",
+        "S1",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R2_valuation.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S1_ai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results",
+          "published_date": "2026-08-05",
+          "key_information": "Q1收入10.3–10.8B、GM83–85%、EPS44–46是明确公司指引。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.trendforce.com.tw/presscenter/news/20260930-13256.html",
+          "published_date": "2026-09-30",
+          "key_information": "企业SSD与消费分化，同业报告支持当前价格上行但不担保2028利润。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+          "published_date": "2026-09-30",
+          "key_information": "MU同业实际利润及合同路径，用于存储替代比较",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "BDC",
+      "thesis": "RUCKUS整合和工业网络订单带来的去杠杆权益弹性",
+      "action_status": "等待并表现金与净债改善；高杠杆条件席",
+      "strongest_bull": "订单836M、book/bill1.11、有机收入+8%已披露；收购扩大无线与工业网络交叉销售",
+      "strongest_bear": "收购后利息、整合和客户竞争使增长可能不转现金；悲观股价30.24显示债务放大下行",
+      "why_preferred": "MOD：BDC正常化现金去杠杆提供较大当前权益上行，MOD需21%利润率且价格已较满；CARR缓冲更好但弹性较小",
+      "minority_view": "Cisco是需求和竞争证据，不替BDC证明协同；若现金降债弱于模型，MOD/CARR应胜出",
+      "forecast_caveat": "4.25B收入×18.5%经济EBITDA×10.5减1.95B净债，除41M股；降债不能同时再计回购",
+      "rank": 14,
+      "company_name": "Belden",
+      "project_member": true,
+      "reference_price": 105.29,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 3.5,
+            "economic_margin": 0.13,
+            "multiple": 8,
+            "net_debt_B": 2.4,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.041
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 30.243902,
+          "return_pct": -71.275617,
+          "economic_metric_B": 0.455
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 4.25,
+            "economic_margin": 0.185,
+            "multiple": 10.5,
+            "net_debt_B": 1.95,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.041
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 153.795732,
+          "return_pct": 46.068698,
+          "economic_metric_B": 0.78625
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.7,
+            "economic_margin": 0.21,
+            "multiple": 12.5,
+            "net_debt_B": 1.65,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.042
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 254.464286,
+          "return_pct": 141.679443,
+          "economic_metric_B": 0.987
+        }
+      ],
+      "model_type": "EV/EBITDA",
+      "earnings_period": "CY2028 forward EBITDA",
+      "closest_alternative": "MOD",
+      "catalysts": [
+        "3–6月：RUCKUS并表毛利/费用",
+        "6–12月：订单现金及债务偿还",
+        "12–18月：交叉销售留存"
+      ],
+      "kill_conditions": [
+        "净杠杆持续高于4倍且不降",
+        "订单取消",
+        "协同不足覆盖利息和整合现金"
+      ],
+      "verified_facts": [
+        "订单836M、B/B1.11和有机收入+8%真实；RUCKUS7/1季后并表。"
+      ],
+      "external_chain_limitations": "Cisco支持WiFi7/工业网络市场及竞争，MCHP是周期替代；均不验证RUCKUS交叉销售成功。",
+      "material_unresolved": "4.25B收入×18.5%经济EBITDA×10.5减1.95B净债，除41M股；降债不能同时再计回购；新增债息、整合成本、有机增长及订单现金兑现。",
+      "numerical_unresolved_original": "Acquisition integration and netdebt1.95B dependFCF; neither refinancing nor synergycertain.",
+      "round_chain": [
+        "R2",
+        "R3",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/913142/000091314226000031/companynewsreleasedatedjul.htm",
+          "published_date": "2026-07-30",
+          "key_information": "订单836M、B/B1.11和有机收入+8%真实；RUCKUS7/1季后并表。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investor.cisco.com/files/doc_presentation/2026/02/Cisco-Investor-Relations-Deck-2-19-26.pdf",
+          "published_date": "2026-02-19",
+          "key_information": "Cisco校园/WiFi7/工业以太网竞争与需求独立存在，BDC不是唯一渠道。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://ir.microchip.com/news-events/press-releases/detail/1409/microchip-technology-announces-financial-results-for-first-quarter-of-fiscal-year-2027",
+          "published_date": "2026-08-06",
+          "key_information": "工业电子替代MCHP去库存及每股权益限制，不证明BDC协同",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "ALNY",
+      "thesis": "TTR去积压之后的一线需求与临床结局价值",
+      "action_status": "成长条件候选；确认净新增与版税后利润",
+      "strongest_bull": "需求环增与AMVUTTRA已付费患者真实，eplontersen CM失败减少一个近端竞争者；降指引不等增长归零",
+      "strongest_bear": "BBIO初治患者增长竞争强，Sanofi阶梯版税与其他融资权益让产品收入远快于归母利润",
+      "why_preferred": "IONS：ALNY已有大规模产品需求和明确利润桥，IONS当前基准接近盈亏平衡且负担2028融资；ARGX仍优先于ALNY",
+      "minority_view": "若ALNY一线净新增不足、而IONS自主药增长证实，则换位；不能把样本医生50%份额当全市场",
+      "forecast_caveat": "8B收入扣Sanofi1.98B、直接成本0.28B、含SBC研发销售4.1B、融资利息0.1B及正常税；不再双扣版税负债",
+      "rank": 15,
+      "company_name": "Alnylam Pharmaceuticals",
+      "project_member": true,
+      "reference_price": 227.02,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 6.4,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 5.17,
+            "SBC_expense_B": 0.55,
+            "net_interest_expense_B": 0.08,
+            "tax_rate": 0.25,
+            "FD_shares_B": 0.14,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 80.357143,
+          "return_pct": -64.603496,
+          "economic_EBIT_B": 0.6800000000000004,
+          "economic_net_income_B": 0.4500000000000003,
+          "economic_EPS": 3.214285714285716
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 8,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 5.76,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0.1,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.14,
+            "PE": 32,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 281.6,
+          "return_pct": 24.041935,
+          "economic_EBIT_B": 1.6400000000000001,
+          "economic_net_income_B": 1.2320000000000002,
+          "economic_EPS": 8.8
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 9.4,
+            "economic_gross_margin": 1,
+            "opex_ex_SBC_B": 6.48,
+            "SBC_expense_B": 0.65,
+            "net_interest_expense_B": 0.1,
+            "tax_rate": 0.2,
+            "FD_shares_B": 0.14,
+            "PE": 38,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 471.2,
+          "return_pct": 107.558805,
+          "economic_EBIT_B": 2.27,
+          "economic_net_income_B": 1.736,
+          "economic_EPS": 12.399999999999999
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward earnings",
+      "closest_alternative": "IONS",
+      "catalysts": [
+        "3–6月：净启动、净价及医生覆盖",
+        "6–12月：一线渗透与持续治疗年",
+        "12–18月：新数据改变未来竞争"
+      ],
+      "kill_conditions": [
+        "再次下调TTR且净价同时下降",
+        "费用增速超过版税后贡献",
+        "持续率明显低于研究要求"
+      ],
+      "verified_facts": [
+        "TTR年度指导降至4.2–4.5B，原因二线积压需求正常化；降指引与持续高增长并存。"
+      ],
+      "external_chain_limitations": "BBIO真实一线增长是竞争证据，AZ失败是另一项目事件；都不能替代ALNY净价和患者持续性。",
+      "material_unresolved": "8B收入扣Sanofi1.98B、直接成本0.28B、含SBC研发销售4.1B、融资利息0.1B及正常税；不再双扣版税负债；新启动中一线份额、净价、持续治疗年及版税级差。",
+      "numerical_unresolved_original": "S2 opaque EBIT→NI residual replaced with explicit20% normalized tax inbase/bull and100M netinterest/financingexpense; royaltiesnotdeductedagain. FutureBlackstone/royaltyfinancingcashtermsmayrequirehighercharge; V2doesnotinventpositiveotherincometopreservetarget.",
+      "round_chain": [
+        "R1",
+        "R3",
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R3_external.md",
+        "02_round1/R4_upside.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+          "published_date": "2026-07-30",
+          "key_information": "TTR年度指导降至4.2–4.5B，原因二线积压需求正常化；降指引与持续高增长并存。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx",
+          "published_date": "2026-08-10",
+          "key_information": "Attruby真实初治增长是竞争；eplontersenCM失败减少另一近端竞争。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+          "published_date": "2026-07-09",
+          "key_information": "Attruby真实初治增长是竞争；eplontersenCM失败减少另一近端竞争。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.fiercepharma.com/pharma/alnylam-shares-tank-27-amvuttra-disappoints-attr-outlook-cut-2026",
+          "published_date": "2026-07-30",
+          "key_information": "市场原预期低个位数超预期；公司称依从性>90%、已有处方医生的新启动份额>50%。后者是选择样本而非总体份额。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://ir.ionispharma.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+          "published_date": "2026-07-09",
+          "key_information": "eplontersen CM三期未达主要终点，单药预设亚组HR0.71仅名义显著；降低近期沉默剂竞争。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215515s006lbl.pdf",
+          "published_date": "2025-03",
+          "key_information": "AMVUTTRA正式标签，适应症和临床结局的监管依据；不证明商业净价。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "BABA",
+      "thesis": "中国电商底座加外部云增长，在不同市场获得修复机会",
+      "action_status": "条件参与；等待资本开支/融资缺口趋稳",
+      "strongest_bull": "云收入48.437B人民币增长45%，保诚全面上线提供客户采用证据；现有电商现金支持部分投资",
+      "strongest_bear": "T-Head并表口径、AI Labs亏损、快商补贴及高capex可能持续稀释；低PE不等可分配现金",
+      "why_preferred": "GOOGL/MCHP：阿里现价仍提供更大重估右尾，GOOGL强增长但投资收益和新增融资扭曲表面PE；MCHP每股复苏空间更薄",
+      "minority_view": "地域差异不等风险独立，仍受全球AI投入和资本成本；资本配置失控时CRM更优",
+      "forecast_caveat": "119.6B人民币经济利润、2.60B ADS、FX7与21倍PE；8普通股/ADS，仅美元交易价",
+      "rank": 16,
+      "company_name": "Alibaba 阿里巴巴",
+      "project_member": true,
+      "reference_price": 110.78,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "RMB",
+        "model": "USD",
+        "FX_assumption_RMB_per_USD": 7.0
+      },
+      "security": {
+        "type": "US listed ADS",
+        "ordinary_shares_per_ADS": 8,
+        "economic_unit": "one ADS-equivalent equity unit"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_RMB_B": 1180,
+            "adjusted_EBITA_RMB_B": 100,
+            "SBC_RMB_B": 14,
+            "economic_recurring_cost_RMB_B": 6,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 5,
+            "ordinary_shares_B": 20.4,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 15
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 57.983193,
+          "return_pct": -47.65915,
+          "economic_net_income_RMB_B": 69.0,
+          "economic_EPS_USD_per_ADS": 3.8655462184873954
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_RMB_B": 1300,
+            "adjusted_EBITA_RMB_B": 160,
+            "SBC_RMB_B": 16,
+            "economic_recurring_cost_RMB_B": 7,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 10,
+            "ordinary_shares_B": 20.8,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 21
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 138.0,
+          "return_pct": 24.571222,
+          "economic_net_income_RMB_B": 119.60000000000001,
+          "economic_EPS_USD_per_ADS": 6.571428571428571
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_RMB_B": 1430,
+            "adjusted_EBITA_RMB_B": 230,
+            "SBC_RMB_B": 18,
+            "economic_recurring_cost_RMB_B": 8,
+            "tax_rate": 0.2,
+            "net_attributable_other_RMB_B": 15,
+            "ordinary_shares_B": 21.2,
+            "ordinary_per_ADS": 8,
+            "RMB_per_USD": 7,
+            "PE": 26
+          },
+          "formula": "((adjusted_EBITA-SBC-economic_recurring_cost)*(1-tax)+net_attributable_other)/(ordinary_shares/8)/RMB_per_USD*PE",
+          "price": 249.768194,
+          "return_pct": 125.463255,
+          "economic_net_income_RMB_B": 178.20000000000002,
+          "economic_EPS_USD_per_ADS": 9.60646900269542
+        }
+      ],
+      "model_type": "RMB economicEPS convertedonce",
+      "earnings_period": "FY2028 endingMar2028 sustainableearnings",
+      "closest_alternative": "GOOGL",
+      "catalysts": [
+        "3–6月：同口径外部云和补贴",
+        "6–12月：集群利用率及Labs亏损",
+        "12–18月：FCF缺口/ADS变化"
+      ],
+      "kill_conditions": [
+        "外部云增长失速而capex继续升",
+        "亏损无收敛且再大幅稀释",
+        "净利润靠非经营收益"
+      ],
+      "verified_facts": [
+        "云48.437B人民币同比45%；新分部合并T-Head，集团资本与应用亏损不能忽略。"
+      ],
+      "external_chain_limitations": "保诚真实上线验证采用但没有披露阿里净合同利润；媒体报道同一财报不重复计经营核验。",
+      "material_unresolved": "119.6B人民币经济利润、2.60B ADS、FX7与21倍PE；8普通股/ADS，仅美元交易价；云外部客户收入、AI应用亏损和电商补贴持续期。",
+      "numerical_unresolved_original": "S2 residualnetequityincome5/10/15B mustbenetofminorities/interest; V2 preserves as explicitbudget, notverifiedforecast.",
+      "round_chain": [
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm",
+          "published_date": "2026-08-20",
+          "key_information": "云48.437B人民币同比45%；新分部合并T-Head，集团资本与应用亏损不能忽略。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+          "published_date": "2026-09-09",
+          "key_information": "保诚已全面上线为客户采用实证，不证明阿里合同净利润。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://apnews.com/article/china-alibaba-earnings-ai-cloud-8a30302d23a96fc7b9aab664b9c1897d",
+          "published_date": "2026-08-20",
+          "key_information": "季度资本开支67.7B人民币+75%；现金投资规模是反证，资本开支不是当期利润的直接扣项。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "thesis": "企业数据权限与工作流收费的第二软件修复机会",
+      "action_status": "条件参与；核有机增长和资本配置",
+      "strongest_bull": "持续订阅与cRPO增长说明既有分发有价值，Agentforce可能通过消耗收费抵消部分席位压力",
+      "strongest_bear": "ARR定义扩至Slackbot/Headless360及并购，不能把全增长称有机AI；SBC和并购债息吃现金",
+      "why_preferred": "MOD：CRM较成熟的付费与经济现金结构使当前中枢修复更可评估，MOD需更高交付和利润率；ADBE更便宜故排前",
+      "minority_view": "若代理减少席位更快或并购消耗大，软件双持不能假装分散；MOD若订单现金证实可换位",
+      "forecast_caveat": "15.5B CFO减capex已扣现金利息，再减4.7B SBC，840M股、23倍经济现金；不双扣净债",
+      "rank": 17,
+      "company_name": "Salesforce",
+      "project_member": true,
+      "reference_price": 233.92,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 12,
+            "SBC_B": 4.5,
+            "FD_shares_B": 0.85,
+            "equity_cash_multiple": 16
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 141.176471,
+          "return_pct": -39.647542,
+          "economic_FCFE_B": 7.5
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 15.5,
+            "SBC_B": 4.7,
+            "FD_shares_B": 0.84,
+            "equity_cash_multiple": 23
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 295.714286,
+          "return_pct": 26.416846,
+          "economic_FCFE_B": 10.8
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "CFO_minus_capex_after_interest_B": 19,
+            "SBC_B": 5,
+            "FD_shares_B": 0.84,
+            "equity_cash_multiple": 28
+          },
+          "formula": "(CFO_minus_capex_after_interest-SBC)/FD_shares*equity_cash_multiple",
+          "price": 466.666667,
+          "return_pct": 99.498404,
+          "economic_FCFE_B": 14
+        }
+      ],
+      "model_type": "economicFCFE multiple",
+      "earnings_period": "FY2028 endingJan2028 sustainablecashflow",
+      "closest_alternative": "MOD",
+      "catalysts": [
+        "3–6月：同口径cRPO与付费使用",
+        "6–12月：并购整合和席位抵减",
+        "12–18月：扣SBC每股现金"
+      ],
+      "kill_conditions": [
+        "有机增长持续低于费用",
+        "代理消耗不抵席位流失",
+        "回购由债务承担却掩盖总稀释"
+      ],
+      "verified_facts": [
+        "Agentforce ARR定义扩至Slackbot/Headless360，收入指导纳入待收购；增长不能简单全部有机AI化。"
+      ],
+      "external_chain_limitations": "ADBE与保诚定制路径是不同实施替代，不直接证实CRM会赢或输；ARR口径扩张依然未消除。",
+      "material_unresolved": "15.5B CFO减capex已扣现金利息，再减4.7B SBC，840M股、23倍经济现金；不双扣净债；AI收费是否补席位流失、并购息费和持续SBC。",
+      "numerical_unresolved_original": "",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+          "published_date": "2026-08-26",
+          "key_information": "Agentforce ARR定义扩至Slackbot/Headless360，收入指导纳入待收购；增长不能简单全部有机AI化。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+          "published_date": "2026-09-10",
+          "key_information": "ADBE企业工作流和保诚定制AI为不同替代实施路径，均不证明CRM必败。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+          "published_date": "2026-09-09",
+          "key_information": "ADBE企业工作流和保诚定制AI为不同替代实施路径，均不证明CRM必败。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.kiplinger.com/investing/stocks/nasdaq-jumps-411-points-as-nvidia-stock-soars-stock-market-today",
+          "published_date": "2026-08-27",
+          "key_information": "业绩后股票+22.6%；与Anthropic扩展合作。叙事修复部分已定价。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "thesis": "现有发电资产、容量与PPA逐步重定价",
+      "action_status": "条件参与；并购债务及普通股现金先核",
+      "strongest_bull": "客户Meta长期需求与PJM紧容量市场支持资产价值，现有机组无需押注遥远新核建设",
+      "strongest_bear": "2027/2028已套保94%/72%，不能全部吃现货涨价；收购融资、维护和退役现金削减EBITDA",
+      "why_preferred": "PGR/TSM：有更直接合同重定价及现有资产现金驱动；TSM优质但新增资本与地缘尾部较大，PGR增长正常化后催化更温和",
+      "minority_view": "它仍受AI预算影响并非纯分散；若电价受限且并购负担升，PGR/TSM可胜；7.4–7.8B只是机会区间",
+      "forecast_caveat": "基准传统EBITDA8B加并购0.7B/Meta0.15B后扣SBC及各类支出，15倍FCFE；2030扩容不计近期利润",
+      "rank": 18,
+      "company_name": "Vistra Corp",
+      "project_member": true,
+      "reference_price": 158.13,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "legacy_EBITDA_B": 7.3,
+            "Cogentrix_EBITDA_B": 0.5,
+            "incremental_Meta_EBITDA_B": 0.05,
+            "SBC_B": 0.15,
+            "maintenance_capex_B": 1.25,
+            "cash_interest_B": 1.35,
+            "cash_tax_B": 0.65,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.65,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.344,
+            "FCFE_multiple": 11
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 107.761628,
+          "return_pct": -31.852509,
+          "economic_FCFE_B": 3.369999999999999
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "legacy_EBITDA_B": 8,
+            "Cogentrix_EBITDA_B": 0.7,
+            "incremental_Meta_EBITDA_B": 0.15,
+            "SBC_B": 0.18,
+            "maintenance_capex_B": 1.2,
+            "cash_interest_B": 1.3,
+            "cash_tax_B": 0.8,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.55,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.339,
+            "FCFE_multiple": 15
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 194.247788,
+          "return_pct": 22.840566,
+          "economic_FCFE_B": 4.39
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "legacy_EBITDA_B": 8.8,
+            "Cogentrix_EBITDA_B": 0.85,
+            "incremental_Meta_EBITDA_B": 0.3,
+            "SBC_B": 0.2,
+            "maintenance_capex_B": 1.25,
+            "cash_interest_B": 1.25,
+            "cash_tax_B": 0.95,
+            "preferred_dividend_B": 0.23,
+            "growth_capex_B": 0.5,
+            "asset_closure_other_B": 0.2,
+            "FD_shares_B": 0.335,
+            "FCFE_multiple": 18
+          },
+          "formula": "(legacy_EBITDA+Cogentrix+incremental_Meta-SBC-maintenance_capex-interest-cash_tax-preferred-growth_capex-asset_closure_other)/FD_shares*FCFE_multiple",
+          "price": 288.537313,
+          "return_pct": 82.468421,
+          "economic_FCFE_B": 5.370000000000001
+        }
+      ],
+      "model_type": "FCFE multiple",
+      "earnings_period": "CY2028 forward normalizedFCFE",
+      "closest_alternative": "PGR",
+      "catalysts": [
+        "3–6月：收购交割与债务",
+        "6–12月：PPA生效/套保解锁",
+        "12–18月：扣全部再投资和优先股后现金"
+      ],
+      "kill_conditions": [
+        "融资后股东现金低于模型且无法修复",
+        "监管/容量规则削弱收益",
+        "燃料维护超预算"
+      ],
+      "verified_facts": [
+        "最新套保2027 94%、2028 72%；2027 EBITDA7.4–7.8B机会区间排除Cogentrix和Meta增量。"
+      ],
+      "external_chain_limitations": "Meta客户需求和PJM市场规则是两条根链；2030扩容及2028/29容量期不能冒作观察日前现金。",
+      "material_unresolved": "基准传统EBITDA8B加并购0.7B/Meta0.15B后扣SBC及各类支出，15倍FCFE；2030扩容不计近期利润；截止日并购最终交割/净债桥由V2核，PPAs分季生效。",
+      "numerical_unresolved_original": "Interest1.25–1.35B conditionalpostdealbudget; cashclosure/decommissioningandgrowthspendincluded. Needactualdebtbridgewhencloseoccurs; no full2030PPAmargin.",
+      "round_chain": [
+        "R1",
+        "R2",
+        "R3",
+        "B1",
+        "B2",
+        "Controller非AI",
+        "Controller非AI专项",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R1_cashflows.md",
+        "02_round1/R2_valuation.md",
+        "02_round1/R3_external.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/Controller_非AI需求交叉核验.md"
+      ],
+      "sources": [
+        {
+          "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+          "published_date": "2026-08-07",
+          "key_information": "最新套保2027 94%、2028 72%；2027 EBITDA7.4–7.8B机会区间排除Cogentrix和Meta增量。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/",
+          "published_date": "2026-01-09",
+          "key_information": "客户确认长期需求，但433MW新增扩容在2030年代初、窗口外。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf",
+          "published_date": "2026-07",
+          "key_information": "2028/29容量拍卖325美元/UCAP MW-day；交付期晚于观察日，只影响前瞻定价",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://rss.globenewswire.com/news-release/2026/08/05/3339712/0/en/talen-energy-reports-second-quarter-2026-results-raises-2026-guidance.html",
+          "published_date": "2026-08-05",
+          "key_information": "Talen实际参与容量市场及不同套保比例，独立行业经营链",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+          "published_date": "",
+          "key_information": "V2原始经营/证券核验",
+          "role": "V2来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix",
+          "published_date": "",
+          "key_information": "V2原始经营/证券核验",
+          "role": "V2来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "KYTX",
+      "thesis": "SPS一次治疗的重大改善与近端注册事件，保留极高右尾",
+      "action_status": "小额事件研究席；融资与BLA/CMC不明时等待",
+      "strongest_bull": "9月26人一年数据已见功能改善；PNAS病例和AAN会议展示机制与可观个体收益，批准路径可在盈利前重估",
+      "strongest_bear": "非随机小样本、CRS/ICANS及中性粒减少、制造一致性、支付和融资均可能失败；失败可接近零",
+      "why_preferred": "POET/FLNC：KYTX已有患者功能终点和具体注册路径，POET量产净收入尚弱，FLNC额外损失未消；不是因医药配额入选",
+      "minority_view": "70%成功率和30万美元净价非核验事实；若CMC/融资不成立，POET或CARR替换，不能以牛价补偿必然资金断裂",
+      "forecast_caveat": "150M净融资按6美元加5%费用、61.84M原股和12M奖励合约100.16M股；融资现金花在开发不得另加收益",
+      "rank": 19,
+      "company_name": "Kyverna Therapeutics",
+      "project_member": true,
+      "reference_price": 6.21,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 4,
+            "FD_shares_B": 0.11331368421052632,
+            "SPS_mature_treatments": 200,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0,
+            "PE": 18,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.1,
+            "other_pipeline_net_rNPV_B": 0.04,
+            "remaining_cash_B": 0.128,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 0.953106,
+          "return_pct": -84.652071,
+          "SPS_rNPV_B": 0.0,
+          "equity_value_B": 0.10800000000000001
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 6,
+            "FD_shares_B": 0.10015578947368421,
+            "SPS_mature_treatments": 1000,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0.06,
+            "PE": 22,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.7,
+            "other_pipeline_net_rNPV_B": 0.24,
+            "remaining_cash_B": 0.11,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0.15
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 8.373722,
+          "return_pct": 34.842546,
+          "SPS_rNPV_B": 0.6986767485822306,
+          "equity_value_B": 0.8386767485822305
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "current_shares_B": 0.06184,
+            "awards_other_B": 0.012,
+            "net_equity_raise_B": 0.15,
+            "issuance_fee": 0.05,
+            "issue_price": 12,
+            "FD_shares_B": 0.08699789473684211,
+            "SPS_mature_treatments": 2000,
+            "net_price_per_treatment_USD": 300000,
+            "SPS_success_after_tax_income_B": 0.18,
+            "PE": 25,
+            "discount_rate": 0.15,
+            "years_to_success_earnings": 2,
+            "subjective_probability": 0.65,
+            "other_pipeline_net_rNPV_B": 0.3,
+            "remaining_cash_B": 0.1,
+            "debt_B": 0.06,
+            "post_observation_development_PV_B": 0.15
+          },
+          "formula": "(SPS_successNI*PE/(1+discount_rate)^years*probability+other_pipeline_rNPV+remaining_cash-debt-post_observation_developmentPV)/(current_shares+awards+net_raise/(1-fee)/issue_price)",
+          "price": 27.606648,
+          "return_pct": 344.551492,
+          "SPS_rNPV_B": 2.2117202268431004,
+          "equity_value_B": 2.4017202268431004
+        }
+      ],
+      "model_type": "financedclinical rNPV",
+      "earnings_period": "Apr2028 conditionalclinicalvalue with2030 SPSmatureearnings discounted2years",
+      "closest_alternative": "POET",
+      "catalysts": [
+        "3–6月：BLA完成/受理/CMC",
+        "6–12月：审评与治疗中心",
+        "12–18月：付费治疗、gMG推进"
+      ],
+      "kill_conditions": [
+        "重大CMC补件且无可行资金",
+        "疗效耐久明显失效或严重新毒性",
+        "增发超40%又无价值里程碑"
+      ],
+      "verified_facts": [
+        "KYSA8一年26人数据9/24已发布：T25FW改善49%、92%免治疗；95%是早期改善者子集持续率。"
+      ],
+      "external_chain_limitations": "PNAS单病例作者含公司雇员/股东；AAN摘要未经Neurology编辑审阅，同KYSA8一年更新不是第二批患者。CRS92.3%为1/2级、ICANS11.5%为1级，3/4级中性粒减少15.4%；24周仅16人是达到时点人数，不能判其他人失败。",
+      "material_unresolved": "150M净融资按6美元加5%费用、61.84M原股和12M奖励合约100.16M股；融资现金花在开发不得另加收益；小样本单臂、标签批准、制造一致性、融资和付款均未解决。",
+      "numerical_unresolved_original": "Base70% is subjective probability of1000-treatment commercial path; bull65% is probability ofbroader2000-treatment/180Mprofit path, notalowerprobabilityofthesameFDAapproval. Differentcommercialthresholds explain lowerbullprobability; no extraouterclinicaldiscount. Rewards12Mbudget notawardvaluation. Bear assumesfundingbeforefailure; financingfailurecouldapproachzero. Unknownclinicalprice/approvalrights.",
+      "round_chain": [
+        "R4",
+        "R5",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R4_upside.md",
+        "02_round1/R5_diversification.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md",
+        "03_round2/Controller_KYTX临床外部交叉核验.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526400062/kytx-ex99_1.htm",
+          "published_date": "2026-09-24",
+          "key_information": "KYSA8一年26人数据9/24已发布：T25FW改善49%、92%免治疗；95%是早期改善者子集持续率。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://argenx.com/news/2026/press-release-3331862.html",
+          "published_date": "2026-07-23",
+          "key_information": "ARGX现有广gMG标签及支付商业规模是真实替代；不能用于否定无获批SPS机会。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38885382/",
+          "published_date": "2024",
+          "key_information": "PNAS单病例摘要，巨大个体功能改善；含公司利益关联",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+          "published_date": "2026",
+          "key_information": "AAN原始26人会议摘要，疗效及低级CRS/ICANS，不是独立第二组患者",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+          "published_date": "2026-08-11",
+          "key_information": "现金199.4M，2028跑道包括Oxford可提款额；BLA Q4完成目标；Q2亏38.3M。",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+          "published_date": "2026-08-11",
+          "key_information": "期末现金199.427M，本金贷款25M；现有奖励与反摊薄股必须计经济稀释",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526298979/kytx-20260708.htm",
+          "published_date": "2026-07-09",
+          "key_information": "Oxford分层节点额度；酌情D50M不是无条件承诺",
+          "role": "专项来源",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    },
+    {
+      "ticker": "CARR",
+      "thesis": "住宅渠道和商业冷却两条恢复路径，进入最后一席",
+      "action_status": "等待住宅实销与DC验收同时改善；边际条件席",
+      "strongest_bull": "DC订单增长超过300%与集团有机收入增长3%说明需求存在；大存量商业和服务提供不同于纯AI设备的恢复路径",
+      "strongest_bear": "集团调整OP仍同比降6%，订单不等盈利；欧洲热泵、住宅需求和债务使恢复并未证实",
+      "why_preferred": "TSM：选择CARR是现价对双路径恢复的要求较低，既不全押AI也不全押住宅；TSM跨架构更强但仍增加同一AI预算和制造地缘暴露，当前每股空间稍弱",
+      "minority_view": "若DC强订单不能变现金、住宅去库后仍弱，应立即让TSM替代；多元化只是同等机会下的加分，不是免估值审查",
+      "forecast_caveat": "25.5B收入、16%含SBC经济率、0.42B利息、少数0.14B、820M股和22倍PE；集团不套纯DC倍数",
+      "rank": 20,
+      "company_name": "Carrier Global",
+      "project_member": true,
+      "reference_price": 55.42,
+      "reference_price_date": "2026-10-12",
+      "observation_date": "2028-04-12",
+      "currency": {
+        "trading": "USD",
+        "financial": "USD",
+        "model": "USD"
+      },
+      "security": {
+        "type": "US listed common equity",
+        "ordinary_shares_per_ADS": null,
+        "economic_unit": "one common share"
+      },
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 22.5,
+            "economic_gross_margin": 0.12,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.5,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.835,
+            "PE": 17,
+            "other_after_tax_B": -0.12,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 32.045509,
+          "return_pct": -42.176996,
+          "economic_EBIT_B": 2.6999999999999997,
+          "economic_net_income_B": 1.5739999999999998,
+          "economic_EPS": 1.8850299401197603
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 25.5,
+            "economic_gross_margin": 0.16,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.42,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.82,
+            "PE": 22,
+            "other_after_tax_B": -0.14,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 71.854146,
+          "return_pct": 29.653819,
+          "economic_EBIT_B": 4.08,
+          "economic_net_income_B": 2.6782,
+          "economic_EPS": 3.2660975609756098
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 28,
+            "economic_gross_margin": 0.18,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.4,
+            "tax_rate": 0.23,
+            "FD_shares_B": 0.81,
+            "PE": 26,
+            "other_after_tax_B": -0.16,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 109.546667,
+          "return_pct": 97.666306,
+          "economic_EBIT_B": 5.04,
+          "economic_net_income_B": 3.4128,
+          "economic_EPS": 4.213333333333333
+        }
+      ],
+      "model_type": "economic EPS x PE",
+      "earnings_period": "CY2028 forward earnings",
+      "closest_alternative": "TSM",
+      "catalysts": [
+        "3–6月：住宅sell-through",
+        "6–12月：H2冷却订单验收与欧洲利润",
+        "12–18月：服务附着、现金与债务"
+      ],
+      "kill_conditions": [
+        "去库完成仍丢份额",
+        "DC交付增加但净利润下降",
+        "债务和回购冲突"
+      ],
+      "verified_facts": [
+        "DC订单同比>300%，有机收入+3%，调整OP同比-6%；不能用订单涨幅当集团利润涨幅。"
+      ],
+      "external_chain_limitations": "MOD及PNR说明不同业务结构与竞争，不能直接证实CARR住宅售出或数据中心验收。",
+      "material_unresolved": "25.5B收入、16%含SBC经济率、0.42B利息、少数0.14B、820M股和22倍PE；集团不套纯DC倍数；H2DC验收、住宅渠道售出、欧洲利润改善。",
+      "numerical_unresolved_original": "",
+      "round_chain": [
+        "R3",
+        "S2",
+        "B1",
+        "B2",
+        "V1原始核验",
+        "V2独立计算",
+        "主席A/B替代裁决"
+      ],
+      "evidence_files": [
+        "02_round1/R3_external.md",
+        "03_round2/B1_business_rebuttal.md",
+        "03_round2/B2_valuation_rebuttal.md",
+        "04_verification/V1_primary_verification.md",
+        "04_verification/V2_numeric_verification.md",
+        "04_verification/V2_models.json",
+        "03_round2/S2_nonai_upside.md"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000030/a99-q22026earningsexhibit.htm",
+          "published_date": "2026-07-28",
+          "key_information": "DC订单同比>300%，有机收入+3%，调整OP同比-6%；不能用订单涨幅当集团利润涨幅。",
+          "role": "原始事实",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+          "published_date": "2026-10-01",
+          "key_information": "MOD拆分后更聚焦形成直接冷却替代；不证明CARR订单流失。",
+          "role": "公司之外根链",
+          "access": "继承团队实读记录；主席未重复访问"
+        },
+        {
+          "url": "https://investors.pentair.com/node/27181/pdf",
+          "published_date": "2026-10-01",
+          "key_information": "PNR收购完成，比较另一路工业恢复；不证明CARR需求",
+          "role": "补充原始/外部链",
+          "access": "继承团队实读记录；主席未重复访问"
+        }
+      ]
+    }
+  ],
+  "reserves": [
+    {
+      "rank": 21,
+      "ticker": "TSM",
+      "reason": "制造瓶颈和跨架构需求实证很强；当前基准22.4%上行，地缘和再投资尾部仍在，未优先于CARR双恢复路径。",
+      "reentry_conditions": "海外成本和资本效率改善使同口径每股空间上修；或CARR交付/住宅失败，直接替换。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 185,
+            "economic_gross_margin": 0.6,
+            "opex_ex_SBC_B": 17,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 18,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 267.710983,
+          "return_pct": -39.752226,
+          "economic_EBIT_B": 93.0,
+          "economic_net_income_B": 77.19,
+          "economic_EPS": 14.872832369942195
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 240,
+            "economic_gross_margin": 0.65,
+            "opex_ex_SBC_B": 19,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 25,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 543.737958,
+          "return_pct": 22.367043,
+          "economic_EBIT_B": 136.0,
+          "economic_net_income_B": 112.88,
+          "economic_EPS": 21.749518304431597
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 285,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 22,
+            "SBC_expense_B": 1,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.17,
+            "FD_shares_B": 5.19,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 819.445087,
+          "return_pct": 84.414333,
+          "economic_EBIT_B": 170.8,
+          "economic_net_income_B": 141.764,
+          "economic_EPS": 27.314836223506745
+        }
+      ],
+      "reference_price": 444.35
+    },
+    {
+      "rank": 22,
+      "ticker": "MOD",
+      "reason": "增长真实且无旧THRM分派错误；但基准需21%经济率，较大悲观尾部未换来更强当前收益。",
+      "reentry_conditions": "持续业务正式指引与客户交付支持21%率、剔预付款后现金改善，可替CARR/BDC/CRM。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.87,
+            "economic_margin": 0.127,
+            "multiple": 9,
+            "net_debt_B": 0.5,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.056
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 49.650179,
+          "return_pct": -71.217288,
+          "economic_metric_B": 0.36449000000000004
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.9,
+            "economic_margin": 0.21,
+            "multiple": 15,
+            "net_debt_B": 0.25,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.056
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 214.910714,
+          "return_pct": 24.585921,
+          "economic_metric_B": 0.819
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.7,
+            "economic_margin": 0.23,
+            "multiple": 18,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.057
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 339.614035,
+          "return_pct": 96.877702,
+          "economic_metric_B": 1.0810000000000002
+        }
+      ],
+      "reference_price": 172.5
+    },
+    {
+      "rank": 23,
+      "ticker": "POET",
+      "reason": "真钱和光学客户融资支持大右尾；基准经营仍亏，量产净收入与权益稀释使中枢仅温和上行。",
+      "reentry_conditions": "不可取消净采购、量产良率及第二客户验证；可替KYTX或边际工业席，不必等盈利后才回归。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "sales_B": 0.012,
+            "EV_sales": 4,
+            "remaining_net_cash_B": 0.64,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 3.292072,
+          "return_pct": -48.641617,
+          "total_warrant_option_value_B": 0.07896661743545338,
+          "economic_operating_profit_B": -0.0564
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "sales_B": 0.08,
+            "EV_sales": 12,
+            "remaining_net_cash_B": 0.6,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 7.075124,
+          "return_pct": 10.376352,
+          "total_warrant_option_value_B": 0.2511020242718096,
+          "economic_operating_profit_B": -0.046400000000000004
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "sales_B": 0.22,
+            "EV_sales": 18,
+            "remaining_net_cash_B": 0.53,
+            "base_awards_future_SBC_shares_B": 0.185,
+            "volatility": 0.75,
+            "risk_free_rate": 0.04,
+            "tranches": [
+              {
+                "shares_B": 9.7699e-05,
+                "strike_USD": 1.09,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.00187249,
+                "strike_USD": 1.11,
+                "remaining_years": 0.79
+              },
+              {
+                "shares_B": 0.002048275,
+                "strike_USD": 3.1,
+                "remaining_years": 1.08
+              },
+              {
+                "shares_B": 0.003333334,
+                "strike_USD": 4,
+                "remaining_years": 1.27
+              },
+              {
+                "shares_B": 0.002,
+                "strike_USD": 5,
+                "remaining_years": 1.46
+              },
+              {
+                "shares_B": 0.002777778,
+                "strike_USD": 6,
+                "remaining_years": 1.65
+              },
+              {
+                "shares_B": 0.006,
+                "strike_USD": 6.06,
+                "remaining_years": 2.11
+              },
+              {
+                "shares_B": 0.005,
+                "strike_USD": 5.94,
+                "remaining_years": 2.26
+              },
+              {
+                "shares_B": 0.013636364,
+                "strike_USD": 7.12,
+                "remaining_years": 2.49
+              },
+              {
+                "shares_B": 0.01904762,
+                "strike_USD": 26.25,
+                "remaining_years": 1.1
+              },
+              {
+                "shares_B": 0.022921408,
+                "strike_USD": 8.25,
+                "remaining_years": 7.09
+              }
+            ]
+          },
+          "formula": "solve P*base_shares + sum(warrant_count*BS_call(P,strike,T,vol,r)) = sales*EVsales + remaining_net_cash",
+          "price": 19.021371,
+          "return_pct": 196.745254,
+          "total_warrant_option_value_B": 0.97104640924999,
+          "economic_operating_profit_B": 0.009999999999999995
+        }
+      ],
+      "reference_price": 6.41
+    },
+    {
+      "rank": 24,
+      "ticker": "IONS",
+      "reason": "两失败已逐项剔除，GSK批准/Roche阳性保留；基准留存收入1.813B但经济EBIT仅83.85M，6倍销售仍押远期。",
+      "reentry_conditions": "付费治疗年和净价超过桥、版税/2028债务可控；可替ALNY/KYTX而非永久淘汰。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 14000,
+            "TRYNGOLZA_net_price": 27000,
+            "DAWNZERA_paid_years": 650,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 60,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.18,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 0.4,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 0.2,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.12,
+            "EV_retained_sales": 3.5,
+            "net_debt_B": 0.45,
+            "FD_shares_B": 0.2,
+            "economic_opex_including_SBC_B": 1.25
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 15.39875,
+          "return_pct": -64.738379,
+          "own_sales_B": 0.6355,
+          "retained_royalties_B": 0.21300000000000002,
+          "retained_revenue_B": 1.0085000000000002,
+          "economic_EBIT_B": -0.40347500000000003
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 25000,
+            "TRYNGOLZA_net_price": 30000,
+            "DAWNZERA_paid_years": 1100,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 140,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.2,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 0.7,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 0.65,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0.1,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0.05,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.2,
+            "EV_retained_sales": 6,
+            "net_debt_B": 0.2,
+            "FD_shares_B": 0.21,
+            "economic_opex_including_SBC_B": 1.45
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 50.847619,
+          "return_pct": 16.436041,
+          "own_sales_B": 1.205,
+          "retained_royalties_B": 0.368,
+          "retained_revenue_B": 1.813,
+          "economic_EBIT_B": 0.08384999999999998
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "TRYNGOLZA_paid_years": 38000,
+            "TRYNGOLZA_net_price": 32000,
+            "DAWNZERA_paid_years": 1700,
+            "DAWNZERA_net_price": 350000,
+            "ZANVASTRO_paid_years": 230,
+            "ZANVASTRO_net_price": 500000,
+            "SPINRAZA_gross_royalty_B": 0.22,
+            "SPINRAZA_retention": 0.55,
+            "WAINUA_PN_partner_sales_B": 1.0,
+            "WAINUA_royalty": 0.23,
+            "bepirovirsen_partner_sales_B": 1.2,
+            "bepirovirsen_royalty": 0.11,
+            "sefaxersen_partner_sales_B": 0.4,
+            "sefaxersen_royalty": 0.18,
+            "ulefnersen_partner_sales_B": 0.15,
+            "ulefnersen_royalty": 0.15,
+            "other_retained_revenue_B": 0.04,
+            "collaboration_revenue_B": 0.3,
+            "EV_retained_sales": 8,
+            "net_debt_B": 0,
+            "FD_shares_B": 0.22,
+            "economic_opex_including_SBC_B": 1.7
+          },
+          "formula": "(retained_revenue*EV_retained_sales-net_debt)/FD_shares; retained_revenue=sum(ownpaidyears*netprice)/1e9+sum(partner_sales*royalty)+SPINRAZAroyalty*.55+other+collaboration",
+          "price": 103.4,
+          "return_pct": 136.775819,
+          "own_sales_B": 1.926,
+          "retained_royalties_B": 0.5775,
+          "retained_revenue_B": 2.8434999999999997,
+          "economic_EBIT_B": 0.7157250000000002
+        }
+      ],
+      "reference_price": 43.67
+    },
+    {
+      "rank": 25,
+      "ticker": "FLNC",
+      "reason": "重大指引下修和非递延赔偿/质量损失，使现有订单不能直接证明现金反转；高右尾仍在。",
+      "reentry_conditions": "产线恢复、异常成本停止、担保及融资桥明确；可替SMCI/PSIX较弱者。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_margin": 1,
+            "multiple": 0.2,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.225
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 1.6,
+          "return_pct": -77.369165,
+          "economic_metric_B": 2.3,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.07,
+            "opex_including_SBC_B": 0.34,
+            "economic_EBIT_B": -0.17900000000000002,
+            "interest_B": 0.015,
+            "net_income_B": -0.14550000000000002,
+            "EPS": -0.6466666666666667
+          }
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.6,
+            "economic_margin": 1,
+            "multiple": 0.55,
+            "net_debt_B": 0.15,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.22
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 8.318182,
+          "return_pct": 17.654623,
+          "economic_metric_B": 3.6,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.14,
+            "opex_including_SBC_B": 0.37,
+            "economic_EBIT_B": 0.13400000000000012,
+            "interest_B": 0.015,
+            "net_income_B": 0.0892500000000001,
+            "EPS": 0.4056818181818186
+          }
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 4.6,
+            "economic_margin": 1,
+            "multiple": 0.85,
+            "net_debt_B": 0.1,
+            "other_senior_claims_B": 0,
+            "FD_shares_B": 0.22
+          },
+          "formula": "max(0,(revenue*economic_margin*multiple-net_debt-other_senior_claims)/FD_shares)",
+          "price": 17.318182,
+          "return_pct": 144.953067,
+          "economic_metric_B": 4.6,
+          "profit_crosscheck": {
+            "economic_gross_margin": 0.18,
+            "opex_including_SBC_B": 0.42,
+            "economic_EBIT_B": 0.408,
+            "interest_B": 0.015,
+            "net_income_B": 0.29474999999999996,
+            "EPS": 1.3397727272727271
+          }
+        }
+      ],
+      "reference_price": 7.07
+    },
+    {
+      "rank": 26,
+      "ticker": "PGR",
+      "reason": "正常化承保具质量，基准上行约20%；高收益目标下不为保险标签自动占席。",
+      "reentry_conditions": "事故年承保率和保单增长支持更高持续EPS，或资本密集候选普遍失效时回归。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "net_premiums_earned_B": 90,
+            "combined_ratio": 0.95,
+            "investment_other_income_B": 2.7,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.586,
+            "PE": 14
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 135.890785,
+          "return_pct": -38.309976,
+          "economic_net_income_B": 5.688000000000003
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "net_premiums_earned_B": 98,
+            "combined_ratio": 0.92,
+            "investment_other_income_B": 3,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.584,
+            "PE": 18
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 263.946575,
+          "return_pct": 19.823214,
+          "economic_net_income_B": 8.563599999999997
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "net_premiums_earned_B": 106,
+            "combined_ratio": 0.89,
+            "investment_other_income_B": 3.3,
+            "tax_rate": 0.21,
+            "FD_shares_B": 0.582,
+            "PE": 21
+          },
+          "formula": "(NPE*(1-CR)+investment_other_income)*(1-tax)/FD_shares*PE",
+          "price": 426.437113,
+          "return_pct": 93.588666,
+          "economic_net_income_B": 11.818399999999999
+        }
+      ],
+      "reference_price": 220.28
+    },
+    {
+      "rank": 27,
+      "ticker": "MCHP",
+      "reason": "去库存真实，但扣优先股息和债息后基准空间约7%。",
+      "reentry_conditions": "FY28经济EPS显著超过4或价格更低，且不靠忽略优先股，可替AGCO/BDC。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 5.8,
+            "economic_gross_margin": 0.25,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.23,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.56,
+            "PE": 16,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 26.457143,
+          "return_pct": -64.16478,
+          "economic_EBIT_B": 1.45,
+          "economic_net_income_B": 0.9259999999999999,
+          "economic_EPS": 1.6535714285714282
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 7.2,
+            "economic_gross_margin": 0.35,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.19,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.57,
+            "PE": 24,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 78.715789,
+          "return_pct": 6.617621,
+          "economic_EBIT_B": 2.52,
+          "economic_net_income_B": 1.8695,
+          "economic_EPS": 3.279824561403509
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 8.5,
+            "economic_gross_margin": 0.39,
+            "opex_ex_SBC_B": 0,
+            "SBC_expense_B": 0,
+            "net_interest_expense_B": 0.17,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.59,
+            "PE": 29,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0.111,
+            "margin_definition": "economic EBIT margin after recurringSBC (genericformula marginfield); PNR subtractsadditionalcashrestructuring separately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 125.941102,
+          "return_pct": 70.582557,
+          "economic_EBIT_B": 3.315,
+          "economic_net_income_B": 2.5622499999999997,
+          "economic_EPS": 4.342796610169491
+        }
+      ],
+      "reference_price": 73.83
+    },
+    {
+      "rank": 28,
+      "ticker": "CRDO",
+      "reason": "已有AEC利润但持续SBC后基准低于当前价格；不否定光学第二引擎。",
+      "reentry_conditions": "新光产品实际利润和客户分散超桥，或更好买价，可替CLS边际席。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_gross_margin": 0.64,
+            "opex_ex_SBC_B": 0.55,
+            "SBC_expense_B": 0.45,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.21,
+            "PE": 24,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 45.851429,
+          "return_pct": -77.170171,
+          "economic_EBIT_B": 0.4719999999999999,
+          "economic_net_income_B": 0.40119999999999995,
+          "economic_EPS": 1.9104761904761902
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 3.7,
+            "economic_gross_margin": 0.68,
+            "opex_ex_SBC_B": 0.7,
+            "SBC_expense_B": 0.6,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.218,
+            "PE": 36,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 170.686239,
+          "return_pct": -15.013823,
+          "economic_EBIT_B": 1.2160000000000006,
+          "economic_net_income_B": 1.0336000000000005,
+          "economic_EPS": 4.741284403669727
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 5,
+            "economic_gross_margin": 0.69,
+            "opex_ex_SBC_B": 0.88,
+            "SBC_expense_B": 0.72,
+            "net_interest_expense_B": 0,
+            "tax_rate": 0.15,
+            "FD_shares_B": 0.225,
+            "PE": 44,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 307.511111,
+          "return_pct": 53.112483,
+          "economic_EBIT_B": 1.8499999999999999,
+          "economic_net_income_B": 1.5724999999999998,
+          "economic_EPS": 6.988888888888888
+        }
+      ],
+      "reference_price": 200.84
+    },
+    {
+      "rank": 29,
+      "ticker": "AAOI",
+      "reason": "产能和1.6T资格具有右尾，但销量、SBC和融资股数后基准不足。",
+      "reentry_conditions": "合格量产、正税前利润和现金兑现显著上修，可挑战PSIX/POET。",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "inputs": {
+            "revenue_B": 1.2,
+            "economic_gross_margin": 0.28,
+            "opex_ex_SBC_B": 0.22,
+            "SBC_expense_B": 0.06,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.11,
+            "PE": 20,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 5.105455,
+          "return_pct": -94.929028,
+          "economic_EBIT_B": 0.05600000000000002,
+          "economic_net_income_B": 0.028080000000000015,
+          "economic_EPS": 0.25527272727272743
+        },
+        {
+          "scenario": "base",
+          "inputs": {
+            "revenue_B": 2.3,
+            "economic_gross_margin": 0.33,
+            "opex_ex_SBC_B": 0.27,
+            "SBC_expense_B": 0.08,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.12,
+            "PE": 30,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 75.855,
+          "return_pct": -24.65733,
+          "economic_EBIT_B": 0.409,
+          "economic_net_income_B": 0.30341999999999997,
+          "economic_EPS": 2.5284999999999997
+        },
+        {
+          "scenario": "bull",
+          "inputs": {
+            "revenue_B": 3.3,
+            "economic_gross_margin": 0.36,
+            "opex_ex_SBC_B": 0.33,
+            "SBC_expense_B": 0.1,
+            "net_interest_expense_B": 0.02,
+            "tax_rate": 0.22,
+            "FD_shares_B": 0.13,
+            "PE": 38,
+            "other_after_tax_B": 0,
+            "preferred_dividend_B": 0,
+            "margin_definition": "economic grossmargin afterproductionSBC; operatingSBCdeductedseparately"
+          },
+          "formula": "max(0,((revenue*economic_GM-opex_ex_SBC-SBC-interest)*(1-tax)+other_after_tax-preferred_dividend)/FD_shares*PE)",
+          "price": 168.264,
+          "return_pct": 67.127533,
+          "economic_EBIT_B": 0.7579999999999999,
+          "economic_net_income_B": 0.5756399999999999,
+          "economic_EPS": 4.427999999999999
+        }
+      ],
+      "reference_price": 100.68
+    }
+  ],
+  "decision_changes": [
+    "相较B1条件20：SMCI、CRM、BDC入选，MOD、FLNC、PGR移为候补；依据现金/资本和替代机会而非票数。",
+    "相较主席A：20个名称保留，但SMCI/PSIX及现金修复的排序重新调整，CARR置第20且以TSM作第21对照；保留不是免复核。",
+    "SMCI旧未审计淘汰理由撤销；FY26巨额负CFO和ITGC问题保留为等待条件。",
+    "NVDA费用含SBC不再扣；AVGO扣一次；MU90%OP旧错误修复而不强制回周期谷底；CLS剔TRS。",
+    "MOD新买家无旧THRM分派；PNR Taco已交割；VST采用94%/72%套保并将机会区间与正式指导分开。",
+    "KYTX一年数据已发生，100M左右融资后股数替代70M；BNTX以V2末审权益版模型为唯一数字来源。"
+  ],
+  "selection_count": 20,
+  "all_project_members": true,
+  "model_sha256": "53bf75813a86f394b435110bb6f02567a16df4c80502388ece5aa50a5a4d6448",
+  "return_basis": "美元价格回报，不含未来股息、税费、交易成本；不是总收益，非统计概率区间",
+  "source_method": "继承各角色已实读原始/外部证据；主席全文阅读核验结论并作替代裁决，不冒称本人重复访问全部网页",
+  "portfolio_note": "研究优先级和行动条件，不是20等权马上买入；未提供无校准依据的组合期望回报/最大回撤"
+}

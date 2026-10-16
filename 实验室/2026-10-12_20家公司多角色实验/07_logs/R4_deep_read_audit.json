@@ -1,0 +1,362 @@
+[
+  {
+    "ticker": "CRDO",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-22.md",
+    "locators": [
+      5,
+      17,
+      19,
+      22,
+      34
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "AAOI",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-09-22.md",
+    "locators": [
+      13,
+      19,
+      42,
+      64,
+      65
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "COHR",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-09-22.md",
+    "locators": [
+      13,
+      20,
+      24,
+      26,
+      28
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "MOD",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md",
+    "locators": [
+      15,
+      16,
+      20,
+      46,
+      57
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "FLNC",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-09-22.md",
+    "locators": [
+      19,
+      23,
+      25,
+      51,
+      59
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "AMPX",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-09-22.md",
+    "locators": [
+      4,
+      10,
+      17,
+      18,
+      24
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "IREN",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/IREN_IREN_Limited_公司调研_2026-09-26.md",
+    "locators": [
+      5,
+      15,
+      19,
+      21,
+      23
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "NBIS",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/NBIS_Nebius_Group_公司调研_2026-09-26.md",
+    "locators": [
+      11,
+      19,
+      36,
+      51,
+      65
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "CRWV",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-10-11.md",
+    "locators": [
+      19,
+      20,
+      21,
+      24,
+      36
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "APLD",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/APLD_Applied_Digital_公司调研_2026-10-11.md",
+    "locators": [
+      16,
+      17,
+      18,
+      22,
+      39
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "ASTS",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/ASTS_AST_SpaceMobile_公司调研_2026-09-26.md",
+    "locators": [
+      18,
+      19,
+      20,
+      23,
+      24
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "RDW",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/RDW_Redwire_公司调研_2026-09-26.md",
+    "locators": [
+      3,
+      9,
+      14,
+      17,
+      20
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "RKLB",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/RKLB_Rocket_Lab_公司调研_2026-09-26.md",
+    "locators": [
+      11,
+      14,
+      15,
+      17,
+      46
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "PL",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/航空航天_卫星_高可靠系统/PL_Planet_Labs_公司调研_2026-09-26.md",
+    "locators": [
+      13,
+      23,
+      52,
+      72,
+      96
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "KYTX",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-11.md",
+    "locators": [
+      16,
+      18,
+      22,
+      48,
+      64
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "BNTX",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md",
+    "locators": [
+      13,
+      14,
+      77,
+      78,
+      80
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "IONS",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-11.md",
+    "locators": [
+      15,
+      17,
+      19,
+      21,
+      80
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "ALNY",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md",
+    "locators": [
+      13,
+      16,
+      17,
+      18,
+      20
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "LEU",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/LEU_Centrus_Energy_公司调研_2026-09-26.md",
+    "locators": [
+      11,
+      20,
+      22,
+      24,
+      26
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "PSIX",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-09-26.md",
+    "locators": [
+      18,
+      22,
+      24,
+      97,
+      100
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "NVTS",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/NVTS_Navitas_Semiconductor_公司调研_2026-09-22.md",
+    "locators": [
+      5,
+      16,
+      17,
+      51,
+      58
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "ALAB",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-09-18.md",
+    "locators": [
+      5,
+      22,
+      26,
+      56,
+      64
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "AXTI",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/AXTI_AXT_Inc_公司调研_2026-09-22.md",
+    "locators": [
+      17,
+      22,
+      55,
+      74,
+      108
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "POET",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-09-22.md",
+    "locators": [
+      18,
+      26,
+      30,
+      48,
+      201
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "LWLG",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-09-22.md",
+    "locators": [
+      9,
+      17,
+      21,
+      23,
+      47
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "PENG",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/PENG_Penguin_Solutions_公司调研_2026-10-11.md",
+    "locators": [
+      5,
+      14,
+      17,
+      19,
+      46
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "TTMI",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/电子材料_化学品_基板_PCB/TTMI_TTM_Technologies_公司调研_2026-09-22.md",
+    "locators": [
+      5,
+      17,
+      18,
+      53,
+      61
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "RMBS",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-09-22.md",
+    "locators": [
+      5,
+      20,
+      21,
+      24,
+      64
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "AMBA",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMBA_Ambarella_公司调研_2026-09-21.md",
+    "locators": [
+      11,
+      18,
+      19,
+      61,
+      69
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  },
+  {
+    "ticker": "VRT",
+    "path": "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/VRT_Vertiv_公司调研_2026-09-26.md",
+    "locators": [
+      11,
+      18,
+      23,
+      45,
+      60
+    ],
+    "read_scope": "原文开头经营锚、后文模型表/风险/资本条款定向深读；不是声称逐字读完全部报告"
+  }
+]

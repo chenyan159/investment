@@ -1,0 +1,137 @@
+[
+  {
+    "id": "S01",
+    "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+    "published_date": "2026-09-24",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "company",
+    "root_event": "KYSA8_oneyear",
+    "claim_supported_or_challenged": "26人单臂一年49%步行改善；Q4完整BLA计划，gMG入组至2027中，不能提前放进六个月读出"
+  },
+  {
+    "id": "S02",
+    "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla",
+    "published_date": "2026-05-12",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "company_regulatory_claim",
+    "root_event": "SPS_preBLA",
+    "claim_supported_or_challenged": "公司称FDA沟通支持单臂提交，不等于FDA批准；未来完整申报仍待完成"
+  },
+  {
+    "id": "S03",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/ene.70609",
+    "published_date": "2026-05-22",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "original_paper",
+    "root_event": "SPS_Mayo_history",
+    "claim_supported_or_challenged": "54人长期队列并非全体恶化，削弱自然病史必然恶化对照假设"
+  },
+  {
+    "id": "S04",
+    "url": "https://argenx.com/news/2026/press-release-3331862.html",
+    "published_date": "2026-07-23",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "company",
+    "root_event": "ARGX_Q226",
+    "claim_supported_or_challenged": "EMPASSION Q4；ITP H1 2027并非Q1确定；Q2销售1.516B净利472M"
+  },
+  {
+    "id": "S05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+    "published_date": "2026-08-04",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "company_SEC",
+    "root_event": "BNTX_Q226",
+    "claim_supported_or_challenged": "gotistobart关键阶段首次中期2026；DYNASTY-Breast02 Q4；现金证券€16.634B"
+  },
+  {
+    "id": "S06",
+    "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+    "published_date": "2026-09-23",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "partner",
+    "root_event": "sefaxersen_interim",
+    "claim_supported_or_challenged": "459人随机III期37周蛋白尿达标；长期肾功能105周不可当已证实"
+  },
+  {
+    "id": "S07",
+    "url": "https://ir.intelliatx.com/news-releases/news-release-details/intellia-therapeutics-announces-fda-acceptance-biologics-license",
+    "published_date": "2026-09-08",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "competitor_company",
+    "root_event": "lonvo_z_BLA",
+    "claim_supported_or_challenged": "PDUFA 2027-03-10已受理、未批准；IONS竞争反证"
+  },
+  {
+    "id": "S08",
+    "url": "https://www.fiercebiotech.com/biotech/autoimmune-car-t-peers-hit-safety-snags-kyverna-touts-1-year-miv-cel-data",
+    "published_date": "2026-09-24",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "named_professional_media_Angus_Liu",
+    "root_event": "KYSA8_oneyear",
+    "claim_supported_or_challenged": "同一公司数据不是第二个试验；访谈有制造路线讨论，安全美化须以会议明细约束"
+  },
+  {
+    "id": "S09",
+    "url": "https://www.fiercebiotech.com/biotech/biontech-sets-survival-standard-hard-treat-cancer-ahead-pivotal-readout",
+    "published_date": "2026-09-14",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "named_professional_media_Nick_Paul_Taylor",
+    "root_event": "gotistobart_stage1",
+    "claim_supported_or_challenged": "阶段1疗效可观但严重治疗相关AE44.4%、停药15.6%，不能只看OS"
+  },
+  {
+    "id": "S10",
+    "url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+    "published_date": "2026-08-19",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "partner",
+    "root_event": "INTerpath001",
+    "claim_supported_or_challenged": "III期RFS/DMFS已阳性，OS仍随访；未来完整公布不可当第二次独立III期"
+  },
+  {
+    "id": "S11",
+    "url": "https://kyvernatx.com/wp-content/uploads/2026/09/KYSA_6_Ph2_PA_MGFA_AANEM_2026_Oral_Final1.pdf",
+    "published_date": "2026-09-29",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "original_conference",
+    "root_event": "KYSA6_phase2",
+    "claim_supported_or_challenged": "7人，2人严重中性粒细胞减少、3人G3/4事件；低级别CRS发生，不是无毒性"
+  },
+  {
+    "id": "S12",
+    "url": "https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-priority-review/priority-review",
+    "published_date": "undated_preexisting",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "regulator",
+    "root_event": "priority_review_rules",
+    "claim_supported_or_challenged": "优先审评是审评目标而非降低批准标准，未获得PDUFA不可硬填"
+  },
+  {
+    "id": "S13",
+    "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344607/kytx-20260630.htm",
+    "published_date": "2026-08-11",
+    "access_status": "opened_full_page_or_pdf; relevant passages read",
+    "source_type": "SEC_financial",
+    "root_event": "KYTX_Q226",
+    "claim_supported_or_challenged": "现金证券199.427M，半年CFO负81.903M；贷款各批次条件与股权工具须单列"
+  },
+  {
+    "id": "F01",
+    "url": "https://www.fda.gov/drugs/nda-and-bla-approvals/priority-review",
+    "published_date": null,
+    "access_status": "failed; replaced by S12",
+    "source_type": "regulator",
+    "root_event": "priority_review_rules",
+    "claim_supported_or_challenged": "no evidence taken"
+  },
+  {
+    "id": "F02",
+    "url": "https://clinicaltrials.gov/study/NCT06342960",
+    "published_date": null,
+    "access_status": "opened shell only; substantive registry record not retrieved",
+    "source_type": "registry",
+    "root_event": "KYSA3_status",
+    "claim_supported_or_challenged": "termination status remains local-source claim, not independently confirmed here"
+  }
+]

@@ -1,0 +1,723 @@
+{
+  "role": "R5_diversification",
+  "screened_count": 245,
+  "deep_read_tickers": [
+    "MRNA",
+    "BNTX",
+    "ALNY",
+    "IONS",
+    "ARGX",
+    "KYTX",
+    "COST",
+    "WMT",
+    "BJ",
+    "KR",
+    "TJX",
+    "PGR",
+    "TRV",
+    "CB",
+    "WRB",
+    "RNR",
+    "WM",
+    "RSG",
+    "WCN",
+    "CWST",
+    "AGCO",
+    "PNR",
+    "ADBE",
+    "NVDA",
+    "AVGO",
+    "MU",
+    "ON",
+    "BABA",
+    "MOD"
+  ],
+  "deep_read_method": "29家公司正文的经济机制、财务资本、近期模型和反证章节选择性深读；不是全篇逐字核验",
+  "nominations": [
+    {
+      "rank": 1,
+      "ticker": "NVDA",
+      "thesis": "平台现金创造与估值压缩后的盈利增长",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 156,
+      "base_price": 360,
+      "bull_price": 552,
+      "price_anchor": 226.32,
+      "valuation_formula": "研究情景EPS [13, 18, 23] × P/E [12, 20, 24]；FY28收入600–680bn工作区间、毛利约73%；用约24bn摊薄股数及税/费用归属检验18 EPS。",
+      "catalysts": [
+        "2027 Rubin交付、推理预算及现金回款"
+      ],
+      "kill_criteria": [
+        "客户融资支持损失与采购承诺同时上升；现金转换持续落后利润"
+      ],
+      "key_risks": [
+        "客户资本开支周期、信用支持、出口政策",
+        "净流动资产56.586bn减债33.366bn约23.22bn；战略股权不是现金"
+      ],
+      "capital_buffer_audit": "净流动资产56.586bn减债33.366bn约23.22bn；战略股权不是现金",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 2,
+      "ticker": "ADBE",
+      "thesis": "低倍数订阅现金流与AI付费修复",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 162,
+      "base_price": 330,
+      "bull_price": 513,
+      "price_anchor": 238.14,
+      "valuation_formula": "研究情景EPS [18, 22, 27] × P/E [9, 15, 19]；FY27收入28.7bn/GAAP经营利润10.15bn，本模型22 EPS要求税后约8bn、约0.37bn股；高端需AI净增。",
+      "catalysts": [
+        "2026Q4–2027付费净新增、文档与Firefly付费"
+      ],
+      "kill_criteria": [
+        "核心创意留存连续恶化且降价不能拉回付费"
+      ],
+      "key_risks": [
+        "AI替代、SBC、并购和回购挤占现金",
+        "现金短投5.639bn对债6.363bn，非净现金；可停回购保现金"
+      ],
+      "capital_buffer_audit": "现金短投5.639bn对债6.363bn，非净现金；可停回购保现金",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 3,
+      "ticker": "ALNY",
+      "thesis": "已盈利TTR商业化遭去积压预期打击后再增长",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 100,
+      "base_price": 289.0,
+      "bull_price": 480,
+      "price_anchor": 227.02,
+      "valuation_formula": "研究情景EPS [4, 8.5, 12] × P/E [25, 34, 40]；2027收入约6–7bn、正常税后利润约1.1bn/约0.13bn股形成8.5 EPS；Sanofi增量版税已限制毛利，不预计nuc CM上市。",
+      "catalysts": [
+        "2026Q4–2027一线新患者及净价",
+        "2027末PN试验进展"
+      ],
+      "kill_criteria": [
+        "连续两季TTR收入不增且付费患者/净价同步下降"
+      ],
+      "key_risks": [
+        "支付准入、口服竞品、已释放积压、基因编辑",
+        "流动性约3.3bn但2027/28可转债约0.363/0.661bn，版税融资现金义务仍在"
+      ],
+      "capital_buffer_audit": "流动性约3.3bn但2027/28可转债约0.363/0.661bn，版税融资现金义务仍在",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 4,
+      "ticker": "BNTX",
+      "thesis": "有消耗但资本充足的多资产肿瘤临床期权",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 57.5,
+      "base_price": 119.42,
+      "bull_price": 185.77,
+      "price_anchor": 95.84,
+      "valuation_formula": "ADS 1:1已原始确认。12–18月每ADS=(剩余净可用现金EUR13/15/16bn+肿瘤及疫苗EV EUR0/12/26bn)*假设FX1.15 / 摊薄0.26bn股；得到57.50/119.42/185.77美元。EV为研究情景而非DCF已核准值。",
+      "catalysts": [
+        "2026Q4 gotistobart确证阶段中期及T-Pam读数",
+        "2027监管推进"
+      ],
+      "kill_criteria": [
+        "主要独立读数均失败且年现金消耗超过EUR3bn，或治理转移损害权益"
+      ],
+      "key_risks": [
+        "多个试验相关失败、BMS分成、ADC权利、汇率与资本浪费",
+        "EUR16.6342bn现金证券非闲置现金；先扣未来消耗、退出/合同、债务与必要现金；未重复加BMS已收款"
+      ],
+      "capital_buffer_audit": "EUR16.6342bn现金证券非闲置现金；先扣未来消耗、退出/合同、债务与必要现金；未重复加BMS已收款",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 5,
+      "ticker": "PNR",
+      "thesis": "泳池去库后恢复加成熟水业务现金",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 37.0,
+      "base_price": 79.5,
+      "bull_price": 111.6,
+      "price_anchor": 52.33,
+      "valuation_formula": "研究情景EPS [3.7, 5.3, 6.2] × P/E [10, 15, 18]；2027经营利润约1.146bn，扣利息约0.15bn并按税率/约0.16bn股检验5.3 EPS；高端是渠道恢复，不靠AI TAM。",
+      "catalysts": [
+        "2026Q4–2027 Pool渠道正常化、Taco交割和协同"
+      ],
+      "kill_criteria": [
+        "终端同业恢复而PNR继续丢份额；收购融资侵蚀每股收益"
+      ],
+      "key_risks": [
+        "渠道控制、份额、利率、收购整合",
+        "成熟业务有现金，但Taco约1.425bn交易增加债务，不能称现金盒子"
+      ],
+      "capital_buffer_audit": "成熟业务有现金，但Taco约1.425bn交易增加债务，不能称现金盒子",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 6,
+      "ticker": "ARGX",
+      "thesis": "CIDP和gMG盈利增长为临床扩张供资",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 500,
+      "base_price": 992,
+      "bull_price": 1440,
+      "price_anchor": 812.3,
+      "valuation_formula": "研究情景EPS [20, 31, 40] × P/E [25, 32, 36]；2027归属净利约2bn/约64m股=31；2028较成熟销售约8bn仅作邻近验证，不移植2030突破。",
+      "catalysts": [
+        "2026Q4–2027 CIDP转化、肌炎申报、自动注射器"
+      ],
+      "kill_criteria": [
+        "已批准病种净价和持续治疗年同步下滑；收购后现金持续下降"
+      ],
+      "key_risks": [
+        "美国支付、单分子集中、UNITY失败、细胞疗法",
+        "6月流动资产5.184bn无金融借款；Forte宣布值2.2bn须扣，不能用旧余额"
+      ],
+      "capital_buffer_audit": "6月流动资产5.184bn无金融借款；Forte宣布值2.2bn须扣，不能用旧余额",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ARGX_argenx_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 7,
+      "ticker": "AVGO",
+      "thesis": "定制芯片放量与软件现金并存",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 200,
+      "base_price": 434.0,
+      "bull_price": 640,
+      "price_anchor": 354.73,
+      "valuation_formula": "研究情景EPS [10, 15.5, 20] × P/E [20, 28, 32]；FY27集团收入约157bn、经营利润约99bn的上游工作路径；归属税后和摊薄约4.8bn股约15.5 EPS，剔除非经常项另核。",
+      "catalysts": [
+        "2027 ASIC项目验收和软件续费现金"
+      ],
+      "kill_criteria": [
+        "客户项目延期伴随支持损失、现金利润持续背离"
+      ],
+      "key_risks": [
+        "客户集中、融资/租赁支持、供应承诺",
+        "软件能供资但供应采购及租赁支持有义务；不是无债现金盒子"
+      ],
+      "capital_buffer_audit": "软件能供资但供应采购及租赁支持有义务；不是无债现金盒子",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-18.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 8,
+      "ticker": "MU",
+      "thesis": "存储供需错配仍可能持续但用周期估值",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 390,
+      "base_price": 1120,
+      "bull_price": 1980,
+      "price_anchor": 989.04,
+      "valuation_formula": "研究情景EPS [65, 160, 220] × P/E [6, 7, 9]；FY27独立EPS条件；由FY26收入133.188bn与高毛利起点推演，基准不永久维持86.8%季度毛利。价格下跌与倍数压缩联动，不能拿4.79倍当安全证明。",
+      "catalysts": [
+        "2027合约重定价、HBM交付与新产能爬坡"
+      ],
+      "kill_criteria": [
+        "普通DRAM/NAND合约价转跌且客户库存升"
+      ],
+      "key_risks": [
+        "供给扩张、普通存储价格、盈利顶部",
+        "经营现金强，但客户押金12.747bn为履约/返还义务，巨额资本开支优先"
+      ],
+      "capital_buffer_audit": "经营现金强，但客户押金12.747bn为履约/返还义务，巨额资本开支优先",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-01.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 9,
+      "ticker": "ON",
+      "thesis": "汽车工业周期恢复和电源内容提升",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 39,
+      "base_price": 94.0,
+      "bull_price": 144,
+      "price_anchor": 76.0,
+      "valuation_formula": "研究情景EPS [3, 4.7, 6] × P/E [13, 20, 24]；2027原ON收入7.35bn、经营利润1.96bn为经营锚；约4.7 EPS需并购后稀释/利息独立复算，高端不要求2030毛利目标提前。",
+      "catalysts": [
+        "2027工厂利用率、EPP量产、Synaptics整合"
+      ],
+      "kill_criteria": [
+        "利用率不升且降价/收购稀释吞掉经营复苏"
+      ],
+      "key_risks": [
+        "汽车需求、SiC过剩、并购交换比",
+        "现金3.5145bn，须扣原债及目标净债约0.395bn；全股收购仍稀释"
+      ],
+      "capital_buffer_audit": "现金3.5145bn，须扣原债及目标净债约0.395bn；全股收购仍稀释",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-09-22.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 10,
+      "ticker": "AGCO",
+      "thesis": "农机库存周期拐点与PTx跨品牌升级",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 48,
+      "base_price": 136.0,
+      "bull_price": 216,
+      "price_anchor": 104.47,
+      "valuation_formula": "研究情景EPS [4, 8.5, 12] × P/E [12, 16, 18]；2027正常税后利润约0.60bn/70m股=8.5；依赖欧洲盈利维持、北美亏损缩小，非立即软件平台化。",
+      "catalysts": [
+        "2027农机经销商去库、PTx改装订单、融资到期处理"
+      ],
+      "kill_criteria": [
+        "经销商库存增而终端销量继续降；净债上升无盈利修复"
+      ],
+      "key_risks": [
+        "农户收入、商品价格、渠道库存、融资",
+        "6月净债2.154bn；2027债券0.4bn和授信到期，需留融资余量"
+      ],
+      "capital_buffer_audit": "6月净债2.154bn；2027债券0.4bn和授信到期，需留融资余量",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/机器人_工业自动化_智能硬件/AGCO_AGCO_Corporation_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 11,
+      "ticker": "IONS",
+      "thesis": "自主药品采用与新批准产品代替失败管线",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 23.95,
+      "base_price": 58,
+      "bull_price": 100.95,
+      "price_anchor": 43.67,
+      "valuation_formula": "12–18月 EV=2028销售1.3/1.9/2.6bn × 3.5/6/8；加剩余净现金0/0.2/0.4bn，除摊薄0.19/0.20/0.21bn股=23.95/58/100.95。销售为向前一年观察估计，债务和版税负担保留；不是2030移植。",
+      "catalysts": [
+        "2027 TRYNGOLZA付费启动、ZANVASTRO销售、合作审批"
+      ],
+      "kill_criteria": [
+        "TRYNGOLZA付费治疗年斜率不能支持2028约2.4万门槛且合作款落空"
+      ],
+      "key_risks": [
+        "降价后放量、基因编辑竞争、债务与版税融资",
+        "2028年6月0.575bn债务；RP自2028分享SPINRAZA比例升45%，现金平衡不等于无需融资"
+      ],
+      "capital_buffer_audit": "2028年6月0.575bn债务；RP自2028分享SPINRAZA比例升45%，现金平衡不等于无需融资",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 12,
+      "ticker": "BABA",
+      "thesis": "电商现金与中国云重估的不同地域驱动",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 65.0,
+      "base_price": 150,
+      "bull_price": 234,
+      "price_anchor": 110.78,
+      "valuation_formula": "研究情景EPS [6.5, 10, 13] × P/E [10, 15, 18]；情景美元ADS EPS为独立假设；必须核8普通股/ADS及人民币汇率和配售新股后才能执行。当前P/S货币错配不用。 补充已读本地正文56/311/313行：ADS1:8；9/23普通股约19.8925bn，即2.4866bn ADS权益。情景EPS6.5/10/13美元分别要求归属净利USD16.16/24.87/32.33bn；汇率和经营归属仍需原始文件复核。",
+      "catalysts": [
+        "2026Q4–2027云外部收入与利润、即时零售补贴收敛"
+      ],
+      "kill_criteria": [
+        "云利润增长却自由现金持续恶化且反复融资"
+      ],
+      "key_risks": [
+        "政策、资本开支、补贴竞争、FX和VIE",
+        "广义净流动性RMB207.975bn不是全可用；8月配售稀释约3.57%"
+      ],
+      "capital_buffer_audit": "广义净流动性RMB207.975bn不是全可用；8月配售稀释约3.57%",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/BABA_Alibaba_阿里巴巴_公司调研_2026-09-26.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "证券/分拆归属核验后配置"
+    },
+    {
+      "rank": 13,
+      "ticker": "MOD",
+      "thesis": "冷却交付与利润率恢复的经营杠杆",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": null,
+      "base_price": null,
+      "bull_price": null,
+      "price_anchor": 172.5,
+      "valuation_formula": "null：冻结正文9/26仍预计10/1分拆与10/2除权；10/12已越过窗口。原股东获得Gentherm权益并非新买MOD自动持有。须查实际交割、持续业务利润和摊薄股数，再用独立12–18月EPS×PE。先前72/210/338美元仅作为未核权益的粗略敏感性撤回，不作目标价。",
+      "catalysts": [
+        "2027客户验收、分拆及现金回款"
+      ],
+      "kill_criteria": [
+        "销售增但现金及毛利持续恶化；客户扩产延期"
+      ],
+      "key_risks": [
+        "客户集中、零件齐套、分拆归属",
+        "净债432.9m；165m预付款有履约负担，不当免费现金"
+      ],
+      "capital_buffer_audit": "净债432.9m；165m预付款有履约负担，不当免费现金",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "证券/分拆归属核验后配置"
+    },
+    {
+      "rank": 14,
+      "ticker": "KYTX",
+      "thesis": "小额高风险SPS注册/免疫重置期权",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 1.05,
+      "base_price": 11.41,
+      "bull_price": 21.25,
+      "price_anchor": 6.21,
+      "valuation_formula": "12–18月股价=(融资后剩余现金0.05/0.07/0.10bn+风险调整管线EV0.05/0.90/1.60bn)/摊薄0.095/0.085/0.080bn股=1.05/11.41/21.25。先计从61.57m股增发到80–95m；EV研究假设，非成熟DCF。",
+      "catalysts": [
+        "2026Q4完整BLA",
+        "2027受理/审批",
+        "gMG入组，关键结果可能2027末–2028"
+      ],
+      "kill_criteria": [
+        "CMC/安全实质阻断、需新增随机SPS试验而无融资"
+      ],
+      "key_risks": [
+        "临床归因、单臂样本、制造/支付、重度稀释；灾难近零",
+        "6月199.427m，H1烧81.903m，借款25m；额度150m非可用现金；预计新增融资150–190m"
+      ],
+      "capital_buffer_audit": "6月199.427m，H1烧81.903m，借款25m；额度150m非可用现金；预计新增融资150–190m",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中低",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "小额临床期权，非缓冲核心"
+    },
+    {
+      "rank": 15,
+      "ticker": "PGR",
+      "thesis": "风险定价优势与家庭捆绑份额增长",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 130,
+      "base_price": 272,
+      "bull_price": 399,
+      "price_anchor": 220.28,
+      "valuation_formula": "研究情景EPS [10, 16, 21] × P/E [13, 17, 19]；EPS不按低灾害CR87.2永久外推；2027净已赚保费约90–95bn、CR正常化约91–93%、投资收入与税后归属支持中枢。",
+      "catalysts": [
+        "2027月度保单、承保质量及家庭捆绑"
+      ],
+      "kill_criteria": [
+        "保单失速并CR持续高于96%，长尾储备追加"
+      ],
+      "key_risks": [
+        "降价竞争、维修/诉讼通胀、巨灾",
+        "32.9bn法定盈余支持承保；99.7bn投资资产对应大量保单负债，不是净现金"
+      ],
+      "capital_buffer_audit": "32.9bn法定盈余支持承保；99.7bn投资资产对应大量保单负债，不是净现金",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 16,
+      "ticker": "BJ",
+      "thesis": "较合理估值的会员新店复制",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 64,
+      "base_price": 122.4,
+      "bull_price": 168,
+      "price_anchor": 99.8,
+      "valuation_formula": "研究情景EPS [4, 5.1, 6] × P/E [16, 24, 28]；FY27经营利润0.89bn、净利0.618bn；约121m股=5.1，较强为Texas续费/新店成熟快。",
+      "catalysts": [
+        "2027新店首轮正常价续费与同店商品量"
+      ],
+      "kill_criteria": [
+        "会员增但租赁后FCF/股下降，汽油利润掩盖商品差"
+      ],
+      "key_risks": [
+        "新店资本、租赁、汽油利润、会员折扣",
+        "净债/EBITDA低于1倍是政策目标且不含租赁；真实H1现金182.1m低于调整值"
+      ],
+      "capital_buffer_audit": "净债/EBITDA低于1倍是政策目标且不含租赁；真实H1现金182.1m低于调整值",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 17,
+      "ticker": "RNR",
+      "thesis": "低倍数再保险与第三方资本收费右尾",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 144,
+      "base_price": 385,
+      "bull_price": 600,
+      "price_anchor": 338.87,
+      "valuation_formula": "研究情景EPS [18, 35, 50] × P/E [8, 11, 12]；2027普通股EPS需扣外部并表资本和优先股；35 EPS把灾损正常化，50仅低灾害/费率韧性条件，非照搬合并收入。",
+      "catalysts": [
+        "2027年1月续保价格、分出成本和回购"
+      ],
+      "kill_criteria": [
+        "灾害和责任险储备共振侵蚀普通股资本"
+      ],
+      "key_risks": [
+        "大灾、责任险长尾、软市场、资本退出",
+        "保险资产/浮存金不得当现金；第三方资本不全归普通股"
+      ],
+      "capital_buffer_audit": "保险资产/浮存金不得当现金；第三方资本不全归普通股",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/RNR_RenaissanceRe_Holdings_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 18,
+      "ticker": "KR",
+      "thesis": "低估食品零售的电商盈利与资本回报修复",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 37.8,
+      "base_price": 81.2,
+      "bull_price": 112,
+      "price_anchor": 62.56,
+      "valuation_formula": "研究情景EPS [4.2, 5.8, 7] × P/E [9, 14, 16]；2027 EPS5.8须营运现金改善，剔除退款/折旧减记；不是用回购独自支撑。",
+      "catalysts": [
+        "2027电商净利润、营运资本恢复、Giant Eagle交割"
+      ],
+      "kill_criteria": [
+        "件数继续下降、法律支出及收购吞噬FCF"
+      ],
+      "key_risks": [
+        "法律索赔、促销、并购/整合、调整现金流",
+        "现金1.676bn对含租赁债16.997bn，简化净债15.321bn；明显不是现金盒子"
+      ],
+      "capital_buffer_audit": "现金1.676bn对含租赁债16.997bn，简化净债15.321bn；明显不是现金盒子",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/零售_会员制_食品_折扣渠道/KR_The_Kroger_Co._克罗格_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 19,
+      "ticker": "CB",
+      "thesis": "分散承保与数字效率的较低倍数复利",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 220,
+      "base_price": 406,
+      "bull_price": 576,
+      "price_anchor": 345.06,
+      "valuation_formula": "研究情景EPS [22, 29, 36] × P/E [10, 14, 16]；2027归属核心盈利约10.8bn/约0.37bn股=29；未来巨灾与责任险已正常化，36需海外和效率兑现。",
+      "catalysts": [
+        "2027中小险/海外增长、费用率下降与资本回报"
+      ],
+      "kill_criteria": [
+        "责任险趋势持续超过费率且旧年储备反复上调"
+      ],
+      "key_risks": [
+        "长尾赔款、灾害、软化费率、寿险保证",
+        "175bn现金投资对应赔款等巨额负债；只看可上划资本与普通股权益"
+      ],
+      "capital_buffer_audit": "175bn现金投资对应赔款等巨额负债；只看可上划资本与普通股权益",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/CB_Chubb_Limited_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    },
+    {
+      "rank": 20,
+      "ticker": "WM",
+      "thesis": "再投资高峰回落、医疗整合和自动化兑现",
+      "horizon_months": [
+        12,
+        18
+      ],
+      "bear_price": 157.5,
+      "base_price": 256.5,
+      "bull_price": 319,
+      "price_anchor": 211.14,
+      "valuation_formula": "研究情景EPS [7.5, 9.5, 11] × P/E [21, 27, 29]；2027经营现金/利润改善支持9.5 EPS；不是把RNG全部项目毛收益加给股东。",
+      "catalysts": [
+        "2027医疗协同、RNG余下项目和资本开支下降"
+      ],
+      "kill_criteria": [
+        "收费不能覆盖成本，医疗客户流失，协同靠调整项"
+      ],
+      "key_risks": [
+        "负债、项目回报、环境责任；机会成本高于临床/周期弹性",
+        "6月总债23.356bn现金0.557bn，净债22.799bn；成熟收费缓冲非现金下限"
+      ],
+      "capital_buffer_audit": "6月总债23.356bn现金0.557bn，净债22.799bn；成熟收费缓冲非现金下限",
+      "evidence": [
+        "01_inputs/frozen/基本面/公司调研/结果/环境服务_固废_回收_资源化/WM_Waste_Management_WM_公司调研_2026-10-11.md（正文经营、资本与反证章节）"
+      ],
+      "confidence": "中",
+      "scenario_status": "独立条件估值；非校准概率；EPS/倍数均为假设，非Yahoo预测",
+      "action": "可进入终轮比较，不因预测不确定一律等待"
+    }
+  ],
+  "alternates": [
+    {
+      "ticker": "TJX",
+      "reason": "净现金和折扣渠道较好，但主力成交弱、24.6倍前瞻估值使高回报证据弱于BJ。"
+    },
+    {
+      "ticker": "WCN",
+      "reason": "价格/自动化及环境支出回落可修复；EPA新增工程令2027现金恢复有歧义，若确认现金见底可替代WM。"
+    },
+    {
+      "ticker": "TRV",
+      "reason": "12.2倍有价值，但低灾害与准备金贡献解释大部分利润跃升，增长弱于PGR；可替代RNR降低巨灾弹性。"
+    },
+    {
+      "ticker": "WRB",
+      "reason": "专业险经营优良、投资收入韧性；14.9倍并不明显优于CB，责任险长尾仍在。"
+    },
+    {
+      "ticker": "COST",
+      "reason": "高质量净现金约15.1bn，但38.4倍、约10%经营增长不足以支持本任务的高收益优先级。"
+    }
+  ],
+  "exclusions": [
+    {
+      "ticker": "MRNA",
+      "reason": "INT阳性与新流感批准是实质亮点，但213.74美元价格对当前烧钱业务要求高，30亿美元新债和流动性门槛削弱现金底；10月24日完整数据仍未知。"
+    },
+    {
+      "ticker": "WMT",
+      "reason": "广告和电商利润实质改善，但35倍前瞻估值、高capex及回购超FCF，使资本缓冲/预期差较弱。"
+    },
+    {
+      "ticker": "RSG",
+      "reason": "服务网络成熟，但27倍、ES利润弱与收购投资后现金缺口，不如WM的近期整合兑现。"
+    },
+    {
+      "ticker": "CWST",
+      "reason": "每股完整现金增长弱于总规模，增发与三地处置容量退出风险；59倍前瞻EPS难补偿。"
+    },
+    {
+      "ticker": "CRWV",
+      "reason": "融资依赖及客户信用与AI预算高度相关，不满足本角色独立缓冲"
+    },
+    {
+      "ticker": "NET",
+      "reason": "极高倍数，缺少足够近端现金定价缓冲"
+    },
+    {
+      "ticker": "SMR",
+      "reason": "商业化和融资时点难在3–18月形成可审计下行缓冲"
+    }
+  ],
+  "open_questions": [
+    "ALNY 2027 GAAP/经济EPS桥需逐项复算，不能直接拿vendor 12.42 EPS。",
+    "BNTX EV临床情景需核各地域权益；现金估值用FX情景非现汇。",
+    "BABA ADS比率及配售、MOD分拆权利、ON交换股数交给证券核验。",
+    "保险普通股利润需统一巨灾、准备金、外部资本；不能比较未经正常化的PE。",
+    "KYTX最新贷款契约/融资价格及FDA实际审评日需核；当前尚无确定PDUFA日。"
+  ],
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "price_date": "2026-10-12"
+}

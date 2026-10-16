@@ -1,0 +1,11 @@
+{
+  "price_date": "2026-10-12",
+  "information_cutoff": "2026-10-12T20:50:00-07:00",
+  "access_date_utc": "2026-10-13",
+  "currency": "USD",
+  "primary": {"ticker":"QQQ","regular_close":746.04,"url":"https://stockanalysis.com/etf/qqq/history/","status":"opened_and_read_dated_Oct12_history_row"},
+  "secondary": {"ticker":"SPY","regular_close":778.10,"url":"https://stockanalysis.com/etf/spy/history/","status":"opened_and_read_dated_Oct12_history_row"},
+  "checkpoints": ["2027-01-12","2027-04-12"],
+  "return_method": "For later reviews: price return and total shareholder return separately; adjust splits and distributions consistently, no annualization. Window touch of 2x and checkpoint close of 2x are separate outcomes. No FX, personal taxes or fees included.",
+  "retrieval_note": "Normal closes verified from price-history tables, not after-hours headline quotes. Same provider is one price source, not two independent market feeds."
+}

@@ -1,0 +1,57 @@
+{
+  "ticker": "KR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:36:08-07:00",
+  "reference_price": {
+    "value": 61.64,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-02",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        59.52,
+        59.52
+      ],
+      "target_price": [
+        44.67,
+        54.05
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        89.14,
+        89.14
+      ],
+      "target_price": [
+        87.93,
+        102.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        113.9,
+        113.9
+      ],
+      "target_price": [
+        121.64,
+        140.18
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        139.28,
+        139.28
+      ],
+      "target_price": [
+        160.07,
+        182.74
+      ],
+      "evidence": "weak"
+    }
+  }
+}

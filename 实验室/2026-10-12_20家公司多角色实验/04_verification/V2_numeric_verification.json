@@ -1,0 +1,507 @@
+{
+  "role": "V2",
+  "all_29_have_security_price_arithmetic_status": true,
+  "models_count": 29,
+  "scenario_count": 87,
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        174.991667,
+        367.561506,
+        569.142857
+      ],
+      "returns_pct": [
+        -22.679539,
+        62.407877,
+        151.477049
+      ],
+      "unresolved": "600/760B are V2 conditional budgets, not guidance; financing-backed customer demand and commitments remain a tail risk.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "MU",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        487.066667,
+        1437.738362,
+        2187.530172
+      ],
+      "returns_pct": [
+        -50.753593,
+        45.367059,
+        121.177118
+      ],
+      "unresolved": "Base88% economic GM and9.5B total cost need verification each quarter; reported Q1 adjusted86.25 vs GAAP85.95 demonstrates costs cannot silently disappear.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "AVGO",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        237.1656,
+        483.5376,
+        744.522772
+      ],
+      "returns_pct": [
+        -33.141939,
+        36.311448,
+        109.884355
+      ],
+      "unresolved": "Custom silicon customer concentration and future integration charges; larger SBC than budget reduces EPS.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "CLS",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        212.123077,
+        513.636364,
+        816.296296
+      ],
+      "returns_pct": [
+        -38.957388,
+        47.809026,
+        134.905409
+      ],
+      "unresolved": "39B delivery and13% economic GM are assumptions; working capital can lag EPS.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "CRDO",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        45.851429,
+        170.686239,
+        307.511111
+      ],
+      "returns_pct": [
+        -77.170171,
+        -15.013823,
+        53.112483
+      ],
+      "unresolved": "Customer concentration and SBC budget are key; reserve rather than automatic exclusion.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "AAOI",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        5.105455,
+        75.855,
+        168.264
+      ],
+      "returns_pct": [
+        -94.929028,
+        -24.65733,
+        67.127533
+      ],
+      "unresolved": "Revenue ramp/customer warrants financing may exceed allowance; downside large.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "PSIX",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        26.25,
+        83.785714,
+        166.32
+      ],
+      "returns_pct": [
+        -47.60479,
+        67.236955,
+        231.976048
+      ],
+      "unresolved": "IncrementalDC orders not management guaranteed; customer concentration and manufacturing execution.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "SNDK",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        570.5625,
+        1855.833333,
+        3037.333333
+      ],
+      "returns_pct": [
+        -61.638473,
+        24.776165,
+        104.213815
+      ],
+      "unresolved": "Cycle peak cannot be treated as guaranteed; customer deposit/contract economics do not make all capex free.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "TSM",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        267.710983,
+        543.737958,
+        819.445087
+      ],
+      "returns_pct": [
+        -39.752226,
+        22.367043,
+        84.414333
+      ],
+      "unresolved": "Five ordinary shares per ADS inherited company disclosure; FX affects model economic margin; geopolitics non-Gaussian tail.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "ADBE",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        172.26,
+        378.607895,
+        542.0688
+      ],
+      "returns_pct": [
+        -27.664399,
+        58.985427,
+        127.626102
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "PNR",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        37.096296,
+        81.475404,
+        123.5125
+      ],
+      "returns_pct": [
+        -29.110842,
+        55.695402,
+        136.02618
+      ],
+      "unresolved": "Taco synergy/Pool recovery assumptions not acquired historical earnings;166bp base interest sensitivity meaningful.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "ARGX",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        540.472441,
+        1167.075,
+        1689.732
+      ],
+      "returns_pct": [
+        -33.463937,
+        43.675366,
+        108.01822
+      ],
+      "unresolved": "Share1:1 ratio inherited; actual full-year total recurring cost may rise;8.1B alternate revenue cuts base valuation materially.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "ALNY",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        80.357143,
+        281.6,
+        471.2
+      ],
+      "returns_pct": [
+        -64.603496,
+        24.041935,
+        107.558805
+      ],
+      "unresolved": "S2 opaque EBIT→NI residual replaced with explicit20% normalized tax inbase/bull and100M netinterest/financingexpense; royaltiesnotdeductedagain. FutureBlackstone/royaltyfinancingcashtermsmayrequirehighercharge; V2doesnotinventpositiveotherincometopreservetarget.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "AGCO",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        55.233803,
+        155.478873,
+        237.711111
+      ],
+      "returns_pct": [
+        -47.129508,
+        48.826336,
+        127.54007
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "CARR",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        32.045509,
+        71.854146,
+        109.546667
+      ],
+      "returns_pct": [
+        -42.176996,
+        29.653819,
+        97.666306
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "MCHP",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        26.457143,
+        78.715789,
+        125.941102
+      ],
+      "returns_pct": [
+        -64.16478,
+        6.617621,
+        70.582557
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "SMCI",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        18.6825,
+        71.266071,
+        163.24
+      ],
+      "returns_pct": [
+        -53.270385,
+        78.254306,
+        308.304152
+      ],
+      "unresolved": "Final2026-08-31 audited10K status inheritedV1/root, not August11 preliminary financials; BDO unqualifiedfinancialaudit with ITGC weakness is not all-audit failure. FY26NI2.2305B vsCFO-6.8099B: base71.27requiresworkingcapitalconversion, notmerelyQ4positive747MCFO. Exportinvestigationrequiresconditions.",
+      "verdict": "可复活但等待现金转换；全年CFO负6.81B使EPS模型不可单独支持立即行动"
+    },
+    {
+      "ticker": "BDC",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        30.243902,
+        153.795732,
+        254.464286
+      ],
+      "returns_pct": [
+        -71.275617,
+        46.068698,
+        141.679443
+      ],
+      "unresolved": "Acquisition integration and netdebt1.95B dependFCF; neither refinancing nor synergycertain.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "MOD",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        49.650179,
+        214.910714,
+        339.614035
+      ],
+      "returns_pct": [
+        -71.217288,
+        24.585921,
+        96.877702
+      ],
+      "unresolved": "21%economicEBITDAmargin needs mix/utilization; no repeatTRS style nonoperatinggains.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "IREN",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        11.516667,
+        48.075472,
+        86.166667
+      ],
+      "returns_pct": [
+        -66.90613,
+        38.147907,
+        147.605364
+      ],
+      "unresolved": "Fullsignedproject capex/funding waterfallsnotclosed; conditionalonly. EBITDA is not shareholdercash; maintenanceGPUreplacement deducted in crosscheck, may forcefuturefunding.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    },
+    {
+      "ticker": "FLNC",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        1.6,
+        8.318182,
+        17.318182
+      ],
+      "returns_pct": [
+        -77.369165,
+        17.654623,
+        144.953067
+      ],
+      "unresolved": "FY26Septreset2.4Brevenue/-200MEBITDA supersedesAug. Futurefunding/TRAobligations andwarranttermssensitivity unresolved; onlyconditionalrepairseat.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    },
+    {
+      "ticker": "VST",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        107.761628,
+        194.247788,
+        288.537313
+      ],
+      "returns_pct": [
+        -31.852509,
+        22.840566,
+        82.468421
+      ],
+      "unresolved": "Interest1.25–1.35B conditionalpostdealbudget; cashclosure/decommissioningandgrowthspendincluded. Needactualdebtbridgewhencloseoccurs; no full2030PPAmargin.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "CRM",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        141.176471,
+        295.714286,
+        466.666667
+      ],
+      "returns_pct": [
+        -39.647542,
+        26.416846,
+        99.498404
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "PGR",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        135.890785,
+        263.946575,
+        426.437113
+      ],
+      "returns_pct": [
+        -38.309976,
+        19.823214,
+        93.588666
+      ],
+      "unresolved": "",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "BABA",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        57.983193,
+        138.0,
+        249.768194
+      ],
+      "returns_pct": [
+        -47.65915,
+        24.571222,
+        125.463255
+      ],
+      "unresolved": "S2 residualnetequityincome5/10/15B mustbenetofminorities/interest; V2 preserves as explicitbudget, notverifiedforecast.",
+      "verdict": "条件模型通过；预测仍须经营兑现"
+    },
+    {
+      "ticker": "BNTX",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        69.303207,
+        131.684101,
+        273.456049
+      ],
+      "returns_pct": [
+        -27.688641,
+        37.399939,
+        185.325594
+      ],
+      "unresolved": "ExactOncoC4/Dualityroyaltytiers andDB1311USprofitsharepercentage notdisclosedhere:15%salesroyalty/50%USprofitshare are assumptions, notfacts. Geographic85%exChina/60%USsales are estimates. Productbudgets exclude otherdrugsinthecombination, andT-Pam/DB1311 areseparatenonoverlappingproducts; commercialcannibalization remains. Postobservationdevelopment/milestonePV2.5B assumed, notauditedliability.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    },
+    {
+      "ticker": "KYTX",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        0.953106,
+        8.373722,
+        27.606648
+      ],
+      "returns_pct": [
+        -84.652071,
+        34.842546,
+        344.551492
+      ],
+      "unresolved": "Base70% is subjective probability of1000-treatment commercial path; bull65% is probability ofbroader2000-treatment/180Mprofit path, notalowerprobabilityofthesameFDAapproval. Differentcommercialthresholds explain lowerbullprobability; no extraouterclinicaldiscount. Rewards12Mbudget notawardvaluation. Bear assumesfundingbeforefailure; financingfailurecouldapproachzero. Unknownclinicalprice/approvalrights.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    },
+    {
+      "ticker": "POET",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        3.292072,
+        7.075124,
+        19.021371
+      ],
+      "returns_pct": [
+        -48.641617,
+        10.376352,
+        196.745254
+      ],
+      "unresolved": "BSvolatility/rate/modelandconditionalcustomervestingnotobservablefuturefacts; tableMay2029 expiry vs narrativefiveyearsfor26.25trancheconflict retained. Allvested assumptionoverchargesbear; sensitivityrequired; modelnotprecisefairvalue.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    },
+    {
+      "ticker": "IONS",
+      "security_status": "PASS economicunit identified; source inheritance distinguished from independently read documents",
+      "arithmetic_status": "PASS: machine recomputed; 3 scenarios; unrounded inputs retained",
+      "prices": [
+        15.39875,
+        50.847619,
+        103.4
+      ],
+      "returns_pct": [
+        -64.738379,
+        16.436041,
+        136.775819
+      ],
+      "unresolved": "HighEVsalesrequires growthbeyond2028; basecashflowstillnearbreakeven. No expensiveopaque2030targetimport. Otherroyaltyrates .11/.18/.15 are disclosedrangeproxies, require productrightsauditforprecisevaluation.",
+      "verdict": "算术通过；条件候选/候补，不认定融资与商业成功已封口"
+    }
+  ],
+  "limitations": [
+    "Forecasts are conditionaljudgments, not statistically calibrated probabilities.",
+    "Modelcomplete != capitalfundinglegallycommitted; IREN/FLNC/POET/KYTX need conditions.",
+    "Primarydocuments independently reread forselected securities, rest inheritedV1/B2/S2 clearly stated.",
+    "No dividend forecasts: allreportedreturnsarepricereturn, not charterUSDtotalreturn."
+  ]
+}

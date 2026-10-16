@@ -1,0 +1,113 @@
+{
+  "sources": [
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_10月12日产业新证据.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://blogs.cisco.com/news/cisco-and-nvidia-announce-usfp-expanding-the-path-to-ai-connectivity",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_10月12日产业新证据.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_10月12日产业新证据.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38885382/",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_KYTX临床外部交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_KYTX临床外部交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_KYTX临床外部交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/07/alphabet-postq-ai-growth-accelerates-as-spending-weighs-on-cash-flow",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/google-quarterly-cloud-revenue-growth-beats-expectations-4806844",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_平台候补复活审查.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.pjm.com/markets-and-operations/rpm",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://services.pjm.com/annualreport2025/markets/",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-report.pdf",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    },
+    {
+      "url": "https://rss.globenewswire.com/news-release/2026/08/05/3339712/0/en/talen-energy-reports-second-quarter-2026-results-raises-2026-guidance.html",
+      "access_status": "cited in controller memo; consult memo for exact read/failure status",
+      "file": "03_round2\\Controller_非AI需求交叉核验.md",
+      "root_event": "not automatically independent of other sources"
+    }
+  ],
+  "note": "Citation inventory, not separate access or unique corporate event count"
+}

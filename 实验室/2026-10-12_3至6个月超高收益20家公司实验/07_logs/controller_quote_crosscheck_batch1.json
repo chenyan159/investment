@@ -1,0 +1,145 @@
+{
+  "accessed_utc": "2026-10-13T04:07:00Z",
+  "rows": [
+    {
+      "ticker": "AMPX",
+      "external_price": 8.87,
+      "asof_text": "Monday, October 12, 23:50:01 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "KYTX",
+      "external_price": 6.21,
+      "asof_text": "Monday, October 12, 21:35:00 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "BNTX",
+      "external_price": 95.84,
+      "asof_text": "Monday, October 12, 21:35:00 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "VISN",
+      "external_price": 6.08,
+      "asof_text": "Monday, October 12, 22:03:35 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "LEU",
+      "external_price": 135.31,
+      "asof_text": "Monday, October 12, 23:39:52 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "RDW",
+      "external_price": 9.22,
+      "asof_text": "Monday, October 12, 23:58:17 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "ENPH",
+      "external_price": 31.49,
+      "asof_text": "Monday, October 12, 23:32:40 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "NVTS",
+      "external_price": 9.99,
+      "asof_text": "Monday, October 12, 23:57:45 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "WOLF",
+      "external_price": 28.03,
+      "asof_text": "Monday, October 12, 23:50:16 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "TE",
+      "external_price": 3.21,
+      "asof_text": "Monday, October 12, 23:44:17 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "ASTS",
+      "external_price": 51.46,
+      "asof_text": "Monday, October 12, 23:59:51 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "RKLB",
+      "external_price": 65.71,
+      "asof_text": "Monday, October 12, 23:53:08 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "PL",
+      "external_price": 15.96,
+      "asof_text": "Monday, October 12, 23:59:15 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "AVAV",
+      "external_price": 131.51,
+      "asof_text": "Monday, October 12, 23:50:38 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "KTOS",
+      "external_price": 41.62,
+      "asof_text": "Monday, October 12, 23:40:42 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "AOSL",
+      "external_price": 26.58,
+      "asof_text": "Monday, October 12, 23:47:31 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "ACMR",
+      "external_price": 68.1,
+      "asof_text": "Monday, October 12, 23:56:54 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "MRAM",
+      "external_price": 15.28,
+      "asof_text": "Monday, October 12, 23:34:05 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "AMBA",
+      "external_price": 64.81,
+      "asof_text": "Monday, October 12, 23:15:28 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    },
+    {
+      "ticker": "PLAB",
+      "external_price": 29.24,
+      "asof_text": "Monday, October 12, 23:55:12 UTC",
+      "source": "web.finance",
+      "interpretation": "数值与冻结收盘锚对照；工具时间戳多为盘后，不独立证明正常收盘"
+    }
+  ]
+}

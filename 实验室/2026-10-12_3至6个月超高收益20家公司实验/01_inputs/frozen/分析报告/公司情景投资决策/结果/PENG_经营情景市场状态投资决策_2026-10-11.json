@@ -1,0 +1,57 @@
+{
+  "ticker": "PENG",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:45-07:00",
+  "reference_price": {
+    "value": 76.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-08-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        25.7,
+        25.7
+      ],
+      "target_price": [
+        14,
+        18
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        107.3,
+        107.3
+      ],
+      "target_price": [
+        80,
+        96
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        165.3,
+        165.3
+      ],
+      "target_price": [
+        156,
+        195
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        240.5,
+        240.5
+      ],
+      "target_price": [
+        250,
+        296
+      ],
+      "evidence": "weak"
+    }
+  }
+}

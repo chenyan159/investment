@@ -1,0 +1,137 @@
+{
+  "ticker": "DE",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:41:48-07:00",
+  "reference_price": {
+    "value": 620.93,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-11-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        580,
+        580
+      ],
+      "target_price": [
+        290,
+        360
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1110,
+        1110
+      ],
+      "target_price": [
+        640,
+        770
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1400,
+        1400
+      ],
+      "target_price": [
+        900,
+        1060
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1560,
+        1560
+      ],
+      "target_price": [
+        1080,
+        1260
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "AGCO",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "农业复苏及跨品牌PTx进攻、能承担约70%受损回撤时选AGCO；优先资本保全与北美平台确定性时选DE。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "常规工程机械/周期预算优先DE，其基准与受损回报更好；CAT的发电增长更强，但当前买价已要求高于其基准经营路径。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价常规资金优先DE；Tesla即使本报告乐观经营路径仍不足覆盖现价，Q3交付增长尚未证明无人车/机器人全成本盈利。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "稳健资本保全选DE；只有门店第二版成本、Exol外部收费与融资均验证且重新计算价格仍有空间时，专门突破资金才选SYM。"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义工业复利资金优先PH，航空/售后与流体控制分散农机波动，基准和左尾更好；FGC收购后的去杠杆必须继续兑现。"
+    },
+    {
+      "peer": "DCI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "工业稳健资金优先DCI，存量设备耗材更少依赖新农机采购且基准回报较高；若专押大农周期与自主作业，DE才更直接。"
+    },
+    {
+      "peer": "TEL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同样追求工业升级与可支付增长时优先TEL，正常化估值更低、基准及左右尾回报更优；AI互连增量仍需订单及现金证明。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "按现价的基准回报与资本保全优先DE；ADI的模拟设计壁垒强，但其正常增长已经被买价更充分预付，专押芯片内容量另议。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "一般核心成长资金优先MSFT，软件/云平台复用、客户采用与基准回报优于DE；必须扣现金CapEx、融资租赁及SBC后检验AI资本回收。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "优先广告/AI平台右尾且能跨过2027—2028资本现金缺口时选GOOGL；优先资本纪律及避免算力更新敞口时选DE，两者基准回报接近。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "防御核心与合同现金确定性优先LIN；要农业周期/精准作业上行弹性选DE，两者现价基准年化回报均未形成高安全边际。"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "S01",
+    "published_date": "2026-08-11",
+    "source_type": "company",
+    "root_event": "SMCI FY26 results",
+    "claim_supported_or_challenged": "FY27收入与稀释口径、现金债务；反对将Q4毛利年化",
+    "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S02",
+    "published_date": "2026-08-05",
+    "source_type": "SEC company release",
+    "root_event": "FLNC Q3",
+    "claim_supported_or_challenged": "旧季度现金/订单锚，指引已被S05替代",
+    "url": "https://www.sec.gov/Archives/edgar/data/1868941/000186894126000028/flncq3fy26earningspressrel.htm",
+    "access_status": "search_body_read_not_separate_open",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S03",
+    "published_date": "2026-10-07",
+    "source_type": "company",
+    "root_event": "APLD FY27Q1",
+    "claim_supported_or_challenged": "250MW已RFS；300MW年底目标；项目债/股份",
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S04",
+    "published_date": "2026-08-27",
+    "source_type": "SEC company release",
+    "root_event": "IREN FY26",
+    "claim_supported_or_challenged": "Horizon2–4年末目标，已签与运行ARR不同",
+    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S05",
+    "published_date": "2026-09-16",
+    "source_type": "company",
+    "root_event": "FLNC warning",
+    "claim_supported_or_challenged": "FY26收入2.4B、EBITDA-200M，年报给FY27计划",
+    "url": "https://fluenceenergy.gcs-web.com/news-releases/news-release-details/fluence-energy-announces-revised-guidance-fiscal-year-2026",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S06",
+    "published_date": "2026-07-14",
+    "source_type": "company blog",
+    "root_event": "POET qualification",
+    "claim_supported_or_challenged": "H2生产单与量产资格；500M多年关系并非确定半年收入",
+    "url": "https://www.poet-technologies.com/blog/faq-production-orders-cash-position-and-the-path-to-greater-revenue",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S07",
+    "published_date": "2026-09-02",
+    "source_type": "company",
+    "root_event": "AMPX SiCore500",
+    "claim_supported_or_challenged": "Q4商业供应为计划，不同于美国线2028",
+    "url": "https://ir.amprius.com/news-events/press-releases/detail/174/amprius-introduces-sicore500-high-energy-density-cells-for-unmanned-aviation",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S08",
+    "published_date": "2026-08-26",
+    "source_type": "company syndicated release",
+    "root_event": "VISN buyback",
+    "claim_supported_or_challenged": "150M新增授权非保证执行",
+    "url": "https://www.nasdaq.com/press-release/vistance-networks-increases-share-repurchase-program-150-million-2026-08-26",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S09",
+    "published_date": "2026-08",
+    "source_type": "SEC company release",
+    "root_event": "KYTX Q2",
+    "claim_supported_or_challenged": "Q4BLA计划、PMS早2027策略更新",
+    "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S10",
+    "published_date": "2026-09-17",
+    "source_type": "competitor primary",
+    "root_event": "Tower NewPhotonics production",
+    "claim_supported_or_challenged": "反驳POET唯一路线：已有800G–1.6T替代量产",
+    "url": "https://ir.towersemi.com/news-releases/news-release-details/newphotonicsr-and-tower-semiconductor-begin-high-volume",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S11",
+    "published_date": "2024-09-24",
+    "source_type": "customer primary",
+    "root_event": "Comcast FDX deployment",
+    "claim_supported_or_challenged": "客户独立部署但属于旧事实，不构成新近期催化",
+    "url": "https://corporate.comcast.com/press/releases/comcast-commscope-notch-milestone-next-generation-connectivity-millions-across-us",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S12",
+    "published_date": "2026-09-28",
+    "source_type": "company",
+    "root_event": "AMPX US line",
+    "claim_supported_or_challenged": "总项目100M，美国线early2028完成，超六个月",
+    "url": "https://amprius.com/amprius-secures-75-million-grant-for-american-high-energy-density-battery-production/",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S13",
+    "published_date": "2026-07-01",
+    "source_type": "company",
+    "root_event": "Centrus DOE agreement",
+    "claim_supported_or_challenged": "900M合同与2029新产能，现有产线商业过渡正在协商",
+    "url": "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S14",
+    "published_date": "2026-08",
+    "source_type": "management transcript hosted by media",
+    "root_event": "TE Q2",
+    "claim_supported_or_challenged": "G2预算510M、Q1首产与过桥融资；非独立分析",
+    "url": "https://www.webull.com/news/15429873268204544",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S15",
+    "published_date": "2026-08-06",
+    "source_type": "SEC company release",
+    "root_event": "PSIX Q2",
+    "claim_supported_or_challenged": "Q2销售-21% EPS0.73，不能借行业景气假设增长",
+    "url": "https://www.sec.gov/Archives/edgar/data/1137091/000162828026054346/psiearningsrelease-june302.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S16",
+    "published_date": "2026-09-24",
+    "source_type": "company clinical",
+    "root_event": "KYTX one-year",
+    "claim_supported_or_challenged": "26人单臂耐久性；Q4BLA与10/21–23会议，gMG年中2027",
+    "url": "https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-reports-positive-one-year-data",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S17",
+    "published_date": "2026-08-04",
+    "source_type": "competitor primary",
+    "root_event": "Cummins Q2",
+    "claim_supported_or_challenged": "Power Systems增长19%，反驳PSIX下滑都是行业原因",
+    "url": "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S18",
+    "published_date": "2026-10",
+    "source_type": "SEC registration",
+    "root_event": "TE IP payment dilution",
+    "claim_supported_or_challenged": "7.246M股票对价、10/5基础299.499M；转售不产生现金",
+    "url": "https://www.sec.gov/Archives/edgar/data/1992243/000121390026107285/ea0307695-424b7_t1energy.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S19",
+    "published_date": "2026-09-28",
+    "source_type": "SEC contract",
+    "root_event": "AMPX OTA",
+    "claim_supported_or_challenged": "承接控制器线索后独立重开：22.3M初始funded，按里程碑支付",
+    "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000065/attachment0001redacted2026.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S20",
+    "published_date": "2026-10-07",
+    "source_type": "company",
+    "root_event": "WOLF conditional loan",
+    "claim_supported_or_challenged": "1.5B条件承诺、7.5%FD权证、尚无确定交割",
+    "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-Announces-Conditional-30-Year-1-5-Billion-Loan-Commitment-from-U-S--Department-of-War-to-Advance-Domestic-Wide-Bandgap-Supply-Chain/default.aspx",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S21",
+    "published_date": "2026-09-14",
+    "source_type": "company",
+    "root_event": "ENPH SST",
+    "claim_supported_or_challenged": "11月全系统演示、2027试点；不是已下单",
+    "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S22",
+    "published_date": "2026-10-06",
+    "source_type": "SEC",
+    "root_event": "NVTS Claros close",
+    "claim_supported_or_challenged": "已交割必须从未来催化删除；另查10/20技术会",
+    "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926114051/tm2626897d3_8k.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S23",
+    "published_date": "2026-10-08",
+    "source_type": "professional media",
+    "root_event": "WOLF loan reporting",
+    "claim_supported_or_challenged": "专业媒体强调贷款条件及7.5%权证，复述同事件不算独立商业验证",
+    "url": "https://www.tomshardware.com/tech-industry/semiconductors/department-of-war-dishes-out-usd1-5-billion-loan-commitment-to-boost-semiconductor-supply-chain-wolfspeed-to-focus-on-national-security-applications-as-part-of-30-year-agreement",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S24",
+    "published_date": "2026-05",
+    "source_type": "short seller",
+    "root_event": "AMPX critique",
+    "claim_supported_or_challenged": "AR/制造权利质疑仅搜索线索；PDF访问失败，不当已证事实",
+    "url": "https://manateeresearch.com/wp-content/uploads/2026/05/AMPX-Final-1.pdf",
+    "access_status": "failed_open_search_only",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S25",
+    "published_date": "2026-07-30",
+    "source_type": "company",
+    "root_event": "ALNY Q2 and HTT calendar",
+    "claim_supported_or_challenged": "官方正文明确10/23首次人体HTT02资料与10/26讨论会；早期生物标记并非临床获益",
+    "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S26",
+    "published_date": "2026-08-05",
+    "source_type": "SEC company release",
+    "root_event": "RDW Q2 balance sheet",
+    "claim_supported_or_challenged": "现金557M、term debt50M、H1 CFO-31.602M；流动性607.8M不全为现金",
+    "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  },
+  {
+    "id": "S27",
+    "published_date": "2026-08-04",
+    "source_type": "SEC company release",
+    "root_event": "BNTX Q2 cash",
+    "claim_supported_or_challenged": "现金及证券16.6342B欧元；251.204M股除库存股；不得直接当美元",
+    "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+    "access_status": "opened_relevant_body_read",
+    "independence_note": "同一事件转载不增加独立事件数"
+  }
+]

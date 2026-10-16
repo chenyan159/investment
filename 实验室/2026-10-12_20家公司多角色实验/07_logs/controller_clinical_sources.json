@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "ticker": "KYTX",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38885382/",
+      "published_date": "2024-06-17",
+      "access_status": "opened PubMed primary case-report abstract; full PMC blocked",
+      "root_event": "2024 single patient; company employee coauthor"
+    },
+    {
+      "ticker": "KYTX",
+      "url": "https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005919.html",
+      "published_date": "2026-04",
+      "access_status": "opened original conference abstract",
+      "root_event": "KYSA-8 26 patients; same study as later corporate release"
+    },
+    {
+      "ticker": "KYTX",
+      "url": "https://www.nature.com/articles/s41582-026-01220-z",
+      "published_date": "2026-05-06",
+      "access_status": "opened public preview only; not separate clinical evidence",
+      "root_event": "KYSA-8 same conference trial, editorial interpretation"
+    }
+  ]
+}

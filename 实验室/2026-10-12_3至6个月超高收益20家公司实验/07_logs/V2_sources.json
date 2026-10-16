@@ -1,0 +1,407 @@
+{
+  "role": "V2",
+  "access_date_utc": "2026-10-13",
+  "sources": [
+    {
+      "id": "V2_MU",
+      "ticker": "MU",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+      ]
+    },
+    {
+      "id": "V2_SNDK",
+      "ticker": "SNDK",
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026053346/sndkq4-26ex991xpressrelease.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
+      ]
+    },
+    {
+      "id": "V2_SMCI",
+      "ticker": "SMCI",
+      "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ]
+    },
+    {
+      "id": "V2_IREN",
+      "ticker": "IREN",
+      "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-fy26-results",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://iren.gcs-web.com/news-releases/news-release-details/iren-closes-365bn-investment-grade-gpu-financing"
+      ]
+    },
+    {
+      "id": "V2_AAOI",
+      "ticker": "AAOI",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-announces-completion-previously"
+      ]
+    },
+    {
+      "id": "V2_CRDO",
+      "ticker": "CRDO",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_CRWV",
+      "ticker": "CRWV",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_UCTT",
+      "ticker": "UCTT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1275014/000162828026051853/q22026pressrelease.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_CLS",
+      "ticker": "CLS",
+      "url": "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_MOD",
+      "ticker": "MOD",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_COHR",
+      "ticker": "COHR",
+      "url": "https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/august-12/earnings-release-fy26-q4.pdf",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_KYTX",
+      "ticker": "KYTX",
+      "url": "https://www.sec.gov/Archives/edgar/data/1994702/000119312526344572/kytx-ex99_1.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_AMPX",
+      "ticker": "AMPX",
+      "url": "https://ir.amprius.com/news-events/press-releases/detail/172/amprius-technologies-reports-second-quarter-2026-financial-results-and-recent-business-highlights",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_ENPH",
+      "ticker": "ENPH",
+      "url": "https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_PSIX",
+      "ticker": "PSIX",
+      "url": "https://www.sec.gov/Archives/edgar/data/1137091/000119312526408371/d28951d8k.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_FLNC",
+      "ticker": "FLNC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868941/000186894126000029/flnc-20260630.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_VISN",
+      "ticker": "VISN",
+      "url": "https://www.sec.gov/Archives/edgar/data/1517228/000119312526336705/visn-ex99_1.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_BNTX",
+      "ticker": "BNTX",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_LEU",
+      "ticker": "LEU",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065059/000110465926107103/tm2625019d5_ex99-2.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_RDW",
+      "ticker": "RDW",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_AVAV",
+      "ticker": "AVAV",
+      "url": "https://investor.avinc.com/static-files/2e8254ff-1cc6-4041-bd07-943248b7820d",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_AOSL",
+      "ticker": "AOSL",
+      "url": "https://www.sec.gov/Archives/edgar/data/1387467/000162828026059261/aosl-20260630.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_ACMR",
+      "ticker": "ACMR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_AMBA",
+      "ticker": "AMBA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_MRAM",
+      "ticker": "MRAM",
+      "url": "https://www.sec.gov/Archives/edgar/data/1438423/000162828026053376/mram-20260630xexx991.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_CC",
+      "ticker": "CC",
+      "url": "https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-second-quarter-results",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_ALNY",
+      "ticker": "ALNY",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true,
+      "supplemental_primary_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000062/alny-20260630.htm"
+      ]
+    },
+    {
+      "id": "V2_IONS",
+      "ticker": "IONS",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_POET",
+      "ticker": "POET",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_ADBE",
+      "ticker": "ADBE",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_PNR",
+      "ticker": "PNR",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_PLAB",
+      "ticker": "PLAB",
+      "url": "https://photronicsinc.gcs-web.com/node/19681",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_ICHR",
+      "ticker": "ICHR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652535/000165253526000069/ichr-20260626.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_NVDA",
+      "ticker": "NVDA",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_APLD",
+      "ticker": "APLD",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_NBIS",
+      "ticker": "NBIS",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_TTMI",
+      "ticker": "TTMI",
+      "url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_relevant_passages",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    },
+    {
+      "id": "V2_AEIS",
+      "ticker": "AEIS",
+      "url": "https://ir.advancedenergy.com/media/document/811571e0-756f-4f18-ab22-e3dea8229615/assets/AEIS_2026_Q2_2026_Earnings_Press_Release.pdf",
+      "access_date_utc": "2026-10-13",
+      "access_status": "opened_primary_metadata_and_limited_text; capital facts inherited S1",
+      "note": "相关原始资料独开；具体读取段见V2_web_access_*.json，非全文通读。",
+      "not_full_filing_audit": true
+    }
+  ],
+  "raw_access_logs": [
+    "V2_web_access_1.json",
+    "V2_web_access_10.json",
+    "V2_web_access_11.json",
+    "V2_web_access_12.json",
+    "V2_web_access_13.json",
+    "V2_web_access_14.json",
+    "V2_web_access_15.json",
+    "V2_web_access_16.json",
+    "V2_web_access_17.json",
+    "V2_web_access_18.json",
+    "V2_web_access_19.json",
+    "V2_web_access_2.json",
+    "V2_web_access_20.json",
+    "V2_web_access_21.json",
+    "V2_web_access_22.json",
+    "V2_web_access_23.json",
+    "V2_web_access_24.json",
+    "V2_web_access_25.json",
+    "V2_web_access_26.json",
+    "V2_web_access_3.json",
+    "V2_web_access_4.json",
+    "V2_web_access_5.json",
+    "V2_web_access_6.json",
+    "V2_web_access_7.json",
+    "V2_web_access_8.json",
+    "V2_web_access_9.json"
+  ],
+  "inherited_local_inputs": [
+    "01_inputs/universe.json",
+    "03_round2/S1_ai_deep.json",
+    "03_round2/S2_nonai_deep.json",
+    "03_round2/B2_valuation_rebuttal.json",
+    "04_verification/控制器*.md"
+  ],
+  "failures": [
+    "LEU 424B5 initial open Internal Error; pricing EX99-2 succeeded, base shares inherited",
+    "AVAV node21391 Internal Error; official hosted call PDF succeeded",
+    "CC SEC 10Q Internal Error; company financial release succeeded"
+  ],
+  "reading_scope": "Original accesses are not evidence of complete full-document reading. Facts and arithmetic pass coverage distinct."
+}

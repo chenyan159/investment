@@ -1,0 +1,57 @@
+{
+  "ticker": "TJX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:36:00-07:00",
+  "reference_price": {
+    "value": 138.76,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-01",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        137.5,
+        137.5
+      ],
+      "target_price": [
+        87.4,
+        102.4
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        192.5,
+        192.5
+      ],
+      "target_price": [
+        156.7,
+        178.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        219.8,
+        219.8
+      ],
+      "target_price": [
+        186.9,
+        211.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        247.7,
+        247.7
+      ],
+      "target_price": [
+        219.8,
+        247.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}

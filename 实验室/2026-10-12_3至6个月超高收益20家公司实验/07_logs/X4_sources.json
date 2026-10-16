@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ENPH_SST",
+    "url": "https://newsroom.enphase.com/news-releases/news-release-details/enphase-advances-iq-solid-state-transformer-development-ai-data",
+    "published_date": "2026-09-08",
+    "access_status": "opened_relevant_full_body",
+    "source_type": "primary_company",
+    "root_event": "SST",
+    "claim": "11月全系统演示、2027客户试点，公司计划，不是规模收入"
+  },
+  {
+    "id": "AMPX_Q2",
+    "url": "https://ir.amprius.com/news-events/press-releases/detail/172/amprius-technologies-reports-second-quarter-2026-financial-results-and-recent-business-highlights",
+    "published_date": "2026-08-04",
+    "access_status": "opened_relevant_body_financial_highlights",
+    "source_type": "primary_company",
+    "root_event": "Q2",
+    "claim": "收入34m、毛利27%、全年收入至少140m；Stark2027开始且100m是多年机会"
+  },
+  {
+    "id": "AMPX_500",
+    "url": "https://ir.amprius.com/news-events/press-releases/detail/174/amprius-introduces-sicore500-high-energy-density-cells-for-unmanned-aviation",
+    "published_date": "2026-09-02",
+    "access_status": "opened_and_search_excerpt",
+    "source_type": "primary_company",
+    "root_event": "SiCore500",
+    "claim": "500Wh/kg的1C放电产品，Q4预计供应"
+  },
+  {
+    "id": "AMPX_OTA",
+    "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000065/attachment0001redacted2026.htm",
+    "published_date": "2026-09-28",
+    "access_status": "opened_sections_I_to_VIII",
+    "source_type": "primary_legal_agreement",
+    "root_event": "acCELLerate",
+    "claim": "9/23签署，74.793m总额、22.3m已拨款、固定价里程碑验收；产能与周期被删节，不可假设半年完工"
+  },
+  {
+    "id": "AMPX_8K",
+    "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000065/ampx-20260923.htm",
+    "published_date": "2026-09-28",
+    "access_status": "opened_excerpt",
+    "source_type": "primary_SEC",
+    "root_event": "acCELLerate",
+    "claim": "政府接受交付物后付费，不等于现金赠款全部到账"
+  },
+  {
+    "id": "LEU_DOE",
+    "url": "https://www.centrusenergy.com/news/centrus-signs-contract-with-department-of-energy-for-900-million-award-intends-to-transition-haleu-production-cascade-to-commercial-operation/",
+    "published_date": "2026-07-01",
+    "access_status": "opened_metadata_search_body",
+    "source_type": "primary_company",
+    "root_event": "DOE_expansion",
+    "claim": "900m已签；扩产不是半年新增产销"
+  },
+  {
+    "id": "WOLF_LOAN",
+    "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-conditional-30-year-loan-commitment-from-us-department-of-war-to-advance-domestic-wide-bandgap-supply-chain/",
+    "published_date": "2026-10-07",
+    "access_status": "opened_full_body",
+    "source_type": "primary_company",
+    "root_event": "OSC",
+    "claim": "附条件1.5bn贷款、最高7.5%完全稀释权益权证"
+  },
+  {
+    "id": "WOLF_8K",
+    "url": "https://www.sec.gov/Archives/edgar/data/895419/000119312526416987/d122407d8k.htm",
+    "published_date": "2026-10-07",
+    "access_status": "opened_item8_excerpt_plus_frozen_report",
+    "source_type": "primary_SEC",
+    "root_event": "OSC",
+    "claim": "600m首笔与900m后续项目款分开；750m配套含非现金类别，须终版条款"
+  },
+  {
+    "id": "RDW_Q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000121/exhibit991redwire06302026e.htm",
+    "published_date": "2026-08-05",
+    "access_status": "opened_metadata_search_detailed_body",
+    "source_type": "primary_SEC",
+    "root_event": "Q2",
+    "claim": "117.1m营收、542.1m合同backlog、450–500m全年指引；并购增长不等于有机增长"
+  },
+  {
+    "id": "FLNC_CUT",
+    "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926108270/tm2625477d1_ex99-1.htm",
+    "published_date": "2026-09-16",
+    "access_status": "opened_full_relevant_body",
+    "source_type": "primary_SEC",
+    "root_event": "guidance_cut",
+    "claim": "收入2.4bn、调整EBITDA-200m；下一财年现金中性只是目标"
+  },
+  {
+    "id": "KTOS_Q2",
+    "url": "https://www.kratosdefense.com/newsroom/kratos-reports-second-quarter-2026-financial-results",
+    "published_date": "2026-08-04",
+    "access_status": "opened_financial_operating_body",
+    "source_type": "primary_company",
+    "root_event": "Q2",
+    "claim": "458.8m收入、19.1%有机增长、38.2m调整EBITDA；订单增加但现金仍流出"
+  },
+  {
+    "id": "TE_Q2",
+    "url": "https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-second-quarter-2026-results",
+    "published_date": "2026-08-12",
+    "access_status": "opened_metadata_search_detailed_body",
+    "source_type": "primary_company",
+    "root_event": "G2",
+    "claim": "全面融资仍待完成；120m转债是过桥；G2首产2027Q1计划"
+  },
+  {
+    "id": "RKLB_10Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+    "published_date": "2026-08-10",
+    "access_status": "opened_metadata_plus_search_quotation",
+    "source_type": "primary_SEC",
+    "root_event": "Neutron",
+    "claim": "Q4送抵发射台，不是承诺Q4首飞成功"
+  },
+  {
+    "id": "ASTS_Q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342540/asts-ex99_2.htm",
+    "published_date": "2026-08-10",
+    "access_status": "opened_metadata_frozen_navigation",
+    "source_type": "primary_SEC",
+    "root_event": "BlueBird",
+    "claim": "45星时间取最新申报2027年初；部署验收与普通用户付费分开"
+  },
+  {
+    "id": "NVTS_CLOSE",
+    "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926114051/tm2626897d3_ex99-1.htm",
+    "published_date": "2026-10-06",
+    "access_status": "opened_full_body",
+    "source_type": "primary_SEC",
+    "root_event": "Claros",
+    "claim": "已完成收购；10/20技术webinar官方日期；不能仍写待交割"
+  },
+  {
+    "id": "NVTS_DEAL",
+    "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926100478/tm2623854d1_ex99-1.htm",
+    "published_date": "2026-08-24",
+    "access_status": "search_detailed_body",
+    "source_type": "primary_SEC",
+    "root_event": "Claros",
+    "claim": "232.8m最高对价；收入加速2028/2029；8bn是2030 SAM"
+  },
+  {
+    "id": "AVAV_Q1",
+    "url": "https://investor.avinc.com/node/21391",
+    "published_date": "2026-09-09",
+    "access_status": "search_detailed_excerpt",
+    "source_type": "primary_company",
+    "root_event": "Q1",
+    "claim": "53.4m调整EBITDA、0.59调整EPS、1.5bn已融资backlog"
+  },
+  {
+    "id": "AVAV_LOCUST",
+    "url": "https://www.avinc.com/category/press-release/",
+    "published_date": "2026-09-02",
+    "access_status": "search_excerpt_index",
+    "source_type": "primary_company",
+    "root_event": "EHEL",
+    "claim": "464.8m生产合同，多年，非未来6个月收入"
+  },
+  {
+    "id": "RDW_BEAR",
+    "url": "https://www.zacks.com/stock/news/2984715/should-investors-buy-rdw-as-defense-growth-meets-a-premium-valuation",
+    "published_date": "2026-09-03",
+    "access_status": "search_substantial_body_open_bot_block",
+    "source_type": "signed_opinion_Adarsh_Jaiswal",
+    "root_event": "valuation",
+    "claim": "作者中性：高估值、Space亏损、现金消耗、稀释；4.88x是该日12月前瞻口径"
+  },
+  {
+    "id": "RDW_BULL",
+    "url": "https://www.benzinga.com/quote/RDW/price-targets",
+    "published_date": "2026-08-10",
+    "access_status": "search_excerpt_aggregator_not_original_note",
+    "source_type": "attributed_analyst_Austin_Moeller_Canaccord",
+    "root_event": "valuation",
+    "claim": "买入目标15从14上调，无法取得完整研报；12月目标不可转6月目标"
+  },
+  {
+    "id": "ENPH_ANALYST",
+    "url": "https://www.tipranks.com/news/the-fly/enphase-energy-price-target-lowered-to-47-from-55-at-goldman-sachs-thefly-news",
+    "published_date": "2026-09-21",
+    "access_status": "search_excerpt_not_original_note",
+    "source_type": "attributed_analyst_Brian_Lee_Goldman",
+    "root_event": "valuation",
+    "claim": "维持买入但目标55降47，近端预期风险；未获得全文"
+  },
+  {
+    "id": "AMPX_INDUSTRY",
+    "url": "https://www.ainonline.com/aviation-news/futureflight/2026-09-09/amprius-boosts-energy-long-endurance-drones",
+    "published_date": "2026-09-10",
+    "access_status": "opened_metadata_search_excerpt",
+    "source_type": "industry_media",
+    "root_event": "SiCore500",
+    "claim": "技术适用长航时；乌克兰收入集中；未核完整署名，不能列签名研报"
+  },
+  {
+    "id": "AMPX_CAMINUS",
+    "url": "https://www.prnewswire.com/news-releases/caminus-signs-contract-manufacturing-agreement-with-amprius-technologies-for-us-pouch-cell-production-302897828.html",
+    "published_date": "2026-10-05",
+    "access_status": "controller_supplied_lead_independently_opened_body_lines475_484",
+    "source_type": "primary_manufacturing_partner",
+    "root_event": "US_pouch_2027Q1",
+    "claim": "资格批已进行，2027Q1计划量产；独立于OTA长期改造；未披露产量、价格或完全合规验收"
+  },
+  {
+    "id": "PSIX_REVOLVER",
+    "url": "https://www.sec.gov/Archives/edgar/data/1137091/000119312526408371/d28951d8k.htm",
+    "published_date": "2026-09-30",
+    "access_status": "opened_full_relevant_Item1.01_1.02_8.01",
+    "source_type": "SEC_8K_primary",
+    "root_event": "2026-09-25_revolver_refinancing",
+    "claim": "220m committed revolver to2029/9/25 atSOFR+1.8%;35m drawn to repay15m oldprincipal plusfees;credit capacity notcash"
+  }
+]

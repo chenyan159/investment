@@ -1,0 +1,17 @@
+{
+  "role": "Astra_chair",
+  "external_accesses": [],
+  "external_access_statement": "主席无独立外部请求；没有把继承来源升级为本角色独开。",
+  "local_read_scope": "主席深读S1/S2/B1/B2全部正文、首轮汇总及选择性R1卡、控制器补充、V1逐卡核心字段、V2全文及选择性全模型；全245只读取结构化universe，不声称逐份重读。无主席独立外部访问，来源为角色/控制器真实访问之继承。 已完整读取B2末轮四公司md/json与V2修订ALNY/UCTT/SMCI/ENPH，以及IREN/AAOI/CRWV/VISN资金复议；另深读冻结ADBE公司前200行、ALNY前105行及情景版税/利润相关段。",
+  "inherited_logs": [
+    "07_logs/S1_sources.json",
+    "07_logs/S2_sources.json",
+    "04_verification/V1_evidence.json",
+    "04_verification/V2_models.json"
+  ],
+  "input_hashes": {
+    "04_verification/V1_evidence.json": "b606591eb64e3f74f64ef54fe62cfb638b09dbe5148e0c554d9406bfa76fa53e",
+    "04_verification/V2_models.json": "44024567a4376682ba92109636a69fb32799edfb4e20f89b0885ec596e9f564c",
+    "03_round2/B2_末轮补充反驳.json": "68733f7c4f46767499fb162fada29b49d72b1f0195a5b838dc5c8cd4092eed9a"
+  }
+}

@@ -1,0 +1,703 @@
+{
+  "utc": "2026-10-13T05:20:00.114718+00:00",
+  "checks": 139,
+  "failures": [],
+  "details": [
+    {
+      "check": "final20_unique_in_universe",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "chair_sealed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "chair_order_matches",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranks_contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "model_independent_audit_hash",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "model_independent_audit_passed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "model_38x4",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "chair_input_hash_04_verification/V1_evidence.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "chair_input_hash_04_verification/V2_models.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "chair_input_hash_03_round2/B2_末轮补充反驳.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_multi_role",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_price_anchor",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_primary_source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_alternative_and_invalidation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_four_prices_match_chair",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "20_markdown_cards",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "no_internal_web_citations",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "local_report_links_exist",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "245_unique_trajectory",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "trajectory_final20",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "csv20_order",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MU_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "KYTX_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SNDK_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "IREN_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "SMCI_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AAOI_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AMPX_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "PSIX_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "UCTT_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "VISN_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "BNTX_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ENPH_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ACMR_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CRWV_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "LEU_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ADBE_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AOSL_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "CLS_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "RDW_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "MOD_csv_success_price",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "followup_template_shape",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "preservation_no_differences",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "preservation_expected_counts",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "limitations": "Content/coverage/price/model/link checks; not predictive accuracy or complete financing audit."
+}

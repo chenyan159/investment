@@ -1,0 +1,17 @@
+{
+  "status": "sealed_with_explicit_conditions_and_residuals",
+  "count": 20,
+  "pairwise_count": 23,
+  "checks": "20 unique ranks/cards; per-card B1 and B2 or real supplement; 4 branches; excluded concrete displaced candidate; final V2 digest matched",
+  "files": {
+    "05_chair/主席裁决.json": "f6fca336b6b543a8de38744eb7600e179e95ae5cddbcb8221c83482b2d6700fe",
+    "05_chair/主席裁决.md": "1207330e79e7463a7360926acc7876172cc2f7ae549864d38b5824a2c0d38a35",
+    "05_chair/主席末位压力对决.md": "ac5cb585b87e876d5d52a10258b9ef8642b22ac462d1eb918941efaf580c8a6a",
+    "07_logs/chair_sources.json": "96432892b28ba42ce5ad25fb7dd779cd23907489dea292bf9c896f18f952515e"
+  },
+  "input_hashes": {
+    "04_verification/V1_evidence.json": "b606591eb64e3f74f64ef54fe62cfb638b09dbe5148e0c554d9406bfa76fa53e",
+    "04_verification/V2_models.json": "44024567a4376682ba92109636a69fb32799edfb4e20f89b0885ec596e9f564c",
+    "03_round2/B2_末轮补充反驳.json": "68733f7c4f46767499fb162fada29b49d72b1f0195a5b838dc5c8cd4092eed9a"
+  }
+}

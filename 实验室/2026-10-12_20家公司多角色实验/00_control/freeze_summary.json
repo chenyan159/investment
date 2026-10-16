@@ -1,0 +1,12 @@
+{
+  "frozen_files": 945,
+  "bytes": 80562846,
+  "companies": 245,
+  "categories": 20,
+  "coverage": {
+    "company": 245,
+    "scenario": 245,
+    "comparison": 245
+  },
+  "frozen_utc": "2026-10-13T02:40:29.680183+00:00"
+}

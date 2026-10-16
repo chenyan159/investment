@@ -1,0 +1,84 @@
+{
+  "role": "V1_primary_verification_addendum",
+  "ticker": "BNTX",
+  "sources": [
+    {
+      "id": "ONCO_PR",
+      "published_date": "2023-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698523000016/ex991230320proncoc4.htm",
+      "access_status": "independent_body_read",
+      "result": "全球独家商业权；双位数阶梯销售版税；特定联合开发成本平分，不等于利润平分。"
+    },
+    {
+      "id": "ONCO_AGREEMENT",
+      "published_date": "2023-03-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit448oncoc4agreementr.htm",
+      "access_status": "independent_body_read",
+      "result": "原协议§7.5版税数字删节，不能确认20%或80%经济权益。"
+    },
+    {
+      "id": "HER2_AGREEMENT",
+      "published_date": "2023-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit450dualityher2agree.htm",
+      "access_status": "independent_body_read",
+      "result": "§1.147/1.163排除大陆、香港、澳门，明确含台湾；§8.5销售版税率删节。"
+    },
+    {
+      "id": "B7H3_AGREEMENT",
+      "published_date": "2023-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698524000027/exhibit451dualityb7h3agree.htm",
+      "access_status": "independent_body_read",
+      "result": "§1.54美国利润分成区域；§8.8(a)-(d)数字删节；§8.8(f)行权后美国以外授权区域仍付销售版税，美国不可再叠同一版税。"
+    },
+    {
+      "id": "DUALITY_AR",
+      "published_date": "2026-04-26",
+      "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0426/2026042600131.pdf",
+      "access_status": "independent_body_read",
+      "result": "p44当时DB1311期权尚未行使；属于被后来事件覆盖的状态。"
+    },
+    {
+      "id": "DUALITY_INTERIM",
+      "published_date": "2026-08-28",
+      "source_url": "https://en.dualitybiologics.com/news/615.html",
+      "access_status": "independent_body_read",
+      "result": "5月已书面行使DB1311美国成本/利润分成期权；确认290.7M人民币历史开发费抵收入。"
+    },
+    {
+      "id": "BNTX_20F",
+      "published_date": "2026-03-10",
+      "source_url": "https://investors.biontech.de/static-files/242c45fc-69f7-4abb-b1a5-f29ab19c590d",
+      "access_status": "body_opened_partial_followup_failure",
+      "result": "FY2025报告PDF成功打开，但后续定位请求Internal Error；Duality single-digit至double-digit仅检索正文片段获得，精确率仍不得视为核准。"
+    },
+    {
+      "id": "BNTX_FY25",
+      "published_date": "2026-03-10",
+      "source_url": "https://www.biontech.com/us/en/home/mediaroom/news/press-releases/2026/03/biontech-announces-fourth-quarter-and-full-year-2025-financial.html",
+      "access_status": "independent_body_read",
+      "result": "BNT113基于完全自有FixVac；autogene与Genentech合作；肌层浸润尿路上皮癌试验停止。"
+    },
+    {
+      "id": "GENENTECH_AGREEMENT",
+      "published_date": "2016-09-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519241112/d635330dex1014.htm",
+      "access_status": "independent_body_read",
+      "result": "§8.2.2开发成本平分；§8.4净利润亏损50/50；§8.5退出后转版税，不能同时算二者。"
+    },
+    {
+      "id": "AUTOGENE_CRC",
+      "published_date": "2026-08-28",
+      "source_url": "https://www.biontech.com/au/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html",
+      "access_status": "independent_body_read",
+      "result": "BNT122-01辅助CRC试验已决定终止，不能作为仍活跃商业机会计入。"
+    },
+    {
+      "id": "BMS_Q2",
+      "published_date": "2026-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm",
+      "access_status": "inherited_prior_V1_independent_body_read",
+      "result": "原V1已独立实读：pumitamig全球利润/亏损50/50，存在合同例外；本追加继承该核验。"
+    }
+  ],
+  "note": "Copied structured source inventory from V1 addendum; inherited/partial statuses retained; not an extra research visit"
+}

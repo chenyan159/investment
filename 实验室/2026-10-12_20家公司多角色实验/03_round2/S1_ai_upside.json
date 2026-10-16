@@ -1,0 +1,1444 @@
+{
+  "role": "S1_ai_upside",
+  "scope": "245池中的23家重要AI/高弹性；14家经营模型；独立专项",
+  "cutoff": "2026-10-12 19:40 America/Los_Angeles",
+  "target_date": "2027-10-12",
+  "window": "3–18月；12–18月经营兑现部分可用近端年度年化，非2029目标",
+  "covered_tickers": [
+    "NVDA",
+    "MU",
+    "AVGO",
+    "CRDO",
+    "CLS",
+    "AAOI",
+    "PSIX",
+    "SNDK",
+    "ALAB",
+    "VRT",
+    "IREN",
+    "FLNC",
+    "POET",
+    "SKHY",
+    "LITE",
+    "COHR",
+    "MRVL",
+    "NBIS",
+    "APLD",
+    "CRWV",
+    "MOD",
+    "SMCI",
+    "TSM"
+  ],
+  "deep_researched_tickers": [
+    "NVDA",
+    "MU",
+    "AVGO",
+    "CRDO",
+    "CLS",
+    "AAOI",
+    "PSIX",
+    "SNDK",
+    "ALAB",
+    "VRT",
+    "IREN",
+    "FLNC",
+    "POET",
+    "TSM"
+  ],
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "price": 226.32,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "Rubin规模交付和推理计算量支持收入高于Q3年化，不把中国恢复作为基准必要条件。",
+      "source_triangulation": [
+        "NVDA_Q2",
+        "NVDA_10Q",
+        "IREN_FY26",
+        "NBIS_Q2"
+      ],
+      "disputes": "供应承诺/云服务承诺/担保提升资本风险；105B是FY29起分阶段最大担保，不能一次扣尽，也不能无视。高增长不再全是无融资依赖销售。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 430,
+          "gross_margin": 0.7,
+          "opex_USD_B": 45,
+          "EBIT_USD_B": 256,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.17,
+          "FD_shares_B": 24,
+          "net_income_USD_B": 212.48,
+          "EPS_USD": 8.85,
+          "PE": 20,
+          "price": 177.07,
+          "return_pct": -21.76
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 540,
+          "gross_margin": 0.74,
+          "opex_USD_B": 48,
+          "EBIT_USD_B": 351.6,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.17,
+          "FD_shares_B": 24,
+          "net_income_USD_B": 291.83,
+          "EPS_USD": 12.16,
+          "PE": 27,
+          "price": 328.31,
+          "return_pct": 45.06
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 660,
+          "gross_margin": 0.75,
+          "opex_USD_B": 54,
+          "EBIT_USD_B": 441,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.17,
+          "FD_shares_B": 24,
+          "net_income_USD_B": 366.03,
+          "EPS_USD": 15.25,
+          "PE": 32,
+          "price": 488.04,
+          "return_pct": 115.64
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "连续两季收入环比停滞且应收/存货上升；代客户融资占比上升快于终端现金收入",
+      "selection_priority": "核心优先",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "AVGO",
+      "win_lose_conditions": "NVDA胜：Rubin收入540B桥与利润兑现，保持平台定价；AVGO胜：定制替代份额增加且FCF转化优于GPU供应商。TSM胜：品牌份额争夺大于总晶圆需求变化时。",
+      "accounting_basis_caveat": "Adjusted operating proxy, GAAP/SBC/amortization reconciliation incomplete. FD does not automatically replace economic SBC cost; B2/V2 must explicitly reconcile SBC, equity claims and buyback cash before accepting economic EPS."
+    },
+    {
+      "ticker": "MU",
+      "price": 989.04,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "合同供给、HBM挤占普通DRAM与新厂慢爬坡让12–18月高盈利延续有依据；不按遥远周期底立即估值。",
+      "source_triangulation": [
+        "MU_Q4",
+        "MU_REMARKS",
+        "TF_MEMORY",
+        "SKHY_Q2",
+        "SNDK_Q4"
+      ],
+      "disputes": "R1 235/260 OP90.4%无毛利费用桥支持；本基准219.3B OP84.35%。基准GM88%略高于Q1指引，依管理层逐季提升目标，非既成事实。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 200,
+          "gross_margin": 0.7,
+          "opex_USD_B": 10,
+          "EBIT_USD_B": 130,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.155,
+          "FD_shares_B": 1.16,
+          "net_income_USD_B": 109.85,
+          "EPS_USD": 94.7,
+          "PE": 6,
+          "price": 568.19,
+          "return_pct": -42.55
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 260,
+          "gross_margin": 0.88,
+          "opex_USD_B": 9.5,
+          "EBIT_USD_B": 219.3,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.155,
+          "FD_shares_B": 1.16,
+          "net_income_USD_B": 185.31,
+          "EPS_USD": 159.75,
+          "PE": 9,
+          "price": 1437.74,
+          "return_pct": 45.37
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 315,
+          "gross_margin": 0.9,
+          "opex_USD_B": 10.5,
+          "EBIT_USD_B": 273,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.155,
+          "FD_shares_B": 1.16,
+          "net_income_USD_B": 230.69,
+          "EPS_USD": 198.87,
+          "PE": 11,
+          "price": 2187.53,
+          "return_pct": 121.18
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "SCA取消/客户承诺下降；合同价格连续回落且供应提速；毛利跌破80%又无法靠量补偿",
+      "selection_priority": "核心优先",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "SNDK",
+      "win_lose_conditions": "MU胜：SCA/HBM使2027盈利更稳；SNDK胜：enterprise SSD ASP与位元增长超过DRAM且NAND供给不提前。TSM胜：存储ASP连续回落但先进制程需求稳。"
+    },
+    {
+      "ticker": "AVGO",
+      "price": 354.73,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "定制ASIC、网络和软件三条现金来源；Q4 AI21.7B目标提供2027加速起点。",
+      "source_triangulation": [
+        "AVGO_Q3",
+        "NVDA_Q2",
+        "MRVL_REUTERS"
+      ],
+      "disputes": "调整盈利与GAAP差异大；大客户集中、设计份额和软件续约可能冲击。不能因软件稳健认定ASIC无周期。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 135,
+          "gross_margin": 0.71,
+          "opex_USD_B": 14,
+          "EBIT_USD_B": 81.85,
+          "net_interest_expense_USD_B": 3,
+          "tax_rate": 0.16,
+          "FD_shares_B": 5,
+          "net_income_USD_B": 66.23,
+          "EPS_USD": 13.25,
+          "PE": 19,
+          "price": 251.69,
+          "return_pct": -29.05
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 170,
+          "gross_margin": 0.74,
+          "opex_USD_B": 16,
+          "EBIT_USD_B": 109.8,
+          "net_interest_expense_USD_B": 3,
+          "tax_rate": 0.16,
+          "FD_shares_B": 5,
+          "net_income_USD_B": 89.71,
+          "EPS_USD": 17.94,
+          "PE": 26,
+          "price": 466.5,
+          "return_pct": 31.51
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 215,
+          "gross_margin": 0.75,
+          "opex_USD_B": 18,
+          "EBIT_USD_B": 143.25,
+          "net_interest_expense_USD_B": 3,
+          "tax_rate": 0.16,
+          "FD_shares_B": 5,
+          "net_income_USD_B": 117.81,
+          "EPS_USD": 23.56,
+          "PE": 30,
+          "price": 706.86,
+          "return_pct": 99.27
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "AI订单转收入连季失速；FCF/调整净利润持续低于60%；软件现金下滑",
+      "selection_priority": "核心优先",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "NVDA",
+      "win_lose_conditions": "AVGO胜：ASIC/网络增长加软件现金，基准收益约32%；NVDA胜：通用GPU需求更高且客户融资风险可控；TSM胜：客户自研分散品牌份额但仍向同代工厂采购。",
+      "accounting_basis_caveat": "Adjusted operating proxy, GAAP/SBC/amortization reconciliation incomplete. FD does not automatically replace economic SBC cost; B2/V2 must explicitly reconcile SBC, equity claims and buyback cash before accepting economic EPS."
+    },
+    {
+      "ticker": "CRDO",
+      "price": 200.84,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "AEC从带宽瓶颈受益，光铜组合扩大内容量；基准比Q2年化高约50%，保留合理增长。",
+      "source_triangulation": [
+        "CRDO_Q1",
+        "NVDA_Q2",
+        "ALAB_Q2"
+      ],
+      "disputes": "当前股价已反映明显增长；GAAP与调整费用差大，不能把全部SBC免费剔除。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 2.1,
+          "gross_margin": 0.64,
+          "opex_USD_B": 0.65,
+          "EBIT_USD_B": 0.69,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.205,
+          "net_income_USD_B": 0.59,
+          "EPS_USD": 2.88,
+          "PE": 24,
+          "price": 69.06,
+          "return_pct": -65.61
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 3.2,
+          "gross_margin": 0.68,
+          "opex_USD_B": 0.8,
+          "EBIT_USD_B": 1.38,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.21,
+          "net_income_USD_B": 1.17,
+          "EPS_USD": 5.57,
+          "PE": 36,
+          "price": 200.5,
+          "return_pct": -0.17
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 4.3,
+          "gross_margin": 0.69,
+          "opex_USD_B": 1,
+          "EBIT_USD_B": 1.97,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.215,
+          "net_income_USD_B": 1.67,
+          "EPS_USD": 7.78,
+          "PE": 44,
+          "price": 342.17,
+          "return_pct": 70.37
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "最大客户收入下滑且新客户无法补齐；GM低于60%；FD增长超过收入增长的一半",
+      "selection_priority": "候补/回调优先",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "COHR",
+      "win_lose_conditions": "CRDO胜：AEC份额/新客户增长且SBC稀释受控；COHR胜：光学迁移加速与高功率激光收入更快、利润超10EPS。",
+      "accounting_basis_caveat": "Adjusted operating proxy, GAAP/SBC/amortization reconciliation incomplete. FD does not automatically replace economic SBC cost; B2/V2 must explicitly reconcile SBC, equity claims and buyback cash before accepting economic EPS."
+    },
+    {
+      "ticker": "CLS",
+      "price": 347.5,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "2027收入增速加快公司目标可支持约36B收入；不是只按2026静态EPS。",
+      "source_triangulation": [
+        "CLS_Q2",
+        "NVDA_Q2",
+        "AVGO_Q3"
+      ],
+      "disputes": "毛利/OPEX为研究拆解，总OPM8/9/10%；需把新融资股数和营运资金计入，EMS收入不能给芯片利润率。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 27,
+          "gross_margin": 0.18,
+          "opex_USD_B": 2.7,
+          "EBIT_USD_B": 2.16,
+          "net_interest_expense_USD_B": 0.1,
+          "tax_rate": 0.2,
+          "FD_shares_B": 0.13,
+          "net_income_USD_B": 1.65,
+          "EPS_USD": 12.68,
+          "PE": 18,
+          "price": 228.18,
+          "return_pct": -34.34
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 36,
+          "gross_margin": 0.19,
+          "opex_USD_B": 3.6,
+          "EBIT_USD_B": 3.24,
+          "net_interest_expense_USD_B": 0.1,
+          "tax_rate": 0.2,
+          "FD_shares_B": 0.13,
+          "net_income_USD_B": 2.51,
+          "EPS_USD": 19.32,
+          "PE": 25,
+          "price": 483.08,
+          "return_pct": 39.01
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 45,
+          "gross_margin": 0.2,
+          "opex_USD_B": 4.5,
+          "EBIT_USD_B": 4.5,
+          "net_interest_expense_USD_B": 0.1,
+          "tax_rate": 0.2,
+          "FD_shares_B": 0.13,
+          "net_income_USD_B": 3.52,
+          "EPS_USD": 27.08,
+          "PE": 30,
+          "price": 812.31,
+          "return_pct": 133.76
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "2027订单扩张下调；OPM不能维持8%；增量营运资金长期吞掉全部盈利",
+      "selection_priority": "核心/高优先",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "SMCI",
+      "win_lose_conditions": "CLS胜：2027约36B订单兑现且9%OPM/现金可复核；SMCI胜：17%+毛利持续并兑现真实现金，低PE给更高股权弹性。",
+      "accounting_basis_caveat": "Adjusted operating proxy, GAAP/SBC/amortization reconciliation incomplete. FD does not automatically replace economic SBC cost; B2/V2 must explicitly reconcile SBC, equity claims and buyback cash before accepting economic EPS."
+    },
+    {
+      "ticker": "AAOI",
+      "price": 100.68,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "650k月产能目标相对现200k为真实弹性，800G/1.6T良率爬坡可形成营业杠杆。",
+      "source_triangulation": [
+        "AAOI_Q2",
+        "COHR_Q4",
+        "ALAB_Q2"
+      ],
+      "disputes": "不能把年底名义产能×全年×ASP当已交付；基准2B较Q3年化仍近翻倍，但股价要求更高盈利。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 1.2,
+          "gross_margin": 0.28,
+          "opex_USD_B": 0.24,
+          "EBIT_USD_B": 0.1,
+          "net_interest_expense_USD_B": 0.015,
+          "tax_rate": 0.22,
+          "FD_shares_B": 0.1,
+          "net_income_USD_B": 0.06,
+          "EPS_USD": 0.63,
+          "PE": 20,
+          "price": 12.64,
+          "return_pct": -87.45
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 2,
+          "gross_margin": 0.33,
+          "opex_USD_B": 0.28,
+          "EBIT_USD_B": 0.38,
+          "net_interest_expense_USD_B": 0.015,
+          "tax_rate": 0.22,
+          "FD_shares_B": 0.105,
+          "net_income_USD_B": 0.28,
+          "EPS_USD": 2.71,
+          "PE": 32,
+          "price": 86.77,
+          "return_pct": -13.82
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 2.8,
+          "gross_margin": 0.36,
+          "opex_USD_B": 0.34,
+          "EBIT_USD_B": 0.67,
+          "net_interest_expense_USD_B": 0.015,
+          "tax_rate": 0.22,
+          "FD_shares_B": 0.11,
+          "net_income_USD_B": 0.51,
+          "EPS_USD": 4.63,
+          "PE": 40,
+          "price": 185.21,
+          "return_pct": 83.96
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "2027H1月产量/良率未提升；毛利停留30%以下且股本继续大增",
+      "selection_priority": "等待利润兑现",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "COHR",
+      "win_lose_conditions": "AAOI胜：650k月产能变合格交付并GM>33%；COHR胜：利润确定性和多客户胜过AAOI尚未兑现的量。"
+    },
+    {
+      "ticker": "PSIX",
+      "price": 50.1,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "Q2毛利环比改善420bp，数据中心电力产品交付将H2拉高的路径尚存；看生产改善而非只看同比下降。",
+      "source_triangulation": [
+        "PSIX_Q2",
+        "VRT_Q2"
+      ],
+      "disputes": "Q2同比收入-21%；2025税收益不能年化；管理层未承诺具体DC销售额。中枢使用28%GM近当前，而非突然40%。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 0.62,
+          "gross_margin": 0.25,
+          "opex_USD_B": 0.08,
+          "EBIT_USD_B": 0.08,
+          "net_interest_expense_USD_B": 0.005,
+          "tax_rate": 0.25,
+          "FD_shares_B": 0.024,
+          "net_income_USD_B": 0.05,
+          "EPS_USD": 2.19,
+          "PE": 12,
+          "price": 26.25,
+          "return_pct": -47.6
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 0.82,
+          "gross_margin": 0.28,
+          "opex_USD_B": 0.09,
+          "EBIT_USD_B": 0.14,
+          "net_interest_expense_USD_B": 0.005,
+          "tax_rate": 0.25,
+          "FD_shares_B": 0.024,
+          "net_income_USD_B": 0.1,
+          "EPS_USD": 4.21,
+          "PE": 17,
+          "price": 71.51,
+          "return_pct": 42.73
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 1.05,
+          "gross_margin": 0.31,
+          "opex_USD_B": 0.105,
+          "EBIT_USD_B": 0.22,
+          "net_interest_expense_USD_B": 0.005,
+          "tax_rate": 0.25,
+          "FD_shares_B": 0.024,
+          "net_income_USD_B": 0.16,
+          "EPS_USD": 6.73,
+          "PE": 21,
+          "price": 141.42,
+          "return_pct": 182.28
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "H2销售未超过H1；毛利再跌到23%；客户集中/关联采购损害现金回收",
+      "selection_priority": "进攻小仓候选",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "MOD",
+      "win_lose_conditions": "PSIX胜：H2恢复与27%以上GM持续，低起点EPS杠杆；MOD胜：客户更分散且数据中心订单现金兑现更强。"
+    },
+    {
+      "ticker": "SNDK",
+      "price": 1487.33,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "企业SSD需求和NAND定价仍支持增长；Q1 10.55B中点使48B基准无需超远期外推。",
+      "source_triangulation": [
+        "SNDK_Q4",
+        "TF_MEMORY",
+        "MU_REMARKS"
+      ],
+      "disputes": "NAND供给较DRAM更易恢复；消费需求破坏。基准P/E9是周期折价，不是立即采用周期底盈利。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 36,
+          "gross_margin": 0.7,
+          "opex_USD_B": 2.7,
+          "EBIT_USD_B": 22.5,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.158,
+          "net_income_USD_B": 19.13,
+          "EPS_USD": 121.04,
+          "PE": 6,
+          "price": 726.27,
+          "return_pct": -51.17
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 48,
+          "gross_margin": 0.85,
+          "opex_USD_B": 2.8,
+          "EBIT_USD_B": 38,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.158,
+          "net_income_USD_B": 32.3,
+          "EPS_USD": 204.43,
+          "PE": 9,
+          "price": 1839.87,
+          "return_pct": 23.7
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 60,
+          "gross_margin": 0.88,
+          "opex_USD_B": 3.2,
+          "EBIT_USD_B": 49.6,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.158,
+          "net_income_USD_B": 42.16,
+          "EPS_USD": 266.84,
+          "PE": 11,
+          "price": 2935.19,
+          "return_pct": 97.35
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "企业SSD价格/交付回落；GM跌破70%；客户库存去化压缩采购",
+      "selection_priority": "重要加入候选",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "MU",
+      "win_lose_conditions": "SNDK胜：SSD需求拉动收入超过48B中枢且毛利85%保持；MU胜：NAND供应更早恢复或消费压力扩散。"
+    },
+    {
+      "ticker": "ALAB",
+      "price": 324.11,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "Scorpio成为最大产品线的时间提前，AI fabric内容量扩展；3B基准保留大幅增长。",
+      "source_triangulation": [
+        "ALAB_Q2",
+        "CRDO_Q1",
+        "NVDA_Q2"
+      ],
+      "disputes": "高估值需要收入继续台阶增长；客户权证冲减收入、SBC及平台自研不能忽略。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 2,
+          "gross_margin": 0.7,
+          "opex_USD_B": 0.65,
+          "EBIT_USD_B": 0.75,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.19,
+          "net_income_USD_B": 0.64,
+          "EPS_USD": 3.36,
+          "PE": 30,
+          "price": 100.66,
+          "return_pct": -68.94
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 3,
+          "gross_margin": 0.73,
+          "opex_USD_B": 0.8,
+          "EBIT_USD_B": 1.39,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.195,
+          "net_income_USD_B": 1.18,
+          "EPS_USD": 6.06,
+          "PE": 42,
+          "price": 254.48,
+          "return_pct": -21.48
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 4,
+          "gross_margin": 0.74,
+          "opex_USD_B": 1,
+          "EBIT_USD_B": 1.96,
+          "net_interest_expense_USD_B": 0,
+          "tax_rate": 0.15,
+          "FD_shares_B": 0.2,
+          "net_income_USD_B": 1.67,
+          "EPS_USD": 8.33,
+          "PE": 50,
+          "price": 416.5,
+          "return_pct": 28.51
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "Scorpio量产推迟两季；GM低于65%；大客户取消设计",
+      "selection_priority": "等待/不优先于CLS",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "CRDO",
+      "win_lose_conditions": "ALAB胜：Scorpio最大线带动>3B收入、维持高毛利；CRDO胜：连接内容增长更快或ALAB估值未消化。",
+      "accounting_basis_caveat": "Adjusted operating proxy, GAAP/SBC/amortization reconciliation incomplete. FD does not automatically replace economic SBC cost; B2/V2 must explicitly reconcile SBC, equity claims and buyback cash before accepting economic EPS."
+    },
+    {
+      "ticker": "VRT",
+      "price": 239.36,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "数据中心电力与散热容量扩建，2026约14B收入/6.7EPS起点可支持持续双位数增长。",
+      "source_triangulation": [
+        "VRT_Q2",
+        "NVDA_Q2",
+        "IREN_FY26"
+      ],
+      "disputes": "近期估值已体现增长，液冷份额竞争和交付延后；不能把全资本开支直接视为VRT订单。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 16,
+          "gross_margin": 0.37,
+          "opex_USD_B": 2.3,
+          "EBIT_USD_B": 3.62,
+          "net_interest_expense_USD_B": 0.05,
+          "tax_rate": 0.23,
+          "FD_shares_B": 0.39,
+          "net_income_USD_B": 2.75,
+          "EPS_USD": 7.05,
+          "PE": 22,
+          "price": 155.07,
+          "return_pct": -35.22
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 19,
+          "gross_margin": 0.39,
+          "opex_USD_B": 2.5,
+          "EBIT_USD_B": 4.91,
+          "net_interest_expense_USD_B": 0.05,
+          "tax_rate": 0.23,
+          "FD_shares_B": 0.39,
+          "net_income_USD_B": 3.74,
+          "EPS_USD": 9.6,
+          "PE": 29,
+          "price": 278.27,
+          "return_pct": 16.25
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 23,
+          "gross_margin": 0.4,
+          "opex_USD_B": 2.8,
+          "EBIT_USD_B": 6.4,
+          "net_interest_expense_USD_B": 0.05,
+          "tax_rate": 0.23,
+          "FD_shares_B": 0.39,
+          "net_income_USD_B": 4.89,
+          "EPS_USD": 12.54,
+          "PE": 34,
+          "price": 426.26,
+          "return_pct": 78.08
+        }
+      ],
+      "valuation_bridge": "研究假设，USD B及B股；EPS=(收入×毛利率−OpEx−净利息)×(1−税率)/FD股数；价格=EPS×PE。调整经营口径，非公司指引；SBC由目标稀释和较低倍数承受；不再额外加净现金避免PE权益口径双算。目标2027-10-12，经营锚FY27/FY28近端年化。",
+      "catalysts": [
+        "3–6月：下一两季收入/交付/毛利确认",
+        "6–12月：2027预算与新平台量产",
+        "12–18月：新增客户或产能转成持续现金"
+      ],
+      "kill_criteria": "订单连续两季低于收入；OPM跌破22%；FCF明显背离盈利",
+      "selection_priority": "高质量候补",
+      "confidence": "经营事实高；模型中；倍数中低",
+      "strongest_alternative": "MOD",
+      "win_lose_conditions": "VRT胜：端到端交付/服务和FCF；MOD胜：冷却独立扩张令10EPS中枢与较低倍数兑现。"
+    },
+    {
+      "ticker": "IREN",
+      "price": 34.8,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "4B已签ARR、首50MW微软验收及预付改善资金循环，5B近端收入中枢不需要全部5GW实现。",
+      "source_triangulation": [
+        "IREN_FY26",
+        "NBIS_Q2",
+        "NVDA_10Q"
+      ],
+      "disputes": "新合同预付45–55%和特定GPU90%融资不是全部capex可叠加135%；ARR与全年确认收入不同。EBITDA非FCF，重置GPU资本使倍数必须低于轻资产软件。",
+      "recommended_bear_base_bull": [
+        {
+          "revenue_USD_B": 3,
+          "EBITDA_margin": 0.5,
+          "EV_EBITDA": 7,
+          "net_debt_other_claims_USD_B": 4,
+          "FD_shares_B": 0.45,
+          "price": 14.44,
+          "scenario": "bear",
+          "return_pct": -58.51
+        },
+        {
+          "revenue_USD_B": 5,
+          "EBITDA_margin": 0.58,
+          "EV_EBITDA": 10,
+          "net_debt_other_claims_USD_B": 5.5,
+          "FD_shares_B": 0.48,
+          "price": 48.96,
+          "scenario": "base",
+          "return_pct": 40.69
+        },
+        {
+          "revenue_USD_B": 7.5,
+          "EBITDA_margin": 0.62,
+          "EV_EBITDA": 12,
+          "net_debt_other_claims_USD_B": 7,
+          "FD_shares_B": 0.52,
+          "price": 93.85,
+          "scenario": "bull",
+          "return_pct": 169.68
+        }
+      ],
+      "valuation_bridge": "价格=(收入×EBITDA率×EV/EBITDA−目标净债及其他优先权益)/FD股数。2027年化经营而非2029目标。基准5B revenue扣D&A1.4B、利息.55B、税20%得NI.76B/EPS1.58；扩张capex假设5B使FCF仍负，预付/债务需补资金。",
+      "catalysts": [
+        "3–6月：订单验收和融资到账",
+        "6–12月：收入与单位资本收益",
+        "12–18月：复购与资本成本下降"
+      ],
+      "kill_criteria": "Horizon2–4推迟超两季；融资+预付无法覆盖已承诺项目；GPU租价下降同时债务成本上升",
+      "selection_priority": "高弹性加入候选",
+      "confidence": "事实高；增长模型中低；目标估值低",
+      "strongest_alternative": "NBIS",
+      "win_lose_conditions": "IREN胜：微软验收与预付令5B收入/融资闭合；NBIS胜：50%+经营利润率及每MW更高收入能在交付后维持，稀释低于预期。"
+    },
+    {
+      "ticker": "FLNC",
+      "price": 7.07,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "6.4B backlog与DC订单提供扭亏期权；产线恢复可带来递延收入释放，不应把现低GM永久化。",
+      "source_triangulation": [
+        "FLNC_Q3",
+        "FLNC_RESET"
+      ],
+      "disputes": "9/16最新2.4B收入/-200M EBITDA取代8月旧指引；基准13.5%GM是恢复假设，未经证明。融资和现金中性只是目标。",
+      "recommended_bear_base_bull": [
+        {
+          "revenue_USD_B": 2.4,
+          "gross_margin": 0.07,
+          "opex_USD_B": 0.31,
+          "EBIT_USD_B": -0.14,
+          "EV_sales": 0.2,
+          "net_debt_other_claims_USD_B": 0.05,
+          "FD_shares_B": 0.205,
+          "price": 2.1,
+          "scenario": "bear",
+          "return_pct": -70.3
+        },
+        {
+          "revenue_USD_B": 3.4,
+          "gross_margin": 0.135,
+          "opex_USD_B": 0.33,
+          "EBIT_USD_B": 0.13,
+          "EV_sales": 0.55,
+          "net_debt_other_claims_USD_B": 0.1,
+          "FD_shares_B": 0.205,
+          "price": 8.63,
+          "scenario": "base",
+          "return_pct": 22.07
+        },
+        {
+          "revenue_USD_B": 4.2,
+          "gross_margin": 0.17,
+          "opex_USD_B": 0.36,
+          "EBIT_USD_B": 0.35,
+          "EV_sales": 0.85,
+          "net_debt_other_claims_USD_B": 0.05,
+          "FD_shares_B": 0.205,
+          "price": 17.17,
+          "scenario": "bull",
+          "return_pct": 142.86
+        }
+      ],
+      "valuation_bridge": "EV销售法用于暂亏；基准GM13.5%减330M费用得129M EBIT，扣10M利息税25%=89.25M净利润，EPS.435；目标8.63约20倍恢复EPS，交叉验证，不把EBITDA当利润。",
+      "catalysts": [
+        "3–6月：订单验收和融资到账",
+        "6–12月：收入与单位资本收益",
+        "12–18月：复购与资本成本下降"
+      ],
+      "kill_criteria": "Houston恢复再延迟；现金消耗迫使折价融资；订单取消/毛利不回升",
+      "selection_priority": "等待修复；小额条件候选",
+      "confidence": "事实高；增长模型中低；目标估值低",
+      "strongest_alternative": "PSIX",
+      "win_lose_conditions": "FLNC胜：Houston恢复且GM>=13.5%、CFO转正；PSIX胜：无需等同样大规模制造修复即有盈利现金。"
+    },
+    {
+      "ticker": "POET",
+      "price": 6.41,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "现金796M已到账，Lumilens融资与订单让商业化路径有实质改善；允许60M中枢和180M突破销售，承认从极低基数快速扩张可能。",
+      "source_triangulation": [
+        "POET_Q2",
+        "POET_FS",
+        "POET_WARRANT",
+        "LUMILENS"
+      ],
+      "disputes": "尚无正经营利润；EV销售12/18倍要求认证与多客户兑现。存量78.735M权证全部纳入权益索取权，现金不能机械除264M且不计行权款。",
+      "recommended_bear_base_bull": [
+        {
+          "contract_sales_USD_B": 0.01,
+          "gross_contribution_rate": 0.3,
+          "cash_economic_opex_USD_B": 0.06,
+          "economic_operating_profit_USD_B": -0.06,
+          "EV_sales": 4,
+          "residual_net_cash_USD_B": 0.65,
+          "option_equity_reserve_USD_B": 0.05,
+          "base_RSU_future_SBC_shares_B": 0.185,
+          "price": 3.46,
+          "scenario": "bear",
+          "return_pct": -46.02
+        },
+        {
+          "contract_sales_USD_B": 0.06,
+          "gross_contribution_rate": 0.4,
+          "cash_economic_opex_USD_B": 0.075,
+          "economic_operating_profit_USD_B": -0.05,
+          "EV_sales": 12,
+          "residual_net_cash_USD_B": 0.62,
+          "option_equity_reserve_USD_B": 0.16,
+          "base_RSU_future_SBC_shares_B": 0.185,
+          "price": 6.38,
+          "scenario": "base",
+          "return_pct": -0.47
+        },
+        {
+          "contract_sales_USD_B": 0.18,
+          "gross_contribution_rate": 0.48,
+          "cash_economic_opex_USD_B": 0.09,
+          "economic_operating_profit_USD_B": 0,
+          "EV_sales": 18,
+          "residual_net_cash_USD_B": 0.57,
+          "option_equity_reserve_USD_B": 0.65,
+          "base_RSU_future_SBC_shares_B": 0.185,
+          "price": 17.08,
+          "scenario": "bull",
+          "return_pct": 166.46
+        }
+      ],
+      "valuation_bridge": "12–18月参考价=(合同销售×销售倍数+期间剩余净现金−全部存量证券期权价值准备)/185M基础RSU及未来SBC股。准备50/160/650M为待校准估计，非Black-Scholes已核验；每增加100M证券价值扣0.54美元。禁止视作精确公允价。客户权证在权益端扣，不在经营现金再重复扣。",
+      "catalysts": [
+        "3–6月：订单验收和融资到账",
+        "6–12月：收入与单位资本收益",
+        "12–18月：复购与资本成本下降"
+      ],
+      "kill_criteria": "两次财报无产品收入台阶；关键认证失败；无订单收购/放贷吞掉现金",
+      "selection_priority": "高风险观察，非核心",
+      "confidence": "事实高；增长模型中低；目标估值低",
+      "strongest_alternative": "AAOI",
+      "win_lose_conditions": "POET胜：认证转复购、60M以上销售且保留现金，单位投入不失控；AAOI胜：规模产能与收入先兑现。两者风险不同，不能因POET有现金判必胜。"
+    },
+    {
+      "ticker": "SKHY",
+      "price": 162.23,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "HBM领先与长约使存储繁荣受益；可替MU但不是独立风险",
+      "source_triangulation": [
+        "SKHY_Q2",
+        "MU_REMARKS",
+        "TF_MEMORY"
+      ],
+      "disputes": "韩国本地股/ADR或GDR证券与比例尚未独立重核；美元报价不能直接乘KRW EPS",
+      "recommended_bear_base_bull": [],
+      "valuation_bridge": "不发布不可核算美元目标；证券/币种/比例确认前，仅保留相对优先级。",
+      "catalysts": [
+        "证券口径确认；2027 HBM合同与产能"
+      ],
+      "kill_criteria": "价格下跌同时位元供给超出需求；合同定价转弱",
+      "selection_priority": "候补，证券核验后与MU二选一",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "MU",
+      "win_lose_conditions": "SKHY胜：证券可交易与比率明确、HBM份额和契约盈利更强；MU胜：美元证券/财务清晰且SCA更具可核查性。"
+    },
+    {
+      "ticker": "LITE",
+      "price": 995.41,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "高功率激光、光源与产能锁定具有高经营杠杆",
+      "source_triangulation": [
+        "LITE_RESULTS",
+        "COHR_Q4",
+        "NVDA_Q2"
+      ],
+      "disputes": "Q1 FY27 EPS指引4.05–4.35；23EPS中枢需进一步放量，当前价要求比中枢强；正文动态读取不足",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "EPS_USD": 12,
+          "PE": 24,
+          "price": 288,
+          "return_pct": -71.07
+        },
+        {
+          "scenario": "base",
+          "EPS_USD": 23,
+          "PE": 33,
+          "price": 759,
+          "return_pct": -23.75
+        },
+        {
+          "scenario": "bull",
+          "EPS_USD": 35,
+          "PE": 40,
+          "price": 1400,
+          "return_pct": 40.65
+        }
+      ],
+      "valuation_bridge": "初筛研究假设EPS×PE，非一致预期/公司指引。需补完整收入与资本桥后升为深研。",
+      "catalysts": [
+        "未来两季产能释放和光源增长"
+      ],
+      "kill_criteria": "新增产能但现金毛利不增；大客户份额流失",
+      "selection_priority": "价格敏感候补",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "COHR",
+      "win_lose_conditions": "LITE胜：光源稀缺议价推动>23EPS；COHR胜：多产品增长达到10EPS且估值较低。"
+    },
+    {
+      "ticker": "COHR",
+      "price": 288.02,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "多光学平台和制造规模，近季度GM40.2%形成利润弹性",
+      "source_triangulation": [
+        "COHR_Q4",
+        "AAOI_Q2",
+        "NVDA_Q2"
+      ],
+      "disputes": "盈利改善已得到证明；仍需由1.74季度EPS跃升至10全年中枢",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "EPS_USD": 5,
+          "PE": 22,
+          "price": 110,
+          "return_pct": -61.81
+        },
+        {
+          "scenario": "base",
+          "EPS_USD": 10,
+          "PE": 29,
+          "price": 290,
+          "return_pct": 0.69
+        },
+        {
+          "scenario": "bull",
+          "EPS_USD": 15,
+          "PE": 34,
+          "price": 510,
+          "return_pct": 77.07
+        }
+      ],
+      "valuation_bridge": "初筛研究假设EPS×PE，非一致预期/公司指引。需补完整收入与资本桥后升为深研。",
+      "catalysts": [
+        "1.6T量产、毛利和去杠杆"
+      ],
+      "kill_criteria": "毛利停滞且营运资本消耗加速",
+      "selection_priority": "与CRDO竞争光学名额",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "CRDO",
+      "win_lose_conditions": "COHR胜：光学迁移与利润释放；CRDO胜：铜互联性价比延缓光学替代、短距份额更稳。"
+    },
+    {
+      "ticker": "MRVL",
+      "price": 265.86,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "FY28收入目标20B高于18.2B市场预期，平台互联与定制融合",
+      "source_triangulation": [
+        "MRVL_DAY",
+        "MRVL_REUTERS",
+        "AVGO_Q3"
+      ],
+      "disputes": "2031 70–90B是远期目标不能平移；Google权证与客户集中削弱每股捕获；FY28收入20B×45%OPM×84%税后/1B≈7.56EPS",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "EPS_USD": 4.5,
+          "PE": 24,
+          "price": 108,
+          "return_pct": -59.38
+        },
+        {
+          "scenario": "base",
+          "EPS_USD": 7.5,
+          "PE": 36,
+          "price": 270,
+          "return_pct": 1.56
+        },
+        {
+          "scenario": "bull",
+          "EPS_USD": 11,
+          "PE": 44,
+          "price": 484,
+          "return_pct": 82.05
+        }
+      ],
+      "valuation_bridge": "初筛研究假设EPS×PE，非一致预期/公司指引。需补完整收入与资本桥后升为深研。",
+      "catalysts": [
+        "FY28目标及新定制设计交付"
+      ],
+      "kill_criteria": "近端20B目标下调；股本和客户让利大超预算",
+      "selection_priority": "重要候补，等待新增利润兑现",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "AVGO",
+      "win_lose_conditions": "MRVL胜：20B FY28近端目标上修并每股利润兑现，不靠2031；AVGO胜：定制份额和现FCF更强。"
+    },
+    {
+      "ticker": "NBIS",
+      "price": 210.06,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "预付、客户签约和50%AI云EBITDA证明融资模式正在改善；不能只按负GAAP EPS淘汰",
+      "source_triangulation": [
+        "NBIS_Q2",
+        "IREN_FY26",
+        "NVDA_10Q"
+      ],
+      "disputes": "Q2现金8B含融资/预付；不是股东可自由分派现金，折旧寿命4变5年提高账面收益",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "operating_metric_USD_B": 6,
+          "multiple": 4,
+          "future_net_debt_preferred_other_claims_USD_B": 4,
+          "FD_shares_B": 0.29,
+          "price": 68.97,
+          "return_pct": -67.17
+        },
+        {
+          "scenario": "base",
+          "operating_metric_USD_B": 9,
+          "multiple": 7,
+          "future_net_debt_preferred_other_claims_USD_B": 6,
+          "FD_shares_B": 0.32,
+          "price": 178.13,
+          "return_pct": -15.2
+        },
+        {
+          "scenario": "bull",
+          "operating_metric_USD_B": 13,
+          "multiple": 9,
+          "future_net_debt_preferred_other_claims_USD_B": 10,
+          "FD_shares_B": 0.36,
+          "price": 297.22,
+          "return_pct": 41.49
+        }
+      ],
+      "valuation_bridge": "条件2027收入6/9/13B×EV销售4/7/9，减未来净债及其他权利4/6/10B，除FD股。预付款对应未来服务成本，不作闲置净现金。",
+      "catalysts": [
+        "晚2026容量上线并转2027收入"
+      ],
+      "kill_criteria": "预付覆盖下降/交付延误/单位资本收益下降",
+      "selection_priority": "候补，不高于IREN",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "IREN",
+      "win_lose_conditions": "NBIS胜：预付50–60%加平台服务令资产收益持续更高；IREN胜：较低权益价格与已验收大客户给更高12–18月收益。"
+    },
+    {
+      "ticker": "APLD",
+      "price": 23.25,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "自有园区出租相对GPU运营有较少设备代际风险，已交付扩展兑现",
+      "source_triangulation": [
+        "APLD_Q1",
+        "CRWV_Q2"
+      ],
+      "disputes": "项目债/优先权益/少数权益不能省；Q1 ChronoScale合并与非GAAP差异要核算",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "operating_metric_USD_B": 0.6,
+          "multiple": 10,
+          "future_net_debt_preferred_other_claims_USD_B": 3,
+          "FD_shares_B": 0.34,
+          "price": 8.82,
+          "return_pct": -62.06
+        },
+        {
+          "scenario": "base",
+          "operating_metric_USD_B": 0.975,
+          "multiple": 14,
+          "future_net_debt_preferred_other_claims_USD_B": 5,
+          "FD_shares_B": 0.38,
+          "price": 22.76,
+          "return_pct": -2.11
+        },
+        {
+          "scenario": "bull",
+          "operating_metric_USD_B": 1.54,
+          "multiple": 17,
+          "future_net_debt_preferred_other_claims_USD_B": 7,
+          "FD_shares_B": 0.42,
+          "price": 45.67,
+          "return_pct": 96.43
+        }
+      ],
+      "valuation_bridge": "条件2027 EBITDA×EV/EBITDA减未来净债/优先/少数权益，再除FD；APLD收入1/1.5/2.2B×60/65/70% EBITDA率；CRWV收入16/23/32B×60/62/64%。全部未来债务为情景预算，不是当前已核验余额。",
+      "catalysts": [
+        "Polaris Forge交付、租金和债务资金到账"
+      ],
+      "kill_criteria": "交付延迟同时资本成本上升；租户集中恶化",
+      "selection_priority": "房东路线候补",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "IREN",
+      "win_lose_conditions": "APLD胜：房东租约扣优先权益仍有好剩余收益、减少GPU迭代风险；IREN胜：运营利润可捕获稀缺GPU租价。"
+    },
+    {
+      "ticker": "CRWV",
+      "price": 80.26,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "104B backlog和早Q3新增25B显示大规模需求，已运营平台具先发价值",
+      "source_triangulation": [
+        "CRWV_Q2",
+        "NVDA_10Q",
+        "NBIS_Q2"
+      ],
+      "disputes": "backlog附交付条件；供应商担保并不等于终端现金回收；高债务使股权价敏感",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "operating_metric_USD_B": 9.6,
+          "multiple": 6,
+          "future_net_debt_preferred_other_claims_USD_B": 40,
+          "FD_shares_B": 0.6,
+          "price": 29.33,
+          "return_pct": -63.46
+        },
+        {
+          "scenario": "base",
+          "operating_metric_USD_B": 14.26,
+          "multiple": 8,
+          "future_net_debt_preferred_other_claims_USD_B": 55,
+          "FD_shares_B": 0.65,
+          "price": 90.89,
+          "return_pct": 13.24
+        },
+        {
+          "scenario": "bull",
+          "operating_metric_USD_B": 20.48,
+          "multiple": 10,
+          "future_net_debt_preferred_other_claims_USD_B": 70,
+          "FD_shares_B": 0.7,
+          "price": 192.57,
+          "return_pct": 139.93
+        }
+      ],
+      "valuation_bridge": "条件2027 EBITDA×EV/EBITDA减未来净债/优先/少数权益，再除FD；APLD收入1/1.5/2.2B×60/65/70% EBITDA率；CRWV收入16/23/32B×60/62/64%。全部未来债务为情景预算，不是当前已核验余额。",
+      "catalysts": [
+        "交付和客户现金收入赶上资本部署"
+      ],
+      "kill_criteria": "现金烧损持续快于可融资能力；GPU资产残值下跌",
+      "selection_priority": "高风险候补，与IREN择一",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "IREN",
+      "win_lose_conditions": "CRWV胜：backlog转现金速度超过加债速度；IREN胜：资产扩张以预付匹配且普通股优先权损耗更小。"
+    },
+    {
+      "ticker": "MOD",
+      "price": 172.5,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "数据中心冷却使传统工业组合利润结构跃迁",
+      "source_triangulation": [
+        "MOD_RESULTS",
+        "VRT_Q2"
+      ],
+      "disputes": "搜索提取气候业务+51%；未实读完整最新财报，不能声称同等核验深度",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "EPS_USD": 7,
+          "PE": 18,
+          "price": 126,
+          "return_pct": -26.96
+        },
+        {
+          "scenario": "base",
+          "EPS_USD": 10,
+          "PE": 23,
+          "price": 230,
+          "return_pct": 33.33
+        },
+        {
+          "scenario": "bull",
+          "EPS_USD": 13,
+          "PE": 28,
+          "price": 364,
+          "return_pct": 111.01
+        }
+      ],
+      "valuation_bridge": "初筛研究假设EPS×PE，非一致预期/公司指引。需补完整收入与资本桥后升为深研。",
+      "catalysts": [
+        "冷却扩产、业务组合与现金"
+      ],
+      "kill_criteria": "扩产利用率和FCF恶化",
+      "selection_priority": "候補，倾向优于估值更高的纯主题",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "VRT",
+      "win_lose_conditions": "MOD胜：冷却高增和低倍数；VRT胜：交付规模/服务及现金更稳。"
+    },
+    {
+      "ticker": "SMCI",
+      "price": 39.98,
+      "price_date": "2026-10-12",
+      "deep_researched": false,
+      "upside_thesis": "服务器/液冷交付弹性且估值低；不应因历史负面永远排除",
+      "source_triangulation": [
+        "SMCI_RESULTS",
+        "NVDA_Q2",
+        "CLS_Q2"
+      ],
+      "disputes": "当前财报搜索摘要显示17.6%GM与1.70EPS但动态正文缺失，需原10K核验现金和毛利持续性",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "EPS_USD": 3,
+          "PE": 8,
+          "price": 24,
+          "return_pct": -39.97
+        },
+        {
+          "scenario": "base",
+          "EPS_USD": 5,
+          "PE": 12,
+          "price": 60,
+          "return_pct": 50.08
+        },
+        {
+          "scenario": "bull",
+          "EPS_USD": 7,
+          "PE": 16,
+          "price": 112,
+          "return_pct": 180.14
+        }
+      ],
+      "valuation_bridge": "初筛研究假设EPS×PE，非一致预期/公司指引。需补完整收入与资本桥后升为深研。",
+      "catalysts": [
+        "下一季GAAP与现金流确认"
+      ],
+      "kill_criteria": "毛利回落且应收库存激增；审计披露出现实质问题",
+      "selection_priority": "条件加入，待核验，不直接否决",
+      "confidence": "中低；初筛/比较不是深研",
+      "strongest_alternative": "CLS",
+      "win_lose_conditions": "SMCI胜：高毛利真实持续且应收库存转现金；CLS胜：收入增长/利润率与财务证据连续性优于SMCI。"
+    },
+    {
+      "ticker": "TSM",
+      "price": 444.35,
+      "price_date": "2026-10-12",
+      "deep_researched": true,
+      "upside_thesis": "9月营收同比54.6%、Q2 GM67.7%；先进制程/封装对跨GPU和ASIC品牌较中立。2027 220B收入中枢高于Q3指引年化约180B，仍是可追踪扩张。",
+      "source_triangulation": [
+        "TSM_Q2",
+        "TSM_SEPT",
+        "NVDA_Q2",
+        "AVGO_Q3"
+      ],
+      "disputes": "ADR为5普通股；交易USD、财报TWD。模型直接用公司披露USD收入方向和等效ADR股数，不混用本地PS0.52。Q2含非经营收益，模型不年化该收益。海外厂成本与台湾地缘为独立风险。",
+      "recommended_bear_base_bull": [
+        {
+          "scenario": "bear",
+          "revenue_USD_B": 180,
+          "gross_margin": 0.61,
+          "opex_USD_B": 16,
+          "EBIT_USD_B": 93.8,
+          "tax_rate": 0.17,
+          "ADR_equivalent_shares_B": 5.19,
+          "EPS_USD_ADR": 15,
+          "PE": 18,
+          "price": 270.01,
+          "return_pct": -39.23
+        },
+        {
+          "scenario": "base",
+          "revenue_USD_B": 220,
+          "gross_margin": 0.66,
+          "opex_USD_B": 18,
+          "EBIT_USD_B": 127.2,
+          "tax_rate": 0.17,
+          "ADR_equivalent_shares_B": 5.19,
+          "EPS_USD_ADR": 20.34,
+          "PE": 25,
+          "price": 508.55,
+          "return_pct": 14.45
+        },
+        {
+          "scenario": "bull",
+          "revenue_USD_B": 260,
+          "gross_margin": 0.68,
+          "opex_USD_B": 21,
+          "EBIT_USD_B": 155.8,
+          "tax_rate": 0.17,
+          "ADR_equivalent_shares_B": 5.19,
+          "EPS_USD_ADR": 24.92,
+          "PE": 30,
+          "price": 747.48,
+          "return_pct": 68.22
+        }
+      ],
+      "valuation_bridge": "USD B经营口径：收入×GM−opex后税17%，除约25.95B普通股/5=5.19B等效ADR股；ADR EPS×PE。2027-10参考，不使用2030盈利。FX已体现在美元收入假设，TWD升值成本风险由GM范围覆盖。",
+      "catalysts": [
+        "3–6月：月度营收、Q3/Q4毛利",
+        "6–12月：先进封装与先进制程产能",
+        "12–18月：海外厂盈利稀释变化"
+      ],
+      "kill_criteria": "先进节点客户订单削减；GM<60%且收入未补偿；海外扩张长期无法转FCF",
+      "selection_priority": "核心竞争候选；可替较低赔率主题，非必替NVDA/MU/AVGO",
+      "confidence": "财务与月度事实高；经营模型中",
+      "strongest_alternative": "NVDA",
+      "win_lose_conditions": "TSM胜：先进工艺/封装成为跨品牌刚性瓶颈，且海外厂稀释受控；NVDA胜：收入540B与平台高利润兑现、近端收益大于代工。"
+    }
+  ],
+  "recommended_additions": [
+    "SNDK",
+    "IREN",
+    "PSIX",
+    "SMCI（现金/审计门槛后）"
+  ],
+  "recommended_core_retention": [
+    "NVDA",
+    "MU",
+    "AVGO",
+    "CLS"
+  ],
+  "recommended_removals": [
+    "不因周期标签淘汰MU/SNDK",
+    "若初选依据FLNC旧3B收入/-10M EBITDA，必须撤销该证据；待修复而非永久淘汰",
+    "AAOI/ALAB当前价基准赔率不足，不优先占核心名额"
+  ],
+  "open_questions": [
+    "SKHY证券/ADR比例与KRW到USD重核",
+    "POET RSU日期冲突、全部期权定价与客户权证归属尚需独立计算核验",
+    "Neo-cloud净债/预付/优先权益未来资金预算与实际融资对账",
+    "SMCI/MOD/LITE动态财报全文外部读取不足",
+    "各调整利润模型SBC经济负担需由FD股和现金回购交叉检验"
+  ],
+  "probabilities": "未赋概率；不是统计校准。不可将所有bull同时发生作为组合基准。",
+  "portfolio_warning": "MU/SNDK同存储定价，NVDA/AVGO/CLS/CRDO/AAOI/云算力同客户capex；应限制共同需求因子，不机械按票数全收。",
+  "final_experiment_target_date": "2028-04-12",
+  "alignment_status": "S1 computed targets remain 2027-10-12; do not silently use as 18-month targets; requires bridge update by verifier/chair",
+  "inherited_buyer_evidence": "Controller_平台候补复活审查.md: MSFT/GOOGL/AMZN; inherited read, not S1 direct external verification"
+}

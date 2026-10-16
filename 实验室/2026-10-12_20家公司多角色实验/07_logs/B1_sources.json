@@ -1,0 +1,203 @@
+{
+  "role": "B1",
+  "sources": [
+    {
+      "id": "B1-01",
+      "tickers": [
+        "IONS"
+      ],
+      "url": "https://www.royaltypharma.com/news/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen/",
+      "published_date": "2026-09-04",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "HORIZON主要终点失败；不预计再付里程碑；Spinraza分享2028升45%，累计550m后回归。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-02",
+      "tickers": [
+        "IONS"
+      ],
+      "url": "https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-japan-as-first-and-only-functional-cure-for-chronic-hepatitis-b/",
+      "published_date": "2026-08-24",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "日本首次批准；限定病毒标志物和前治疗条件，三期功能性治愈19%；Ionis授权，不是全部GSK销售归Ionis。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-03",
+      "tickers": [
+        "IONS"
+      ],
+      "url": "https://www.roche.com/media/releases/med-cor-2026-09-23b",
+      "published_date": "2026-09-23",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "37周蛋白尿中期终点阳性；105周eGFR仍继续，不能当已确证长期肾功能获益。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-04",
+      "tickers": [
+        "NVDA",
+        "AVGO"
+      ],
+      "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "published_date": "2026-08-26",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "客户侧计划2027–28追加200万GPU，同时使用AWS自研芯片及EFA；支持需求，不提供不可取消采购金额。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-05",
+      "tickers": [
+        "NVDA"
+      ],
+      "url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/",
+      "published_date": "2026-09-16",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "Rubin/Vera Rubin为Preview，性能成绩与商业规模验收分开。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-06",
+      "tickers": [
+        "BABA"
+      ],
+      "url": "https://www.prudential.com.hk/en/about-us/newsroom/prudential-launches-brand-new-ai-underwriter-powered-by-alibaba-cloud/",
+      "published_date": "2026-09-09",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "真实客户全面上线；数日缩至分钟，未披露阿里净合同收入/利润。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-07",
+      "tickers": [
+        "PNR"
+      ],
+      "url": "https://ir.poolcorp.com/pool-corporation-reports-second-quarter-results-confirms-annual-earnings-guidance-range-excluding-ceo-transition-costs/",
+      "published_date": "2026-07-23",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "Q2销售+2%，维护稳定，库存同比+4%由Q1+14%下降；不是PNR专属库存。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-08",
+      "tickers": [
+        "PNR"
+      ],
+      "url": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results-and-Confirms-2026-Guidance/default.aspx",
+      "published_date": "2026-07-29",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "北美销售+9%，价格及数量共同增长；反对把PNR下跌全归宏观。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-09",
+      "tickers": [
+        "FLNC"
+      ],
+      "url": "https://www.leag.de/de/news/details/spatenstich-fuer-gigabattery-boxberg-400-leag-clean-power-startet-grossbatterieprojekt-in-sachsen/",
+      "published_date": "2026-08-31",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "Boxberg 400MW/1600MWh，HyperStrong合作；客户多供应商，不是FLNC独占。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-10",
+      "tickers": [
+        "IREN"
+      ],
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "published_date": "2026-02-05",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "SOW验收最低GPU数量、5天验收/15工作日修复及延期抵扣/终止条款，合同不是无条件现金。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-11",
+      "tickers": [
+        "POET",
+        "CRDO",
+        "AAOI",
+        "COHR"
+      ],
+      "url": "https://openlightphotonics.com/newsroom/openlight-introduces-3-2t-dr8-silicon-photonics-pics-as-well-as-1-6t-dr8-lro-and-lpo-variants",
+      "published_date": "2026-03-10",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "3.2T原型及1.6T资格样品订单；替代路线推进，不证明大规模收入，但否定唯一技术路线。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-12",
+      "tickers": [
+        "BNTX"
+      ],
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "published_date": "2026-08-04",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "现金证券16634.2m欧元、251.204m流通股、ADS1:1；回购不能等同未来全面缩股。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-13",
+      "tickers": [
+        "ADBE"
+      ],
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "published_date": "2026-09-10",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "Q3收入6.76B、GAAP经营利润2.35B、ARR27.50B、CFO2.52B；当前收费真实。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-14",
+      "tickers": [
+        "MU"
+      ],
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+      "published_date": "2026-09-30",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "Q4收入54.23B、GAAP净利37.70B、CFO43.97B；高利润非只分析师远期预测。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-15",
+      "tickers": [
+        "ALNY",
+        "IONS"
+      ],
+      "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
+      "published_date": "2026-07-09",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "主要CM复合终点失败；基线稳定剂患者无治疗效果；不能以所有沉默疗法自动优于标准治疗。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-16",
+      "tickers": [
+        "ARGX"
+      ],
+      "url": "https://argenx.com/news/2026/press-release-3376934",
+      "published_date": "2026-10-08",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "UNITY因无效停止，无新安全信号；不推翻既有gMG/CIDP收入。",
+      "independent_visit": true
+    },
+    {
+      "id": "B1-17",
+      "tickers": [
+        "POET"
+      ],
+      "url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+      "published_date": "2026-08-06",
+      "access": "B1 independent web open + relevant body/find read; URL discovered from frozen report or prior log, not independent root event",
+      "reading_notes": "客户宣布累计融资超过900m、生产数据中心交付及数十亿协议；自身披露不等于POET供应份额。",
+      "independent_visit": true
+    }
+  ],
+  "failed_access": [
+    "Intellia FDA acceptance URL: internal error",
+    "Kyverna one-year-data URL: internal error",
+    "Tower September 17 URL: internal error"
+  ],
+  "independent_visit_not_independent_root_event": true
+}

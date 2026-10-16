@@ -1,0 +1,143 @@
+{
+  "ticker": "CEG",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:50:16-07:00",
+  "reference_price": {
+    "value": 298.07,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        246.42,
+        246.42
+      ],
+      "target_price": [
+        87.2,
+        122.08
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        465.02,
+        465.02
+      ],
+      "target_price": [
+        314.72,
+        384.66
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        631.36,
+        631.36
+      ],
+      "target_price": [
+        477.03,
+        620.14
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        744.63,
+        744.63
+      ],
+      "target_price": [
+        646.32,
+        786.83
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "VST",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "追求PJM低碳存量核电重签优先CEG；追求气电及较低前瞻经营倍数则VST更合适，贷款须实际落实"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "在现价下CEG的存量核电权益定价更低、基准价格回报更高；GEV需回落或交付现金上修才能替代"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "CEG存量运行与基准赔率优于现价BE；仅在现场桥接需求远超预期且价格显著降低时重新比较BE"
+    },
+    {
+      "peer": "OKLO",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "CEG在2—4年可交付核电及资本保存维度优先；OKLO仅适合接受6年以上期限和严重稀释的独立试验仓"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "核电持续增长逻辑下现价CEG现金和正常化经营估值更有利，CCJ需更强长期铀价/现金分配或更低买价"
+    },
+    {
+      "peer": "BWXT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "回避电价与电站经营风险优先BWXT；寻求大机组重签与更高核电权益上行优先CEG，现价均不足核心安全边际"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同样看好AI需求并追求组合核心成长时MSFT基准年化、收入多元性与付费入口优于CEG；CEG用于电力实物分散"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "追求广告AI货币化和较低杠杆优先META；要求基准价格回报及核电实物分散则CEG更合适，两者都需资本纪律"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "一般AI/数字经济成长配置优先GOOGL的利润池和右尾，基准上沿年化也高于CEG；仅纯低碳电力暴露使用CEG补充"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "可承受AI预算周期的进攻配置优先NVDA，其基准及右尾年化明显高于CEG；须将大客户信用风险纳入仓位"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "可承受台海与ADR地域尾险则优先TSM的先进制造利润复利；限定美国本土电力/排除台海尾险则CEG优先"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "优先稳定收费与股息、低商品价差波动则LIN更合适；追求PJM核电重签右尾则CEG更有弹性"
+    }
+  ]
+}

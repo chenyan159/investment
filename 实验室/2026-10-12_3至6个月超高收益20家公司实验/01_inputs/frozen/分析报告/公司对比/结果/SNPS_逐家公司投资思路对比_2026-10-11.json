@@ -1,0 +1,149 @@
+{
+  "ticker": "SNPS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:45:38-07:00",
+  "reference_price": {
+    "value": 509.99,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        489,
+        489
+      ],
+      "target_price": [
+        202,
+        263
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        947,
+        947
+      ],
+      "target_price": [
+        748,
+        864
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1083,
+        1083
+      ],
+      "target_price": [
+        988,
+        1153
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1311,
+        1311
+      ],
+      "target_price": [
+        1356,
+        1595
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "CDNS",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "现价下SNPS的同口径经济利润倍数更低、基准赔率更好；若Cadence溢价显著收窄或SNPS执行恶化则重比。"
+    },
+    {
+      "peer": "RMBS",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "同一设计/IP配置逻辑下优先SNPS的平台广度与基准赔率，RMBS的净现金与模组芯片弹性构成局部优势。"
+    },
+    {
+      "peer": "QCOM",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "手机底盘稳定且数据中心里程碑兑现时优先QCOM的买价和右尾；要求较少终端周期暴露时优先SNPS。"
+    },
+    {
+      "peer": "ARM",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "SNPS当前价格对可核验经济利润与基准回报更有支撑，ARM需CPU商业兑现显著超基准或大幅降低买价后才重比。"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "verdict": "comparable",
+      "reason": "同口径估值接近，SNPS的软件复利与AOIP右尾对上KEYS的低净债与实物测量壁垒，现价不构成全面替代。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "接受定制ASIC客户信用、采购和系统交付风险的进攻资金优先AVGO；排斥这类风险而偏好研发收费时优先SNPS。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "广义AI成长核心优先NVDA的现金利润规模、更低经济利润倍数与基准DCF缓冲，SNPS作为减轻供给和客户融资暴露的补充。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "接受台海及制造资本回报尾部风险时优先TSM的单位利润买价；要求资产轻和较少地域尾部暴露时优先SNPS。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "当前同一芯片设计逻辑优先SNPS的较轻现金投资与收费复利，AMZN的云、零售和广告更适合另一组长期变现假设。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "分散稳健核心优先MSFT的客户广度和可核验盈利底盘，SNPS以更快设计自动化成长和右尾作为卫星补充。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "在近中期股东经济现金可见度优先的标准下选SNPS，若AI广告与消费分发回报优先且能承受前置投资则META有局部优势。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "能承受AI席位替代风险的基准现金价值资金优先ADBE的低买价和更高基准赔率，SNPS提供更强设计签核壁垒但价格更贵。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "现价下SNPS经济利润买价较低、基准交易回报较好，KLAC的物理检测壁垒有独特性但不足以覆盖当前估值机会成本。"
+    }
+  ]
+}

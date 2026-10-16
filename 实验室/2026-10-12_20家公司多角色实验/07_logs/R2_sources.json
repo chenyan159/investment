@@ -1,0 +1,348 @@
+{
+  "role": "R2_valuation",
+  "cutoff": "2026-10-12T19:40:00-07:00",
+  "queries": [
+    "site.adobe.com investor 2026 Q3 earnings September 10 2026",
+    "site.investor.nvidia.com fiscal 2027 second quarter results 2026",
+    "site.investors.broadcom.com 2026 third quarter financial results",
+    "site.investors.alnylam.com 2026 second quarter financial results",
+    "site.investors.pentair.com 2026 second quarter results pool inventory 170",
+    "site.investors.biontech.de 2026 second quarter financial results cash 16.6",
+    "site.investor.belden.com 2026 second quarter RUCKUS",
+    "site.investors.modine.com October 2026 spin off Gentherm",
+    "site.investors.micron.com 2026 fourth quarter September 30 2026 54.229",
+    "site.investor.sandisk.com 2026 fourth quarter 93.9",
+    "site.ir.supermicro.com fiscal 2026 annual results 39.06",
+    "site.investors.pentair.com October 1 2026 Taco completes"
+  ],
+  "external_sources": [
+    {
+      "id": "R2-W01",
+      "ticker": "ADBE",
+      "published_date": "2026-09-10",
+      "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/01906202/au56y4ter.pdf",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q3收入6.76B、GAAP EPS4.62、FY26 GAAP EPS指引18.12–18.17；不用27.67远期调整EPS直接估值"
+    },
+    {
+      "id": "R2-W02",
+      "ticker": "NVDA",
+      "published_date": "2026-08-26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q2收入96.2B；已披露规模强，不证明客户全周期回报"
+    },
+    {
+      "id": "R2-W03",
+      "ticker": "AVGO",
+      "published_date": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q3收入29.591B、FCF13.7B；软件与AI权益分别估计"
+    },
+    {
+      "id": "R2-W04",
+      "ticker": "ALNY",
+      "published_date": "2026-07-30",
+      "url": "https://investors.alnylam.com/press-release?id=ddc78e15-7847-4066-8fdb-3562023a60f4",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "TTR指引由4.4–4.7B下调到4.2–4.5B；二线积压正常化，不能仅看产品增长"
+    },
+    {
+      "id": "R2-W05",
+      "ticker": "PNR",
+      "published_date": "2026-07-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000042/q22026pressrelease.htm",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q2收入933M、约170M泳池渠道去库、35M退款；2026调整EPS指引4.60–4.80"
+    },
+    {
+      "id": "R2-W06",
+      "ticker": "BDC",
+      "published_date": "2026-07-30",
+      "url": "https://investor.belden.com/financials/quarterly-results/default.aspx",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q2收入750M、订单836M，RUCKUS于7/1完成；动态页面仅采用Q2已公开内容"
+    },
+    {
+      "id": "R2-W07",
+      "ticker": "BNTX",
+      "published_date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000054/a991bntx_q22026pressreleas.htm",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q2资金证券16.6342B EUR；经营持续消耗现金，不当作清算底价"
+    },
+    {
+      "id": "R2-W08",
+      "ticker": "MOD",
+      "published_date": "2026-10-01",
+      "url": "https://investors.modine.com/news/news-details/2026/Modine-Completes-Spin-off-and-Combination-of-its-Performance-Technologies-Business-with-Gentherm/default.aspx",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "PT分拆完成；9/28记录日每原MOD股0.44619 THRM；156M现金偿债；10/12新买MOD无历史分派权利"
+    },
+    {
+      "id": "R2-W09",
+      "ticker": "PNR",
+      "published_date": "2026-10-01",
+      "url": "https://investors.pentair.com/news-releases/news-release-details/pentair-completes-acquisition-taco-group-holdings",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Taco完成约1.4B收购；新买家承接新增债务及经营，无完整交割后报表"
+    },
+    {
+      "id": "R2-W10",
+      "ticker": "MU",
+      "published_date": "2026-09-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q4收入54.229B、GAAP净利37.70B、FY26收入133.188B；近期利润强但异常周期不能永续"
+    },
+    {
+      "id": "R2-W11",
+      "ticker": "SMCI",
+      "published_date": "2026-08-11",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "FY27收入指引65–72B；独立工作模型仅60B，现金及优先融资另扣"
+    },
+    {
+      "id": "R2-W12",
+      "ticker": "SNDK",
+      "published_date": "2026-08-05",
+      "url": "https://investor.sandisk.com/static-files/c75d1bee-c5c9-4e5a-8605-302c1aeac59b",
+      "opened": true,
+      "source_level": "原始IR/SEC；公司自述与公司预测仍非独立验证",
+      "finding": "Q4 PDF p11 NBM底价合同93.9B、季度末RPO59.8B及期后91.1B；不能将两个RPO相加"
+    }
+  ],
+  "read_inputs": [
+    "01_inputs/universe_screen.csv",
+    "01_inputs/universe.json"
+  ],
+  "local_sources": [
+    {
+      "ticker": "ADBE",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-01.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "CRM",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "ORCL",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/ORCL_Oracle_Corporation_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "BABA",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/云算力_IDC_边缘云/BABA_Alibaba_阿里巴巴_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "NVDA",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-09-21.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "AVGO",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-18.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "ALNY",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-11.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "BNTX",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-11.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "PNR",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "ENPH",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "PGR",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-11.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "RNR",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/保险_财产险_特色险_再保险/RNR_RenaissanceRe_Holdings_公司调研_2026-10-11.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "ON",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "MCHP",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-09-21.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "SMCI",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "BDC",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "CLS",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-09-21.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "MOD",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "JBL",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/JBL_Jabil_Inc_公司调研_2026-10-01.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "MKSI",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "MU",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-01.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "SNDK",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "STX",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "WDC",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "PLAB",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "GFS",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-09-22.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "QCOM",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-09-21.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    },
+    {
+      "ticker": "VST",
+      "company": [
+        "01_inputs/frozen/基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-09-26.md"
+      ],
+      "read_scope": "首部经营/财务事实＋统一经营模型及资本结构相关段落；非全篇逐字阅读"
+    }
+  ],
+  "additional_company_overviews": [
+    "AMZN",
+    "MSFT",
+    "ENS"
+  ],
+  "six_source_classes": [
+    "产业背景：全球AI需求与Token经济框架、AI产业链瓶颈与反证指标总表",
+    "行业：核酸药物与免疫治疗",
+    "公司：28家公司模型深读",
+    "情景：ADBE、PNR、BNTX、MOD、VST及MU摘要",
+    "对比：ADBE、PNR、BNTX、MU摘要",
+    "金融：245公司完整冻结CSV/JSON"
+  ],
+  "limitations": [
+    "没有读取其他研究者首轮；上游报告结论不是新的独立事实。",
+    "部分批量工具输出截断；随后对决定性模型分段重新读取，未将截断内容当作已见事实。",
+    "除外部核验的12个文档外，其余经营事实仍依赖冻结上游研究，留给V1核验。"
+  ]
+}

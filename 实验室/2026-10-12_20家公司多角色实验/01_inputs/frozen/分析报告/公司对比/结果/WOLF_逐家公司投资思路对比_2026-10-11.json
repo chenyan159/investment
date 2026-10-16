@@ -1,0 +1,143 @@
+{
+  "ticker": "WOLF",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:31:02-07:00",
+  "reference_price": {
+    "value": 30.61,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-06-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        4.52,
+        4.52
+      ],
+      "target_price": [
+        3.0,
+        7.56
+      ],
+      "evidence": "weak"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        44.73,
+        44.73
+      ],
+      "target_price": [
+        39.55,
+        49.9
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        77.12,
+        77.12
+      ],
+      "target_price": [
+        77.12,
+        85.42
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "看好高压功率产业正常兑现时优先ON：现有自由现金流与基准正回报优于WOLF，须计入57亿美元现金收购及整合风险。"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "要求同产业逻辑的生存确定性及广泛客户覆盖时优先IFNNY；现价基准回报偏弱，优先地位不等于立即重仓。"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "高压功率复苏与平台增长逻辑优先STM：基准正回报、净金融资产和已收费产品更强；WOLF只在独立高压右尾上局部占优。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若看AI材料与光平台收费确定性优先COHR；若只押美国高压器件重整且WOLF融资落地、买价降至18–22美元，可用WOLF作小仓补充。"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "押800V高频低压集成且重视融资缓冲时优先NVTS；押大尺寸高压SiC制造、WOLF融资已完成且价格足够低时，WOLF才局部占优。"
+    },
+    {
+      "peer": "POWI",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "资本保全及高压集成正常兑现优先POWI；WOLF突破弹性较高，但POWI无需先解决债权人和巨额转股分配。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "AI电源付费兑现与内生现金优先MPWR；现价基准回报有限，宜控买价，但仍比WOLF的融资先决路径适合核心配置。"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求真实AI重复设备订单和轻资本缓冲时优先AEHR；追求极高压制造右尾且WOLF融资与客户现金兑现、买价18–22美元时才考虑WOLF补充；两者现价均非稳健首选。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "AI基础设施增长和进攻赔率优先NVDA：模型基准与右尾均更好且现金更强；其万亿美元远期收入也须按预算和回款验证。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "核心成长配置优先MSFT：成熟利润池、内生融资与基准回报更强；WOLF仅在高压材料技术专项上不可直接替代。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "资本承载与AI平台收益优先GOOGL：基准回报较薄但仍高于WOLF，不能用含投资收益的TTM PE证明便宜。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健复利与本金保全优先LIN；WOLF突破倍数更高，但现价不足补偿永久损失和连续融资风险。"
+    }
+  ]
+}

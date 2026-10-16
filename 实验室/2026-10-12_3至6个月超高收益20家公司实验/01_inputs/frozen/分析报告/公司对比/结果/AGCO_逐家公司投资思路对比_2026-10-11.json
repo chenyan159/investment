@@ -1,0 +1,137 @@
+{
+  "ticker": "AGCO",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:10:00-07:00",
+  "reference_price": {
+    "value": 103.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        39,
+        39
+      ],
+      "target_price": [
+        24,
+        31
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        183,
+        183
+      ],
+      "target_price": [
+        157,
+        183
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        244,
+        244
+      ],
+      "target_price": [
+        228,
+        278
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        289,
+        289
+      ],
+      "target_price": [
+        289,
+        370
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "DE",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "以现价参与农机复苏时AGCO的基准及乐观赔率更高，DE的平台和现金质量优势尚未抵消较满定价。"
+    },
+    {
+      "peer": "CGNX",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "现价下AGCO的中心回报及上行幅度更充足，CGNX的通用视觉质量优势受收购成本和高倍数约束。"
+    },
+    {
+      "peer": "TDY",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若优先客户分散和现金稳定则选TDY，若承担农业周期风险以换取更高基准及右尾赔率则选AGCO。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "现价下AGCO的基准上行更大，ADI的设计壁垒优势需更低买价或更强经营路径才能补足赔率。"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若偏好分散工业和成熟现金能力则选PH，若要求更高农业周期赔率并能承担欧洲及融资集中风险则选AGCO。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "均衡周期配置优先CMI的分散利润来源及较温和左尾，AGCO适合作为农业复苏弹性补充。"
+    },
+    {
+      "peer": "DCI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "按稳健资本保全标准优先DCI的过滤耗材与售后现金，AGCO仅在追求更高农机周期弹性时胜出。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "现价CAT基准经营兑现仍难带来正股价回报，AGCO在周期修复逻辑下提供更好的中心赔率。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先合同现金和经营稳定则选LIN，若承担周期回撤以争取更大上行则选AGCO。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "长期核心配置优先MSFT的多元经常性收入和平台壁垒，AGCO作为低相关农业周期补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "高收益进攻优先NVDA的生态和更大右尾，AGCO的优势在分散AI客户融资与出口风险。"
+    }
+  ]
+}

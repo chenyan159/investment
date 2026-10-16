@@ -1,0 +1,131 @@
+{
+  "ticker": "RNR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:06:34-07:00",
+  "reference_price": {
+    "value": 331.38,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        175.6,
+        175.6
+      ],
+      "target_price": [
+        147.1,
+        189.1
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        447.2,
+        447.2
+      ],
+      "target_price": [
+        428.2,
+        535.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        570.0,
+        570.0
+      ],
+      "target_price": [
+        614.0,
+        750.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        611.9,
+        611.9
+      ],
+      "target_price": [
+        732.3,
+        878.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "容忍巨灾尾部、追求估值与每股回报时优先RNR；偏好分散特色原保险时优先WRB。"
+    },
+    {
+      "peer": "CB",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健保险核心仓优先CB的分散账簿与更强基准证据；愿承受巨灾和回购依赖、追求更高价格弹性时选RNR补充。"
+    },
+    {
+      "peer": "TRV",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "较高回报和灾害风险预算选RNR，原保险渠道、股息及较少单一巨灾集中需求选TRV。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "汽车险数据和短周期调价复利选PGR，低倍数再保险及更高基准价格回报选RNR。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "以现价的基准回报和估值缓冲衡量优先RNR；CAT发电业务增长真实但605—734美元基准目标低于800.47美元买价。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "以现价稳健回报衡量优先RNR；PWR工程成长更快但705.94美元已接近712美元基准下沿且现金兑现风险更大。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "可承受天气尾部并追求价格赔率时优先RNR，重视日常需求稳定且接受较薄回报时选WM。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "以现价的新增资金性价比衡量优先RNR；COST会员壁垒更确定但约46倍正常化利润压低基准回报。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "通用核心成长仓优先MSFT的生态与盈利增长；保险价值和非AI风险敞口需求选RNR作补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "偏高风险高收益进攻标准优先NVDA的可验证业务放量和更大右尾；RNR适合作保险价值补充而非该标准首选。"
+    }
+  ]
+}

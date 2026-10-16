@@ -1,0 +1,1881 @@
+{
+  "utc": "2026-10-13T03:42:01.918296+00:00",
+  "scope": "All experiment files except frozen inputs (separate manifest) and this manifest itself",
+  "files": [
+    {
+      "path": "00_control/benchmark_baseline.json",
+      "bytes": 1221,
+      "sha256": "b4b3cf1ee1942c24ff1d41ad8ff23cf969d970b5b34fe8cf9f0f8996e508f158"
+    },
+    {
+      "path": "00_control/data_audit.json",
+      "bytes": 724,
+      "sha256": "51b5426b871ed4b2be073d8370fba4004bf020c0fac2bc1f4ae3f5099f584e73"
+    },
+    {
+      "path": "00_control/evidence_coverage.csv",
+      "bytes": 19056,
+      "sha256": "5cbb83c90c74b90ab4122c62da5013a6f939aac74e7a59e9b800db5269dee1a9"
+    },
+    {
+      "path": "00_control/evidence_inventory.json",
+      "bytes": 192434,
+      "sha256": "f77f7cdd6e1fce78aa878c25fa04c597497b50ffa89c403e4ddcc3dbb231a6e4"
+    },
+    {
+      "path": "00_control/final_validation.json",
+      "bytes": 780,
+      "sha256": "36f49ad71ab42978e5eea836d82ef549fd79db2ccab4dda1020ad7998135bc49"
+    },
+    {
+      "path": "00_control/freeze_summary.json",
+      "bytes": 233,
+      "sha256": "fd0497410f6f978527cb1f9926415c14c15cdffc17328b46e62823ec9a93d7ea"
+    },
+    {
+      "path": "00_control/input_manifest.json",
+      "bytes": 265869,
+      "sha256": "9d7a40096662ebf8f513388316190af1dbf259cc7ac1f5bf2b2d90b5f5cf76c3"
+    },
+    {
+      "path": "00_control/integrity_check.json",
+      "bytes": 417,
+      "sha256": "b0dd981ef2922a5a26b1f2a3b2c7405afc40d819c11c8bfa74bf0ba39a0910e8"
+    },
+    {
+      "path": "00_control/全池245家数据口径审计.csv",
+      "bytes": 63183,
+      "sha256": "0b55658c05c9724026a364f114ff1a8c49d1743791bc11edaab78f8b3c286acf"
+    },
+    {
+      "path": "00_control/实验章程.md",
+      "bytes": 6535,
+      "sha256": "1416dc9f0e88c40b86fc408a58701ddf4c740bce53b817a56d0a661ed8b81330"
+    },
+    {
+      "path": "00_control/终选裁决准则.md",
+      "bytes": 2765,
+      "sha256": "cd8cc8f48e0a2d95eb8b4e924b7d0dd8318e4d12099229b98b765f8b10495dac"
+    },
+    {
+      "path": "00_control/角色调度与交付约定.md",
+      "bytes": 2642,
+      "sha256": "5cd0fc2ec32009741a8e164dc33330bc4aded55f9a698d0daf9dba35d4dd5460"
+    },
+    {
+      "path": "01_inputs/dossiers/AAOI.md",
+      "bytes": 67668,
+      "sha256": "282d5e05bded445a97d9ba17e7185add21e83de8cc581acccd231a7ec8de8a69"
+    },
+    {
+      "path": "01_inputs/dossiers/AAON.md",
+      "bytes": 64642,
+      "sha256": "737981f6ab098b263db3bf56ffb2d31faca786bfa7ff114220e334b0a8ce1fbc"
+    },
+    {
+      "path": "01_inputs/dossiers/ABBNY.md",
+      "bytes": 70357,
+      "sha256": "7b3984617a7c2a2bc941d1620192a5ad694bf15f45f0188df3539755fa81553c"
+    },
+    {
+      "path": "01_inputs/dossiers/ACLS.md",
+      "bytes": 66860,
+      "sha256": "a5e5a551457ec96a973bafe8db9cce4ff83f651358e16b8651c5882963d6ee9e"
+    },
+    {
+      "path": "01_inputs/dossiers/ACMR.md",
+      "bytes": 61932,
+      "sha256": "c216b3374ca03ce08d46cfeadc37d7718fefd04f14df42107835fbe545a1cc51"
+    },
+    {
+      "path": "01_inputs/dossiers/ADBE.md",
+      "bytes": 66692,
+      "sha256": "1b13d2bcf26c373879db5516c6aba53f33af5be98afc5b120df02d961af1f8d4"
+    },
+    {
+      "path": "01_inputs/dossiers/ADI.md",
+      "bytes": 60339,
+      "sha256": "d86232aaced25a812136fed2519c351d0e97fde44660fddab2b7a940ddae6595"
+    },
+    {
+      "path": "01_inputs/dossiers/AEHR.md",
+      "bytes": 65251,
+      "sha256": "b2bc258fc82cba2c1fedaef761df4c80143a8ebc56783023e57203f47d69a4c5"
+    },
+    {
+      "path": "01_inputs/dossiers/AEIS.md",
+      "bytes": 67070,
+      "sha256": "443042f66d965979247e9fc03a349bd89a70705a5d02dfff98f63ee116f44a8e"
+    },
+    {
+      "path": "01_inputs/dossiers/AEP.md",
+      "bytes": 65096,
+      "sha256": "c742b1ec31a5bbedc99d96bdcd9f965aeb38eb20286642778965f5867729e787"
+    },
+    {
+      "path": "01_inputs/dossiers/AGCO.md",
+      "bytes": 74871,
+      "sha256": "4dc56ba8cac68d74b47a07d2bebe7b85408b1085fcbe29ce6ad392230ac03bb0"
+    },
+    {
+      "path": "01_inputs/dossiers/AJNMY.md",
+      "bytes": 63699,
+      "sha256": "ccee47fe261814801f35bc8fbb89e6290188daf970222d5441f8a2bbd882e141"
+    },
+    {
+      "path": "01_inputs/dossiers/ALAB.md",
+      "bytes": 69982,
+      "sha256": "4a59e40bb2d92c2592242a9245b950d04072b07628d7f3f899e6dd372cb5cd63"
+    },
+    {
+      "path": "01_inputs/dossiers/ALGM.md",
+      "bytes": 65319,
+      "sha256": "843ee02b6b7c3978db67c417f8dda69dd82ed69b97504dada7840f3644609b0e"
+    },
+    {
+      "path": "01_inputs/dossiers/ALLE.md",
+      "bytes": 66675,
+      "sha256": "d9eb70a7cac69f28c591fd85ed384879d970b5cf5bac9b564ffd680f97ad8bb3"
+    },
+    {
+      "path": "01_inputs/dossiers/ALNY.md",
+      "bytes": 65421,
+      "sha256": "0527f9693181e9625ff975e675bc874f1dff535c8f4667149effef19485af064"
+    },
+    {
+      "path": "01_inputs/dossiers/AMAT.md",
+      "bytes": 65347,
+      "sha256": "1ff150f1ddf71f608ace18706c70f3197e3f35d4b10c76f7519288d0c1f00c3b"
+    },
+    {
+      "path": "01_inputs/dossiers/AMBA.md",
+      "bytes": 63618,
+      "sha256": "3dbd75e7af5dc275ac932448f19aaae0dd6cd48eb32776247e92a0f3466b3176"
+    },
+    {
+      "path": "01_inputs/dossiers/AMD.md",
+      "bytes": 70958,
+      "sha256": "0103f5f89f565fefca6a86e824fb2ab486ecceb9620aa07edee7e1d4f0b89f67"
+    },
+    {
+      "path": "01_inputs/dossiers/AMKR.md",
+      "bytes": 65625,
+      "sha256": "73e53745ab8b8cd657bd04a3cea710baff8e418dbcd47129a3214546da5dbe32"
+    },
+    {
+      "path": "01_inputs/dossiers/AMPX.md",
+      "bytes": 63618,
+      "sha256": "47a384d63f8d219a27a3cbec6bf4f99239fd5a681de5064f323fd2d9857cef1d"
+    },
+    {
+      "path": "01_inputs/dossiers/AMZN.md",
+      "bytes": 66466,
+      "sha256": "60c1265e26f4b775babc87a4bb7fded269624dbe9d8045fc283dfb7f75544645"
+    },
+    {
+      "path": "01_inputs/dossiers/ANET.md",
+      "bytes": 65572,
+      "sha256": "26f65972cd2bfbc6235a006206ff8648042f28d4c2a9d667f74a2666b199dd4a"
+    },
+    {
+      "path": "01_inputs/dossiers/AOSL.md",
+      "bytes": 66700,
+      "sha256": "3da847cde8cea584debbb13c71f61b3193bf2cc1ff4ad1ac846325986579d9ef"
+    },
+    {
+      "path": "01_inputs/dossiers/APD.md",
+      "bytes": 64140,
+      "sha256": "4f814d433b64eb863d154deb0cf7d2c347b7f30b8f2657075989126bb0a0b270"
+    },
+    {
+      "path": "01_inputs/dossiers/APH.md",
+      "bytes": 72531,
+      "sha256": "3626196593afbc198595aca7ff8eba77666789aaa91f96e2bea582bb84a3ed4a"
+    },
+    {
+      "path": "01_inputs/dossiers/APLD.md",
+      "bytes": 73266,
+      "sha256": "8398fefa2d014bad901006e0f0eb8aa26b6a36f6a7df7947702fd3bc35678723"
+    },
+    {
+      "path": "01_inputs/dossiers/ARGX.md",
+      "bytes": 71162,
+      "sha256": "88c4d21d218ded33d32032c39e047cb4c2125c0c41df54d28fa6c2d5eef17b96"
+    },
+    {
+      "path": "01_inputs/dossiers/ARM.md",
+      "bytes": 69457,
+      "sha256": "ca5c4316c294607f9a8658aad2d62ab46e5295543c0d1d451d66066dfd816450"
+    },
+    {
+      "path": "01_inputs/dossiers/ASGLY.md",
+      "bytes": 63271,
+      "sha256": "29eac635d6473490437828f2cbfa0328c283fb1cf98d3847df7d316bfba08c88"
+    },
+    {
+      "path": "01_inputs/dossiers/ASMIY.md",
+      "bytes": 70180,
+      "sha256": "4e65e1070575f38cfe6a62ad707817c6c19dab41a2f0369cd95f359a4f02d4ec"
+    },
+    {
+      "path": "01_inputs/dossiers/ASML.md",
+      "bytes": 65785,
+      "sha256": "2d375cc73b8928ef0e92d165b0f67f6ebf7bef2a0e6559cebe500ded0d3d989d"
+    },
+    {
+      "path": "01_inputs/dossiers/ASMVY.md",
+      "bytes": 64984,
+      "sha256": "de57addf4638c849519c7dff3818ae0f2be20d8493a7ff963cb6898bf4af1e73"
+    },
+    {
+      "path": "01_inputs/dossiers/ASTS.md",
+      "bytes": 64266,
+      "sha256": "16e19f313249ed7e572cb3aefdd285afd9d1ab179e4f854f2f492ec36ac5e862"
+    },
+    {
+      "path": "01_inputs/dossiers/ASX.md",
+      "bytes": 67284,
+      "sha256": "7b289bc591f10b1889bd38daf6d088d0eb20d050b6e9949871d0a7c8ca234751"
+    },
+    {
+      "path": "01_inputs/dossiers/ATEYY.md",
+      "bytes": 66241,
+      "sha256": "82fe2c5d052e88965e3cb5ed09a7eb72c0d8176939510b2f08f0f43495cb7d49"
+    },
+    {
+      "path": "01_inputs/dossiers/ATKR.md",
+      "bytes": 70078,
+      "sha256": "12c0af662b94d111b4c6cf29c8626846aca13dd1914274cf7e927f065c917892"
+    },
+    {
+      "path": "01_inputs/dossiers/AVAV.md",
+      "bytes": 62450,
+      "sha256": "4c2160015b3dd55a9ef81ea96ca044f59ec3ce3f4b013c739dfc785e0cf7bbf7"
+    },
+    {
+      "path": "01_inputs/dossiers/AVGO.md",
+      "bytes": 69435,
+      "sha256": "afae7242640fa01317e3aa2e33da8b11cc1a45de4da6db484f57d7c1c29d0a63"
+    },
+    {
+      "path": "01_inputs/dossiers/AXTI.md",
+      "bytes": 65450,
+      "sha256": "36f439328b21a8224c2a3fc2fdd91fbad97c373d4d8d18a281879d3178559b2a"
+    },
+    {
+      "path": "01_inputs/dossiers/BABA.md",
+      "bytes": 69933,
+      "sha256": "95499b55f1b0e9440e31bad34685392ab9f9ed8b6d9b8375fc6285cdf7db8652"
+    },
+    {
+      "path": "01_inputs/dossiers/BDC.md",
+      "bytes": 67491,
+      "sha256": "e1d28ae83f938a49c3438d091198fd3b53a4d36c273e208a38c999b867167758"
+    },
+    {
+      "path": "01_inputs/dossiers/BE.md",
+      "bytes": 65725,
+      "sha256": "650a2aef227554de3f1672f92d88a20fcd9e4cf41104c9c8126831aa78fe57b4"
+    },
+    {
+      "path": "01_inputs/dossiers/BELFB.md",
+      "bytes": 64934,
+      "sha256": "7977b01bade764a17a2192801295a33cf9ddd329f9d2d0f93d90078235674630"
+    },
+    {
+      "path": "01_inputs/dossiers/BESIY.md",
+      "bytes": 64484,
+      "sha256": "9f11c19b291e743b2bbb5d5bca592e26a12a48c8f81b87b0536c542c95e542f2"
+    },
+    {
+      "path": "01_inputs/dossiers/BJ.md",
+      "bytes": 66384,
+      "sha256": "c5db74689436402c7976bafc7d62122363c979d22b34dbb9739248f9d6dd672d"
+    },
+    {
+      "path": "01_inputs/dossiers/BNTX.md",
+      "bytes": 64128,
+      "sha256": "10d0443ce0d8b21b558911dec1c20b8e95075d2d073d5b9b5fbf543bdce83a26"
+    },
+    {
+      "path": "01_inputs/dossiers/BWXT.md",
+      "bytes": 75305,
+      "sha256": "b65c4ff0293eac32f1a8501c93609ef98c6cad60dad00b2f00468c0fb81d3a59"
+    },
+    {
+      "path": "01_inputs/dossiers/CAMT.md",
+      "bytes": 63056,
+      "sha256": "e6809a6334fb05ce4321f006cd5d78aa0c2a1ae821bbb59955068a84411ebffa"
+    },
+    {
+      "path": "01_inputs/dossiers/CARR.md",
+      "bytes": 69539,
+      "sha256": "5b80bc3e96305507016cea66e72db465491d1b04c96f681603e4cf3c72620fb6"
+    },
+    {
+      "path": "01_inputs/dossiers/CAT.md",
+      "bytes": 66029,
+      "sha256": "42d742963008d8a968129b76cad0a685b7c505413f4347cb1088f4ee07eba176"
+    },
+    {
+      "path": "01_inputs/dossiers/CB.md",
+      "bytes": 66195,
+      "sha256": "2d777ca128d8499f191d54c5f88ed82350319a434ca133e2154af9716e1eddb0"
+    },
+    {
+      "path": "01_inputs/dossiers/CBRS.md",
+      "bytes": 76685,
+      "sha256": "ae7b51b550ac971fd1dfbd0620f5ced57f8e3c3d3c9fe3a8f3068618e7b93e42"
+    },
+    {
+      "path": "01_inputs/dossiers/CC.md",
+      "bytes": 62636,
+      "sha256": "64bae16b0a482a5e4b61a82bef629254a1dfdd3640f9f9f35ea468cb33b285b6"
+    },
+    {
+      "path": "01_inputs/dossiers/CCJ.md",
+      "bytes": 69285,
+      "sha256": "c0f80a9e4b0da6b50a754785b2e10a0aa1f4f71cca61dab1f556972be8b378c2"
+    },
+    {
+      "path": "01_inputs/dossiers/CDNS.md",
+      "bytes": 65852,
+      "sha256": "e59aefc1511aa705cdf4c3351e3ae9052a3cbdf2f3c23cdcfd2349bcde03868d"
+    },
+    {
+      "path": "01_inputs/dossiers/CEG.md",
+      "bytes": 73407,
+      "sha256": "ceebf7f3a93eb1f58e5ad46d0bddc77dc6ee6d37773817502ed59088f5384286"
+    },
+    {
+      "path": "01_inputs/dossiers/CGNX.md",
+      "bytes": 66423,
+      "sha256": "1c30ca1becb9f2c57e0045841b4ef29b2736f86e68730a0325d5b81015fce1dd"
+    },
+    {
+      "path": "01_inputs/dossiers/CIEN.md",
+      "bytes": 65091,
+      "sha256": "a9559a6f8f1b06077fa61c243f830b018ee56fb6ab4f15444463db595f5e04d0"
+    },
+    {
+      "path": "01_inputs/dossiers/CLS.md",
+      "bytes": 62095,
+      "sha256": "f75b42410df9d14f5e0b4157306603bf4dd19a387bd1c668e6428f8ee2ffe255"
+    },
+    {
+      "path": "01_inputs/dossiers/CMI.md",
+      "bytes": 67893,
+      "sha256": "6acc82088f51a716b9d40e19760cc3f04eda40b2badaa43a1dbaf9286804680b"
+    },
+    {
+      "path": "01_inputs/dossiers/COHR.md",
+      "bytes": 65681,
+      "sha256": "5356988d75e43bf1b051dfc20b999aa07fc409c5e3be98c11236e94cb059b68a"
+    },
+    {
+      "path": "01_inputs/dossiers/COHU.md",
+      "bytes": 69887,
+      "sha256": "c822222de9ebdec62b4785288016e9cc80bc963f769a64d1fd4baecba125c995"
+    },
+    {
+      "path": "01_inputs/dossiers/COST.md",
+      "bytes": 62423,
+      "sha256": "79b835721000859d89788887f5ef0fbee24989ec81ac3e26bffdd320341b4f5c"
+    },
+    {
+      "path": "01_inputs/dossiers/CRDO.md",
+      "bytes": 68934,
+      "sha256": "f5d39d69b9a5fa9abd727922a67d8831753000f34a18960f9fee16f8b17f3933"
+    },
+    {
+      "path": "01_inputs/dossiers/CRM.md",
+      "bytes": 67249,
+      "sha256": "7796a011f8657aa9b3f5132fbd5eae020f02b150bf54f31c010daf7fbc8904e9"
+    },
+    {
+      "path": "01_inputs/dossiers/CRWD.md",
+      "bytes": 69882,
+      "sha256": "4c0e6c37049a1dd84ce94f6b91ddfd3050ce37a73dbf4f43fa414575f28c4a15"
+    },
+    {
+      "path": "01_inputs/dossiers/CRWV.md",
+      "bytes": 68028,
+      "sha256": "44a3235031ba7ced5576ec372ded35d0046f161fec099a21b0f831b114805780"
+    },
+    {
+      "path": "01_inputs/dossiers/CSCO.md",
+      "bytes": 63962,
+      "sha256": "54a2565d3ecf18af320ec137b38ac920e2bf1afe5a127a891afcde5c9817d9f6"
+    },
+    {
+      "path": "01_inputs/dossiers/CW.md",
+      "bytes": 66646,
+      "sha256": "cfe66237daede8bf1fcc552b3dfb598aaff82dfd3c1e89dac004c11e14493e8c"
+    },
+    {
+      "path": "01_inputs/dossiers/CWST.md",
+      "bytes": 66644,
+      "sha256": "df723fe83289ec76d77f094272389be697bbd21aca619edf12d45fb5265856d4"
+    },
+    {
+      "path": "01_inputs/dossiers/DCI.md",
+      "bytes": 62820,
+      "sha256": "c5966c767976c053d46722c7611602317f3f54b9048329ee7f838b3ac99979c6"
+    },
+    {
+      "path": "01_inputs/dossiers/DD.md",
+      "bytes": 63176,
+      "sha256": "a7e71f13ec6893dff330b247463e493ccff193772d56bab9707363c33849e0c8"
+    },
+    {
+      "path": "01_inputs/dossiers/DDOG.md",
+      "bytes": 66531,
+      "sha256": "00c0546dd8e08d4172503548734bc8a8919b360241b42dd87566585169587f78"
+    },
+    {
+      "path": "01_inputs/dossiers/DE.md",
+      "bytes": 68280,
+      "sha256": "7f6e42991fc8e1cd5f2587b573b27bfaf887b678d7e17748f082414d274e9531"
+    },
+    {
+      "path": "01_inputs/dossiers/DELL.md",
+      "bytes": 63664,
+      "sha256": "4c5aa1c93959cb4936c175e4eccebb355e28a5ffe24cf63c1f6aa6d9e25bca23"
+    },
+    {
+      "path": "01_inputs/dossiers/DHR.md",
+      "bytes": 66290,
+      "sha256": "c2184358a9d13696bdda7dbb0c6c8fd8658e5a27797a14a2ffd89f0af17562b9"
+    },
+    {
+      "path": "01_inputs/dossiers/DIOD.md",
+      "bytes": 73060,
+      "sha256": "d416b250b1123d5c6dfd09124e542490e41cc0a56debb441bf8d4bfedbddad43"
+    },
+    {
+      "path": "01_inputs/dossiers/DKILY.md",
+      "bytes": 64462,
+      "sha256": "1c91e8f6cbf23c1ef52913632c770360db27baa5a3db3a4bf3ef701f12df5fab"
+    },
+    {
+      "path": "01_inputs/dossiers/DLR.md",
+      "bytes": 71096,
+      "sha256": "4409fe4eca787b9ff0d9cffd444add0b341f1aff997117383d5283e6d73e5fde"
+    },
+    {
+      "path": "01_inputs/dossiers/DOV.md",
+      "bytes": 67936,
+      "sha256": "9f267a4ec7c6e58517ac13715c315d081260a22c5dff921387284632c34e5490"
+    },
+    {
+      "path": "01_inputs/dossiers/DSCSY.md",
+      "bytes": 61660,
+      "sha256": "01af3183affc0ba5e7cf7545838bf1cb7275f71e2bb7327f9d4ac05b56b704aa"
+    },
+    {
+      "path": "01_inputs/dossiers/DT.md",
+      "bytes": 67907,
+      "sha256": "e054f4cb3516b19639eccfca799464c1b0c0d54a43879d8dff6e9d597fac7192"
+    },
+    {
+      "path": "01_inputs/dossiers/DTE.md",
+      "bytes": 64533,
+      "sha256": "cc2cb63b770bc3cba33241c2f6d57d560f21a358a201492627659e3990344a66"
+    },
+    {
+      "path": "01_inputs/dossiers/ECL.md",
+      "bytes": 64176,
+      "sha256": "91960876321f841604a11b9119c8e8aa3e19700e723cc6420381bec05e2a1c47"
+    },
+    {
+      "path": "01_inputs/dossiers/EME.md",
+      "bytes": 72424,
+      "sha256": "6fcc9546cd134b7f5bbcb3450e600a55acac6c9a3842b1a5e55ba77a07489179"
+    },
+    {
+      "path": "01_inputs/dossiers/EMR.md",
+      "bytes": 61550,
+      "sha256": "942eb1452236cc0a0c421402b433afe85fcf67298e342ca444206068056b3270"
+    },
+    {
+      "path": "01_inputs/dossiers/ENPH.md",
+      "bytes": 65595,
+      "sha256": "5846cca745312f15c0f104524c94e58030edc42b00adc67459cba75b8c478436"
+    },
+    {
+      "path": "01_inputs/dossiers/ENS.md",
+      "bytes": 65041,
+      "sha256": "6eb39714f6218833a386776192fb50b1e28ab0b8d175702dfad1667d5fb7e3a0"
+    },
+    {
+      "path": "01_inputs/dossiers/ENTG.md",
+      "bytes": 64699,
+      "sha256": "41235e12abd94407bd22de3a8d1632ae24693d6904b1e9add260091ae4655c8c"
+    },
+    {
+      "path": "01_inputs/dossiers/EQIX.md",
+      "bytes": 65793,
+      "sha256": "c25c829230b2038b7c3cd19ce5b80e8a773184613c568730623afb66626322d5"
+    },
+    {
+      "path": "01_inputs/dossiers/ET.md",
+      "bytes": 70702,
+      "sha256": "1d48b1ce6824d870e598946380cad02d028862f03bf53dfc1839951708f032e7"
+    },
+    {
+      "path": "01_inputs/dossiers/ETN.md",
+      "bytes": 67067,
+      "sha256": "fc3d3ce167c4fc3676063c5423964b05dbb9f32fd1956b05c2cfbbe158b8e9eb"
+    },
+    {
+      "path": "01_inputs/dossiers/ETR.md",
+      "bytes": 62448,
+      "sha256": "20c1ac3b15f21c1269d3f2583e69440a94f816630c270124441b50f6e591cecd"
+    },
+    {
+      "path": "01_inputs/dossiers/FANUY.md",
+      "bytes": 63236,
+      "sha256": "3e3a76ab2ef53b4f86f60d24345d0d38ed9fda8e73c3d6634eee8a63eb5d95ec"
+    },
+    {
+      "path": "01_inputs/dossiers/FCEL.md",
+      "bytes": 61219,
+      "sha256": "905e4850eabf3c32fb7783aecc64953212fbac1bd7502f7f3a7c7d17767775dc"
+    },
+    {
+      "path": "01_inputs/dossiers/FIX.md",
+      "bytes": 62006,
+      "sha256": "52dabca8437b168fa439f7ae78f2c05da3e968c82ac775a8e876ff6286bc1408"
+    },
+    {
+      "path": "01_inputs/dossiers/FLEX.md",
+      "bytes": 63255,
+      "sha256": "0978faef804f281b6847133d8d11aa7b5bb74eaadcf89fbc0125e859b03ce852"
+    },
+    {
+      "path": "01_inputs/dossiers/FLNC.md",
+      "bytes": 61457,
+      "sha256": "054f514eaeabd4d303b22569e8f5439b84a8f39b348d55afc2a87facea3ed2b4"
+    },
+    {
+      "path": "01_inputs/dossiers/FN.md",
+      "bytes": 60380,
+      "sha256": "5f4ef70906dbd2ab79fa12fa32f8f0c360b9b80258464588374565582f659b16"
+    },
+    {
+      "path": "01_inputs/dossiers/FORM.md",
+      "bytes": 68358,
+      "sha256": "afc6bab4ed8812af6b413b80e6c37e9e838fc6a1c0406f7b9ed1ab44ee4170cf"
+    },
+    {
+      "path": "01_inputs/dossiers/FTV.md",
+      "bytes": 65678,
+      "sha256": "b1f14094f3db3ec20285cd69f37fa3ad6e127eadcd0e2389a3cbc55233cfa22a"
+    },
+    {
+      "path": "01_inputs/dossiers/GEV.md",
+      "bytes": 67173,
+      "sha256": "a16b2819ec72d75e17ebed2430d663ffdfba5bd5158e8afb6fdf0d1b19f2e4f4"
+    },
+    {
+      "path": "01_inputs/dossiers/GFS.md",
+      "bytes": 71133,
+      "sha256": "eef41d7f4dcbaef699d10332921a1fd35257409cda515a23b72aee5e1dc28566"
+    },
+    {
+      "path": "01_inputs/dossiers/GLW.md",
+      "bytes": 66338,
+      "sha256": "b7c02a3ad8d8f9faeda4869c2e5e6908033f902abc121f82b877d36b779ff60f"
+    },
+    {
+      "path": "01_inputs/dossiers/GNRC.md",
+      "bytes": 67342,
+      "sha256": "6dfb335462bf542fc8efaca676aa57604a717c98835d886e7a791acda0a3fba5"
+    },
+    {
+      "path": "01_inputs/dossiers/GOOGL.md",
+      "bytes": 62586,
+      "sha256": "d000ae528686b37f78f214e5787cca9efe30e904ea0527bd6b1fe34779d5f71d"
+    },
+    {
+      "path": "01_inputs/dossiers/HOCPY.md",
+      "bytes": 62623,
+      "sha256": "e4574cc62123a573720862c924205b5920be07119b8bebef3b39597d6e952b9a"
+    },
+    {
+      "path": "01_inputs/dossiers/HPE.md",
+      "bytes": 62631,
+      "sha256": "bd3cdf33a93930ec9682dff1a4105f819a7955315187112600ccd7c481503d92"
+    },
+    {
+      "path": "01_inputs/dossiers/HTHIY.md",
+      "bytes": 69224,
+      "sha256": "20d31da79773dbdefda473489ec603f1c9165e1b1e1e4a783c9215cca1bb0358"
+    },
+    {
+      "path": "01_inputs/dossiers/HUBB.md",
+      "bytes": 67008,
+      "sha256": "198d45129f0a211b10e4f357b727ff69a69e9e03bdd753f65b7bb1e7b9154197"
+    },
+    {
+      "path": "01_inputs/dossiers/IBM.md",
+      "bytes": 69548,
+      "sha256": "8ca7655e6bace1d10fcdebf3a24bc670f48981226e897eec5b9b4b6a2baa8baf"
+    },
+    {
+      "path": "01_inputs/dossiers/ICHR.md",
+      "bytes": 62657,
+      "sha256": "90b6c112faa6ac3572d9f57f3b53bc77f1b8ae6fdefc7ad1625fabe940e99c7e"
+    },
+    {
+      "path": "01_inputs/dossiers/IESC.md",
+      "bytes": 66258,
+      "sha256": "156f5d63785cc72caa04fdee575510b1e9ac75a2728549c0258c2ece4702dd3b"
+    },
+    {
+      "path": "01_inputs/dossiers/IFNNY.md",
+      "bytes": 67513,
+      "sha256": "c101050457f159880c597ad6029e80eb8d81e9046177c76562472edb589ded4f"
+    },
+    {
+      "path": "01_inputs/dossiers/IMOS.md",
+      "bytes": 63546,
+      "sha256": "492244e2afa43ab2f6420e8199c092b9b3ff79ea7f023c2f46cc68a1928e7050"
+    },
+    {
+      "path": "01_inputs/dossiers/INTC.md",
+      "bytes": 70228,
+      "sha256": "104b9d156563801b28c707136323e0a7d1874c90aa006201cf51f0685a731ad2"
+    },
+    {
+      "path": "01_inputs/dossiers/IONS.md",
+      "bytes": 73512,
+      "sha256": "33fee5ca7bcf623e46bb933a4fd73e813f994d1dfe6fcb6dee9214bc48af6b3e"
+    },
+    {
+      "path": "01_inputs/dossiers/IREN.md",
+      "bytes": 69302,
+      "sha256": "b129af727235fc9511f89641cd5cce9d70f5cd4e107f648303c118b6fab954c2"
+    },
+    {
+      "path": "01_inputs/dossiers/ITT.md",
+      "bytes": 64205,
+      "sha256": "8bb979b033b8b93f4a7342544aa072c4aca07b05005ecb9342d4cf70b44fde3e"
+    },
+    {
+      "path": "01_inputs/dossiers/JBL.md",
+      "bytes": 65164,
+      "sha256": "290cd0ed70d6ff89a230a81acd4c0fccd22626df94f08c6613bc6fa421243fa6"
+    },
+    {
+      "path": "01_inputs/dossiers/JCI.md",
+      "bytes": 67286,
+      "sha256": "106c7c4bac4173719307ee11970dc61c262a552033b831654d2c282b6d6ac4b8"
+    },
+    {
+      "path": "01_inputs/dossiers/KEYS.md",
+      "bytes": 67560,
+      "sha256": "e70cbb4135a2fc44e37a3601caa4fe83aece3895ddb1cdee6f3af647e19b7d48"
+    },
+    {
+      "path": "01_inputs/dossiers/KLAC.md",
+      "bytes": 70110,
+      "sha256": "859a85acb2ff6f14f96c4bb08c3ce2e19ba3f1a022395b6fb27119ad70a56d95"
+    },
+    {
+      "path": "01_inputs/dossiers/KLIC.md",
+      "bytes": 68933,
+      "sha256": "6cf6c2adc01428be10f1acb7fcd440adc133ddd9395b3c61885bc9df5bf0f9b2"
+    },
+    {
+      "path": "01_inputs/dossiers/KR.md",
+      "bytes": 66514,
+      "sha256": "8afebfbb46bf579f00d65549b4016e84381d9f44f2c19d0d305e2157fe4bc71c"
+    },
+    {
+      "path": "01_inputs/dossiers/KTOS.md",
+      "bytes": 68632,
+      "sha256": "65bc4758747948bbf3228ca2ab1fc8fb7d6a46007912a10e031ac1e675830b84"
+    },
+    {
+      "path": "01_inputs/dossiers/KYTX.md",
+      "bytes": 68214,
+      "sha256": "fe8ab515e0305461cbc5c7c2bbccd523d62d6c9b3cd9f43b60facfa99a11dcca"
+    },
+    {
+      "path": "01_inputs/dossiers/LEU.md",
+      "bytes": 70030,
+      "sha256": "1122aab326993a14a1f9a33d226ba1f6146f16d8d16ee95c42b747ac1a84fce1"
+    },
+    {
+      "path": "01_inputs/dossiers/LFUS.md",
+      "bytes": 64340,
+      "sha256": "84cc9bc180c4cce0417009e1f905ceb779eb4bf36456cd011438d4564679a732"
+    },
+    {
+      "path": "01_inputs/dossiers/LIN.md",
+      "bytes": 64852,
+      "sha256": "682197252df133a821cb7620b915634f790bc863b7c62a3e1211a9187626b421"
+    },
+    {
+      "path": "01_inputs/dossiers/LITE.md",
+      "bytes": 62764,
+      "sha256": "4809559f41a57c3dc46a3825e3c822e72ec0b1fb9335432c16ba7f3c329667b8"
+    },
+    {
+      "path": "01_inputs/dossiers/LRCX.md",
+      "bytes": 63949,
+      "sha256": "1f13ee881ed5593f332c2c2b43c9d75c5e9641a779b5f9066b55643c4a577116"
+    },
+    {
+      "path": "01_inputs/dossiers/LWLG.md",
+      "bytes": 65707,
+      "sha256": "af3aa7dd2ea2516055bbc00206b527c754ecf9b492d15648363e1682678e6b6c"
+    },
+    {
+      "path": "01_inputs/dossiers/MCHP.md",
+      "bytes": 67178,
+      "sha256": "c336f4d8a22796c3e2f3f06e508c3636d015107dc344c2eb7c5db8e802a5a9ae"
+    },
+    {
+      "path": "01_inputs/dossiers/META.md",
+      "bytes": 65201,
+      "sha256": "0b5ca94d7ef45ddc215c3814b852c56d79bdb4b266578286da2c58be5241744c"
+    },
+    {
+      "path": "01_inputs/dossiers/MICLF.md",
+      "bytes": 65360,
+      "sha256": "518c3f32741d1bbcf7d7e601b048930b0e5ead241c5b7db52699b21927ea673d"
+    },
+    {
+      "path": "01_inputs/dossiers/MIELY.md",
+      "bytes": 70983,
+      "sha256": "745cbd46cd7abeb11da4b7964fe6b8f69f0c10c7240ff8a9128ff54b55350ed6"
+    },
+    {
+      "path": "01_inputs/dossiers/MKSI.md",
+      "bytes": 66308,
+      "sha256": "30d256e1020ea694c6dd2713e63a4ce37c8059441f00944e8dc2f9e5e90c212b"
+    },
+    {
+      "path": "01_inputs/dossiers/MMM.md",
+      "bytes": 65818,
+      "sha256": "a23fa7bac37dde9bee94d2f427113c1011b05ee8b27db02e4fa09404490e5413"
+    },
+    {
+      "path": "01_inputs/dossiers/MOD.md",
+      "bytes": 60563,
+      "sha256": "4caa32fb50f7c1e056dc38374f8358cfa5dc7504eb91899505c526d69dcff06b"
+    },
+    {
+      "path": "01_inputs/dossiers/MPWR.md",
+      "bytes": 61888,
+      "sha256": "137f1d47a4d688ab842794df6971586bf71bcf9084888a1a802b28d20365d89d"
+    },
+    {
+      "path": "01_inputs/dossiers/MRAAY.md",
+      "bytes": 68490,
+      "sha256": "aff88892662c64d17ac159129e24b8481f2a54896e53391c3806ff355b12bc8f"
+    },
+    {
+      "path": "01_inputs/dossiers/MRAM.md",
+      "bytes": 68609,
+      "sha256": "833924bd4dcbff423d4f74565ec23599fa7b3b8c27afade6d18adbdd997fdd8e"
+    },
+    {
+      "path": "01_inputs/dossiers/MRNA.md",
+      "bytes": 70047,
+      "sha256": "1c4e09314b24186b1e65c0b3c5e29e89f3b297eb4a9e2a2dda66ff96e8ad6e74"
+    },
+    {
+      "path": "01_inputs/dossiers/MRVL.md",
+      "bytes": 66989,
+      "sha256": "71b2e391374dab3277fb775e6f395829ee151b8f8d370b364c696e2e96f96073"
+    },
+    {
+      "path": "01_inputs/dossiers/MSFT.md",
+      "bytes": 66641,
+      "sha256": "b70559b6f80b19260b7206ac899dcef2f0a14ad60e4d1255c5a5140618bbf783"
+    },
+    {
+      "path": "01_inputs/dossiers/MSI.md",
+      "bytes": 68498,
+      "sha256": "7a07fb2c40b5a07a9d9b161713d42dc6585dec7418d3ec74d53353977b2252e9"
+    },
+    {
+      "path": "01_inputs/dossiers/MTRN.md",
+      "bytes": 63177,
+      "sha256": "43d05c615cf840bd2ab4c18427ab560def50582a018a8e94f701aecf53b2f69c"
+    },
+    {
+      "path": "01_inputs/dossiers/MTSI.md",
+      "bytes": 58312,
+      "sha256": "a954bebb95e202361fbb9d03399b3592c25402503d54851aa5d2442a184810b1"
+    },
+    {
+      "path": "01_inputs/dossiers/MU.md",
+      "bytes": 65162,
+      "sha256": "cf2d5a212d755ebcc2542d0b6ca6f8dd5743c51d62402234612167841cbdbb3d"
+    },
+    {
+      "path": "01_inputs/dossiers/MXL.md",
+      "bytes": 67391,
+      "sha256": "4cf45d9b543b9872ad78ef075136b8a1f0d880f212327260583131cd8f28b268"
+    },
+    {
+      "path": "01_inputs/dossiers/MYRG.md",
+      "bytes": 66138,
+      "sha256": "7d12f8f705d54d9e0ec0edc72ba7569bcd75efdec7db3c2b6fece810096c7584"
+    },
+    {
+      "path": "01_inputs/dossiers/NBIS.md",
+      "bytes": 70652,
+      "sha256": "4528c540a0e2879a7c82bc216703fa56dedb1207c876b4c735ab5c6ff62113cf"
+    },
+    {
+      "path": "01_inputs/dossiers/NDSN.md",
+      "bytes": 66129,
+      "sha256": "043a16712de9a1147f0fa77ad37ed55f100bbfdb2f1a1da0051545f06132846f"
+    },
+    {
+      "path": "01_inputs/dossiers/NET.md",
+      "bytes": 67081,
+      "sha256": "f6bb071ec64891a7f708045da4cb85dd4d279bbec9a1ca5b053cd8c3894310ad"
+    },
+    {
+      "path": "01_inputs/dossiers/NOK.md",
+      "bytes": 66805,
+      "sha256": "8d064d24bbbe53778869a068a178f34c37a8f4e7da509834cd12ae6838296f8d"
+    },
+    {
+      "path": "01_inputs/dossiers/NOW.md",
+      "bytes": 63461,
+      "sha256": "d7392b904f6c3bce6af9e7c497d52cccf8c32ba42a4820710594ae4412eb61cc"
+    },
+    {
+      "path": "01_inputs/dossiers/NTAP.md",
+      "bytes": 64872,
+      "sha256": "aa01a5738ae6e4ee194db6a522b5de9be9c21e87fbf8fca82c0387ac67f24d59"
+    },
+    {
+      "path": "01_inputs/dossiers/NTNX.md",
+      "bytes": 64952,
+      "sha256": "54a3184bdff552ce59fb1b678b29a80815684c1b5a00d8946d204378133abf15"
+    },
+    {
+      "path": "01_inputs/dossiers/NVDA.md",
+      "bytes": 65825,
+      "sha256": "564aec0f6b0f161f45891d6d811f44a0b2b2fde4027a7e7c1fcc4c8f6dd96876"
+    },
+    {
+      "path": "01_inputs/dossiers/NVMI.md",
+      "bytes": 62031,
+      "sha256": "177b68aafbdcd28f798764a401f508557accab1626258c13d25664dbcb37bde1"
+    },
+    {
+      "path": "01_inputs/dossiers/NVT.md",
+      "bytes": 58915,
+      "sha256": "c00509f9c85e8a782998cfde6f7ce6cb9c366a3856418a00fa2ab4019a6908ce"
+    },
+    {
+      "path": "01_inputs/dossiers/NVTS.md",
+      "bytes": 71778,
+      "sha256": "7884fe4012cf228e3d41120d616f94b5488acf9bd5d9923333c4766916f47fa8"
+    },
+    {
+      "path": "01_inputs/dossiers/OKLO.md",
+      "bytes": 71181,
+      "sha256": "e17ac9c50e4cb953514f7c18ad86e2e6f66e329bb8c23f60a8e8889ef2747941"
+    },
+    {
+      "path": "01_inputs/dossiers/ON.md",
+      "bytes": 63442,
+      "sha256": "b4af217dff116cf4df8a084a3d08c51af95a8981d37ecb368b236e9f6030ac74"
+    },
+    {
+      "path": "01_inputs/dossiers/ONTO.md",
+      "bytes": 63287,
+      "sha256": "2d7addca01a7a496e094fb5e87822f75f5bc1891f6138670b7799836282c0725"
+    },
+    {
+      "path": "01_inputs/dossiers/ORCL.md",
+      "bytes": 66958,
+      "sha256": "a011fb11d5a9c64e00ab23c730603d082f6bf6eaffc6c537454c92fa084f514b"
+    },
+    {
+      "path": "01_inputs/dossiers/P.md",
+      "bytes": 68925,
+      "sha256": "65a83b92540d1ab6a99bdd8340218a1f61759350a80ae9314774d8835fd5d80f"
+    },
+    {
+      "path": "01_inputs/dossiers/PANW.md",
+      "bytes": 71514,
+      "sha256": "ebe88b9f3ade8fca52a7e54e151be4993354904c956b4f3c7ee784109e7bff49"
+    },
+    {
+      "path": "01_inputs/dossiers/PCRHY.md",
+      "bytes": 65734,
+      "sha256": "5834821fc36e5a02bd2fc012dbbe0cf7d0869d5ffe9d717613dba8122a45efa7"
+    },
+    {
+      "path": "01_inputs/dossiers/PENG.md",
+      "bytes": 63336,
+      "sha256": "8720bc96dd946aad469dc7d788435424c99fe12d0a4e38e30af95322e73309f0"
+    },
+    {
+      "path": "01_inputs/dossiers/PGR.md",
+      "bytes": 69671,
+      "sha256": "772c70a3f0cfe137582cf76717472a01e67cecc30c77e62ac13a4c14572b045f"
+    },
+    {
+      "path": "01_inputs/dossiers/PH.md",
+      "bytes": 65883,
+      "sha256": "401dddef3f9b69858eded19a952b2548ebabb16d43f79a1ff4cafc492f128862"
+    },
+    {
+      "path": "01_inputs/dossiers/PL.md",
+      "bytes": 66467,
+      "sha256": "3b89e7f652a4c1b96a30cfc47ba4736995d92a6ad3389ecf7ea8182aa5317ecb"
+    },
+    {
+      "path": "01_inputs/dossiers/PLAB.md",
+      "bytes": 63799,
+      "sha256": "f3f2397b6c168c81330f51b36bbf90582d9ac28b5d0aeb264592e3c0d6f12802"
+    },
+    {
+      "path": "01_inputs/dossiers/PLTR.md",
+      "bytes": 72127,
+      "sha256": "0da79302fad3d7a5be90a0c9abc1af82f8c4f8be70558acaef5230d3669ea9ea"
+    },
+    {
+      "path": "01_inputs/dossiers/PNR.md",
+      "bytes": 60540,
+      "sha256": "7871855d86d8dadc46b4318abc7bfdb514bb98fa6f3722e519c3ab41a52e965d"
+    },
+    {
+      "path": "01_inputs/dossiers/POET.md",
+      "bytes": 62392,
+      "sha256": "e8ec4831d02a98b170fc2d5df8012a23146b98421be4f2e3a202b9beadbf51fb"
+    },
+    {
+      "path": "01_inputs/dossiers/POWI.md",
+      "bytes": 66095,
+      "sha256": "ae582cd22848d635ed49d6ffcc0782c93fb0282c29027005670f6189d7ef0b52"
+    },
+    {
+      "path": "01_inputs/dossiers/POWL.md",
+      "bytes": 64652,
+      "sha256": "9df48fd7c3697c97f35869ddd1aecdb0526c3a161957d99b9118149af4dcd98e"
+    },
+    {
+      "path": "01_inputs/dossiers/PSIX.md",
+      "bytes": 67759,
+      "sha256": "e291c43d13d346686fff8a2facd8aef29cb29ce581fa2e32dc9b19c4f6358861"
+    },
+    {
+      "path": "01_inputs/dossiers/PWR.md",
+      "bytes": 64870,
+      "sha256": "dcf9348cceea88cbd15925b95a836654eba14ee6f0d78d4d610ced865ba4b44b"
+    },
+    {
+      "path": "01_inputs/dossiers/Q.md",
+      "bytes": 59773,
+      "sha256": "fef4bbdea8542db96d9008558baca07b974bad88d657c01ec79608cab47e4965"
+    },
+    {
+      "path": "01_inputs/dossiers/QCOM.md",
+      "bytes": 65053,
+      "sha256": "513c37ce1f4c82cddd8bc3d72c06747cf26b25454d1818e2bcdbfd680da076ff"
+    },
+    {
+      "path": "01_inputs/dossiers/RDW.md",
+      "bytes": 69548,
+      "sha256": "489b13e5a8a29f3317265e102cb498c545f8eba84b11d424e671324d7dfbd736"
+    },
+    {
+      "path": "01_inputs/dossiers/RKLB.md",
+      "bytes": 70228,
+      "sha256": "4b7e4386f3937522923ae28adc3c727364be959ffafe15a02d39d58e74dd6168"
+    },
+    {
+      "path": "01_inputs/dossiers/RMBS.md",
+      "bytes": 64377,
+      "sha256": "0a3bd90e35a66d757791e7fd44c7dfadc3b37a7142ff1c4c171bd5a14f11963c"
+    },
+    {
+      "path": "01_inputs/dossiers/RNR.md",
+      "bytes": 65327,
+      "sha256": "65af0a47c57946cb6680b4809d80924baaad87f72307553f4f4e7236c57c56ba"
+    },
+    {
+      "path": "01_inputs/dossiers/ROG.md",
+      "bytes": 66648,
+      "sha256": "4446d851f25a9e93dfb32fbf730bc1fec63efab87215f82b3c1ebb4ffeacddeb"
+    },
+    {
+      "path": "01_inputs/dossiers/ROK.md",
+      "bytes": 67078,
+      "sha256": "46fdd2f16b6880c81039acf178caaa6a45591cc8749f4c1232765e23c916ffc0"
+    },
+    {
+      "path": "01_inputs/dossiers/RSG.md",
+      "bytes": 70384,
+      "sha256": "59fd240c5f450fd88c9ec65dbb9febb7ebd31f0d5d7ae732d99ac4dd8659c1c5"
+    },
+    {
+      "path": "01_inputs/dossiers/RYCEY.md",
+      "bytes": 65793,
+      "sha256": "b3437256d3eeb343a3b112e49ffe190f6f88fd2aaa9fc0ffd92c918008fadfb7"
+    },
+    {
+      "path": "01_inputs/dossiers/SANM.md",
+      "bytes": 68919,
+      "sha256": "45eeeb60839ee5ffac80390adcaee41000239205fb62d67ac457368e083ef36b"
+    },
+    {
+      "path": "01_inputs/dossiers/SBGSY.md",
+      "bytes": 67632,
+      "sha256": "293fe3f7e7237db71c8cb0a2a700f42a80abd0a1db2616bdaf0dc7e932f137f4"
+    },
+    {
+      "path": "01_inputs/dossiers/SHECY.md",
+      "bytes": 70590,
+      "sha256": "22580a374d716fcbb687f82a57463c2dff8b094355f59f26dc0db4694197a9b2"
+    },
+    {
+      "path": "01_inputs/dossiers/SIMO.md",
+      "bytes": 68499,
+      "sha256": "bd86c09ffca62a36c26602b70f34a3cb0f3efc2f3d774b461e3dd04522ad35d0"
+    },
+    {
+      "path": "01_inputs/dossiers/SITM.md",
+      "bytes": 63306,
+      "sha256": "0e0ba9b26d87bdeda587a90a2e987704b086a7c0dc7d191ec878dd653ee3a35c"
+    },
+    {
+      "path": "01_inputs/dossiers/SKHY.md",
+      "bytes": 72072,
+      "sha256": "80e5ba95b904e8725097affb50553b8e1426eb34237564962841ec9be45c3faa"
+    },
+    {
+      "path": "01_inputs/dossiers/SMCAY.md",
+      "bytes": 68555,
+      "sha256": "3a87f3540b0b060a49adc1940d11bfd354ba5d504c1e4f12699da30210e95e4d"
+    },
+    {
+      "path": "01_inputs/dossiers/SMCI.md",
+      "bytes": 65784,
+      "sha256": "bfdc837a1683b25a4212d2a202eb0cb3cfea9988cea232f3f00e713931e41e80"
+    },
+    {
+      "path": "01_inputs/dossiers/SMR.md",
+      "bytes": 69694,
+      "sha256": "34fb66fec0f3d785bba2a886ed29da59b43d278e972e8ae2e080fbe7527ce9ec"
+    },
+    {
+      "path": "01_inputs/dossiers/SMTC.md",
+      "bytes": 62588,
+      "sha256": "3e499c60fbe152c66c89d07f193fbb312730fadae23c9c28f22f7d74bef705f8"
+    },
+    {
+      "path": "01_inputs/dossiers/SMTOY.md",
+      "bytes": 74249,
+      "sha256": "f05ff5fa7755c5e556b4fbbf7d449dafbd80bd7fe8090157822daf769eb41c4f"
+    },
+    {
+      "path": "01_inputs/dossiers/SNDK.md",
+      "bytes": 67536,
+      "sha256": "870708d5b4b5250eace6e6f0a3a29f60687a694c1401e7fa31e662742ce6b7c8"
+    },
+    {
+      "path": "01_inputs/dossiers/SNOW.md",
+      "bytes": 68693,
+      "sha256": "370f596cafd8fe51e53fac0bda5e8d5797601baa3f558b4ff93db7094a52a6f3"
+    },
+    {
+      "path": "01_inputs/dossiers/SNPS.md",
+      "bytes": 69159,
+      "sha256": "b55dd55e834777aff02f083ef07c231ab90a66800729cb7628c7430159e4ffae"
+    },
+    {
+      "path": "01_inputs/dossiers/SOMMY.md",
+      "bytes": 70559,
+      "sha256": "c265ecd557749e321b8f35dae87598ba54d8ba6a7c3d6ea3aface9561a7d76d3"
+    },
+    {
+      "path": "01_inputs/dossiers/SPCX.md",
+      "bytes": 72198,
+      "sha256": "78d21c69adb301266f3a25f4d02ad5c4d043b772718c7b99eb02f74584c46bf2"
+    },
+    {
+      "path": "01_inputs/dossiers/SPXC.md",
+      "bytes": 61859,
+      "sha256": "c17db281a6108ab6d57676524f79e0489f6c99448173e04fe00d463625e52665"
+    },
+    {
+      "path": "01_inputs/dossiers/ST.md",
+      "bytes": 67161,
+      "sha256": "e7712d9093786ea04da502b70a66d596173f5d7a91f0576bc758d6faaf74efa5"
+    },
+    {
+      "path": "01_inputs/dossiers/STM.md",
+      "bytes": 66393,
+      "sha256": "63781d52eb9e76573e32018c4381e61c14f958d3d45189982b3880a62c4a8cef"
+    },
+    {
+      "path": "01_inputs/dossiers/STX.md",
+      "bytes": 64467,
+      "sha256": "595a5b2c465f2379313a26caf0ab87d83abcba5d85a5c599c11030e7487444b4"
+    },
+    {
+      "path": "01_inputs/dossiers/SYM.md",
+      "bytes": 71043,
+      "sha256": "3cb59340f83864ae4d47c14136f92b8ad1a7b528b6a72ccd608c39ccf2e7536d"
+    },
+    {
+      "path": "01_inputs/dossiers/TDY.md",
+      "bytes": 71340,
+      "sha256": "0b93c54bc6d0ce7ee909feacaa03f9a971e15834ab5199464a7ef9859f13f4a7"
+    },
+    {
+      "path": "01_inputs/dossiers/TE.md",
+      "bytes": 71828,
+      "sha256": "d539c0023eea2f19ef33383882cd1955ed0179a44c257e0473266d92e965ae64"
+    },
+    {
+      "path": "01_inputs/dossiers/TEL.md",
+      "bytes": 62252,
+      "sha256": "796bbe926e9b4dbde62893f7c84ba7f83f8cf1549316b403d5dd6f20ecf04fd1"
+    },
+    {
+      "path": "01_inputs/dossiers/TER.md",
+      "bytes": 63737,
+      "sha256": "941488920c4592eec1252f1626c27ebcd4533ff0531c8d5a038b406c9e44595f"
+    },
+    {
+      "path": "01_inputs/dossiers/TJX.md",
+      "bytes": 71577,
+      "sha256": "7f254a769929760c1cffdbaa5298ce6a67af13f036d54780b469e1c7f1ca1154"
+    },
+    {
+      "path": "01_inputs/dossiers/TMO.md",
+      "bytes": 63663,
+      "sha256": "3be1e5bc0e2acfcb7a94481e7c724cf322c454ce6ed3950361bcddcbc9cbf3b4"
+    },
+    {
+      "path": "01_inputs/dossiers/TOELY.md",
+      "bytes": 67811,
+      "sha256": "c0fc120c7dfbf47cbb108f13c22fea39d87a591671618c9c2d197f1d9e7e32c7"
+    },
+    {
+      "path": "01_inputs/dossiers/TRV.md",
+      "bytes": 64362,
+      "sha256": "fdebc54d01134dd2dec3b61a6843cf66e01a36d356d713e294dba96d1a5c5fe1"
+    },
+    {
+      "path": "01_inputs/dossiers/TSEM.md",
+      "bytes": 63149,
+      "sha256": "5b739f558c80145d123489ada3048f978cd62642f7134d30cf4be10e7143e5d9"
+    },
+    {
+      "path": "01_inputs/dossiers/TSLA.md",
+      "bytes": 57506,
+      "sha256": "dc15de455e72d907ef09cf46ffbdb565f8a3a5e49a2de4a2195618afcb5348c7"
+    },
+    {
+      "path": "01_inputs/dossiers/TSM.md",
+      "bytes": 63780,
+      "sha256": "b6dea95a34725f263a2995b45cd861f809d5b393fb63bbb8d1ac07811088a887"
+    },
+    {
+      "path": "01_inputs/dossiers/TT.md",
+      "bytes": 71500,
+      "sha256": "7af65deb70ab30b3de23d1f59535c1e27e57c37ecdd9841849180a22d21bbf2c"
+    },
+    {
+      "path": "01_inputs/dossiers/TTDKY.md",
+      "bytes": 74483,
+      "sha256": "6dec05bd490a17651c1d74031864e39bb83091e814ef897237acaf337942a915"
+    },
+    {
+      "path": "01_inputs/dossiers/TTMI.md",
+      "bytes": 74061,
+      "sha256": "9d585edfcb2d35fd22a2d906978cdff959b2ed47efc99c2315c197690ecbde33"
+    },
+    {
+      "path": "01_inputs/dossiers/TXN.md",
+      "bytes": 67427,
+      "sha256": "51003f529109f0ae7055cf81f5c6a4ebc3b26a2a4ab81049d0e2aafd7cb3cd67"
+    },
+    {
+      "path": "01_inputs/dossiers/UCTT.md",
+      "bytes": 68560,
+      "sha256": "ff95b626b441029accfbc267119206e775e2f36b91d168d489d46b034668e238"
+    },
+    {
+      "path": "01_inputs/dossiers/UMC.md",
+      "bytes": 70344,
+      "sha256": "2badafa0bcc7f7efa3a951aed798c49ef3e5d013c6b9c789859ac44cb605e51b"
+    },
+    {
+      "path": "01_inputs/dossiers/VECO.md",
+      "bytes": 68231,
+      "sha256": "a13a9b348d3c2e98f0eb247fbbf6fdb5a7024559596ec94fa4262b6928cdb84d"
+    },
+    {
+      "path": "01_inputs/dossiers/VIAV.md",
+      "bytes": 66089,
+      "sha256": "180650c27a37e14ae8da79296114fcb8fb1636785a447795aa8cf207a0b05910"
+    },
+    {
+      "path": "01_inputs/dossiers/VICR.md",
+      "bytes": 66027,
+      "sha256": "b0f8dbc4ff57636c8ced067f091277e67080c03c2cf0c4fbfb1c2d893c136cb3"
+    },
+    {
+      "path": "01_inputs/dossiers/VISN.md",
+      "bytes": 69855,
+      "sha256": "3f160e99ca9e79d8d9479c6fdb24ff584977ab866ebbf37dd29c7e3836845f0b"
+    },
+    {
+      "path": "01_inputs/dossiers/VRT.md",
+      "bytes": 69497,
+      "sha256": "80e72d8b7ddc9164653b1cb74e0dcb9effffb8ee0f5014e7cb677b75c29ef6ca"
+    },
+    {
+      "path": "01_inputs/dossiers/VSH.md",
+      "bytes": 75435,
+      "sha256": "0e82176d8a9ecdf49bc5869fe999f26190af39daf3aac8c72104ed0943c564c2"
+    },
+    {
+      "path": "01_inputs/dossiers/VST.md",
+      "bytes": 68762,
+      "sha256": "acbc499aaddab4b29514d55f1ba94b442c5dc4240b9c848bf0121b07c526c7ad"
+    },
+    {
+      "path": "01_inputs/dossiers/WCN.md",
+      "bytes": 68386,
+      "sha256": "9ae9979d9800ecf06461680ed6609398edbdcd13a3c4f225d7d5115a2fc03d21"
+    },
+    {
+      "path": "01_inputs/dossiers/WDC.md",
+      "bytes": 62837,
+      "sha256": "a1bf3d1ae878edbcce25f69856b0c043eef1af3253858eb488bc63aa34c5c1a4"
+    },
+    {
+      "path": "01_inputs/dossiers/WM.md",
+      "bytes": 65726,
+      "sha256": "db3c8da47a72f435f3ec363dbed3ff18e2845808583fb6396cfa5d66891dfa7f"
+    },
+    {
+      "path": "01_inputs/dossiers/WMT.md",
+      "bytes": 69443,
+      "sha256": "175776c62ce205e8a468d8b86cc57e89f3742ccc7bed7e4339361653aec7bed4"
+    },
+    {
+      "path": "01_inputs/dossiers/WOLF.md",
+      "bytes": 63928,
+      "sha256": "5901691c3722da7636df7f6bb73c1301c2628d307ddb935c94c7512c21ddb59a"
+    },
+    {
+      "path": "01_inputs/dossiers/WRB.md",
+      "bytes": 65498,
+      "sha256": "bce64e5def46cbb17f5a875940c7776084f4261235a040c67bdebdb979414c32"
+    },
+    {
+      "path": "01_inputs/dossiers/YASKY.md",
+      "bytes": 76403,
+      "sha256": "d04cc7d1761d3c2ec781fac4554d31fd421f593b54788689941e92adafb6fd6f"
+    },
+    {
+      "path": "01_inputs/financial_snapshot.json",
+      "bytes": 245782,
+      "sha256": "1152fdae0018b8b768936fe3cb6386198105d11d135c255b8b19ba744b921b90"
+    },
+    {
+      "path": "01_inputs/universe.json",
+      "bytes": 441434,
+      "sha256": "58a1527b3f1e8253c49d28c01188f75db24c1f4cbc40827a6fe65f817e4532ee"
+    },
+    {
+      "path": "01_inputs/universe_screen.csv",
+      "bytes": 39251,
+      "sha256": "332863099d219f5c7f81fe39dba49a2d9a381fb82734fa1b834e3033917db46a"
+    },
+    {
+      "path": "02_round1/R1_cashflows.json",
+      "bytes": 55316,
+      "sha256": "6a2c125af144e2363e72c7f855add549223e17a0dc3d6f387adff542fbb86a18"
+    },
+    {
+      "path": "02_round1/R1_cashflows.md",
+      "bytes": 25729,
+      "sha256": "7f179165d01cf24fbaf81bedb0a00ffe0412aefff0a5e5cc17c026a9b7763717"
+    },
+    {
+      "path": "02_round1/R2_valuation.json",
+      "bytes": 74420,
+      "sha256": "37fc8aa697fdaf005a4dc986e1ba37302b2ade54233778bf0c3c9df910ac845e"
+    },
+    {
+      "path": "02_round1/R2_valuation.md",
+      "bytes": 31431,
+      "sha256": "85c81e488dc148b0991005ad7205cd413d5868975b71fa2caec0fb433b0b9970"
+    },
+    {
+      "path": "02_round1/R3_external.json",
+      "bytes": 42936,
+      "sha256": "a2c0d14d93d9419f858fc8ff8137bee03462498583dd4a90cad257236869f3ec"
+    },
+    {
+      "path": "02_round1/R3_external.md",
+      "bytes": 35832,
+      "sha256": "4eaae2c7a23e9a2b653a6c234570abc904bd5698d5ded24bc700419f3b28607f"
+    },
+    {
+      "path": "02_round1/R4_upside.json",
+      "bytes": 39404,
+      "sha256": "89247de118dd6efba4b2fff5daac32bcf6dd76e29ee4ce14b1d849bd72cd7c33"
+    },
+    {
+      "path": "02_round1/R4_upside.md",
+      "bytes": 24158,
+      "sha256": "4449c0aba0a60d12ef22fb9d7d832897f3cadd411925327115d7d399825d68e2"
+    },
+    {
+      "path": "02_round1/R5_diversification.json",
+      "bytes": 32951,
+      "sha256": "d716a2f59280a889b4ca1472ff96f31785635a7adec6758062900fd7589c2cb4"
+    },
+    {
+      "path": "02_round1/R5_diversification.md",
+      "bytes": 21212,
+      "sha256": "2e17eb8ad2f9a1cb2bd44fa666af433e208bad8690a40d14ced4eff3e69ccb29"
+    },
+    {
+      "path": "03_round2/B1_business_rebuttal.json",
+      "bytes": 160342,
+      "sha256": "c7d53347a8bce186ba0988c64baaaee6061d48f01296c65b340a0ca4813a1686"
+    },
+    {
+      "path": "03_round2/B1_business_rebuttal.md",
+      "bytes": 29125,
+      "sha256": "1f118ae4ae99346177f4f599903f63efbca2a62acf04134d96024450853306d4"
+    },
+    {
+      "path": "03_round2/B2_valuation_rebuttal.json",
+      "bytes": 38845,
+      "sha256": "c6114779e628c87b246d006339f5ae31abe059f9123d6469bbb6858edf600b43"
+    },
+    {
+      "path": "03_round2/B2_valuation_rebuttal.md",
+      "bytes": 30359,
+      "sha256": "824a04ebba1681a690bcee2ec386cef4c90bfcf783c57ee8b4dffc3bc240e6d3"
+    },
+    {
+      "path": "03_round2/Controller_10月12日产业新证据.md",
+      "bytes": 2101,
+      "sha256": "deec52347c4d0595c44ce47f898eb8efc558e3f17e73ef4863728c31acf18f17"
+    },
+    {
+      "path": "03_round2/Controller_KYTX临床外部交叉核验.md",
+      "bytes": 2112,
+      "sha256": "69d7f3d7d64c1c096ee1412a7f2c7efffaf260397392096756b6539a89ef5ce1"
+    },
+    {
+      "path": "03_round2/Controller_平台候补复活审查.md",
+      "bytes": 4194,
+      "sha256": "0541fe92e64b59aa5c5221227d4dd8518de95430f586c1017a028a9c149301eb"
+    },
+    {
+      "path": "03_round2/Controller_非AI需求交叉核验.md",
+      "bytes": 3240,
+      "sha256": "3c91dba6c52a34fac42cec70852835bc4b33c446bc74cc9f5bdddacd572cfde4"
+    },
+    {
+      "path": "03_round2/round1_union.csv",
+      "bytes": 5879,
+      "sha256": "a02fb5fe3ffb023a280a97c3364901759f22e76801f3f03bb987ae4d04899803"
+    },
+    {
+      "path": "03_round2/round1_union.json",
+      "bytes": 273607,
+      "sha256": "b85517e0d17a5218d1a7f948e2b0316275567578e3c559e2cefed6ee0db8103e"
+    },
+    {
+      "path": "03_round2/S1_ai_upside.json",
+      "bytes": 58225,
+      "sha256": "2bb124c5b15b0d2cab23960251863aa3792ca3f786e27dc184af434b181f499a"
+    },
+    {
+      "path": "03_round2/S1_ai_upside.md",
+      "bytes": 51264,
+      "sha256": "5ae8d12f24ce4890c34869321a35296d7b379479927ccf309dfba5b260bea96b"
+    },
+    {
+      "path": "03_round2/S2_nonai_upside.json",
+      "bytes": 34291,
+      "sha256": "29b82dde277ddbd5f7fdbc98f161f277568d060140badc1abdbab20b16eabb77"
+    },
+    {
+      "path": "03_round2/S2_nonai_upside.md",
+      "bytes": 42174,
+      "sha256": "6416ae01ab35a341df817f866c3ff75c72ef568b883674b2f1ae62214cd2ee19"
+    },
+    {
+      "path": "04_verification/controller_independent_model_audit.json",
+      "bytes": 24830,
+      "sha256": "e9686690879cc47094d222a02f8e165e3f65ddfef3f06013def9eb275ac9b9b3"
+    },
+    {
+      "path": "04_verification/controller_quote_checks.json",
+      "bytes": 947,
+      "sha256": "72fd66a375fad4e98a9bcf20bfc5fdee4b9ebc96417fa94a22910b96cb9c81a3"
+    },
+    {
+      "path": "04_verification/controller_web_quote_checks.json",
+      "bytes": 9410,
+      "sha256": "b1caf6c222445d8a181b827a83c02433639d84e30aa7132ea7d0f057f9f3c053"
+    },
+    {
+      "path": "04_verification/revisions/controller_audit_before_BNTX.json",
+      "bytes": 24830,
+      "sha256": "df7f8a90186e858e55730fdefed250d784aae8c8e81637e64c5fe22d595c3c36"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_calculation_audit.json",
+      "bytes": 8266,
+      "sha256": "ca47cf5c2b5ab2bfcd5ae851f5c0bc04450f72694d972b6d795fe5b9ea28452b"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_final_manifest.json",
+      "bytes": 1055,
+      "sha256": "0b32569d9a2af28a1ed44c04566e088c815939720124fe59183b23a988df75f2"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_models.json",
+      "bytes": 165260,
+      "sha256": "beffc2f575e9220f41603f6acfd038bd46d15d1fccaa50c0b7903a40d41390e8"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_numeric_verification.json",
+      "bytes": 19604,
+      "sha256": "357dac00888c1366736e6693d63ae4b09981ee490665042ee986a7616aa7bb3e"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_numeric_verification.md",
+      "bytes": 25473,
+      "sha256": "1219f79d887d6bd63e6d9ce11ecd5a5d46367cf57c6c00b6ef216a1db3eea586"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_recalculate.py",
+      "bytes": 42747,
+      "sha256": "9d883e34180fa862a7f6568815c5bcc560f52c4444cd327bc094803094f8008c"
+    },
+    {
+      "path": "04_verification/revisions/V2_before_BNTX_rights_correction/V2_sources.json",
+      "bytes": 7922,
+      "sha256": "7dcc69f77b59ff495e741a3bd97a6259b030d503eb809dc90f0b68bd8e959eb5"
+    },
+    {
+      "path": "04_verification/V1_BNTX权益追加核验.json",
+      "bytes": 8040,
+      "sha256": "54067cef4ab192dcfa9e5dfcb1eca4864151e7a83ed348d781c3caebd85e2dd4"
+    },
+    {
+      "path": "04_verification/V1_BNTX权益追加核验.md",
+      "bytes": 6469,
+      "sha256": "8effbba7b9021c3f869f00bdd37139eb8a3fab18fb2cf3d00329f016cdea8bd3"
+    },
+    {
+      "path": "04_verification/V1_primary_verification.json",
+      "bytes": 56839,
+      "sha256": "ba6a9db388e232bc350ded29edbcfb4594b98cc40477101f1ba5520f82fbc809"
+    },
+    {
+      "path": "04_verification/V1_primary_verification.md",
+      "bytes": 24382,
+      "sha256": "f1e34cee1bb277c88ba2fa51b193916e830f6f7a5e11bb731d4e201a7c5da358"
+    },
+    {
+      "path": "04_verification/V2_BNTX_rights_correction.json",
+      "bytes": 2248,
+      "sha256": "f81c298e44406ede1140cef55a3cc0b6698181f390c818f19ab55b1eecdd2e41"
+    },
+    {
+      "path": "04_verification/V2_BNTX_rights_correction.md",
+      "bytes": 4773,
+      "sha256": "f7834a1b34934ea3d7c2e2414765f71171c4d381fa188c1a93cbfe8b2cd80a57"
+    },
+    {
+      "path": "04_verification/V2_calculation_audit.json",
+      "bytes": 8266,
+      "sha256": "ca47cf5c2b5ab2bfcd5ae851f5c0bc04450f72694d972b6d795fe5b9ea28452b"
+    },
+    {
+      "path": "04_verification/V2_models.json",
+      "bytes": 180539,
+      "sha256": "53bf75813a86f394b435110bb6f02567a16df4c80502388ece5aa50a5a4d6448"
+    },
+    {
+      "path": "04_verification/V2_numeric_verification.json",
+      "bytes": 20072,
+      "sha256": "573d240f839cf2e4476a5d9488af89bb772950696e2c03eb637f129a697a2ece"
+    },
+    {
+      "path": "04_verification/V2_numeric_verification.md",
+      "bytes": 26808,
+      "sha256": "6804aa17b1482eedb5be57b89161d0ffa368ea2e0de4630f406e1734635593cf"
+    },
+    {
+      "path": "05_chair/chair_card_inputs.json",
+      "bytes": 24647,
+      "sha256": "ef0410f86c2074a989771c0685e68f42981121dcaf6a851b7af4e70c4973e32f"
+    },
+    {
+      "path": "05_chair/主席最终裁决.json",
+      "bytes": 203992,
+      "sha256": "0e5e4b4a752eefa6a30a42872eb2a3cc06ff92ff522830e25db97d6191fdabcb"
+    },
+    {
+      "path": "05_chair/主席最终裁决.md",
+      "bytes": 1345,
+      "sha256": "6a1e1bb8a89bbb902280dca019a76ebe111bb879171581aad669b894c5265eb7"
+    },
+    {
+      "path": "05_chair/主席阶段A_竞争池.json",
+      "bytes": 17403,
+      "sha256": "b6e1936276c7a03e40da7687332898473c64f88eb325390f09135296ece1a27d"
+    },
+    {
+      "path": "05_chair/主席阶段A_竞争池.md",
+      "bytes": 13203,
+      "sha256": "5f299a0777616a5e27795056da3813d9e601498817a24d8bedfafbc65b35e512"
+    },
+    {
+      "path": "06_final/全245家公司_筛选与复活轨迹.csv",
+      "bytes": 203495,
+      "sha256": "3000a934ae12dfd1f579f0e4f3b14e3af5ddad299df7685f07ff78501534f3a5"
+    },
+    {
+      "path": "06_final/后续观察与回溯模板.csv",
+      "bytes": 7015,
+      "sha256": "c544edf95e4311fcb37de629f864363b5371a826274a2ea82235cdac0614bca5"
+    },
+    {
+      "path": "06_final/实验方法与回溯说明.md",
+      "bytes": 5973,
+      "sha256": "fd2837121a45d0af78b3eaf35f5ec1e9be64d8c69ac9e4ab0dd0b3364760935e"
+    },
+    {
+      "path": "06_final/最终20家_多轮证据闭环.csv",
+      "bytes": 7755,
+      "sha256": "c06b15d7d58a6bfd720d439f1359ec479c59d7f2139bae41eb2dcf5ce397308a"
+    },
+    {
+      "path": "06_final/最终20家_多轮证据闭环.md",
+      "bytes": 3250,
+      "sha256": "dd6232614e6c7f4f9b1915a0de2b2018daace6bced5fdf1c8e457ef6ce9967db"
+    },
+    {
+      "path": "06_final/最终20家公司_完整数据包.json",
+      "bytes": 332830,
+      "sha256": "94b94c70fc5c0346b88042f7cc1f227a03f25740cf5bdf743c70223f6674cddf"
+    },
+    {
+      "path": "06_final/最终20家公司_情景与行动.csv",
+      "bytes": 5155,
+      "sha256": "b335bd0a78af72a9f0301c91e0af97b888736044b69701552c4ed47cb9f42af2"
+    },
+    {
+      "path": "06_final/最终20家公司投资研究.md",
+      "bytes": 77853,
+      "sha256": "bd2f6b44d88d591ae18a812e176f22b6d334cfd82a376b7cf416007fbec22217"
+    },
+    {
+      "path": "07_logs/B1_build.py",
+      "bytes": 26764,
+      "sha256": "8793a5b6a1c235d2658146606accd0e5550fe9cc80462be05865200aa72409b2"
+    },
+    {
+      "path": "07_logs/B1_sources.json",
+      "bytes": 9836,
+      "sha256": "2fcff67fac097c6577de8969a784d8df775c784c31a0b4e5a8cdb80c99964dee"
+    },
+    {
+      "path": "07_logs/B1_stage_notes.md",
+      "bytes": 678,
+      "sha256": "65f05c4093e9ad72c7d60d1342003beae27a426692ad5333dd4e271c26171542"
+    },
+    {
+      "path": "07_logs/B2_build.py",
+      "bytes": 19266,
+      "sha256": "f8bf8d2d8613367a89ecece811c6f9de9a8f457a2b65fa7e6b271507b3c2ab62"
+    },
+    {
+      "path": "07_logs/B2_sources.json",
+      "bytes": 6767,
+      "sha256": "a19065919f433caaba2658925d871b0b83a3d20531fb1a2bc81f8cda8c182380"
+    },
+    {
+      "path": "07_logs/B2_stage_notes.md",
+      "bytes": 792,
+      "sha256": "d8884fd0ced9c21689173bdc143376261d1f621676912401b65e3049776451d4"
+    },
+    {
+      "path": "07_logs/build_R2.py",
+      "bytes": 31284,
+      "sha256": "fc3e0e4c5e9cab48862c44fc27c86b77b30a67a40f7ad4f04f15eebbed02c1b5"
+    },
+    {
+      "path": "07_logs/controller_clinical_sources.json",
+      "bytes": 910,
+      "sha256": "084563134df0a29b22dcfb0bf9f13e911dc911d296e719ed4ea2f6ab9a660c5d"
+    },
+    {
+      "path": "07_logs/controller_memo_sources.json",
+      "bytes": 6563,
+      "sha256": "66015deb20abb27b32f133914ebd6d384d0e005512897574f47e2882ebf9b81a"
+    },
+    {
+      "path": "07_logs/controller_research_log.md",
+      "bytes": 4742,
+      "sha256": "f6555998e1afff82fe7d0e14c19b891364822fe50acd1c7756ab2c0cdf4e9570"
+    },
+    {
+      "path": "07_logs/controller_right_tail_checks.md",
+      "bytes": 2541,
+      "sha256": "95a5c41c381df9f0858a0a6ec15f41cbfcfdab63dc48962e6806adea2bd39c46"
+    },
+    {
+      "path": "07_logs/R1_build.py",
+      "bytes": 21331,
+      "sha256": "41d2a9f323ea4e78575f0d4738004fe050c22bf2cdd44a5f430eabc68d44d25e"
+    },
+    {
+      "path": "07_logs/R1_full_universe_screen.csv",
+      "bytes": 39316,
+      "sha256": "6ecde410997392d8b6a8fb54e0c6cef36b1d94486bf48e0b6ceb4a28a4eacfeb"
+    },
+    {
+      "path": "07_logs/R1_reading_notes.md",
+      "bytes": 173609,
+      "sha256": "ae9c9804ae64b346c4453196b8dbf33180a6eeb57c9e66631ef1400bd8f9be77"
+    },
+    {
+      "path": "07_logs/R1_sources.json",
+      "bytes": 4879,
+      "sha256": "c1ed8e71b6c1530c1dfa0130368f06dac2282fbfac80d46ed0c60e093078dc30"
+    },
+    {
+      "path": "07_logs/R2_full_pool_screen.csv",
+      "bytes": 55915,
+      "sha256": "a555c61255750a3859b93a45651d1ce18a270d8c3927fe38cf50f22c410d3747"
+    },
+    {
+      "path": "07_logs/R2_progress.md",
+      "bytes": 2629,
+      "sha256": "fc0fda91e4b95d2a64ac2b4d889a1fb002c61ced65f8e1452522a5aaf10a086c"
+    },
+    {
+      "path": "07_logs/R2_sources.json",
+      "bytes": 16261,
+      "sha256": "0c9e03631b878abf1fc4a50145c70caa714ce5e9dfd091eb954430f415d59ee6"
+    },
+    {
+      "path": "07_logs/R3_build.py",
+      "bytes": 22654,
+      "sha256": "0b4937c253afe569d1d87d5f529c6047f6bf1c4f17ca4bb2ee53c7376c8478a3"
+    },
+    {
+      "path": "07_logs/R3_local_read_notes.md",
+      "bytes": 115687,
+      "sha256": "1083a97ac7a3c8034170460a409d59519974973a073ef6f821136212f04800b1"
+    },
+    {
+      "path": "07_logs/R3_screen_245.csv",
+      "bytes": 46198,
+      "sha256": "b8d2f026f5ed01151c9260365b7669c24171347ffc9f885dee8c6266c5cff9c6"
+    },
+    {
+      "path": "07_logs/R3_sources.json",
+      "bytes": 6457,
+      "sha256": "7bd4d0fdd63c2532d955bac82152139904b764de9297da0ef671822ba6422aec"
+    },
+    {
+      "path": "07_logs/R4_build.py",
+      "bytes": 26684,
+      "sha256": "a45282e7a4e464447020c485f5ada59f37152dd161c4d604f2eafbf880ca19be"
+    },
+    {
+      "path": "07_logs/R4_deep_read_audit.json",
+      "bytes": 11640,
+      "sha256": "9ed4eb8a38b9e468877cb58c34e30143c811f1fb54d669f1ea6ece49f0861781"
+    },
+    {
+      "path": "07_logs/R4_full245_screen.csv",
+      "bytes": 66632,
+      "sha256": "040c7f6d5ebea499618571ec5ca5525c51a59b6178316fdcff9d14c5415dead8"
+    },
+    {
+      "path": "07_logs/R4_sources.json",
+      "bytes": 6925,
+      "sha256": "30c6876afe2b0583b090ced3ea3c6d2a7da4b720ed7605359f1ba5fc71814a75"
+    },
+    {
+      "path": "07_logs/R4_stage_notes.md",
+      "bytes": 598,
+      "sha256": "d302070d5017c4878c7fd55c13468bf33f037bf12da5ff38902c64f085b8b186"
+    },
+    {
+      "path": "07_logs/R5_245_screen.csv",
+      "bytes": 28097,
+      "sha256": "e37e255b3f0fad8cac2c6b5ac12dcead672937d0abdbf46d85d1940f181b4fc7"
+    },
+    {
+      "path": "07_logs/R5_build.py",
+      "bytes": 22858,
+      "sha256": "78cb15ec24ae6049ad0816fab16349befd9269bd1c84e7d279c1d13b0821413f"
+    },
+    {
+      "path": "07_logs/R5_sources.json",
+      "bytes": 8232,
+      "sha256": "ddac811f5719de645b2d7c3b9315521af3f02979f2e98b9fab963993be73a1e5"
+    },
+    {
+      "path": "07_logs/R5_stage1.md",
+      "bytes": 232,
+      "sha256": "14f76117097184c15eec4cf21e74ff16ed001c4803815f68a4d64c80bebd4bd8"
+    },
+    {
+      "path": "07_logs/R5_stage2.md",
+      "bytes": 370,
+      "sha256": "836f8bc2792ca8b0340b908099efe0e3b4e976bc34b2b76a2d4afeff1eac94e8"
+    },
+    {
+      "path": "07_logs/S1_reading_notes.md",
+      "bytes": 862,
+      "sha256": "05e4fe116c795523f0a361d5cae48059c79c558ff2a03af0f44fd6ed9b59ef69"
+    },
+    {
+      "path": "07_logs/S1_sources.json",
+      "bytes": 16728,
+      "sha256": "ef2085d0ce6431318196ed45882ee837fc1006bdb1ae230a018f9a8dd70440c2"
+    },
+    {
+      "path": "07_logs/S2_sources.json",
+      "bytes": 29514,
+      "sha256": "00315d54ee1b01ef53ac80a2814e4aabb8c0eb9b27258255f855ec416757bc1b"
+    },
+    {
+      "path": "07_logs/S2_stage_notes.md",
+      "bytes": 1172,
+      "sha256": "4f5e1f1d6dc967efa8a9f6ddcbe81a6f13c60dbe5abb6d509773dd4ea6a95276"
+    },
+    {
+      "path": "07_logs/V1_BNTX_addendum_build.py",
+      "bytes": 9578,
+      "sha256": "dbe535346bcf2572a52a560c8dcd93e6ec3c5848838c229f85f56f870cab064f"
+    },
+    {
+      "path": "07_logs/V1_BNTX_addendum_sources.json",
+      "bytes": 4440,
+      "sha256": "73a5b18953dc0ef696ffa6efb42e496685b9531fed7b84ad4c48e69ab8efb5c2"
+    },
+    {
+      "path": "07_logs/V1_build.py",
+      "bytes": 26436,
+      "sha256": "2dd8a1f7be8e0644b4345632b8bb93f8e8f2f4f37c1f6b8e4333d34aea02f806"
+    },
+    {
+      "path": "07_logs/V1_sources.json",
+      "bytes": 28050,
+      "sha256": "b5b67a22dc5fcda6b614ef5d82cf5fc48832bcd94a36a46fa3843a123d3459cd"
+    },
+    {
+      "path": "07_logs/V1_stage_notes.md",
+      "bytes": 650,
+      "sha256": "4e907f3f518d6368beafd4b826eb702e44207dbd7e9d22007471feeb80e23f58"
+    },
+    {
+      "path": "07_logs/V2_final_manifest.json",
+      "bytes": 1552,
+      "sha256": "3dcabb247b3b2281d04958cc33a2ab94bf496639df2a986e85bdea254f67d395"
+    },
+    {
+      "path": "07_logs/V2_sources.json",
+      "bytes": 10299,
+      "sha256": "a93dd51881149b4fb042ac8b884ae63ec87f7e4b50e77740f0c8e8a9ccbe2017"
+    },
+    {
+      "path": "scripts/aggregate_round1.py",
+      "bytes": 2377,
+      "sha256": "f4b78a6cc034267d2464b38425832a1a5aad7b9dae9a24a5b0bfea4095c6f713"
+    },
+    {
+      "path": "scripts/audit_inputs.py",
+      "bytes": 2952,
+      "sha256": "ecfd8120c65786ab72810dc4d0bf484f2395034e406042b7403bdf63ce6b4875"
+    },
+    {
+      "path": "scripts/build_final_audit.py",
+      "bytes": 9313,
+      "sha256": "08b018c9acca4d786f1b4982bde18bf62c0cef73e0b06f779f6a0e3c21d07899"
+    },
+    {
+      "path": "scripts/chair_polish.py",
+      "bytes": 1012,
+      "sha256": "71fdb309358d1d2fd2e2ada029ef843987cc6e017e8838cb6e760392b329c15b"
+    },
+    {
+      "path": "scripts/chair_prepare.py",
+      "bytes": 19791,
+      "sha256": "b0b16daf2145eb6aebc23f274cff8de508141e622d9c5439d703a8cad6e44c47"
+    },
+    {
+      "path": "scripts/chair_publish.py",
+      "bytes": 24207,
+      "sha256": "af8fcefd65bd5e3145c12939e06e25105c9d1087792e03515137237f9d6074f9"
+    },
+    {
+      "path": "scripts/chair_update_bntx.py",
+      "bytes": 3911,
+      "sha256": "eebf4c253eef9cc6db8f67bf13ca306c1380fb27e2bde64567a21e46b32024a6"
+    },
+    {
+      "path": "scripts/controller_independent_audit.py",
+      "bytes": 7247,
+      "sha256": "a4407e0aedb4118001b6a4f9e2aadfb2e024b73554015089de0ffb87fd942905"
+    },
+    {
+      "path": "scripts/evidence_inventory.py",
+      "bytes": 3860,
+      "sha256": "d1b424c3092b522df3bdbd30906ea88f81757889befe6ecfcd645c8f48cab1df"
+    },
+    {
+      "path": "scripts/freeze_inputs.py",
+      "bytes": 5456,
+      "sha256": "eb977bd7d760b0625a10997351a0ad34c78617112181eb757e32b92f60d16ef2"
+    },
+    {
+      "path": "scripts/V2_recalculate.py",
+      "bytes": 52649,
+      "sha256": "0ccf9cc2a2182cbc349ed127ad62bce228a572f2379ff2bba292eb2e9246ae09"
+    },
+    {
+      "path": "scripts/verify_integrity.py",
+      "bytes": 1666,
+      "sha256": "376825f01cedceba00c93c86276e05afbf5cf1f5b27689e0c6896d1b2f67c55e"
+    },
+    {
+      "path": "scripts/verify_quotes.py",
+      "bytes": 2437,
+      "sha256": "8e3f5fa8da80edfba57b20adfec54eb44828c0c95fde0e7a930eeb9b8de36f4c"
+    },
+    {
+      "path": "实验总览.md",
+      "bytes": 5048,
+      "sha256": "8d034ef255983bb344c6a5f9a827161838fa6509f4bea8ce18bb5bdcf132d450"
+    }
+  ]
+}

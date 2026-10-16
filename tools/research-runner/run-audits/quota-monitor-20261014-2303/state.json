@@ -1,0 +1,15 @@
+{
+  "automationId": "quota",
+  "status": "completed",
+  "lastObservation": {
+    "automationId": "quota",
+    "observedAtUtc": "2026-10-15T06:13:59Z",
+    "usedPercent": 0,
+    "remainingPercent": 100,
+    "windowDurationMins": 10080,
+    "resetsAt": 1792649586,
+    "observedAtLocal": "2026-10-14T23:13:59-07:00"
+  },
+  "trigger": "quota_recovered",
+  "automationStatus": "PAUSED"
+}

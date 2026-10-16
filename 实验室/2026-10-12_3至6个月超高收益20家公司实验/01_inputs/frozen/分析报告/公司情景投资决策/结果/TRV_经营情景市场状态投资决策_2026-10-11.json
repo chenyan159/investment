@@ -1,0 +1,57 @@
+{
+  "ticker": "TRV",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:36:15-07:00",
+  "reference_price": {
+    "value": 368.75,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        243,
+        243
+      ],
+      "target_price": [
+        192,
+        233
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        452,
+        452
+      ],
+      "target_price": [
+        433,
+        490
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        575,
+        575
+      ],
+      "target_price": [
+        599,
+        671
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        650,
+        650
+      ],
+      "target_price": [
+        758,
+        840
+      ],
+      "evidence": "weak"
+    }
+  }
+}

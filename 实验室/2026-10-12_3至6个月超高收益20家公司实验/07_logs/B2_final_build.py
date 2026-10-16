@@ -1,0 +1,68 @@
+import json, pathlib, datetime
+R=pathlib.Path(r'D:\investment\实验室\2026-10-12_3至6个月超高收益20家公司实验')
+cards=[
+dict(ticker='CLS',verdict='保留20竞争后段；有近窗定价机制，强成功仍需三项共振',price=347.5,strong=700.9777777778,
+thesis='官方2026收入20.5B，并预期2027增长超过65%，算术起点33.825B。44B较这一门槛高30.1%，可以是FY28前瞻年而非2027已确认收入。10/26盘后财报、10/27 8:00 ET投资者日官方已定，能给市场提前看2028的理由；不能把44B当现有公司指引。',
+rebuttal='44B×(15%毛利−5.5%经济费用)×80%税后×28，加1B净现金，除135M股=700.98，仅高于695翻倍线0.86%。9.5%经济EBIT不是当前9.8% GAAP EBIT已达标：Q2有TRS正收益，调整率8.2%又排SBC等，须同时去TRS及保留持续激励，不能选择较高口径。HPS已在CCS内，转售芯片金额不可当新增高毛利价值。',
+bull='不是空想的2x：原始2027加速展望支持收入基座，平台设计和1.6T/AI计算导入可带来经营杠杆，投资者日及下一次年报有机会把增量订单转成年度盈利。合理多头可把44B放FY28并在半年内重估；不需要等2028现金到账。',
+sensitivity={'same_profit_multiple24':(3344*24+1000)/135,'same_revenue_ebit8pct_multiple28':(44000*.08*.8*28+1000)/135,'two_x_required_revenue_m':(695*135-1000)/28/.076},
+checks='3m：正式2027范围、平台订单量产/产能和毛利桥；6m：年度结果验证需求与费用、营运资金，令FY28的44B不是仅由客户芯片转售堆成。1月年报月估计，不能假定在1/12前公布。若只是33–34B收入和8%经济EBIT，700不是常态估值。',
+external='10/6 Rajiv Nanjapla多头正文已读，强调扩产和客户需求；9/30 Bernstein 520为二手片段，8/7 Barclays降406亦为聚合，均非695背书。Stifel转载搜索命中Q2 6.63B/3.58与原始4.70B/2.54冲突，排除该转载数字。未找到可核完整近期卖方做空报告，反方主要由原始利润口径构造，不冒充市场共识。',
+alternative='SMCI同需现金验证但起点低、回款去风险可使2x门槛更近；CLS执行证据较好，却不能仅因质量优先。UCTT若经济盈利上修更近，应在CLS只剩转售收入惊喜时替换。',sources=['F01','F02','F03','F04','F13']),
+dict(ticker='MOD',verdict='维持条件后段，反对把359.55解释为旧计划自然兑现',price=172.5,strong=359.5468421053,
+thesis='V2由原18%税后NOPAT降至15.21%确有改善，但对应经济EBIT仍19.5%。这距离继承的旧FY28全集团20.3%调整EBITDA仅0.8pp，尚需折旧、经济激励及存续总部费用。旧集团与分拆后口径不同，不能硬断言不可能，也不能称已被旧目标支持。',
+rebuttal='5.1B收入、30%GM、10.5%费用、22%税、27倍、57M股及450M净债共同给359.55。只把EBIT率改17.5%即321.86，18%为331.28；维持19.5%但25倍约332.33。翻倍需同资本倍数下745M NOPAT/约4.898B销售。单一利润率或倍数稍差就不过线。',
+bull='Q1 DC销售增长90%有真实基础；产线人员、供应改善与高功率冷却订单可令低谷14.8% EBITDA率恢复。分拆后的产品组合可能显著优于旧集团，故19.5%经济EBIT不能仅凭旧20.3%集团EBITDA机械否决。必须由新独立业务指引证实，而非自行把旧分部高利润外推。',
+sensitivity={'ebit17_5pct':(5100*.175*.78*27-450)/57,'ebit18pct':(5100*.18*.78*27-450)/57,'multiple25':(775.71*25-450)/57},
+checks='10/1 THRM分拆完成已由V1核实，新买不加THRM权益/旧分派。3m分拆后首份结果及11月分析师日（后者仅媒体公司计划线索，未独核官方日期）；6m持续业务DC/HVAC利润和总部成本、每MW订单内容。温水减少机械冷水机需以CDU等净新增毛利补足，不能把替代产品全部相加。',
+external='10/2 Oppenheimer Noah Kaye维持Outperform但目标300降260，StreetInsider公开短正文核到；MT Newswires搜索片段指出招聘扩产与成本转嫁收入利好，同时风扇/马达/压缩机等供给约束。原Yahoo页打开失败。降目标可能含分拆口径调整，不能全解释成经营转熊；该观点本身同时保留多头与执行风险。',
+alternative='PSIX已有利润的2x路径更直接，UCTT利润上修可两季核验；MOD在净冷却内容量和存续利润新指引明显上修时可胜，只有更名/已完分拆应退候补。',sources=['F05','F06','F07']),
+dict(ticker='SMCI',verdict='保留高右尾，但V2工作中枢应标有条件恢复，不能是概率最大状态',price=39.98,strong=135.8446156095,
+thesis='旧B2强81.6=经济EPS5.1×16；V2中枢79.44已经接近旧强成功强度。V2强85B较官方FY27上限72B高18.1%，配GM12.5%、费用2.8B、税21%、19倍和884.49M经济股，属于FY28运行速率提前定价。',
+rebuttal='算式差别不是免费换估值方法：仅作算术瀑布，把旧4.08B归母盈利替换为新6.18175B NOPAT且暂固定800M/16倍，81.6→123.635；倍数19使146.8166；改884.49M得132.7920；加转换后净现金3.3B、减600M优先股息PV得135.8446。NOPAT与归母NI不同，第一步包含经营增长及付息前后口径变化，不能把42美元全部归为盈利上修。V2中枢→强NOPAT+44.4%、倍数+18.75%，这才是高价主要来源。',
+bull='已存在65–72B官方需求/交付框架，11%GM和经济费用3.47%并非与收入矛盾，改善条款能缩短现金周期；两季兑现可同时解除盈利和治理折价，右尾有实质支持，不应只因历史争议否决。',
+sensitivity={'old_strong':81.6,'arithmetic_bridge':[81.6,123.635,146.8165625,132.7920101898,135.8446156095],'V2_central':79.4405963914,'V2_strong':135.8446156095},
+checks='新重读电话会CEO明确65–72B资金够，80B以上可能需要更多资金；85B分支必须有营运资金/融资解释。目标净债-3.3B较期初+1.2B改善4.5B，却含4.725B债经济转换；剔转换约为净债恶化225M，不是4.5B经营现金创造（期初账面债与面值差仍需核）。未来增发若被需要要对称现金和股数，转换债不双扣。3m Q1交付/GM/现金；6m第二季度和指引检验12.5%能否持续，不年化Q4 17.5%。',
+external='9/8 Trey Thoelcke反方全文认为高Q4毛利含一次因素，承认订单和客户多元化；其摘要将75%组合改善泛称非经常，需以电话会更细口径为准。原始管理层同时给现金周期改善多头与80B资金警示。没有新的85B官方承诺。',
+alternative='继续SMCI优先于CLS的短窗右尾但有回款条件；若增长只增加应收/库存、毛利落回低端，则CLS更可执行，不用135.84自动压倒CLS。',sources=['F08','F09','F10']),
+dict(ticker='ENPH',verdict='保留SST去风险期权；纠正1.55压力展示和2.3B并非翻倍最低期权值',price=31.49,strong=72.8266666667,
+thesis='V2强核心EPS2.08×27=56.16，单核心尚不到62.98。再加2.3B/138M=16.67才达72.83；但翻倍只需额外941.16M期权，不是必须2.3B。固定2.3B时逆解EPS1.7153属另一组合，不要说核心2.08和2.3B同时是最低翻倍条件。',
+rebuttal='1.55是1.1B收入、40%GM、425M费用所剩11.7M年度净利的18倍资本化，不是完整资产压力价。V2已加独立现金说明：当前净金融现金362.7M/136M=2.67；烧150/300M后1.56/0.46。不能把资产缓冲当硬底，也不能再机械叠加到含利息PE。由于失望分支利息设0，若改用经营EV+真实剩余净现金可作为替代完整模型，但须重设匹配倍数/资产占用，不能选较高者作保证。',
+bull='11月整机演示和2027客户pilot是现实去风险日历；多倍收入不需在Apr27已实现，具有客户验证的电源产品期权可以先定价。强核心利润若接近56.16，约0.94B风险调整期权足够2x，较2.3B强价的承诺要求更低。',
+sensitivity={'strong_core':56.16,'option_for_two_x_m':941.16,'strong_option_m':2300,'cash_stress_per_share':[362.7/136,212.7/136,62.7/136]},
+checks='3m看完整系统而非模块效率/可靠性、核心safe-harbor后收入；6m客户独立采纳/条件及pilot排期，而非硬要求量产。公司只说2027试点，未限定Q1。核心1.85B/46%GM/495M经济费用仍要验证需求复苏，退款与提前拉货不能支撑正常化利润。全部持续研发留在核心费用，期权仅估未来超额增量并扣新增商业化资金，不能重复SST收入与利润。',
+external='9/14官方演示公告相关正文已读；9/21 Goldman仍Buy但目标55降47，反映近端预期风险和长期地位并存，未背书73。10/5 Oppenheimer55仅搜索二手线索，未取完整券商正文，不算独立客户确认。',
+alternative='优于NVTS是既有经营/近端系统验证，而非现金保底；PSIX已盈利路径更直接，若演示无客户/核心下修则PSIX优先。',sources=['F11','F12','F14'])]
+sources=[
+('F01','CLS','2026-10-06','primary','opened_relevant_body','https://corporate.celestica.com/news-releases/news-release-details/celestica-hold-q3-2026-financial-results-and-2026-investor-and','10/26盘后业绩；10/27 8ET会议，官方已定'),
+('F02','CLS','2026-07-27','primary','opened_relevant_body','https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results','20.5B/2027增长超过65%；8.2%调整/9.8%GAAP与TRS'),
+('F03','CLS','2026-10-06','opinion','opened_relevant_body','https://www.fool.ca/2026/10/06/celesticas-revenue-jumped-62-and-i-like-the-stocks-outlook/','Rajiv Nanjapla多头，扩产需求'),
+('F04','CLS','2026-09-30','opinion_secondary','search_excerpt','https://trendonify.com/news/ratings/bernstein-initiates-coverage-on-celestica-to-outperform-rating-655372','Bernstein520；非券商原全文'),
+('F05','MOD','2026-07-29','primary','opened_relevant_body','https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx','Q1 DC348.6M/14.8%EBITDA，FCF-5M，总部费用不可漏；页面顶端直接核对7/29公告，具体时刻未标'),
+('F06','MOD','2026-10-02','opinion_secondary','search_excerpt_open_failed','https://finance.yahoo.com/markets/stocks/articles/modine-advances-pure-play-transformation-150159919.html','Oppenheimer供给约束与收入利好；Yahoo打开Internal Error'),
+('F07','MOD','2026-10-02','opinion_secondary','opened_public_short_body','https://www.streetinsider.com/Analyst%2BPT%2BChange/Modine%2BManufacturing%2B(MOD)%2BPT%2BLowered%2Bto%2B$260%2Bat%2BOppenheimer/27138928.html?classic=1','Noah Kaye Outperform300降260；不是付费全文'),
+('F08','SMCI','2026-08-11','primary','opened_relevant_body','https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx','FY27 65–72B原始'),
+('F09','SMCI','2026-08-11','management_transcript_third_party_host','opened_relevant_body','https://stockanalysis.com/stocks/smci/transcripts/660964-q4-2026/','CEO80B以上可能更多资金；CFO改现金条款，非券商推测'),
+('F10','SMCI','2026-09-08','opinion','opened_relevant_body','https://www.aol.com/articles/don-t-fall-supermicro-margin-111002000.html','Trey Thoelcke反方，Yahoo同稿打开失败但AOL正文成功；一篇只计一次'),
+('F11','ENPH','2026-09-14','primary','opened_relevant_body','https://enphaseenergy.gcs-web.com/news-releases/news-release-details/enphase-energy-showcase-iq-solid-state-transformer-ai-infra','11月演示2027pilot；无Q1承诺'),
+('F12','ENPH','2026-09-21','opinion_secondary','opened_public_short_body_date_inherited','https://www.tipranks.com/news/the-fly/enphase-energy-price-target-lowered-to-47-from-55-at-goldman-sachs-thefly-news','Buy保留但55降47，日期由搜索结果及先轮核验；本轮日期未显示，公开短正文已读，不声称券商全文'),
+('F13','CLS','2026-07-28','opinion_secondary','search_excerpt_rejected_numeric_conflict','https://www.investing.com/news/analyst-ratings/stifel-raises-celestica-stock-price-target-to-500-on-ai-demand-93CH-4817857','转载6.63B/3.58与原始4.70B/2.54冲突，财务数字不用'),
+('F14','ENPH','2026-10-05','opinion_secondary','search_excerpt','https://aryafin.com/stockappnews/','Oppenheimer55线索；未读券商全文')]
+log=[]
+for id,ticker,date,typ,status,url,note in sources:
+ log.append(dict(id=id,ticker=ticker,published=date,type=typ,access_status=status,url=url,note=note,eligible_before_cutoff=True,accessed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat()))
+obj=dict(role='B2 final targeted independent rebuttal',status='sealed_with_dissent',cutoff='2026-10-12 20:50 America/Los_Angeles',price_date='2026-10-12 normal close',checkpoints=['2027-01-12','2027-04-12'],units='USD; financial amounts explicitly M/B',scope=['CLS','MOD','SMCI','ENPH'],probabilities='not calibrated; scenarios not probability-weighted targets',old_B2_unchanged=True,local_read=['V2_models.json','S1_ai_deep.md','B1_business_rebuttal.md','主席初步争议.md','V1_evidence.md'],companies=cards)
+(R/'03_round2/B2_末轮补充反驳.json').write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding='utf-8')
+(R/'07_logs/B2_final_sources.json').write_text(json.dumps(dict(cutoff=obj['cutoff'],sources=log,access_rule='相关正文非宣称整页全文；搜索片段/失败单列；同稿不算多份独立证据'),ensure_ascii=False,indent=2),encoding='utf-8')
+md=['# B2 末轮补充反驳：CLS / MOD / SMCI / ENPH','信息截止2026-10-12 20:50洛杉矶；价格10/12正常收盘，检查2027-01-12与04-12。旧B2保持原样。以下是条件模型异议，不是概率加权目标或新增公司指引。','结论：四家都有可保留的多头机制；CLS/MOD仍在条件后段，SMCI新中枢不得当最可能结果，ENPH需明确核心与期权。触及2x与4/12站稳2x不同，后者须验证交付、利润和融资。']
+for c in cards:
+ md+=['',f"## {c['ticker']} — {c['verdict']}",'',f"参考价 {c['price']:.2f}；V2强成功 {c['strong']:.2f}。"]
+ for k,label in [('thesis','定价机制'),('rebuttal','独立反驳'),('bull','最强多头抗辩'),('checks','窗内条件与失败'),('external','近期外部观点'),('alternative','替代比较')]: md += ['',f'**{label}：** {c[k]}']
+ md+=['','**敏感性复算：** '+json.dumps(c['sensitivity'],ensure_ascii=False),'','来源：'+ '；'.join(f"[{s['id']}]({s['url']})（{s['access_status']}）" for s in log if s['id'] in c['sources'])]
+md+=['','## 保留的不同意见','不因每家强成功越过2x就上调其概率。CLS需要44B收入与9.5%经济EBIT、28倍共同成立；MOD需要分拆后新口径支持19.5%经济EBIT；SMCI需要证明增长与回款相容；ENPH需要技术去风险和太阳能恢复同时成立。相近右尾时才优先小下行，不能用质量排序替代短期回报机制。','来源访问限制均已写入单独日志。旧FY28 MOD EBITDA及THRM交割细节继承S1/V1，本轮未重新打开原投资者日旧模型或分拆文件；不包装为新独立事实。']
+(R/'03_round2/B2_末轮补充反驳.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
+assert len({x['ticker'] for x in cards})==4
+assert abs(cards[0]['strong']-(44000*.095*.8*28+1000)/135)<1e-6
+assert abs(cards[3]['strong']-(2.08*27+2300/138))<1e-6
+print('SEALED 4 cards, 14 source records; old B2 untouched')
+

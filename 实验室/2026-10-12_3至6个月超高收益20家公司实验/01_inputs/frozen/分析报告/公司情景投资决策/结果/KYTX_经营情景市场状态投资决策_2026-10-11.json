@@ -1,0 +1,57 @@
+{
+  "ticker": "KYTX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:18:24-07:00",
+  "reference_price": {
+    "value": 6.39,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        0.57,
+        0.57
+      ],
+      "target_price": [
+        0,
+        0.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        12.81,
+        12.81
+      ],
+      "target_price": [
+        10.91,
+        14.71
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        49.18,
+        49.18
+      ],
+      "target_price": [
+        41.86,
+        56.49
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        58.1,
+        58.1
+      ],
+      "target_price": [
+        58.1,
+        75.07
+      ],
+      "evidence": "weak"
+    }
+  }
+}
