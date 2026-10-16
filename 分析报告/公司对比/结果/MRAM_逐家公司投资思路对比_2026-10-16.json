@@ -1,0 +1,149 @@
+{
+  "ticker": "MRAM",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:52:36-07:00",
+  "reference_price": {
+    "value": 14.07,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        1.78,
+        1.78
+      ],
+      "target_price": [
+        1.35,
+        1.61
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        12.66,
+        12.66
+      ],
+      "target_price": [
+        11.67,
+        14.65
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        36.14,
+        36.14
+      ],
+      "target_price": [
+        36.14,
+        42.32
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        64.2,
+        64.2
+      ],
+      "target_price": [
+        69.92,
+        81.36
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若看工业与AI供电的已实现收入则英飞凌优先；若只追求独立MRAM新品的极端右尾，则MRAM小仓更直接。"
+    },
+    {
+      "peer": "STM",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "STM已有MCU生态及光通信量产，基准回报和业务分散优于MRAM，MRAM只保留更高但弱证据的右尾。"
+    },
+    {
+      "peer": "MU",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在AI存储预算增长逻辑下，美光已有规模交付和现金，基准赔率优于MRAM，但须承受存储价格周期。"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "若投资大容量AI持久存储，Sandisk已有企业SSD和长期采购合同，基准回报优于MRAM；MRAM只补充高耐久小容量插槽。"
+    },
+    {
+      "peer": "RMBS",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "若寻求可收取现金的存储接口与IP增长，Rambus的长约和产品更成熟，MRAM仅在非线性上行倍数胜出。"
+    },
+    {
+      "peer": "MXL",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "若二者只选一个平台突破小仓，MRAM的乐观及突破回报更大、无银行债，MXL基准仍负且另有重大赔付与融资风险。"
+    },
+    {
+      "peer": "MCHP",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若看工业库存复苏和现金分红则Microchip优先；若看MRAM新器件量产突破，则直接持有MRAM更纯粹。"
+    },
+    {
+      "peer": "GFS",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若看多种特色工艺与区域制造则GFS优先；若追求独立MRAM商业化的高倍数弹性则MRAM小仓更直接。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在半导体技术升级逻辑下，台积电的已实现壁垒、客户分散和基准回报更强，MRAM只能作为独立小型右尾补充。"
+    },
+    {
+      "peer": "IBM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若需要关键企业系统与分红现金则IBM优先；若专门押独立MRAM器件的非线性放量，则MRAM仅作高风险小仓补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "若追求AI应用与云的持续变现，Alphabet的入口和基准回报更强；其资本开支回收仍须验证，MRAM仅补充小型硬件突破。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若需要可持续合同现金与防守底仓则林德优先；若愿承受永久亏损追求多倍上行，MRAM仅可用极小仓补充。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先业务稳定、分红和较低现金流波动则WM胜；若目标是高风险新品突破，MRAM的小型期权特征不同且不可作为防守替代。"
+    }
+  ]
+}
