@@ -1,0 +1,143 @@
+{
+  "ticker": "MOD",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:03:25-07:00",
+  "reference_price": {
+    "value": 154.01,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        126.7,
+        126.7
+      ],
+      "target_price": [
+        45,
+        65
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        359.6,
+        359.6
+      ],
+      "target_price": [
+        190,
+        240
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        498.3,
+        498.3
+      ],
+      "target_price": [
+        300,
+        370
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        677.6,
+        677.6
+      ],
+      "target_price": [
+        480,
+        575
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "MOD突破集中弹性更强，但相同数据中心增长逻辑下VRT的基准回报、服务基础和下行结构更优。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "相近冷却制造弹性下优先MOD的经营与资金缓冲，AAON虽有更高右尾却承担更重回款和流动性风险。"
+    },
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若追求AI冷却进攻赔率则MOD优先，若优先成熟服务现金和低客户集中则TT更合适但应改善买价。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若专门押注AI冷却扩产则MOD优先，若偏好多个暖通市场修复及较缓左尾则CARR更合适。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "在Maverick回款及系统净价正常的条件下NVT的基准回报、现金转化和下行结构更优，MOD仅突破弹性更集中。"
+    },
+    {
+      "peer": "SPXC",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "同样投资设施排热需求时SPXC的基准回报和现金底盘更优、悲观损失更小，MOD适合作右尾补充。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "按本次买价追求成长股价回报时MOD赔率高于ETN，ETN的电气壁垒更强但购买资本和价格要求更高。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "若客户预算和真实付费持续支撑AI扩张则NVDA的架构收费与压力后基准赔率优于MOD，信用支持失控需重排顺位。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若优先企业入口和成熟现金承接AI投入则MSFT优先，若追求设备利润修复的集中弹性则小仓MOD更合适。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若能承担台湾生产与地缘集中则TSM的制造壁垒和基准回报优先，若限制该尾部敞口则MOD可作地域风险不同的补充。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "若接受创意入口被AI改变的业务风险则ADBE的基准现金赔率与下行结构更优，MOD只补充不同商业机制。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若优先低AI相关和承保资本复利则PGR更合适，若追求工业成长突破右尾则MOD更合适。"
+    }
+  ]
+}
