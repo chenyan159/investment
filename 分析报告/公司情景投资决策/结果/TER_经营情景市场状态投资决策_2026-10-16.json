@@ -1,0 +1,57 @@
+{
+  "ticker": "TER",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:49:48-07:00",
+  "reference_price": {
+    "value": 343.21,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        232.56,
+        232.56
+      ],
+      "target_price": [
+        98.86,
+        121.14
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        581.7,
+        581.7
+      ],
+      "target_price": [
+        333.75,
+        392.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        848.35,
+        848.35
+      ],
+      "target_price": [
+        573.17,
+        682.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        1143.55,
+        1143.55
+      ],
+      "target_price": [
+        892.08,
+        1070.53
+      ],
+      "evidence": "weak"
+    }
+  }
+}
