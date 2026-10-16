@@ -1,0 +1,57 @@
+{
+  "ticker": "IESC",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T02:59:55-07:00",
+  "reference_price": {
+    "value": 262.44,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        214,
+        214
+      ],
+      "target_price": [
+        132,
+        163
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        439,
+        439
+      ],
+      "target_price": [
+        377,
+        439
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        602,
+        602
+      ],
+      "target_price": [
+        573,
+        687
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        741,
+        741
+      ],
+      "target_price": [
+        777,
+        920
+      ],
+      "evidence": "weak"
+    }
+  }
+}
