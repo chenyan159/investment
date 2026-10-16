@@ -1,0 +1,57 @@
+{
+  "ticker": "DT",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:04:24-07:00",
+  "reference_price": {
+    "value": 63.73,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        71.5,
+        71.5
+      ],
+      "target_price": [
+        16.3,
+        21.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        163.3,
+        163.3
+      ],
+      "target_price": [
+        54.1,
+        66.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        223.1,
+        223.1
+      ],
+      "target_price": [
+        84.9,
+        106.6
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        283.0,
+        283.0
+      ],
+      "target_price": [
+        121.0,
+        155.2
+      ],
+      "evidence": "weak"
+    }
+  }
+}
