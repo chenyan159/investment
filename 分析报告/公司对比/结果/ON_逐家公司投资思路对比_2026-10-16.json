@@ -1,0 +1,149 @@
+{
+  "ticker": "ON",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T03:53:36-07:00",
+  "reference_price": {
+    "value": 73.7,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        27.44,
+        27.44
+      ],
+      "target_price": [
+        15.53,
+        23.47
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        120.28,
+        120.28
+      ],
+      "target_price": [
+        93.14,
+        113.49
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        172.12,
+        172.12
+      ],
+      "target_price": [
+        152.78,
+        181.79
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        217.95,
+        217.95
+      ],
+      "target_price": [
+        217.95,
+        254.73
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若重视现价下功率复苏的资本增值优先ON；若重视已形成规模的AI电源收入和全链产品覆盖，则优先IFNNY。"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "同样配置汽车工业复苏时优先STM，其基准年化相近或略高且净金融资产缓冲较好；ON只在近端盈利修复与低资本强度上局部占优。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "以两至四年周期修复资本增值为目标优先ON；若更重视广产品寿命、分红和长期制造成本，则优先TXN并接受较低基准价格回报。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若追求较高现价赔率优先ON；若优先精密信号链、现金流确定性和较低资本损失尾部，则选择ADI或等待其更好价格。"
+    },
+    {
+      "peer": "WOLF",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "ON已有盈利和造血，基准回报为正；WOLF仍要跨过再融资、亏损与大幅权益稀释，同为SiC配置时优先ON。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "在当前买价下优先ON的基准与乐观资本增值赔率；MPS在核心供电量产和资产负债表上更强，但需更高价格纪律。"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "ON的规模盈利和多业务现金底盘更扎实，且基准至突破回报结构更好；NVTS当前买价高度依赖突破兑现。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "基准复苏与中等风险参与优先ON；只有愿意承担许可续存、客户集中和新厂验证风险并专门追求VPD右尾时才优先VICR。"
+    },
+    {
+      "peer": "ACLS",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在接受Veeco交割及设备周期风险时优先ACLS，其基准年化与现金缓冲优于ON；若只看器件存量利用率恢复而非新增设备需求，ON可补充。"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "ON的基准回报和多客户业务底盘更有利；Aehr虽有真实AI复购，基准价格回报仍为负，不能用订单拐点代替足够赔率。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "以AI基础设施扩张为同一投资逻辑优先NVDA，其平台收费权和基准回报更强；仍须验证客户预算、回款和远期收入路径。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健核心配置优先MSFT的成熟软件现金及企业分销壁垒；ON不能用更高突破涨幅替代资本保全，但MSFT现价也未构成深折价。"
+    },
+    {
+      "peer": "MU",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "接受存储净价与合同支撑持续、且容忍强周期反转时优先MU的高收益进攻；需要分散存储价格风险时ON才有补充作用。"
+    }
+  ]
+}
