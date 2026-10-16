@@ -1,0 +1,143 @@
+{
+  "ticker": "SMTC",
+  "research_date": "2026-10-16",
+  "information_cutoff": "2026-10-16T04:16:17-07:00",
+  "reference_price": {
+    "value": 144.21,
+    "date": "2026-10-15",
+    "currency": "USD"
+  },
+  "target_date": "2030-01-27",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        73,
+        73
+      ],
+      "target_price": [
+        21,
+        28
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        326,
+        326
+      ],
+      "target_price": [
+        173,
+        212
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        475,
+        475
+      ],
+      "target_price": [
+        336,
+        392
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        670,
+        670
+      ],
+      "target_price": [
+        532,
+        613
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "MTSI",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "按当前价格追求AI连接的基准及右尾收益优先SMTC；MTSI的国防分散优势仍存在。"
+    },
+    {
+      "peer": "MXL",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "即采用对MXL较有利的原基准情景，其回报仍为负，且存在仲裁和融资约束，进攻资金优先SMTC。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "综合进攻资金优先SMTC的基准回报和LoRa预算分散；若只押已规模兑现的数字AEC，CRDO仍有独立优势。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若押光模拟与LoRa的每股右尾选SMTC；若押定制ASIC及综合互连平台并认可10月6日目标兑现则选MRVL。"
+    },
+    {
+      "peer": "ALAB",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "ALAB的Fabric卡位更深，但当前价格下基准回报为负、乐观回报较低，综合进攻优先SMTC。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "COHR拥有更深光子制造能力，但扩产和营运资金显著消耗普通股现金，当前基准赔率优先SMTC。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "若不限定必须持有OCS或高功率光源，SMTC在正常兑现及右尾回报上更有吸引力。"
+    },
+    {
+      "peer": "TSEM",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若重视已付预付款和2027合同可见度选TSEM；若重视较轻资本及现价基准/右尾回报选SMTC。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健质量和系统控制权优先ANET；接受更大左尾、追求当前基准及右尾回报则选SMTC。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "在一般AI资本开支逻辑下，NVDA的基准回报、生态控制和悲观资本保全优于SMTC；SMTC保留专项右尾补充价值。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视广告/平台分散与较低悲观损失时选GOOGL；重视较轻资本及光模拟、LoRa突破弹性时选SMTC。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "以现金韧性和分红为目标选LIN；若要求显著业务成长及右尾弹性并能承受大回撤则选SMTC。"
+    }
+  ]
+}
