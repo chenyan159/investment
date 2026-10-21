@@ -397,9 +397,9 @@ def choose_price(
         return hist_price, hist_date.isoformat(), "Yahoo Finance/yfinance history", notes
 
     if quote_price is not None:
-        date_text = quote_date.isoformat() if quote_date else run_date.isoformat()
+        date_text = quote_date.isoformat() if quote_date else "缺失/需确认"
         if quote_date is None:
-            notes.append("价格来自quote.currentPrice；quote时间戳缺失")
+            notes.append("价格来自quote.currentPrice；quote时间戳缺失，价格日期需确认")
         return quote_price, date_text, "Yahoo Finance/yfinance quote.info", notes
 
     return None, "缺失", "缺失", notes
@@ -624,11 +624,11 @@ def fetch_company(company: Company, run_date: date, source_timestamp: str, skip_
         nasdaq_price, nasdaq_price_date, nasdaq_note = fetch_nasdaq_price(company.ticker)
         if nasdaq_price is not None:
             price = nasdaq_price
-            price_date = nasdaq_price_date if nasdaq_price_date != "缺失" else run_date.isoformat()
+            price_date = nasdaq_price_date if nasdaq_price_date != "缺失" else "缺失/需确认"
             price_source = NASDAQ_SOURCE
             price_notes.append("Yahoo价格缺失，使用Nasdaq免费quote回退")
             if nasdaq_price_date == "缺失":
-                price_notes.append("Nasdaq价格回退时间戳缺失，价格日期按运行日标记")
+                price_notes.append("Nasdaq价格回退时间戳缺失，价格日期需确认")
         elif nasdaq_note:
             price_notes.append(nasdaq_note)
     row.price = price
@@ -867,16 +867,17 @@ def build_report(
     latest_price_date = max(price_dates) if price_dates else "缺失"
     common_price_date = price_counter.most_common(1)[0][0] if price_counter else "缺失"
     latest_price_count = price_counter.get(latest_price_date, 0)
-    stale_count = sum(1 for row in rows if row.price_date != latest_price_date)
+    stale_count = sum(1 for row in rows if row.price_date in price_counter and row.price_date != latest_price_date)
+    unknown_price_date_count = total - len(price_dates)
     run_date_text = run_date.isoformat()
     if latest_price_date == run_date_text and latest_price_count >= max(1, total // 2):
         stale_rows = [row for row in rows if row.price_date != run_date_text]
-        top_note = f"洛杉矶运行日 {run_date_text} 的价格覆盖 {latest_price_count}/{total}。"
+        top_note = f"洛杉矶运行日 {run_date_text} 的价格日期可核实为当日 {latest_price_count}/{total}。"
         if stale_rows:
             stale_details = "、".join(f"{row.ticker}（{row.price_date}）" for row in stale_rows[:12])
             if len(stale_rows) > 12:
                 stale_details += f"等 {len(stale_rows)} 家"
-            top_note += f"数据源尚未更新至运行日：{stale_details}；使用各自最新可得价格，明细保留实际日期。"
+            top_note += f"部分价格日期滞后或未获核实：{stale_details}；明细保留实际日期或注明需确认。"
     elif common_price_date != run_date_text and latest_price_date == run_date_text:
         top_note = (
             f"洛杉矶运行日为 {run_date_text}，但只有 {latest_price_count} 家公司的价格日期等于运行日；"
@@ -957,7 +958,7 @@ def build_report(
         "## 生成与数据日期",
         "",
         f"- 生成时间：{source_timestamp}",
-        f"- 价格数据日期：最新 `{latest_price_date}`；最常见 `{common_price_date}`；滞后于最新日期的公司 `{stale_count}` 家；每家公司详见明细表。",
+        f"- 价格数据日期：最新 `{latest_price_date}`；最常见 `{common_price_date}`；滞后于最新日期的公司 `{stale_count}` 家；日期缺失/需确认 `{unknown_price_date_count}` 家；每家公司详见明细表。",
         "- 估值数据日期：Yahoo Finance quote/info 于生成时间采集；TTM/forward 字段底层财报期或一致预期日期由数据源维护，源接口不提供逐字段 as-of date。",
         "- 使用的数据源说明：本次主源为 Yahoo Finance 免费匿名数据，经 `yfinance` 读取历史价格、quote/info 估值字段和期权链；价格缺口先回退到 quote.currentPrice/fast_info，仍缺失时再尝试 Nasdaq 免费 quote API。脚本不写入 provider 凭据，不要求付费 API key。字段缺失、源覆盖不足、期权链不干净或 ADR 比例需确认时，均写入公司明细备注列。",
         "- IV 口径：本次使用期权链 `impliedVolatility` 源字段并做合约筛选；未使用付费 IV provider，未用 0 代替缺失 IV。",
