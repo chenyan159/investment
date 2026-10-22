@@ -17,6 +17,14 @@ export class LocalOutputValidationError extends Error {
   }
 }
 
+export function companionOutputFile(domain, outputFile) {
+  if (!domain.companionExtension) return "";
+  const fileName = path.posix.basename(outputFile).replace(/\.md$/u, domain.companionExtension);
+  return domain.companionOutputPrefix
+    ? `${domain.companionOutputPrefix}${fileName}`
+    : outputFile.replace(/\.md$/u, domain.companionExtension);
+}
+
 export function createOutputContract(item, domain) {
   const runDate = runDateFromItem(item);
   const expectedOutputFile = normalizeProjectPath(domain.expectedOutputFile?.(item, runDate));
@@ -30,9 +38,7 @@ export function createOutputContract(item, domain) {
   if (expectedOutputFile) {
     validateOutputFilePath({ item, domain, outputFile: expectedOutputFile });
   }
-  const expectedCompanionFile = domain.companionExtension
-    ? expectedOutputFile.replace(/\.md$/u, domain.companionExtension)
-    : "";
+  const expectedCompanionFile = companionOutputFile(domain, expectedOutputFile);
   if (expectedCompanionFile) {
     validateOutputFilePath({ item, domain, outputFile: expectedCompanionFile, companion: true });
   }
@@ -131,8 +137,9 @@ export function validateOutputFilePath({ item = null, domain, outputFile, origin
   if (path.isAbsolute(String(originalOutputFile).replace(/\//g, path.sep))) {
     throw new Error(`outputFile must be relative to ${PROJECT_ROOT}: ${originalOutputFile}`);
   }
-  if (domain.outputPrefix && !outputFile.startsWith(domain.outputPrefix)) {
-    throw new Error(`outputFile must start with ${domain.outputPrefix}: ${outputFile}`);
+  const outputPrefix = companion ? (domain.companionOutputPrefix || domain.outputPrefix) : domain.outputPrefix;
+  if (outputPrefix && !outputFile.startsWith(outputPrefix)) {
+    throw new Error(`outputFile must start with ${outputPrefix}: ${outputFile}`);
   }
   if (/[\\]/u.test(originalOutputFile)) {
     throw new Error(`outputFile must use forward slashes: ${originalOutputFile}`);

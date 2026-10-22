@@ -37,6 +37,7 @@ export const companyComparisonDomain = {
   outputPrefix: "分析报告/公司对比/结果/",
   outputFilePattern: /^.+_逐家公司投资思路对比_\d{4}-\d{2}-\d{2}\.md$/u,
   companionExtension: ".json",
+  companionOutputPrefix: "分析报告/公司对比/结构化数据/",
   allowedCategories: new Set(),
   companyCategories: new Set(COMPANY_CATEGORIES),
   requiredPaths: [
@@ -119,6 +120,7 @@ export function backupExistingCompanyComparisonOutputs(item, outputContract = {}
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_COMPARISON_OUTPUT_DIR,
+    additionalOutputDirs: [path.join(ANALYSIS_ROOT, "公司对比", "结构化数据")],
     backupRootDir: path.join(ANALYSIS_ROOT, "公司对比", "备份"),
     backupKey: primary,
     expectedFileName,
@@ -133,6 +135,7 @@ export function rollbackCompanyComparisonFormalRun(item, prepareResult = {}, out
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_COMPARISON_OUTPUT_DIR,
+    additionalOutputDirs: [path.join(ANALYSIS_ROOT, "公司对比", "结构化数据")],
     backupRootDir: path.join(ANALYSIS_ROOT, "公司对比", "备份"),
     expectedFileName,
     prepareResult,

@@ -31,7 +31,7 @@ import {
   writeActiveQueue,
   writeDoneQueue,
 } from "./queue-store.mjs";
-import { validateOutputFilePath } from "./validators/output-validator.mjs";
+import { validateOutputFilePath, companionOutputFile } from "./validators/output-validator.mjs";
 import { featureIdentityFromStem } from "./domains/feature-contract.mjs";
 
 function printHelp() {
@@ -486,7 +486,7 @@ function validateActiveItems(items, errors, warnings, seenIds) {
           originalOutputFile: item.outputFile,
         });
         if (adapter.companionExtension) {
-          const expectedCompanion = item.outputFile.replace(/\.md$/u, adapter.companionExtension);
+          const expectedCompanion = companionOutputFile(adapter, item.outputFile);
           if (item.companionFile !== expectedCompanion) throw new Error(`companionFile must be ${expectedCompanion}`);
           validateOutputFilePath({
             domain: adapter, item, outputFile: item.companionFile, companion: true,

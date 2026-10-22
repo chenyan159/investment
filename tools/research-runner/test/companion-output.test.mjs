@@ -19,10 +19,11 @@ for (const domain of [companyComparisonDomain, companyInvestmentDecisionDomain])
   test(`${domain.domain}: exact MD and JSON required; content is not inspected`, () => {
     const item = { domain: domain.domain, subject: "TEST", startedAt: new Date().toISOString() };
     const contract = createOutputContract(item, domain);
-    assert.equal(contract.expectedCompanionFile, contract.expectedOutputFile.replace(/\.md$/, ".json"));
+    assert.equal(contract.expectedCompanionFile, contract.expectedOutputFile.replace("/结果/", "/结构化数据/").replace(/\.md$/, ".json"));
     const md = path.join(root, contract.expectedOutputFile);
     const json = path.join(root, contract.expectedCompanionFile);
     fs.mkdirSync(path.dirname(md), { recursive: true });
+    fs.mkdirSync(path.dirname(json), { recursive: true });
     const snapshot = captureOutputSnapshot(contract, item);
     fs.writeFileSync(md, "report");
     assert.throws(() => validateLocalOutput(item, domain, contract, snapshot), /does not exist/);
@@ -36,7 +37,7 @@ for (const domain of [companyComparisonDomain, companyInvestmentDecisionDomain])
     fs.renameSync(md, md.replace(/\.md$/, "_alternate.md"));
     assert.throws(() => validateLocalOutput(item, domain, contract, snapshot), /does not exist/);
     assert.equal(fs.existsSync(md), false);
-    assert.throws(() => validateOutputFilePath({ domain, item, outputFile: contract.expectedCompanionFile }), /naming rule/);
+    assert.throws(() => validateOutputFilePath({ domain, item, outputFile: contract.expectedCompanionFile }), /naming rule|must start/);
     assert.throws(() => validateOutputFilePath({ domain, item, outputFile: contract.expectedCompanionFile.replace("TEST_", "OTHER_"), companion: true }), /must start with TEST_/);
     assert.throws(() => validateOutputFilePath({ domain, item, outputFile: "../result.json", companion: true }), /must start|invalid path/);
     const prompt = buildOutputInstruction(contract);
@@ -44,6 +45,7 @@ for (const domain of [companyComparisonDomain, companyInvestmentDecisionDomain])
     assert.equal(prompt.split(contract.expectedCompanionFile).length - 1, 1);
     assert.ok(prompt.length < 350);
     fs.rmSync(path.dirname(md), { recursive: true, force: true });
+    fs.rmSync(path.dirname(json), { recursive: true, force: true });
   });
 
   test(`${domain.domain}: backs up and restores a pair; first JSON run restores MD-only state`, () => {
@@ -52,6 +54,7 @@ for (const domain of [companyComparisonDomain, companyInvestmentDecisionDomain])
     const md = path.join(root, contract.expectedOutputFile);
     const json = path.join(root, contract.expectedCompanionFile);
     fs.mkdirSync(path.dirname(md), { recursive: true });
+    fs.mkdirSync(path.dirname(json), { recursive: true });
     const other = path.join(path.dirname(md), "OTHER_keep.json");
     fs.writeFileSync(other, "unrelated");
     for (const hasJson of [false, true]) {
@@ -70,24 +73,27 @@ for (const domain of [companyComparisonDomain, companyInvestmentDecisionDomain])
       assert.equal(fs.readFileSync(other, "utf8"), "unrelated");
     }
     fs.rmSync(path.dirname(md), { recursive: true, force: true });
+    fs.rmSync(path.dirname(json), { recursive: true, force: true });
   });
 }
 
 test("a partial backup move restores files already moved", (t) => {
   const outputDir = path.join(root, "backup-failure", "results");
+  const dataDir = path.join(root, "backup-failure", "data");
   fs.mkdirSync(outputDir, { recursive: true });
+  fs.mkdirSync(dataDir, { recursive: true });
   fs.writeFileSync(path.join(outputDir, "a.md"), "MD");
-  fs.writeFileSync(path.join(outputDir, "a.json"), "JSON");
+  fs.writeFileSync(path.join(dataDir, "a.json"), "JSON");
   const rename = fs.renameSync;
   let moves = 0;
   const mocked = t.mock.method(fs, "renameSync", (from, to) => {
-    if (path.dirname(from) === outputDir && ++moves === 2) throw new Error("injected move failure");
+    if ([outputDir, dataDir].includes(path.dirname(from)) && ++moves === 2) throw new Error("injected move failure");
     return rename(from, to);
   });
   try {
-    assert.throws(() => backupExistingOutputs({ rootDir: root, outputDir, backupKey: "a", matchFileName: () => true }), /injected move failure/);
+    assert.throws(() => backupExistingOutputs({ rootDir: root, outputDir, additionalOutputDirs: [dataDir], backupKey: "a", matchFileName: () => true }), /injected move failure/);
     assert.equal(fs.readFileSync(path.join(outputDir, "a.md"), "utf8"), "MD");
-    assert.equal(fs.readFileSync(path.join(outputDir, "a.json"), "utf8"), "JSON");
+    assert.equal(fs.readFileSync(path.join(dataDir, "a.json"), "utf8"), "JSON");
   } finally {
     mocked.mock.restore();
   }

@@ -10,6 +10,7 @@ import {
 export function backupExistingOutputs({
   rootDir = PROJECT_ROOT,
   outputDir,
+  additionalOutputDirs = [],
   backupRootDir = "",
   backupKey,
   expectedFileName = "",
@@ -17,12 +18,17 @@ export function backupExistingOutputs({
 } = {}) {
   if (!outputDir) return { backupDir: "", files: [] };
   const resolvedBackupRootDir = resolveBackupRoot(outputDir, backupRootDir);
-  fs.mkdirSync(outputDir, { recursive: true });
-
-  const matchingFiles = fs.readdirSync(outputDir, { withFileTypes: true })
-    .filter((entry) => entry.isFile())
-    .map((entry) => entry.name)
-    .filter((fileName) => fileName === expectedFileName || matchFileName(fileName));
+  const outputDirs = [outputDir, ...additionalOutputDirs];
+  const matchingFiles = [];
+  for (const directory of outputDirs) {
+    resolveBackupRoot(directory, resolvedBackupRootDir);
+    fs.mkdirSync(directory, { recursive: true });
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      if (entry.isFile() && (entry.name === expectedFileName || matchFileName(entry.name))) {
+        matchingFiles.push(path.join(directory, entry.name));
+      }
+    }
+  }
 
   if (!matchingFiles.length) return { backupDir: "", files: [] };
 
@@ -31,8 +37,8 @@ export function backupExistingOutputs({
 
   const files = [];
   try {
-    for (const fileName of matchingFiles) {
-      const sourcePath = path.join(outputDir, fileName);
+    for (const sourcePath of matchingFiles) {
+      const fileName = path.basename(sourcePath);
       const targetPath = uniqueBackupPath(path.join(backupDir, fileName));
       fs.renameSync(sourcePath, targetPath);
       files.push({
@@ -63,6 +69,7 @@ export function backupExistingOutputs({
 export function rollbackPreparedOutputs({
   rootDir = PROJECT_ROOT,
   outputDir,
+  additionalOutputDirs = [],
   backupRootDir = "",
   expectedFileName = "",
   newFileNameMatcher = () => false,
@@ -72,14 +79,15 @@ export function rollbackPreparedOutputs({
   const restored = [];
   const resolvedBackupRootDir = outputDir ? resolveBackupRoot(outputDir, backupRootDir) : "";
 
-  if (outputDir && fs.existsSync(outputDir)) {
-    const newFiles = fs.readdirSync(outputDir, { withFileTypes: true })
+  for (const directory of [outputDir, ...additionalOutputDirs].filter(Boolean)) {
+    if (!fs.existsSync(directory)) continue;
+    const newFiles = fs.readdirSync(directory, { withFileTypes: true })
       .filter((entry) => entry.isFile())
       .map((entry) => entry.name)
       .filter((fileName) => fileName === expectedFileName || newFileNameMatcher(fileName));
 
     for (const fileName of newFiles) {
-      const possibleNewOutput = path.join(outputDir, fileName);
+      const possibleNewOutput = path.join(directory, fileName);
       fs.rmSync(possibleNewOutput, { force: true });
       removed.push(normalizeProjectPath(path.relative(rootDir, possibleNewOutput)));
     }

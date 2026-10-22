@@ -42,6 +42,7 @@ export const companyInvestmentDecisionDomain = {
   outputPrefix: COMPANY_INVESTMENT_DECISION_OUTPUT_PREFIX,
   outputFilePattern: /^.+_经营情景市场状态投资决策_\d{4}-\d{2}-\d{2}\.md$/u,
   companionExtension: ".json",
+  companionOutputPrefix: "分析报告/公司情景投资决策/结构化数据/",
   allowedCategories: new Set(),
   companyCategories: new Set(COMPANY_CATEGORIES),
   requiredPaths: [
@@ -127,6 +128,7 @@ export function backupExistingCompanyInvestmentDecisionOutputs(item, outputContr
   return backupExistingOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_INVESTMENT_DECISION_OUTPUT_DIR,
+    additionalOutputDirs: [path.join(ANALYSIS_ROOT, "公司情景投资决策", "结构化数据")],
     backupRootDir: path.join(ANALYSIS_ROOT, "公司情景投资决策", "备份"),
     backupKey: primary,
     expectedFileName,
@@ -141,6 +143,7 @@ export function rollbackCompanyInvestmentDecisionFormalRun(item, prepareResult =
   return rollbackPreparedOutputs({
     rootDir: PROJECT_ROOT,
     outputDir: COMPANY_INVESTMENT_DECISION_OUTPUT_DIR,
+    additionalOutputDirs: [path.join(ANALYSIS_ROOT, "公司情景投资决策", "结构化数据")],
     backupRootDir: path.join(ANALYSIS_ROOT, "公司情景投资决策", "备份"),
     expectedFileName,
     prepareResult,
