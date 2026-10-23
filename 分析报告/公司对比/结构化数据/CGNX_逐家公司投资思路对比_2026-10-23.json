@@ -1,0 +1,172 @@
+{
+  "ticker": "CGNX",
+  "research_date": "2026-10-23",
+  "information_cutoff": "2026-10-23T11:18:49-07:00",
+  "reference_price": {
+    "value": 54.6,
+    "date": "2026-10-22",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        34.38,
+        34.38
+      ],
+      "target_price": [
+        24.36,
+        29.37
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        74.99,
+        74.99
+      ],
+      "target_price": [
+        70.4,
+        84.17
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        110.5,
+        110.5
+      ],
+      "target_price": [
+        120.82,
+        144.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        142.28,
+        142.28
+      ],
+      "target_price": [
+        173.53,
+        209.24
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TDY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TDY：较低经营倍数、更轻悲观损失；高弹选CGNX：机器人感知和利润放大更强。"
+    },
+    {
+      "peer": "AMBA",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CGNX：已实现的经济利润与现金；纯突破弹性选AMBA，但须接受更深回撤和持续稀释。"
+    },
+    {
+      "peer": "TER",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健大致相当；高弹选TER，AI测试工作量已有交付和现金，构成进攻资金更优载体。"
+    },
+    {
+      "peer": "ROK",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ROK的控制生态；高弹选CGNX，后者深度感知及小收入底盘对每股利润更敏感。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选NVDA：盈利规模与平台控制点更强、条件回报更高；供应预付和客户信用须单独限仓。"
+    },
+    {
+      "peer": "QCOM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选QCOM的较低买入倍数和现金底盘；高弹选CGNX的视觉主业加感知期权，边际胜差不大。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ADI的长生命周期设计；高弹选CGNX；未证实ADI是Cognex具体供货方，不虚构交易关系。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角均选CGNX：基准为正、目标更近、悲观损失更小；SYM整仓收入不可等同视觉产品池。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选AMZN：客户/平台可截留自动化剩余且多利润池更强，前提是AI新增资本回报兑现。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选KLAC：更深流程控制点、较短期限和更高年化赔率；仅在机会成本上替代，非同产品。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选MSFT：更强续约底盘与较短兑现窗，当前经营倍数并不高于CGNX。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健防守选LIN的合同与低悲观损失；高弹选CGNX；LIN现价基准价格年化也不足高门槛。"
+    }
+  ]
+}
