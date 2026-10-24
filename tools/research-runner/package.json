@@ -27,8 +27,8 @@
     "plan:publish": "node research-plan-tools.mjs publish"
   },
   "dependencies": {
-    "@openai/codex": "0.160.0",
-    "@openai/codex-sdk": "0.160.0"
+    "@openai/codex": "0.164.0",
+    "@openai/codex-sdk": "0.164.0"
   },
   "engines": {
     "node": ">=22"
