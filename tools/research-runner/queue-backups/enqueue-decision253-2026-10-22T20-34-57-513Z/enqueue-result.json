@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-22T20:34:57.580Z",
+  "added": 253,
+  "covered": 253,
+  "planVersion": "20261022_025821",
+  "concurrency": 50,
+  "counts": {
+    "company:running": 60,
+    "company-investment-decision:pending": 253
+  },
+  "backup": "D:\\investment\\tools\\research-runner\\queue-backups\\enqueue-decision253-2026-10-22T20-34-57-513Z",
+  "missingExisting": 0
+}

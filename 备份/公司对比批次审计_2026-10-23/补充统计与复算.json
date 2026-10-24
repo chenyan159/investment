@@ -1,0 +1,819 @@
+{
+  "all_paired": {
+    "count": 244,
+    "oldCharsMedian": 59480.0,
+    "newCharsMedian": 51118.5,
+    "oldCharsTotal": 14391283,
+    "newCharsTotal": 12596184,
+    "shorterCount": 204,
+    "oldUniqueUrlMedian": 26.0,
+    "newUniqueUrlMedian": 26.0
+  },
+  "sample36": {
+    "count": 36,
+    "oldCharsMedian": 55914.5,
+    "newCharsMedian": 51515.5,
+    "oldCharsTotal": 2061347,
+    "newCharsTotal": 1890539,
+    "shorterCount": 24,
+    "oldUniqueUrlMedian": 25.5,
+    "newUniqueUrlMedian": 25.0
+  },
+  "baseChangesTolerance": {
+    "target_price": {
+      "count": 72,
+      "companies": [
+        "SKHY",
+        "FLEX",
+        "SMTOY",
+        "JBL",
+        "MXL",
+        "LWLG",
+        "MRVL",
+        "VISN",
+        "AEIS",
+        "APH",
+        "ASML",
+        "AJNMY",
+        "ACLS",
+        "SNPS",
+        "PCRHY",
+        "RMBS",
+        "AVGO",
+        "CC",
+        "NVDA",
+        "KLAC",
+        "AMAT",
+        "SMCI",
+        "LRCX",
+        "Q",
+        "SOMMY",
+        "TOELY",
+        "AMKR",
+        "NDSN",
+        "TER",
+        "IFNNY",
+        "MPWR",
+        "WOLF",
+        "AOSL",
+        "VECO",
+        "SBGSY",
+        "AMPX",
+        "AEP",
+        "ECL",
+        "ETN",
+        "HTHIY",
+        "DCI",
+        "CMI",
+        "AAON",
+        "OKLO",
+        "RYCEY",
+        "VRT",
+        "AXON",
+        "TT",
+        "FANUY",
+        "FTV",
+        "FIX",
+        "DDOG",
+        "APLD",
+        "HEI",
+        "NBIS",
+        "AMZN",
+        "SMCAY",
+        "AVAV",
+        "RDW",
+        "CRM",
+        "EQIX",
+        "RKLB",
+        "MYRG",
+        "VRTX",
+        "REGN",
+        "TRV",
+        "PGR",
+        "KYTX",
+        "IONS",
+        "CWST",
+        "COST",
+        "WMT"
+      ],
+      "sameTargetDate": 69
+    },
+    "business_price": {
+      "count": 79,
+      "companies": [
+        "COHR",
+        "MU",
+        "SKHY",
+        "FLEX",
+        "SMTOY",
+        "MXL",
+        "ASMIY",
+        "LWLG",
+        "MRVL",
+        "VISN",
+        "CDNS",
+        "MKSI",
+        "ACLS",
+        "SNPS",
+        "CIEN",
+        "PCRHY",
+        "MMM",
+        "AVGO",
+        "CC",
+        "ENTG",
+        "NVDA",
+        "CSCO",
+        "KLAC",
+        "AMAT",
+        "SMCI",
+        "LRCX",
+        "ACMR",
+        "Q",
+        "SOMMY",
+        "IMOS",
+        "TOELY",
+        "TSEM",
+        "AMKR",
+        "TER",
+        "MPWR",
+        "ADI",
+        "PLAB",
+        "WOLF",
+        "AOSL",
+        "VECO",
+        "FORM",
+        "SBGSY",
+        "AEP",
+        "HUBB",
+        "TXN",
+        "ABBNY",
+        "HTHIY",
+        "POWL",
+        "CMI",
+        "JCI",
+        "LFUS",
+        "OKLO",
+        "RYCEY",
+        "ROK",
+        "AXON",
+        "FANUY",
+        "FTV",
+        "FIX",
+        "DDOG",
+        "APLD",
+        "PWR",
+        "AMZN",
+        "CGNX",
+        "SMCAY",
+        "RDW",
+        "CRM",
+        "RKLB",
+        "ISRG",
+        "META",
+        "MYRG",
+        "ROST",
+        "CRWD",
+        "REGN",
+        "TRV",
+        "PGR",
+        "KYTX",
+        "IONS",
+        "CWST",
+        "WRB"
+      ],
+      "sameTargetDate": 76
+    }
+  },
+  "baseGradeOnly": [
+    "TEL",
+    "DELL",
+    "HOCPY",
+    "FN",
+    "LIN",
+    "MCHP",
+    "DSCSY",
+    "NVMI",
+    "DD",
+    "ANET",
+    "SHECY",
+    "APD",
+    "STX",
+    "SNDK",
+    "ATEYY",
+    "TMO",
+    "BESIY",
+    "UMC",
+    "MICLF",
+    "MRAAY",
+    "TSM",
+    "MIELY",
+    "WDC",
+    "KEYS",
+    "VSH",
+    "NVT",
+    "TTDKY",
+    "ETR",
+    "CAT",
+    "DKILY",
+    "CEG",
+    "CCJ",
+    "CARR",
+    "ET",
+    "DOV",
+    "DTE",
+    "ITT",
+    "EME",
+    "SPXC",
+    "DLR",
+    "ADBE",
+    "NET",
+    "GOOGL",
+    "MSFT",
+    "IBM",
+    "SNOW",
+    "NOW",
+    "NTNX",
+    "ARGX",
+    "ALNY",
+    "PLTR",
+    "RNR",
+    "KR",
+    "TJX"
+  ],
+  "referenceExceptions": [
+    {
+      "subject": "MICLF",
+      "price": {
+        "value": 32.82,
+        "date": "2026-10-21",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-22T21:35:00-07:00"
+    },
+    {
+      "subject": "FANUY",
+      "price": {
+        "value": 19.23,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T11:19:01-07:00"
+    },
+    {
+      "subject": "FIX",
+      "price": {
+        "value": 1168.35,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T11:18:00-07:00"
+    },
+    {
+      "subject": "YASKY",
+      "price": {
+        "value": 51.2,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T11:30:00-07:00"
+    },
+    {
+      "subject": "RKLB",
+      "price": {
+        "value": 52.31,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T11:32:46-07:00"
+    },
+    {
+      "subject": "NOW",
+      "price": {
+        "value": 158.45,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T11:48:34-07:00"
+    },
+    {
+      "subject": "ROST",
+      "price": {
+        "value": 228.76,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T12:04:02-07:00"
+    },
+    {
+      "subject": "RNR",
+      "price": {
+        "value": 353.08,
+        "date": "2026-10-23",
+        "currency": "USD"
+      },
+      "cutoff": "2026-10-23T12:05:13-07:00"
+    }
+  ],
+  "strictPairsSameReferenceDate": [
+    [
+      "COHR",
+      "CRDO"
+    ],
+    [
+      "SKHY",
+      "SNDK"
+    ],
+    [
+      "CLS",
+      "FN"
+    ],
+    [
+      "BDC",
+      "GLW"
+    ],
+    [
+      "GFS",
+      "UMC"
+    ],
+    [
+      "GFS",
+      "TSEM"
+    ],
+    [
+      "P",
+      "STX"
+    ],
+    [
+      "LIN",
+      "SHECY"
+    ],
+    [
+      "MTSI",
+      "TSEM"
+    ],
+    [
+      "APH",
+      "BDC"
+    ],
+    [
+      "AJNMY",
+      "ASGLY"
+    ],
+    [
+      "MKSI",
+      "UCTT"
+    ],
+    [
+      "AVGO",
+      "NVDA"
+    ],
+    [
+      "ENTG",
+      "SHECY"
+    ],
+    [
+      "CSCO",
+      "HPE"
+    ],
+    [
+      "ARM",
+      "CDNS"
+    ],
+    [
+      "ARM",
+      "INTC"
+    ],
+    [
+      "DHR",
+      "REGN"
+    ],
+    [
+      "AXTI",
+      "LITE"
+    ],
+    [
+      "Q",
+      "SOMMY"
+    ],
+    [
+      "TSEM",
+      "UMC"
+    ],
+    [
+      "ASMVY",
+      "KLIC"
+    ],
+    [
+      "ASMVY",
+      "BESIY"
+    ],
+    [
+      "AMKR",
+      "BESIY"
+    ],
+    [
+      "BESIY",
+      "KLIC"
+    ],
+    [
+      "AEHR",
+      "TER"
+    ],
+    [
+      "IFNNY",
+      "NVTS"
+    ],
+    [
+      "IFNNY",
+      "WOLF"
+    ],
+    [
+      "NVTS",
+      "STM"
+    ],
+    [
+      "NVTS",
+      "POWI"
+    ],
+    [
+      "CAT",
+      "GNRC"
+    ],
+    [
+      "ON",
+      "STM"
+    ],
+    [
+      "ABBNY",
+      "MIELY"
+    ],
+    [
+      "ABBNY",
+      "HUBB"
+    ],
+    [
+      "GEV",
+      "VST"
+    ],
+    [
+      "GEV",
+      "PWR"
+    ],
+    [
+      "CEG",
+      "GEV"
+    ],
+    [
+      "ECL",
+      "PNR"
+    ],
+    [
+      "BE",
+      "FCEL"
+    ],
+    [
+      "BE",
+      "CMI"
+    ],
+    [
+      "BE",
+      "OKLO"
+    ],
+    [
+      "ETN",
+      "SBGSY"
+    ],
+    [
+      "ETN",
+      "NVTS"
+    ],
+    [
+      "AAON",
+      "MOD"
+    ],
+    [
+      "ITT",
+      "PNR"
+    ],
+    [
+      "OKLO",
+      "VST"
+    ],
+    [
+      "RYCEY",
+      "SMR"
+    ],
+    [
+      "EME",
+      "MYRG"
+    ],
+    [
+      "CW",
+      "KTOS"
+    ],
+    [
+      "EMR",
+      "KEYS"
+    ],
+    [
+      "ADBE",
+      "GOOGL"
+    ],
+    [
+      "ADBE",
+      "TSM"
+    ],
+    [
+      "APLD",
+      "CRWV"
+    ],
+    [
+      "AMZN",
+      "NVDA"
+    ],
+    [
+      "AMZN",
+      "COST"
+    ],
+    [
+      "KTOS",
+      "TDY"
+    ],
+    [
+      "GOOGL",
+      "NVDA"
+    ],
+    [
+      "ORCL",
+      "SNOW"
+    ],
+    [
+      "GE",
+      "RYCEY"
+    ],
+    [
+      "RDW",
+      "SPCX"
+    ],
+    [
+      "CRM",
+      "IBM"
+    ],
+    [
+      "IBM",
+      "NTNX"
+    ],
+    [
+      "BJ",
+      "TJX"
+    ],
+    [
+      "COST",
+      "GOOGL"
+    ]
+  ],
+  "strictVerdictPairs": [
+    {
+      "a": "GFS",
+      "b": "UMC",
+      "a_to_b": {
+        "peer": "UMC",
+        "relation": "direct_competitor",
+        "compounding_preference": "target_preferred",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "GFS基准价格回报更高、区域分散及新利润池更直接；UMC经营证据较强但现价已支付复苏且投资收益不可外推。"
+      },
+      "b_to_a": {
+        "peer": "GFS",
+        "relation": "direct_competitor",
+        "compounding_preference": "target_preferred",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "UMC现有制造盈利与股本纪律较好，条件右尾略高；GFS的美国地域资格有独立价值但旧业务和稀释拖累较大"
+      },
+      "differences": [
+        "compounding_preference",
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "compounding_preference",
+        "convexity_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "ARM",
+      "b": "INTC",
+      "a_to_b": {
+        "peer": "INTC",
+        "relation": "alternative",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "现价稳健配置两者均不合格；高弹任务优先ARM，后者较少承担晶圆制造、少数权益与低价融资风险。"
+      },
+      "b_to_a": {
+        "peer": "ARM",
+        "relation": "alternative",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "稳健资金双双回避；有限进攻预算下INTC的近端产品兑现和乐观年化回报较优，Arm仍高度依赖远期高倍数。"
+      },
+      "differences": [
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "convexity_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "AXTI",
+      "b": "LITE",
+      "a_to_b": {
+        "peer": "LITE",
+        "relation": "value_chain",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "两者均不满足稳健基准标准；有限进攻风险预算内AXTI的现金缓冲和突破收益相对受损幅度更有利。"
+      },
+      "b_to_a": {
+        "peer": "AXTI",
+        "relation": "value_chain",
+        "compounding_preference": "target_preferred",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "LITE的光源及OCS收费、权益归属和跨境资金承载优于AXTI的材料、许可及少数权益结构。"
+      },
+      "differences": [
+        "compounding_preference",
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "convexity_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "NVTS",
+      "b": "POWI",
+      "a_to_b": {
+        "peer": "POWI",
+        "relation": "direct_competitor",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "两者现价均不符合稳健标准；只在限定技术风险预算内，NVTS的高压加IVR右尾优于POWI。"
+      },
+      "b_to_a": {
+        "peer": "NVTS",
+        "relation": "alternative",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "两者现价均不适合稳健配置；右尾风险预算内POWI的主业现金和较小基准缺口胜过NVTS更大的纸面上限。"
+      },
+      "differences": [
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "convexity_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "BE",
+      "b": "OKLO",
+      "a_to_b": {
+        "peer": "OKLO",
+        "relation": "alternative",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "两者均不符合稳健新仓；BE的商业化与3.19年可检验窗口胜出，OKLO更大累计尾部需6.19年且大幅新增股本"
+      },
+      "b_to_a": {
+        "peer": "BE",
+        "relation": "alternative",
+        "compounding_preference": "both_avoid",
+        "convexity_preference": "target_preferred",
+        "verdict": "target_preferred",
+        "reason": "统一收盘价后BE基准回报更弱且现金转换承压，两者稳健均回避；小额进攻相对选择OKLO的更大右尾，但仍等价格或经济合同验证。"
+      },
+      "differences": [
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "convexity_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "ETN",
+      "b": "SBGSY",
+      "a_to_b": {
+        "peer": "SBGSY",
+        "relation": "direct_competitor",
+        "compounding_preference": "target_preferred",
+        "convexity_preference": "comparable",
+        "verdict": "target_preferred",
+        "reason": "ETN的资本整合边界较清楚；施耐德更便宜且软件右尾不弱，但PTC融资与协同使其尚非稳健首选。"
+      },
+      "b_to_a": {
+        "peer": "ETN",
+        "relation": "direct_competitor",
+        "compounding_preference": "target_preferred",
+        "convexity_preference": "comparable",
+        "verdict": "target_preferred",
+        "reason": "右尾量级接近时，施耐德较轻的美洲利润恢复门槛和较浅的主悲观回撤胜出；两者并购回报均须验证。"
+      },
+      "differences": [
+        "compounding_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "compounding_preference",
+        "verdict"
+      ]
+    },
+    {
+      "a": "AAON",
+      "b": "MOD",
+      "a_to_b": {
+        "peer": "MOD",
+        "relation": "direct_competitor",
+        "compounding_preference": "peer_preferred",
+        "convexity_preference": "peer_preferred",
+        "verdict": "peer_preferred",
+        "reason": "MOD较低的可比估值、客户实付预付款和容量排期使风险调整后的冷却扩产投资略优，LTA最低采购及交付仍须验证。"
+      },
+      "b_to_a": {
+        "peer": "AAON",
+        "relation": "direct_competitor",
+        "compounding_preference": "comparable",
+        "convexity_preference": "peer_preferred",
+        "verdict": "peer_preferred",
+        "reason": "两者制造与收现均待验证；AAON基准及右尾年化更高，是高弹散热仓的优先候选。"
+      },
+      "differences": [
+        "compounding_preference",
+        "convexity_preference",
+        "verdict"
+      ],
+      "strictOppositeWinners": [
+        "convexity_preference",
+        "verdict"
+      ]
+    }
+  ],
+  "decisionCrosstab": {
+    "conditional_wait|small_option_bet|build_now": 52,
+    "conditional_wait|small_option_bet|wait_for_trigger": 98,
+    "avoid|small_option_bet|wait_for_trigger": 21,
+    "conditional_wait|high_priority_offense|build_now": 10,
+    "preferred_participate|small_option_bet|build_now": 22,
+    "avoid|small_option_bet|build_now": 9,
+    "conditional_wait|avoid|wait_for_trigger": 27,
+    "preferred_participate|high_priority_offense|build_now": 4,
+    "preferred_participate|avoid|build_now": 5,
+    "avoid|avoid|wait_for_trigger": 2,
+    "avoid|avoid|avoid": 2
+  },
+  "arithmetic": {
+    "APLD_fewer_shares_m": 40.234852453291424,
+    "APLD_new_shares_m": 468.66514754670857,
+    "APLD_business": 25.894820776683613,
+    "COST_prices": [
+      1129.2,
+      1298.58
+    ],
+    "PGR_prices": [
+      250.48845,
+      287.59785
+    ],
+    "OKLO_2030_prices": [
+      23.357780612244895,
+      31.46524234693877
+    ],
+    "ADI_Nopat_run_rate": 7.602399999999999,
+    "ADI_multiple": 25.64197108807745,
+    "MRNA_INT_2029": 2.1,
+    "MRNA_INT_2030": 2.975,
+    "AMAT_total_value_low": [
+      667.5,
+      667.5
+    ],
+    "AMAT_total_value_high": [
+      782.7,
+      782.7
+    ]
+  }
+}

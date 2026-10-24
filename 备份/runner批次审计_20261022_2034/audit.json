@@ -1,0 +1,1263 @@
+{
+  "at": "2026-10-23T03:33:50.987Z",
+  "tasks": 632,
+  "attempts": 659,
+  "groups": {
+    "background": {
+      "tasks": 24,
+      "attempts": 25,
+      "retriedTasks": 1,
+      "failedAttempts": 1,
+      "successMinutes": {
+        "n": 24,
+        "mean": 40.13493402777778,
+        "median": 36.215066666666665,
+        "p90": 57.30716666666667,
+        "min": 16.72295,
+        "max": 70.43853333333334,
+        "sum": 963.2384166666667
+      },
+      "totalAttemptMinutes": {
+        "n": 24,
+        "mean": 41.27848541666667,
+        "median": 36.715066666666665,
+        "p90": 60.91911666666667,
+        "min": 16.72295,
+        "max": 70.43853333333334,
+        "sum": 990.6836500000001
+      },
+      "elapsedMinutes": {
+        "n": 24,
+        "mean": 41.2792375,
+        "median": 36.715066666666665,
+        "p90": 60.93716666666667,
+        "min": 16.72295,
+        "max": 70.43853333333334,
+        "sum": 990.7017000000001
+      },
+      "first": "2026-10-22T09:43:31.928Z",
+      "last": "2026-10-22T10:54:19.296Z",
+      "failureKinds": {
+        "connection": 1
+      },
+      "tokens": {
+        "inputTokens": {
+          "n": 24,
+          "mean": 13091711.416666666,
+          "median": 11898474,
+          "p90": 18801507,
+          "min": 5427849,
+          "max": 27409552,
+          "sum": 314201074
+        },
+        "cachedInputTokens": {
+          "n": 24,
+          "mean": 12618928,
+          "median": 11524736,
+          "p90": 18223488,
+          "min": 5143808,
+          "max": 26574208,
+          "sum": 302854272
+        },
+        "uncachedInputTokens": {
+          "n": 24,
+          "mean": 472783.4166666667,
+          "median": 435151,
+          "p90": 707940,
+          "min": 193943,
+          "max": 835344,
+          "sum": 11346802
+        },
+        "outputTokens": {
+          "n": 24,
+          "mean": 71842.375,
+          "median": 68392,
+          "p90": 96319,
+          "min": 39561,
+          "max": 116077,
+          "sum": 1724217
+        },
+        "reasoningOutputTokens": {
+          "n": 24,
+          "mean": 26680.458333333332,
+          "median": 22918,
+          "p90": 38962,
+          "min": 10517,
+          "max": 47911,
+          "sum": 640331
+        }
+      },
+      "slowest": [
+        {
+          "subject": "数据中心电力与项目台账",
+          "elapsed": 70.43853333333334,
+          "success": 70.43853333333334,
+          "attempts": 1
+        },
+        {
+          "subject": "头部AI芯片",
+          "elapsed": 61.83801666666667,
+          "success": 61.83801666666667,
+          "attempts": 1
+        },
+        {
+          "subject": "全球主权国防预算与商业航天发射台账",
+          "elapsed": 61.41448333333334,
+          "success": 61.41448333333334,
+          "attempts": 1
+        },
+        {
+          "subject": "全球晶圆厂扩产与先进封装产能台账",
+          "elapsed": 60.93716666666667,
+          "success": 33.47388333333333,
+          "attempts": 2
+        }
+      ]
+    },
+    "industry": {
+      "tasks": 102,
+      "attempts": 118,
+      "retriedTasks": 9,
+      "failedAttempts": 16,
+      "successMinutes": {
+        "n": 102,
+        "mean": 41.9373566993464,
+        "median": 40.3362,
+        "p90": 50.589016666666666,
+        "min": 20.971816666666665,
+        "max": 72.38431666666666,
+        "sum": 4277.610383333333
+      },
+      "totalAttemptMinutes": {
+        "n": 102,
+        "mean": 48.18868709150326,
+        "median": 40.5873,
+        "p90": 65.3875,
+        "min": 20.971816666666665,
+        "max": 227.3474333333333,
+        "sum": 4915.2460833333325
+      },
+      "elapsedMinutes": {
+        "n": 102,
+        "mean": 48.191257026143774,
+        "median": 40.5873,
+        "p90": 65.3875,
+        "min": 20.971816666666665,
+        "max": 227.42521666666667,
+        "sum": 4915.508216666665
+      },
+      "first": "2026-10-22T10:54:20.157Z",
+      "last": "2026-10-22T16:08:51.720Z",
+      "failureKinds": {
+        "connection": 15,
+        "sdk_parse": 1
+      },
+      "tokens": {
+        "inputTokens": {
+          "n": 102,
+          "mean": 10870378.392156864,
+          "median": 9577256,
+          "p90": 14202564,
+          "min": 4739092,
+          "max": 34271834,
+          "sum": 1108778596
+        },
+        "cachedInputTokens": {
+          "n": 102,
+          "mean": 10486713.725490196,
+          "median": 9221504,
+          "p90": 13819520,
+          "min": 4459520,
+          "max": 32624512,
+          "sum": 1069644800
+        },
+        "uncachedInputTokens": {
+          "n": 102,
+          "mean": 383664.6666666667,
+          "median": 334427,
+          "p90": 525107,
+          "min": 218344,
+          "max": 1647322,
+          "sum": 39133796
+        },
+        "outputTokens": {
+          "n": 102,
+          "mean": 85910.51960784313,
+          "median": 78819,
+          "p90": 111314,
+          "min": 55401,
+          "max": 256815,
+          "sum": 8762873
+        },
+        "reasoningOutputTokens": {
+          "n": 102,
+          "mean": 38579.37254901961,
+          "median": 33815,
+          "p90": 51771,
+          "min": 20738,
+          "max": 148574,
+          "sum": 3935096
+        }
+      },
+      "slowest": [
+        {
+          "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+          "elapsed": 227.42521666666667,
+          "success": 24.758216666666666,
+          "attempts": 6
+        },
+        {
+          "subject": "自身免疫与肿瘤新型免疫治疗",
+          "elapsed": 154.72875,
+          "success": 59.891333333333336,
+          "attempts": 3
+        },
+        {
+          "subject": "HBM与存储测试设备",
+          "elapsed": 140.44076666666666,
+          "success": 55.54913333333333,
+          "attempts": 3
+        },
+        {
+          "subject": "云厂自研AI ASIC",
+          "elapsed": 126.57991666666666,
+          "success": 43.21593333333333,
+          "attempts": 3
+        }
+      ]
+    },
+    "company": {
+      "tasks": 253,
+      "attempts": 259,
+      "retriedTasks": 5,
+      "failedAttempts": 6,
+      "successMinutes": {
+        "n": 253,
+        "mean": 47.464147299077716,
+        "median": 46.64618333333333,
+        "p90": 59.38695,
+        "min": 28.36305,
+        "max": 90.68605,
+        "sum": 12008.429266666662
+      },
+      "totalAttemptMinutes": {
+        "n": 253,
+        "mean": 48.08714999999999,
+        "median": 46.82816666666667,
+        "p90": 60.4739,
+        "min": 28.36305,
+        "max": 134.42105,
+        "sum": 12166.048949999997
+      },
+      "elapsedMinutes": {
+        "n": 253,
+        "mean": 48.09092154150196,
+        "median": 46.82816666666667,
+        "p90": 60.4739,
+        "min": 28.36305,
+        "max": 135.26181666666668,
+        "sum": 12167.003149999997
+      },
+      "first": "2026-10-22T16:08:52.692Z",
+      "last": "2026-10-22T22:23:11.101Z",
+      "failureKinds": {
+        "sdk_parse": 3,
+        "connection": 3
+      },
+      "tokens": {
+        "inputTokens": {
+          "n": 253,
+          "mean": 15202285.841897232,
+          "median": 14862374,
+          "p90": 19208739,
+          "min": 7547076,
+          "max": 35578444,
+          "sum": 3846178318
+        },
+        "cachedInputTokens": {
+          "n": 253,
+          "mean": 14698943.241106719,
+          "median": 14412032,
+          "p90": 18612608,
+          "min": 7206144,
+          "max": 34134144,
+          "sum": 3718832640
+        },
+        "uncachedInputTokens": {
+          "n": 253,
+          "mean": 503342.60079051385,
+          "median": 478635,
+          "p90": 701551,
+          "min": 241782,
+          "max": 1444300,
+          "sum": 127345678
+        },
+        "outputTokens": {
+          "n": 253,
+          "mean": 94174.12252964427,
+          "median": 93033,
+          "p90": 112443,
+          "min": 59614,
+          "max": 249451,
+          "sum": 23826053
+        },
+        "reasoningOutputTokens": {
+          "n": 253,
+          "mean": 38185.561264822136,
+          "median": 37350,
+          "p90": 50040,
+          "min": 16859,
+          "max": 129056,
+          "sum": 9660947
+        }
+      },
+      "slowest": [
+        {
+          "subject": "MRNA",
+          "elapsed": 135.26181666666668,
+          "success": 55.629866666666665,
+          "attempts": 3
+        },
+        {
+          "subject": "AMD",
+          "elapsed": 90.68605,
+          "success": 90.68605,
+          "attempts": 1
+        },
+        {
+          "subject": "INTC",
+          "elapsed": 83.47718333333333,
+          "success": 83.47718333333333,
+          "attempts": 1
+        },
+        {
+          "subject": "ROK",
+          "elapsed": 78.7431,
+          "success": 78.7431,
+          "attempts": 1
+        }
+      ]
+    },
+    "company-investment-decision": {
+      "tasks": 253,
+      "attempts": 257,
+      "retriedTasks": 4,
+      "failedAttempts": 4,
+      "successMinutes": {
+        "n": 253,
+        "mean": 35.26170270092226,
+        "median": 35.033433333333335,
+        "p90": 43.28621666666667,
+        "min": 20.662166666666668,
+        "max": 59.93513333333333,
+        "sum": 8921.21078333333
+      },
+      "totalAttemptMinutes": {
+        "n": 253,
+        "mean": 35.76923610013176,
+        "median": 35.28033333333333,
+        "p90": 44.4766,
+        "min": 20.662166666666668,
+        "max": 81.12473333333332,
+        "sum": 9049.616733333334
+      },
+      "elapsedMinutes": {
+        "n": 253,
+        "mean": 35.76945375494071,
+        "median": 35.28033333333333,
+        "p90": 44.4766,
+        "min": 20.662166666666668,
+        "max": 81.13751666666667,
+        "sum": 9049.6718
+      },
+      "first": "2026-10-22T22:23:12.000Z",
+      "last": "2026-10-23T02:04:41.244Z",
+      "failureKinds": {
+        "connection": 3,
+        "other": 1
+      },
+      "tokens": {
+        "inputTokens": {
+          "n": 253,
+          "mean": 6427518.782608695,
+          "median": 6395203,
+          "p90": 8053994,
+          "min": 3256803,
+          "max": 12755186,
+          "sum": 1626162252
+        },
+        "cachedInputTokens": {
+          "n": 253,
+          "mean": 6181939.0988142295,
+          "median": 6113152,
+          "p90": 7793920,
+          "min": 3000832,
+          "max": 12337664,
+          "sum": 1564030592
+        },
+        "uncachedInputTokens": {
+          "n": 253,
+          "mean": 245579.6837944664,
+          "median": 231099,
+          "p90": 321367,
+          "min": 123232,
+          "max": 772367,
+          "sum": 62131660
+        },
+        "outputTokens": {
+          "n": 253,
+          "mean": 84950.30830039526,
+          "median": 84108,
+          "p90": 98968,
+          "min": 61412,
+          "max": 134844,
+          "sum": 21492428
+        },
+        "reasoningOutputTokens": {
+          "n": 253,
+          "mean": 38910.296442687744,
+          "median": 37590,
+          "p90": 50831,
+          "min": 21084,
+          "max": 71571,
+          "sum": 9844305
+        }
+      },
+      "slowest": [
+        {
+          "subject": "BNTX",
+          "elapsed": 81.13751666666667,
+          "success": 41.8805,
+          "attempts": 2
+        },
+        {
+          "subject": "SMCI",
+          "elapsed": 75.27368333333334,
+          "success": 33.391816666666664,
+          "attempts": 2
+        },
+        {
+          "subject": "TSLA",
+          "elapsed": 59.93513333333333,
+          "success": 59.93513333333333,
+          "attempts": 1
+        },
+        {
+          "subject": "MRNA",
+          "elapsed": 55.1252,
+          "success": 26.821266666666666,
+          "attempts": 2
+        }
+      ]
+    },
+    "conference": {
+      "tasks": 8,
+      "attempts": 8,
+      "retriedTasks": 0,
+      "failedAttempts": 0,
+      "successMinutes": {
+        "n": 8,
+        "mean": 28.563683333333334,
+        "median": 25.378683333333335,
+        "p90": 36.715066666666665,
+        "min": 16.72295,
+        "max": 41.2294,
+        "sum": 228.50946666666667
+      },
+      "totalAttemptMinutes": {
+        "n": 8,
+        "mean": 28.563683333333334,
+        "median": 25.378683333333335,
+        "p90": 36.715066666666665,
+        "min": 16.72295,
+        "max": 41.2294,
+        "sum": 228.50946666666667
+      },
+      "elapsedMinutes": {
+        "n": 8,
+        "mean": 28.563683333333334,
+        "median": 25.378683333333335,
+        "p90": 36.715066666666665,
+        "min": 16.72295,
+        "max": 41.2294,
+        "sum": 228.50946666666667
+      },
+      "first": "2026-10-22T09:43:31.928Z",
+      "last": "2026-10-22T10:24:50.831Z",
+      "failureKinds": {},
+      "tokens": {
+        "inputTokens": {
+          "n": 8,
+          "mean": 10279518.875,
+          "median": 8333678,
+          "p90": 14157455,
+          "min": 5902649,
+          "max": 18801507,
+          "sum": 82236151
+        },
+        "cachedInputTokens": {
+          "n": 8,
+          "mean": 9909200,
+          "median": 7986432,
+          "p90": 13625984,
+          "min": 5639040,
+          "max": 18223488,
+          "sum": 79273600
+        },
+        "uncachedInputTokens": {
+          "n": 8,
+          "mean": 370318.875,
+          "median": 312872,
+          "p90": 531471,
+          "min": 263609,
+          "max": 578019,
+          "sum": 2962551
+        },
+        "outputTokens": {
+          "n": 8,
+          "mean": 51255.375,
+          "median": 51514,
+          "p90": 54718,
+          "min": 39561,
+          "max": 68392,
+          "sum": 410043
+        },
+        "reasoningOutputTokens": {
+          "n": 8,
+          "mean": 18646.25,
+          "median": 21065,
+          "p90": 22852,
+          "min": 10517,
+          "max": 22918,
+          "sum": 149170
+        }
+      },
+      "slowest": [
+        {
+          "subject": "AAN Annual Meeting 2026",
+          "elapsed": 41.2294,
+          "success": 41.2294,
+          "attempts": 1
+        },
+        {
+          "subject": "ASCO Annual Meeting 2026",
+          "elapsed": 36.715066666666665,
+          "success": 36.715066666666665,
+          "attempts": 1
+        },
+        {
+          "subject": "OCP Global Summit 2026",
+          "elapsed": 30.274033333333332,
+          "success": 30.274033333333332,
+          "attempts": 1
+        },
+        {
+          "subject": "CIGRE Session 2026",
+          "elapsed": 30.246733333333335,
+          "success": 30.246733333333335,
+          "attempts": 1
+        }
+      ]
+    },
+    "background-topic": {
+      "tasks": 16,
+      "attempts": 17,
+      "retriedTasks": 1,
+      "failedAttempts": 1,
+      "successMinutes": {
+        "n": 16,
+        "mean": 45.920559375,
+        "median": 42.36108333333333,
+        "p90": 61.41448333333334,
+        "min": 31.721766666666667,
+        "max": 70.43853333333334,
+        "sum": 734.72895
+      },
+      "totalAttemptMinutes": {
+        "n": 16,
+        "mean": 47.63588645833333,
+        "median": 45.36801666666667,
+        "p90": 61.41448333333334,
+        "min": 31.721766666666667,
+        "max": 70.43853333333334,
+        "sum": 762.1741833333333
+      },
+      "elapsedMinutes": {
+        "n": 16,
+        "mean": 47.63701458333333,
+        "median": 45.36801666666667,
+        "p90": 61.41448333333334,
+        "min": 31.721766666666667,
+        "max": 70.43853333333334,
+        "sum": 762.1922333333333
+      },
+      "first": "2026-10-22T09:43:40.281Z",
+      "last": "2026-10-22T10:54:19.296Z",
+      "failureKinds": {
+        "connection": 1
+      },
+      "tokens": {
+        "inputTokens": {
+          "n": 16,
+          "mean": 14497807.6875,
+          "median": 14094206,
+          "p90": 22799972,
+          "min": 5427849,
+          "max": 27409552,
+          "sum": 231964923
+        },
+        "cachedInputTokens": {
+          "n": 16,
+          "mean": 13973792,
+          "median": 13655424,
+          "p90": 22092032,
+          "min": 5143808,
+          "max": 26574208,
+          "sum": 223580672
+        },
+        "uncachedInputTokens": {
+          "n": 16,
+          "mean": 524015.6875,
+          "median": 470205,
+          "p90": 772907,
+          "min": 193943,
+          "max": 835344,
+          "sum": 8384251
+        },
+        "outputTokens": {
+          "n": 16,
+          "mean": 82135.875,
+          "median": 80808,
+          "p90": 99861,
+          "min": 50144,
+          "max": 116077,
+          "sum": 1314174
+        },
+        "reasoningOutputTokens": {
+          "n": 16,
+          "mean": 30697.5625,
+          "median": 29277,
+          "p90": 40403,
+          "min": 14048,
+          "max": 47911,
+          "sum": 491161
+        }
+      },
+      "slowest": [
+        {
+          "subject": "数据中心电力与项目台账",
+          "elapsed": 70.43853333333334,
+          "success": 70.43853333333334,
+          "attempts": 1
+        },
+        {
+          "subject": "头部AI芯片",
+          "elapsed": 61.83801666666667,
+          "success": 61.83801666666667,
+          "attempts": 1
+        },
+        {
+          "subject": "全球主权国防预算与商业航天发射台账",
+          "elapsed": 61.41448333333334,
+          "success": 61.41448333333334,
+          "attempts": 1
+        },
+        {
+          "subject": "全球晶圆厂扩产与先进封装产能台账",
+          "elapsed": 60.93716666666667,
+          "success": 33.47388333333333,
+          "attempts": 2
+        }
+      ]
+    }
+  },
+  "missing": [],
+  "issues": [],
+  "evidence": {
+    "bear": {
+      "weak": 188,
+      "medium": 42,
+      "strong": 23
+    },
+    "base": {
+      "medium": 103,
+      "strong": 146,
+      "weak": 4
+    },
+    "bull": {
+      "weak": 49,
+      "medium": 204
+    },
+    "breakthrough": {
+      "weak": 248,
+      "insufficient": 5
+    }
+  },
+  "nulls": {
+    "dcf_price": 4,
+    "business_price": 4,
+    "target_price": 4
+  },
+  "dates": {
+    "2026-10-22": 253
+  },
+  "priceAges": {
+    "0": 250,
+    "1": 2,
+    "6": 1
+  },
+  "extras": [],
+  "boundaries": [
+    {
+      "t": "2026-10-22T09:43:31.928Z",
+      "near": [
+        {
+          "t": "2026-10-22T09:43:43.745Z",
+          "used": 4,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T02-43-33-01a162fe-931e-7b02-8468-8d1a1cd81fa5.jsonl",
+          "line": 18
+        },
+        {
+          "t": "2026-10-22T09:43:45.271Z",
+          "used": 4,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T02-43-32-01a162fe-8f9a-7012-8533-f19d0bf1a4be.jsonl",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "t": "2026-10-22T10:54:19.296Z",
+      "near": [
+        {
+          "t": "2026-10-22T10:53:32.597Z",
+          "used": 11,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T02-43-54-01a162fe-e441-7370-81d0-76845df3d9d1.jsonl",
+          "line": 965
+        },
+        {
+          "t": "2026-10-22T10:54:18.037Z",
+          "used": 11,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T02-43-54-01a162fe-e441-7370-81d0-76845df3d9d1.jsonl",
+          "line": 973
+        },
+        {
+          "t": "2026-10-22T10:54:31.847Z",
+          "used": 11,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T03-54-22-01a1633f-6960-7721-a695-fbb76c617621.jsonl",
+          "line": 17
+        },
+        {
+          "t": "2026-10-22T10:54:34.608Z",
+          "used": 11,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T03-54-25-01a1633f-74fb-7ee3-a959-0dcff0d85d13.jsonl",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "t": "2026-10-22T16:08:51.720Z",
+      "near": [
+        {
+          "t": "2026-10-22T16:08:31.896Z",
+          "used": 33,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T08-44-06-01a16448-ac52-75d2-9eda-0a069c72b096.jsonl",
+          "line": 382
+        },
+        {
+          "t": "2026-10-22T16:08:50.349Z",
+          "used": 33,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T08-44-06-01a16448-ac52-75d2-9eda-0a069c72b096.jsonl",
+          "line": 388
+        },
+        {
+          "t": "2026-10-22T16:09:03.981Z",
+          "used": 33,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T09-08-53-01a1645f-5ade-7aa0-8fc6-2508837ef32e.jsonl",
+          "line": 18
+        },
+        {
+          "t": "2026-10-22T16:09:05.653Z",
+          "used": 33,
+          "reset": 1793124091,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T09-08-54-01a1645f-5e1d-7402-b2e1-8c2a543e0a70.jsonl",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "t": "2026-10-22T18:56:01.024Z",
+      "near": [
+        {
+          "t": "2026-10-22T18:55:30.164Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T10-52-51-01a164be-8bba-7292-9e1b-21043f0172ef.jsonl",
+          "line": 671
+        },
+        {
+          "t": "2026-10-22T18:55:59.866Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T10-52-51-01a164be-8bba-7292-9e1b-21043f0172ef.jsonl",
+          "line": 677
+        },
+        {
+          "t": "2026-10-22T19:10:09.325Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T01-10-41-01a162a9-8cad-7f23-b5b3-8b4b0a745dc3.jsonl",
+          "line": 644
+        },
+        {
+          "t": "2026-10-22T19:10:28.157Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T01-10-41-01a162a9-8cad-7f23-b5b3-8b4b0a745dc3.jsonl",
+          "line": 651
+        }
+      ]
+    },
+    {
+      "t": "2026-10-22T19:12:41.137Z",
+      "near": [
+        {
+          "t": "2026-10-22T19:11:08.472Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T01-10-41-01a162a9-8cad-7f23-b5b3-8b4b0a745dc3.jsonl",
+          "line": 660
+        },
+        {
+          "t": "2026-10-22T19:11:34.605Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T12-09-39-01a16504-db88-7fd2-b668-49ccf349d3d5.jsonl",
+          "line": 22
+        },
+        {
+          "t": "2026-10-22T19:12:55.445Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T12-12-42-01a16507-a66b-7a62-88e2-1ee595938c41.jsonl",
+          "line": 17
+        },
+        {
+          "t": "2026-10-22T19:12:55.821Z",
+          "used": 15,
+          "reset": 1793293792,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T12-12-44-01a16507-ab51-7660-82ba-e4e6605e6ba9.jsonl",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "t": "2026-10-22T22:23:12.000Z",
+      "near": [
+        {
+          "t": "2026-10-22T22:22:19.084Z",
+          "used": 6,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T14-27-33-01a16583-1c7d-7ae2-a776-64e53ea44b67.jsonl",
+          "line": 783
+        },
+        {
+          "t": "2026-10-22T22:23:09.936Z",
+          "used": 6,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T14-27-33-01a16583-1c7d-7ae2-a776-64e53ea44b67.jsonl",
+          "line": 793
+        },
+        {
+          "t": "2026-10-22T22:23:20.332Z",
+          "used": 6,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T15-23-12-01a165b6-0e82-77f0-af9b-b65348ea2f19.jsonl",
+          "line": 17
+        },
+        {
+          "t": "2026-10-22T22:23:22.061Z",
+          "used": 6,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T15-23-13-01a165b6-11e7-7061-819a-72e853215350.jsonl",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "t": "2026-10-23T02:04:41.248Z",
+      "near": [
+        {
+          "t": "2026-10-23T02:03:40.678Z",
+          "used": 54,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T18-22-48-01a1665a-7d99-7041-af77-9ea799dafb66.jsonl",
+          "line": 462
+        },
+        {
+          "t": "2026-10-23T02:04:39.733Z",
+          "used": 54,
+          "reset": 1793305942,
+          "window": 10080,
+          "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T18-22-48-01a1665a-7d99-7041-af77-9ea799dafb66.jsonl",
+          "line": 470
+        }
+      ]
+    }
+  ],
+  "resets": [
+    {
+      "before": {
+        "t": "2026-10-22T17:09:39.983Z",
+        "used": 48,
+        "reset": 1793124091,
+        "window": 10080,
+        "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T10-03-12-01a16491-1454-77b1-8bf3-d4a7ac8fd06e.jsonl",
+        "line": 238
+      },
+      "after": {
+        "t": "2026-10-22T17:09:40.340Z",
+        "used": 0,
+        "reset": 1793293769,
+        "window": 10080,
+        "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T09-46-41-01a16481-f3f2-76a2-a198-5d4b006e4bea.jsonl",
+        "line": 458
+      }
+    },
+    {
+      "before": {
+        "t": "2026-10-22T20:32:30.117Z",
+        "used": 55,
+        "reset": 1793293792,
+        "window": 10080,
+        "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T12-51-26-01a1652b-1d21-7f32-bdf5-7a5e8e5b92af.jsonl",
+        "line": 492
+      },
+      "after": {
+        "t": "2026-10-22T20:32:30.681Z",
+        "used": 0,
+        "reset": 1793305943,
+        "window": 10080,
+        "file": "C:/Users/cheny/.codex/sessions/2026/10/22\\rollout-2026-10-22T13-22-25-01a16547-77a6-7291-bfc2-defa50cee7bf.jsonl",
+        "line": 305
+      }
+    }
+  ],
+  "controls": [
+    {
+      "t": "2026-10-22T09:43:30.434Z",
+      "value": 35
+    },
+    {
+      "t": "2026-10-22T10:34:39.477Z",
+      "previous": 35,
+      "value": 38
+    },
+    {
+      "t": "2026-10-22T19:12:40.996Z",
+      "value": 50
+    },
+    {
+      "t": "2026-10-22T19:25:27.794Z",
+      "previous": 50,
+      "value": 85
+    },
+    {
+      "t": "2026-10-22T20:34:57.639Z",
+      "previous": 85,
+      "value": 50
+    }
+  ],
+  "allFailures": [
+    {
+      "subject": "全球晶圆厂扩产与先进封装产能台账",
+      "domain": "background",
+      "time": "2026-10-22T10:11:11.331Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 53,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "功率半导体与高压保护器件",
+      "domain": "industry",
+      "time": "2026-10-22T11:39:56.253Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 401,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "InfiniBand与专有Scale-up互联",
+      "domain": "industry",
+      "time": "2026-10-22T11:55:06.868Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 492,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "存储晶圆制造",
+      "domain": "industry",
+      "time": "2026-10-22T12:16:07.098Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 617,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "低轨卫星通信、直连手机与地面终端",
+      "domain": "industry",
+      "time": "2026-10-22T12:19:55.093Z",
+      "message": "Failed to parse item: {\"type\":\"item.completed\",\"item\":{\"id\":\"item_71\",\"type\":\"command_execution\",\"command\":\"\\\"C:\\\\\\\\Users\\\\\\\\cheny\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Microsoft\\\\\\\\WindowsApps\\\\\\\\Microsoft.PowerShell_8wekyb3d8bbwe\\\\\\\\pwsh.exe\\\" -Command ",
+      "kind": "sdk_parse",
+      "line": 661,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "云厂自研AI ASIC",
+      "domain": "industry",
+      "time": "2026-10-22T11:36:09.472Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 371,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "云厂自研AI ASIC",
+      "domain": "industry",
+      "time": "2026-10-22T12:18:02.461Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 633,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "mRNA与小核酸靶向药物",
+      "domain": "industry",
+      "time": "2026-10-22T13:00:05.952Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 824,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "HBM与存储测试设备",
+      "domain": "industry",
+      "time": "2026-10-22T12:22:17.235Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 688,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "HBM与存储测试设备",
+      "domain": "industry",
+      "time": "2026-10-22T13:05:38.890Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 850,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "自身免疫与肿瘤新型免疫治疗",
+      "domain": "industry",
+      "time": "2026-10-22T12:58:04.345Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 804,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "自身免疫与肿瘤新型免疫治疗",
+      "domain": "industry",
+      "time": "2026-10-22T13:54:32.480Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 888,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "domain": "industry",
+      "time": "2026-10-22T12:59:57.517Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 818,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "domain": "industry",
+      "time": "2026-10-22T13:45:26.554Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 878,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "domain": "industry",
+      "time": "2026-10-22T14:22:41.693Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 898,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "domain": "industry",
+      "time": "2026-10-22T15:00:57.517Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 908,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "domain": "industry",
+      "time": "2026-10-22T15:44:04.251Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 914,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "IFNNY",
+      "domain": "company",
+      "time": "2026-10-22T17:03:09.370Z",
+      "message": "Failed to parse item: {\"type\":\"item.completed\",\"item\":{\"id\":\"item_65\",\"type\":\"command_execution\",\"command\":\"\\\"C:\\\\\\\\Users\\\\\\\\cheny\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Microsoft\\\\\\\\WindowsApps\\\\\\\\Microsoft.PowerShell_8wekyb3d8bbwe\\\\\\\\pwsh.exe\\\" -NoProfil",
+      "kind": "sdk_parse",
+      "line": 1162,
+      "file": "tools/research-runner/logs/archive/runner_2026-10-22T18-56-01-029Z.jsonl"
+    },
+    {
+      "subject": "CBRS",
+      "domain": "company",
+      "time": "2026-10-22T19:21:36.492Z",
+      "message": "Failed to parse item: {\"type\":\"item.completed\",\"item\":{\"id\":\"item_46\",\"type\":\"command_execution\",\"command\":\"\\\"C:\\\\\\\\Users\\\\\\\\cheny\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Microsoft\\\\\\\\WindowsApps\\\\\\\\Microsoft.PowerShell_8wekyb3d8bbwe\\\\\\\\pwsh.exe\\\" -NoProfil",
+      "kind": "sdk_parse",
+      "line": 106,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "NET",
+      "domain": "company",
+      "time": "2026-10-22T20:22:19.628Z",
+      "message": "Failed to parse item: {\"type\":\"item.completed\",\"item\":{\"id\":\"item_90\",\"type\":\"web_search\",\"id\":\"exec-38620ee9-c0fa-4e03-8797-c96a27560c8b\",\"query\":\"site.cloudflare.com master subscription agreement enterprise agreement cloudflare cancel 202",
+      "kind": "sdk_parse",
+      "line": 712,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "KYTX",
+      "domain": "company",
+      "time": "2026-10-22T20:45:54.060Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 902,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "MRNA",
+      "domain": "company",
+      "time": "2026-10-22T20:39:50.056Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 812,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "MRNA",
+      "domain": "company",
+      "time": "2026-10-22T21:27:31.497Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 1030,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "SMCI",
+      "domain": "company-investment-decision",
+      "time": "2026-10-22T23:05:32.486Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 1461,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "SYM",
+      "domain": "company-investment-decision",
+      "time": "2026-10-23T00:35:53.763Z",
+      "message": "Selected model is at capacity. Please try a different model.",
+      "kind": "other",
+      "line": 2314,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "MRNA",
+      "domain": "company-investment-decision",
+      "time": "2026-10-23T01:14:27.098Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 2605,
+      "file": "tools/research-runner/logs/current.jsonl"
+    },
+    {
+      "subject": "BNTX",
+      "domain": "company-investment-decision",
+      "time": "2026-10-23T01:22:46.695Z",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout waiting for websocket)",
+      "kind": "connection",
+      "line": 2657,
+      "file": "tools/research-runner/logs/current.jsonl"
+    }
+  ],
+  "extraSchemaIssues": [],
+  "quotaTotals": {
+    "background": 7,
+    "industry": 22,
+    "company": 76,
+    "company-investment-decision": 48,
+    "total": 153
+  },
+  "specialSecurity": {
+    "ticker": "ATKR",
+    "issue": "Acquired for cash; current company index still includes it; all 12 scenario price fields intentionally null.",
+    "verifiedSources": [
+      "https://www.sec.gov/Archives/edgar/data/1666138/000166613826000041/atkr-20261019.htm",
+      "https://www.prysmian.com/en/media/press-releases/prysmian-completes-atkore-acquisition-to-accelerate-growth-as-an-electrical-solutions-provider"
+    ]
+  }
+}

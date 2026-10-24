@@ -1,0 +1,10 @@
+{
+  "dir": "D:\\investment\\tools\\research-runner\\queue-backups\\enqueue-comparison252-2026-10-23T03-56-42-847Z",
+  "count": 252,
+  "planVersion": "20261022_031413",
+  "planSha256": "061d220cddebdf61c695c541f211e0d1dc294551f462c3b259dfdd163ebb5795",
+  "categories": 20,
+  "upstream": 252,
+  "historicalAtkrFiles": 28,
+  "validation": "Active items: 252\nErrors: 0\nWarnings: 0\n"
+}

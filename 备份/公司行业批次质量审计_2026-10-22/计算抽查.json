@@ -1,0 +1,98 @@
+[
+  {
+    "subject": "NVDA H1 Owner FCF",
+    "unit": "十亿美元",
+    "formula": "74.421-4.434-0.092-3.954",
+    "calculated": 65.941,
+    "reportRounded": 65.941,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "NVDA经济留存",
+    "unit": "十亿美元",
+    "formula": "65.941-38.405",
+    "calculated": 27.536,
+    "reportRounded": 27.536,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "NVDA普通股变动",
+    "unit": "十亿股",
+    "formula": "24.304+0.069-0.023-0.203",
+    "calculated": 24.147,
+    "reportRounded": 24.147,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "MU租赁本金差额估计",
+    "unit": "十亿美元",
+    "formula": "10.043-9.255",
+    "calculated": 0.788,
+    "reportRounded": 0.788,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "AMAT Owner FCF同比",
+    "unit": "百分比",
+    "formula": "(3.035/3.143-1)*100",
+    "calculated": -3.436207445,
+    "reportRounded": -3.4,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "CRWD扣SBC现金",
+    "unit": "百万美元",
+    "formula": "845.870-674.617",
+    "calculated": 171.253,
+    "reportRounded": 171.253,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "COST Owner FCF",
+    "unit": "十亿美元",
+    "formula": "15.817-6.435-0.924-0.089",
+    "calculated": 8.369,
+    "reportRounded": 8.369,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "WM Owner FCF",
+    "unit": "百万美元",
+    "formula": "2937-121-169-101",
+    "calculated": 2546,
+    "reportRounded": 2546,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "MSFT经济留存",
+    "unit": "十亿美元",
+    "formula": "51.481-19.861",
+    "calculated": 31.62,
+    "reportRounded": 31.62,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "REGN Owner FCF",
+    "unit": "百万美元",
+    "formula": "4978.9-898.4-993.7",
+    "calculated": 3086.8,
+    "reportRounded": 3086.8,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "TNB实际负荷/已接入容量",
+    "unit": "百分比",
+    "formula": "1.256/5.65*100",
+    "calculated": 22.230088496,
+    "reportRounded": 22.2,
+    "withinDisplayedPrecision": true
+  },
+  {
+    "subject": "光模块D/S=1.30的需求缺口",
+    "unit": "百分比",
+    "formula": "(1-1/1.30)*100",
+    "calculated": 23.076923077,
+    "reportRounded": 23.1,
+    "withinDisplayedPrecision": true
+  }
+]

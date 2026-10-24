@@ -1,0 +1,2018 @@
+[
+  {
+    "subject": "ALAB",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ALAB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ALAB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:46:42",
+    "decisionFinished": "2026-10-22 16:07:49"
+  },
+  {
+    "subject": "AMBA",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMBA_Ambarella_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMBA_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMBA_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:55:29",
+    "decisionFinished": "2026-10-22 15:48:30"
+  },
+  {
+    "subject": "AMD",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced_Micro_Devices_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:39:34",
+    "decisionFinished": "2026-10-22 16:01:16"
+  },
+  {
+    "subject": "ARM",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ARM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ARM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:37:16",
+    "decisionFinished": "2026-10-22 16:01:03"
+  },
+  {
+    "subject": "AVGO",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AVGO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AVGO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:01:53",
+    "decisionFinished": "2026-10-22 15:59:52"
+  },
+  {
+    "subject": "CBRS",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CBRS_Cerebras_Systems_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CBRS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CBRS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:07:11",
+    "decisionFinished": "2026-10-22 15:53:55"
+  },
+  {
+    "subject": "CDNS",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CDNS_Cadence_Design_Systems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CDNS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CDNS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:53:49",
+    "decisionFinished": "2026-10-22 15:56:20"
+  },
+  {
+    "subject": "INTC",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/INTC_Intel_Corporation_英特尔_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/INTC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/INTC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:36:12",
+    "decisionFinished": "2026-10-22 15:59:36"
+  },
+  {
+    "subject": "MCHP",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MCHP_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MCHP_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:56:46",
+    "decisionFinished": "2026-10-22 15:58:35"
+  },
+  {
+    "subject": "MRVL",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MRVL_Marvell_Technology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MRVL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MRVL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:55:05",
+    "decisionFinished": "2026-10-22 16:00:23"
+  },
+  {
+    "subject": "MXL",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MXL_MaxLinear_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MXL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MXL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:00:55",
+    "decisionFinished": "2026-10-22 16:02:29"
+  },
+  {
+    "subject": "NVDA",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NVDA_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NVDA_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:14:25",
+    "decisionFinished": "2026-10-22 15:54:49"
+  },
+  {
+    "subject": "QCOM",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/QCOM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/QCOM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:11:31",
+    "decisionFinished": "2026-10-22 15:59:02"
+  },
+  {
+    "subject": "SNPS",
+    "company": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/SNPS_Synopsys_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SNPS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SNPS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:46:39",
+    "decisionFinished": "2026-10-22 16:00:37"
+  },
+  {
+    "subject": "CLS",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CLS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CLS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:05:05",
+    "decisionFinished": "2026-10-22 15:55:59"
+  },
+  {
+    "subject": "DELL",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/DELL_Dell_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DELL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DELL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:49:15",
+    "decisionFinished": "2026-10-22 15:51:53"
+  },
+  {
+    "subject": "FLEX",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/FLEX_Flex_Ltd_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FLEX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FLEX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:03:59",
+    "decisionFinished": "2026-10-22 16:04:15"
+  },
+  {
+    "subject": "FN",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/FN_Fabrinet_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:54:11",
+    "decisionFinished": "2026-10-22 15:50:45"
+  },
+  {
+    "subject": "HPE",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/HPE_惠普企业_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/HPE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/HPE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:56:20",
+    "decisionFinished": "2026-10-22 16:00:11"
+  },
+  {
+    "subject": "JBL",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/JBL_Jabil_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/JBL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/JBL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:20",
+    "decisionFinished": "2026-10-22 15:56:47"
+  },
+  {
+    "subject": "MRAM",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MRAM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MRAM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:03:50",
+    "decisionFinished": "2026-10-22 15:47:31"
+  },
+  {
+    "subject": "MU",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MU_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:54:16",
+    "decisionFinished": "2026-10-22 15:57:06"
+  },
+  {
+    "subject": "NTAP",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/NTAP_NetApp_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NTAP_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NTAP_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:57:47",
+    "decisionFinished": "2026-10-22 15:56:12"
+  },
+  {
+    "subject": "P",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/P_Everpure_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/P_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/P_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:54:46",
+    "decisionFinished": "2026-10-22 15:57:48"
+  },
+  {
+    "subject": "PENG",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/PENG_Penguin_Solutions_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PENG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PENG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:10:47",
+    "decisionFinished": "2026-10-22 15:57:11"
+  },
+  {
+    "subject": "RMBS",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RMBS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RMBS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:49:00",
+    "decisionFinished": "2026-10-22 15:54:31"
+  },
+  {
+    "subject": "SANM",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/SANM_Sanmina_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SANM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SANM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:58:22",
+    "decisionFinished": "2026-10-22 16:00:42"
+  },
+  {
+    "subject": "SIMO",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/SIMO_Silicon_Motion_Technology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SIMO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SIMO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:00:15",
+    "decisionFinished": "2026-10-22 15:58:31"
+  },
+  {
+    "subject": "SKHY",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/SKHY_SK_hynix_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SKHY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SKHY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:12:00",
+    "decisionFinished": "2026-10-22 16:02:41"
+  },
+  {
+    "subject": "SMCI",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SMCI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SMCI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:48:42",
+    "decisionFinished": "2026-10-22 16:38:57"
+  },
+  {
+    "subject": "SNDK",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SNDK_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:56:38",
+    "decisionFinished": "2026-10-22 16:00:31"
+  },
+  {
+    "subject": "STX",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/STX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/STX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:08:37",
+    "decisionFinished": "2026-10-22 15:56:13"
+  },
+  {
+    "subject": "WDC",
+    "company": "基本面/公司调研/结果/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WDC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WDC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:55:49",
+    "decisionFinished": "2026-10-22 16:09:26"
+  },
+  {
+    "subject": "AAOI",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AAOI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AAOI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:08:04",
+    "decisionFinished": "2026-10-22 15:55:57"
+  },
+  {
+    "subject": "ANET",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/ANET_Arista_Networks_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ANET_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ANET_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:54:10",
+    "decisionFinished": "2026-10-22 15:52:52"
+  },
+  {
+    "subject": "APH",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/APH_Amphenol_安费诺_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/APH_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/APH_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:01:04",
+    "decisionFinished": "2026-10-22 15:52:32"
+  },
+  {
+    "subject": "BDC",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BDC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BDC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:48:36",
+    "decisionFinished": "2026-10-22 15:55:02"
+  },
+  {
+    "subject": "BELFB",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/BELFB_Bel_Fuse_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BELFB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BELFB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:27",
+    "decisionFinished": "2026-10-22 15:53:45"
+  },
+  {
+    "subject": "CIEN",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/CIEN_Ciena_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CIEN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CIEN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:12:36",
+    "decisionFinished": "2026-10-22 16:02:00"
+  },
+  {
+    "subject": "COHR",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/COHR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/COHR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:03:55",
+    "decisionFinished": "2026-10-22 16:01:13"
+  },
+  {
+    "subject": "CRDO",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CRDO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CRDO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:55:22",
+    "decisionFinished": "2026-10-22 15:55:20"
+  },
+  {
+    "subject": "CSCO",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/CSCO_Cisco_Systems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CSCO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CSCO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:55:04",
+    "decisionFinished": "2026-10-22 15:59:02"
+  },
+  {
+    "subject": "GLW",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/GLW_Corning_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GLW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GLW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:08:20",
+    "decisionFinished": "2026-10-22 16:06:18"
+  },
+  {
+    "subject": "LITE",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/LITE_Lumentum_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LITE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LITE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:51:22",
+    "decisionFinished": "2026-10-22 15:52:03"
+  },
+  {
+    "subject": "LWLG",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LWLG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LWLG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:03:19",
+    "decisionFinished": "2026-10-22 15:57:50"
+  },
+  {
+    "subject": "MTSI",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/MTSI_MACOM_Technology_Solutions_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MTSI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MTSI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:03:11",
+    "decisionFinished": "2026-10-22 15:57:28"
+  },
+  {
+    "subject": "NOK",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/NOK_诺基亚_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NOK_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NOK_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:51:25",
+    "decisionFinished": "2026-10-22 15:56:12"
+  },
+  {
+    "subject": "POET",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/POET_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/POET_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:50:04",
+    "decisionFinished": "2026-10-22 16:02:11"
+  },
+  {
+    "subject": "SITM",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/SITM_SiTime_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SITM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SITM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:58:16",
+    "decisionFinished": "2026-10-22 15:53:14"
+  },
+  {
+    "subject": "SMTC",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/SMTC_Semtech_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SMTC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SMTC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:53",
+    "decisionFinished": "2026-10-22 16:01:55"
+  },
+  {
+    "subject": "TEL",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/TEL_TE_Connectivity_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TEL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TEL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:00:17",
+    "decisionFinished": "2026-10-22 16:23:53"
+  },
+  {
+    "subject": "VIAV",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/VIAV_VIAVI_Solutions_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VIAV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VIAV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:53:31",
+    "decisionFinished": "2026-10-22 16:17:21"
+  },
+  {
+    "subject": "VISN",
+    "company": "基本面/公司调研/结果/AI网络_光互联_连接器/VISN_Vistance_Networks_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VISN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VISN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:48:03",
+    "decisionFinished": "2026-10-22 16:22:21"
+  },
+  {
+    "subject": "AJNMY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/AJNMY_味之素_Ajinomoto_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AJNMY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AJNMY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:06:14",
+    "decisionFinished": "2026-10-22 16:22:54"
+  },
+  {
+    "subject": "APD",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/APD_Air_Products_and_Chemicals_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/APD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/APD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:01:44",
+    "decisionFinished": "2026-10-22 16:31:39"
+  },
+  {
+    "subject": "ASGLY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ASGLY_AGC_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASGLY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASGLY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:06:43",
+    "decisionFinished": "2026-10-22 16:21:06"
+  },
+  {
+    "subject": "AXTI",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/AXTI_AXT_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AXTI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AXTI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:00:21",
+    "decisionFinished": "2026-10-22 16:27:01"
+  },
+  {
+    "subject": "CC",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/CC_The_Chemours_Company_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:08:48",
+    "decisionFinished": "2026-10-22 16:31:37"
+  },
+  {
+    "subject": "DD",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/DD_DuPont_de_Nemours_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:04:46",
+    "decisionFinished": "2026-10-22 16:21:40"
+  },
+  {
+    "subject": "DHR",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/DHR_Danaher_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DHR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DHR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:47:33",
+    "decisionFinished": "2026-10-22 16:22:38"
+  },
+  {
+    "subject": "ENTG",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ENTG_Entegris_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ENTG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ENTG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:51:55",
+    "decisionFinished": "2026-10-22 16:29:49"
+  },
+  {
+    "subject": "HOCPY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/HOCPY_HOYA_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/HOCPY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/HOCPY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:15:43",
+    "decisionFinished": "2026-10-22 16:28:20"
+  },
+  {
+    "subject": "LIN",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/LIN_Linde_plc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LIN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LIN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:21:14",
+    "decisionFinished": "2026-10-22 16:22:54"
+  },
+  {
+    "subject": "MMM",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/MMM_3M_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MMM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MMM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:55:54",
+    "decisionFinished": "2026-10-22 16:31:09"
+  },
+  {
+    "subject": "MTRN",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/MTRN_Materion_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MTRN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MTRN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:56:51",
+    "decisionFinished": "2026-10-22 16:39:53"
+  },
+  {
+    "subject": "PCRHY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/PCRHY_Panasonic_Holdings_松下控股_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PCRHY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PCRHY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:01:22",
+    "decisionFinished": "2026-10-22 16:34:13"
+  },
+  {
+    "subject": "Q",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/Q_Qnity_Electronics_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/Q_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/Q_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:48:54",
+    "decisionFinished": "2026-10-22 16:33:03"
+  },
+  {
+    "subject": "ROG",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ROG_Rogers_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ROG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ROG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:57:58",
+    "decisionFinished": "2026-10-22 16:17:28"
+  },
+  {
+    "subject": "SHECY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SHECY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SHECY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:58:51",
+    "decisionFinished": "2026-10-22 16:23:47"
+  },
+  {
+    "subject": "SMTOY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SMTOY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SMTOY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:49:58",
+    "decisionFinished": "2026-10-22 16:43:25"
+  },
+  {
+    "subject": "SOMMY",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SOMMY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SOMMY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:38",
+    "decisionFinished": "2026-10-22 16:32:13"
+  },
+  {
+    "subject": "TTMI",
+    "company": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/TTMI_TTM_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TTMI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TTMI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:13:03",
+    "decisionFinished": "2026-10-22 16:33:15"
+  },
+  {
+    "subject": "ACLS",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/ACLS_Axcelis_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ACLS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ACLS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:56:05",
+    "decisionFinished": "2026-10-22 16:28:47"
+  },
+  {
+    "subject": "ACMR",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/ACMR_ACM_Research_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ACMR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ACMR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:06:03",
+    "decisionFinished": "2026-10-22 16:38:11"
+  },
+  {
+    "subject": "AEIS",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/AEIS_Advanced_Energy_Industries_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AEIS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AEIS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:06:10",
+    "decisionFinished": "2026-10-22 16:27:09"
+  },
+  {
+    "subject": "AMAT",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/AMAT_Applied_Materials_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMAT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMAT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:56:51",
+    "decisionFinished": "2026-10-22 16:34:14"
+  },
+  {
+    "subject": "ASMIY",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/ASMIY_ASM_International_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASMIY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASMIY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:56:04",
+    "decisionFinished": "2026-10-22 16:22:26"
+  },
+  {
+    "subject": "ASML",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/ASML_ASML_Holding_NV_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASML_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASML_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:07:46",
+    "decisionFinished": "2026-10-22 16:21:05"
+  },
+  {
+    "subject": "DSCSY",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/DSCSY_DISCO_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DSCSY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DSCSY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:05",
+    "decisionFinished": "2026-10-22 16:37:47"
+  },
+  {
+    "subject": "GFS",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GFS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GFS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:57:21",
+    "decisionFinished": "2026-10-22 16:38:47"
+  },
+  {
+    "subject": "ICHR",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/ICHR_Ichor_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ICHR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ICHR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:00:48",
+    "decisionFinished": "2026-10-22 16:36:05"
+  },
+  {
+    "subject": "KLAC",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/KLAC_KLA_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KLAC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KLAC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:59:58",
+    "decisionFinished": "2026-10-22 16:29:30"
+  },
+  {
+    "subject": "LRCX",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/LRCX_Lam_Research_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LRCX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LRCX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:54:30",
+    "decisionFinished": "2026-10-22 16:40:17"
+  },
+  {
+    "subject": "MKSI",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MKSI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MKSI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:03:32",
+    "decisionFinished": "2026-10-22 16:33:49"
+  },
+  {
+    "subject": "NVMI",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/NVMI_Nova_Ltd_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NVMI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NVMI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:16:17",
+    "decisionFinished": "2026-10-22 16:25:17"
+  },
+  {
+    "subject": "TOELY",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/TOELY_Tokyo_Electron_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TOELY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TOELY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:48:05",
+    "decisionFinished": "2026-10-22 16:33:32"
+  },
+  {
+    "subject": "TSEM",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/TSEM_Tower_Semiconductor_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TSEM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TSEM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:08:53",
+    "decisionFinished": "2026-10-22 16:34:32"
+  },
+  {
+    "subject": "TSM",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/TSM_台积电_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TSM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TSM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:10:03",
+    "decisionFinished": "2026-10-22 16:36:32"
+  },
+  {
+    "subject": "UCTT",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/UCTT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/UCTT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:19:31",
+    "decisionFinished": "2026-10-22 16:34:51"
+  },
+  {
+    "subject": "UMC",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/UMC_United_Microelectronics_联华电子_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/UMC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/UMC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:20:45",
+    "decisionFinished": "2026-10-22 16:34:55"
+  },
+  {
+    "subject": "VECO",
+    "company": "基本面/公司调研/结果/晶圆制造_前道设备/VECO_Veeco_Instruments_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VECO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VECO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:37",
+    "decisionFinished": "2026-10-22 16:50:23"
+  },
+  {
+    "subject": "AEHR",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/AEHR_Aehr_Test_Systems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AEHR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AEHR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:07:53",
+    "decisionFinished": "2026-10-22 16:41:35"
+  },
+  {
+    "subject": "AMKR",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/AMKR_Amkor_Technology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMKR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMKR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:18:03",
+    "decisionFinished": "2026-10-22 16:32:02"
+  },
+  {
+    "subject": "ASMVY",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASMVY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASMVY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:18",
+    "decisionFinished": "2026-10-22 16:34:54"
+  },
+  {
+    "subject": "ASX",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/ASX_ASE_Technology_Holding_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:03:57",
+    "decisionFinished": "2026-10-22 16:39:20"
+  },
+  {
+    "subject": "ATEYY",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/ATEYY_Advantest_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ATEYY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ATEYY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 09:52:09",
+    "decisionFinished": "2026-10-22 16:42:31"
+  },
+  {
+    "subject": "BESIY",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/BESIY_BE_Semiconductor_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BESIY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BESIY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:15:04",
+    "decisionFinished": "2026-10-22 16:47:45"
+  },
+  {
+    "subject": "CAMT",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/CAMT_Camtek_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CAMT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CAMT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:05:16",
+    "decisionFinished": "2026-10-22 16:42:57"
+  },
+  {
+    "subject": "COHU",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/COHU_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/COHU_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:04:52",
+    "decisionFinished": "2026-10-22 16:39:33"
+  },
+  {
+    "subject": "FORM",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FORM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FORM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:14:42",
+    "decisionFinished": "2026-10-22 16:55:09"
+  },
+  {
+    "subject": "IMOS",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IMOS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IMOS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:07:51",
+    "decisionFinished": "2026-10-22 16:45:00"
+  },
+  {
+    "subject": "KEYS",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/KEYS_Keysight_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KEYS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KEYS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:58:10",
+    "decisionFinished": "2026-10-22 17:02:36"
+  },
+  {
+    "subject": "KLIC",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/KLIC_Kulicke_Soffa_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KLIC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KLIC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:18:11",
+    "decisionFinished": "2026-10-22 16:43:38"
+  },
+  {
+    "subject": "MICLF",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/MICLF_Mycronic_AB_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MICLF_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MICLF_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:54:23",
+    "decisionFinished": "2026-10-22 16:50:42"
+  },
+  {
+    "subject": "NDSN",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/NDSN_Nordson_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NDSN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NDSN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:05:29",
+    "decisionFinished": "2026-10-22 16:50:01"
+  },
+  {
+    "subject": "ONTO",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/ONTO_Onto_Innovation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ONTO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ONTO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:09:03",
+    "decisionFinished": "2026-10-22 16:48:55"
+  },
+  {
+    "subject": "PLAB",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PLAB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PLAB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:06:30",
+    "decisionFinished": "2026-10-22 16:56:25"
+  },
+  {
+    "subject": "TDY",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/TDY_Teledyne_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TDY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TDY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:21:50",
+    "decisionFinished": "2026-10-22 16:46:12"
+  },
+  {
+    "subject": "TER",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/TER_Teradyne_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TER_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TER_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:18:27",
+    "decisionFinished": "2026-10-22 16:58:36"
+  },
+  {
+    "subject": "TMO",
+    "company": "基本面/公司调研/结果/封测_检测_计量_光罩/TMO_Thermo_Fisher_Scientific_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TMO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TMO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:30:50",
+    "decisionFinished": "2026-10-22 16:57:30"
+  },
+  {
+    "subject": "ADI",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ADI_Analog_Devices_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ADI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ADI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:28:00",
+    "decisionFinished": "2026-10-22 16:58:19"
+  },
+  {
+    "subject": "ALGM",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ALGM_Allegro_MicroSystems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ALGM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ALGM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:16:52",
+    "decisionFinished": "2026-10-22 17:06:30"
+  },
+  {
+    "subject": "AOSL",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AOSL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AOSL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:05:56",
+    "decisionFinished": "2026-10-22 16:56:46"
+  },
+  {
+    "subject": "DIOD",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/DIOD_Diodes_Incorporated_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DIOD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DIOD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:08:07",
+    "decisionFinished": "2026-10-22 17:01:24"
+  },
+  {
+    "subject": "IFNNY",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IFNNY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IFNNY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:46:16",
+    "decisionFinished": "2026-10-22 16:54:47"
+  },
+  {
+    "subject": "LFUS",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/LFUS_Littelfuse_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LFUS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LFUS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:27:18",
+    "decisionFinished": "2026-10-22 17:02:54"
+  },
+  {
+    "subject": "MPWR",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/MPWR_Monolithic_Power_Systems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MPWR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MPWR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:51:24",
+    "decisionFinished": "2026-10-22 16:59:35"
+  },
+  {
+    "subject": "MRAAY",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/MRAAY_Murata_Manufacturing_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MRAAY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MRAAY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:13:15",
+    "decisionFinished": "2026-10-22 17:00:14"
+  },
+  {
+    "subject": "NVTS",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/NVTS_Navitas_Semiconductor_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NVTS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NVTS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:07:32",
+    "decisionFinished": "2026-10-22 17:05:41"
+  },
+  {
+    "subject": "ON",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ON_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ON_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:13:49",
+    "decisionFinished": "2026-10-22 17:09:12"
+  },
+  {
+    "subject": "POWI",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/POWI_Power_Integrations_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/POWI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/POWI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 12:59:55",
+    "decisionFinished": "2026-10-22 16:57:48"
+  },
+  {
+    "subject": "ST",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ST_Sensata_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ST_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ST_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:24:17",
+    "decisionFinished": "2026-10-22 17:02:48"
+  },
+  {
+    "subject": "STM",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/STM_STMicroelectronics_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/STM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/STM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:05:21",
+    "decisionFinished": "2026-10-22 17:07:41"
+  },
+  {
+    "subject": "TTDKY",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/TTDKY_TDK_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TTDKY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TTDKY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:11:16",
+    "decisionFinished": "2026-10-22 17:03:51"
+  },
+  {
+    "subject": "TXN",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/TXN_德州仪器_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TXN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TXN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:33:55",
+    "decisionFinished": "2026-10-22 17:12:01"
+  },
+  {
+    "subject": "VSH",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/VSH_Vishay_Intertechnology_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VSH_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VSH_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:12:10",
+    "decisionFinished": "2026-10-22 17:04:10"
+  },
+  {
+    "subject": "WOLF",
+    "company": "基本面/公司调研/结果/功率半导体_电源管理_传感器/WOLF_Wolfspeed_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WOLF_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WOLF_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:10:56",
+    "decisionFinished": "2026-10-22 17:14:13"
+  },
+  {
+    "subject": "ABBNY",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/ABBNY_ABB_Ltd_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ABBNY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ABBNY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:03:51",
+    "decisionFinished": "2026-10-22 17:03:58"
+  },
+  {
+    "subject": "ETN",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/ETN_Eaton_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ETN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ETN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:52:02",
+    "decisionFinished": "2026-10-22 17:04:51"
+  },
+  {
+    "subject": "HUBB",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/HUBB_Hubbell_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/HUBB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/HUBB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:42:43",
+    "decisionFinished": "2026-10-22 17:08:30"
+  },
+  {
+    "subject": "MIELY",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MIELY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MIELY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:27:33",
+    "decisionFinished": "2026-10-22 17:09:50"
+  },
+  {
+    "subject": "NVT",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/NVT_nVent_Electric_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NVT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NVT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:40:44",
+    "decisionFinished": "2026-10-22 17:08:02"
+  },
+  {
+    "subject": "POWL",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/POWL_Powell_Industries_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/POWL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/POWL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:40:12",
+    "decisionFinished": "2026-10-22 17:01:02"
+  },
+  {
+    "subject": "SBGSY",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/SBGSY_Schneider_Electric_施耐德_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SBGSY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SBGSY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:40:17",
+    "decisionFinished": "2026-10-22 17:17:22"
+  },
+  {
+    "subject": "VICR",
+    "company": "基本面/公司调研/结果/配电_电源系统_电气设备/VICR_Vicor_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VICR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VICR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:33:18",
+    "decisionFinished": "2026-10-22 17:17:39"
+  },
+  {
+    "subject": "AEP",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/AEP_American_Electric_Power_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AEP_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AEP_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:42:59",
+    "decisionFinished": "2026-10-22 17:10:49"
+  },
+  {
+    "subject": "AMPX",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMPX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMPX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:28:05",
+    "decisionFinished": "2026-10-22 17:16:53"
+  },
+  {
+    "subject": "BE",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/BE_Bloom_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:49:19",
+    "decisionFinished": "2026-10-22 17:08:08"
+  },
+  {
+    "subject": "BWXT",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/BWXT_BWX_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BWXT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BWXT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:50:49",
+    "decisionFinished": "2026-10-22 17:20:51"
+  },
+  {
+    "subject": "CAT",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/CAT_Caterpillar_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CAT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CAT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:39:09",
+    "decisionFinished": "2026-10-22 17:16:10"
+  },
+  {
+    "subject": "CCJ",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/CCJ_Cameco_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CCJ_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CCJ_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:50:11",
+    "decisionFinished": "2026-10-22 17:15:45"
+  },
+  {
+    "subject": "CEG",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/CEG_Constellation_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CEG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CEG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:46:26",
+    "decisionFinished": "2026-10-22 17:20:35"
+  },
+  {
+    "subject": "CMI",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/CMI_Cummins_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CMI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CMI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:47:57",
+    "decisionFinished": "2026-10-22 17:16:39"
+  },
+  {
+    "subject": "DTE",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/DTE_DTE_Energy_Company_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DTE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DTE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:37:03",
+    "decisionFinished": "2026-10-22 17:20:12"
+  },
+  {
+    "subject": "ENPH",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ENPH_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ENPH_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:23:05",
+    "decisionFinished": "2026-10-22 17:15:21"
+  },
+  {
+    "subject": "ENS",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/ENS_EnerSys_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ENS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ENS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:44:35",
+    "decisionFinished": "2026-10-22 17:27:54"
+  },
+  {
+    "subject": "ET",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/ET_Energy_Transfer_LP_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ET_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ET_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:53:28",
+    "decisionFinished": "2026-10-22 17:19:18"
+  },
+  {
+    "subject": "ETR",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/ETR_Entergy_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ETR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ETR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:35:45",
+    "decisionFinished": "2026-10-22 17:16:26"
+  },
+  {
+    "subject": "FCEL",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/FCEL_FuelCell_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FCEL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FCEL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:38:36",
+    "decisionFinished": "2026-10-22 17:10:55"
+  },
+  {
+    "subject": "FLNC",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FLNC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FLNC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:51:41",
+    "decisionFinished": "2026-10-22 17:21:38"
+  },
+  {
+    "subject": "GEV",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/GEV_GE_Vernova_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GEV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GEV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:52:11",
+    "decisionFinished": "2026-10-22 17:30:54"
+  },
+  {
+    "subject": "GNRC",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GNRC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GNRC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:55:48",
+    "decisionFinished": "2026-10-22 17:25:50"
+  },
+  {
+    "subject": "HTHIY",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/HTHIY_Hitachi_Ltd_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/HTHIY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/HTHIY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:28:00",
+    "decisionFinished": "2026-10-22 17:26:12"
+  },
+  {
+    "subject": "LEU",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/LEU_Centrus_Energy_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/LEU_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/LEU_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:10",
+    "decisionFinished": "2026-10-22 17:32:51"
+  },
+  {
+    "subject": "OKLO",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/OKLO_Oklo_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/OKLO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/OKLO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:36:30",
+    "decisionFinished": "2026-10-22 17:41:08"
+  },
+  {
+    "subject": "PSIX",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PSIX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PSIX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:26:40",
+    "decisionFinished": "2026-10-22 17:31:19"
+  },
+  {
+    "subject": "RYCEY",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/RYCEY_Rolls-Royce_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RYCEY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RYCEY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:55:39",
+    "decisionFinished": "2026-10-22 17:34:20"
+  },
+  {
+    "subject": "SMR",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/SMR_NuScale_Power_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SMR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SMR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:32:50",
+    "decisionFinished": "2026-10-22 17:37:36"
+  },
+  {
+    "subject": "TE",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/TE_T1_Energy_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:49:22",
+    "decisionFinished": "2026-10-22 17:32:37"
+  },
+  {
+    "subject": "VST",
+    "company": "基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VST_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VST_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:04:51",
+    "decisionFinished": "2026-10-22 17:48:05"
+  },
+  {
+    "subject": "AAON",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/AAON_AAON_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AAON_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AAON_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:35:13",
+    "decisionFinished": "2026-10-22 17:27:46"
+  },
+  {
+    "subject": "CARR",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/CARR_Carrier_Global_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CARR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CARR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:38:16",
+    "decisionFinished": "2026-10-22 17:33:07"
+  },
+  {
+    "subject": "DCI",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/DCI_Donaldson_Company_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DCI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DCI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:48:33",
+    "decisionFinished": "2026-10-22 17:31:25"
+  },
+  {
+    "subject": "DKILY",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/DKILY_Daikin_Industries_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DKILY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DKILY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:50",
+    "decisionFinished": "2026-10-22 17:38:02"
+  },
+  {
+    "subject": "DOV",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/DOV_Dover_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DOV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DOV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:35:46",
+    "decisionFinished": "2026-10-22 17:33:08"
+  },
+  {
+    "subject": "ECL",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/ECL_Ecolab_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ECL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ECL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:32:47",
+    "decisionFinished": "2026-10-22 17:42:30"
+  },
+  {
+    "subject": "ITT",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/ITT_ITT_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ITT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ITT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:36",
+    "decisionFinished": "2026-10-22 17:39:29"
+  },
+  {
+    "subject": "JCI",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/JCI_Johnson_Controls_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/JCI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/JCI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:50:12",
+    "decisionFinished": "2026-10-22 17:33:13"
+  },
+  {
+    "subject": "MOD",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MOD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MOD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:37:01",
+    "decisionFinished": "2026-10-22 17:41:48"
+  },
+  {
+    "subject": "PH",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/PH_Parker-Hannifin_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PH_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PH_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:50:38",
+    "decisionFinished": "2026-10-22 17:40:06"
+  },
+  {
+    "subject": "PNR",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PNR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PNR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:29",
+    "decisionFinished": "2026-10-22 17:33:39"
+  },
+  {
+    "subject": "SPXC",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/SPXC_SPX_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SPXC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SPXC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:48:12",
+    "decisionFinished": "2026-10-22 17:31:34"
+  },
+  {
+    "subject": "TT",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/TT_Trane_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:33:41",
+    "decisionFinished": "2026-10-22 17:39:30"
+  },
+  {
+    "subject": "VRT",
+    "company": "基本面/公司调研/结果/热管理_流体_水处理/VRT_Vertiv_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VRT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VRT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:33:33",
+    "decisionFinished": "2026-10-22 17:32:44"
+  },
+  {
+    "subject": "EME",
+    "company": "基本面/公司调研/结果/工程建设_机电安装/EME_EMCOR_Group_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/EME_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/EME_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:52:50",
+    "decisionFinished": "2026-10-22 17:30:21"
+  },
+  {
+    "subject": "FIX",
+    "company": "基本面/公司调研/结果/工程建设_机电安装/FIX_Comfort_Systems_USA_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FIX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FIX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:44:59",
+    "decisionFinished": "2026-10-22 17:29:54"
+  },
+  {
+    "subject": "IESC",
+    "company": "基本面/公司调研/结果/工程建设_机电安装/IESC_IES_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IESC_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IESC_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:51:05",
+    "decisionFinished": "2026-10-22 17:40:56"
+  },
+  {
+    "subject": "MYRG",
+    "company": "基本面/公司调研/结果/工程建设_机电安装/MYRG_MYR_Group_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MYRG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MYRG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:40:39",
+    "decisionFinished": "2026-10-22 17:37:55"
+  },
+  {
+    "subject": "PWR",
+    "company": "基本面/公司调研/结果/工程建设_机电安装/PWR_Quanta_Services_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PWR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PWR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:37:08",
+    "decisionFinished": "2026-10-22 17:43:38"
+  },
+  {
+    "subject": "AGCO",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/AGCO_AGCO_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AGCO_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AGCO_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:32:30",
+    "decisionFinished": "2026-10-22 17:44:04"
+  },
+  {
+    "subject": "ALLE",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ALLE_Allegion_plc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ALLE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ALLE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:55:10",
+    "decisionFinished": "2026-10-22 17:40:37"
+  },
+  {
+    "subject": "AXON",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/AXON_Axon_Enterprise_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AXON_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AXON_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:53:33",
+    "decisionFinished": "2026-10-22 17:55:06"
+  },
+  {
+    "subject": "CGNX",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/CGNX_Cognex_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CGNX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CGNX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:49:32",
+    "decisionFinished": "2026-10-22 17:47:15"
+  },
+  {
+    "subject": "DE",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/DE_Deere_&_Company_迪尔_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:12:32",
+    "decisionFinished": "2026-10-22 17:39:05"
+  },
+  {
+    "subject": "EMR",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/EMR_Emerson_Electric_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/EMR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/EMR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:50:07",
+    "decisionFinished": "2026-10-22 17:43:32"
+  },
+  {
+    "subject": "FANUY",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/FANUY_FANUC_发那科_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FANUY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FANUY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:28:58",
+    "decisionFinished": "2026-10-22 17:46:27"
+  },
+  {
+    "subject": "FTV",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/FTV_Fortive_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/FTV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/FTV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:56:01",
+    "decisionFinished": "2026-10-22 17:50:57"
+  },
+  {
+    "subject": "ISRG",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ISRG_Intuitive_Surgical_直觉外科_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ISRG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ISRG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:57:22",
+    "decisionFinished": "2026-10-22 17:52:43"
+  },
+  {
+    "subject": "MSI",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/MSI_Motorola_Solutions_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MSI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MSI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:04",
+    "decisionFinished": "2026-10-22 18:09:04"
+  },
+  {
+    "subject": "ROK",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ROK_Rockwell_Automation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ROK_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ROK_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:26:32",
+    "decisionFinished": "2026-10-22 17:56:08"
+  },
+  {
+    "subject": "SMCAY",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/SMCAY_SMC_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SMCAY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SMCAY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:41:24",
+    "decisionFinished": "2026-10-22 17:46:29"
+  },
+  {
+    "subject": "SYM",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/SYM_Symbotic_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SYM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SYM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:46:47",
+    "decisionFinished": "2026-10-22 18:07:12"
+  },
+  {
+    "subject": "TSLA",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/TSLA_Tesla_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TSLA_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TSLA_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:18:55",
+    "decisionFinished": "2026-10-22 18:17:19"
+  },
+  {
+    "subject": "YASKY",
+    "company": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/YASKY_Yaskawa_Electric_安川电机_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/YASKY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/YASKY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:55:13",
+    "decisionFinished": "2026-10-22 17:46:09"
+  },
+  {
+    "subject": "ASTS",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/ASTS_AST_SpaceMobile_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ASTS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ASTS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:06:38",
+    "decisionFinished": "2026-10-22 18:07:05"
+  },
+  {
+    "subject": "AVAV",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/AVAV_AeroVironment_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AVAV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AVAV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:12:29",
+    "decisionFinished": "2026-10-22 17:56:50"
+  },
+  {
+    "subject": "CW",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/CW_Curtiss-Wright_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:02:50",
+    "decisionFinished": "2026-10-22 17:54:30"
+  },
+  {
+    "subject": "GE",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/GE_GE_Aerospace_通用电气航空_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:56:50",
+    "decisionFinished": "2026-10-22 17:51:48"
+  },
+  {
+    "subject": "HEI",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/HEI_HEICO_Corporation_海科航空_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/HEI_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/HEI_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 10:52:51",
+    "decisionFinished": "2026-10-22 17:42:19"
+  },
+  {
+    "subject": "KTOS",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/KTOS_Kratos_Defense_&_Security_Solutions_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KTOS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KTOS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:05:45",
+    "decisionFinished": "2026-10-22 18:07:27"
+  },
+  {
+    "subject": "PL",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/PL_Planet_Labs_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:41:13",
+    "decisionFinished": "2026-10-22 18:08:37"
+  },
+  {
+    "subject": "RDW",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/RDW_Redwire_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RDW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RDW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:43:45",
+    "decisionFinished": "2026-10-22 17:56:08"
+  },
+  {
+    "subject": "RKLB",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/RKLB_Rocket_Lab_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RKLB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RKLB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:04:48",
+    "decisionFinished": "2026-10-22 18:11:21"
+  },
+  {
+    "subject": "SPCX",
+    "company": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/SPCX_SpaceX_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SPCX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SPCX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:54:30",
+    "decisionFinished": "2026-10-22 18:19:34"
+  },
+  {
+    "subject": "AMZN",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/AMZN_Amazon_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/AMZN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/AMZN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:14:13",
+    "decisionFinished": "2026-10-22 18:02:47"
+  },
+  {
+    "subject": "APLD",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/APLD_Applied_Digital_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/APLD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/APLD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:43:27",
+    "decisionFinished": "2026-10-22 18:15:46"
+  },
+  {
+    "subject": "BABA",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/BABA_Alibaba_阿里巴巴_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BABA_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BABA_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:41:55",
+    "decisionFinished": "2026-10-22 18:10:55"
+  },
+  {
+    "subject": "CRWV",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CRWV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CRWV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:14:21",
+    "decisionFinished": "2026-10-22 18:24:38"
+  },
+  {
+    "subject": "DLR",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/DLR_Digital_Realty_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DLR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DLR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:36:59",
+    "decisionFinished": "2026-10-22 18:07:55"
+  },
+  {
+    "subject": "EQIX",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/EQIX_Equinix_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/EQIX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/EQIX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:31:48",
+    "decisionFinished": "2026-10-22 18:04:48"
+  },
+  {
+    "subject": "GOOGL",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/GOOGL_Alphabet_Inc_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/GOOGL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/GOOGL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:23:31",
+    "decisionFinished": "2026-10-22 18:13:57"
+  },
+  {
+    "subject": "IREN",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/IREN_IREN_Limited_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IREN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IREN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:49:18",
+    "decisionFinished": "2026-10-22 18:13:53"
+  },
+  {
+    "subject": "MSFT",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/MSFT_微软_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MSFT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MSFT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:04:24",
+    "decisionFinished": "2026-10-22 18:16:25"
+  },
+  {
+    "subject": "NBIS",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/NBIS_Nebius_Group_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NBIS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NBIS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:27:00",
+    "decisionFinished": "2026-10-22 18:24:28"
+  },
+  {
+    "subject": "NET",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/NET_Cloudflare_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NET_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NET_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:11:12",
+    "decisionFinished": "2026-10-22 18:16:51"
+  },
+  {
+    "subject": "ORCL",
+    "company": "基本面/公司调研/结果/云算力_IDC_边缘云/ORCL_Oracle_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ORCL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ORCL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:12:53",
+    "decisionFinished": "2026-10-22 18:25:24"
+  },
+  {
+    "subject": "ADBE",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ADBE_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ADBE_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:44:39",
+    "decisionFinished": "2026-10-22 18:13:19"
+  },
+  {
+    "subject": "CRM",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CRM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CRM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:09:10",
+    "decisionFinished": "2026-10-22 18:06:49"
+  },
+  {
+    "subject": "DDOG",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/DDOG_Datadog_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DDOG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DDOG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:37:22",
+    "decisionFinished": "2026-10-22 18:23:08"
+  },
+  {
+    "subject": "DT",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/DT_Dynatrace_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/DT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/DT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:41:21",
+    "decisionFinished": "2026-10-22 18:09:24"
+  },
+  {
+    "subject": "IBM",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/IBM_International_Business_Machines_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IBM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IBM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:44:11",
+    "decisionFinished": "2026-10-22 18:23:35"
+  },
+  {
+    "subject": "META",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/META_Meta_Platforms_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/META_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/META_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:30:02",
+    "decisionFinished": "2026-10-22 18:25:33"
+  },
+  {
+    "subject": "NOW",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/NOW_ServiceNow_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NOW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NOW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:18:44",
+    "decisionFinished": "2026-10-22 18:12:56"
+  },
+  {
+    "subject": "NTNX",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/NTNX_Nutanix_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/NTNX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/NTNX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:54:13",
+    "decisionFinished": "2026-10-22 18:07:42"
+  },
+  {
+    "subject": "PLTR",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/PLTR_Palantir_Technologies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PLTR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PLTR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:41:55",
+    "decisionFinished": "2026-10-22 18:16:14"
+  },
+  {
+    "subject": "SNOW",
+    "company": "基本面/公司调研/结果/企业软件_数据平台/SNOW_Snowflake_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/SNOW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/SNOW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:29:57",
+    "decisionFinished": "2026-10-22 18:19:17"
+  },
+  {
+    "subject": "CRWD",
+    "company": "基本面/公司调研/结果/网络安全_身份权限_治理/CRWD_CrowdStrike_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CRWD_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CRWD_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:31:19",
+    "decisionFinished": "2026-10-22 18:23:54"
+  },
+  {
+    "subject": "PANW",
+    "company": "基本面/公司调研/结果/网络安全_身份权限_治理/PANW_Palo_Alto_Networks_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PANW_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PANW_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:34:09",
+    "decisionFinished": "2026-10-22 18:28:02"
+  },
+  {
+    "subject": "ALNY",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ALNY_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ALNY_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:14:41",
+    "decisionFinished": "2026-10-22 18:22:55"
+  },
+  {
+    "subject": "ARGX",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ARGX_argenx_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ARGX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ARGX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:33:14",
+    "decisionFinished": "2026-10-22 18:21:43"
+  },
+  {
+    "subject": "BNTX",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BNTX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BNTX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:05:33",
+    "decisionFinished": "2026-10-22 19:04:41"
+  },
+  {
+    "subject": "IONS",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/IONS_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/IONS_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:32:16",
+    "decisionFinished": "2026-10-22 18:29:39"
+  },
+  {
+    "subject": "KYTX",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KYTX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KYTX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:14:50",
+    "decisionFinished": "2026-10-22 18:29:43"
+  },
+  {
+    "subject": "MRNA",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/MRNA_Moderna_莫德纳_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/MRNA_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/MRNA_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 15:23:11",
+    "decisionFinished": "2026-10-22 18:41:18"
+  },
+  {
+    "subject": "REGN",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/REGN_Regeneron_Pharmaceuticals_再生元_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/REGN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/REGN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:32:46",
+    "decisionFinished": "2026-10-22 18:28:10"
+  },
+  {
+    "subject": "VRTX",
+    "company": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/VRTX_Vertex_Pharmaceuticals_福泰制药_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/VRTX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/VRTX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:29:29",
+    "decisionFinished": "2026-10-22 18:23:01"
+  },
+  {
+    "subject": "BJ",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/BJ_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/BJ_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:53:20",
+    "decisionFinished": "2026-10-22 18:40:08"
+  },
+  {
+    "subject": "COST",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/COST_Costco_Wholesale_好市多_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/COST_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/COST_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:29:32",
+    "decisionFinished": "2026-10-22 18:21:43"
+  },
+  {
+    "subject": "KR",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/KR_The_Kroger_Co._克罗格_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/KR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/KR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 14:00:19",
+    "decisionFinished": "2026-10-22 18:21:23"
+  },
+  {
+    "subject": "ROST",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/ROST_Ross_Stores_罗斯百货_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ROST_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ROST_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:48:42",
+    "decisionFinished": "2026-10-22 18:24:57"
+  },
+  {
+    "subject": "TJX",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/TJX_The_TJX_Companies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TJX_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TJX_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:45:11",
+    "decisionFinished": "2026-10-22 18:26:51"
+  },
+  {
+    "subject": "WMT",
+    "company": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/WMT_Walmart_沃尔玛_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WMT_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WMT_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:50:38",
+    "decisionFinished": "2026-10-22 18:19:30"
+  },
+  {
+    "subject": "ACGL",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/ACGL_Arch_Capital_Group_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/ACGL_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/ACGL_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:44:56",
+    "decisionFinished": "2026-10-22 18:34:58"
+  },
+  {
+    "subject": "CB",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/CB_Chubb_Limited_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:58:13",
+    "decisionFinished": "2026-10-22 18:23:03"
+  },
+  {
+    "subject": "PGR",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/PGR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/PGR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:50:24",
+    "decisionFinished": "2026-10-22 18:28:45"
+  },
+  {
+    "subject": "RNR",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/RNR_RenaissanceRe_Holdings_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RNR_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RNR_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:43:26",
+    "decisionFinished": "2026-10-22 18:24:37"
+  },
+  {
+    "subject": "TRV",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/TRV_The_Travelers_Companies_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/TRV_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/TRV_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:57:05",
+    "decisionFinished": "2026-10-22 18:37:16"
+  },
+  {
+    "subject": "WRB",
+    "company": "基本面/公司调研/结果/保险_财产险_特色险_再保险/WRB_W._R._Berkley_Corporation_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WRB_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WRB_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:43:58",
+    "decisionFinished": "2026-10-22 18:47:07"
+  },
+  {
+    "subject": "CWST",
+    "company": "基本面/公司调研/结果/环境服务_固废_回收_资源化/CWST_Casella_Waste_Systems_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/CWST_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/CWST_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:43:31",
+    "decisionFinished": "2026-10-22 18:41:49"
+  },
+  {
+    "subject": "RSG",
+    "company": "基本面/公司调研/结果/环境服务_固废_回收_资源化/RSG_Republic_Services_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/RSG_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/RSG_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:56:00",
+    "decisionFinished": "2026-10-22 18:46:26"
+  },
+  {
+    "subject": "WCN",
+    "company": "基本面/公司调研/结果/环境服务_固废_回收_资源化/WCN_Waste_Connections_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WCN_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WCN_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 13:43:11",
+    "decisionFinished": "2026-10-22 18:49:39"
+  },
+  {
+    "subject": "WM",
+    "company": "基本面/公司调研/结果/环境服务_固废_回收_资源化/WM_Waste_Management_WM_公司调研_2026-10-22.md",
+    "decision": "分析报告/公司情景投资决策/结果/WM_经营情景市场状态投资决策_2026-10-22.md",
+    "json": "分析报告/公司情景投资决策/结构化数据/WM_经营情景市场状态投资决策_2026-10-22.json",
+    "companyFinished": "2026-10-22 11:43:46",
+    "decisionFinished": "2026-10-22 18:46:09"
+  }
+]

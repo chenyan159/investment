@@ -1,0 +1,82 @@
+[
+  {
+    "check": "NVDA base FCFF PV",
+    "recalculated": 3317.802846874171,
+    "reported": 3317.8,
+    "difference": 0.0028468741707001755,
+    "tolerance": 0.3,
+    "pass": true
+  },
+  {
+    "check": "NVDA base terminal PV",
+    "recalculated": 3424.673087881488,
+    "reported": 3424.6,
+    "difference": 0.0730878814879361,
+    "tolerance": 0.3,
+    "pass": true
+  },
+  {
+    "check": "NVDA base EV",
+    "recalculated": 6742.475934755659,
+    "reported": 6742.4,
+    "difference": 0.07593475565954577,
+    "tolerance": 0.5,
+    "pass": true
+  },
+  {
+    "check": "NVDA base DCF/share",
+    "recalculated": 321.9525734289556,
+    "reported": 321.95,
+    "difference": 0.0025734289555998657,
+    "tolerance": 0.05,
+    "pass": true
+  },
+  {
+    "check": "ETN base DCF/share",
+    "recalculated": 357.4859198130149,
+    "reported": 357.5,
+    "difference": -0.014080186985097498,
+    "tolerance": 0.3,
+    "pass": true
+  },
+  {
+    "check": "CRWD normalized business price",
+    "recalculated": 81.48576512455516,
+    "reported": 81.5,
+    "difference": -0.014234875444842032,
+    "tolerance": 0.1,
+    "pass": true
+  },
+  {
+    "check": "ANET normalized price waterfall before rerating",
+    "recalculated": 252.6,
+    "reported": 252.6,
+    "difference": 0.0,
+    "tolerance": 0.2,
+    "pass": true
+  },
+  {
+    "check": "ANET target low",
+    "recalculated": 246.1,
+    "reported": 246.1,
+    "difference": 0.0,
+    "tolerance": 0.2,
+    "pass": true
+  },
+  {
+    "check": "ANET target high",
+    "recalculated": 285.2,
+    "reported": 285.2,
+    "difference": 0.0,
+    "tolerance": 0.2,
+    "pass": true
+  },
+  {
+    "check": "MICLF native quote USD",
+    "recalculated": 30.372084233224847,
+    "reported": 30.37,
+    "difference": 0.002084233224845633,
+    "tolerance": 0.01,
+    "pass": true
+  }
+]

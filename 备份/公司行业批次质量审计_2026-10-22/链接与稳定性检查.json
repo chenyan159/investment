@@ -1,0 +1,1416 @@
+[
+  {
+    "subject": "数据中心电力接入与高压变电",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心自备发电与微电网",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心UPS与电池储能",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "动态UPS、飞轮与超级电容",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心开关设备与变压器",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "中压直流、800VDC与固态变压器",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心低压配电、PDU与母线槽",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "机柜级供电与服务器电源架构",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "功率半导体与高压保护器件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心土建、MEP与预制化交付",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "导管、桥架与线缆管理",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心风冷、冷水机组与HVAC",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据中心直液冷系统",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "液冷小组件与流体控制",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "冷却液、水处理、过滤与制冷剂",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "机柜、围护结构与物理安防",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "DCIM、能控与AI工厂数字孪生",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "核燃料循环与浓缩服务",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "商用AI加速芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "云厂自研AI ASIC",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI服务器CPU与控制平面芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI边缘推理芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI服务器整机与机架集成",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HBM与高带宽内存",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "系统内存、SOCAMM与内存模组",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "企业级SSD与高速存储控制器",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HDD、对象存储与冷温数据存储",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI-native存储与KV Cache基础设施",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CXL内存扩展与内存池化",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "片上SRAM、MRAM与近存计算",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI芯片先进封装",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "封装基板、中介层与RDL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "先进封装材料与热界面材料",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "服务器BMC、MCU与嵌入式控制",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "精密时钟与同步芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "EDA工具、接口IP与Chiplet IP",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI集群调度与推理运行时",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI云算力外包和NeoCloud与AI数据中心运营商",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MLCC与高端陶瓷电容",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI以太网交换系统与Fabric芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "InfiniBand与专有Scale-up互联",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "开放Scale-up互联",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "网卡、DPU与SmartNIC",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "PCIe/CXL高速I/O交换与Retimer",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "800G/1.6T可插拔光模块",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "LPO/LRO线性光模块",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "光DSP、TIA与CDR芯片",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "激光器、EML与光器件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CPO/NPO与交换侧光引擎",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "封装内光I/O与Optical Chiplet",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "Optical Interposer与新型光引擎",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "OCS光路交换",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "OCI （光学计算互连）/ Open CPX / XPO",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AEC、DAC与高速铜缆",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "高速连接器、背板与结构化布线",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI Fabric网络操作系统与遥测软件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "宽带接入、PON、DOCSIS 4.0与Wi-Fi 7",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "先进逻辑晶圆代工和封装",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "存储晶圆制造",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "特种晶圆代工",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI芯片前道制造设备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "存储前道制造设备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "先进封装设备与混合键合",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "半导体检测量测设备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "探针卡、ATE与系统级测试",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HBM与存储测试设备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "高速互连与光学验证测试",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "高端光罩与先进封装掩模",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "晶圆厂洁净室与厂务系统",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "半导体高纯水、气体与化学流体系统",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "高纯氟聚合物流体系统",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "硅片、光刻胶与前道材料",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "先进封装湿化学与表面处理材料",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "玻璃基板、TGV与玻璃检测",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "硅光材料、光子材料与电光聚合物",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "半导体设备子系统与真空/RF/流体模块",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI高多层PCB、低损耗覆铜板与铜箔",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "工业自动化控制、工业机器人与协作机器人",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "仓储物流机器人与自动化系统",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "人形机器人与关键执行部件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "工业机器视觉与精密感知",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "智能机器人与自主作业装备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "农业机械、精准农业与工程矿山装备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "运载火箭、航天器与空间基础设施",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "低轨卫星通信、直连手机与地面终端",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "地球观测、遥感数据与空间信息服务",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "军用无人系统、巡飞弹与战术自主装备",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "企业AI与Agent工作流软件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AI创作与文档生产软件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "数据平台、数据库与AI数据软件",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "网络安全、身份权限与AI治理",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "广告推荐、搜索与数字分发",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "云与AI应用可观测性、运维自动化",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "边缘云、应用交付与无服务器计算",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "mRNA与小核酸靶向药物",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "自身免疫与肿瘤新型免疫治疗",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+    "brokenLocalLinks": [],
+    "localLinkCount": 1,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "会员制仓储与食品综合零售",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "品牌折价零售与尾货供应链",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "个人与商业财产责任原保险",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "特色险、超额剩余险与全球再保险",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "固体废物处理、回收与资源化",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ALAB",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AMD",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ARM",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AVGO",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CDNS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MRVL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "NVDA",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "QCOM",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SNPS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CLS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 7,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "DELL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HPE",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MU",
+    "brokenLocalLinks": [],
+    "localLinkCount": 7,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SKHY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SMCI",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SNDK",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ANET",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "APH",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "COHR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CRDO",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "GLW",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "LITE",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MTSI",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "DHR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ENTG",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "LIN",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TTMI",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AMAT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ASML",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "KLAC",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "LRCX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TSM",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TOELY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ASMIY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ASX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ATEYY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "BESIY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 1,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CAMT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TER",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TMO",
+    "brokenLocalLinks": [],
+    "localLinkCount": 11,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ADI",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "IFNNY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MPWR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TXN",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ETN",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HUBB",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "NVT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "POWL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SBGSY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 16,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CAT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CEG",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "GEV",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "VST",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "BE",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "BWXT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "OKLO",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "VRT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 14,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MOD",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ECL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "EME",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "FIX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 10,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "PWR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AXON",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ISRG",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "DE",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ROK",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "TSLA",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "GE",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "HEI",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AVAV",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "KTOS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "RKLB",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "MSFT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "AMZN",
+    "brokenLocalLinks": [],
+    "localLinkCount": 7,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "GOOGL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 6,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ORCL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CRWV",
+    "brokenLocalLinks": [],
+    "localLinkCount": 14,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "NBIS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "EQIX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "META",
+    "brokenLocalLinks": [],
+    "localLinkCount": 5,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "NOW",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CRM",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "PLTR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "SNOW",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "CRWD",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "PANW",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "REGN",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "VRTX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ALNY",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ARGX",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "IONS",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "COST",
+    "brokenLocalLinks": [],
+    "localLinkCount": 4,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ROST",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "WMT",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "ACGL",
+    "brokenLocalLinks": [],
+    "localLinkCount": 0,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "PGR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "RNR",
+    "brokenLocalLinks": [],
+    "localLinkCount": 8,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "WM",
+    "brokenLocalLinks": [],
+    "localLinkCount": 2,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  },
+  {
+    "subject": "RSG",
+    "brokenLocalLinks": [],
+    "localLinkCount": 3,
+    "undefinedReferenceLinks": [],
+    "snapshotHashStable": true
+  }
+]

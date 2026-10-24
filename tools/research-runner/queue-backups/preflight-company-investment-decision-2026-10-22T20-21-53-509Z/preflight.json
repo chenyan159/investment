@@ -1,0 +1,82 @@
+{
+  "createdAt": "2026-10-22T20:21:54.303Z",
+  "draftOnly": true,
+  "activeQueueModified": false,
+  "outputDirectory": "D:\\investment\\tools\\research-runner\\queue-backups\\preflight-company-investment-decision-2026-10-22T20-21-53-509Z",
+  "indexCompanies": 253,
+  "candidates": 253,
+  "existingDecisionActive": 0,
+  "planVersion": "20261022_025821",
+  "planSha256": "2cbfce2a9aa2f81196c67dee54b50fba46073143600415525b5d4a7a61d6f79d",
+  "companyUpstream": {
+    "done_verified": 182,
+    "running": 71
+  },
+  "blockers": [],
+  "industryCompleted": 102,
+  "industryMissingFiles": [],
+  "backgroundCompleted": 24,
+  "backgroundMissingFiles": [],
+  "financeSnapshot": "金融资料/每日金融数据/每日金融数据_2026-10-21.md",
+  "financeMissing": [
+    "AXON",
+    "ISRG",
+    "GE",
+    "HEI",
+    "REGN",
+    "VRTX",
+    "ROST",
+    "ACGL"
+  ],
+  "unknownIndustry": [],
+  "promptErrors": [],
+  "outputContracts": 253,
+  "existingResultDates": {
+    "2026-10-02": 179,
+    "2026-10-11": 32,
+    "2026-10-16": 34
+  },
+  "validation": {
+    "exitCode": 0,
+    "stdout": "Active items: 253\nErrors: 0\nWarnings: 0\n",
+    "stderr": ""
+  },
+  "schedulerChecks": [
+    {
+      "upstreamStatus": "pending",
+      "attempts": 0,
+      "claimedDomain": "company",
+      "passed": true
+    },
+    {
+      "upstreamStatus": "running",
+      "attempts": 1,
+      "claimedDomain": null,
+      "passed": true
+    },
+    {
+      "upstreamStatus": "retry_pending",
+      "attempts": 1,
+      "claimedDomain": "company",
+      "passed": true
+    },
+    {
+      "upstreamStatus": "failed",
+      "attempts": 7,
+      "claimedDomain": "company-investment-decision",
+      "passed": true
+    },
+    {
+      "upstreamStatus": "done",
+      "attempts": 1,
+      "claimedDomain": "company-investment-decision",
+      "passed": true
+    },
+    {
+      "upstreamStatus": "retry_pending",
+      "attempts": 7,
+      "claimedDomain": "company-investment-decision",
+      "passed": true
+    }
+  ]
+}

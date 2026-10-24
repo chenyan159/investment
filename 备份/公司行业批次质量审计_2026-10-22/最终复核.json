@@ -1,0 +1,1016 @@
+{
+  "checkedAt": "2026-10-22T12:32:22.690206-07:00",
+  "reports": [
+    {
+      "subject": "数据中心电力接入与高压变电",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心自备发电与微电网",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心UPS与电池储能",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "动态UPS、飞轮与超级电容",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心开关设备与变压器",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "中压直流、800VDC与固态变压器",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心低压配电、PDU与母线槽",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "机柜级供电与服务器电源架构",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "功率半导体与高压保护器件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心土建、MEP与预制化交付",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "导管、桥架与线缆管理",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心风冷、冷水机组与HVAC",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据中心直液冷系统",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "液冷小组件与流体控制",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "冷却液、水处理、过滤与制冷剂",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "机柜、围护结构与物理安防",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "DCIM、能控与AI工厂数字孪生",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "核燃料循环与浓缩服务",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "商用AI加速芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "云厂自研AI ASIC",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI服务器CPU与控制平面芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI边缘推理芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI服务器整机与机架集成",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HBM与高带宽内存",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "系统内存、SOCAMM与内存模组",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "企业级SSD与高速存储控制器",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HDD、对象存储与冷温数据存储",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI-native存储与KV Cache基础设施",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CXL内存扩展与内存池化",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "片上SRAM、MRAM与近存计算",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI芯片先进封装",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "封装基板、中介层与RDL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "先进封装材料与热界面材料",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "服务器BMC、MCU与嵌入式控制",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "精密时钟与同步芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "EDA工具、接口IP与Chiplet IP",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI集群调度与推理运行时",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI云算力外包和NeoCloud与AI数据中心运营商",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MLCC与高端陶瓷电容",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI以太网交换系统与Fabric芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "InfiniBand与专有Scale-up互联",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "开放Scale-up互联",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "网卡、DPU与SmartNIC",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "PCIe/CXL高速I/O交换与Retimer",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "800G/1.6T可插拔光模块",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "LPO/LRO线性光模块",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "光DSP、TIA与CDR芯片",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "激光器、EML与光器件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CPO/NPO与交换侧光引擎",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "封装内光I/O与Optical Chiplet",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "Optical Interposer与新型光引擎",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "OCS光路交换",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "OCI （光学计算互连）/ Open CPX / XPO",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AEC、DAC与高速铜缆",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "高速连接器、背板与结构化布线",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI Fabric网络操作系统与遥测软件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "宽带接入、PON、DOCSIS 4.0与Wi-Fi 7",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "先进逻辑晶圆代工和封装",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "存储晶圆制造",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "特种晶圆代工",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI芯片前道制造设备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "存储前道制造设备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "先进封装设备与混合键合",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "半导体检测量测设备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "探针卡、ATE与系统级测试",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HBM与存储测试设备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "高速互连与光学验证测试",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "高端光罩与先进封装掩模",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "晶圆厂洁净室与厂务系统",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "半导体高纯水、气体与化学流体系统",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "高纯氟聚合物流体系统",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "硅片、光刻胶与前道材料",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "先进封装湿化学与表面处理材料",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "玻璃基板、TGV与玻璃检测",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "硅光材料、光子材料与电光聚合物",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "半导体设备子系统与真空/RF/流体模块",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI高多层PCB、低损耗覆铜板与铜箔",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "工业自动化控制、工业机器人与协作机器人",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "仓储物流机器人与自动化系统",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "人形机器人与关键执行部件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "工业机器视觉与精密感知",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "智能机器人与自主作业装备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "农业机械、精准农业与工程矿山装备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "运载火箭、航天器与空间基础设施",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "低轨卫星通信、直连手机与地面终端",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "地球观测、遥感数据与空间信息服务",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "军用无人系统、巡飞弹与战术自主装备",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "企业AI与Agent工作流软件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AI创作与文档生产软件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "数据平台、数据库与AI数据软件",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "网络安全、身份权限与AI治理",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "广告推荐、搜索与数字分发",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "云与AI应用可观测性、运维自动化",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "边缘云、应用交付与无服务器计算",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "mRNA与小核酸靶向药物",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "自身免疫与肿瘤新型免疫治疗",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "生命科学仪器、生物工艺耗材与研发生产服务",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "会员制仓储与食品综合零售",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "品牌折价零售与尾货供应链",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "个人与商业财产责任原保险",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "特色险、超额剩余险与全球再保险",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "固体废物处理、回收与资源化",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ALAB",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AMD",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ARM",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AVGO",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CDNS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MRVL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "NVDA",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "QCOM",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SNPS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CLS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "DELL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HPE",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MU",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SKHY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SMCI",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SNDK",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ANET",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "APH",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "COHR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CRDO",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "GLW",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "LITE",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MTSI",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "DHR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ENTG",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "LIN",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TTMI",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AMAT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ASML",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "KLAC",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "LRCX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TSM",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TOELY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ASMIY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ASX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ATEYY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "BESIY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CAMT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TER",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TMO",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ADI",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "IFNNY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MPWR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TXN",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ETN",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HUBB",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "NVT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "POWL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SBGSY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CAT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CEG",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "GEV",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "VST",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "BE",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "BWXT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "OKLO",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "VRT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MOD",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ECL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "EME",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "FIX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "PWR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AXON",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ISRG",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "DE",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ROK",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "TSLA",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "GE",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "HEI",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AVAV",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "KTOS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "RKLB",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "MSFT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "AMZN",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "GOOGL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ORCL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CRWV",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "NBIS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "EQIX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "META",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "NOW",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CRM",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "PLTR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "SNOW",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "CRWD",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "PANW",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "REGN",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "VRTX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ALNY",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ARGX",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "IONS",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "COST",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ROST",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "WMT",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "ACGL",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "PGR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "RNR",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "WM",
+      "exists": true,
+      "hashStable": true
+    },
+    {
+      "subject": "RSG",
+      "exists": true,
+      "hashStable": true
+    }
+  ],
+  "all202Stable": true
+}

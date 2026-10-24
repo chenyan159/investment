@@ -1,0 +1,2018 @@
+[
+  {
+    "subject": "ALAB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ALAB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ALAB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMBA",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMBA_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMBA_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ARM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ARM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ARM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AVGO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AVGO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AVGO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CBRS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CBRS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CBRS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CDNS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CDNS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CDNS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "INTC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/INTC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/INTC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MCHP",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MCHP_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MCHP_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MRVL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MRVL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MRVL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MXL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MXL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MXL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NVDA",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NVDA_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NVDA_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "QCOM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/QCOM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/QCOM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SNPS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SNPS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SNPS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CLS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CLS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CLS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DELL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DELL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DELL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FLEX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FLEX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FLEX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "HPE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/HPE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/HPE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "JBL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/JBL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/JBL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MRAM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MRAM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MRAM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MU",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MU_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MU_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NTAP",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NTAP_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NTAP_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "P",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/P_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/P_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PENG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PENG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PENG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RMBS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RMBS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RMBS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SANM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SANM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SANM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SIMO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SIMO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SIMO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SKHY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SKHY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SKHY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SMCI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SMCI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SMCI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SNDK",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SNDK_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SNDK_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "STX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/STX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/STX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WDC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WDC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WDC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AAOI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AAOI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AAOI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ANET",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ANET_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ANET_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "APH",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/APH_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/APH_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BDC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BDC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BDC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BELFB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BELFB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BELFB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CIEN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CIEN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CIEN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "COHR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/COHR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/COHR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CRDO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CRDO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CRDO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CSCO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CSCO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CSCO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GLW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GLW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GLW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LITE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LITE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LITE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LWLG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LWLG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LWLG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MTSI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MTSI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MTSI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NOK",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NOK_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NOK_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "POET",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/POET_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/POET_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SITM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SITM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SITM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SMTC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SMTC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SMTC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TEL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TEL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TEL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VIAV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VIAV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VIAV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VISN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VISN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VISN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AJNMY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AJNMY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AJNMY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "APD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/APD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/APD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASGLY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASGLY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASGLY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AXTI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AXTI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AXTI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DHR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DHR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DHR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ENTG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ENTG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ENTG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "HOCPY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/HOCPY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/HOCPY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LIN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LIN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LIN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MMM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MMM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MMM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MTRN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MTRN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MTRN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PCRHY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PCRHY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PCRHY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "Q",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/Q_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/Q_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ROG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ROG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ROG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SHECY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SHECY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SHECY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SMTOY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SMTOY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SMTOY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SOMMY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SOMMY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SOMMY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TTMI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TTMI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TTMI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ACLS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ACLS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ACLS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ACMR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ACMR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ACMR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AEIS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AEIS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AEIS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMAT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMAT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMAT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASMIY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASMIY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASMIY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASML",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASML_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASML_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DSCSY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DSCSY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DSCSY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GFS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GFS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GFS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ICHR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ICHR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ICHR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KLAC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KLAC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KLAC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LRCX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LRCX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LRCX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MKSI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MKSI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MKSI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NVMI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NVMI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NVMI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TOELY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TOELY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TOELY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TSEM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TSEM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TSEM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TSM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TSM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TSM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "UCTT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/UCTT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/UCTT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "UMC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/UMC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/UMC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VECO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VECO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VECO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AEHR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AEHR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AEHR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMKR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMKR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMKR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASMVY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASMVY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASMVY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ATEYY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ATEYY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ATEYY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BESIY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BESIY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BESIY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CAMT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CAMT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CAMT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "COHU",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/COHU_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/COHU_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FORM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FORM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FORM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IMOS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IMOS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IMOS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KEYS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KEYS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KEYS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KLIC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KLIC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KLIC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MICLF",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MICLF_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MICLF_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NDSN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NDSN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NDSN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ONTO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ONTO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ONTO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PLAB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PLAB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PLAB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TDY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TDY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TDY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TER",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TER_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TER_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TMO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TMO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TMO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ADI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ADI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ADI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ALGM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ALGM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ALGM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AOSL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AOSL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AOSL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DIOD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DIOD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DIOD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IFNNY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IFNNY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IFNNY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LFUS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LFUS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LFUS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MPWR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MPWR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MPWR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MRAAY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MRAAY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MRAAY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NVTS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NVTS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NVTS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ON",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ON_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ON_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "POWI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/POWI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/POWI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ST",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ST_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ST_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "STM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/STM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/STM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TTDKY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TTDKY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TTDKY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TXN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TXN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TXN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VSH",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VSH_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VSH_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WOLF",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WOLF_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WOLF_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ABBNY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ABBNY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ABBNY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ETN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ETN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ETN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "HUBB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/HUBB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/HUBB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MIELY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MIELY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MIELY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NVT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NVT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NVT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "POWL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/POWL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/POWL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SBGSY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SBGSY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SBGSY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VICR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VICR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VICR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AEP",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AEP_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AEP_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMPX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMPX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMPX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BWXT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BWXT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BWXT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CAT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CAT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CAT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CCJ",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CCJ_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CCJ_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CEG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CEG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CEG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CMI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CMI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CMI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DTE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DTE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DTE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ENPH",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ENPH_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ENPH_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ENS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ENS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ENS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ET",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ET_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ET_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ETR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ETR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ETR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FCEL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FCEL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FCEL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FLNC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FLNC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FLNC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GEV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GEV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GEV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GNRC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GNRC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GNRC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "HTHIY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/HTHIY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/HTHIY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "LEU",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/LEU_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/LEU_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "OKLO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/OKLO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/OKLO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PSIX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PSIX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PSIX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RYCEY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RYCEY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RYCEY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SMR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SMR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SMR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VST",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VST_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VST_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AAON",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AAON_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AAON_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CARR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CARR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CARR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DCI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DCI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DCI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DKILY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DKILY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DKILY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DOV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DOV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DOV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ECL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ECL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ECL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ITT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ITT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ITT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "JCI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/JCI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/JCI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MOD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MOD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MOD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PH",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PH_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PH_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PNR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PNR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PNR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SPXC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SPXC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SPXC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VRT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VRT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VRT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "EME",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/EME_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/EME_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FIX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FIX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FIX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IESC",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IESC_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IESC_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MYRG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MYRG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MYRG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PWR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PWR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PWR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AGCO",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AGCO_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AGCO_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ALLE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ALLE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ALLE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AXON",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AXON_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AXON_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CGNX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CGNX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CGNX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "EMR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/EMR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/EMR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FANUY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FANUY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FANUY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "FTV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/FTV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/FTV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ISRG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ISRG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ISRG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MSI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MSI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MSI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ROK",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ROK_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ROK_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SMCAY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SMCAY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SMCAY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SYM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SYM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SYM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TSLA",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TSLA_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TSLA_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "YASKY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/YASKY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/YASKY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ASTS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ASTS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ASTS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AVAV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AVAV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AVAV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "HEI",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/HEI_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/HEI_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KTOS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KTOS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KTOS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RDW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RDW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RDW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RKLB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RKLB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RKLB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SPCX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SPCX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SPCX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "AMZN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/AMZN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/AMZN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "APLD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/APLD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/APLD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BABA",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BABA_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BABA_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CRWV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CRWV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CRWV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DLR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DLR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DLR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "EQIX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/EQIX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/EQIX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "GOOGL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/GOOGL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/GOOGL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IREN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IREN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IREN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MSFT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MSFT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MSFT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NBIS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NBIS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NBIS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NET",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NET_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NET_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ORCL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ORCL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ORCL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ADBE",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ADBE_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ADBE_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CRM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CRM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CRM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DDOG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DDOG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DDOG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "DT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/DT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/DT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IBM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IBM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IBM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "META",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/META_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/META_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NOW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NOW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NOW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "NTNX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/NTNX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/NTNX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PLTR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PLTR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PLTR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "SNOW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/SNOW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/SNOW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CRWD",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CRWD_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CRWD_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PANW",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PANW_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PANW_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ALNY",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ALNY_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ALNY_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ARGX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ARGX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ARGX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BNTX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BNTX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BNTX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "IONS",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/IONS_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/IONS_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KYTX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KYTX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KYTX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "MRNA",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/MRNA_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/MRNA_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "REGN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/REGN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/REGN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "VRTX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/VRTX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/VRTX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "BJ",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/BJ_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/BJ_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "COST",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/COST_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/COST_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "KR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/KR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/KR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ROST",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ROST_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ROST_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TJX",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TJX_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TJX_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WMT",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WMT_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WMT_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "ACGL",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/ACGL_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/ACGL_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "PGR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/PGR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/PGR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RNR",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RNR_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RNR_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "TRV",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/TRV_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/TRV_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WRB",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WRB_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WRB_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "CWST",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/CWST_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/CWST_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "RSG",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/RSG_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/RSG_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WCN",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WCN_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WCN_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  },
+  {
+    "subject": "WM",
+    "projectRoot": "D:\\investment",
+    "runDate": "2026-10-22",
+    "expectedOutputFile": "分析报告/公司对比/结果/WM_逐家公司投资思路对比_2026-10-22.md",
+    "expectedCompanionFile": "分析报告/公司对比/结构化数据/WM_逐家公司投资思路对比_2026-10-22.json",
+    "expectedOutputDir": "分析报告/公司对比/结果"
+  }
+]

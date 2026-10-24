@@ -1,0 +1,296 @@
+# 253家公司股票代号、公司名称和分类目录
+
+更新日期：2026-10-22
+
+本索引是公司名称、股票代号、主分类和正式报告目录的权威入口。共253家公司、20个正式主分类。新增公司只登记，不生成占位研究报告。
+
+2026-10-09五个行业扩展纳入28家公司观察样本，其中24家新增登记，FANUY、YASKY、SYM、TSLA复用原条目并补充关联行业。
+
+2026-10-22结合行业主题拆分新增登记8家高质量龙头公司（ISRG、AXON、GE、HEI、VRTX、REGN、ACGL、ROST），并同步更新生物医药、生科工具（DHR、TMO）、农机工程装备（DE、AGCO、CAT）、军工无人系统（AVAV、KTOS、CW）、零售与财险再保险公司的关联行业映射。公司登记不代表单家公司研究已经完成或公司任务已入队。
+
+主类别用于项目研究归属，不代表集团全部收入。业务标签和关联行业是分类元数据，不是研究结论或研究方案；未填关联行业的公司沿用主类别关联。未知业务份额不按100%推定。美国OTC ADR交易须券商支持。
+
+2026-09-10迁移时点：193家公司已有正式报告，25家新增待研究；后续研究完成情况以分类目录内实际最新报告为准。历史备份不计入当前报告数量。
+
+正式报告根目录：`基本面/公司调研/结果/`。下表目录列相对于该根目录；分类名称保持不变。
+
+## 目录统计
+
+- AI计算芯片_EDA_IP_custom_ASIC：14 家
+- AI服务器_存储_EMS：19 家
+- AI网络_光互联_连接器：20 家
+- 电子材料_化学品_基板_PCB：19 家
+- 晶圆制造_前道设备：19 家
+- 封测_检测_计量_光罩：19 家
+- 功率半导体_电源管理_传感器：17 家
+- 配电_电源系统_电气设备：9 家
+- 电力_发电_能源_储能：25 家
+- 热管理_流体_水处理：14 家
+- 工程建设_机电安装：5 家
+- 机器人_工业自动化_智能硬件：15 家
+- 航空航天_卫星_高可靠系统：10 家
+- 云算力_IDC_边缘云：12 家
+- 企业软件_数据平台：10 家
+- 网络安全_身份权限_治理：2 家
+- 生物医药_核酸药物_免疫治疗：8 家
+- 零售_会员制_食品_折扣渠道：6 家
+- 保险_财产险_特色险_再保险：6 家
+- 环境服务_固废_回收_资源化：4 家
+
+## 索引表
+
+| 股票代号 | 公司名称 | 目录 | 业务标签 | 关联行业 | 交易身份与登记备注 |
+|---|---|---|---|---|---|
+| ALAB | AsteraLabs | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| AMBA | Ambarella | `AI计算芯片_EDA_IP_custom_ASIC/` | 低功耗视觉AI SoC、CVflow架构、视频与多传感器处理 | AI边缘推理芯片；工业机器视觉与精密感知 | Nasdaq；2026-09-10新增登记 |
+| AMD | Advanced Micro Devices | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| ARM | Arm Holdings | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| AVGO | Broadcom | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| CBRS | Cerebras Systems Inc | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| CDNS | Cadence Design Systems | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| INTC | Intel Corporation 英特尔 | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| MCHP | Microchip Technology | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| MRVL | Marvell Technology | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| MXL | MaxLinear | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| NVDA | NVIDIA | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| QCOM | Qualcomm | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| SNPS | Synopsys | `AI计算芯片_EDA_IP_custom_ASIC/` |  |  |  |
+| CLS | Celestica Inc | `AI服务器_存储_EMS/` |  |  |  |
+| DELL | Dell Technologies | `AI服务器_存储_EMS/` |  |  |  |
+| FLEX | Flex Ltd | `AI服务器_存储_EMS/` |  |  |  |
+| FN | Fabrinet | `AI服务器_存储_EMS/` |  |  |  |
+| HPE | 惠普企业 | `AI服务器_存储_EMS/` |  |  |  |
+| JBL | Jabil Inc | `AI服务器_存储_EMS/` |  |  |  |
+| MRAM | Everspin Technologies | `AI服务器_存储_EMS/` |  |  |  |
+| MU | Micron Technology 美光科技 | `AI服务器_存储_EMS/` |  |  |  |
+| NTAP | NetApp | `AI服务器_存储_EMS/` |  |  |  |
+| P | Everpure | `AI服务器_存储_EMS/` |  |  |  |
+| PENG | Penguin Solutions | `AI服务器_存储_EMS/` |  |  |  |
+| RMBS | Rambus | `AI服务器_存储_EMS/` |  |  |  |
+| SANM | Sanmina Corporation | `AI服务器_存储_EMS/` |  |  |  |
+| SIMO | Silicon Motion Technology | `AI服务器_存储_EMS/` |  |  |  |
+| SKHY | SK hynix Inc | `AI服务器_存储_EMS/` |  |  |  |
+| SMCI | Super Micro Computer Inc | `AI服务器_存储_EMS/` |  |  |  |
+| SNDK | SanDisk | `AI服务器_存储_EMS/` |  |  |  |
+| STX | Seagate Technology | `AI服务器_存储_EMS/` |  |  |  |
+| WDC | WesternDigital | `AI服务器_存储_EMS/` |  |  |  |
+| AAOI | Applied Optoelectronics | `AI网络_光互联_连接器/` |  |  |  |
+| ANET | Arista Networks | `AI网络_光互联_连接器/` |  |  |  |
+| APH | Amphenol 安费诺 | `AI网络_光互联_连接器/` |  |  |  |
+| BDC | Belden | `AI网络_光互联_连接器/` |  |  |  |
+| BELFB | Bel Fuse Inc | `AI网络_光互联_连接器/` |  |  |  |
+| CIEN | Ciena Corporation | `AI网络_光互联_连接器/` |  |  |  |
+| COHR | Coherent | `AI网络_光互联_连接器/` |  |  |  |
+| CRDO | Credo Technology Group | `AI网络_光互联_连接器/` |  |  |  |
+| CSCO | Cisco Systems | `AI网络_光互联_连接器/` |  |  |  |
+| GLW | Corning | `AI网络_光互联_连接器/` |  |  |  |
+| LITE | Lumentum | `AI网络_光互联_连接器/` |  |  |  |
+| LWLG | Lightwave Logic | `AI网络_光互联_连接器/` |  |  |  |
+| MTSI | MACOM Technology Solutions | `AI网络_光互联_连接器/` |  |  |  |
+| NOK | 诺基亚 | `AI网络_光互联_连接器/` |  |  |  |
+| POET | POET Technologies | `AI网络_光互联_连接器/` |  |  |  |
+| SITM | SiTime Corporation | `AI网络_光互联_连接器/` |  |  |  |
+| SMTC | Semtech Corporation | `AI网络_光互联_连接器/` |  |  |  |
+| TEL | TE Connectivity | `AI网络_光互联_连接器/` |  |  |  |
+| VIAV | VIAVI Solutions | `AI网络_光互联_连接器/` |  |  |  |
+| VISN | Vistance Networks | `AI网络_光互联_连接器/` |  |  |  |
+| AJNMY | 味之素 Ajinomoto | `电子材料_化学品_基板_PCB/` |  |  |  |
+| APD | Air Products and Chemicals | `电子材料_化学品_基板_PCB/` |  |  |  |
+| ASGLY | AGC Inc | `电子材料_化学品_基板_PCB/` |  |  |  |
+| AXTI | AXT Inc | `电子材料_化学品_基板_PCB/` |  |  |  |
+| CC | The Chemours Company | `电子材料_化学品_基板_PCB/` |  |  |  |
+| DD | DuPont de Nemours | `电子材料_化学品_基板_PCB/` |  |  |  |
+| DHR | Danaher Corporation | `电子材料_化学品_基板_PCB/` | 生命科学、生物工艺、诊断、精密分析；沿用项目研究分类 | 生命科学仪器、生物工艺耗材与研发生产服务 |  |
+| ENTG | Entegris | `电子材料_化学品_基板_PCB/` |  |  |  |
+| HOCPY | HOYA Corporation | `电子材料_化学品_基板_PCB/` | 光罩、精密光学、医疗与视力保健 |  |  |
+| LIN | Linde plc | `电子材料_化学品_基板_PCB/` |  |  |  |
+| MMM | 3M | `电子材料_化学品_基板_PCB/` |  |  |  |
+| MTRN | Materion | `电子材料_化学品_基板_PCB/` |  |  |  |
+| PCRHY | Panasonic Holdings 松下控股 | `电子材料_化学品_基板_PCB/` | MEGTRON低损耗覆铜板与多层电路材料；集团另含电池、家电及工业业务 | AI高多层PCB、低损耗覆铜板与铜箔 | 美国OTC非保荐ADR；需券商支持；使用PCRHY而非旧PCRFY；2026-09-18新增登记 |
+| Q | Qnity Electronics | `电子材料_化学品_基板_PCB/` |  |  |  |
+| ROG | Rogers Corporation | `电子材料_化学品_基板_PCB/` |  |  |  |
+| SHECY | Shin-Etsu Chemical 信越化学 | `电子材料_化学品_基板_PCB/` |  |  |  |
+| SMTOY | 住友电工 Sumitomo Electric Industries | `电子材料_化学品_基板_PCB/` |  |  |  |
+| SOMMY | 住友化学 Sumitomo Chemical | `电子材料_化学品_基板_PCB/` |  |  |  |
+| TTMI | TTM Technologies | `电子材料_化学品_基板_PCB/` | 高多层/高密度PCB、RF微波组件、航空航天认证与复杂互连制造 | 高速连接器、背板与结构化布线；封装基板、中介层与RDL；AI高多层PCB、低损耗覆铜板与铜箔 | Nasdaq；2026-09-10新增登记 |
+| ACLS | Axcelis Technologies | `晶圆制造_前道设备/` |  |  |  |
+| ACMR | ACM Research | `晶圆制造_前道设备/` |  |  |  |
+| AEIS | Advanced Energy Industries | `晶圆制造_前道设备/` |  |  |  |
+| AMAT | Applied Materials | `晶圆制造_前道设备/` |  |  |  |
+| ASMIY | ASM International | `晶圆制造_前道设备/` |  |  |  |
+| ASML | ASML Holding NV | `晶圆制造_前道设备/` |  |  |  |
+| DSCSY | DISCO | `晶圆制造_前道设备/` |  |  |  |
+| GFS | GlobalFoundries | `晶圆制造_前道设备/` |  |  |  |
+| ICHR | Ichor Holdings | `晶圆制造_前道设备/` |  |  |  |
+| KLAC | KLA Corporation | `晶圆制造_前道设备/` |  |  |  |
+| LRCX | Lam Research | `晶圆制造_前道设备/` |  |  |  |
+| MKSI | MKS Inc | `晶圆制造_前道设备/` |  |  |  |
+| NVMI | Nova Ltd | `晶圆制造_前道设备/` |  |  |  |
+| TOELY | Tokyo Electron | `晶圆制造_前道设备/` |  |  |  |
+| TSEM | Tower Semiconductor | `晶圆制造_前道设备/` |  |  |  |
+| TSM | 台积电 | `晶圆制造_前道设备/` |  |  |  |
+| UCTT | Ultra Clean Holdings | `晶圆制造_前道设备/` |  |  |  |
+| UMC | United Microelectronics 联华电子 | `晶圆制造_前道设备/` |  |  |  |
+| VECO | Veeco Instruments | `晶圆制造_前道设备/` |  |  |  |
+| AEHR | Aehr Test Systems | `封测_检测_计量_光罩/` |  |  |  |
+| AMKR | Amkor Technology | `封测_检测_计量_光罩/` |  |  |  |
+| ASMVY | ASMPT | `封测_检测_计量_光罩/` |  |  |  |
+| ASX | ASE Technology Holding | `封测_检测_计量_光罩/` |  |  |  |
+| ATEYY | Advantest | `封测_检测_计量_光罩/` |  |  |  |
+| BESIY | BE Semiconductor | `封测_检测_计量_光罩/` |  |  |  |
+| CAMT | Camtek | `封测_检测_计量_光罩/` |  |  |  |
+| COHU | Cohu Inc | `封测_检测_计量_光罩/` |  |  |  |
+| FORM | FormFactor | `封测_检测_计量_光罩/` |  |  |  |
+| IMOS | ChipMOS Technologies 南茂科技 | `封测_检测_计量_光罩/` |  |  |  |
+| KEYS | Keysight Technologies | `封测_检测_计量_光罩/` |  |  |  |
+| KLIC | Kulicke Soffa | `封测_检测_计量_光罩/` |  |  |  |
+| MICLF | Mycronic AB | `封测_检测_计量_光罩/` |  |  |  |
+| NDSN | Nordson | `封测_检测_计量_光罩/` | 精密点胶、装配设备、检测、医疗耗材 | 先进封装设备与混合键合；半导体检测量测设备 |  |
+| ONTO | Onto Innovation | `封测_检测_计量_光罩/` |  |  |  |
+| PLAB | Photronics | `封测_检测_计量_光罩/` |  |  |  |
+| TDY | Teledyne Technologies | `封测_检测_计量_光罩/` |  |  |  |
+| TER | Teradyne | `封测_检测_计量_光罩/` |  |  |  |
+| TMO | Thermo Fisher Scientific | `封测_检测_计量_光罩/` | 科学仪器、分析检测、生命科学服务 | 生命科学仪器、生物工艺耗材与研发生产服务 |  |
+| ADI | Analog Devices | `功率半导体_电源管理_传感器/` | 模拟信号链、数据转换、电源管理、汽车与工业 | 功率半导体与高压保护器件；工业机器视觉与精密感知 |  |
+| ALGM | Allegro MicroSystems | `功率半导体_电源管理_传感器/` | 磁性电流/位置传感、电机驱动、安全电源IC | 功率半导体与高压保护器件；工业机器视觉与精密感知 | Nasdaq；2026-09-10新增登记 |
+| AOSL | Alpha and Omega Semiconductor | `功率半导体_电源管理_传感器/` |  |  |  |
+| DIOD | Diodes Incorporated | `功率半导体_电源管理_传感器/` |  |  |  |
+| IFNNY | Infineon Technologies AG 英飞凌科技 | `功率半导体_电源管理_传感器/` |  |  |  |
+| LFUS | Littelfuse | `功率半导体_电源管理_传感器/` | 电路保护、熔断器、功率器件、工业与汽车 |  |  |
+| MPWR | Monolithic Power Systems | `功率半导体_电源管理_传感器/` |  |  |  |
+| MRAAY | Murata Manufacturing | `功率半导体_电源管理_传感器/` | MLCC、被动元件、通信模块、电源与传感 | MLCC与高端陶瓷电容；机柜级供电与服务器电源架构 |  |
+| NVTS | Navitas Semiconductor | `功率半导体_电源管理_传感器/` |  |  |  |
+| ON | onsemi | `功率半导体_电源管理_传感器/` | 功率半导体、SiC、图像传感、汽车与工业 | 功率半导体与高压保护器件；工业机器视觉与精密感知 |  |
+| POWI | Power Integrations | `功率半导体_电源管理_传感器/` |  |  |  |
+| ST | Sensata Technologies | `功率半导体_电源管理_传感器/` |  |  |  |
+| STM | STMicroelectronics | `功率半导体_电源管理_传感器/` | 功率半导体、MCU、传感器、汽车与工业 | 功率半导体与高压保护器件；服务器BMC、MCU与嵌入式控制 |  |
+| TTDKY | TDK Corporation | `功率半导体_电源管理_传感器/` | 被动元件、磁性材料、传感器、电池 | MLCC与高端陶瓷电容；工业机器视觉与精密感知 |  |
+| TXN | 德州仪器 | `功率半导体_电源管理_传感器/` | 模拟芯片、电源管理、嵌入式处理、汽车与工业 | 功率半导体与高压保护器件；服务器BMC、MCU与嵌入式控制 |  |
+| VSH | Vishay Intertechnology | `功率半导体_电源管理_传感器/` |  |  |  |
+| WOLF | Wolfspeed | `功率半导体_电源管理_传感器/` |  |  |  |
+| ABBNY | ABB Ltd | `配电_电源系统_电气设备/` |  |  |  |
+| ATKR | Atkore | `配电_电源系统_电气设备/` |  |  |  |
+| ETN | Eaton Corporation | `配电_电源系统_电气设备/` |  |  |  |
+| HUBB | Hubbell | `配电_电源系统_电气设备/` |  |  |  |
+| MIELY | 三菱电机 Mitsubishi Electric | `配电_电源系统_电气设备/` |  |  |  |
+| NVT | nVent Electric | `配电_电源系统_电气设备/` |  |  |  |
+| POWL | Powell Industries | `配电_电源系统_电气设备/` |  |  |  |
+| SBGSY | Schneider Electric 施耐德 | `配电_电源系统_电气设备/` | 配电、UPS、控制、能管与热管理集成能力 | 数据中心开关设备与变压器；数据中心UPS与电池储能；数据中心直液冷系统；DCIM、能控与AI工厂数字孪生 | 美国OTC ADR；需券商支持；2026-09-10新增登记 |
+| VICR | Vicor Corporation | `配电_电源系统_电气设备/` | 模块化电源、功率转换、封装工艺 | 机柜级供电与服务器电源架构 |  |
+| AEP | American Electric Power | `电力_发电_能源_储能/` |  |  |  |
+| AMPX | Amprius Technologies | `电力_发电_能源_储能/` |  |  |  |
+| BE | Bloom Energy | `电力_发电_能源_储能/` |  |  |  |
+| BWXT | BWX Technologies | `电力_发电_能源_储能/` |  |  |  |
+| CAT | Caterpillar Inc | `电力_发电_能源_储能/` | 发电机组、发动机、工程机械、矿业机械、金融服务 | 数据中心自备发电与微电网；农业机械、精准农业与工程矿山装备 |  |
+| CCJ | Cameco | `电力_发电_能源_储能/` | 铀资源、转化/燃料服务及Westinghouse技术与服务股权 | 数据中心自备发电与微电网；核燃料循环与浓缩服务 | NYSE；2026-09-10新增登记 |
+| CEG | Constellation Energy | `电力_发电_能源_储能/` |  |  |  |
+| CMI | Cummins Inc | `电力_发电_能源_储能/` |  |  |  |
+| DTE | DTE Energy Company | `电力_发电_能源_储能/` |  |  |  |
+| ENPH | Enphase Energy | `电力_发电_能源_储能/` |  |  |  |
+| ENS | EnerSys | `电力_发电_能源_储能/` |  |  |  |
+| ET | Energy Transfer LP | `电力_发电_能源_储能/` |  |  |  |
+| ETR | Entergy Corporation | `电力_发电_能源_储能/` |  |  |  |
+| FCEL | FuelCell Energy | `电力_发电_能源_储能/` |  |  |  |
+| FLNC | Fluence Energy | `电力_发电_能源_储能/` |  |  |  |
+| GEV | GE Vernova | `电力_发电_能源_储能/` |  |  |  |
+| GNRC | Generac Holdings | `电力_发电_能源_储能/` |  |  |  |
+| HTHIY | Hitachi Ltd | `电力_发电_能源_储能/` |  |  |  |
+| LEU | Centrus Energy | `电力_发电_能源_储能/` | 铀浓缩离心机与HALEU生产能力、核许可与工艺经验 | 数据中心自备发电与微电网；核燃料循环与浓缩服务 | NYSE；2026-09-10新增登记 |
+| OKLO | Oklo Inc | `电力_发电_能源_储能/` |  |  |  |
+| PSIX | Power Solutions International | `电力_发电_能源_储能/` |  |  |  |
+| RYCEY | Rolls-Royce Holdings | `电力_发电_能源_储能/` |  |  |  |
+| SMR | NuScale Power | `电力_发电_能源_储能/` |  |  |  |
+| TE | T1 Energy Inc | `电力_发电_能源_储能/` |  |  |  |
+| VST | Vistra Corp | `电力_发电_能源_储能/` |  |  |  |
+| AAON | AAON | `热管理_流体_水处理/` |  |  |  |
+| CARR | Carrier Global | `热管理_流体_水处理/` |  |  |  |
+| DCI | Donaldson Company | `热管理_流体_水处理/` |  |  |  |
+| DKILY | Daikin Industries | `热管理_流体_水处理/` | 暖通空调、冷水机组、制冷剂、氟化学 | 数据中心风冷、冷水机组与HVAC；冷却液、水处理、过滤与制冷剂 |  |
+| DOV | Dover Corporation | `热管理_流体_水处理/` |  |  |  |
+| ECL | Ecolab | `热管理_流体_水处理/` | 水处理、清洁与卫生服务、流体化学、热管理 | 冷却液、水处理、过滤与制冷剂；数据中心直液冷系统 |  |
+| ITT | ITT | `热管理_流体_水处理/` | 工业泵阀、流体处理、高可靠连接器、振动与运动部件 | 液冷小组件与流体控制；高速连接器、背板与结构化布线 | NYSE；2026-09-10新增登记 |
+| JCI | Johnson Controls | `热管理_流体_水处理/` |  |  |  |
+| MOD | Modine Manufacturing | `热管理_流体_水处理/` |  |  |  |
+| PH | Parker-Hannifin | `热管理_流体_水处理/` | 流体控制、运动控制、航空航天部件 | 液冷小组件与流体控制；运载火箭、航天器与空间基础设施 |  |
+| PNR | Pentair plc | `热管理_流体_水处理/` |  |  |  |
+| SPXC | SPX Technologies | `热管理_流体_水处理/` | 冷却塔、干式/绝热排热、空气管理及专用检测设备 | 数据中心风冷、冷水机组与HVAC；数据中心直液冷系统 | NYSE；2026-09-10新增登记 |
+| TT | Trane Technologies | `热管理_流体_水处理/` |  |  |  |
+| VRT | Vertiv | `热管理_流体_水处理/` | 热管理、电源系统、数据中心集成交付 | 数据中心直液冷系统；数据中心风冷、冷水机组与HVAC；机柜级供电与服务器电源架构 |  |
+| EME | EMCOR Group | `工程建设_机电安装/` |  |  |  |
+| FIX | Comfort Systems USA | `工程建设_机电安装/` |  |  |  |
+| IESC | IES Holdings | `工程建设_机电安装/` |  |  |  |
+| MYRG | MYR Group | `工程建设_机电安装/` |  |  |  |
+| PWR | Quanta Services | `工程建设_机电安装/` | 输配电工程、并网、机电施工、项目交付 | 数据中心电力接入与高压变电；数据中心土建、MEP与预制化交付 |  |
+| AGCO | AGCO Corporation | `机器人_工业自动化_智能硬件/` | 农业机械、PTx精准技术、农机改造与作业自动化 | 农业机械、精准农业与工程矿山装备；智能机器人与自主作业装备 | NYSE；2026-10-09新增登记 |
+| ALLE | Allegion plc | `机器人_工业自动化_智能硬件/` | 门禁、物理安防、建筑智能硬件 | 机柜、围护结构与物理安防 |  |
+| AXON | Axon Enterprise | `机器人_工业自动化_智能硬件/` | 泰瑟电击器、执法记录仪、车载/无人机安防感知硬件与Evidence.com云证据及AI工作流软件 | 机柜、围护结构与物理安防；企业AI与Agent工作流软件；军用无人系统、巡飞弹与战术自主装备 | Nasdaq；2026-10-22新增登记 |
+| CGNX | Cognex | `机器人_工业自动化_智能硬件/` | 工业机器视觉、读码、视觉算法与OneVision部署平台 | 工业机器视觉与精密感知；仓储物流机器人与自动化系统 | Nasdaq；2026-09-10新增登记 |
+| DE | Deere & Company 迪尔 | `机器人_工业自动化_智能硬件/` | 农机、精准农业与自主作业；集团另有建筑林业设备和金融服务 | 农业机械、精准农业与工程矿山装备；智能机器人与自主作业装备 | NYSE；2026-10-09新增登记 |
+| EMR | Emerson Electric | `机器人_工业自动化_智能硬件/` | 过程控制、测量仪表、控制阀、工业软件与测试自动化 | DCIM、能控与AI工厂数字孪生；工业自动化控制、工业机器人与协作机器人 | NYSE；2026-09-10新增登记 |
+| FANUY | FANUC 发那科 | `机器人_工业自动化_智能硬件/` | CNC、伺服、工业机器人本体与长期维护生态 | 工业自动化控制、工业机器人与协作机器人；智能机器人与自主作业装备 | 美国OTC ADR；需券商支持；2026-09-10新增登记 |
+| FTV | Fortive Corporation | `机器人_工业自动化_智能硬件/` | 测量仪表、工业诊断、检测软件 | 工业机器视觉与精密感知；工业自动化控制、工业机器人与协作机器人 |  |
+| ISRG | Intuitive Surgical 直觉外科 | `机器人_工业自动化_智能硬件/` | 达芬奇手术机器人系统、高毛利专用器械耗材与数字化微创手术平台 | 智能机器人与自主作业装备；工业机器视觉与精密感知 | Nasdaq；2026-10-22新增登记 |
+| MSI | Motorola Solutions | `机器人_工业自动化_智能硬件/` | 关键通信、视频安防、指挥调度软件 | 机柜、围护结构与物理安防 |  |
+| ROK | Rockwell Automation | `机器人_工业自动化_智能硬件/` | PLC/PAC控制、工业运动、安全控制、制造软件与OT集成 | DCIM、能控与AI工厂数字孪生；工业自动化控制、工业机器人与协作机器人 | NYSE；2026-09-10新增登记 |
+| SMCAY | SMC | `机器人_工业自动化_智能硬件/` | 气动/电动执行器、精密阀、真空抓取及温控设备 | 液冷小组件与流体控制；半导体设备子系统与真空/RF/流体模块；人形机器人与关键执行部件 | 美国OTC ADR；需券商支持；2026-09-10新增登记 |
+| SYM | Symbotic | `机器人_工业自动化_智能硬件/` | 仓储机器人、路径调度、托盘/箱件处理和系统集成 | 仓储物流机器人与自动化系统；智能机器人与自主作业装备 | Nasdaq；2026-09-10新增登记 |
+| TSLA | Tesla | `机器人_工业自动化_智能硬件/` | 汽车、能源储能、智能驾驶、机器人期权 | 人形机器人与关键执行部件；AI边缘推理芯片；智能机器人与自主作业装备 |  |
+| YASKY | Yaskawa Electric 安川电机 | `机器人_工业自动化_智能硬件/` | 伺服驱动、电机、运动控制、机器人与机电整合 | 数据中心风冷、冷水机组与HVAC；工业自动化控制、工业机器人与协作机器人；人形机器人与关键执行部件；智能机器人与自主作业装备 | 美国OTC ADR；需券商支持；2026-09-10新增登记 |
+| ASTS | AST SpaceMobile | `航空航天_卫星_高可靠系统/` | 大型相控阵天线、卫星蜂窝链路、专用ASIC与运营商集成 | 低轨卫星通信、直连手机与地面终端 | Nasdaq；2026-09-10新增登记 |
+| AVAV | AeroVironment | `航空航天_卫星_高可靠系统/` | 无人机、巡飞弹、自主系统及反无人机等；集团其他国防业务分开 | 军用无人系统、巡飞弹与战术自主装备；智能机器人与自主作业装备 | Nasdaq；2026-10-09新增登记 |
+| CW | Curtiss-Wright | `航空航天_卫星_高可靠系统/` | 核级泵阀、反应堆控制/仪控、高可靠嵌入式计算及飞行系统 | 数据中心自备发电与微电网；运载火箭、航天器与空间基础设施；军用无人系统、巡飞弹与战术自主装备 | NYSE；2026-09-10新增登记 |
+| GE | GE Aerospace 通用电气航空 | `航空航天_卫星_高可靠系统/` | 商用窄体/宽体航空发动机、长期售后服务协议（CSA）与军用航空推进系统 | 运载火箭、航天器与空间基础设施；数据中心自备发电与微电网 | NYSE；2026-10-22新增登记 |
+| HEI | HEICO Corporation 海科航空 | `航空航天_卫星_高可靠系统/` | FAA认证PMA航空售后替代零部件、国防/太空/医疗高可靠特种电子子系统 | 运载火箭、航天器与空间基础设施；军用无人系统、巡飞弹与战术自主装备 | NYSE；2026-10-22新增登记 |
+| KTOS | Kratos Defense & Security Solutions | `航空航天_卫星_高可靠系统/` | 喷气无人机、无人系统与相关推进技术；另有太空及国防电子业务 | 军用无人系统、巡飞弹与战术自主装备；智能机器人与自主作业装备 | Nasdaq；2026-10-09新增登记 |
+| PL | Planet Labs | `航空航天_卫星_高可靠系统/` | 高频地球观测星座、历史影像、光谱/高分辨率能力与地理数据平台 | 地球观测、遥感数据与空间信息服务 | NYSE；2026-09-10新增登记 |
+| RDW | Redwire | `航空航天_卫星_高可靠系统/` | 空间电源/展开结构、航天部件、在轨制造与自主系统 | 运载火箭、航天器与空间基础设施 | NYSE；2026-09-10新增登记 |
+| RKLB | Rocket Lab | `航空航天_卫星_高可靠系统/` | 运载火箭、航天器、空间系统 | 运载火箭、航天器与空间基础设施 |  |
+| SPCX | SpaceX | `航空航天_卫星_高可靠系统/` | 运载火箭、卫星通信、地面终端 | 运载火箭、航天器与空间基础设施；低轨卫星通信、直连手机与地面终端 |  |
+| AMZN | Amazon | `云算力_IDC_边缘云/` | 云计算、零售、广告、物流自动化、卫星通信 | AI云算力外包和NeoCloud与AI数据中心运营商；广告推荐、搜索与数字分发；仓储物流机器人与自动化系统；低轨卫星通信、直连手机与地面终端 |  |
+| APLD | Applied Digital | `云算力_IDC_边缘云/` |  |  |  |
+| BABA | Alibaba 阿里巴巴 | `云算力_IDC_边缘云/` | 云计算、电商、数字平台 | AI云算力外包和NeoCloud与AI数据中心运营商；企业AI与Agent工作流软件 |  |
+| CRWV | CoreWeave | `云算力_IDC_边缘云/` |  |  |  |
+| DLR | Digital Realty | `云算力_IDC_边缘云/` |  |  |  |
+| EQIX | Equinix | `云算力_IDC_边缘云/` |  |  |  |
+| GOOGL | Alphabet Inc | `云算力_IDC_边缘云/` | 云计算、搜索广告、数字分发、AI应用 | AI云算力外包和NeoCloud与AI数据中心运营商；广告推荐、搜索与数字分发；企业AI与Agent工作流软件 |  |
+| IREN | IREN Limited | `云算力_IDC_边缘云/` |  |  |  |
+| MSFT | 微软 | `云算力_IDC_边缘云/` | 云计算、企业软件、AI应用、开发工具 | AI云算力外包和NeoCloud与AI数据中心运营商；企业AI与Agent工作流软件；网络安全、身份权限与AI治理 |  |
+| NBIS | Nebius Group | `云算力_IDC_边缘云/` |  |  |  |
+| NET | Cloudflare | `云算力_IDC_边缘云/` | 全球边缘网络、Workers计算、应用交付、连接与零信任安全 | 网络安全、身份权限与AI治理；AI集群调度与推理运行时；边缘云、应用交付与无服务器计算 | NYSE；2026-09-10新增登记 |
+| ORCL | Oracle Corporation | `云算力_IDC_边缘云/` | 云基础设施、数据库、企业应用软件 | AI云算力外包和NeoCloud与AI数据中心运营商；数据平台、数据库与AI数据软件 |  |
+| ADBE | Adobe | `企业软件_数据平台/` | 创作软件、文档软件、企业营销软件 | AI创作与文档生产软件；企业AI与Agent工作流软件 |  |
+| CRM | Salesforce | `企业软件_数据平台/` | 客户关系管理、Agentforce、Data 360、Slack与企业工作流 | 企业AI与Agent工作流软件；数据平台、数据库与AI数据软件 | NYSE；2026-09-18新增登记 |
+| DDOG | Datadog | `企业软件_数据平台/` | 指标/日志/追踪、应用性能、LLM可观测性与自动化运维 | AI Fabric网络操作系统与遥测软件；AI集群调度与推理运行时；数据平台、数据库与AI数据软件；云与AI应用可观测性、运维自动化 | Nasdaq；2026-09-10新增登记 |
+| DT | Dynatrace | `企业软件_数据平台/` | 应用性能监控、日志与追踪、AI可观测性、生产诊断与运维自动化 | 云与AI应用可观测性、运维自动化 | NYSE；2026-09-18新增登记 |
+| IBM | International Business Machines | `企业软件_数据平台/` | 企业软件、主机、混合云、咨询实施 | 企业AI与Agent工作流软件；数据平台、数据库与AI数据软件 |  |
+| META | Meta Platforms | `企业软件_数据平台/` | 广告推荐、数字分发、AI应用、智能硬件 | 广告推荐、搜索与数字分发 |  |
+| NOW | ServiceNow | `企业软件_数据平台/` | 企业工作流、CMDB、权限/审计、流程编排与Agent落地 | 企业AI与Agent工作流软件 | NYSE；2026-09-10新增登记 |
+| NTNX | Nutanix | `企业软件_数据平台/` | 虚拟化、混合云管理、存储软件、AI基础设施软件 | AI集群调度与推理运行时；数据平台、数据库与AI数据软件 |  |
+| PLTR | Palantir Technologies | `企业软件_数据平台/` | Ontology业务本体、AIP、权限控制与复杂业务部署 | 企业AI与Agent工作流软件；数据平台、数据库与AI数据软件 | Nasdaq；2026-09-10新增登记 |
+| SNOW | Snowflake | `企业软件_数据平台/` | 云数据执行引擎、权限治理、数据共享与AI数据平台 | 数据平台、数据库与AI数据软件 | NYSE；2026-09-10新增登记 |
+| CRWD | CrowdStrike | `网络安全_身份权限_治理/` | 终端安全、云安全、身份安全、安全运营 | 网络安全、身份权限与AI治理 |  |
+| PANW | Palo Alto Networks | `网络安全_身份权限_治理/` | 网络/云安全、Cortex、安全运营与身份权限平台 | 网络安全、身份权限与AI治理 | Nasdaq；2026-09-10新增登记 |
+| ALNY | Alnylam Pharmaceuticals | `生物医药_核酸药物_免疫治疗/` | RNAi药物与商业化治疗产品 | mRNA与小核酸靶向药物 | Nasdaq；2026-10-09新增登记 |
+| ARGX | argenx | `生物医药_核酸药物_免疫治疗/` | 抗体免疫治疗、FcRn平台与VYVGART；严重自身免疫病 | 自身免疫与肿瘤新型免疫治疗 | Nasdaq ADS；2026-10-09新增登记 |
+| BNTX | BioNTech | `生物医药_核酸药物_免疫治疗/` | mRNA肿瘤免疫、疫苗与其他肿瘤治疗平台；集团收入不可全归于mRNA | mRNA与小核酸靶向药物；自身免疫与肿瘤新型免疫治疗 | Nasdaq ADS；2026-10-09新增登记 |
+| IONS | Ionis Pharmaceuticals | `生物医药_核酸药物_免疫治疗/` | RNA靶向、反义核酸药物；自营产品与合作授权 | mRNA与小核酸靶向药物 | Nasdaq；2026-10-09新增登记 |
+| KYTX | Kyverna Therapeutics | `生物医药_核酸药物_免疫治疗/` | 自身免疫病CAR-T细胞治疗；临床与商业化阶段须分开 | 自身免疫与肿瘤新型免疫治疗 | Nasdaq；2026-10-09新增登记 |
+| MRNA | Moderna 莫德纳 | `生物医药_核酸药物_免疫治疗/` | mRNA疫苗与治疗平台 | mRNA与小核酸靶向药物 | Nasdaq；2026-10-09新增登记 |
+| REGN | Regeneron Pharmaceuticals 再生元 | `生物医药_核酸药物_免疫治疗/` | VelociSuite全人源抗体平台、Dupixent自身免疫、眼科大单品、肿瘤双抗及小核酸合作管线 | 自身免疫与肿瘤新型免疫治疗；mRNA与小核酸靶向药物 | Nasdaq；2026-10-22新增登记 |
+| VRTX | Vertex Pharmaceuticals 福泰制药 | `生物医药_核酸药物_免疫治疗/` | 囊性纤维化（CF）小分子药物、CRISPR基因编辑疗法、非阿片类镇痛与自身免疫肾病管线 | mRNA与小核酸靶向药物；自身免疫与肿瘤新型免疫治疗 | Nasdaq；2026-10-22新增登记 |
+| BJ | BJ's Wholesale Club Holdings | `零售_会员制_食品_折扣渠道/` | 会员制仓储、食品与日用商品 | 会员制仓储与食品综合零售 | NYSE；2026-10-09新增登记 |
+| COST | Costco Wholesale 好市多 | `零售_会员制_食品_折扣渠道/` | 会员制仓储、商品销售与会员费 | 会员制仓储与食品综合零售 | Nasdaq；2026-10-09新增登记 |
+| KR | The Kroger Co. 克罗格 | `零售_会员制_食品_折扣渠道/` | 食品超市、生鲜、私人品牌与零售数据 | 会员制仓储与食品综合零售 | NYSE；2026-10-09新增登记 |
+| ROST | Ross Stores 罗斯百货 | `零售_会员制_食品_折扣渠道/` | 服饰、鞋履与家居品牌折价零售（Ross Dress for Less / dd's DISCOUNTS） | 品牌折价零售与尾货供应链 | Nasdaq；2026-10-22新增登记 |
+| TJX | The TJX Companies | `零售_会员制_食品_折扣渠道/` | 服饰、家居与品牌折价零售 | 品牌折价零售与尾货供应链 | NYSE；2026-10-09新增登记 |
+| WMT | Walmart 沃尔玛 | `零售_会员制_食品_折扣渠道/` | 综合零售、电商、会员制仓储、广告与履约服务 | 会员制仓储与食品综合零售 | Nasdaq；2026-10-09新增登记 |
+| ACGL | Arch Capital Group | `保险_财产险_特色险_再保险/` | 商业特色险（E&S）、全球财产巨灾与责任再保险、按揭保险与跨周期资本配置 | 特色险、超额剩余险与全球再保险；个人与商业财产责任原保险 | Nasdaq；2026-10-22新增登记 |
+| CB | Chubb Limited | `保险_财产险_特色险_再保险/` | 全球财产责任险、特色险；集团另有寿险 | 个人与商业财产责任原保险；特色险、超额剩余险与全球再保险 | NYSE；2026-10-09新增登记 |
+| PGR | The Progressive Corporation | `保险_财产险_特色险_再保险/` | 个人及商业车险等财产责任险、核保与理赔 | 个人与商业财产责任原保险 | NYSE；2026-10-09新增登记 |
+| RNR | RenaissanceRe Holdings | `保险_财产险_特色险_再保险/` | 财产、责任与特色再保险、第三方资本管理 | 特色险、超额剩余险与全球再保险 | NYSE；2026-10-09新增登记 |
+| TRV | The Travelers Companies | `保险_财产险_特色险_再保险/` | 商业及个人财产责任险 | 个人与商业财产责任原保险 | NYSE；2026-10-09新增登记 |
+| WRB | W. R. Berkley Corporation | `保险_财产险_特色险_再保险/` | 商业特色险与再保险 | 特色险、超额剩余险与全球再保险；个人与商业财产责任原保险 | NYSE；2026-10-09新增登记 |
+| CWST | Casella Waste Systems | `环境服务_固废_回收_资源化/` | 区域固废、回收与资源管理 | 固体废物处理、回收与资源化 | Nasdaq；2026-10-09新增登记 |
+| RSG | Republic Services | `环境服务_固废_回收_资源化/` | 废物、回收与环境服务 | 固体废物处理、回收与资源化 | NYSE；2026-10-09新增登记 |
+| WCN | Waste Connections | `环境服务_固废_回收_资源化/` | 北美固废收集、转运、处置与回收 | 固体废物处理、回收与资源化 | NYSE；加拿大双重上市同一公司仅计一次；2026-10-09新增登记 |
+| WM | Waste Management WM | `环境服务_固废_回收_资源化/` | 废物收集、处置、回收与资源化；集团另有医疗废物服务 | 固体废物处理、回收与资源化 | NYSE；2026-10-09新增登记 |

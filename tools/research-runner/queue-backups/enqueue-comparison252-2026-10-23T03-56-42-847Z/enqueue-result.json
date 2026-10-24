@@ -1,0 +1,32 @@
+{
+  "added": 252,
+  "statuses": {
+    "running": 15,
+    "pending": 237
+  },
+  "concurrency": 15,
+  "concurrencyBefore": 50,
+  "concurrencyChangedByThisOperation": false,
+  "planVersion": "20261022_031413",
+  "atkrHistoryUnchanged": 28,
+  "doneArchiveUnchanged": true,
+  "upstream": {
+    "background": 24,
+    "industry": 102
+  },
+  "tests": {
+    "passed": 35,
+    "failed": 0
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "lock": {
+    "pid": 25968,
+    "startedAt": "2026-10-23T03:57:52.934Z",
+    "projectRoot": "D:\\investment",
+    "queuePath": "D:\\investment\\tools\\queue.jsonl"
+  },
+  "finishedAt": "2026-10-23T03:58:16.732Z"
+}

@@ -1,0 +1,2532 @@
+[
+  {
+    "subject": "ALAB",
+    "displayName": "AsteraLabs",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMBA",
+    "displayName": "Ambarella",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMBA_Ambarella_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMD",
+    "displayName": "Advanced Micro Devices",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced_Micro_Devices_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ARM",
+    "displayName": "Arm Holdings",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AVGO",
+    "displayName": "Broadcom",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CBRS",
+    "displayName": "Cerebras Systems Inc",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CBRS_Cerebras_Systems_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CDNS",
+    "displayName": "Cadence Design Systems",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/CDNS_Cadence_Design_Systems_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "INTC",
+    "displayName": "Intel Corporation 英特尔",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/INTC_Intel_Corporation_英特尔_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MCHP",
+    "displayName": "Microchip Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MRVL",
+    "displayName": "Marvell Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MRVL_Marvell_Technology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MXL",
+    "displayName": "MaxLinear",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/MXL_MaxLinear_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NVDA",
+    "displayName": "NVIDIA",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "QCOM",
+    "displayName": "Qualcomm",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SNPS",
+    "displayName": "Synopsys",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/SNPS_Synopsys_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CLS",
+    "displayName": "Celestica Inc",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DELL",
+    "displayName": "Dell Technologies",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/DELL_Dell_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FLEX",
+    "displayName": "Flex Ltd",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/FLEX_Flex_Ltd_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FN",
+    "displayName": "Fabrinet",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/FN_Fabrinet_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "HPE",
+    "displayName": "惠普企业",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/HPE_惠普企业_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "JBL",
+    "displayName": "Jabil Inc",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/JBL_Jabil_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MRAM",
+    "displayName": "Everspin Technologies",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MU",
+    "displayName": "Micron Technology 美光科技",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NTAP",
+    "displayName": "NetApp",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/NTAP_NetApp_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "P",
+    "displayName": "Everpure",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/P_Everpure_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PENG",
+    "displayName": "Penguin Solutions",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/PENG_Penguin_Solutions_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RMBS",
+    "displayName": "Rambus",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SANM",
+    "displayName": "Sanmina Corporation",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/SANM_Sanmina_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SIMO",
+    "displayName": "Silicon Motion Technology",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/SIMO_Silicon_Motion_Technology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SKHY",
+    "displayName": "SK hynix Inc",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/SKHY_SK_hynix_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SMCI",
+    "displayName": "Super Micro Computer Inc",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SNDK",
+    "displayName": "SanDisk",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "STX",
+    "displayName": "Seagate Technology",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WDC",
+    "displayName": "WesternDigital",
+    "category": "AI服务器_存储_EMS",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AAOI",
+    "displayName": "Applied Optoelectronics",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ANET",
+    "displayName": "Arista Networks",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/ANET_Arista_Networks_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "APH",
+    "displayName": "Amphenol 安费诺",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/APH_Amphenol_安费诺_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BDC",
+    "displayName": "Belden",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BELFB",
+    "displayName": "Bel Fuse Inc",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/BELFB_Bel_Fuse_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CIEN",
+    "displayName": "Ciena Corporation",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/CIEN_Ciena_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "COHR",
+    "displayName": "Coherent",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CRDO",
+    "displayName": "Credo Technology Group",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CSCO",
+    "displayName": "Cisco Systems",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/CSCO_Cisco_Systems_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "GLW",
+    "displayName": "Corning",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/GLW_Corning_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "LITE",
+    "displayName": "Lumentum",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/LITE_Lumentum_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "LWLG",
+    "displayName": "Lightwave Logic",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MTSI",
+    "displayName": "MACOM Technology Solutions",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/MTSI_MACOM_Technology_Solutions_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NOK",
+    "displayName": "诺基亚",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/NOK_诺基亚_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "POET",
+    "displayName": "POET Technologies",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SITM",
+    "displayName": "SiTime Corporation",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/SITM_SiTime_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SMTC",
+    "displayName": "Semtech Corporation",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/SMTC_Semtech_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TEL",
+    "displayName": "TE Connectivity",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/TEL_TE_Connectivity_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VIAV",
+    "displayName": "VIAVI Solutions",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/VIAV_VIAVI_Solutions_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VISN",
+    "displayName": "Vistance Networks",
+    "category": "AI网络_光互联_连接器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/AI网络_光互联_连接器/VISN_Vistance_Networks_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AJNMY",
+    "displayName": "味之素 Ajinomoto",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/AJNMY_味之素_Ajinomoto_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "APD",
+    "displayName": "Air Products and Chemicals",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/APD_Air_Products_and_Chemicals_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ASGLY",
+    "displayName": "AGC Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ASGLY_AGC_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "AXTI",
+    "displayName": "AXT Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/AXTI_AXT_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CC",
+    "displayName": "The Chemours Company",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/CC_The_Chemours_Company_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DD",
+    "displayName": "DuPont de Nemours",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/DD_DuPont_de_Nemours_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DHR",
+    "displayName": "Danaher Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/DHR_Danaher_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ENTG",
+    "displayName": "Entegris",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ENTG_Entegris_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "HOCPY",
+    "displayName": "HOYA Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/HOCPY_HOYA_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "LIN",
+    "displayName": "Linde plc",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/LIN_Linde_plc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MMM",
+    "displayName": "3M",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/MMM_3M_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MTRN",
+    "displayName": "Materion",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/MTRN_Materion_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PCRHY",
+    "displayName": "Panasonic Holdings 松下控股",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/PCRHY_Panasonic_Holdings_松下控股_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "Q",
+    "displayName": "Qnity Electronics",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/Q_Qnity_Electronics_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ROG",
+    "displayName": "Rogers Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/ROG_Rogers_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SHECY",
+    "displayName": "Shin-Etsu Chemical 信越化学",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "SMTOY",
+    "displayName": "住友电工 Sumitomo Electric Industries",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "SOMMY",
+    "displayName": "住友化学 Sumitomo Chemical",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-19"
+  },
+  {
+    "subject": "TTMI",
+    "displayName": "TTM Technologies",
+    "category": "电子材料_化学品_基板_PCB",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电子材料_化学品_基板_PCB/TTMI_TTM_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ACLS",
+    "displayName": "Axcelis Technologies",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/ACLS_Axcelis_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ACMR",
+    "displayName": "ACM Research",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/ACMR_ACM_Research_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AEIS",
+    "displayName": "Advanced Energy Industries",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/AEIS_Advanced_Energy_Industries_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMAT",
+    "displayName": "Applied Materials",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/AMAT_Applied_Materials_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ASMIY",
+    "displayName": "ASM International",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/ASMIY_ASM_International_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "ASML",
+    "displayName": "ASML Holding NV",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/ASML_ASML_Holding_NV_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DSCSY",
+    "displayName": "DISCO",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/DSCSY_DISCO_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "GFS",
+    "displayName": "GlobalFoundries",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ICHR",
+    "displayName": "Ichor Holdings",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/ICHR_Ichor_Holdings_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "KLAC",
+    "displayName": "KLA Corporation",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/KLAC_KLA_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "LRCX",
+    "displayName": "Lam Research",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/LRCX_Lam_Research_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MKSI",
+    "displayName": "MKS Inc",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NVMI",
+    "displayName": "Nova Ltd",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/NVMI_Nova_Ltd_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TOELY",
+    "displayName": "Tokyo Electron",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/TOELY_Tokyo_Electron_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "缺失/需确认"
+  },
+  {
+    "subject": "TSEM",
+    "displayName": "Tower Semiconductor",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/TSEM_Tower_Semiconductor_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TSM",
+    "displayName": "台积电",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/TSM_台积电_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "UCTT",
+    "displayName": "Ultra Clean Holdings",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "UMC",
+    "displayName": "United Microelectronics 联华电子",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/UMC_United_Microelectronics_联华电子_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VECO",
+    "displayName": "Veeco Instruments",
+    "category": "晶圆制造_前道设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/晶圆制造_前道设备/VECO_Veeco_Instruments_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AEHR",
+    "displayName": "Aehr Test Systems",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/AEHR_Aehr_Test_Systems_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMKR",
+    "displayName": "Amkor Technology",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/AMKR_Amkor_Technology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ASMVY",
+    "displayName": "ASMPT",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "ASX",
+    "displayName": "ASE Technology Holding",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/ASX_ASE_Technology_Holding_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ATEYY",
+    "displayName": "Advantest",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/ATEYY_Advantest_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "BESIY",
+    "displayName": "BE Semiconductor",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/BESIY_BE_Semiconductor_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "CAMT",
+    "displayName": "Camtek",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/CAMT_Camtek_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "COHU",
+    "displayName": "Cohu Inc",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FORM",
+    "displayName": "FormFactor",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IMOS",
+    "displayName": "ChipMOS Technologies 南茂科技",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "KEYS",
+    "displayName": "Keysight Technologies",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/KEYS_Keysight_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "KLIC",
+    "displayName": "Kulicke Soffa",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/KLIC_Kulicke_Soffa_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MICLF",
+    "displayName": "Mycronic AB",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/MICLF_Mycronic_AB_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-19"
+  },
+  {
+    "subject": "NDSN",
+    "displayName": "Nordson",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/NDSN_Nordson_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ONTO",
+    "displayName": "Onto Innovation",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/ONTO_Onto_Innovation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PLAB",
+    "displayName": "Photronics",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TDY",
+    "displayName": "Teledyne Technologies",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/TDY_Teledyne_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TER",
+    "displayName": "Teradyne",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/TER_Teradyne_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TMO",
+    "displayName": "Thermo Fisher Scientific",
+    "category": "封测_检测_计量_光罩",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/封测_检测_计量_光罩/TMO_Thermo_Fisher_Scientific_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ADI",
+    "displayName": "Analog Devices",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ADI_Analog_Devices_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ALGM",
+    "displayName": "Allegro MicroSystems",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ALGM_Allegro_MicroSystems_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AOSL",
+    "displayName": "Alpha and Omega Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DIOD",
+    "displayName": "Diodes Incorporated",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/DIOD_Diodes_Incorporated_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IFNNY",
+    "displayName": "Infineon Technologies AG 英飞凌科技",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "LFUS",
+    "displayName": "Littelfuse",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/LFUS_Littelfuse_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MPWR",
+    "displayName": "Monolithic Power Systems",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/MPWR_Monolithic_Power_Systems_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MRAAY",
+    "displayName": "Murata Manufacturing",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/MRAAY_Murata_Manufacturing_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "NVTS",
+    "displayName": "Navitas Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/NVTS_Navitas_Semiconductor_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ON",
+    "displayName": "onsemi",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ON_onsemi_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "POWI",
+    "displayName": "Power Integrations",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/POWI_Power_Integrations_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ST",
+    "displayName": "Sensata Technologies",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/ST_Sensata_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "STM",
+    "displayName": "STMicroelectronics",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/STM_STMicroelectronics_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TTDKY",
+    "displayName": "TDK Corporation",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/TTDKY_TDK_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "TXN",
+    "displayName": "德州仪器",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/TXN_德州仪器_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VSH",
+    "displayName": "Vishay Intertechnology",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/VSH_Vishay_Intertechnology_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WOLF",
+    "displayName": "Wolfspeed",
+    "category": "功率半导体_电源管理_传感器",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/功率半导体_电源管理_传感器/WOLF_Wolfspeed_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ABBNY",
+    "displayName": "ABB Ltd",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/ABBNY_ABB_Ltd_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "ATKR",
+    "displayName": "Atkore",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/ATKR_Atkore_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-16"
+  },
+  {
+    "subject": "ETN",
+    "displayName": "Eaton Corporation",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/ETN_Eaton_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "HUBB",
+    "displayName": "Hubbell",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/HUBB_Hubbell_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MIELY",
+    "displayName": "三菱电机 Mitsubishi Electric",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "NVT",
+    "displayName": "nVent Electric",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/NVT_nVent_Electric_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "POWL",
+    "displayName": "Powell Industries",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/POWL_Powell_Industries_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SBGSY",
+    "displayName": "Schneider Electric 施耐德",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/SBGSY_Schneider_Electric_施耐德_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "VICR",
+    "displayName": "Vicor Corporation",
+    "category": "配电_电源系统_电气设备",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/配电_电源系统_电气设备/VICR_Vicor_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AEP",
+    "displayName": "American Electric Power",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/AEP_American_Electric_Power_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMPX",
+    "displayName": "Amprius Technologies",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BE",
+    "displayName": "Bloom Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/BE_Bloom_Energy_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BWXT",
+    "displayName": "BWX Technologies",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/BWXT_BWX_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CAT",
+    "displayName": "Caterpillar Inc",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/CAT_Caterpillar_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CCJ",
+    "displayName": "Cameco",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/CCJ_Cameco_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CEG",
+    "displayName": "Constellation Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/CEG_Constellation_Energy_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CMI",
+    "displayName": "Cummins Inc",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/CMI_Cummins_Inc_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DTE",
+    "displayName": "DTE Energy Company",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/DTE_DTE_Energy_Company_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ENPH",
+    "displayName": "Enphase Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ENS",
+    "displayName": "EnerSys",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/ENS_EnerSys_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ET",
+    "displayName": "Energy Transfer LP",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/ET_Energy_Transfer_LP_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "ETR",
+    "displayName": "Entergy Corporation",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/ETR_Entergy_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FCEL",
+    "displayName": "FuelCell Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/FCEL_FuelCell_Energy_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FLNC",
+    "displayName": "Fluence Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "GEV",
+    "displayName": "GE Vernova",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/GEV_GE_Vernova_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "GNRC",
+    "displayName": "Generac Holdings",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "HTHIY",
+    "displayName": "Hitachi Ltd",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/HTHIY_Hitachi_Ltd_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "LEU",
+    "displayName": "Centrus Energy",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/LEU_Centrus_Energy_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "OKLO",
+    "displayName": "Oklo Inc",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/OKLO_Oklo_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PSIX",
+    "displayName": "Power Solutions International",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RYCEY",
+    "displayName": "Rolls-Royce Holdings",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/RYCEY_Rolls-Royce_Holdings_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "SMR",
+    "displayName": "NuScale Power",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/SMR_NuScale_Power_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TE",
+    "displayName": "T1 Energy Inc",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/TE_T1_Energy_Inc_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VST",
+    "displayName": "Vistra Corp",
+    "category": "电力_发电_能源_储能",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AAON",
+    "displayName": "AAON",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/AAON_AAON_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CARR",
+    "displayName": "Carrier Global",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/CARR_Carrier_Global_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DCI",
+    "displayName": "Donaldson Company",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/DCI_Donaldson_Company_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DKILY",
+    "displayName": "Daikin Industries",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/DKILY_Daikin_Industries_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "DOV",
+    "displayName": "Dover Corporation",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/DOV_Dover_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ECL",
+    "displayName": "Ecolab",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/ECL_Ecolab_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ITT",
+    "displayName": "ITT",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/ITT_ITT_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "JCI",
+    "displayName": "Johnson Controls",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/JCI_Johnson_Controls_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MOD",
+    "displayName": "Modine Manufacturing",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/MOD_Modine_Manufacturing_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PH",
+    "displayName": "Parker-Hannifin",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/PH_Parker-Hannifin_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PNR",
+    "displayName": "Pentair plc",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/PNR_Pentair_plc_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SPXC",
+    "displayName": "SPX Technologies",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/SPXC_SPX_Technologies_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TT",
+    "displayName": "Trane Technologies",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/TT_Trane_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "VRT",
+    "displayName": "Vertiv",
+    "category": "热管理_流体_水处理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/热管理_流体_水处理/VRT_Vertiv_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "EME",
+    "displayName": "EMCOR Group",
+    "category": "工程建设_机电安装",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/工程建设_机电安装/EME_EMCOR_Group_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FIX",
+    "displayName": "Comfort Systems USA",
+    "category": "工程建设_机电安装",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/工程建设_机电安装/FIX_Comfort_Systems_USA_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IESC",
+    "displayName": "IES Holdings",
+    "category": "工程建设_机电安装",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/工程建设_机电安装/IESC_IES_Holdings_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MYRG",
+    "displayName": "MYR Group",
+    "category": "工程建设_机电安装",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/工程建设_机电安装/MYRG_MYR_Group_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PWR",
+    "displayName": "Quanta Services",
+    "category": "工程建设_机电安装",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/工程建设_机电安装/PWR_Quanta_Services_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AGCO",
+    "displayName": "AGCO Corporation",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/AGCO_AGCO_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ALLE",
+    "displayName": "Allegion plc",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ALLE_Allegion_plc_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AXON",
+    "displayName": "Axon Enterprise",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/AXON_Axon_Enterprise_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "CGNX",
+    "displayName": "Cognex",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/CGNX_Cognex_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DE",
+    "displayName": "Deere & Company 迪尔",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/DE_Deere_&_Company_迪尔_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "EMR",
+    "displayName": "Emerson Electric",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/EMR_Emerson_Electric_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "FANUY",
+    "displayName": "FANUC 发那科",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/FANUY_FANUC_发那科_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "FTV",
+    "displayName": "Fortive Corporation",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/FTV_Fortive_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ISRG",
+    "displayName": "Intuitive Surgical 直觉外科",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ISRG_Intuitive_Surgical_直觉外科_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "MSI",
+    "displayName": "Motorola Solutions",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/MSI_Motorola_Solutions_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ROK",
+    "displayName": "Rockwell Automation",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/ROK_Rockwell_Automation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SMCAY",
+    "displayName": "SMC",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/SMCAY_SMC_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "SYM",
+    "displayName": "Symbotic",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/SYM_Symbotic_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TSLA",
+    "displayName": "Tesla",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/TSLA_Tesla_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "YASKY",
+    "displayName": "Yaskawa Electric 安川电机",
+    "category": "机器人_工业自动化_智能硬件",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/机器人_工业自动化_智能硬件/YASKY_Yaskawa_Electric_安川电机_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-20"
+  },
+  {
+    "subject": "ASTS",
+    "displayName": "AST SpaceMobile",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/ASTS_AST_SpaceMobile_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AVAV",
+    "displayName": "AeroVironment",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/AVAV_AeroVironment_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CW",
+    "displayName": "Curtiss-Wright",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/CW_Curtiss-Wright_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "GE",
+    "displayName": "GE Aerospace 通用电气航空",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/GE_GE_Aerospace_通用电气航空_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "HEI",
+    "displayName": "HEICO Corporation 海科航空",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/HEI_HEICO_Corporation_海科航空_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "KTOS",
+    "displayName": "Kratos Defense & Security Solutions",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/KTOS_Kratos_Defense_&_Security_Solutions_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PL",
+    "displayName": "Planet Labs",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/PL_Planet_Labs_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RDW",
+    "displayName": "Redwire",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/RDW_Redwire_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RKLB",
+    "displayName": "Rocket Lab",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/RKLB_Rocket_Lab_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SPCX",
+    "displayName": "SpaceX",
+    "category": "航空航天_卫星_高可靠系统",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/航空航天_卫星_高可靠系统/SPCX_SpaceX_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "AMZN",
+    "displayName": "Amazon",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/AMZN_Amazon_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "APLD",
+    "displayName": "Applied Digital",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/APLD_Applied_Digital_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BABA",
+    "displayName": "Alibaba 阿里巴巴",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/BABA_Alibaba_阿里巴巴_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CRWV",
+    "displayName": "CoreWeave",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DLR",
+    "displayName": "Digital Realty",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/DLR_Digital_Realty_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "EQIX",
+    "displayName": "Equinix",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/EQIX_Equinix_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "GOOGL",
+    "displayName": "Alphabet Inc",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/GOOGL_Alphabet_Inc_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IREN",
+    "displayName": "IREN Limited",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/IREN_IREN_Limited_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MSFT",
+    "displayName": "微软",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/MSFT_微软_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NBIS",
+    "displayName": "Nebius Group",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/NBIS_Nebius_Group_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NET",
+    "displayName": "Cloudflare",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/NET_Cloudflare_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ORCL",
+    "displayName": "Oracle Corporation",
+    "category": "云算力_IDC_边缘云",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/云算力_IDC_边缘云/ORCL_Oracle_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ADBE",
+    "displayName": "Adobe",
+    "category": "企业软件_数据平台",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CRM",
+    "displayName": "Salesforce",
+    "category": "企业软件_数据平台",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/CRM_Salesforce_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DDOG",
+    "displayName": "Datadog",
+    "category": "企业软件_数据平台",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/DDOG_Datadog_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "DT",
+    "displayName": "Dynatrace",
+    "category": "企业软件_数据平台",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/DT_Dynatrace_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IBM",
+    "displayName": "International Business Machines",
+    "category": "企业软件_数据平台",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/IBM_International_Business_Machines_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "META",
+    "displayName": "Meta Platforms",
+    "category": "企业软件_数据平台",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/META_Meta_Platforms_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NOW",
+    "displayName": "ServiceNow",
+    "category": "企业软件_数据平台",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/NOW_ServiceNow_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "NTNX",
+    "displayName": "Nutanix",
+    "category": "企业软件_数据平台",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/NTNX_Nutanix_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PLTR",
+    "displayName": "Palantir Technologies",
+    "category": "企业软件_数据平台",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/PLTR_Palantir_Technologies_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "SNOW",
+    "displayName": "Snowflake",
+    "category": "企业软件_数据平台",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/企业软件_数据平台/SNOW_Snowflake_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CRWD",
+    "displayName": "CrowdStrike",
+    "category": "网络安全_身份权限_治理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/网络安全_身份权限_治理/CRWD_CrowdStrike_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PANW",
+    "displayName": "Palo Alto Networks",
+    "category": "网络安全_身份权限_治理",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/网络安全_身份权限_治理/PANW_Palo_Alto_Networks_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ALNY",
+    "displayName": "Alnylam Pharmaceuticals",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ALNY_Alnylam_Pharmaceuticals_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ARGX",
+    "displayName": "argenx",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/ARGX_argenx_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "BNTX",
+    "displayName": "BioNTech",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/BNTX_BioNTech_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "IONS",
+    "displayName": "Ionis Pharmaceuticals",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/IONS_Ionis_Pharmaceuticals_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "KYTX",
+    "displayName": "Kyverna Therapeutics",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/KYTX_Kyverna_Therapeutics_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "MRNA",
+    "displayName": "Moderna 莫德纳",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/MRNA_Moderna_莫德纳_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "REGN",
+    "displayName": "Regeneron Pharmaceuticals 再生元",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/REGN_Regeneron_Pharmaceuticals_再生元_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "VRTX",
+    "displayName": "Vertex Pharmaceuticals 福泰制药",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/生物医药_核酸药物_免疫治疗/VRTX_Vertex_Pharmaceuticals_福泰制药_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "BJ",
+    "displayName": "BJ's Wholesale Club Holdings",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/BJ_BJ's_Wholesale_Club_Holdings_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "COST",
+    "displayName": "Costco Wholesale 好市多",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/COST_Costco_Wholesale_好市多_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "KR",
+    "displayName": "The Kroger Co. 克罗格",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/KR_The_Kroger_Co._克罗格_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ROST",
+    "displayName": "Ross Stores 罗斯百货",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/ROST_Ross_Stores_罗斯百货_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "TJX",
+    "displayName": "The TJX Companies",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/TJX_The_TJX_Companies_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WMT",
+    "displayName": "Walmart 沃尔玛",
+    "category": "零售_会员制_食品_折扣渠道",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/零售_会员制_食品_折扣渠道/WMT_Walmart_沃尔玛_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "ACGL",
+    "displayName": "Arch Capital Group",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/ACGL_Arch_Capital_Group_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": false,
+    "financePriceDate": null
+  },
+  {
+    "subject": "CB",
+    "displayName": "Chubb Limited",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/CB_Chubb_Limited_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "PGR",
+    "displayName": "The Progressive Corporation",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/PGR_The_Progressive_Corporation_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RNR",
+    "displayName": "RenaissanceRe Holdings",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/RNR_RenaissanceRe_Holdings_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "TRV",
+    "displayName": "The Travelers Companies",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/TRV_The_Travelers_Companies_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WRB",
+    "displayName": "W. R. Berkley Corporation",
+    "category": "保险_财产险_特色险_再保险",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/保险_财产险_特色险_再保险/WRB_W._R._Berkley_Corporation_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "CWST",
+    "displayName": "Casella Waste Systems",
+    "category": "环境服务_固废_回收_资源化",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/环境服务_固废_回收_资源化/CWST_Casella_Waste_Systems_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "RSG",
+    "displayName": "Republic Services",
+    "category": "环境服务_固废_回收_资源化",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/环境服务_固废_回收_资源化/RSG_Republic_Services_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WCN",
+    "displayName": "Waste Connections",
+    "category": "环境服务_固废_回收_资源化",
+    "upstreamState": "running",
+    "companyReport": "基本面/公司调研/结果/环境服务_固废_回收_资源化/WCN_Waste_Connections_公司调研_2026-10-22.md",
+    "reportExists": false,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  },
+  {
+    "subject": "WM",
+    "displayName": "Waste Management WM",
+    "category": "环境服务_固废_回收_资源化",
+    "upstreamState": "done_verified",
+    "companyReport": "基本面/公司调研/结果/环境服务_固废_回收_资源化/WM_Waste_Management_WM_公司调研_2026-10-22.md",
+    "reportExists": true,
+    "financePresent": true,
+    "financePriceDate": "2026-10-21"
+  }
+]
