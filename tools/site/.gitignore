@@ -1,13 +1,11 @@
 # Dependencies and temporary build output.
 node_modules/
 dist/
+.build/
+tmp/
 
-# Local runtime leftovers. The production site is GitHub Pages, not a local
-# Cloudflare Tunnel deployment.
+# Local diagnostics. The production site is GitHub Pages.
 logs/
-bin/
-cloudflared/
-scripts/
 
 # Local secrets/config.
 .env

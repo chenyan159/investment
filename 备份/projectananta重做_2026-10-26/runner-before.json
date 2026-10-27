@@ -1,0 +1,262 @@
+[
+  {
+    "Path": "tools\\research-runner\\codex-turn.mjs",
+    "SHA256": "EB9C1C0A4E63B0F670534E7D4427FB06A7AAE5EB83F824E2BF5A0336B6A5B6E0"
+  },
+  {
+    "Path": "tools\\research-runner\\index-updater.mjs",
+    "SHA256": "F3A69A8DAA3131697AE5596655BA8078A1450EC28BB11B31477AEC618AFE4C9A"
+  },
+  {
+    "Path": "tools\\research-runner\\package-lock.json",
+    "SHA256": "D9837C5F3AEE1AE217AF41D612E13F2F9BC39DB0FA27CC51E39A74B99C3070E7"
+  },
+  {
+    "Path": "tools\\research-runner\\package.json",
+    "SHA256": "DBD4F5F10B05EAAA3589B3F8870F11867F696E7F0ED4F9BCCDB8D397D2C0CF3A"
+  },
+  {
+    "Path": "tools\\research-runner\\queue-store.mjs",
+    "SHA256": "D963A77A420B08498B0ABD9699F61F0C98579D15F61B583CF503ABA7CC1DD4A9"
+  },
+  {
+    "Path": "tools\\research-runner\\queue-tools.mjs",
+    "SHA256": "CF4F5586E905537F1CDBE37C0765835E9A161442CBF6E5858C7291FDC9C429C4"
+  },
+  {
+    "Path": "tools\\research-runner\\quota-control.mjs",
+    "SHA256": "20BC24FB877A7FFACE2B1FAAB84D8E972C3B15A094835717ADFDECD7AF902882"
+  },
+  {
+    "Path": "tools\\research-runner\\research-plan-store.mjs",
+    "SHA256": "0B33E255C949454480A03943F3B33FA57931948C8BA99D7F34A8B41B0E95DC73"
+  },
+  {
+    "Path": "tools\\research-runner\\research-plan-tools.mjs",
+    "SHA256": "E42092D59821663FE2F4AA1D02173037E094806DDA27FEA93DE57466B2F66C4F"
+  },
+  {
+    "Path": "tools\\research-runner\\research-plans.json",
+    "SHA256": "DD5D7F586F6E966B391FA2B83DC1AD46A36F9E09844A65DE93EADE579C30EDED"
+  },
+  {
+    "Path": "tools\\research-runner\\runner.mjs",
+    "SHA256": "0FA7648E6A74E6CA564DF303B5503ADF51373C75FA7812AACFE1CB582D8AAB3E"
+  },
+  {
+    "Path": "tools\\research-runner\\runtime-config.mjs",
+    "SHA256": "125E70AB7260FD1775DD0F473A51D09A0DD92D13A4F06E0C60A6AA5BAC48FED8"
+  },
+  {
+    "Path": "tools\\research-runner\\usage-telemetry.mjs",
+    "SHA256": "3B935C9C7D6D711B9AF03BAA48C0126D0CF93BB5D257B2DBC979556103AC181B"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\config.mjs",
+    "SHA256": "8726203F78B761F50C58DE146C17E72864E8E45A9D5DCF966129F3325FD7D4B9"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\package.json",
+    "SHA256": "EE030868521EA9BDAC4202BF2E36AF10C9270B06542FEA5A6988F87081F294D3"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\quota-service.mjs",
+    "SHA256": "EC9F1D57BA4847D1CFE1816E74061349A58B5F007E206416E977DB439BA29E9E"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\runner-control.mjs",
+    "SHA256": "5BF65A0791A3975C357F9DBE1EAB597BA6BEFBA4E3524098B1266A23F4B09228"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\server.mjs",
+    "SHA256": "1EDDAE733849B9267E2BB76E6749021E64DEAAA4178144D4A61E5DFEE3DC4445"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\snapshot.mjs",
+    "SHA256": "69E4E460F42F6F152B7D95A1ECD378980CE8B846DE2142FB74C58FE984D648E6"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\public\\app.js",
+    "SHA256": "93A47A757A6B47C108F08C3B2AB6524BF074AAACB02A441D780A4BBA2201C268"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\spec\\launcher.spec.mjs",
+    "SHA256": "4F5DE8DD4C787FD2C529BDB92DCBD4E313F4B2E85A081DC1BE7D1D97AA5D3550"
+  },
+  {
+    "Path": "tools\\research-runner\\dashboard\\spec\\snapshot.spec.mjs",
+    "SHA256": "BA91394B9EA45D964551A5E58FA372AE61A326A642E132AD21CBB66F02B239D4"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\background.mjs",
+    "SHA256": "8789DA651D4F090B489B6FD9A765C66EA97BC0DAD80D1044F8C08EDDAB7C4B4E"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\company-comparison.mjs",
+    "SHA256": "4D29A841171DB60581EDFBD15057EF52E469F6EAFD728B061A8999A6F9B607B3"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\company-investment-decision.mjs",
+    "SHA256": "D0058D5B2C3593AA70722FF8D3D78FB7284D5496FDE844D2A4019126C9905FAA"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\company-sentiment.mjs",
+    "SHA256": "F2DC6A7AFDB1E51641FFB173C92266ED695F65E2D0659E5E035D0BF6817E9495"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\company.mjs",
+    "SHA256": "C5C777E26474BA680BD87EF79E2AC2F59EC2637E56EBAA76DD32C57BF1D1C7D4"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\feature-contract.mjs",
+    "SHA256": "80039B3641D284CA72E7F405CCC752C4329621C3821244EA2DC204D820BACC40"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\feature-quantization.mjs",
+    "SHA256": "BE66EAD8194ECB9C156C252091C400B347CFA76BF203669DC1441BF75E51D00B"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\file-run.mjs",
+    "SHA256": "592C7A291082E55AFC6F4EAE1515A8FDB6B481700FED00A41E823B49AC57393F"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\index.mjs",
+    "SHA256": "52645CD76F94F6DAB5B70E0C5D069F9C55188160CBDA57D392D9E93FE4A0D42E"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\industry.mjs",
+    "SHA256": "F01987DC490F9ED6118206D79E94BCC07844A77CF590A1D767E964F4445B117C"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\output-backup.mjs",
+    "SHA256": "DABF00FFC2BD9E7A83957FC07C6D5CEBE9BC4AD27BA47A5B372ACCF9DAA026C8"
+  },
+  {
+    "Path": "tools\\research-runner\\domains\\output-path.mjs",
+    "SHA256": "1F6EC9BF98AA78AADA33E61F4F3F902FA935BD6F5F184CCD6ECA73D5FE4F33B1"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\background.mjs",
+    "SHA256": "CE3FDEEC14F3C894710BC4EA3FC729B72FF7D91942AEC61278E71130DC52C815"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\common.mjs",
+    "SHA256": "3DF15A4CF12FEC6CA48C21CFFF609954FBAC060B8DC9043F62A3387231945687"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\company-comparison.mjs",
+    "SHA256": "79CC0652A4FF2F33223F24CE449D2A8E096E72BF5FC3E7452CCFD74581BD5BE8"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\company-investment-decision.mjs",
+    "SHA256": "2CFF515A9BBA7BE98D7524133860C534B5D37A669F151126CB0E015EBB6A9F70"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\company-sentiment.mjs",
+    "SHA256": "B8B774B0EDA6230E453F8501EBD59827E177B67681D04372C5DA0424AA1020FD"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\company.mjs",
+    "SHA256": "187A1946BBDE3BF1E21925F1637392025F341147BC636A8D9E506031D469D5AD"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\feature-quantization.mjs",
+    "SHA256": "5E96524661A74B80FB5AE9D8EA709E41D3468A377182D4AB8451F8FC9A78E203"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\file-run.mjs",
+    "SHA256": "EB3F01C038B2A3DE71B1A969D751BAF1385728A7042F68B84D333A5631DC4589"
+  },
+  {
+    "Path": "tools\\research-runner\\prompts\\industry.mjs",
+    "SHA256": "658DAF4AB7AABA8800477A7F09FF90D9DFA81D05CC0237FBE0E86A95085365B1"
+  },
+  {
+    "Path": "tools\\research-runner\\run-audits\\cc-recovery-20260909-1124\\recover.mjs",
+    "SHA256": "A39BFCC89789A52F73CD30BCBA5B5A351D0728E026D46BDA02D1E58886D1F5CB"
+  },
+  {
+    "Path": "tools\\research-runner\\run-audits\\cc-recovery-20260909-1124\\recovery-result.json",
+    "SHA256": "8E5C29E0465448524BF6725D40E64D1F9545BCEE5AA8A9E9779B72B0E59478FF"
+  },
+  {
+    "Path": "tools\\research-runner\\run-audits\\quota-monitor-20261014-2303\\event.json",
+    "SHA256": "8273B8D4A054E5E76FD6A91E0E77D19A6E1068234B1C3BC6559376CD5C32D51F"
+  },
+  {
+    "Path": "tools\\research-runner\\run-audits\\quota-monitor-20261014-2303\\state.json",
+    "SHA256": "A8D61E61F70DB386066AA5D0AD587F4B482AB80C75FDA22ED0FBF84376EE4690"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\background-domain.test.mjs",
+    "SHA256": "D9EC110BD40EF872AF70EE5B93FEA1F52B9767BAD89085A2E9997802BCDC5A36"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\codex-sdk-exit.test.mjs",
+    "SHA256": "5F68EE5EB405D72679B374431819DF5F871A5A599E4832C55A687455B349602B"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\codex-turn.test.mjs",
+    "SHA256": "F8B66CFEFC416B3DEA1585A728AA85025FB4D88251F6AE240427A50ABF6B0B37"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\companion-output.test.mjs",
+    "SHA256": "D5664F15C572EF394F4FCBAB1A4FC68CCA0B2E13B4F9B792374B600AE5332BC2"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\company-comparison-prompt.test.mjs",
+    "SHA256": "7B70543C21BA8FC432491490AA56356E758C4C26CE3A98EC9DFDD3358EBAE206"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\feature-workflow.test.mjs",
+    "SHA256": "1BD9F2D9B55E479D3E079682B1F2072A3A70646F4499EEA5048D8084D39FBE83"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\horizontal-topic-routing.test.mjs",
+    "SHA256": "78C5A86203E4E50EA2150A4AA3E7ED5ADA0CCC81FD1218EDE7D3F84A6E93B9EE"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\index-classification-roundtrip.test.mjs",
+    "SHA256": "03FEFEF5D218750996011A182C8046E3F3A302B014E96ED6E426071DFC444483"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\industry-research-scope.test.mjs",
+    "SHA256": "5B445F7E96D422BFC0B3C1F9CBEBB6736FC3C41BF2BD0397C8377A94DF151AD7"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\output-backup.test.mjs",
+    "SHA256": "3A2D452A2034F1BC5E2D82F96EC3B80CC30AADE2588B6D8C9AE77ACD7D27CC70"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\output-contract.test.mjs",
+    "SHA256": "881C8E333035ABAB1FDEE996B30C593434BFB6D11AB1C9436ED54493199A73A5"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\queue-schema.test.mjs",
+    "SHA256": "B9EC10FC44528B25F1AEDE9506819CDEA1132A444E98B235119FC6AA6C9BDFD8"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\queue-tools-cli.test.mjs",
+    "SHA256": "EDE57E9DC7DC71AAAEADC806E22A2EB850C5C1AEC03D23F7BAAFBA91D95FE996"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\quota-control.test.mjs",
+    "SHA256": "467BAAB50E3FEE0FB795FA9F03388E9E52EF7CE977A185EDA692E45BF116ACBB"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\research-plan-version.test.mjs",
+    "SHA256": "CD974256204250BC55E837B461CF998BBF5B77F47AB76AED5ED9E40AE56140C2"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\sibling-backups.test.mjs",
+    "SHA256": "C73BEE289105F5D92C07E060BC4C98C6A1C9C9ADB9F9F319A21D15B30E37C592"
+  },
+  {
+    "Path": "tools\\research-runner\\test\\usage-telemetry.test.mjs",
+    "SHA256": "25935F670392A2530F3B88B6D4B4DF99D9EE2591B8CBDFC8876658A4C40864CA"
+  },
+  {
+    "Path": "tools\\research-runner\\validators\\output-validator.mjs",
+    "SHA256": "8140586A323AD28865DEEF29CBD04AA669D5CC5113F759336D3D5B441AE5C1AD"
+  }
+]

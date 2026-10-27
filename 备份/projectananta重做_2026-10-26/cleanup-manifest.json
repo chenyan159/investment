@@ -1,0 +1,67 @@
+[
+  {
+    "Path": "分析报告\\公司排序\\站点数据",
+    "Files": 1,
+    "Bytes": 399971.0
+  },
+  {
+    "Path": "分析报告\\公司排序\\生成站点数据.mjs",
+    "Files": 1,
+    "Bytes": 28830.0
+  },
+  {
+    "Path": "分析报告\\公司排序\\生成站点数据_公司池.mjs",
+    "Files": 1,
+    "Bytes": 725.0
+  },
+  {
+    "Path": "分析报告\\公司排序\\00_站点发布策略.csv",
+    "Files": 1,
+    "Bytes": 4545.0
+  },
+  {
+    "Path": "技术面\\站点数据",
+    "Files": 1,
+    "Bytes": 1676623.0
+  },
+  {
+    "Path": "技术面\\生成站点数据.mjs",
+    "Files": 1,
+    "Bytes": 6450.0
+  },
+  {
+    "Path": "技术面\\站点发布.json",
+    "Files": 1,
+    "Bytes": 24321.0
+  },
+  {
+    "Path": "分析报告\\公司情景投资决策\\站点数据",
+    "Files": 193,
+    "Bytes": 17401013.0
+  },
+  {
+    "Path": "分析报告\\公司情景投资决策\\生成站点数据.mjs",
+    "Files": 1,
+    "Bytes": 36266.0
+  },
+  {
+    "Path": "分析报告\\公司情景投资决策\\.站点数据-scenarioDecisions-staging-46148-23a004902a36",
+    "Files": 193,
+    "Bytes": 17406146.0
+  },
+  {
+    "Path": "分析报告\\公司对比\\站点数据",
+    "Files": 193,
+    "Bytes": 50282550.0
+  },
+  {
+    "Path": "分析报告\\公司对比\\生成站点数据.mjs",
+    "Files": 1,
+    "Bytes": 37981.0
+  },
+  {
+    "Path": "tools\\research-runner\\test\\comparison-backup-reader.test.mjs",
+    "Files": 1,
+    "Bytes": 1418.0
+  }
+]
