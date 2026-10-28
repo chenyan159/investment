@@ -1,71 +1,71 @@
 {
   "ticker": "ABBV",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 286.39,
-    "date": "2026-10-27",
+    "value": 286.8,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        90.4,
-        90.4
+        29.2,
+        29.2
       ],
       "business_price": [
-        161.1,
-        161.1
+        123.9,
+        123.9
       ],
       "target_price": [
-        80.5,
-        98.4
+        52.7,
+        79.4
       ],
       "evidence": "weak"
     },
     "base": {
       "dcf_price": [
-        264.2,
-        264.2
+        187.1,
+        187.1
       ],
       "business_price": [
-        267.0,
-        267.0
+        310.1,
+        310.1
       ],
       "target_price": [
-        267.0,
-        311.5
+        310.1,
+        365.6
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        375.6,
-        375.6
+        390.3,
+        390.3
       ],
       "business_price": [
-        335.0,
-        335.0
+        419.6,
+        419.6
       ],
       "target_price": [
-        409.4,
-        465.2
+        540.6,
+        613.2
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        473.0,
-        473.0
+        568.6,
+        568.6
       ],
       "business_price": [
-        377.4,
-        377.4
+        456.1,
+        456.1
       ],
       "target_price": [
-        503.2,
-        587.0
+        639.9,
+        744.9
       ],
       "evidence": "weak"
     }
