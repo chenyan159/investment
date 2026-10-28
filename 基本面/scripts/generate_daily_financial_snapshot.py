@@ -32,6 +32,8 @@ DEFAULT_OUT_DIR = ROOT.parent / "金融资料" / "每日金融数据"
 SOURCE_BASE = "Yahoo Finance/yfinance"
 NASDAQ_SOURCE = "Nasdaq free quote API"
 
+YAHOO_SYMBOL_OVERRIDES = {"BRK.B": "BRK-B"}
+
 ADR_RATIO_OVERRIDES = {
     "SIMO": "1 ADS = 4 ordinary shares",
     "ASML": "1 ADS = 1 ordinary share",
@@ -342,7 +344,7 @@ def detect_listing_type(ticker: str, info: dict[str, Any]) -> str:
         return "fund/ETF"
     if ticker_upper in KNOWN_ADR_OR_ADS:
         return "ADR/ADS"
-    if ticker_upper.endswith("Y") and (exchange in OTC_EXCHANGES or exchange == ""):
+    if ticker_upper.endswith("Y") and exchange in OTC_EXCHANGES:
         return "ADR/ADS"
     if ticker_upper.endswith("F") and (exchange in OTC_EXCHANGES or exchange == ""):
         return "foreign_ordinary"
@@ -595,7 +597,10 @@ def fetch_company(company: Company, run_date: date, source_timestamp: str, skip_
         company=company.company,
         source_timestamp=source_timestamp,
     )
-    ticker_obj = yf.Ticker(company.ticker)
+    yahoo_symbol = YAHOO_SYMBOL_OVERRIDES.get(company.ticker, company.ticker)
+    ticker_obj = yf.Ticker(yahoo_symbol)
+    if yahoo_symbol != company.ticker:
+        row.notes.append(f"Yahoo 查询代码 {yahoo_symbol}（索引代码 {company.ticker}）")
     info: dict[str, Any] = {}
     fast_info = None
     history = None
