@@ -1,71 +1,71 @@
 {
   "ticker": "AXP",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:51:21-07:00",
+  "information_cutoff": "2026-10-28T09:46:29-07:00",
   "reference_price": {
-    "value": 312.91,
-    "date": "2026-10-27",
+    "value": 316.35,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        197.56,
-        197.56
+        212.1,
+        212.1
       ],
       "business_price": [
-        272.65,
-        272.65
+        308.8,
+        308.8
       ],
       "target_price": [
-        185.46,
-        228.8
+        230.2,
+        262.8
       ],
       "evidence": "weak"
     },
     "base": {
       "dcf_price": [
-        322.6,
-        322.6
+        387.8,
+        387.8
       ],
       "business_price": [
-        463.41,
-        463.41
+        480.2,
+        480.2
       ],
       "target_price": [
-        449.68,
-        501.07
+        471.9,
+        523.2
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        410.33,
-        410.33
+        526.9,
+        526.9
       ],
       "business_price": [
-        538.98,
-        538.98
+        581.0,
+        581.0
       ],
       "target_price": [
-        567.83,
-        657.49
+        649.2,
+        711.9
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        497.68,
-        497.68
+        607.4,
+        607.4
       ],
       "business_price": [
-        596.03,
-        596.03
+        625.2,
+        625.2
       ],
       "target_price": [
-        727.09,
-        826.24
+        767.5,
+        869.6
       ],
       "evidence": "weak"
     }
