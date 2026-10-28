@@ -1,0 +1,73 @@
+{
+  "ticker": "GILD",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "reference_price": {
+    "value": 159.08,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        48.3,
+        48.3
+      ],
+      "business_price": [
+        119.5,
+        119.5
+      ],
+      "target_price": [
+        80.1,
+        93.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        133.7,
+        133.7
+      ],
+      "business_price": [
+        204.6,
+        204.6
+      ],
+      "target_price": [
+        194.0,
+        215.2
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        236.6,
+        236.6
+      ],
+      "business_price": [
+        294.9,
+        294.9
+      ],
+      "target_price": [
+        309.8,
+        339.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        361.4,
+        361.4
+      ],
+      "business_price": [
+        379.9,
+        379.9
+      ],
+      "target_price": [
+        437.1,
+        494.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
