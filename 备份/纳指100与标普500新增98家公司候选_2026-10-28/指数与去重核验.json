@@ -1,0 +1,600 @@
+{
+  "access_date": "2026-10-28",
+  "spy_holdings_date": "As of 26-Oct-2026",
+  "spy_source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
+  "ndx_source": "https://www.nasdaq.com/articles/global-indexes/nasdaq-100-index",
+  "existing_company_count": 252,
+  "candidate_count": 98,
+  "duplicates_with_project": [],
+  "outside_verified_union": [],
+  "candidates": [
+    {
+      "ticker": "AAPL",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "APPLE INC"
+    },
+    {
+      "ticker": "INTU",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "INTUIT INC"
+    },
+    {
+      "ticker": "ADP",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "AUTOMATIC DATA PROCESSING"
+    },
+    {
+      "ticker": "PAYX",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "PAYCHEX INC"
+    },
+    {
+      "ticker": "WDAY",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "WORKDAY INC CLASS A"
+    },
+    {
+      "ticker": "ADSK",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "AUTODESK INC"
+    },
+    {
+      "ticker": "ROP",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "ROPER TECHNOLOGIES INC"
+    },
+    {
+      "ticker": "VEEV",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "VEEVA SYSTEMS INC CLASS A"
+    },
+    {
+      "ticker": "ACN",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ACCENTURE PLC CL A"
+    },
+    {
+      "ticker": "FTNT",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "FORTINET INC"
+    },
+    {
+      "ticker": "APP",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "APPLOVIN CORP CLASS A"
+    },
+    {
+      "ticker": "NFLX",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "NETFLIX INC"
+    },
+    {
+      "ticker": "DIS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "WALT DISNEY CO/THE"
+    },
+    {
+      "ticker": "TTWO",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "TAKE TWO INTERACTIVE SOFTWRE"
+    },
+    {
+      "ticker": "SHOP",
+      "sp500_proxy": false,
+      "nasdaq100": true,
+      "spy_name": null
+    },
+    {
+      "ticker": "MELI",
+      "sp500_proxy": false,
+      "nasdaq100": true,
+      "spy_name": null
+    },
+    {
+      "ticker": "UBER",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "UBER TECHNOLOGIES INC"
+    },
+    {
+      "ticker": "BKNG",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "BOOKING HOLDINGS INC"
+    },
+    {
+      "ticker": "V",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "VISA INC CLASS A SHARES"
+    },
+    {
+      "ticker": "MA",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MASTERCARD INC   A"
+    },
+    {
+      "ticker": "AXP",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "AMERICAN EXPRESS CO"
+    },
+    {
+      "ticker": "JPM",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "JPMORGAN CHASE + CO"
+    },
+    {
+      "ticker": "BAC",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "BANK OF AMERICA CORP"
+    },
+    {
+      "ticker": "GS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "GOLDMAN SACHS GROUP INC"
+    },
+    {
+      "ticker": "MS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MORGAN STANLEY"
+    },
+    {
+      "ticker": "SCHW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "SCHWAB (CHARLES) CORP"
+    },
+    {
+      "ticker": "IBKR",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "INTERACTIVE BROKERS GRO CL A"
+    },
+    {
+      "ticker": "BLK",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "BLACKROCK INC"
+    },
+    {
+      "ticker": "BX",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "BLACKSTONE INC"
+    },
+    {
+      "ticker": "KKR",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "KKR + CO INC"
+    },
+    {
+      "ticker": "SPGI",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "S+P GLOBAL INC"
+    },
+    {
+      "ticker": "MCO",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MOODY S CORP"
+    },
+    {
+      "ticker": "MSCI",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MSCI INC"
+    },
+    {
+      "ticker": "CME",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "CME GROUP INC"
+    },
+    {
+      "ticker": "ICE",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "INTERCONTINENTAL EXCHANGE IN"
+    },
+    {
+      "ticker": "BRK.B",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "BERKSHIRE HATHAWAY INC CL B"
+    },
+    {
+      "ticker": "AJG",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ARTHUR J GALLAGHER + CO"
+    },
+    {
+      "ticker": "AON",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "AON PLC CLASS A"
+    },
+    {
+      "ticker": "LLY",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ELI LILLY + CO"
+    },
+    {
+      "ticker": "JNJ",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "JOHNSON + JOHNSON"
+    },
+    {
+      "ticker": "ABBV",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ABBVIE INC"
+    },
+    {
+      "ticker": "MRK",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MERCK + CO. INC."
+    },
+    {
+      "ticker": "AMGN",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "AMGEN INC"
+    },
+    {
+      "ticker": "GILD",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "GILEAD SCIENCES INC"
+    },
+    {
+      "ticker": "ABT",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ABBOTT LABORATORIES"
+    },
+    {
+      "ticker": "SYK",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "STRYKER CORP"
+    },
+    {
+      "ticker": "BSX",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "BOSTON SCIENTIFIC CORP"
+    },
+    {
+      "ticker": "MDT",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MEDTRONIC PLC"
+    },
+    {
+      "ticker": "EW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "EDWARDS LIFESCIENCES CORP"
+    },
+    {
+      "ticker": "DXCM",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "DEXCOM INC"
+    },
+    {
+      "ticker": "RMD",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "RESMED INC"
+    },
+    {
+      "ticker": "IDXX",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "IDEXX LABORATORIES INC"
+    },
+    {
+      "ticker": "ZTS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ZOETIS INC"
+    },
+    {
+      "ticker": "UNH",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "UNITEDHEALTH GROUP INC"
+    },
+    {
+      "ticker": "MCK",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MCKESSON CORP"
+    },
+    {
+      "ticker": "HCA",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "HCA HEALTHCARE INC"
+    },
+    {
+      "ticker": "PG",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "PROCTER + GAMBLE CO/THE"
+    },
+    {
+      "ticker": "KO",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "COCA COLA CO/THE"
+    },
+    {
+      "ticker": "PEP",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "PEPSICO INC"
+    },
+    {
+      "ticker": "MDLZ",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "MONDELEZ INTERNATIONAL INC A"
+    },
+    {
+      "ticker": "MNST",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "MONSTER BEVERAGE CORP"
+    },
+    {
+      "ticker": "MCD",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "MCDONALD S CORP"
+    },
+    {
+      "ticker": "CMG",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "CHIPOTLE MEXICAN GRILL INC"
+    },
+    {
+      "ticker": "SBUX",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "STARBUCKS CORP"
+    },
+    {
+      "ticker": "HD",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "HOME DEPOT INC"
+    },
+    {
+      "ticker": "LOW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "LOWE S COS INC"
+    },
+    {
+      "ticker": "ORLY",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "O REILLY AUTOMOTIVE INC"
+    },
+    {
+      "ticker": "AZO",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "AUTOZONE INC"
+    },
+    {
+      "ticker": "NKE",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "NIKE INC  CL B"
+    },
+    {
+      "ticker": "CL",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "COLGATE PALMOLIVE CO"
+    },
+    {
+      "ticker": "CTAS",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "CINTAS CORP"
+    },
+    {
+      "ticker": "GWW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "WW GRAINGER INC"
+    },
+    {
+      "ticker": "FAST",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "FASTENAL CO"
+    },
+    {
+      "ticker": "ITW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "ILLINOIS TOOL WORKS"
+    },
+    {
+      "ticker": "AME",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "AMETEK INC"
+    },
+    {
+      "ticker": "HWM",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "HOWMET AEROSPACE INC"
+    },
+    {
+      "ticker": "TDG",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "TRANSDIGM GROUP INC"
+    },
+    {
+      "ticker": "RTX",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "RTX CORP"
+    },
+    {
+      "ticker": "LMT",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "LOCKHEED MARTIN CORP"
+    },
+    {
+      "ticker": "NOC",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "NORTHROP GRUMMAN CORP"
+    },
+    {
+      "ticker": "URI",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "UNITED RENTALS INC"
+    },
+    {
+      "ticker": "OTIS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "OTIS WORLDWIDE CORP"
+    },
+    {
+      "ticker": "UNP",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "UNION PACIFIC CORP"
+    },
+    {
+      "ticker": "CSX",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "CSX CORP"
+    },
+    {
+      "ticker": "ODFL",
+      "sp500_proxy": true,
+      "nasdaq100": true,
+      "spy_name": "OLD DOMINION FREIGHT LINE"
+    },
+    {
+      "ticker": "UPS",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "UNITED PARCEL SERVICE CL B"
+    },
+    {
+      "ticker": "XOM",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "EXXONMOBIL HOLDINGS CORP"
+    },
+    {
+      "ticker": "CVX",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "CHEVRON CORP"
+    },
+    {
+      "ticker": "COP",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "CONOCOPHILLIPS"
+    },
+    {
+      "ticker": "SLB",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "SLB LTD"
+    },
+    {
+      "ticker": "WMB",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "WILLIAMS COS INC"
+    },
+    {
+      "ticker": "NEE",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "NEXTERA ENERGY INC"
+    },
+    {
+      "ticker": "FCX",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "FREEPORT MCMORAN INC"
+    },
+    {
+      "ticker": "SHW",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "SHERWIN WILLIAMS CO/THE"
+    },
+    {
+      "ticker": "PLD",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "PROLOGIS INC"
+    },
+    {
+      "ticker": "WELL",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "WELLTOWER INC"
+    },
+    {
+      "ticker": "AMT",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "AMERICAN TOWER CORP"
+    },
+    {
+      "ticker": "O",
+      "sp500_proxy": true,
+      "nasdaq100": false,
+      "spy_name": "REALTY INCOME CORP"
+    }
+  ]
+}
