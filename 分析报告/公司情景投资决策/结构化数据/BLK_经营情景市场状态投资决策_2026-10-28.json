@@ -1,71 +1,71 @@
 {
   "ticker": "BLK",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T04:58:51-07:00",
+  "information_cutoff": "2026-10-28T09:46:48-07:00",
   "reference_price": {
-    "value": 1136.05,
-    "date": "2026-10-27",
+    "value": 1152.21,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        620,
-        620
+        617.8,
+        617.8
       ],
       "business_price": [
-        980,
-        980
+        1052.8,
+        1052.8
       ],
       "target_price": [
-        680,
-        810
+        635.8,
+        760.9
       ],
       "evidence": "weak"
     },
     "base": {
       "dcf_price": [
-        1240,
-        1240
+        1367.4,
+        1367.4
       ],
       "business_price": [
-        1690,
-        1690
+        1804.6,
+        1804.6
       ],
       "target_price": [
-        1550,
-        1770
+        1664.1,
+        1874.9
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        1680,
-        1680
+        1887.2,
+        1887.2
       ],
       "business_price": [
-        1990,
-        1990
+        2171.3,
+        2171.3
       ],
       "target_price": [
-        2000,
-        2350
+        2171.3,
+        2425.6
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        2210,
-        2210
+        2454.0,
+        2454.0
       ],
       "business_price": [
-        2330,
-        2330
+        2465.5,
+        2465.5
       ],
       "target_price": [
-        2550,
-        2960
+        2658.9,
+        3045.8
       ],
       "evidence": "weak"
     }
