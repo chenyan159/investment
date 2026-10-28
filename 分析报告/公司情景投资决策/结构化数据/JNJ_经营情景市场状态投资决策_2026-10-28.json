@@ -1,71 +1,71 @@
 {
   "ticker": "JNJ",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:23:06-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 268.73,
-    "date": "2026-10-27",
+    "value": 271.8,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        89.1,
-        89.1
+        52.0,
+        52.0
       ],
       "business_price": [
-        213.9,
-        213.9
+        200.0,
+        200.0
       ],
       "target_price": [
-        123.7,
-        150.2
+        135.1,
+        161.3
       ],
       "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        214.1,
-        214.1
+        232.6,
+        232.6
       ],
       "business_price": [
-        334.3,
-        334.3
+        340.3,
+        340.3
       ],
       "target_price": [
-        290.0,
-        331.4
+        263.4,
+        305.7
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        320.0,
-        320.0
+        349.5,
+        349.5
       ],
       "business_price": [
-        421.6,
-        421.6
+        416.6,
+        416.6
       ],
       "target_price": [
-        400.6,
-        452.8
+        391.8,
+        426.0
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        438.1,
-        438.1
+        502.9,
+        502.9
       ],
       "business_price": [
-        486.5,
-        486.5
+        478.6,
+        478.6
       ],
       "target_price": [
-        502.4,
-        582.8
+        489.5,
+        528.7
       ],
       "evidence": "weak"
     }
