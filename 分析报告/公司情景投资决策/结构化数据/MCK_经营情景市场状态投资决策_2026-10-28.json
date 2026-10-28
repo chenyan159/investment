@@ -1,71 +1,71 @@
 {
   "ticker": "MCK",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "information_cutoff": "2026-10-28T09:50:18-07:00",
   "reference_price": {
-    "value": 967.02,
-    "date": "2026-10-27",
+    "value": 961.89,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2030-03-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        605.6,
-        605.6
+        554.9,
+        554.9
       ],
       "business_price": [
-        820.9,
-        820.9
+        759.6,
+        759.6
       ],
       "target_price": [
-        662.6,
-        776.1
+        598.7,
+        704.4
       ],
       "evidence": "weak"
     },
     "base": {
       "dcf_price": [
-        1273.1,
-        1273.1
+        1147.8,
+        1147.8
       ],
       "business_price": [
-        1312.8,
-        1312.8
+        1351.0,
+        1351.0
       ],
       "target_price": [
-        1271.5,
-        1453.2
+        1252.8,
+        1503.4
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        1663.0,
-        1663.0
+        1589.9,
+        1589.9
       ],
       "business_price": [
-        1454.1,
-        1454.1
+        1611.0,
+        1611.0
       ],
       "target_price": [
-        1542.5,
-        1743.7
+        1643.3,
+        1942.1
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        2038.9,
-        2038.9
+        2126.8,
+        2126.8
       ],
       "business_price": [
-        1582.3,
-        1582.3
+        1859.5,
+        1859.5
       ],
       "target_price": [
-        1824.4,
-        2043.3
+        2155.5,
+        2500.4
       ],
       "evidence": "weak"
     }
