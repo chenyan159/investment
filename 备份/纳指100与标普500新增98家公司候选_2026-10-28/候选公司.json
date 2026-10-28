@@ -3,73 +3,82 @@
     "id": 1,
     "ticker": "AAPL",
     "name": "苹果 Apple",
-    "topic": "1",
+    "topic": "N01",
     "reason": "消费终端生态、品牌与服务收入的代表",
-    "risk": "换机周期、平台监管及AI体验竞争"
+    "risk": "换机周期、平台监管及AI体验竞争",
+    "original_topic": "1"
   },
   {
     "id": 2,
     "ticker": "INTU",
     "name": "Intuit",
-    "topic": "2",
+    "topic": "M01",
     "reason": "财税与小企业财务工作流，客户迁移成本值得研究",
-    "risk": "AI替代、报税监管及客户增长"
+    "risk": "AI替代、报税监管及客户增长",
+    "original_topic": "2"
   },
   {
     "id": 3,
     "ticker": "ADP",
     "name": "Automatic Data Processing",
-    "topic": "2",
+    "topic": "M01",
     "reason": "薪酬合规刚需与持续服务收入",
-    "risk": "就业放缓、客户资金利息收益回落"
+    "risk": "就业放缓、客户资金利息收益回落",
+    "original_topic": "2"
   },
   {
     "id": 4,
     "ticker": "PAYX",
     "name": "Paychex",
-    "topic": "2",
+    "topic": "M01",
     "reason": "中小企业薪酬、人事与福利外包",
-    "risk": "中小企业倒闭、并购整合"
+    "risk": "中小企业倒闭、并购整合",
+    "original_topic": "2"
   },
   {
     "id": 5,
     "ticker": "WDAY",
     "name": "Workday",
-    "topic": "2",
+    "topic": "M01",
     "reason": "大型企业人力与财务核心系统",
-    "risk": "席位增长放缓、AI重构软件收费"
+    "risk": "席位增长放缓、AI重构软件收费",
+    "original_topic": "2"
   },
   {
     "id": 6,
     "ticker": "ADSK",
     "name": "Autodesk 欧特克",
-    "topic": "3",
+    "topic": "M02",
     "reason": "工程设计格式、CAD与BIM工作流",
-    "risk": "建筑周期、销售模式变化及AI竞争"
+    "risk": "建筑周期、销售模式变化及AI竞争",
+    "original_topic": "3"
   },
   {
     "id": 7,
     "ticker": "ROP",
     "name": "Roper Technologies",
-    "topic": "4",
+    "topic": "M01",
     "reason": "垂直软件组合与持续并购的资本配置样本",
-    "risk": "收购价格、商誉及有机增长"
+    "risk": "收购价格、商誉及有机增长",
+    "original_topic": "4"
   },
   {
     "id": 8,
     "ticker": "VEEV",
     "name": "Veeva Systems",
-    "topic": "4",
+    "topic": "M01",
     "reason": "生命科学商业化、临床与合规软件",
-    "risk": "大客户预算、平台迁移及竞争"
+    "risk": "大客户预算、平台迁移及竞争",
+    "original_topic": "4"
   },
   {
     "id": 9,
     "ticker": "ACN",
     "name": "Accenture 埃森哲",
-    "topic": "5",
+    "topic": "M01",
     "reason": "企业IT改造与AI落地服务的规模平台",
-    "risk": "AI压缩工时收费、企业咨询预算"
+    "risk": "AI压缩工时收费、企业咨询预算",
+    "original_topic": "5"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "name": "Fortinet 飞塔",
     "topic": "E1",
     "reason": "网络安全设备、订阅与安全平台样本",
-    "risk": "硬件换机周期、平台捆绑竞争"
+    "risk": "硬件换机周期、平台捆绑竞争",
+    "original_topic": "E1"
   },
   {
     "id": 11,
@@ -85,702 +95,790 @@
     "name": "AppLovin",
     "topic": "E2",
     "reason": "广告算法、投放与流量变现样本",
-    "risk": "隐私政策、平台依赖及广告质量"
+    "risk": "隐私政策、平台依赖及广告质量",
+    "original_topic": "E2"
   },
   {
     "id": 12,
     "ticker": "NFLX",
     "name": "Netflix 奈飞",
-    "topic": "6",
+    "topic": "N02",
     "reason": "全球内容分发、订阅与广告商业模式",
-    "risk": "内容成本、竞争和用户付费上限"
+    "risk": "内容成本、竞争和用户付费上限",
+    "original_topic": "6"
   },
   {
     "id": 13,
     "ticker": "DIS",
     "name": "Walt Disney 迪士尼",
-    "topic": "6",
+    "topic": "N02",
     "reason": "影视IP、流媒体与线下体验的跨业务样本",
-    "risk": "传统电视下滑、内容投入及乐园周期"
+    "risk": "传统电视下滑、内容投入及乐园周期",
+    "original_topic": "6"
   },
   {
     "id": 14,
     "ticker": "TTWO",
     "name": "Take-Two Interactive",
-    "topic": "7",
+    "topic": "N02",
     "reason": "头部游戏IP与长期内容运营",
-    "risk": "大作延期、单一系列依赖及开发成本"
+    "risk": "大作延期、单一系列依赖及开发成本",
+    "original_topic": "7"
   },
   {
     "id": 15,
     "ticker": "SHOP",
     "name": "Shopify",
-    "topic": "8",
+    "topic": "N03",
     "reason": "商户电商工具、支付和商业生态",
-    "risk": "竞争、商户流失及交易量波动"
+    "risk": "竞争、商户流失及交易量波动",
+    "original_topic": "8"
   },
   {
     "id": 16,
     "ticker": "MELI",
     "name": "MercadoLibre 美客多",
-    "topic": "9",
+    "topic": "N03",
     "reason": "拉美电商、履约与金融服务协同",
-    "risk": "汇率、消费信贷损失及物流投入"
+    "risk": "汇率、消费信贷损失及物流投入",
+    "original_topic": "9"
   },
   {
     "id": 17,
     "ticker": "UBER",
     "name": "Uber 优步",
-    "topic": "10",
+    "topic": "N03",
     "reason": "出行与配送平台的供需网络",
-    "risk": "无人驾驶改变分成、劳动法规"
+    "risk": "无人驾驶改变分成、劳动法规",
+    "original_topic": "10"
   },
   {
     "id": 18,
     "ticker": "BKNG",
     "name": "Booking Holdings",
-    "topic": "11",
+    "topic": "N03",
     "reason": "住宿预订网络、分发和转化能力",
-    "risk": "搜索获客成本、AI入口及旅游周期"
+    "risk": "搜索获客成本、AI入口及旅游周期",
+    "original_topic": "11"
   },
   {
     "id": 19,
     "ticker": "V",
     "name": "Visa 维萨",
-    "topic": "12",
+    "topic": "N04",
     "reason": "全球支付网络与交易处理的规模效应",
-    "risk": "手续费监管、新支付通道分流"
+    "risk": "手续费监管、新支付通道分流",
+    "original_topic": "12"
   },
   {
     "id": 20,
     "ticker": "MA",
     "name": "Mastercard 万事达",
-    "topic": "12",
+    "topic": "N04",
     "reason": "支付网络及增值数据和安全服务",
-    "risk": "跨境消费周期、费率监管"
+    "risk": "跨境消费周期、费率监管",
+    "original_topic": "12"
   },
   {
     "id": 21,
     "ticker": "AXP",
     "name": "American Express 美国运通",
-    "topic": "13",
+    "topic": "N04",
     "reason": "高消费客群、会员费与闭环支付",
-    "risk": "信用损失、获客及权益成本"
+    "risk": "信用损失、获客及权益成本",
+    "original_topic": "13"
   },
   {
     "id": 22,
     "ticker": "JPM",
     "name": "JPMorgan Chase 摩根大通",
-    "topic": "14",
+    "topic": "N05",
     "reason": "存款、支付、信贷和投行业务综合标杆",
-    "risk": "信贷周期、资本要求与利率变化"
+    "risk": "信贷周期、资本要求与利率变化",
+    "original_topic": "14"
   },
   {
     "id": 23,
     "ticker": "BAC",
     "name": "Bank of America 美国银行",
-    "topic": "14",
+    "topic": "N05",
     "reason": "美国零售存款与利率敏感性样本",
-    "risk": "资产负债久期、存款成本与坏账"
+    "risk": "资产负债久期、存款成本与坏账",
+    "original_topic": "14"
   },
   {
     "id": 24,
     "ticker": "GS",
     "name": "Goldman Sachs 高盛",
-    "topic": "15",
+    "topic": "N05",
     "reason": "投行、交易与机构资本市场代表",
-    "risk": "交易和承销周期、资本占用"
+    "risk": "交易和承销周期、资本占用",
+    "original_topic": "15"
   },
   {
     "id": 25,
     "ticker": "MS",
     "name": "Morgan Stanley 摩根士丹利",
-    "topic": "15",
+    "topic": "N05",
     "reason": "财富管理与机构证券业务组合",
-    "risk": "资产价格下跌、资金流入放缓"
+    "risk": "资产价格下跌、资金流入放缓",
+    "original_topic": "15"
   },
   {
     "id": 26,
     "ticker": "SCHW",
     "name": "Charles Schwab 嘉信理财",
-    "topic": "15",
+    "topic": "N05",
     "reason": "零售券商、顾问托管与财富账户平台",
-    "risk": "客户现金迁移、融资和利率风险"
+    "risk": "客户现金迁移、融资和利率风险",
+    "original_topic": "15"
   },
   {
     "id": 27,
     "ticker": "IBKR",
     "name": "Interactive Brokers 盈透证券",
-    "topic": "15",
+    "topic": "N05",
     "reason": "全球多资产经纪与自动化运营",
-    "risk": "交易量、利率、杠杆客户风控"
+    "risk": "交易量、利率、杠杆客户风控",
+    "original_topic": "15"
   },
   {
     "id": 28,
     "ticker": "BLK",
     "name": "BlackRock 贝莱德",
-    "topic": "16",
+    "topic": "N06",
     "reason": "ETF、资产管理与投资科技平台",
-    "risk": "市场下跌、费率压缩及整合成本"
+    "risk": "市场下跌、费率压缩及整合成本",
+    "original_topic": "16"
   },
   {
     "id": 29,
     "ticker": "BX",
     "name": "Blackstone 黑石",
-    "topic": "17",
+    "topic": "N06",
     "reason": "私募资产管理与第三方资本募集",
-    "risk": "退出放缓、地产估值与募资周期"
+    "risk": "退出放缓、地产估值与募资周期",
+    "original_topic": "17"
   },
   {
     "id": 30,
     "ticker": "KKR",
     "name": "KKR",
-    "topic": "17",
+    "topic": "N06",
     "reason": "私募股权、信用与保险资本协同",
-    "risk": "杠杆、估值透明度与保险负债匹配"
+    "risk": "杠杆、估值透明度与保险负债匹配",
+    "original_topic": "17"
   },
   {
     "id": 31,
     "ticker": "SPGI",
     "name": "S&P Global 标普全球",
-    "topic": "18",
+    "topic": "N07",
     "reason": "评级、指数、金融数据和工作流",
-    "risk": "发债周期、数据竞争及业务调整"
+    "risk": "发债周期、数据竞争及业务调整",
+    "original_topic": "18"
   },
   {
     "id": 32,
     "ticker": "MCO",
     "name": "Moody’s 穆迪",
-    "topic": "18",
+    "topic": "N07",
     "reason": "信用评级与风险分析的专业壁垒",
-    "risk": "债券发行周期、监管和模型风险"
+    "risk": "债券发行周期、监管和模型风险",
+    "original_topic": "18"
   },
   {
     "id": 33,
     "ticker": "MSCI",
     "name": "MSCI 明晟",
-    "topic": "18",
+    "topic": "N07",
     "reason": "指数授权、组合分析与数据订阅",
-    "risk": "ETF费率压力、资产规模及客户集中"
+    "risk": "ETF费率压力、资产规模及客户集中",
+    "original_topic": "18"
   },
   {
     "id": 34,
     "ticker": "CME",
     "name": "CME Group 芝商所",
-    "topic": "19",
+    "topic": "N07",
     "reason": "衍生品流动性、清算与交易网络",
-    "risk": "交易量正常化、竞争及清算尾部风险"
+    "risk": "交易量正常化、竞争及清算尾部风险",
+    "original_topic": "19"
   },
   {
     "id": 35,
     "ticker": "ICE",
     "name": "Intercontinental Exchange 洲际交易所",
-    "topic": "19",
+    "topic": "N07",
     "reason": "交易、清算、固定收益数据与技术",
-    "risk": "负债、按揭周期及系统运营风险"
+    "risk": "负债、按揭周期及系统运营风险",
+    "original_topic": "19"
   },
   {
     "id": 36,
     "ticker": "BRK.B",
     "name": "Berkshire Hathaway 伯克希尔",
-    "topic": "20",
+    "topic": "M03",
     "reason": "保险浮存金与多元资本配置标杆",
-    "risk": "规模拖累、接班执行及巨灾损失"
+    "risk": "规模拖累、接班执行及巨灾损失",
+    "original_topic": "20"
   },
   {
     "id": 37,
     "ticker": "AJG",
     "name": "Arthur J. Gallagher 加拉格尔",
-    "topic": "21",
+    "topic": "M03",
     "reason": "保险经纪续保服务与并购整合模式",
-    "risk": "并购价格、整合与保险费率周期"
+    "risk": "并购价格、整合与保险费率周期",
+    "original_topic": "21"
   },
   {
     "id": 38,
     "ticker": "AON",
     "name": "Aon 怡安",
-    "topic": "21",
+    "topic": "M03",
     "reason": "风险咨询、保险经纪与人力福利服务",
-    "risk": "客户预算、并购整合及专业责任"
+    "risk": "客户预算、并购整合及专业责任",
+    "original_topic": "21"
   },
   {
     "id": 39,
     "ticker": "LLY",
     "name": "Eli Lilly 礼来",
-    "topic": "22",
+    "topic": "N08",
     "reason": "肥胖与糖尿病治疗的核心创新药样本",
-    "risk": "定价、竞争、产能和研发预期"
+    "risk": "定价、竞争、产能和研发预期",
+    "original_topic": "22"
   },
   {
     "id": 40,
     "ticker": "JNJ",
     "name": "Johnson & Johnson 强生",
-    "topic": "23",
+    "topic": "N08",
     "reason": "创新药与医疗器械的多元医疗平台",
-    "risk": "诉讼、专利到期及业务调整"
+    "risk": "诉讼、专利到期及业务调整",
+    "original_topic": "23"
   },
   {
     "id": 41,
     "ticker": "ABBV",
     "name": "AbbVie 艾伯维",
-    "topic": "23",
+    "topic": "N08",
     "reason": "免疫治疗产品接续与专科药商业化",
-    "risk": "大产品集中、专利和研发回报"
+    "risk": "大产品集中、专利和研发回报",
+    "original_topic": "23"
   },
   {
     "id": 42,
     "ticker": "MRK",
     "name": "Merck 默沙东",
-    "topic": "23",
+    "topic": "N08",
     "reason": "肿瘤药、疫苗与产品生命周期管理",
-    "risk": "核心药专利接续和管线兑现"
+    "risk": "核心药专利接续和管线兑现",
+    "original_topic": "23"
   },
   {
     "id": 43,
     "ticker": "AMGN",
     "name": "Amgen 安进",
-    "topic": "23",
+    "topic": "N08",
     "reason": "生物药制造与多产品商业化能力",
-    "risk": "生物类似药竞争、债务和管线结果"
+    "risk": "生物类似药竞争、债务和管线结果",
+    "original_topic": "23"
   },
   {
     "id": 44,
     "ticker": "GILD",
     "name": "Gilead 吉利德",
-    "topic": "23",
+    "topic": "N08",
     "reason": "抗病毒药物平台与慢病用药现金流",
-    "risk": "主力产品集中、定价及肿瘤拓展"
+    "risk": "主力产品集中、定价及肿瘤拓展",
+    "original_topic": "23"
   },
   {
     "id": 45,
     "ticker": "ABT",
     "name": "Abbott 雅培",
-    "topic": "24",
+    "topic": "N09",
     "reason": "心血管器械、诊断和糖尿病管理平台",
-    "risk": "产品质量、支付标准及细分竞争"
+    "risk": "产品质量、支付标准及细分竞争",
+    "original_topic": "24"
   },
   {
     "id": 46,
     "ticker": "SYK",
     "name": "Stryker 史赛克",
-    "topic": "25",
+    "topic": "N09",
     "reason": "骨科、手术器械与机器人辅助手术生态",
-    "risk": "医院预算、手术量和收购整合"
+    "risk": "医院预算、手术量和收购整合",
+    "original_topic": "25"
   },
   {
     "id": 47,
     "ticker": "BSX",
     "name": "Boston Scientific 波士顿科学",
-    "topic": "24",
+    "topic": "N09",
     "reason": "电生理与微创介入器械的代表平台",
-    "risk": "竞品迭代、临床证据及并购整合"
+    "risk": "竞品迭代、临床证据及并购整合",
+    "original_topic": "24"
   },
   {
     "id": 48,
     "ticker": "MDT",
     "name": "Medtronic 美敦力",
-    "topic": "24",
+    "topic": "N09",
     "reason": "植入式器械与医院渠道的广覆盖样本",
-    "risk": "创新效率、价格压力及质量责任"
+    "risk": "创新效率、价格压力及质量责任",
+    "original_topic": "24"
   },
   {
     "id": 49,
     "ticker": "EW",
     "name": "Edwards Lifesciences 爱德华生命科学",
-    "topic": "24",
+    "topic": "N09",
     "reason": "结构性心脏病与经导管瓣膜专长",
-    "risk": "手术渗透速度、试验与竞品"
+    "risk": "手术渗透速度、试验与竞品",
+    "original_topic": "24"
   },
   {
     "id": 50,
     "ticker": "DXCM",
     "name": "DexCom 德康",
-    "topic": "26",
+    "topic": "N09",
     "reason": "持续血糖监测与传感器复购",
-    "risk": "雅培竞争、报销及价格压力"
+    "risk": "雅培竞争、报销及价格压力",
+    "original_topic": "26"
   },
   {
     "id": 51,
     "ticker": "RMD",
     "name": "ResMed 瑞思迈",
-    "topic": "27",
+    "topic": "N09",
     "reason": "睡眠呼吸设备、面罩复购与远程管理",
-    "risk": "药物改变需求、竞争及报销"
+    "risk": "药物改变需求、竞争及报销",
+    "original_topic": "27"
   },
   {
     "id": 52,
     "ticker": "IDXX",
     "name": "IDEXX Laboratories 爱德士",
-    "topic": "28",
+    "topic": "N10",
     "reason": "兽医诊断仪器、耗材与实验室网络",
-    "risk": "宠物就诊量、定价及设备更新"
+    "risk": "宠物就诊量、定价及设备更新",
+    "original_topic": "28"
   },
   {
     "id": 53,
     "ticker": "ZTS",
     "name": "Zoetis 硕腾",
-    "topic": "28",
+    "topic": "N10",
     "reason": "动物药品、疫苗与兽医渠道代表",
-    "risk": "产品安全、宠物支出与竞品"
+    "risk": "产品安全、宠物支出与竞品",
+    "original_topic": "28"
   },
   {
     "id": 54,
     "ticker": "UNH",
     "name": "UnitedHealth 联合健康",
-    "topic": "29",
+    "topic": "N11",
     "reason": "医保支付、PBM与医疗服务的系统性样本",
-    "risk": "医疗赔付率、监管与合规执行"
+    "risk": "医疗赔付率、监管与合规执行",
+    "original_topic": "29"
   },
   {
     "id": 55,
     "ticker": "MCK",
     "name": "McKesson 麦克森",
-    "topic": "30",
+    "topic": "N11",
     "reason": "医药分销规模与专科药服务",
-    "risk": "薄利运营、客户集中及诉讼"
+    "risk": "薄利运营、客户集中及诉讼",
+    "original_topic": "30"
   },
   {
     "id": 56,
     "ticker": "HCA",
     "name": "HCA Healthcare",
-    "topic": "31",
+    "topic": "N11",
     "reason": "大型医院网络与医疗服务运营",
-    "risk": "人工成本、医保支付及负债"
+    "risk": "人工成本、医保支付及负债",
+    "original_topic": "31"
   },
   {
     "id": 57,
     "ticker": "PG",
     "name": "Procter & Gamble 宝洁",
-    "topic": "32",
+    "topic": "N12",
     "reason": "日用品牌组合与渠道执行",
-    "risk": "提价空间、原料和自有品牌竞争"
+    "risk": "提价空间、原料和自有品牌竞争",
+    "original_topic": "32"
   },
   {
     "id": 58,
     "ticker": "KO",
     "name": "Coca-Cola 可口可乐",
-    "topic": "33",
+    "topic": "N12",
     "reason": "饮料品牌、浓缩液与装瓶体系",
-    "risk": "糖税、健康偏好及汇率"
+    "risk": "糖税、健康偏好及汇率",
+    "original_topic": "33"
   },
   {
     "id": 59,
     "ticker": "PEP",
     "name": "PepsiCo 百事",
-    "topic": "33",
+    "topic": "N12",
     "reason": "零食与饮料品牌组合及分销",
-    "risk": "消费量、成本和产品组合调整"
+    "risk": "消费量、成本和产品组合调整",
+    "original_topic": "33"
   },
   {
     "id": 60,
     "ticker": "MDLZ",
     "name": "Mondelez 亿滋",
-    "topic": "33",
+    "topic": "N12",
     "reason": "饼干巧克力品牌与全球渠道",
-    "risk": "可可成本、提价后的需求弹性"
+    "risk": "可可成本、提价后的需求弹性",
+    "original_topic": "33"
   },
   {
     "id": 61,
     "ticker": "MNST",
     "name": "Monster Beverage 怪物饮料",
-    "topic": "33",
+    "topic": "N12",
     "reason": "功能饮料品牌与全球分销",
-    "risk": "能量饮料竞争、健康监管"
+    "risk": "能量饮料竞争、健康监管",
+    "original_topic": "33"
   },
   {
     "id": 62,
     "ticker": "MCD",
     "name": "McDonald’s 麦当劳",
-    "topic": "34",
+    "topic": "N13",
     "reason": "加盟收费、品牌与门店网络",
-    "risk": "加盟商盈利、性价比和消费周期"
+    "risk": "加盟商盈利、性价比和消费周期",
+    "original_topic": "34"
   },
   {
     "id": 63,
     "ticker": "CMG",
     "name": "Chipotle 墨式烧烤",
-    "topic": "34",
+    "topic": "N13",
     "reason": "直营连锁的单店效率与扩店模型",
-    "risk": "同店客流、食品安全及人工成本"
+    "risk": "同店客流、食品安全及人工成本",
+    "original_topic": "34"
   },
   {
     "id": 64,
     "ticker": "SBUX",
     "name": "Starbucks 星巴克",
-    "topic": "34",
+    "topic": "N13",
     "reason": "咖啡品牌、会员和门店效率修复样本",
-    "risk": "客流修复、劳动成本与竞争"
+    "risk": "客流修复、劳动成本与竞争",
+    "original_topic": "34"
   },
   {
     "id": 65,
     "ticker": "HD",
     "name": "Home Depot 家得宝",
-    "topic": "35",
+    "topic": "M08",
     "reason": "家装零售、专业客户与配送规模",
-    "risk": "住房成交、利率与大额装修需求"
+    "risk": "住房成交、利率与大额装修需求",
+    "original_topic": "35"
   },
   {
     "id": 66,
     "ticker": "LOW",
     "name": "Lowe’s 劳氏",
-    "topic": "35",
+    "topic": "M08",
     "reason": "家装零售与专业渠道拓展对照样本",
-    "risk": "装修周期、执行与专业客户竞争"
+    "risk": "装修周期、执行与专业客户竞争",
+    "original_topic": "35"
   },
   {
     "id": 67,
     "ticker": "ORLY",
     "name": "O’Reilly Automotive",
-    "topic": "36",
+    "topic": "M08",
     "reason": "汽配专业客户与DIY双市场供货",
-    "risk": "车辆技术变化、库存与估值"
+    "risk": "车辆技术变化、库存与估值",
+    "original_topic": "36"
   },
   {
     "id": 68,
     "ticker": "AZO",
     "name": "AutoZone 汽车地带",
-    "topic": "36",
+    "topic": "M08",
     "reason": "汽配门店网络、库存和商业客户拓展",
-    "risk": "负债回购、需求和配送竞争"
+    "risk": "负债回购、需求和配送竞争",
+    "original_topic": "36"
   },
   {
     "id": 69,
     "ticker": "NKE",
     "name": "Nike 耐克",
-    "topic": "37",
+    "topic": "N12",
     "reason": "运动品牌、产品创新与渠道修复样本",
-    "risk": "品牌热度、库存及新品牌竞争"
+    "risk": "品牌热度、库存及新品牌竞争",
+    "original_topic": "37"
   },
   {
     "id": 70,
     "ticker": "CL",
     "name": "Colgate-Palmolive 高露洁",
-    "topic": "32",
+    "topic": "N12",
     "reason": "口腔护理及宠物营养的品牌复购",
-    "risk": "汇率、渠道和提价空间"
+    "risk": "汇率、渠道和提价空间",
+    "original_topic": "32"
   },
   {
     "id": 71,
     "ticker": "CTAS",
     "name": "Cintas 信达思",
-    "topic": "38",
+    "topic": "N14",
     "reason": "制服租赁与设施服务的线路密度",
-    "risk": "就业、并购整合与估值"
+    "risk": "就业、并购整合与估值",
+    "original_topic": "38"
   },
   {
     "id": 72,
     "ticker": "GWW",
     "name": "W.W. Grainger 固安捷",
-    "topic": "39",
+    "topic": "N14",
     "reason": "工业维修耗材的品类、渠道与履约",
-    "risk": "工业周期、价格透明化"
+    "risk": "工业周期、价格透明化",
+    "original_topic": "39"
   },
   {
     "id": 73,
     "ticker": "FAST",
     "name": "Fastenal 快扣",
-    "topic": "39",
+    "topic": "N14",
     "reason": "紧固件、现场库存和自动售货服务",
-    "risk": "制造业需求、客户集中"
+    "risk": "制造业需求、客户集中",
+    "original_topic": "39"
   },
   {
     "id": 74,
     "ticker": "ITW",
     "name": "Illinois Tool Works 伊利诺伊工具",
-    "topic": "40",
+    "topic": "M04",
     "reason": "细分工业产品、客户关系与运营效率",
-    "risk": "工业及汽车周期、终端需求"
+    "risk": "工业及汽车周期、终端需求",
+    "original_topic": "40"
   },
   {
     "id": 75,
     "ticker": "AME",
     "name": "AMETEK 阿美特克",
-    "topic": "40",
+    "topic": "M04",
     "reason": "精密仪器与机电部件的利基市场",
-    "risk": "并购整合、客户资本开支"
+    "risk": "并购整合、客户资本开支",
+    "original_topic": "40"
   },
   {
     "id": 76,
     "ticker": "HWM",
     "name": "Howmet Aerospace 豪迈航空",
-    "topic": "41",
+    "topic": "N19",
     "reason": "航空发动机热端部件及制造工艺",
-    "risk": "飞机产量、认证与客户集中"
+    "risk": "飞机产量、认证与客户集中",
+    "original_topic": "41"
   },
   {
     "id": 77,
     "ticker": "TDG",
     "name": "TransDigm 传斯达",
-    "topic": "41",
+    "topic": "N19",
     "reason": "认证航空部件与售后更换需求",
-    "risk": "高杠杆、采购议价及监管"
+    "risk": "高杠杆、采购议价及监管",
+    "original_topic": "41"
   },
   {
     "id": 78,
     "ticker": "RTX",
     "name": "RTX 雷神技术",
-    "topic": "42",
+    "topic": "M06",
     "reason": "防空导弹与民用航空系统组合",
-    "risk": "项目成本、发动机责任及交付"
+    "risk": "项目成本、发动机责任及交付",
+    "original_topic": "42"
   },
   {
     "id": 79,
     "ticker": "LMT",
     "name": "Lockheed Martin 洛克希德马丁",
-    "topic": "42",
+    "topic": "M06",
     "reason": "军机、导弹与长期国防项目代表",
-    "risk": "固定价合同损失、预算与执行"
+    "risk": "固定价合同损失、预算与执行",
+    "original_topic": "42"
   },
   {
     "id": 80,
     "ticker": "NOC",
     "name": "Northrop Grumman 诺斯罗普格鲁曼",
-    "topic": "42",
+    "topic": "M06",
     "reason": "战略航空、任务系统与国防航天",
-    "risk": "大项目成本、预算和技术执行"
+    "risk": "大项目成本、预算和技术执行",
+    "original_topic": "42"
   },
   {
     "id": 81,
     "ticker": "URI",
     "name": "United Rentals 联合租赁",
-    "topic": "43",
+    "topic": "M05",
     "reason": "租赁网络、设备利用率与专业租赁",
-    "risk": "建设周期、二手机残值及负债"
+    "risk": "建设周期、二手机残值及负债",
+    "original_topic": "43"
   },
   {
     "id": 82,
     "ticker": "OTIS",
     "name": "Otis 奥的斯",
-    "topic": "44",
+    "topic": "N14",
     "reason": "电梯存量维保与更新改造",
-    "risk": "新装周期、维保竞争与中国需求"
+    "risk": "新装周期、维保竞争与中国需求",
+    "original_topic": "44"
   },
   {
     "id": 83,
     "ticker": "UNP",
     "name": "Union Pacific 联合太平洋",
-    "topic": "45",
+    "topic": "N15",
     "reason": "铁路路网与长距离货运规模",
-    "risk": "货运周期、劳资和并购执行"
+    "risk": "货运周期、劳资和并购执行",
+    "original_topic": "45"
   },
   {
     "id": 84,
     "ticker": "CSX",
     "name": "CSX",
-    "topic": "45",
+    "topic": "N15",
     "reason": "美国东部铁路运输与多式联运",
-    "risk": "煤炭需求、服务质量与资本开支"
+    "risk": "煤炭需求、服务质量与资本开支",
+    "original_topic": "45"
   },
   {
     "id": 85,
     "ticker": "ODFL",
     "name": "Old Dominion Freight Line",
-    "topic": "46",
+    "topic": "N15",
     "reason": "零担货运的服务网络与执行效率",
-    "risk": "货运低谷、价格竞争和运力"
+    "risk": "货运低谷、价格竞争和运力",
+    "original_topic": "46"
   },
   {
     "id": 86,
     "ticker": "UPS",
     "name": "United Parcel Service 联合包裹",
-    "topic": "46",
+    "topic": "N15",
     "reason": "全球快递网络与商业物流代表",
-    "risk": "件量结构、人工成本和客户调整"
+    "risk": "件量结构、人工成本和客户调整",
+    "original_topic": "46"
   },
   {
     "id": 87,
     "ticker": "XOM",
     "name": "ExxonMobil 埃克森美孚",
-    "topic": "47",
+    "topic": "N16",
     "reason": "上游资源、炼化与综合能源规模",
-    "risk": "油价、项目回报和资本纪律"
+    "risk": "油价、项目回报和资本纪律",
+    "original_topic": "47"
   },
   {
     "id": 88,
     "ticker": "CVX",
     "name": "Chevron 雪佛龙",
-    "topic": "47",
+    "topic": "N16",
     "reason": "全球油气资源与综合经营对照",
-    "risk": "油价、整合及大型项目执行"
+    "risk": "油价、整合及大型项目执行",
+    "original_topic": "47"
   },
   {
     "id": 89,
     "ticker": "COP",
     "name": "ConocoPhillips 康菲石油",
-    "topic": "47",
+    "topic": "N16",
     "reason": "上游资产组合与资本配置样本",
-    "risk": "油气价格、储量接续和投入"
+    "risk": "油气价格、储量接续和投入",
+    "original_topic": "47"
   },
   {
     "id": 90,
     "ticker": "SLB",
     "name": "SLB 斯伦贝谢",
-    "topic": "48",
+    "topic": "N16",
     "reason": "油田技术、工程服务与生产系统",
-    "risk": "油气资本开支、地缘和客户预算"
+    "risk": "油气资本开支、地缘和客户预算",
+    "original_topic": "48"
   },
   {
     "id": 91,
     "ticker": "WMB",
     "name": "Williams 威廉姆斯",
-    "topic": "49",
+    "topic": "N16",
     "reason": "天然气长输管道与基础设施收费",
-    "risk": "许可、监管、客户信用及债务"
+    "risk": "许可、监管、客户信用及债务",
+    "original_topic": "49"
   },
   {
     "id": 92,
     "ticker": "NEE",
     "name": "NextEra Energy 新纪元能源",
-    "topic": "50",
+    "topic": "M07",
     "reason": "受监管电力与可再生能源开发组合",
-    "risk": "利率、融资、政策与项目回报"
+    "risk": "利率、融资、政策与项目回报",
+    "original_topic": "50"
   },
   {
     "id": 93,
     "ticker": "FCX",
     "name": "Freeport-McMoRan 自由港",
-    "topic": "51",
+    "topic": "N17",
     "reason": "铜资源供给与电气化需求代表",
-    "risk": "铜价、矿山运营和资源国政策"
+    "risk": "铜价、矿山运营和资源国政策",
+    "original_topic": "51"
   },
   {
     "id": 94,
     "ticker": "SHW",
     "name": "Sherwin-Williams 宣伟",
-    "topic": "52",
+    "topic": "N17",
     "reason": "涂料品牌、专业门店与施工渠道",
-    "risk": "地产周期、原材料和整合"
+    "risk": "地产周期、原材料和整合",
+    "original_topic": "52"
   },
   {
     "id": 95,
     "ticker": "PLD",
     "name": "Prologis 普洛斯",
-    "topic": "53",
+    "topic": "N18",
     "reason": "物流仓储区位与全球客户网络",
-    "risk": "租金、空置、资本化率及开发"
+    "risk": "租金、空置、资本化率及开发",
+    "original_topic": "53"
   },
   {
     "id": 96,
     "ticker": "WELL",
     "name": "Welltower",
-    "topic": "54",
+    "topic": "N18",
     "reason": "老龄化住房与养老社区运营样本",
-    "risk": "入住率、护理成本和并购估值"
+    "risk": "入住率、护理成本和并购估值",
+    "original_topic": "54"
   },
   {
     "id": 97,
     "ticker": "AMT",
     "name": "American Tower 美国电塔",
-    "topic": "55",
+    "topic": "N18",
     "reason": "通信塔多租户资产与长期租约",
-    "risk": "运营商整合、利率和租户信用"
+    "risk": "运营商整合、利率和租户信用",
+    "original_topic": "55"
   },
   {
     "id": 98,
     "ticker": "O",
     "name": "Realty Income",
-    "topic": "56",
+    "topic": "N18",
     "reason": "商业净租赁与分散物业现金流",
-    "risk": "租户信用、融资利差和利率"
+    "risk": "租户信用、融资利差和利率",
+    "original_topic": "56"
   }
 ]
