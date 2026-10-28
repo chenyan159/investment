@@ -1,0 +1,73 @@
+{
+  "ticker": "CMG",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:35:30-07:00",
+  "reference_price": {
+    "value": 27.98,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        16.0,
+        16.0
+      ],
+      "business_price": [
+        28.51,
+        28.51
+      ],
+      "target_price": [
+        20.67,
+        24.72
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        32.36,
+        32.36
+      ],
+      "business_price": [
+        43.45,
+        43.45
+      ],
+      "target_price": [
+        40.69,
+        47.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        46.21,
+        46.21
+      ],
+      "business_price": [
+        56.39,
+        56.39
+      ],
+      "target_price": [
+        61.04,
+        71.34
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        60.81,
+        60.81
+      ],
+      "business_price": [
+        69.03,
+        69.03
+      ],
+      "target_price": [
+        87.37,
+        102.55
+      ],
+      "evidence": "weak"
+    }
+  }
+}
