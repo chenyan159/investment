@@ -1,71 +1,71 @@
 {
   "ticker": "BRK.B",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:06:00-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 542.99,
-    "date": "2026-10-27",
+    "value": 544.62,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        394.79,
-        394.79
+        403,
+        403
       ],
       "business_price": [
-        441.89,
-        441.89
+        491,
+        491
       ],
       "target_price": [
-        371,
-        442
+        411,
+        470
       ],
       "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        607.62,
-        607.62
+        571,
+        571
       ],
       "business_price": [
-        657.0,
-        657.0
+        691,
+        691
       ],
       "target_price": [
-        604,
-        683
+        661,
+        716
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        742.89,
-        742.89
+        707,
+        707
       ],
       "business_price": [
-        791.98,
-        791.98
+        859,
+        859
       ],
       "target_price": [
-        760,
-        887
+        822,
+        925
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        888.66,
-        888.66
+        827,
+        827
       ],
       "business_price": [
-        912.32,
-        912.32
+        999,
+        999
       ],
       "target_price": [
-        912,
-        1058
+        996,
+        1115
       ],
       "evidence": "weak"
     }
