@@ -45,7 +45,7 @@ def collect_profile(ticker):
         result['last_updated'] = re.findall(r'Last updated: (.{0,35})', text)
     except Exception as exc:
         result['error'] = f'{type(exc).__name__}: {exc}'
-    target.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+    target.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
     return result
 
 def main():
@@ -64,7 +64,7 @@ def main():
     summary = {'access_date': '2026-10-28', 'spy_holdings_date': values[2][1], 'spy_source': SPY_URL, 'ndx_source': INDEX_URL,
         'existing_company_count': len(existing), 'candidate_count': len(TICKERS), 'duplicates_with_project': duplicate, 'outside_verified_union': outside,
         'candidates': [{'ticker': t, 'sp500_proxy': t in members, 'nasdaq100': t in NDX_SELECTED, 'spy_name': members.get(t)} for t in TICKERS]}
-    (ROOT / '指数与去重核验.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+    (ROOT / '指数与去重核验.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(collect_profile, TICKERS))
     errors = [r['ticker'] for r in results if not r.get('description')]

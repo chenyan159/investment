@@ -87,5 +87,5 @@ lines += ['', '## 与现有主题的关联方式', '',
 '- 主行业建议覆盖98家，现有主题2个、新增建议56个；新增名称与当前102个行业主题无同名重复。语义相近但经济活动不同的边界在上表及关联说明中列明。',
 '- 此次没有批量抓取或比较当前估值、最新全部季报，也没有给出目标价。正式投资筛选需检验估值、资本回报、现金流、负债、稀释和主要风险；不能把“好公司”直接等同于“当前好价格”。', '']
 report='\n'.join(lines)
-(ROOT/'98家公司与行业扩充建议.md').write_text(report,encoding='utf-8')
+(ROOT/'98家公司与行业扩充建议.md').write_text(report,encoding='utf-8',newline='\n')
 print(json.dumps({'companies':len(rows),'priority':len(priority),'new_topics':56,'new_industries':54,'new_cross_topics':2,'existing_primary_topics':2,'report_chars':len(report)},ensure_ascii=False))
