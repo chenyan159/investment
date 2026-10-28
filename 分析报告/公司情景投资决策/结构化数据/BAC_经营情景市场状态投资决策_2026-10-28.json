@@ -1,0 +1,73 @@
+{
+  "ticker": "BAC",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "reference_price": {
+    "value": 50.68,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        32.3,
+        32.3
+      ],
+      "business_price": [
+        37.1,
+        37.1
+      ],
+      "target_price": [
+        30.5,
+        36.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        65.0,
+        65.0
+      ],
+      "business_price": [
+        73.5,
+        73.5
+      ],
+      "target_price": [
+        73.0,
+        82.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        82.7,
+        82.7
+      ],
+      "business_price": [
+        85.7,
+        85.7
+      ],
+      "target_price": [
+        88.8,
+        103.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        99.1,
+        99.1
+      ],
+      "business_price": [
+        102.9,
+        102.9
+      ],
+      "target_price": [
+        115.6,
+        133.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
