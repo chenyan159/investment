@@ -1,71 +1,71 @@
 {
   "ticker": "JPM",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "information_cutoff": "2026-10-28T12:46:41-04:00",
   "reference_price": {
-    "value": 335.79,
-    "date": "2026-10-27",
+    "value": 340.1,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        178.8,
-        178.8
+        207.93,
+        235.71
       ],
       "business_price": [
-        247.3,
-        247.3
+        274.84,
+        274.84
       ],
       "target_price": [
-        195.3,
-        229.3
+        211.92,
+        250.45
       ],
       "evidence": "weak"
     },
     "base": {
       "dcf_price": [
-        394.8,
-        394.8
+        358.13,
+        416.92
       ],
       "business_price": [
-        424.3,
-        424.3
+        409.18,
+        409.18
       ],
       "target_price": [
-        407.9,
-        451.6
+        401.55,
+        458.92
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        472.1,
-        472.1
+        489.16,
+        573.6
       ],
       "business_price": [
-        512.2,
-        512.2
+        526.05,
+        526.05
       ],
       "target_price": [
-        527.6,
-        598.0
+        553.11,
+        626.86
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        554.6,
-        554.6
+        635.47,
+        757.54
       ],
       "business_price": [
-        584.0,
-        584.0
+        603.3,
+        603.3
       ],
       "target_price": [
-        641.7,
-        721.9
+        718.92,
+        803.5
       ],
       "evidence": "weak"
     }
