@@ -1,0 +1,191 @@
+[
+  {
+    "id": "M01",
+    "subject": "企业软件、IT服务与AI工作流",
+    "category": "AI应用_软件_数据平台",
+    "original_name": "企业AI与Agent工作流软件",
+    "type": "行业"
+  },
+  {
+    "id": "M02",
+    "subject": "设计、创作与文档软件",
+    "category": "AI应用_软件_数据平台",
+    "original_name": "AI创作与文档生产软件",
+    "type": "行业"
+  },
+  {
+    "id": "M03",
+    "subject": "财产责任保险、经纪与风险服务",
+    "category": "保险_财产险_特色险_再保险",
+    "original_name": "个人与商业财产责任原保险",
+    "type": "行业"
+  },
+  {
+    "id": "M04",
+    "subject": "工业自动化、专用设备与精密仪器",
+    "category": "工业自动化_机器人_感知",
+    "original_name": "工业自动化控制、工业机器人与协作机器人",
+    "type": "行业"
+  },
+  {
+    "id": "M05",
+    "subject": "农业、工程矿山装备与设备租赁",
+    "category": "工业自动化_机器人_感知",
+    "original_name": "农业机械、精准农业与工程矿山装备",
+    "type": "行业"
+  },
+  {
+    "id": "M06",
+    "subject": "国防装备、导弹与军用无人系统",
+    "category": "商业航天_火箭_卫星",
+    "original_name": "军用无人系统、巡飞弹与战术自主装备",
+    "type": "行业"
+  },
+  {
+    "id": "M07",
+    "subject": "电力运营、自备发电与微电网",
+    "category": "AI园区电力_机电_冷却",
+    "original_name": "数据中心自备发电与微电网",
+    "type": "行业"
+  },
+  {
+    "id": "M08",
+    "subject": "会员制、综合与专业零售",
+    "category": "零售_会员制_食品_折扣渠道",
+    "original_name": "会员制仓储与食品综合零售",
+    "type": "行业"
+  },
+  {
+    "id": "N01",
+    "subject": "智能终端与消费电子生态",
+    "category": "消费科技_数字平台_文娱",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N02",
+    "subject": "数字内容、游戏与娱乐服务",
+    "category": "消费科技_数字平台_文娱",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N03",
+    "subject": "电商、本地生活与在线旅行平台",
+    "category": "消费科技_数字平台_文娱",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N04",
+    "subject": "支付网络、银行卡与消费金融",
+    "category": "金融服务_支付_资本市场",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N05",
+    "subject": "银行、证券与财富管理",
+    "category": "金融服务_支付_资本市场",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N06",
+    "subject": "资产管理、私募投资与资本配置",
+    "category": "金融服务_支付_资本市场",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N07",
+    "subject": "金融数据、评级、指数与交易基础设施",
+    "category": "金融服务_支付_资本市场",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N08",
+    "subject": "综合制药、慢病治疗与专利周期",
+    "category": "生物医药_核酸药物_免疫治疗",
+    "original_name": "",
+    "type": "横向专题"
+  },
+  {
+    "id": "N09",
+    "subject": "医疗器械、诊断与居家医疗",
+    "category": "医疗器械_诊断_医疗服务",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N10",
+    "subject": "动物健康、药品与兽医诊断",
+    "category": "医疗器械_诊断_医疗服务",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N11",
+    "subject": "医疗支付、医药流通与医疗服务",
+    "category": "医疗器械_诊断_医疗服务",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N12",
+    "subject": "品牌消费品、食品饮料与日用个护",
+    "category": "消费品牌_食品饮料_餐饮",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N13",
+    "subject": "连锁餐饮、加盟与门店运营",
+    "category": "消费品牌_食品饮料_餐饮",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N14",
+    "subject": "工业分销、设施服务与设备维保",
+    "category": "工业服务_交通运输_航空制造",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N15",
+    "subject": "交通运输、货运与综合物流",
+    "category": "工业服务_交通运输_航空制造",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N16",
+    "subject": "油气资源、技术服务与储运",
+    "category": "能源资源_工业材料",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N17",
+    "subject": "工业材料、金属资源与功能涂层",
+    "category": "能源资源_工业材料",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N18",
+    "subject": "商业地产、专业物业与REITs",
+    "category": "房地产_基础设施租赁",
+    "original_name": "",
+    "type": "行业"
+  },
+  {
+    "id": "N19",
+    "subject": "航空制造、发动机部件与售后",
+    "category": "工业服务_交通运输_航空制造",
+    "original_name": "",
+    "type": "行业"
+  }
+]

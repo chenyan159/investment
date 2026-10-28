@@ -43,8 +43,8 @@ test("every indexed industry routes to an allowed category without generating re
 
 test("new application topics are indexed and their actual formal prompt includes the specific scope", () => {
   const subjects = [
-    "企业AI与Agent工作流软件",
-    "AI创作与文档生产软件",
+    "企业软件、IT服务与AI工作流",
+    "设计、创作与文档软件",
     "数据平台、数据库与AI数据软件",
     "网络安全、身份权限与AI治理",
     "广告推荐、搜索与数字分发",

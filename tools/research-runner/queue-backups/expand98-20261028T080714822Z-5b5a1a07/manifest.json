@@ -1,0 +1,9 @@
+{
+  "batchId": "expand98-20261028T080714822Z-5b5a1a07",
+  "createdAt": "2026-10-28T08:07:16.373Z",
+  "beforeHashes": {
+    "tools/queue.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/queue.done.jsonl": "d65f4c9ce2d81f58df035146dd413eb0233532c19bda6367f7e42876a0a75f1e",
+    "tools/queue.control.json": "e8efd6dd3679d4cd43e3b49ae334b773ca69b2771da96497f93aa39de0e03933"
+  }
+}
