@@ -1,71 +1,71 @@
 {
   "ticker": "UNH",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T04:59:42-07:00",
+  "information_cutoff": "2026-10-28T09:46:49-07:00",
   "reference_price": {
-    "value": 410.39,
-    "date": "2026-10-27",
+    "value": 412.0,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        173.2,
-        173.2
+        166.8,
+        166.8
       ],
       "business_price": [
-        332.5,
-        332.5
+        269.3,
+        269.3
       ],
       "target_price": [
-        186.6,
-        229.6
+        176.0,
+        215.4
       ],
-      "evidence": "strong"
+      "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        472.9,
-        472.9
+        468.4,
+        468.4
       ],
       "business_price": [
-        688.5,
-        688.5
+        651.3,
+        651.3
       ],
       "target_price": [
-        534.8,
-        624.0
+        585.9,
+        679.4
       ],
       "evidence": "medium"
     },
     "bull": {
       "dcf_price": [
-        650.4,
-        650.4
+        641.1,
+        641.1
       ],
       "business_price": [
-        869.3,
-        869.3
+        819.1,
+        819.1
       ],
       "target_price": [
-        750.3,
-        862.9
+        854.3,
+        971.4
       ],
-      "evidence": "medium"
+      "evidence": "weak"
     },
     "breakthrough": {
       "dcf_price": [
-        800.9,
-        800.9
+        809.9,
+        809.9
       ],
       "business_price": [
-        1036.8,
-        1036.8
+        958.1,
+        958.1
       ],
       "target_price": [
-        984.3,
-        1163.3
+        1090.9,
+        1228.1
       ],
       "evidence": "weak"
     }
