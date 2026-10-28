@@ -1,71 +1,71 @@
 {
   "ticker": "MA",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:12:48-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 609.85,
-    "date": "2026-10-27",
+    "value": 612.89,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        343.0,
-        343.0
+        430,
+        430
       ],
       "business_price": [
-        697.7,
-        697.7
+        748,
+        748
       ],
       "target_price": [
-        478.3,
-        561.5
+        532,
+        619
       ],
-      "evidence": "weak"
+      "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        632.9,
-        632.9
+        791,
+        791
       ],
       "business_price": [
-        939.9,
-        939.9
+        1003,
+        1003
       ],
       "target_price": [
-        840.6,
-        952.7
+        888,
+        1006
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        803.8,
-        803.8
+        1079,
+        1079
       ],
       "business_price": [
-        1060.6,
-        1060.6
+        1148,
+        1148
       ],
       "target_price": [
-        1043.4,
-        1169.9
+        1151,
+        1286
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        979.5,
-        979.5
+        1241,
+        1241
       ],
       "business_price": [
-        1152.5,
-        1152.5
+        1172,
+        1172
       ],
       "target_price": [
-        1236.9,
-        1374.3
+        1244,
+        1417
       ],
       "evidence": "weak"
     }
