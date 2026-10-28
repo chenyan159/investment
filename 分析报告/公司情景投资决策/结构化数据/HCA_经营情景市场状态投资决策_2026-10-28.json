@@ -1,0 +1,73 @@
+{
+  "ticker": "HCA",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:30:00-07:00",
+  "reference_price": {
+    "value": 449.96,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        254.5,
+        254.5
+      ],
+      "business_price": [
+        282.0,
+        282.0
+      ],
+      "target_price": [
+        210.0,
+        245.0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        572.0,
+        572.0
+      ],
+      "business_price": [
+        605.3,
+        605.3
+      ],
+      "target_price": [
+        563.5,
+        638.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        817.7,
+        817.7
+      ],
+      "business_price": [
+        826.5,
+        826.5
+      ],
+      "target_price": [
+        872.0,
+        974.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        979.0,
+        979.0
+      ],
+      "business_price": [
+        967.2,
+        967.2
+      ],
+      "target_price": [
+        1080.4,
+        1260.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}
