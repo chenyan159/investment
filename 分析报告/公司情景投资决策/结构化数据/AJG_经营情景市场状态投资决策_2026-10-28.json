@@ -1,71 +1,71 @@
 {
   "ticker": "AJG",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T04:59:11-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 259.01,
-    "date": "2026-10-27",
+    "value": 260.96,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        202.2,
-        202.2
+        170.1,
+        170.1
       ],
       "business_price": [
-        283.4,
-        283.4
+        234.4,
+        234.4
       ],
       "target_price": [
-        208.6,
-        243.9
+        202.6,
+        235.5
       ],
       "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        342.1,
-        342.1
+        290.8,
+        290.8
       ],
       "business_price": [
-        382.4,
-        382.4
+        345.3,
+        345.3
       ],
       "target_price": [
-        367.5,
-        405.2
+        346.8,
+        394.4
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        422.3,
-        422.3
+        344.8,
+        344.8
       ],
       "business_price": [
-        429.6,
-        429.6
+        386.3,
+        386.3
       ],
       "target_price": [
-        455.2,
-        518.8
+        423.5,
+        476.8
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        545.3,
-        545.3
+        398.9,
+        398.9
       ],
       "business_price": [
-        489.6,
-        489.6
+        423.6,
+        423.6
       ],
       "target_price": [
-        591.0,
-        663.3
+        503.7,
+        562.5
       ],
       "evidence": "weak"
     }
