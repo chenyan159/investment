@@ -1,0 +1,547 @@
+{
+  "repairId": "repair24-20261028T144243771Z",
+  "backup": "tools/research-runner/queue-backups/repair24-20261028T144243771Z",
+  "maxAttempts": 12,
+  "remainingAttemptsPerFailedCompany": 5,
+  "changed": [
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MELI",
+      "domain": "company",
+      "subject": "MELI",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MA",
+      "domain": "company",
+      "subject": "MA",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a518f9a1b95b2eae-LAX)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-AXP",
+      "domain": "company",
+      "subject": "AXP",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-JPM",
+      "domain": "company",
+      "subject": "JPM",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-BAC",
+      "domain": "company",
+      "subject": "BAC",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MS",
+      "domain": "company",
+      "subject": "MS",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-SCHW",
+      "domain": "company",
+      "subject": "SCHW",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-BLK",
+      "domain": "company",
+      "subject": "BLK",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-CME",
+      "domain": "company",
+      "subject": "CME",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-BRK.B",
+      "domain": "company",
+      "subject": "BRK.B",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (stream disconnected before completion: websocket closed by server before response.completed)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-AJG",
+      "domain": "company",
+      "subject": "AJG",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-LLY",
+      "domain": "company",
+      "subject": "LLY",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-JNJ",
+      "domain": "company",
+      "subject": "JNJ",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-ABBV",
+      "domain": "company",
+      "subject": "ABBV",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (unexpected status 403 Forbidden: Unknown error, url: wss://chatgpt.com/backend-api/codex/responses, cf-ray: a518ff808936f7af-LAX)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MRK",
+      "domain": "company",
+      "subject": "MRK",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-GILD",
+      "domain": "company",
+      "subject": "GILD",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MDT",
+      "domain": "company",
+      "subject": "MDT",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-EW",
+      "domain": "company",
+      "subject": "EW",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-RMD",
+      "domain": "company",
+      "subject": "RMD",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-UNH",
+      "domain": "company",
+      "subject": "UNH",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MCK",
+      "domain": "company",
+      "subject": "MCK",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-HCA",
+      "domain": "company",
+      "subject": "HCA",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-MDLZ",
+      "domain": "company",
+      "subject": "MDLZ",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-CMG",
+      "domain": "company",
+      "subject": "CMG",
+      "previousStatus": "failed",
+      "previousAttempts": 7,
+      "previousNote": "codex_sdk_failed: Reconnecting... 2/5 (exceeded retry limit, last status: 429 Too Many Requests)"
+    }
+  ],
+  "recovered": [
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-AAPL",
+      "domain": "company-comparison",
+      "subject": "AAPL",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-ADSK",
+      "domain": "company-comparison",
+      "subject": "ADSK",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-ROP",
+      "domain": "company-comparison",
+      "subject": "ROP",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-FTNT",
+      "domain": "company-comparison",
+      "subject": "FTNT",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-DIS",
+      "domain": "company-comparison",
+      "subject": "DIS",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    },
+    {
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MELI",
+      "domain": "company-comparison",
+      "subject": "MELI",
+      "previousStatus": "running",
+      "previousAttempts": 1,
+      "previousNote": "codex_sdk_claimed"
+    }
+  ],
+  "added": [
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MELI",
+      "domain": "company-investment-decision",
+      "subject": "MELI",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MELI"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MA",
+      "domain": "company-investment-decision",
+      "subject": "MA",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MA"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-AXP",
+      "domain": "company-investment-decision",
+      "subject": "AXP",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-AXP"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-JPM",
+      "domain": "company-investment-decision",
+      "subject": "JPM",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-JPM"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-BAC",
+      "domain": "company-investment-decision",
+      "subject": "BAC",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-BAC"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MS",
+      "domain": "company-investment-decision",
+      "subject": "MS",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MS"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-SCHW",
+      "domain": "company-investment-decision",
+      "subject": "SCHW",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-SCHW"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-BLK",
+      "domain": "company-investment-decision",
+      "subject": "BLK",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-BLK"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-CME",
+      "domain": "company-investment-decision",
+      "subject": "CME",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-CME"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-BRK.B",
+      "domain": "company-investment-decision",
+      "subject": "BRK.B",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-BRK.B"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-AJG",
+      "domain": "company-investment-decision",
+      "subject": "AJG",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-AJG"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-LLY",
+      "domain": "company-investment-decision",
+      "subject": "LLY",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-LLY"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-JNJ",
+      "domain": "company-investment-decision",
+      "subject": "JNJ",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-JNJ"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-ABBV",
+      "domain": "company-investment-decision",
+      "subject": "ABBV",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-ABBV"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MRK",
+      "domain": "company-investment-decision",
+      "subject": "MRK",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MRK"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-GILD",
+      "domain": "company-investment-decision",
+      "subject": "GILD",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-GILD"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MDT",
+      "domain": "company-investment-decision",
+      "subject": "MDT",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MDT"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-EW",
+      "domain": "company-investment-decision",
+      "subject": "EW",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-EW"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-RMD",
+      "domain": "company-investment-decision",
+      "subject": "RMD",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-RMD"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-UNH",
+      "domain": "company-investment-decision",
+      "subject": "UNH",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-UNH"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MCK",
+      "domain": "company-investment-decision",
+      "subject": "MCK",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MCK"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-HCA",
+      "domain": "company-investment-decision",
+      "subject": "HCA",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-HCA"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-MDLZ",
+      "domain": "company-investment-decision",
+      "subject": "MDLZ",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-MDLZ"
+    },
+    {
+      "id": "repair24-20261028T144243771Z-company-investment-decision-CMG",
+      "domain": "company-investment-decision",
+      "subject": "CMG",
+      "rerunOf": "expand98-20261028T080714822Z-5b5a1a07-company-investment-decision-CMG"
+    }
+  ],
+  "reused": [
+    {
+      "domain": "company-comparison",
+      "subject": "MELI",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MELI"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MA",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MA"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "AXP",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-AXP"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "JPM",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-JPM"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "BAC",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-BAC"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MS",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MS"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "SCHW",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-SCHW"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "BLK",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-BLK"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "CME",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-CME"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "BRK.B",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-BRK.B"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "AJG",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-AJG"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "LLY",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-LLY"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "JNJ",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-JNJ"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "ABBV",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-ABBV"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MRK",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MRK"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "GILD",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-GILD"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MDT",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MDT"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "EW",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-EW"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "RMD",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-RMD"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "UNH",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-UNH"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MCK",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MCK"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "HCA",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-HCA"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "MDLZ",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-MDLZ"
+    },
+    {
+      "domain": "company-comparison",
+      "subject": "CMG",
+      "id": "expand98-20261028T080714822Z-5b5a1a07-company-comparison-CMG"
+    }
+  ],
+  "activeTotal": 143,
+  "statusCounts": {
+    "retry_pending": 39,
+    "pending": 104
+  },
+  "doneArchiveUnchanged": true,
+  "controlUnchanged": true,
+  "runnerStarted": false,
+  "validation": "Active items: 143\nErrors: 0\nWarnings: 0",
+  "beforeHashes": {
+    "queue.jsonl": "0a9e2dac385a2be26512aa3a3505936d4eaca5c2fd7e4b2248a4485a515b8d12",
+    "queue.done.jsonl": "833b44995cf0fe9a3d75b2cc5563ca8e415f34723a43eebc1d975dde3f336059",
+    "queue.control.json": "a978b4d94c756a13e297641a493fc598a8262147b271287127d5f9e24870e414",
+    "runner.lock": "c2bd6740ac1ed05212a3d8d4c43019b92d8b0c9610db6d65092d7981b076b696"
+  },
+  "tests": {
+    "passed": 14,
+    "failed": 0,
+    "suites": [
+      "queue-schema",
+      "companion-output"
+    ],
+    "cliDefaultMaxAttempts": 12,
+    "targetCoverage": {
+      "company": 24,
+      "company-investment-decision": 24,
+      "company-comparison": 24
+    }
+  }
+}

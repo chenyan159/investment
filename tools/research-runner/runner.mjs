@@ -52,7 +52,7 @@ const PROMPT_DEBUG_DIR = path.join(TOOL_DIR, "prompt-debug");
 
 const DEFAULT_TIMEOUT_MINUTES = 120;
 const DEFAULT_CLAIM_TIMEOUT_MINUTES = 15;
-const DEFAULT_MAX_ATTEMPTS = 7;
+const DEFAULT_MAX_ATTEMPTS = 12;
 const CONTROL_POLL_INTERVAL_MS = 1000;
 const DEFAULT_SANDBOX_MODE = "danger-full-access";
 const ALLOWED_SANDBOX_MODES = new Set(["read-only", "workspace-write", "danger-full-access"]);
