@@ -1,71 +1,71 @@
 {
   "ticker": "LLY",
   "research_date": "2026-10-28",
-  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "information_cutoff": "2026-10-28T09:45:00-07:00",
   "reference_price": {
-    "value": 1281.91,
-    "date": "2026-10-27",
+    "value": 1289.24,
+    "date": "2026-10-28",
     "currency": "USD"
   },
   "target_date": "2029-12-31",
   "scenarios": {
     "bear": {
       "dcf_price": [
-        238.4,
-        238.4
+        173.6,
+        173.6
       ],
       "business_price": [
-        1035.9,
-        1035.9
+        638.9,
+        638.9
       ],
       "target_price": [
-        276.8,
-        388.1
+        291.9,
+        362.9
       ],
-      "evidence": "weak"
+      "evidence": "medium"
     },
     "base": {
       "dcf_price": [
-        896.7,
-        896.7
+        1131.5,
+        1131.5
       ],
       "business_price": [
-        2342.6,
-        2342.6
+        1989.9,
+        1989.9
       ],
       "target_price": [
-        1767.0,
-        2139.4
+        1492.5,
+        1805.5
       ],
       "evidence": "strong"
     },
     "bull": {
       "dcf_price": [
-        1588.4,
-        1588.4
+        1812.1,
+        1812.1
       ],
       "business_price": [
-        3269.4,
-        3269.4
+        3170.5,
+        3170.5
       ],
       "target_price": [
-        2900.3,
-        3418.4
+        2713.8,
+        3209.0
       ],
       "evidence": "medium"
     },
     "breakthrough": {
       "dcf_price": [
-        2824.2,
-        2824.2
+        2687.2,
+        2687.2
       ],
       "business_price": [
-        4141.6,
-        4141.6
+        3951.0,
+        3951.0
       ],
       "target_price": [
-        4002.2,
-        4658.8
+        3792.8,
+        4411.4
       ],
       "evidence": "weak"
     }
