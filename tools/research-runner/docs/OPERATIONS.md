@@ -23,13 +23,14 @@ npm run once
 ```powershell
 node runner.mjs --once
 node runner.mjs --timeout-minutes=180
-node runner.mjs --max-attempts=7
-node runner.mjs --max-jobs=3
+node runner.mjs --max-attempts=12
 node runner.mjs --concurrency=3
 node runner.mjs --sandbox-mode=danger-full-access
 ```
 
 ## 并发控制
+
+批量运行持续处理可领取任务，不设置累计执行次数上限；失败重试不会消耗整轮运行预算。`--once` 仍用于显式执行一次任务。队列无可领取任务、并发设为0并收尾完成、配额保护或进程清理异常仍按原规则退出。
 
 - 显式 `--concurrency=N` 会在运行前更新 `../queue.control.json`。
 - 运行中 runner 会持续重读控制文件；提高数值会继续领取任务，降低数值只停止新领取，不取消已运行任务。

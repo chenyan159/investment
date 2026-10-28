@@ -46,7 +46,7 @@ export async function startRunner({ concurrency = DEFAULT_RUNNER_CONCURRENCY } =
   const startedRequestAt = Date.now();
   const script = [
     `$p = Start-Process -FilePath "node"`,
-    `-ArgumentList @("runner.mjs", "--max-jobs=500", "--timeout-minutes=120", "--concurrency=${normalizedConcurrency}")`,
+    `-ArgumentList @("runner.mjs", "--timeout-minutes=120", "--concurrency=${normalizedConcurrency}")`,
     `-WorkingDirectory '${escapePowerShellSingleQuoted(RUNNER_DIR)}'`,
     `-WindowStyle Hidden -PassThru`,
     `; $p.Id`,

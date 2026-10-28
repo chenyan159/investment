@@ -69,7 +69,6 @@ function parseArgs(argv) {
   const options = {
     dryRun: false,
     once: false,
-    maxJobs: Number.POSITIVE_INFINITY,
     timeoutMinutes: DEFAULT_TIMEOUT_MINUTES,
     claimTimeoutMinutes: DEFAULT_CLAIM_TIMEOUT_MINUTES,
     maxAttempts: DEFAULT_MAX_ATTEMPTS,
@@ -87,7 +86,6 @@ function parseArgs(argv) {
   for (const arg of argv) {
     if (arg === "--dry-run") options.dryRun = true;
     else if (arg === "--once") options.once = true;
-    else if (arg.startsWith("--max-jobs=")) options.maxJobs = Number(arg.slice("--max-jobs=".length));
     else if (arg.startsWith("--timeout-minutes=")) options.timeoutMinutes = Number(arg.slice("--timeout-minutes=".length));
     else if (arg.startsWith("--claim-timeout-minutes=")) options.claimTimeoutMinutes = Number(arg.slice("--claim-timeout-minutes=".length));
     else if (arg.startsWith("--max-attempts=")) options.maxAttempts = Number(arg.slice("--max-attempts=".length));
@@ -112,9 +110,6 @@ function parseArgs(argv) {
     }
   }
 
-  if (options.maxJobs !== Number.POSITIVE_INFINITY && (!Number.isFinite(options.maxJobs) || options.maxJobs <= 0)) {
-    throw new Error("--max-jobs must be a positive number.");
-  }
   if (!Number.isFinite(options.timeoutMinutes) || options.timeoutMinutes <= 0) {
     throw new Error("--timeout-minutes must be a positive number.");
   }
@@ -130,7 +125,6 @@ function parseArgs(argv) {
   if (!ALLOWED_SANDBOX_MODES.has(options.sandboxMode)) {
     throw new Error(`--sandbox-mode must be one of: ${Array.from(ALLOWED_SANDBOX_MODES).join(", ")}`);
   }
-  if (options.once) options.maxJobs = Math.min(options.maxJobs, 1);
   return options;
 }
 
@@ -147,7 +141,6 @@ Options:
   --expected-output-file=PATH  Optional exact file-run output file.
   --ticker=TICKER              Alias for --subject=TICKER in dry-run mode.
   --once                       Process at most one claimable queue item.
-  --max-jobs=N                 Process at most N items in this launch.
   --timeout-minutes=N          Per-item formal Codex timeout. Default ${DEFAULT_TIMEOUT_MINUTES}.
   --claim-timeout-minutes=N    Legacy no-op; queue claiming is now local JSONL. Default ${DEFAULT_CLAIM_TIMEOUT_MINUTES}.
   --max-attempts=N             Mark failed after N attempts. Default ${DEFAULT_MAX_ATTEMPTS}.
@@ -722,7 +715,6 @@ async function main() {
     let lastCapacityWaitState = "";
 
     const launchNext = async () => {
-      if (processed + activeRuns.size >= options.maxJobs) return false;
       const item = await runQueueOperation(() => claimNextQueueItem({ maxAttempts: options.maxAttempts, priorityGroups: PRIORITY_GROUPS }));
       if (!item) return false;
 
@@ -767,17 +759,19 @@ async function main() {
       return true;
     };
 
-    while (processed < options.maxJobs) {
+    while (true) {
       let launchedAny = false;
       let desiredConcurrency = concurrencyController.refresh();
-      while (processed + activeRuns.size < options.maxJobs) {
+      while (true) {
         desiredConcurrency = concurrencyController.refresh();
         if (activeRuns.size >= desiredConcurrency) break;
         if (stopClaiming || quotaGate.shouldExit() || quotaGate.isPaused()) break;
         const launched = await launchNext();
         if (!launched) break;
         launchedAny = true;
+        if (options.once) break;
       }
+      if (options.once && launchedAny) break;
 
       desiredConcurrency = concurrencyController.refresh();
 
