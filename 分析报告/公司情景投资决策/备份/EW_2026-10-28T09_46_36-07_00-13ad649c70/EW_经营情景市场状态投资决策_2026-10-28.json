@@ -1,0 +1,73 @@
+{
+  "ticker": "EW",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:10:50-07:00",
+  "reference_price": {
+    "value": 90.82,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        46.77,
+        46.77
+      ],
+      "business_price": [
+        82.92,
+        82.92
+      ],
+      "target_price": [
+        58.91,
+        68.51
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        107.5,
+        107.5
+      ],
+      "business_price": [
+        139.6,
+        139.6
+      ],
+      "target_price": [
+        139.6,
+        156.42
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        143.64,
+        143.64
+      ],
+      "business_price": [
+        166.84,
+        166.84
+      ],
+      "target_price": [
+        177.0,
+        197.32
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        199.99,
+        199.99
+      ],
+      "business_price": [
+        194.51,
+        194.51
+      ],
+      "target_price": [
+        230.42,
+        254.36
+      ],
+      "evidence": "weak"
+    }
+  }
+}

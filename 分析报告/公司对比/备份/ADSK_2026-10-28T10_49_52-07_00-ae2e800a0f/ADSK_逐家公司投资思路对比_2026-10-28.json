@@ -1,0 +1,156 @@
+{
+  "ticker": "ADSK",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T07:10:00-07:00",
+  "reference_price": {
+    "value": 242.1,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2030-01-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        181.7,
+        181.7
+      ],
+      "target_price": [
+        126.6,
+        152.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        397.7,
+        397.7
+      ],
+      "target_price": [
+        362.3,
+        420.2
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        464.7,
+        464.7
+      ],
+      "target_price": [
+        490.9,
+        558.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        502.9,
+        502.9
+      ],
+      "target_price": [
+        604.4,
+        714.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ADBE",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE以约12倍2027经济NOPAT提供更厚现金收益和更大右尾；不能替代工程CAD敞口"
+    },
+    {
+      "peer": "ROP",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ROP的多行业记录系统与现金底盘；进攻选ADSK更高增长和更大右尾，ROP不能替代CAD专门敞口"
+    },
+    {
+      "peer": "CDNS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CDNS近端兑现更强，现价基准回报及乐观右尾仍逊ADSK；仿真路线重要性未转成更好买价"
+    },
+    {
+      "peer": "SNPS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ADSK的订阅现金与较轻净债；进攻选SNPS的IP修复、Ansys协同与更强突破斜率"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ADSK的基准现金收益和乐观价格倍率均更好；NOW业务增速更快尚不足补偿估值与受损回撤"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT多收费层和企业分发使稳健/进攻均优于ADSK；重资本回收风险限制首笔仓位"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ADSK低资本现金复利；进攻选AMZN的AWS和广告经营杠杆，不能当作同风险替代"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ADSK分散工程续费；高弹性选NVDA，远期巨额增长只能作为预算/回款约束下的条件路径"
+    },
+    {
+      "peer": "ACN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "即计入ACN股息，ADSK基准增长与右尾更有吸引力；ACN适合收入型需求而非同逻辑替代"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ADSK的现金可分配性；进攻选GOOGL多引擎与平台期权，不能把16倍表观PE当经济便宜"
+    }
+  ]
+}

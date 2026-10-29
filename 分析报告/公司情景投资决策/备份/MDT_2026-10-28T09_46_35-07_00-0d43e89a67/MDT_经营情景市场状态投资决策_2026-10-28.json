@@ -1,0 +1,73 @@
+{
+  "ticker": "MDT",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "reference_price": {
+    "value": 93.95,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-04-27",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        57.9,
+        57.9
+      ],
+      "business_price": [
+        76.0,
+        76.0
+      ],
+      "target_price": [
+        63.3,
+        73.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        111.5,
+        111.5
+      ],
+      "business_price": [
+        125.9,
+        125.9
+      ],
+      "target_price": [
+        125.2,
+        144.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        146.9,
+        146.9
+      ],
+      "business_price": [
+        145.2,
+        145.2
+      ],
+      "target_price": [
+        165.8,
+        191.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        180.6,
+        180.6
+      ],
+      "business_price": [
+        156.6,
+        156.6
+      ],
+      "target_price": [
+        197.1,
+        233.8
+      ],
+      "evidence": "weak"
+    }
+  }
+}

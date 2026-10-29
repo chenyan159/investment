@@ -1,0 +1,172 @@
+{
+  "ticker": "ROP",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T07:20:30-07:00",
+  "reference_price": {
+    "value": 434.48,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        431.4,
+        431.4
+      ],
+      "target_price": [
+        313.1,
+        385.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        597.8,
+        597.8
+      ],
+      "target_price": [
+        567.5,
+        665.4
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        676.4,
+        676.4
+      ],
+      "target_price": [
+        716.5,
+        866.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        776.7,
+        776.7
+      ],
+      "target_price": [
+        951.3,
+        1165.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "avoid",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ROP的现有现金，进攻选ORCL的算力与应用放量；ORCL的建设融资及更深受损回撤阻止其全面替代。"
+    },
+    {
+      "peer": "ADSK",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ROP的较低现金倍数与分散收入，进攻选ADSK的施工、制造扩用及经营杠杆；两者不是全产品同池。"
+    },
+    {
+      "peer": "FTV",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健微偏ROP的组合现金稳定性，进攻选FTV较低买价上的利润修复；AHS恶化使FTV暂不构成全面替代。"
+    },
+    {
+      "peer": "VEEV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ROP在当前现金定价与基准回报上占优；VEEV净现金和专业平台右尾较好，但较高估值使高弹赔率仅大致相当。"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NOW有更强的已收费AI证据，但现价下基准、乐观赔率与受损损失均逊于ROP，当前资金优先ROP。"
+    },
+    {
+      "peer": "CRM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ROP较浅的受损回撤；进攻选CRM更大的平台执行收费右尾，不能用调用量或收购收入替代净增。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健现金配置选ROP，追求AI基础设施和平台放量的进攻选AMZN；AWS成本优势不会全部留给应用原厂。"
+    },
+    {
+      "peer": "V",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健复利两者大致相当：Visa网络质量更高、ROP现金买价更低；追求价格右尾优先ROP，支付逻辑可互补。"
+    },
+    {
+      "peer": "AON",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健先选ROP，进攻选AON的服务平台协同与更低盈利倍数；USI资金及人才约束使高目标回报尚非无条件替代。"
+    },
+    {
+      "peer": "AME",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同资本配置逻辑下，ROP当前现金倍数更低、基准与突破价格赔率更好；AME订单更强仍不足补买价差。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健核心优先SPGI的评级/指数收费权，ROP在右尾和现金买价上补充；SPGI是组合顺位在前的机会成本标杆。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "DHR耗材工艺壁垒真实，但当前现金倍数更高、复苏和资本回报约束更强，两个视角均先选ROP。"
+    }
+  ]
+}

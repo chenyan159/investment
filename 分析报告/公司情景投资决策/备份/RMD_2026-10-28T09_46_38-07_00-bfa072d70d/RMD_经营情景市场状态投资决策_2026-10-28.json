@@ -1,0 +1,73 @@
+{
+  "ticker": "RMD",
+  "research_date": "2026-10-28",
+  "information_cutoff": "2026-10-28T05:00:00-07:00",
+  "reference_price": {
+    "value": 250.8,
+    "date": "2026-10-27",
+    "currency": "USD"
+  },
+  "target_date": "2030-06-30",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        157.4,
+        157.4
+      ],
+      "business_price": [
+        240.5,
+        240.5
+      ],
+      "target_price": [
+        164.7,
+        193.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        341.3,
+        341.3
+      ],
+      "business_price": [
+        379.8,
+        379.8
+      ],
+      "target_price": [
+        365.7,
+        412.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        451.7,
+        451.7
+      ],
+      "business_price": [
+        454.7,
+        454.7
+      ],
+      "target_price": [
+        512.8,
+        569.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        558.6,
+        558.6
+      ],
+      "business_price": [
+        531.1,
+        531.1
+      ],
+      "target_price": [
+        666.0,
+        754.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}
