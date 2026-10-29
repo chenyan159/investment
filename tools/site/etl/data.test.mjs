@@ -29,6 +29,24 @@ test('reversed intervals, zero reference prices and invalid evidence cannot publ
   assert.throws(() => validateStructured(badEvidence, 'scenario'), /evidence/);
 });
 
+test('comparison contract preserves insufficient evidence, unknown views and priority allocation', () => {
+  const raw = sample();
+  for (const scenario of Object.values(raw.scenarios)) scenario.review = 'adopt';
+  raw.views = Object.fromEntries(['near_term_delivery', 'long_term_compounding', 'base_valuation', 'upside_potential', 'downside_resilience', 'relative_attractiveness'].map(key => [key, 'unknown']));
+  raw.decision = { steady_allocation: 'priority_configure', offense_allocation: 'avoid', near_term_timing: 'wait_for_trigger' };
+  raw.comparisons = [{ peer: 'PEER', relation: 'opportunity_cost', compounding_preference: 'insufficient', convexity_preference: 'insufficient', verdict: 'insufficient', reason: 'Evidence is insufficient.' }];
+  assert.equal(validateStructured(raw, 'comparison'), raw);
+  for (const key of ['compounding_preference', 'convexity_preference', 'verdict']) {
+    const invalid = structuredClone(raw);
+    invalid.comparisons[0][key] = 'unsupported';
+    assert.throws(() => validateStructured(invalid, 'comparison'), /Invalid/);
+  }
+  const badView = structuredClone(raw); badView.views.base_valuation = 'unsupported';
+  assert.throws(() => validateStructured(badView, 'comparison'), /Invalid view/);
+  const badDecision = structuredClone(raw); badDecision.decision.steady_allocation = 'unsupported';
+  assert.throws(() => validateStructured(badDecision, 'comparison'), /Invalid decision/);
+});
+
 test('output path checks reject the root itself and siblings', () => {
   const root = path.resolve(os.tmpdir(), 'ananta-boundary');
   assert.throws(() => safeInside(root, root));

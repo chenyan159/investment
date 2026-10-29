@@ -66,11 +66,11 @@
 
 对比摘要额外原样保留：
 
-- `views`：`near_term_delivery`、`long_term_compounding`、`base_valuation`、`upside_potential`、`downside_resilience`、`relative_attractiveness`，值为 `positive|mixed|negative`。
-- `decision`：`steady_allocation` 为 `preferred_participate|conditional_wait|avoid`；`offense_allocation` 为 `high_priority_offense|small_option_bet|avoid`；`near_term_timing` 为 `build_now|wait_for_trigger|avoid`。
+- `views`：`near_term_delivery`、`long_term_compounding`、`base_valuation`、`upside_potential`、`downside_resilience`、`relative_attractiveness`，值为 `positive|mixed|negative|unknown`。
+- `decision`：`steady_allocation` 为 `priority_configure|preferred_participate|conditional_wait|avoid`；`offense_allocation` 为 `high_priority_offense|small_option_bet|avoid`；`near_term_timing` 为 `build_now|wait_for_trigger|avoid`。
 - `comparisons[]`：`peer`、`relation`、`compounding_preference`、`convexity_preference`、`verdict`、`reason`。
 - `relation` 为 `direct_competitor|alternative|value_chain|opportunity_cost`。
-- 两种 preference 为 `target_preferred|peer_preferred|comparable|both_avoid`，`verdict` 另允许 `split_by_mandate`。
+- 两种 preference 为 `target_preferred|peer_preferred|comparable|both_avoid|insufficient`，`verdict` 另允许 `split_by_mandate`。
 
 正式 Markdown 存在但缺少同名 JSON 时，保留原文；`structuredAvailable=false`、`priceApplicable=false`、`rawUrl=null`、`reference_price=null`、`scenarios={}`，对比的 `views/decision={}`、`comparisons=[]`。不从文字猜数，不回退到同代码的旧 JSON。
 

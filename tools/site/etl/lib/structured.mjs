@@ -3,7 +3,7 @@ import { SCENARIOS, filesUnder, readSource, dateFromName, latestBy, reportTitle,
 
 const EVIDENCE = new Set(['strong', 'medium', 'weak', 'insufficient']);
 const VIEWS = ['near_term_delivery', 'long_term_compounding', 'base_valuation', 'upside_potential', 'downside_resilience', 'relative_attractiveness'];
-const DECISIONS = { steady_allocation: ['avoid', 'conditional_wait', 'preferred_participate'], offense_allocation: ['small_option_bet', 'avoid', 'high_priority_offense'], near_term_timing: ['build_now', 'wait_for_trigger', 'avoid'] };
+const DECISIONS = { steady_allocation: ['avoid', 'conditional_wait', 'preferred_participate', 'priority_configure'], offense_allocation: ['small_option_bet', 'avoid', 'high_priority_offense'], near_term_timing: ['build_now', 'wait_for_trigger', 'avoid'] };
 
 export function validateStructured(raw, kind, source = '') {
   const fail = message => { throw new Error(`${source}: ${message}`); };
@@ -24,15 +24,15 @@ export function validateStructured(raw, kind, source = '') {
     if (kind === 'comparison' && !['adopt', 'revise', 'reestimate'].includes(item.review)) fail(`Invalid ${scenario}.review`);
   }
   if (kind === 'comparison') {
-    for (const key of VIEWS) if (!['positive', 'mixed', 'negative'].includes(raw.views?.[key])) fail(`Invalid view ${key}`);
+    for (const key of VIEWS) if (!['positive', 'mixed', 'negative', 'unknown'].includes(raw.views?.[key])) fail(`Invalid view ${key}`);
     for (const [key, choices] of Object.entries(DECISIONS)) if (!choices.includes(raw.decision?.[key])) fail(`Invalid decision ${key}`);
     if (!Array.isArray(raw.comparisons)) fail('Missing comparisons');
     const peers = new Set();
     for (const peer of raw.comparisons) {
       if (!peer.peer || peers.has(peer.peer) || peer.peer === raw.ticker || !peer.reason) fail('Invalid or duplicate comparison peer');
       peers.add(peer.peer);
-      for (const key of ['compounding_preference', 'convexity_preference']) if (!['target_preferred', 'peer_preferred', 'comparable', 'both_avoid'].includes(peer[key])) fail(`Invalid ${key}`);
-      if (!['target_preferred', 'peer_preferred', 'comparable', 'split_by_mandate', 'both_avoid'].includes(peer.verdict)) fail('Invalid comparison verdict');
+      for (const key of ['compounding_preference', 'convexity_preference']) if (!['target_preferred', 'peer_preferred', 'comparable', 'both_avoid', 'insufficient'].includes(peer[key])) fail(`Invalid ${key}`);
+      if (!['target_preferred', 'peer_preferred', 'comparable', 'split_by_mandate', 'both_avoid', 'insufficient'].includes(peer.verdict)) fail('Invalid comparison verdict');
     }
   }
   return raw;

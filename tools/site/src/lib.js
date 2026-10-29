@@ -4,7 +4,7 @@ export const SCENARIOS = ['bear', 'base', 'bull', 'breakthrough'];
 export const SCENARIO_NAMES = {bear:'悲观',base:'基准',bull:'乐观',breakthrough:'突破'};
 export const COLORS = {bear:'#b86c55',base:'#27766a',bull:'#4a84ab',breakthrough:'#9a79b0'};
 export const LABELS = {
-  strong:'强',medium:'中',weak:'弱',unknown:'未明确',
+  strong:'强',medium:'中',weak:'弱',unknown:'信息不足',priority_configure:'重点配置',
   positive:'有利',mixed:'利弊并存',negative:'不利',neutral:'中性',uncertain:'不确定',
   adopt:'采用',revise:'修正',reestimate:'重新估计',reject:'不采用',insufficient:'证据不足',
   conditional_wait:'有条件等待',small_option_bet:'小额期权式参与',wait_for_trigger:'等待触发条件',both_avoid:'双方回避',value_chain:'价值链关联',

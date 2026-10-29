@@ -26,7 +26,7 @@ export function Scatter({companies,selected,onSelect,source='comparison'}) {
 }
 
 export function OutcomeBar({comparisons=[]}) {
-  const keys=['target_preferred','peer_preferred','split_by_mandate','comparable','both_avoid','insufficient_evidence'];
+  const keys=['target_preferred','peer_preferred','split_by_mandate','comparable','both_avoid','insufficient'];
   const palette=['#267b6c','#bc775c','#d8b56e','#91a3ad','#735f63','#c7ccc6'];
   const counts=keys.map(key=>comparisons.filter(c=>c.verdict===key).length);
   const other=comparisons.length-counts.reduce((a,b)=>a+b,0);
