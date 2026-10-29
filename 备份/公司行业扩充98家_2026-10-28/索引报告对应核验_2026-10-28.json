@@ -1,0 +1,12 @@
+{
+  "companies": 350,
+  "industries": 121,
+  "companyMissing": [],
+  "companyOrphans": [
+    "基本面/公司调研/结果/配电_电源系统_电气设备/ATKR_Atkore_公司调研_2026-10-22.md"
+  ],
+  "wrongCategory": [],
+  "industryMissing": [],
+  "industryOrphans": [],
+  "filename_matching": "Current runner safeOutputNamePart escaping was applied; all 121 industry topics have exactly one report."
+}
