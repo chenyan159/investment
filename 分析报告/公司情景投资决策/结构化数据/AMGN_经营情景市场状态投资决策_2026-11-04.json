@@ -1,0 +1,73 @@
+{
+  "ticker": "AMGN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:58:17-08:00",
+  "reference_price": {
+    "value": 478.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        179.4,
+        179.4
+      ],
+      "business_price": [
+        317.6,
+        317.6
+      ],
+      "target_price": [
+        218.6,
+        254.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        371.8,
+        371.8
+      ],
+      "business_price": [
+        532.2,
+        532.2
+      ],
+      "target_price": [
+        490.4,
+        544.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        594.6,
+        594.6
+      ],
+      "business_price": [
+        770.3,
+        770.3
+      ],
+      "target_price": [
+        787.4,
+        899.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        838.3,
+        838.3
+      ],
+      "business_price": [
+        873.0,
+        873.0
+      ],
+      "target_price": [
+        1018.6,
+        1144.9
+      ],
+      "evidence": "weak"
+    }
+  }
+}
