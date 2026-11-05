@@ -1,0 +1,172 @@
+{
+  "ticker": "WDC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 323.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        165.1,
+        165.1
+      ],
+      "target_price": [
+        79.6,
+        101.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        642.2,
+        642.2
+      ],
+      "target_price": [
+        423.1,
+        516.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1188.7,
+        1188.7
+      ],
+      "target_price": [
+        952.0,
+        1171.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1452.8,
+        1452.8
+      ],
+      "target_price": [
+        1322.7,
+        1647.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "STX",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "STX的HAMR商业化和同价压力下基准每股利润更优；WDC乐观与突破年化右尾更高。"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "合同缓冲、当前自有现金和复核后情景赔率优于WDC，且基准不要求HBF成功；仍须防NAND价格与履约风险。"
+    },
+    {
+      "peer": "MU",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "多条存储收费路径、已形成的净金融资产与更高情景回报构成更优进攻替代，但不将稀释法NOPAT当GAAP利润。"
+    },
+    {
+      "peer": "P",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WDC当前经济现金、基准回报和年化右尾更强；P的软件扩展尚未弥补SBC、占款及估值约束。"
+    },
+    {
+      "peer": "NTAP",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NTAP服务底盘与较浅悲观回撤胜在稳健；WDC的量价经营杠杆和年化右尾胜在进攻。"
+    },
+    {
+      "peer": "HOCPY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA的医疗现金与多产品资格分散下行，WDC的高容量利润重定价有更高右尾；玻璃按片收费不能与EB机械相乘。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMZN多层收费与更高基准年化更适合中期复利，WDC更快的现金回收和更大的年化右尾适合受限进攻。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的续费平台与较小受损回撤更适合稳健持有；WDC的单位容量价差和较低资本负担提供更高右尾。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL的业务质量更强但DCF溢价和资本回收更重，稳健价格吸引力大致相当；WDC近端产现与高弹赔率更优。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA在多负载平台、基准回报和乐观年化上优于WDC，突破年化相近而下行结构更好；须约束客户资金风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM跨路线制造收费、现金和较浅悲观回撤胜在稳健；WDC周期利润及温层扩展的年化右尾更高。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT基准交付增长与年化回报更适合稳健参与，WDC的超预期单位价差提供更高右尾。"
+    }
+  ]
+}
