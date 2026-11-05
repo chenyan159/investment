@@ -1,0 +1,180 @@
+{
+  "ticker": "DDOG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:33:38-08:00",
+  "reference_price": {
+    "value": 188.72,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        103.3,
+        103.3
+      ],
+      "target_price": [
+        69,
+        89
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        178.0,
+        178.0
+      ],
+      "target_price": [
+        198.6,
+        239.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        235.0,
+        235.0
+      ],
+      "target_price": [
+        318.5,
+        388.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        256.4,
+        256.4
+      ],
+      "target_price": [
+        394.9,
+        487.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "DT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "DT基准回报与受损底线更好，且Arize右尾的年化赔率更高，是当前可观测性更优配置载体"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CSCO现金底盘与基准赔率较优，AI网络右尾也更大，但其集团股票不是纯可观测性替代"
+    },
+    {
+      "peer": "PANW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PANW是实质竞争威胁，但集团现价的基准及年化右尾赔率均弱于DDOG"
+    },
+    {
+      "peer": "CRWD",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CRWD安全壁垒强但现价需跨过更高经济盈利门槛，DDOG基准和乐观赔率更好"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NOW当前基准回报、股东现金和两条上行情景同时更优，是AI运维执行预算的更优配置载体"
+    },
+    {
+      "peer": "SNOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SNOW突破尾部接近DDOG，但基准和乐观较弱、当前Owner FCF为负，优先DDOG"
+    },
+    {
+      "peer": "NET",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NET的执行平台机制有价值，但现价基准负回报、上行情景也未优于DDOG"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT组合收费权及基准/乐观年化回报优于DDOG，但必须承担更高AI资本责任"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角DDOG融资韧性对冲AMZN更高基准回报而大致相当；进攻视角优先AMZN的大幅上行"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角DDOG资本负担较轻与GOOGL更高基准赔率相抵；进攻优先GOOGL的平台与TPU右尾"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE的低经济收益倍数和现金安全垫，以及乐观/突破弹性同时优于DDOG，代价是创作替代风险"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在控制AI资本周期敞口的条件下，NVDA当前经济盈利和四情景赔率优于DDOG，但大额远期预测非锁定订单"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾共同尾部风险时，TSM基准、正常经营底线和右尾优于DDOG；不能把情景悲观当战争下限"
+    }
+  ]
+}
