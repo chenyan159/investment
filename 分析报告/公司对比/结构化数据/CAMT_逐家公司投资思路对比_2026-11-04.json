@@ -1,0 +1,156 @@
+{
+  "ticker": "CAMT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:51:51-08:00",
+  "reference_price": {
+    "value": 101.42,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        81.0,
+        81.0
+      ],
+      "target_price": [
+        42.8,
+        52.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        236.7,
+        236.7
+      ],
+      "target_price": [
+        181.0,
+        211.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        327.1,
+        327.1
+      ],
+      "target_price": [
+        277.0,
+        320.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        429.8,
+        429.8
+      ],
+      "target_price": [
+        401.7,
+        480.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ONTO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CAMT资本安排更清楚且近期交付已验证；ONTO前道与封装双平台的右尾更大，但Rigaku与整合增加资本风险。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC服务基盘、份额与持续现金更适合核心配置；CAMT体量更小且突破价格弹性更高。"
+    },
+    {
+      "peer": "NVMI",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NVMI材料量测与服务更分散，CAMT近端订单交付及现金价值赔率更有利，当前价格下进攻优先CAMT。"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CAMT无需等待HBM全面迁移混合键合即可放量，基准现金价值缓冲与现价右尾均优于BESIY。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM控制先进制造平台且基准现金价值更厚，CAMT以较低资本负担提供更集中的检测右尾。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CAMT较少依赖存储净价维持极高利润率；MU在供需和合同兑现下的现金及乐观突破赔率明显更大。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同受益先进封装，CAMT的资本负担、净现金与修正后回报优于持续负自由现金流和增债的ASX。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "广义AI配置中NVDA的平台收费权、既有现金和上行情景更强，但不替代专门的光学检测敞口。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "微软续约壁垒更稳而现金资本责任更大，现价基准现金价值缓冲不足，CAMT的进攻赔率更优。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Alphabet的表观低PE受投资收益扰动且资本回收和净稀释承压，CAMT的每股现金路径及上行赔率更清楚。"
+    }
+  ]
+}
