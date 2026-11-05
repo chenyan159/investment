@@ -1,0 +1,172 @@
+{
+  "ticker": "SHOP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:45:00-08:00",
+  "reference_price": {
+    "value": 153.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        44,
+        44
+      ],
+      "target_price": [
+        27,
+        33
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        133,
+        133
+      ],
+      "target_price": [
+        133,
+        167
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        184,
+        184
+      ],
+      "target_price": [
+        208,
+        256
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        247,
+        247
+      ],
+      "target_price": [
+        313,
+        411
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "CRM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟续约与更低买入估值提供更好的基准及右尾回报，但需承担并购、债务和AI替代席位风险。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟现金流和约13倍正常化EV/NOPAT使基准与上行空间更优，前提是专业工作流净收费没有持续收缩。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "商业闭环与AWS提供更低估值下的多重收益来源，资本回收压力虽大，压力折算后相对赔率仍优。"
+    },
+    {
+      "peer": "BABA",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SHOP经营自给和现金可得性更稳；BABA在接受VIE、人民币、AI资本投入及执行风险的进攻授权下赔率更高。"
+    },
+    {
+      "peer": "MELI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SHOP的资金占用和信用暴露较可控；MELI的交易、广告与金融复利右尾更高，但最新6.3%利润率要求等待现金及信用验证。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "搜索分发与交易流量入口加云平台在更低正常化估值下提供更宽收益来源；监管与资本回收仍约束核心仓位。"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已实现广告收费和较低利润倍数带来较优相对赔率，但巨额AI投入使其也只适合有资本纪律约束的参与。"
+    },
+    {
+      "peer": "V",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa重复收费、少信贷资本占用及更小受损回撤更适合稳健复利；SHOP平台外执行层的突破上限更高。"
+    },
+    {
+      "peer": "MA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "支付与服务的成熟兑现、较高基准回报和温和受损区间优于SHOP；风险调整后的进攻回报也更均衡。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟工作流续约及云收费支撑更好的基准、下行和上行情景，需持续检验AI资本回收。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已有利润与系统瓶颈收费在约29倍正常化估值下提供更高赔率；即使大幅压力下修仍优，但远期买方预算未锁定。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "会员续费和日常消费更适合稳健复利，现价估值偏高；SHOP真实执行层突破的右尾更大。"
+    }
+  ]
+}
