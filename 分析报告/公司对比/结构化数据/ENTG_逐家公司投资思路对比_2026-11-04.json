@@ -1,0 +1,172 @@
+{
+  "ticker": "ENTG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:02:17-08:00",
+  "reference_price": {
+    "value": 142.87,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        94.0,
+        94.0
+      ],
+      "target_price": [
+        34.2,
+        46.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        287.1,
+        287.1
+      ],
+      "target_price": [
+        191.2,
+        223.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        386.8,
+        386.8
+      ],
+      "target_price": [
+        302.6,
+        346.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        469.0,
+        469.0
+      ],
+      "target_price": [
+        393.4,
+        472.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "Q",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Q以较低经营估值提供更高基准现金价值与更大材料平台右尾，但需承担PFAS与独立运营成本。"
+    },
+    {
+      "peer": "SHECY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "信越的财务韧性更适合稳健持有，ENTG更纯的先进工艺暴露和新散热分支提供较大右尾。"
+    },
+    {
+      "peer": "MTRN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "MTRN的债权负担较轻、估值较低且悲观回撤较小，突破年化与ENTG相近。"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ENTG的近端资本到期压力较小，MKSI的较低经营估值与实际利润加速更适合高风险进攻。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AMAT的现金与资本结构更好，基准和乐观年化均较高，工艺价值捕获也更直接。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "LRCX在工艺复杂度逻辑下有更强现金和更高基准赔率，量产路线证据也早于ENTG新散热。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KLAC的良率控制收费权、现金底线和基准回报更强，右尾也不逊于ENTG。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSM保留先进制造主要经济租，当前价格所需增长较温和；须单列台湾共同尾部风险。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ENTG较适合回避存储净价方向的稳健比较，MU在容忍价格周期时有显著更大右尾。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的合同和跨行业现金更适合稳健底仓，ENTG的先进工艺和散热右尾明显更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软平台持续性更强；按较短目标窗口年化后，上行并不低于ENTG，现金回收仍是条件。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的现金和复购更适合稳健持有，ENTG的景气与新平台带来更大的高弹性空间。"
+    }
+  ]
+}
