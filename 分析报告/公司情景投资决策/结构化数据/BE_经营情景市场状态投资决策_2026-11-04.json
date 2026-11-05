@@ -1,0 +1,73 @@
+{
+  "ticker": "BE",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:00:00-08:00",
+  "reference_price": {
+    "value": 200.4,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        9.1,
+        9.1
+      ],
+      "business_price": [
+        37.6,
+        37.6
+      ],
+      "target_price": [
+        20.8,
+        29.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        73.1,
+        73.1
+      ],
+      "business_price": [
+        165.0,
+        165.0
+      ],
+      "target_price": [
+        176.3,
+        209.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        144.3,
+        144.3
+      ],
+      "business_price": [
+        270.7,
+        270.7
+      ],
+      "target_price": [
+        325.1,
+        397.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        238.1,
+        238.1
+      ],
+      "business_price": [
+        386.7,
+        386.7
+      ],
+      "target_price": [
+        519.2,
+        651.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
