@@ -1,0 +1,172 @@
+{
+  "ticker": "TSEM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:07:21-08:00",
+  "reference_price": {
+    "value": 148.8,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        91.9,
+        91.9
+      ],
+      "target_price": [
+        63.2,
+        77.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        270.9,
+        270.9
+      ],
+      "target_price": [
+        247.5,
+        294.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        384.5,
+        384.5
+      ],
+      "target_price": [
+        451.4,
+        551.7
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        487.0,
+        487.0
+      ],
+      "target_price": [
+        661.8,
+        836.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "GFS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "GFS在当前买价下基准与乐观年化更高、受损回撤较浅且突破相近，构成综合特色代工更优替代；TSEM保留更纯的已付费硅光暴露。"
+    },
+    {
+      "peer": "UMC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TSEM的已付费硅光规模与基准回报均更强；UMC股息不能补足低基准价差及相近受损风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健TSM胜在多代收费、现金和更浅受损回撤；进攻TSEM胜在小基数光子利润杠杆。"
+    },
+    {
+      "peer": "INTC",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TSEM已有可重复的外部制造收入与较强净现金；INTC基准回报薄且突破仍需大量资本及新增股权。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健TSEM胜在净现金和更小资本缺口；进攻COHR胜在PhotonLink/光源/系统多处收费的年化右尾。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TSEM基准正回报更足、突破年化亦不逊；LITE现价更依赖超预期，光源稀缺不能免除股权与价格负担。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在广义AI互联配置中MRVL的IP复用、较低自建资本与现价年化赔率更优；不把其Custom目标当锁定订单。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO以当前股东现金、系统/IP议价与软件底盘胜出，基准和进攻年化皆有竞争力；其信用支持须持续审查。"
+    },
+    {
+      "peer": "SMTC",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健TSEM胜在制造订单与净现金；进攻SMTC胜在新器件含量/交叉销售的更大右尾及较轻总体资本。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健MSFT胜在企业收费与商业可见度；进攻TSEM胜在光子产能释放的每股非线性。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健GOOGL胜在多元成熟盈利和平台壁垒；进攻TSEM胜在更纯的已付费硅光增量与更高右尾。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健V胜在重复现金与较小受损回撤；进攻TSEM胜在实质非线性，V当前基准回报也仅中等。"
+    }
+  ]
+}
