@@ -1,0 +1,156 @@
+{
+  "ticker": "ACGL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:03:00-08:00",
+  "reference_price": {
+    "value": 110.68,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        71.4,
+        71.4
+      ],
+      "target_price": [
+        70.15,
+        82.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        125.45,
+        125.45
+      ],
+      "target_price": [
+        128.87,
+        145.68
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        175.81,
+        175.81
+      ],
+      "target_price": [
+        188.47,
+        212.03
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        207.59,
+        207.59
+      ],
+      "target_price": [
+        250.4,
+        287.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "CB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ACGL买价对应更低正常化倍数和更高条件回报，CB的规模质量尚未补足价格差"
+    },
+    {
+      "peer": "PGR",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PGR快反馈及现金分配与ACGL较浅的受损回撤相抵，稳健大致相当；条件右尾选ACGL，综合目标略优"
+    },
+    {
+      "peer": "RNR",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受再保灾损风险的同逻辑资金优先RNR：基准赔率更好且收费平台已运营，ACGL的按揭分散适合作补充"
+    },
+    {
+      "peer": "TRV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ACGL的基准及右尾价格空间更高，TRV现价低表观P/E仍不足抵消承保正常化"
+    },
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WRB组织质量好，但经济股本与正常化盈利对账后倍数更贵、条件回报较低，ACGL相对占优"
+    },
+    {
+      "peer": "BRK.B",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "本金韧性和再部署选择权选BRK.B，条件右尾弹性选ACGL；永久资本是经济替代而非技术路线"
+    },
+    {
+      "peer": "AON",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相同风险管理需求下AON优先获取收费和偿债复利，条件回报更高，但高杠杆使其不能完全替代ACGL的资本缓冲"
+    },
+    {
+      "peer": "AJG",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "AJG基准收费、协同和偿债回报优先，右尾幅度与ACGL各有约束；经纪优先是机会成本判断而非无杠杆替代"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "成熟收费网络的复利和资本效率选V，条件右尾百分比选ACGL；V当前价格也不支持忽视续约风险"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "下行资金自给与资本纪律选ACGL，真实AI渠道的非线性右尾选GOOGL；不能以其15倍GAAP P/E替代经济核算"
+    }
+  ]
+}
