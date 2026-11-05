@@ -1,0 +1,180 @@
+{
+  "ticker": "FLEX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 77.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        67.6,
+        67.9
+      ],
+      "target_price": [
+        36.7,
+        51.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        168.0,
+        168.3
+      ],
+      "target_price": [
+        175.4,
+        210.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        232.1,
+        232.6
+      ],
+      "target_price": [
+        279.8,
+        336.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        301.4,
+        302.2
+      ],
+      "target_price": [
+        403.4,
+        493.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CLS已筹得扩张股本、拥有净现金和承诺额度，基准与右尾更有利；FLEX保留电力产品化的补充价值。"
+    },
+    {
+      "peer": "JBL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "JBL多元客户与已审计现金更适合稳健复利；FLEX自有Power及Axiom的利润弹性更大。"
+    },
+    {
+      "peer": "SANM",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SANM资产负债表较轻而量产证据较早，稳健综合大致相当；FLEX已实现Power利润及乐观赔率更强。"
+    },
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按全股类市值及融资负担核对后，FLEX基准年化和乐观赔率更高，DELL没有更低的压力回撤。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT已兑现利润与现金、缺少相同规模近端再融资墙；FLEX较低买价对应更大的电力成长右尾。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Eaton订单、渠道及航空分散更适合核心配置；FLEX在同一AI电力逻辑下提供更大上行倍数。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FLEX正常兑现回报更厚、量产路径更广；Vicor少数平台与许可条件使极端右尾难以替代FLEX的整体赔率。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVIDIA控制系统核心价值且资本造血更强，基准与右尾均更好；FLEX适合作为电力产品化补充而非首选替代。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Amazon掌握终端收费和多元现金来源，稳健长期权利更强；FLEX对同一扩张提供更直接且更大的电力利润弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的续约与企业收费权更适合核心复利；FLEX的现价经营杠杆和分拆权益右尾更大。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟收费与较低再投资需求更适合稳健复利；FLEX上行更大，Visa现价也不属于深折价。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Linde现金韧性更好但现价回报较薄，稳健综合吸引力大致相当；FLEX在进攻赔率上明确胜出。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM许可与持续现金更适合防御复利；FLEX的增长和右尾更大，不能由WM替代进攻仓角色。"
+    }
+  ]
+}
