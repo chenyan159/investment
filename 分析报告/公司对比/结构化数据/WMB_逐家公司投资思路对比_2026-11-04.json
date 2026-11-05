@@ -1,0 +1,172 @@
+{
+  "ticker": "WMB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:40:00-08:00",
+  "reference_price": {
+    "value": 67.86,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        62.1,
+        62.1
+      ],
+      "target_price": [
+        47.8,
+        56.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        107.5,
+        107.5
+      ],
+      "target_price": [
+        91.8,
+        102.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        126.6,
+        126.6
+      ],
+      "target_price": [
+        120.7,
+        133.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        141.0,
+        141.0
+      ],
+      "target_price": [
+        141.6,
+        155.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ET",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "收入及保守现金覆盖优先ET；较短兑现期、天然气及供电成长弹性优先WMB"
+    },
+    {
+      "peer": "NEE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WMB兑现窗口更早且无需重大并购完成；NEE新增股本和持续资本缺口压低每股赔率"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WMB基准回报和收费稳定性较好；CEG存量核电净价与PPA重签提供更强右尾"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "BE原始右尾更大但基准可负、受损损失约85%—90%；WMB提供更好的证据约束后赔率"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WMB基准年化及下行较佳；GEV稀缺设备、服务和电网利润放大优于WMB右尾"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WMB容量收费使基准更稳；CAT扩产、使用小时和售后提供较高经营弹性"
+    },
+    {
+      "peer": "ETR",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健大致相当，ETR监管机制对冲WMB长约；WMB较少母公司稀释及更大右尾使综合优先"
+    },
+    {
+      "peer": "XOM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WMB更直接承接气体基础设施且年化基准更高；XOM乐观依赖更强商品价格条件"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软较短目标窗口的基准与右尾年化均更高，软件收费权和融资承受力更强"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN多终端收费与现金韧性更好；WMB项目增长和乐观年化显著更高"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MA基准及右尾价格赔率不低、受损幅度较小，现金和资本强度优于WMB"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM下行经营韧性更好；WMB较快的项目增长带来更高基准及右尾弹性"
+    }
+  ]
+}
