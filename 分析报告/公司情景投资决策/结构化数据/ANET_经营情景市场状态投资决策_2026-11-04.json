@@ -1,0 +1,73 @@
+{
+  "ticker": "ANET",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:40-08:00",
+  "reference_price": {
+    "value": 178.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        71.5,
+        71.5
+      ],
+      "business_price": [
+        186.2,
+        186.2
+      ],
+      "target_price": [
+        116.7,
+        139.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        196.3,
+        196.3
+      ],
+      "business_price": [
+        337.7,
+        337.7
+      ],
+      "target_price": [
+        346.4,
+        398.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        335.9,
+        335.9
+      ],
+      "business_price": [
+        462.9,
+        462.9
+      ],
+      "target_price": [
+        548.2,
+        621.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        522.0,
+        522.0
+      ],
+      "business_price": [
+        552.5,
+        552.5
+      ],
+      "target_price": [
+        743.7,
+        846.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
