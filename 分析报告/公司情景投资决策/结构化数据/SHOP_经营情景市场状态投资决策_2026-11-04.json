@@ -1,0 +1,73 @@
+{
+  "ticker": "SHOP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:18:43-08:00",
+  "reference_price": {
+    "value": 153.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        29.13,
+        34.28
+      ],
+      "business_price": [
+        66.39,
+        66.39
+      ],
+      "target_price": [
+        45.32,
+        55.04
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        104.17,
+        134.48
+      ],
+      "business_price": [
+        132.75,
+        132.75
+      ],
+      "target_price": [
+        149.8,
+        177.09
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        173.39,
+        228.29
+      ],
+      "business_price": [
+        173.71,
+        173.71
+      ],
+      "target_price": [
+        232.48,
+        277.68
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        274.33,
+        366.29
+      ],
+      "business_price": [
+        222.08,
+        222.08
+      ],
+      "target_price": [
+        356.57,
+        438.44
+      ],
+      "evidence": "weak"
+    }
+  }
+}
