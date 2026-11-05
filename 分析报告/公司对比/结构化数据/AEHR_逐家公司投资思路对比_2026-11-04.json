@@ -1,0 +1,172 @@
+{
+  "ticker": "AEHR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:54:01-08:00",
+  "reference_price": {
+    "value": 60.84,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        13.8,
+        13.8
+      ],
+      "target_price": [
+        9.1,
+        11.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        53,
+        53
+      ],
+      "target_price": [
+        53,
+        64.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        86.9,
+        86.9
+      ],
+      "target_price": [
+        106.9,
+        127
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        131.4,
+        131.4
+      ],
+      "target_price": [
+        183.4,
+        225
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TER",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TER已有更宽的生产平台和正股东现金，基准及上行情景回报均更好；AEHR仅在专门的晶圆级老化前移逻辑中不可完全替代。"
+    },
+    {
+      "peer": "ATEYY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Advantest的多客户付费、软件和仪器平台更成熟，扣除产业总量上修依赖后仍有较好的回报；OTC价差及日元敞口必须计入执行。"
+    },
+    {
+      "peer": "COHU",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同样承担高功耗测试认证风险，COHU的基准价格空间与多项目入口更好；其现金转化、转债和治理风险使其也只适合卫星仓。"
+    },
+    {
+      "peer": "FORM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "FORM的基准现金与多类付费需求更优；乐观路径FORM更强、最极端突破AEHR更大，高弹视角大致相当，综合先选FORM。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KLA覆盖更多失效环节、服务收入与现金更成熟，基准和乐观回报均明显优于AEHR；只看最极端突破倍数才是AEHR的局部优势。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "ASE的已量产客户和正基准回报优先；高弹视角为乐观路径ASE更强、极端突破年化接近而AEHR融资负担更轻，故进攻大致相当。"
+    },
+    {
+      "peer": "AMKR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Amkor在计入预收抵扣和融资稀释后仍有更好的基准及乐观突破赔率；AEHR净现金更好，但不足以抵消当前买价的回报差。"
+    },
+    {
+      "peer": "ON",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "ON的现有现金和基准价格空间更好；高弹上ON的乐观回报较大、AEHR事件更集中且没有并购新杠杆，风险调整后大致相当。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVIDIA的系统收费和已实现现金更广，基准及高弹回报均更优；远期超大收入需预算校验，不能把匿名AEHR客户直接指认为NVIDIA。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的成熟收费和基准确定性占优；若明确追求小市值生产验证的集中右尾，AEHR可作其小额补充而非核心替代。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Alphabet的既有经营和基准赔率占优；若避免大型算力资产与信用承诺、专注一项清晰生产验证催化，则AEHR的进攻形式更合适。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Adobe在较低正常化盈利倍数下兼有成熟现金与转型右尾，两类风险预算均优先于AEHR；免费竞争仍需按ARR和续费证伪。"
+    }
+  ]
+}
