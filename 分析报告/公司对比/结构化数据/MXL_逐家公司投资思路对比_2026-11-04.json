@@ -1,0 +1,180 @@
+{
+  "ticker": "MXL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:49:35-08:00",
+  "reference_price": {
+    "value": 56.85,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        13.7,
+        13.7
+      ],
+      "target_price": [
+        7.4,
+        10.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        72.1,
+        72.1
+      ],
+      "target_price": [
+        72.1,
+        88.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        145.2,
+        145.2
+      ],
+      "target_price": [
+        195.8,
+        246.5
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        227.8,
+        227.8
+      ],
+      "target_price": [
+        388.5,
+        495.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AVGO",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "博通的成熟现金与基准回报更强；MXL在多代产品成功时有更大的非线性右尾。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "扣除换股稀释和整合投入后，Marvell仍提供更高基准回报与接近的乐观弹性，且没有MXL的同类仲裁断点。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Credo的AEC交付、净现金和较短观察窗提供更好的基准及乐观年化赔率，光学复制仍须验证。"
+    },
+    {
+      "peer": "SMTC",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Semtech能参与DSP与线性路线，基准回报和现金底盘更佳，右尾可比且无MXL特有法律尾部。"
+    },
+    {
+      "peer": "ALAB",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Astera的净现金和已兑现交换收入更适合稳健视角；MXL的乐观与突破收益倍数更大。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Coherent最新实绩支持更高基准承载力；MXL资本较轻、极端右尾更大，但法律风险限制仓位。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受换股交割风险时，Lumentum对4.5股Marvell的折价及合并后盈利提供更优基准与乐观赔率。"
+    },
+    {
+      "peer": "FN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Fabrinet有净现金与更小受损回撤，稳健占优；MXL新品成功可创造更高利润率和右尾。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "台积电在制造壁垒、现金和基准确定性上领先；MXL以小市值多代产品承担更大的右尾。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Arista的EOS、生产网络与股东现金支持更高基准回报；MXL在突破路径的股价放大倍数更大。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Alphabet的收费入口和融资韧性较强；MXL是资本开支链上更直接且更高弹性的有限仓位选择。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Adobe的现金收益率和受损底线更优；MXL的光互联新代际提供更大的突破弹性。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Mastercard的重复交易、现金和回撤边界更适合底仓；MXL的非线性上行更适合进攻。"
+    }
+  ]
+}
