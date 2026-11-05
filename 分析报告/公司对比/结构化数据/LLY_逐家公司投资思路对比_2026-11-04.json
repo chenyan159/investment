@@ -1,0 +1,156 @@
+{
+  "ticker": "LLY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:34:03-08:00",
+  "reference_price": {
+    "value": 1417.99,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        846.8,
+        846.8
+      ],
+      "target_price": [
+        424.3,
+        523.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        2204.15,
+        2204.15
+      ],
+      "target_price": [
+        1765.46,
+        2015.27
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        3396.4,
+        3396.4
+      ],
+      "target_price": [
+        2917.8,
+        3489.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        4243.1,
+        4243.1
+      ],
+      "target_price": [
+        4121.2,
+        5073.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AMGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LLY已商业化代谢平台与更快每股增长胜过AMGN的成熟接续及尚待三期验证的MariTide；AMGN低倍数未带来更优基准现金赔率。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "REGN的净金融资产、已获批免疫及肿瘤增量与较低经营买价同时提供更强基准保护和右尾，优先于LLY占用综合药企仓位。"
+    },
+    {
+      "peer": "RMD",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "OSA稳健现金复购与较低估值优先RMD；大规模代谢治疗及新药平台的非线性上行优先LLY，药物与PAP存在部分替代也可共用。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DHR复购及客户分散更适合稳健仓；其耗材不按GLP-1药费同比增长，LLY保留更大的成药利润与新分子右尾。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TMO经营分散优势被较满买价及并购资本负担部分抵消，稳健大致相当；LLY的内生每股增长和药物右尾更强。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LLY的商业需求与产品放量优于UNH仍待验证的医疗成本重定价；支付方议价权不等于保险股东取得更佳利润。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "在既有成熟业务及待补财报条件下，稳健履约复利优先MCK；成药价值捕获和突破弹性优先LLY，MCK不是纯GLP-1替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "MSFT成熟续约和较短目标窗口下的基准复利胜出；右尾年化与LLY相近，AI资本回收风险阻止认定其全面支配LLY。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL低经营倍数优势被经济现金缺口及AI信用支持抵消，稳健大致相当；LLY商业化右尾对新增外部融资的依赖较低。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA当前产现、条件基准及右尾均更强，两视角优先于LLY；远期预算与信用支持风险仍限制仓位，医疗敞口不能被其复制。"
+    }
+  ]
+}
