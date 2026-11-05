@@ -1,0 +1,73 @@
+{
+  "ticker": "FANUY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 17.95,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        9.78,
+        9.78
+      ],
+      "business_price": [
+        13.41,
+        13.41
+      ],
+      "target_price": [
+        10.71,
+        12.22
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        18.07,
+        18.07
+      ],
+      "business_price": [
+        22.99,
+        22.99
+      ],
+      "target_price": [
+        21.66,
+        25.52
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        24.74,
+        24.74
+      ],
+      "business_price": [
+        29.42,
+        29.42
+      ],
+      "target_price": [
+        32.8,
+        37.95
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        34.82,
+        34.82
+      ],
+      "business_price": [
+        37.26,
+        37.26
+      ],
+      "target_price": [
+        48.51,
+        58.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
