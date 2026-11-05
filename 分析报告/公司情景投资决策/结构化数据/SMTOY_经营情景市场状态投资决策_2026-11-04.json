@@ -1,0 +1,73 @@
+{
+  "ticker": "SMTOY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:49-08:00",
+  "reference_price": {
+    "value": 4.76,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        3.4,
+        3.4
+      ],
+      "business_price": [
+        3.67,
+        3.67
+      ],
+      "target_price": [
+        3.21,
+        3.71
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        7.62,
+        7.62
+      ],
+      "business_price": [
+        6.39,
+        6.39
+      ],
+      "target_price": [
+        6.7,
+        8.11
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        11.19,
+        11.19
+      ],
+      "business_price": [
+        8.37,
+        8.37
+      ],
+      "target_price": [
+        10.68,
+        12.53
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        17.59,
+        17.59
+      ],
+      "business_price": [
+        10.59,
+        10.59
+      ],
+      "target_price": [
+        15.92,
+        19.08
+      ],
+      "evidence": "weak"
+    }
+  }
+}
