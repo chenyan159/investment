@@ -1,0 +1,164 @@
+{
+  "ticker": "SMTOY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 4.76,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        3.67,
+        3.67
+      ],
+      "target_price": [
+        3.21,
+        3.71
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        6.39,
+        6.39
+      ],
+      "target_price": [
+        6.7,
+        8.11
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        8.37,
+        8.37
+      ],
+      "target_price": [
+        10.68,
+        12.53
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        10.59,
+        10.59
+      ],
+      "target_price": [
+        15.92,
+        19.08
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "GLW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SMTOY买价及下行压力更低；GLW光连接集中度、客户扩产支持和每股业务增长更强。"
+    },
+    {
+      "peer": "APH",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "APH现金回收、跨介质净内容和纯业务增幅更强；右尾年化相近时优先其更短兑现链。"
+    },
+    {
+      "peer": "TEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL股东现金、净回购和基准年化更好；SMTOY低起点与光器件/CPO提供较大右尾。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SMTOY集团资金风险较低；COHR最新运行速率和光平台收入占比支持更高弹性。"
+    },
+    {
+      "peer": "AXTI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SMTOY现金与地域分散更适合稳健资金；AXTI面积/净价杠杆更强，但只能承担极小风险预算。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SMTOY基准及下行更平衡；CRDO以轻资产设计和光第二曲线取得更高年化右尾。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI网络预算下ANET的系统收费、现金复用与基准/右尾年化均更强，构成优先替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软软件现金来源与终端收费权更强；两者右尾年化接近，SMTOY仅适合作为低倍数制造补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA截留平台利润且基准与右尾空间远高于SMTOY；其超大远期规模须独立接受预算检验。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN经营稳定但现价基准回报和DCF支撑偏弱；SMTOY的较低买价补偿了制造不确定性。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA以更小受损幅度及更强现金复利胜出；SMTOY乐观/突破右尾更大。"
+    }
+  ]
+}
