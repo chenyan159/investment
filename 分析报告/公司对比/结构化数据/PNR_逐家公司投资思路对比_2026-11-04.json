@@ -1,0 +1,172 @@
+{
+  "ticker": "PNR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 72.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        78.89,
+        78.89
+      ],
+      "target_price": [
+        47.22,
+        60.57
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        125.99,
+        125.99
+      ],
+      "target_price": [
+        111.83,
+        125.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        154.11,
+        154.11
+      ],
+      "target_price": [
+        161.21,
+        185.36
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        168.39,
+        168.39
+      ],
+      "target_price": [
+        202.5,
+        237.63
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "DCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DCI的成熟替换和较小份额争议胜稳健，PNR的泳池修复与Taco扩张胜右尾"
+    },
+    {
+      "peer": "DOV",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DOV的现金分散和较浅经营受损回撤胜稳健；PNR在修复成功时的弹性更大"
+    },
+    {
+      "peer": "ITT",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ITT交付/现金改善抵消其再融资风险，稳健大致相当；PNR的基准现金倍率和修复右尾更好"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "PH的航空与工业资格组合胜经营确定性；PNR以更低现金倍率提供更大的修复弹性"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "现价下ECL的现金倍率和受损回撤均更苛刻；PNR相对更优但仍须达到自身建仓触发"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TT已有装机服务、强积压及相近基准回报，突破平台比PNR更有商业证据"
+    },
+    {
+      "peer": "SPXC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "温水路线仍需热排出，SPXC已有付费规模且基准/右尾更优；须承受制造爬坡波动"
+    },
+    {
+      "peer": "NVT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "与PNR相近的未来现金倍率对应更强已实现增长和更大右尾，是AI设施逻辑优先载体"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "交付与利润已规模兑现，系统利润截留和右尾优于PNR；稳健偏好须限制其仓位"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟软件收费权和较短期限的AI平台右尾更强；属于资金机会成本而非PNR已确认客户股权替代"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN更稳但价格收取更多确定性溢价，稳健回报大致相当；PNR的修复弹性更大"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WM的防御更强但现金定价更满，稳健价格回报大致相当；PNR上行机制更有弹性"
+    }
+  ]
+}
