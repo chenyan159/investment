@@ -1,0 +1,73 @@
+{
+  "ticker": "SBUX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 109.7,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        31.52,
+        31.52
+      ],
+      "business_price": [
+        52.89,
+        52.89
+      ],
+      "target_price": [
+        39.74,
+        48.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        72.7,
+        72.7
+      ],
+      "business_price": [
+        96.57,
+        96.57
+      ],
+      "target_price": [
+        88.62,
+        104.53
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        101.96,
+        101.96
+      ],
+      "business_price": [
+        116.05,
+        116.05
+      ],
+      "target_price": [
+        120.86,
+        140.14
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        135.47,
+        135.47
+      ],
+      "business_price": [
+        140.1,
+        140.1
+      ],
+      "target_price": [
+        163.39,
+        186.67
+      ],
+      "evidence": "weak"
+    }
+  }
+}
