@@ -1,0 +1,172 @@
+{
+  "ticker": "FIX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:39:24-08:00",
+  "reference_price": {
+    "value": 1091.31,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        965.8,
+        965.8
+      ],
+      "target_price": [
+        576,
+        722.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        2134.9,
+        2134.9
+      ],
+      "target_price": [
+        1829.4,
+        2165.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        2733.7,
+        2733.7
+      ],
+      "target_price": [
+        2773.3,
+        3319.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        3300.1,
+        3300.1
+      ],
+      "target_price": [
+        3750.7,
+        4420.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "EME",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "EME的多终端、低资本负担和较小受损回撤更适合稳健资金，FIX模块化的右尾更强。"
+    },
+    {
+      "peer": "IESC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FIX当前资产负债表与交付证据更完整，IESC在统一现价后以更低经营倍数提供更强右尾，代价是并购与治理风险。"
+    },
+    {
+      "peer": "MYRG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "FIX利润和现金质量更强，MYRG更高的突破端点不足以抵销其账期和项目估计风险。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "相近交付逻辑下FIX当前倍数更低、净有息负债更轻，基准与乐观回报均优于PWR。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两者都需控制预收和长成长定价风险，VRT跨客户产品、服务与系统复制使进攻载体更优。"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT的装机服务和经营现金更适合稳健复利，FIX模块与施工扩张提供更大的乐观上行。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FIX现金与资本安全更强，AAON制造爬坡成功的每股利润弹性更高，须承担财报与融资尾部。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN的产品认证与渠道维持更耐久的收费权，FIX较轻净有息负债和模块扩围提升进攻赔率。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软长期软件收费权更稳固，FIX无需承担同等算力更新资本开支，当前工程现金及右尾更适合进攻。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在可持续经营的四情景内TSM的工艺壁垒、净现金及基准回报更好，台湾极端中断须另设风险预算。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复收费与低实物资本需求更适合核心复利，FIX的模块化和高景气经营杠杆带来更强右尾。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM处置许可和重复需求更抗周期，FIX在当前价格下提供显著更高的基准及乐观回报。"
+    }
+  ]
+}
