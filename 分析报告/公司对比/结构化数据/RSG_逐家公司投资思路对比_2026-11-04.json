@@ -1,0 +1,156 @@
+{
+  "ticker": "RSG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:05:14-08:00",
+  "reference_price": {
+    "value": 245.41,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        220.04,
+        220.04
+      ],
+      "target_price": [
+        167.62,
+        193.41
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        338.79,
+        338.79
+      ],
+      "target_price": [
+        317.64,
+        347.41
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        409.81,
+        409.81
+      ],
+      "target_price": [
+        396.23,
+        444.25
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        476.82,
+        476.82
+      ],
+      "target_price": [
+        475.0,
+        530.88
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "WM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选WM，因悲观回撤较浅且核心现金更大；高弹选RSG，因ES及每股利润上行更大。"
+    },
+    {
+      "peer": "WCN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "RSG基准回报与右尾均较高，WCN的更高净提价不足以抵消估值和Chiquita现金尾部。"
+    },
+    {
+      "peer": "CWST",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RSG；只在迁移和现金验证后的小仓高弹视角选CWST，其更大右尾伴随更高永久损失风险。"
+    },
+    {
+      "peer": "KO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同价日RSG基准回报和乐观弹性均更好，KO的品牌稳定性不足以补偿税务尾部及偏满买价。"
+    },
+    {
+      "peer": "PEP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健价格与现金保护选PEP，但承担北美修复风险；追求更高经营增长及价格右尾选RSG。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "RSG基准年化较高、悲观回撤较浅，WMT的平台化需要更高利润和更长增长期才能覆盖买价。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LIN的合同结构、较低杠杆与较浅悲观回撤；高弹选RSG的ES和更高每股利润放大。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健大致相当；Visa的轻资本收费扩展更适合长期高弹复利，监管与激励风险使其并非固废风险的等价替代。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "SPGI在更低的现金估值溢价、较浅悲观回撤及更大突破区间上组合更优，是当前优先的跨行业替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全选RSG；追求乐观和突破年化选择MSFT，前提是接受资本回收及更深悲观损失。"
+    }
+  ]
+}
