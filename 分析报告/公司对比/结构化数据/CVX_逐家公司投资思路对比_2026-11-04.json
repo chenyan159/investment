@@ -1,0 +1,172 @@
+{
+  "ticker": "CVX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:35:00-08:00",
+  "reference_price": {
+    "value": 216.96,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        61.7,
+        61.7
+      ],
+      "target_price": [
+        81.5,
+        101.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        202.3,
+        202.3
+      ],
+      "target_price": [
+        187.5,
+        217.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        318.5,
+        318.5
+      ],
+      "target_price": [
+        296.8,
+        340.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        335.4,
+        335.4
+      ],
+      "target_price": [
+        312.7,
+        381.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "XOM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相同油气逻辑下，基准含息回报和右尾更好；作业控制与低成本增量胜出。"
+    },
+    {
+      "peer": "COP",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在可承受纯上游波动的能源预算中，正常现金拐点与每股赔率优于CVX；先核验11月5日业绩。"
+    },
+    {
+      "peer": "NEE",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "电力需求逻辑下，受监管盈利和较浅主悲观回撤优于CVX；现金缺口及合并条件限制仓位。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "可靠电力稀缺逻辑下，存量机组重签和右尾更直接；并非等量原油风险对冲。"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CVX的基准回报、下行幅度和乐观兑现门槛更有利；CCJ更大的最远右尾不足抵消更差的基准与现金底线。"
+    },
+    {
+      "peer": "SLB",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "油服恢复和数据中心交付逻辑下，基准及右尾赔率更好；胜负仍取决于净价、Kelvion整合和回款。"
+    },
+    {
+      "peer": "WMB",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "美国天然气需求增长逻辑下，收费兑现及每股增长优于CVX；须扣合作方49%现金权和成长资本。"
+    },
+    {
+      "peer": "ET",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "税前收入型能源预算中，分派加正常增长的回报优于CVX；投资者税后适配及债务融资是前提。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "提前供电和设备瓶颈逻辑下，交付经营杠杆与右尾优于CVX；现价同样限制核心仓位。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AI需求变现逻辑下，软件收费和平台规模的基准及右尾优于CVX的小规模供电权益；资本回收必须兑现。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "长期合同、现金底线和基准复利优于CVX，乐观与突破涨幅并不逊色；主加仓仍需价格纪律。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "高现金转化和平台复利形成更好的基准与右尾组合；已按11月4日更高买价重算，仍优于CVX。"
+    }
+  ]
+}
