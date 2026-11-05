@@ -1,0 +1,73 @@
+{
+  "ticker": "FTV",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:00-08:00",
+  "reference_price": {
+    "value": 68.34,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        38.1,
+        38.1
+      ],
+      "business_price": [
+        66.7,
+        66.7
+      ],
+      "target_price": [
+        48.1,
+        54.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        73.0,
+        73.0
+      ],
+      "business_price": [
+        97.6,
+        97.6
+      ],
+      "target_price": [
+        92.8,
+        101.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        97.8,
+        97.8
+      ],
+      "business_price": [
+        114.3,
+        114.3
+      ],
+      "target_price": [
+        118.9,
+        134.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        137.0,
+        137.0
+      ],
+      "business_price": [
+        133.5,
+        133.5
+      ],
+      "target_price": [
+        156.3,
+        173.9
+      ],
+      "evidence": "weak"
+    }
+  }
+}
