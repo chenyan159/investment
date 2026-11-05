@@ -1,0 +1,164 @@
+{
+  "ticker": "BNTX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 90.7,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        35.2,
+        35.2
+      ],
+      "target_price": [
+        45,
+        65
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        20.2,
+        20.2
+      ],
+      "target_price": [
+        100.8,
+        117.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        108.5,
+        108.5
+      ],
+      "target_price": [
+        250.6,
+        323.9
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        159.5,
+        159.5
+      ],
+      "target_price": [
+        429.3,
+        557.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MRNA",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均不合稳健核心标准，但BNTX现金缓冲与现价承载更好，MRNA首个标签成功不足以支撑当前市值。"
+    },
+    {
+      "peer": "MRK",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MRK成熟付费与股息胜在稳健，BNTX较小市值和多标签成功带来的右尾更大。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "REGN已商业化的现金平台提供更强基准，较早目标日的右尾年化亦可匹敌或超过BNTX。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMGN自给现金与已上市肿瘤资产更稳，BNTX对成功转型的每股放大更大。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ALNY已验证付费给药与接代利润机制，在本比较价格下兼有更好的基准及右尾年化。"
+    },
+    {
+      "peer": "GILD",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GILD的HIV现金及股息提高稳健性，BNTX保留pumitamig成药的独特高弹暴露。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DHR复购工作流与正现金适合稳健配置，BNTX临床里程碑能带来更大右尾。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TMO分散研发失败且现金自给，BNTX多标签成功的股价弹性更高。"
+    },
+    {
+      "peer": "VRTX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX的CF持续现金和疾病壁垒更稳，BNTX的乐观与突破年化上沿更高。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "MSFT基准收费证据更强，年化右尾与BNTX相近，BNTX仅适合作不同临床因子的补充。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾共同尾部风险的前提下，TSM已付费增长同时提供更强基准和相当或更高的年化右尾。"
+    }
+  ]
+}
