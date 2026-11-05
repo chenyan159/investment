@@ -1,0 +1,73 @@
+{
+  "ticker": "COHU",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:22:27-08:00",
+  "reference_price": {
+    "value": 43.98,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        15.66,
+        15.66
+      ],
+      "business_price": [
+        22.72,
+        22.72
+      ],
+      "target_price": [
+        16.46,
+        19.59
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        63.69,
+        63.69
+      ],
+      "business_price": [
+        85.45,
+        85.45
+      ],
+      "target_price": [
+        78.65,
+        92.25
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        104.92,
+        104.92
+      ],
+      "business_price": [
+        128.77,
+        128.77
+      ],
+      "target_price": [
+        139.64,
+        172.26
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        153.62,
+        153.62
+      ],
+      "business_price": [
+        164.88,
+        164.88
+      ],
+      "target_price": [
+        200.86,
+        258.43
+      ],
+      "evidence": "weak"
+    }
+  }
+}
