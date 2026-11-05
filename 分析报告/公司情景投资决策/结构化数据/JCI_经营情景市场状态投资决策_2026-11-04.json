@@ -1,0 +1,73 @@
+{
+  "ticker": "JCI",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 140.53,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        53.6,
+        53.6
+      ],
+      "business_price": [
+        130.7,
+        130.7
+      ],
+      "target_price": [
+        77.5,
+        96.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        142.1,
+        142.1
+      ],
+      "business_price": [
+        242.4,
+        242.4
+      ],
+      "target_price": [
+        215.7,
+        250.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        208.6,
+        208.6
+      ],
+      "business_price": [
+        303.6,
+        303.6
+      ],
+      "target_price": [
+        302.3,
+        344.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        288.0,
+        288.0
+      ],
+      "business_price": [
+        354.5,
+        354.5
+      ],
+      "target_price": [
+        390.0,
+        439.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
