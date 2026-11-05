@@ -1,0 +1,172 @@
+{
+  "ticker": "TEL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:55:00-08:00",
+  "reference_price": {
+    "value": 220.22,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-28",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        215.04,
+        215.04
+      ],
+      "target_price": [
+        147.08,
+        179.29
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        362.31,
+        362.31
+      ],
+      "target_price": [
+        329.99,
+        374.18
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        412.67,
+        412.67
+      ],
+      "target_price": [
+        436.14,
+        496.24
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        475.94,
+        475.94
+      ],
+      "target_price": [
+        571.98,
+        664.08
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL估值与杠杆更低，APH的AI内容、组合利润率和右尾规模更强。",
+      "peer": "APH"
+    },
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL资本保全更强，BDC低估值叠加去杠杆和客户复制可放大权益右尾。",
+      "peer": "BDC"
+    },
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL规模现金和客户分散更稳，BELFB小基数电源放量有更大的每股右尾但订单与资本风险更高。",
+      "peer": "BELFB"
+    },
+    {
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL成熟现金底盘更可靠，CRDO在主动信号调理、光和内存连接的右尾更大且损失更深。",
+      "peer": "CRDO"
+    },
+    {
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL现金估值缓冲更好，GLW光学迁移和内部Photonics具更强右尾但需要更多资本与客户权益让渡。",
+      "peer": "GLW"
+    },
+    {
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL自给现金与低杠杆更稳；COHR新运行速率上修强化光路线右尾，库存、扩产与融资仍约束稳健配置。",
+      "peer": "COHR"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL现价更接近现金价值、经营要求较低，ANET系统收费权和规模增长提供更强进攻回报。",
+      "peer": "ANET"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL基准依赖的预算和信用外推较少，NVDA系统利润截留及条件右尾显著更强但远期总量证据不够支持无条件稳健替代。",
+      "peer": "NVDA"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "微软软件续约壁垒更强，TEL现金自给和估值缓冲更好；两者年化右尾接近，暂无全面替代关系。",
+      "peer": "MSFT"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN合同防御更强但现价基准回报不足，TEL以更低经营倍数提供明显更高的基准与右尾回报。",
+      "peer": "LIN"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复交易现金和较浅受损回撤更适合稳健核心，TEL的DDN/光电内容升级提供更强条件右尾。",
+      "peer": "MA"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ORLY需求更防御但现价基准回报和右尾偏低，TEL现金底盘、较低经营倍数及DDN增量更值得占用增长仓位。",
+      "peer": "ORLY"
+    }
+  ]
+}
