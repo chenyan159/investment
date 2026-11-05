@@ -1,0 +1,172 @@
+{
+  "ticker": "EMR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:55:18-08:00",
+  "reference_price": {
+    "value": 170.44,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        158.34,
+        158.34
+      ],
+      "target_price": [
+        109.37,
+        127.49
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        241.25,
+        241.25
+      ],
+      "target_price": [
+        208.15,
+        244.86
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        279.11,
+        279.11
+      ],
+      "target_price": [
+        277.99,
+        320.01
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        319.42,
+        319.42
+      ],
+      "target_price": [
+        354.01,
+        401.83
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "avoid",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ABB更强交付增长、较浅基准压力区间和更宽右尾；流程MRO专项可留EMR"
+    },
+    {
+      "peer": "ROK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR的MRO与较低估值；进攻选ROK的软件／物流及经营杠杆，分视角各胜"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR更简单资本结构；进攻选施耐德电气＋软件整合，需承担并购与汇率"
+    },
+    {
+      "peer": "AME",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同为质量仪表配置，AME基准回报与右尾更宽、偿债弹性更好；需维持有机增长和整合纪律"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR分散终端；要买测试升级弹性选KEYS，不能用EMR全集团稀释后的NI替代"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR更分散的存量维护；AI设施进攻选VRT，已商业化采购包与量价弹性更直接"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR直接终端维护；周期／电源内容进攻选ADI；TTM低基数放大的业务价须去魅"
+    },
+    {
+      "peer": "XOM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "自动化升级逻辑下两视角均选EMR；XOM承担商品净价风险、2030回报年化后较低，非同等替代"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一电气化／设施升级逻辑优先ETN：基准与上行明显更宽；EMR用于降低DC预算集中"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全选LIN的合同与较浅压力区间；更高每股增长和右尾选EMR"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "长期核心复利与进攻均优先MSFT的平台收费；EMR可补充实体维护风险，非AI核心首选"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EMR现金与预算分散；高弹选GOOGL的TPU／AI商业网络，承担更深尾部和资本前置"
+    }
+  ]
+}
