@@ -1,0 +1,172 @@
+{
+  "ticker": "AEP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:03:12-08:00",
+  "reference_price": {
+    "value": 129.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        112.94,
+        112.94
+      ],
+      "target_price": [
+        88.63,
+        99.71
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        170.32,
+        170.32
+      ],
+      "target_price": [
+        158.72,
+        183.78
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        196.01,
+        196.01
+      ],
+      "target_price": [
+        201.89,
+        230.73
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        208.69,
+        208.69
+      ],
+      "target_price": [
+        225,
+        246
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ETR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP的跨州输电底盘，高弹选ETR的工业负荷与电源放量；ETR不全面替代AEP"
+    },
+    {
+      "peer": "DTE",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "DTE更便宜但增长兑现更慢，AEP的输电回收、地域分散与上行空间更好"
+    },
+    {
+      "peer": "NEE",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FPL优质但合并及资本归属增加分支，统一2029窗口后AEP基准赔率和可验证性占优"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP的回收机制，高弹选CEG的存量电量重签净价；核电资产与电网收费不可互换"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP，高弹选VST；VST现价对应较大现金及重签上行，但杠杆尾部更厚"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP，高弹小仓选BE；BE对合格交付的利润杠杆更大，200美元基准回报不足"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP的较低买价负担，高弹选GEV的订单提价与服务；设备稀缺不等于当前股价便宜"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN基准回报更高、扩张后现金为正且无需持续发股，是电力扩容逻辑下更优载体"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP的低执行波动，高弹选PWR跨园区复制；承包利润对工时误差比AEP更敏感"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEP的收费权，高弹选GOOGL平台经营杠杆；Google客户信用不等于其股票现金回报成熟"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在允许台湾共同尾部风险的组合里，TSM基准和右尾、现金自给均明显优于AEP"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Visa现金自筹与低资本需求优于AEP，稳健质量优先；现价基准收益并非特别便宜"
+    }
+  ]
+}
