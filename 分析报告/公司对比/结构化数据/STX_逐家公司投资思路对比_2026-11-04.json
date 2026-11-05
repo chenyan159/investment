@@ -1,0 +1,172 @@
+{
+  "ticker": "STX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:23:42-08:00",
+  "reference_price": {
+    "value": 557.06,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        289.3,
+        289.3
+      ],
+      "target_price": [
+        145.3,
+        182.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1481.4,
+        1481.4
+      ],
+      "target_price": [
+        868.0,
+        1065.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1885.6,
+        1885.6
+      ],
+      "target_price": [
+        1479.2,
+        1794
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        2258.4,
+        2258.4
+      ],
+      "target_price": [
+        1997.1,
+        2526.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "WDC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "STX的HAMR量产与近端每股兑现更领先，WDC在成功追赶后的乐观及突破弹性更高。"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "SNDK的已实现股东现金收益率、NBM合同缓冲和情景赔率更好，是广义AI存储逻辑下优先于STX的载体。"
+    },
+    {
+      "peer": "MU",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "STX的再投资和制造转换负担较轻，MU的HBM与企业SSD多产品弹性更强但重资本和高价回落风险更大。"
+    },
+    {
+      "peer": "NTAP",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NTAP的支持与云毛利底盘更稳，STX拥有更直接的容量价格及密度降本弹性。"
+    },
+    {
+      "peer": "P",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "STX已有强股东现金且SBC负担较低，P的组件占款、持续稀释和新软件收费门槛降低现价吸引力。"
+    },
+    {
+      "peer": "HOCPY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA的材料资格、医疗分散和净现金更适合稳健持有，STX在同一容量景气上具有更强利润弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的客户入口和软件续费更适合作核心底仓，STX的自融资制造利润和上行情景弹性更适合作进攻补充。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMZN的云与零售平台及基准成长更适合长期复利，STX的资本自给和乐观突破弹性更适合作进攻补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Alphabet的搜索及数据平台更具长期分散价值，STX在当前资本投入和高弹赔率上更直接。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA的计算平台与网络价值捕获更强，当前情景下的基准回报和右尾均优于STX，但仍受客户融资与自研替代约束。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "现价下两者均不满足严格稳健安全边际，进攻资金优先STX；COST的高质量尚不足以补偿约51倍正常化盈利。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的低资本收费网络及每股现金复利更稳，STX的乐观和突破收益更高；Visa自身现价也需控制估值风险。"
+    }
+  ]
+}
