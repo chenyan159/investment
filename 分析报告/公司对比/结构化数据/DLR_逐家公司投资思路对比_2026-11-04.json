@@ -1,0 +1,156 @@
+{
+  "ticker": "DLR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:00-08:00",
+  "reference_price": {
+    "value": 184.88,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        136.83,
+        136.83
+      ],
+      "target_price": [
+        98.52,
+        114.94
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        242.53,
+        242.53
+      ],
+      "target_price": [
+        213.43,
+        242.53
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        299.6,
+        299.6
+      ],
+      "target_price": [
+        323.56,
+        359.52
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        342.94,
+        342.94
+      ],
+      "target_price": [
+        397.81,
+        438.96
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "EQIX",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "互联生态和较低已发生稀释优于DLR，正常兑现与平台右尾均较强，但仍须约束扩建现金。"
+    },
+    {
+      "peer": "APLD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DLR在融资生存和租户分散上胜出，APLD在交付与优先资本重构成功后的普通股弹性上胜出。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DLR避免直接承担GPU代际残值，CRWV的算力与软件利润右尾更大但必须先跨过融资和设备回收门槛。"
+    },
+    {
+      "peer": "IREN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DLR的现金和资本结构更可控，IREN的垂直算力复制具有更高右尾且承受重组清零风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软保有终端软件收费权和成熟现金发动机，较短窗口的基准及平台右尾均优于DLR。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DLR的成熟租赁路径较稳，Amazon掌握云及商家入口、自研芯片与更大右尾，但现金回收更难验证。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Vertiv已在扩产后产生现金、稀释较低，设备内容和服务复用的基准及右尾优于DLR。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "伊顿有正现金与多行业盈利来源，当前正常化买价对应更好的基准回报并保留电气冷却平台右尾。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾集中尾部风险的约束下，台积电的瓶颈收费、净现金与每股业务增量均优于DLR。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "PGR的自我融资和现金分配更适合稳健复利，DLR的乐观租金与平台兑现提供较强上行斜率。"
+    }
+  ]
+}
