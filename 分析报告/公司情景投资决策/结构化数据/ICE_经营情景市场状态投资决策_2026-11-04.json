@@ -1,0 +1,73 @@
+{
+  "ticker": "ICE",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:56:49-08:00",
+  "reference_price": {
+    "value": 174.92,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        117.38,
+        117.38
+      ],
+      "business_price": [
+        170.16,
+        170.16
+      ],
+      "target_price": [
+        135.97,
+        158.63
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        245.95,
+        245.95
+      ],
+      "business_price": [
+        251.11,
+        251.11
+      ],
+      "target_price": [
+        245.24,
+        278.68
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        336.08,
+        336.08
+      ],
+      "business_price": [
+        303.91,
+        303.91
+      ],
+      "target_price": [
+        323.78,
+        364.26
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        427.88,
+        427.88
+      ],
+      "business_price": [
+        333.88,
+        333.88
+      ],
+      "target_price": [
+        370.54,
+        429.82
+      ],
+      "evidence": "weak"
+    }
+  }
+}
