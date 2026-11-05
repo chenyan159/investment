@@ -1,0 +1,73 @@
+{
+  "ticker": "VRTX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:17-08:00",
+  "reference_price": {
+    "value": 549.04,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        171.4,
+        171.4
+      ],
+      "business_price": [
+        549.6,
+        549.6
+      ],
+      "target_price": [
+        370.3,
+        433.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        346.5,
+        346.5
+      ],
+      "business_price": [
+        727.9,
+        727.9
+      ],
+      "target_price": [
+        656.6,
+        742.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        764.1,
+        764.1
+      ],
+      "business_price": [
+        1038.0,
+        1038.0
+      ],
+      "target_price": [
+        996.7,
+        1120.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1242.9,
+        1242.9
+      ],
+      "business_price": [
+        1315.5,
+        1315.5
+      ],
+      "target_price": [
+        1421.6,
+        1580.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}
