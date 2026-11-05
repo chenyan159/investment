@@ -1,0 +1,172 @@
+{
+  "ticker": "HUBB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:00-08:00",
+  "reference_price": {
+    "value": 438.26,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        365.2,
+        365.2
+      ],
+      "target_price": [
+        269.4,
+        319.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        619.0,
+        619.0
+      ],
+      "target_price": [
+        599.2,
+        684.8
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        796.7,
+        796.7
+      ],
+      "target_price": [
+        881.3,
+        991.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        972.4,
+        972.4
+      ],
+      "target_price": [
+        1165.3,
+        1344.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "系统电力与液冷内容更广，基准增长及回报较高；并购杠杆阻止其被视为全面无风险替代。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "当前同逻辑下更高增长与更低目标年盈利负担胜出，须通过Maverick整合和原有组合现金验证。"
+    },
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "comparable",
+      "reason": "ABB的全球装机与较低一般悲观跌幅，对上HUBB较低当前盈利倍数及更大右尾，综合相当。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "施耐德系统入口更强，但PTC融资、股本及软件整合使当前稳健新资金优先HUBB，右尾接近。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HUBB电网需求更分散；VRT液冷和供电系统的已商业化增长及右尾更大。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GEV燃机与高压稀缺性更强，但现价基准回报低、悲观损伤大，HUBB当前两种标准均胜。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HUBB现金与产品资格更适合稳健持有，PWR跨专业平台复制提供更大进攻右尾。"
+    },
+    {
+      "peer": "AEP",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AEP监管资产与分红有价值，但持续外部融资、稀释及回收上限使HUBB的产品现金模式更优。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软企业收费权更广、较短目标期限的年化回报较好，资本回收风险限制仓位但不改变当前顺位。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN合同和需求分散更防守，当前现金流估值要求较高且右尾较小，综合回报优先HUBB。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA低资本网络、基准现金与较浅一般悲观损失更适合底仓，HUBB乐观及突破弹性较大。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾共同尾部风险的前提下，TSM先进制造壁垒、净现金和基准及右尾回报胜出。"
+    }
+  ]
+}
