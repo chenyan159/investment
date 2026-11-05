@@ -1,0 +1,156 @@
+{
+  "ticker": "GWW",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:00-08:00",
+  "reference_price": {
+    "value": 1489.39,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        1424.4,
+        1424.4
+      ],
+      "target_price": [
+        985.0,
+        1164.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1971.6,
+        1971.6
+      ],
+      "target_price": [
+        1797.1,
+        2045.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        2246.9,
+        2246.9
+      ],
+      "target_price": [
+        2330.5,
+        2542.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        2549.1,
+        2549.1
+      ],
+      "target_price": [
+        2804.3,
+        3124.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "FAST",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GWW的买入倍数和客户分散度更适合稳健仓，FAST的大站点扩张提供更高但更昂贵的右尾。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GWW的自给现金更适合稳健复利，AMZN的云和平台利润右尾更强但需融资与资本回收验证。"
+    },
+    {
+      "peer": "CTAS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CTAS的路线黏性更强，但高买入倍数和待审并购未带来胜过GWW的同窗收益。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GWW较低负债和较轻资本承诺更稳健，ECL高科技水处理和液冷的右尾更强但收购价和现金需验证。"
+    },
+    {
+      "peer": "MMM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "3M较低盈利倍数被法律现金和成熟业务增长消耗，EBO不足以使当前集团赔率胜过GWW。"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "PH的产品资格更深，但并购杠杆削弱稳健性，其同窗右尾与GWW接近，综合优先GWW。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN现价对应更低的共同2029盈利倍数且基准和右尾更强，现金及订单验证通过时优先于GWW。"
+    },
+    {
+      "peer": "RSG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "RSG的许可与经常服务增强下行韧性且基准回报稍高，右尾接近，防御资金优先RSG。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MA的正常化每股增长、现金转化和悲观损失组合优于GWW，支付让利与监管为主要边界。"
+    },
+    {
+      "peer": "ORLY",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "ORLY悲观保护较好但供应商资金与回购杠杆更重，GWW客户分散和增长更强，现价综合相当。"
+    }
+  ]
+}
