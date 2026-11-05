@@ -1,0 +1,73 @@
+{
+  "ticker": "KLAC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 149.79,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        79.8,
+        79.8
+      ],
+      "business_price": [
+        173.14,
+        173.14
+      ],
+      "target_price": [
+        100.38,
+        126.98
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        223.88,
+        223.88
+      ],
+      "business_price": [
+        317.52,
+        317.52
+      ],
+      "target_price": [
+        281.85,
+        330.32
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        322.24,
+        322.24
+      ],
+      "business_price": [
+        394.19,
+        394.19
+      ],
+      "target_price": [
+        390.03,
+        450.09
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        429.17,
+        429.17
+      ],
+      "business_price": [
+        442.05,
+        442.05
+      ],
+      "target_price": [
+        482.32,
+        549.73
+      ],
+      "evidence": "weak"
+    }
+  }
+}
