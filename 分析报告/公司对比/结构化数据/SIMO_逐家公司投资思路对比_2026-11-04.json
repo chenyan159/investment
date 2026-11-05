@@ -1,0 +1,172 @@
+{
+  "ticker": "SIMO",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:59:57-08:00",
+  "reference_price": {
+    "value": 182.54,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        129.7,
+        129.7
+      ],
+      "target_price": [
+        93.5,
+        118
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        420,
+        420
+      ],
+      "target_price": [
+        509,
+        609.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        664,
+        664
+      ],
+      "target_price": [
+        934.9,
+        1141.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        924,
+        924
+      ],
+      "target_price": [
+        1433.2,
+        1790.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MRVL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "纳入LITE利润、4.5换股及整合后，交割分支赔率低于SIMO；失败分支区间有重叠，当前有限资金仍优先SIMO。"
+    },
+    {
+      "peer": "MCHP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SIMO基准和右尾回报均更高，MCHP集团的债务、优先股和再融资使Flashtec增长难完整归属于普通股。"
+    },
+    {
+      "peer": "STX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "STX产现更成熟，但现价的基准年化回报与受损价格保护弱于SIMO，技术优势尚未证明可永久保留价格租金。"
+    },
+    {
+      "peer": "WDC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WDC已兑现的现金和低净债使稳健视角胜出；SIMO基准及右尾年化回报更高，更适合受限进攻仓。"
+    },
+    {
+      "peer": "NTAP",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NTAP服务续费、净现金和较小悲观回撤更适合稳健配置；SIMO每股经营成长及非线性弹性明显更高。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "美光拥有已兑现的原厂现金、较强资产负债表与合同基础，基准及高弹年化回报也足以替代SIMO的广义存储逻辑。"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "闪迪的企业盘交付、NBM合同和剔除客户资金后的现金已成立，基准及右尾年化赔率均优于SIMO，是纯NAND逻辑的优先载体。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM的平台壁垒、低稀释、现金与较浅受损回撤适合核心配置；SIMO的小基数新品右尾更大，可作小仓补充。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NVDA控制平台且已有规模利润与现金，稳健成长优先；SIMO的条件突破倍数更大，但证据更弱且只能限仓。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL平台更耐久，但当前DCF折价不足、经济FCF为负且基准回报有限；以本次买价比较，SIMO的估值缓冲及进攻弹性更好。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软成熟续约和企业分发支持稳健核心候选；SIMO的基准及右尾回报更大，但现金验证和产品集中风险更高。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的现金复利、轻资本与较浅悲观回撤优于SIMO；SIMO的成长跃迁右尾更大，两者适用仓位不同。"
+    }
+  ]
+}
