@@ -1,0 +1,73 @@
+{
+  "ticker": "SNDK",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:00-08:00",
+  "reference_price": {
+    "value": 1037.59,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        740.0,
+        740.0
+      ],
+      "business_price": [
+        806.5,
+        806.5
+      ],
+      "target_price": [
+        574.4,
+        713.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        3143.1,
+        3143.1
+      ],
+      "business_price": [
+        3303.1,
+        3303.1
+      ],
+      "target_price": [
+        2829.2,
+        3777.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        4872.2,
+        4872.2
+      ],
+      "business_price": [
+        4144.7,
+        4144.7
+      ],
+      "target_price": [
+        4446.3,
+        5652.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        6884.0,
+        6884.0
+      ],
+      "business_price": [
+        4537.8,
+        4537.8
+      ],
+      "target_price": [
+        5878.3,
+        7553.9
+      ],
+      "evidence": "weak"
+    }
+  }
+}
