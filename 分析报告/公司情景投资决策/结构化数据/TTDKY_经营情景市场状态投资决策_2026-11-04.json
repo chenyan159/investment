@@ -1,0 +1,73 @@
+{
+  "ticker": "TTDKY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 15.73,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        9.01,
+        9.01
+      ],
+      "business_price": [
+        12.47,
+        12.47
+      ],
+      "target_price": [
+        9.07,
+        10.38
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        22.33,
+        22.33
+      ],
+      "business_price": [
+        25.02,
+        25.02
+      ],
+      "target_price": [
+        24.74,
+        28.84
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        35.75,
+        35.75
+      ],
+      "business_price": [
+        34.04,
+        34.04
+      ],
+      "target_price": [
+        39.3,
+        46.81
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        51.93,
+        51.93
+      ],
+      "business_price": [
+        42.61,
+        42.61
+      ],
+      "target_price": [
+        56.41,
+        68.31
+      ],
+      "evidence": "weak"
+    }
+  }
+}
