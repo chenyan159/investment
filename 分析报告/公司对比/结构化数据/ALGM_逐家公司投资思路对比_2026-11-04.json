@@ -1,0 +1,180 @@
+{
+  "ticker": "ALGM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:32-08:00",
+  "reference_price": {
+    "value": 31.25,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        15.79,
+        15.79
+      ],
+      "target_price": [
+        11.34,
+        14.31
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        34.84,
+        34.84
+      ],
+      "target_price": [
+        34.84,
+        41.34
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        50.83,
+        50.83
+      ],
+      "target_price": [
+        69.9,
+        84.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        62.23,
+        62.23
+      ],
+      "target_price": [
+        103.49,
+        127.06
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "英飞凌的基准回报与系统组合更好；ALGM在磁传感和较小基数上的右尾更大，但并非稳健首选。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "direct_competitor",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者现价的稳健基准回报均不足；进攻资金选择ALGM的结构成长右尾，TI的制造优势尚未转成足够买价缓冲。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADI的信号链现金与客户基础更适合复利；ALGM以更高回撤换取更大的乐观和突破弹性。"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "STM在本比较集的基准及上行回报更高、主悲观回撤更浅；胜出依赖制造迁移和PIC交付，不能把受损功率业务忽略。"
+    },
+    {
+      "peer": "ST",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "森萨塔以成熟现金降债和较低估值胜出稳健视角；ALGM的数据中心占比和突破回报胜出进攻视角。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MPS的已交付处理器供电、基准回报和年化右尾同时领先；需为现金转化、客户份额及ITC案件保留风险预算。"
+    },
+    {
+      "peer": "ON",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ALGM少了巨额现金并购与融资拥挤风险；ON的Vcore和功率平台使上行更大，但不能归为稳健现金底仓。"
+    },
+    {
+      "peer": "UMC",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者现价均缺稳健回报安全垫；ALGM更直接捕获合格传感插槽，UMC新增资本和折旧拖累更大。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "VRT以系统交付和服务入口、较强基准证据及更大的年化右尾同时胜出，是本集AI电力链的优先载体。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软的续约基础与基准年化回报更好，时间折算后的右尾与ALGM接近；资本回收尚待验证但总体顺位靠前。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "Alphabet的搜索和云底盘及基准回报更好，年化右尾接近；AI资本和信用支持限制其仓位，但ALGM没有形成全面替代优势。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的成熟交易现金、基准回报和下行保全胜出；ALGM只在容忍较大本金损失的突破弹性上领先。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG的工作流质量更强，但现价基准年化回报不足；两者稳健标准均等待，进攻视角ALGM右尾更大。"
+    }
+  ]
+}
