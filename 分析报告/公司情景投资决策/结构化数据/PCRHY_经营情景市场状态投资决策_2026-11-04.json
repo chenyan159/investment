@@ -1,0 +1,73 @@
+{
+  "ticker": "PCRHY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 22.45,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        11.45,
+        11.45
+      ],
+      "business_price": [
+        17.76,
+        17.76
+      ],
+      "target_price": [
+        11.73,
+        14.79
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        30.4,
+        30.4
+      ],
+      "business_price": [
+        36.24,
+        36.24
+      ],
+      "target_price": [
+        34.06,
+        41.18
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        48.33,
+        48.33
+      ],
+      "business_price": [
+        50.07,
+        50.07
+      ],
+      "target_price": [
+        58.46,
+        71.47
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        72.47,
+        72.47
+      ],
+      "business_price": [
+        62.93,
+        62.93
+      ],
+      "target_price": [
+        85.99,
+        106.64
+      ],
+      "evidence": "weak"
+    }
+  }
+}
