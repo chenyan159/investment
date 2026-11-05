@@ -1,0 +1,172 @@
+{
+  "ticker": "SMCI",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:13:42-08:00",
+  "reference_price": {
+    "value": 29.6,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-06-30",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        19.3,
+        19.3
+      ],
+      "target_price": [
+        15.7,
+        20.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        79.9,
+        79.9
+      ],
+      "target_price": [
+        85.7,
+        105.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        122.3,
+        122.3
+      ],
+      "target_price": [
+        164.2,
+        212.6
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        168.0,
+        168.0
+      ],
+      "target_price": [
+        278.9,
+        375.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "戴尔客户和服务体系更稳；SMCI低买价带来的修复右尾更大，但现金与经营资格尾部更重。"
+    },
+    {
+      "peer": "HPE",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HPE网络利润与企业客户更适合稳健配置；SMCI低估值和更大交付规模提供更高修复弹性。"
+    },
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CLS跨GPU/ASIC系统资格、当前净现金及较后债务到期更好；年化右尾与SMCI近似，以资本和公司特有尾部作决胜。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "博通以ASIC控制点和软件现金胜稳健；SMCI乐观/突破的年化区间更高，有限进攻仓保留其修复弹性。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "利润池控制、已有产现及更轻主悲观损伤胜过集成商；SMCI突破百分比更大仍不足抵消平台与证据差距。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "净现金和已有现金造血强于SMCI，同价日模型年化右尾更大；优势依赖内存定价，不能把周期峰利永久化。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "跨架构电热与服务的稳健性胜出；SMCI更低买价在现金修复成功时拥有更大的右尾。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "软件续约与客户控制使微软更适合稳健复利；SMCI低估值修复右尾更大但不能替代微软底仓。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "搜索和TPU平台控制更利稳健；当前资本回收与稀释压力也大，SMCI提供更强的小仓修复凸性。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "现有订阅产现和更浅受损区间胜于SMCI；愿承担合规及资金尾部换突破弹性时SMCI占优。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "临床复购与财务韧性适合稳健，现价基准年化仅个位数使其应等价；SMCI进攻弹性胜出。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "会员循环和信用安全远优于SMCI，但现价基准回报不高；SMCI更适合作为受限进攻仓。"
+    }
+  ]
+}
