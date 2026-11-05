@@ -1,0 +1,73 @@
+{
+  "ticker": "MRK",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:15:00-08:00",
+  "reference_price": {
+    "value": 150.36,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        34.3,
+        34.3
+      ],
+      "business_price": [
+        79.5,
+        79.5
+      ],
+      "target_price": [
+        55.5,
+        69.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        111.8,
+        111.8
+      ],
+      "business_price": [
+        169.4,
+        169.4
+      ],
+      "target_price": [
+        159.9,
+        188.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        196.3,
+        196.3
+      ],
+      "business_price": [
+        250.4,
+        250.4
+      ],
+      "target_price": [
+        278.0,
+        319.3
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        291.0,
+        291.0
+      ],
+      "business_price": [
+        317.9,
+        317.9
+      ],
+      "target_price": [
+        387.7,
+        457.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}
