@@ -1,0 +1,172 @@
+{
+  "ticker": "HTHIY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:36:53-08:00",
+  "reference_price": {
+    "value": 31.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        27.2,
+        27.2
+      ],
+      "target_price": [
+        20.0,
+        24.42
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        48.77,
+        48.77
+      ],
+      "target_price": [
+        45.74,
+        51.74
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        59.29,
+        59.29
+      ],
+      "target_price": [
+        62.94,
+        72.76
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        74.8,
+        74.8
+      ],
+      "target_price": [
+        88.9,
+        104.62
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "GEV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "日立现价基准与上行年化更好、资本结构更简单，GEV燃机优势尚未转化为更佳买入赔率。"
+    },
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ABB成熟资本效率和受损边界较好，日立较低经营估值与更大右尾使综合取舍偏日立。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健取日立的净现金和较简单资本结构，高弹取施耐德更完整整套平台及较高乐观年化。"
+    },
+    {
+      "peer": "MIELY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "三菱低倍数仍需现金修复和多项技术验证，日立成熟增长、基准回报及受损边界更好。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "日立在当前DCF缓冲和融资韧性上更稳，伊顿电气内容与Boyd兑现提供更高基准及乐观年化。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Bloom已具真需求但现价基准接近零回报、下行极深，日立提供更好有成本支撑的风险调整右尾。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选日立较低经营溢价与产品壁垒，高弹选Quanta预制机电跨项目复制的较强年化突破。"
+    },
+    {
+      "peer": "AEP",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "日立以设备和服务参与电力投资，较少承担业主全额建设融资；AEP更适合专门收入型任务。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "日立近端现金与融资风险更可控，微软通用平台收费权和较短目标窗给进攻资金更强年化右尾。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾及半导体周期风险的条件下，台积电基准现金、每股增长和年化右尾均优于日立。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "成熟现金复利和受损边界选万事达，追求工业交付与领域平台更大上限选日立。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KLA已商业化的瓶颈收费、现金转换及基准和上行年化更强，日立新电子束期权尚未形成同等证据。"
+    }
+  ]
+}
