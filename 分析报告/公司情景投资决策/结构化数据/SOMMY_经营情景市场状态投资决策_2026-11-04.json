@@ -1,0 +1,73 @@
+{
+  "ticker": "SOMMY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:00:00-08:00",
+  "reference_price": {
+    "value": 16.09,
+    "date": "2026-11-03",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        8.3,
+        8.3
+      ],
+      "business_price": [
+        12.82,
+        12.82
+      ],
+      "target_price": [
+        10.17,
+        11.94
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        26.43,
+        26.43
+      ],
+      "business_price": [
+        30.03,
+        30.03
+      ],
+      "target_price": [
+        30.03,
+        34.61
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        47.44,
+        47.44
+      ],
+      "business_price": [
+        46.25,
+        46.25
+      ],
+      "target_price": [
+        53.47,
+        60.69
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        72.71,
+        72.71
+      ],
+      "business_price": [
+        61.82,
+        61.82
+      ],
+      "target_price": [
+        81.44,
+        91.25
+      ],
+      "evidence": "weak"
+    }
+  }
+}
