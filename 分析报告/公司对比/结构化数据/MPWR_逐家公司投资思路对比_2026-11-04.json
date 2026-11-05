@@ -1,0 +1,172 @@
+{
+  "ticker": "MPWR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:20:48-08:00",
+  "reference_price": {
+    "value": 1261.08,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        812.5,
+        812.5
+      ],
+      "target_price": [
+        599.7,
+        759.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1767.2,
+        1767.2
+      ],
+      "target_price": [
+        1767.2,
+        2245.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        2268.3,
+        2268.3
+      ],
+      "target_price": [
+        2732.9,
+        3352.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        3047.1,
+        3047.1
+      ],
+      "target_price": [
+        4098.6,
+        5150.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TXN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MPWR的增长与右尾更强；TXN成本优势尚不足以补偿当前买价和并购资本负担"
+    },
+    {
+      "peer": "ADI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ADI商业更分散，但按现价的基准和上行空间均弱于MPWR，IVR尚未形成替代性现金优势"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MPWR低金融杠杆和更高每股增长占优，英飞凌供货协议尚未消除汽车、制造和现金回报拖累"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MPWR的广泛在量产业务；高弹选VICR的垂直供电和许可右尾，但需限制事件仓"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MPWR；NVTS的乐观和突破倍数更大，但当前亏损和商业门槛只适合极小进攻仓"
+    },
+    {
+      "peer": "GFS",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MPWR现金与轻资本更适合稳健复利；GFS现价的硅光和制造转型右尾更大，资金与股本条件须先验证"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI预算中NVDA掌握更强平台收益与更大的条件回报；但其巨大远期收入预测和客户信用须独立验证"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾尾部风险时TSM的客户分散、现金底座与基准回报优于MPWR，且上行不弱"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI基础设施逻辑下VRT的跨架构订单兑现和现价条件回报更佳，MPWR仅在净现金和芯片技术弹性局部胜出"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT的经常收费和平台控制；高弹选MPWR较强的模块/多平台经营增长，微软重投资限制右尾现金"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "ADBE的基准现金与买价缓冲更优；右尾量级相当但依赖收费权修复，不能视为MPWR同产业替代"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG产业分散有用，但现价基准回报和右尾均弱于MPWR，不足以因医疗属性给予配置优先"
+    }
+  ]
+}
