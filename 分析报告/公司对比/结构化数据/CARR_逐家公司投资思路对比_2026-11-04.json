@@ -1,0 +1,172 @@
+{
+  "ticker": "CARR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 55.66,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        51.3,
+        51.3
+      ],
+      "target_price": [
+        35.2,
+        43.2
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        89.9,
+        89.9
+      ],
+      "target_price": [
+        81.1,
+        94.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        118.0,
+        118.0
+      ],
+      "target_price": [
+        123.6,
+        140.4
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        142.4,
+        142.4
+      ],
+      "target_price": [
+        162.5,
+        189.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "稳健选TT，因服务现金和较低杠杆更扎实；高弹大致相当，CARR较高上沿被较弱经营证据抵销；同池核心载体TT优先。"
+    },
+    {
+      "peer": "JCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "稳健与高弹均大致相当：JCI利润兑现更强，CARR买价倍数与保守DCF缓冲较好；不认定一方全面替代。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CARR，成熟现金底盘更强；高弹选AAON，小市值、已付费BASX与爬坡带来更大右尾，须承受财报和融资风险。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健与高弹均选VRT：当前交付利润及基准增长证据更强，电力和液路扩大架构适应性；CARR只作为住宅/欧洲周期补充。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CARR，MOD负现金及分拆后口径尚待兑现；高弹选MOD，较低前瞻倍数和冷却放量提供明显更大的条件右尾。"
+    },
+    {
+      "peer": "SPXC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健与高弹均选SPXC：现价基准及受损结构较优，室外排热对温水迁移更友好；其空气业务与制造成本仍有风险。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ETN，电气与航空底盘及当前交付更强；极右尾选CARR，其系统冷却成功时相对小市值弹性较高，但不代表更高概率。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健与高弹均选NVT：同范围估值不高于CARR、原业务增长与基准证据更强，系统/液路上行较大；收购净债需继续下降。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健与高弹均选FIX：同等买价资本回报更高、订单与施工已兑现、金融杠杆低；技术替代更多改施工内容，项目责任须单独防范。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "稳健选MSFT，企业付费入口和重复收入质量较高；按原目标日年化后高弹大致相当，庞大资本责任使其也不能按低风险现金牛重配。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CARR，当前资本现金负担较可控；高弹选GOOGL，TPU跨云与搜索/代理平台右尾更广，但须接受资本回收和稀释风险。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MA，成熟重复收费、轻资本与较小受损回撤更符合核心仓标准；高弹选CARR，冷却系统复制有更高条件上行。"
+    }
+  ]
+}
