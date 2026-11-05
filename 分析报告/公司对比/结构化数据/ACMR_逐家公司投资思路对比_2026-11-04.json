@@ -1,0 +1,172 @@
+{
+  "ticker": "ACMR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 44.43,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        39.2,
+        39.2
+      ],
+      "target_price": [
+        23.9,
+        29.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        110.5,
+        110.5
+      ],
+      "target_price": [
+        97.6,
+        117.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        165.7,
+        165.7
+      ],
+      "target_price": [
+        166.5,
+        208.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        197.6,
+        197.6
+      ],
+      "target_price": [
+        224.3,
+        288.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "LRCX",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Lam的工艺资格与现金更稳；ACMR小基数平台的条件上行更大。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMAT平台广度和现金优于ACMR；ACMR乐观回报更高且依赖的规模较小。"
+    },
+    {
+      "peer": "TOELY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "东京电子成熟涂显与客户覆盖更稳；ACMR提供更大的国产替代上行弹性。"
+    },
+    {
+      "peer": "ASMIY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ASM先进节点资格与自我融资更强；ACMR的条件右尾与买入成本更有弹性。"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Besi现成高毛利现金更好；ACMR不依赖全面混合键合迁移且条件上行更大。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM是稳健半导体核心首选；ACMR仅在容忍监管与现金风险时提供更强右尾。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MU已验证现金且在本组情景中基准与右尾均更高，但高毛利延续须接受供给反证。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ENTG复购较稳却被当前估值和债务削弱，ACMR净现金与条件回报更有吸引力。"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MKS的最新现金与多环节增长使基准和右尾更优，须监控可转债现金本金和出售交割。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与融资韧性更适合稳健仓；ACMR提供更大的条件上行但不具同等质量。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均有资本回收门槛，ACMR的基准条件赔率和净资产缓冲更好。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT交付现金证据更强；ACMR更适合追求小基数平台右尾的有限进攻仓。"
+    }
+  ]
+}
