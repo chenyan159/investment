@@ -1,0 +1,172 @@
+{
+  "ticker": "SPXC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:26:00-08:00",
+  "reference_price": {
+    "value": 153.47,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        159.6,
+        159.6
+      ],
+      "target_price": [
+        110.3,
+        127.0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        263.9,
+        263.9
+      ],
+      "target_price": [
+        239.3,
+        278.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        315.6,
+        315.6
+      ],
+      "target_price": [
+        332.9,
+        395.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        392.6,
+        392.6
+      ],
+      "target_price": [
+        472.7,
+        570.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT的服务和现金更适合稳健复利；SPXC的较低定价及较小规模提供更大突破弹性。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SPXC基准赔率略优、室外排热对温水更适配，且不依赖开利欧洲及历史责任修复。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SPXC现金底盘和业务分散更稳；AAON在58.25美元的制造修复及平台右尾明显更大。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SPXC适合承受较小经营波动的成长仓；MOD客户扩产及利润修复的上行倍数更高。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角以VRT较强平台对SPXC较低下行互抵；进攻视角VRT的系统范围与年化上行更优。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近正常化前瞻估值下，NVT已实现的系统放量和基准/乐观赔率更强，是同逻辑优先载体。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN配电壁垒及多业务底盘更适合稳健复利；SPXC小规模扩产的突破上限更大。"
+    },
+    {
+      "peer": "EME",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "EME相近前瞻P/E下净现金、工程现金及可见工作更强，基准与右尾也不落后，是稳健首选替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软的收费入口更适合长期核心，按2.65年年化后的右尾与SPXC接近，不能因累计涨幅小而判其弹性差。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "SPXC的价格与正常现金路径更有支撑；谷歌平台期权真实但资本义务更重，年化右尾大致相当。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的重复收费和较小受损回撤更稳；SPXC的乐观/突破弹性更适合进攻仓。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN经营更稳但当前基准回报较低，稳健风险收益各有得失；进攻和综合机会成本选择SPXC。"
+    }
+  ]
+}
