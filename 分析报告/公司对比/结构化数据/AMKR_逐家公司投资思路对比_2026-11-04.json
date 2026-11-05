@@ -1,0 +1,172 @@
+{
+  "ticker": "AMKR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:55:59-08:00",
+  "reference_price": {
+    "value": 35.66,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        23.6,
+        23.6
+      ],
+      "target_price": [
+        17.7,
+        21.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        56.7,
+        56.7
+      ],
+      "target_price": [
+        56.1,
+        68.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        90.0,
+        90.0
+      ],
+      "target_price": [
+        95.4,
+        120.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        115.2,
+        115.2
+      ],
+      "target_price": [
+        145.4,
+        183.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ASX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "相近三年基准和上行回报下，AMKR买入倍数更低、融资和普通悲观损失较轻；ASE更广的CPO入口尚不足抵消其资金负担"
+    },
+    {
+      "peer": "INTC",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMKR已有外部封测收费与较高基准回报，Intel同时承担产品、晶圆制造、封装及股权融资的串行门槛，右尾也未补偿这些差异"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选Besi的已验证现金与较轻资本；只追求更高突破价差且能承担融资风险时选AMKR，二者不能按同一封装收入池估份额"
+    },
+    {
+      "peer": "KLIC",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "KLIC净现金和设备经营杠杆对冲AMKR的成熟量产与较高基准回报；两者突破弹性相近，均适合受限卫星仓，暂无全面替代"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选TSM的工艺控制、现金和较小经营悲观回撤；追求美国OSAT重估及更高突破倍数时AMKR可作小仓补充，不能消除同链共振"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受同一AI需求扩张条件下，NVDA兼有更强价值捕获、股东现金和更大的上行；AMKR可分散系统平台风险，却不是该逻辑的最优主载体"
+    },
+    {
+      "peer": "QCOM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMKR计算项目收入和基准价差更直接；QCOM新季报仍显示手机及成本压力，不能把汽车高速增长和远期ASIC订单自动当集团利润跃升"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Apple业务质量强但当前基准股价回报过低、估值损失空间大；AMKR用更低买价取得已量产计算升级的赔率，在本次投资取舍中胜出"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选KLAC的控制步骤、现金和较高基准回报；AMKR仅在容忍更大下行、追求更高突破倍数时胜出，过程控制并非所有封装预算的替代"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选微软的重复收费和较短兑现窗口；追求更大的右尾价差选AMKR，但微软重资本化也使其不成为无条件现金安全垫"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选MA的较小悲观损失及可重复现金；AMKR以更大回撤换更高突破弹性，适合进攻预算而非替换支付核心底仓"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利及下行保全选LIN，但其现价基准回报仅中高个位数；高弹进攻选AMKR，LIN不构成高收益资金的替代"
+    }
+  ]
+}
