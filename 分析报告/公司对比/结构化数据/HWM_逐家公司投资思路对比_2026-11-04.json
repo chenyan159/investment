@@ -1,0 +1,156 @@
+{
+  "ticker": "HWM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:55:00-08:00",
+  "reference_price": {
+    "value": 213.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        223.39,
+        223.39
+      ],
+      "target_price": [
+        132.73,
+        167.25
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        354.4,
+        354.4
+      ],
+      "target_price": [
+        282.44,
+        338.09
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        416.9,
+        416.9
+      ],
+      "target_price": [
+        375.83,
+        441.39
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        475.98,
+        475.98
+      ],
+      "target_price": [
+        454.02,
+        541.45
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "GE",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HWM的制造交付及低杠杆更稳，GE的寿命成本改善与服务收费权提供更大权益右尾。"
+    },
+    {
+      "peer": "RTX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HWM的现金责任较轻，RTX较低经营倍数和GTF恢复提供更高进攻弹性。"
+    },
+    {
+      "peer": "RYCEY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在承担维修估计与英镑风险的前提下，RYCEY的含租赁净现金、较低经营倍数及服务和电力增长优于HWM当前赔率。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HWM基准回报及下行较稳，GEV整机重定价与电网交付的右尾更大且波动更深。"
+    },
+    {
+      "peer": "HEI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HWM的基准赔率更好，HEI的PMA采用与电子平台扩张右尾更大但依赖高倍数持续。"
+    },
+    {
+      "peer": "TDG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HWM融资和现金韧性占优，TDG专有售后件及高杠杆提供更大上行并伴更深尾部。"
+    },
+    {
+      "peer": "PH",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "HWM的热端及燃机增长与较低负债，对应PH的较低经营倍数、业务分散和过滤复购，当前两视角大致相当。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN长期供气合同及网络较适合防守底仓，HWM燃机份额和合格供给释放的上行更强。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "能够承担台湾共同尾部者，TSM的先进制造壁垒、较低经营倍数和两类年化回报均优于HWM。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在AI资本回收得到跟踪的前提下，MSFT的平台收费权及基准和右尾年化优于HWM，HWM可分散算力资本周期。"
+    }
+  ]
+}
