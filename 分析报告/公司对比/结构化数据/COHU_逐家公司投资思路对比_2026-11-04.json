@@ -1,0 +1,172 @@
+{
+  "ticker": "COHU",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 43.98,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        22.72,
+        22.72
+      ],
+      "target_price": [
+        16.46,
+        19.59
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        85.45,
+        85.45
+      ],
+      "target_price": [
+        78.65,
+        92.25
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        128.77,
+        128.77
+      ],
+      "target_price": [
+        139.64,
+        172.26
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        164.88,
+        164.88
+      ],
+      "target_price": [
+        200.86,
+        258.43
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TER",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TER的平台与现金底盘；纯高功耗测试小盘右尾选COHU，前提是认证和回款兑现。"
+    },
+    {
+      "peer": "ATEYY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选Advantest的程序生态与实绩；愿承担较弱新平台证据并追求更大右尾时选COHU。"
+    },
+    {
+      "peer": "CAMT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Camtek在先进封装主业证据、基准回报和受损回撤上组合更优，风险调整后的进攻也优先于COHU。"
+    },
+    {
+      "peer": "FORM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选已有接触耗材收费的FORM；在较高业务兑现风险下，COHU的基准及乐观价格弹性更大。"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COHU的基准回报、成熟售后底盘与乐观右尾均优于已提前支付更多量产预期的AEHR。"
+    },
+    {
+      "peer": "ONTO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在既有G5/G6订单正常兑现的条件下，ONTO的多工序底盘和基准／右尾组合更佳，须先检验11月9日。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "看好测试投入时COHU以较低资本负担捕获设备与售后价值；ASX扩产、净债务及受损回撤削弱两种配置。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健核心选TSM的跨架构制造壁垒；专门追求高功耗测试更大右尾时COHU作小仓补充。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "周期风险并未消失；在高存储利润持续的同一条件下，MU现金底盘及右尾更好，进攻顺位先于COHU。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选微软的客户收费与业务组合；较大阶段波动和认证风险下COHU的右尾价格弹性更高。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健与低资本强度选Visa；现价基准年化较低，高弹进攻选COHU而非支付网络。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健经营收费基础选Alphabet但限制资本投入风险；高功耗测试专项右尾优先小盘COHU。"
+    }
+  ]
+}
