@@ -1,0 +1,73 @@
+{
+  "ticker": "ETR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:14:54-08:00",
+  "reference_price": {
+    "value": 111.9,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        64.8,
+        64.8
+      ],
+      "business_price": [
+        104.4,
+        104.4
+      ],
+      "target_price": [
+        70.7,
+        84.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        124.8,
+        124.8
+      ],
+      "business_price": [
+        154.1,
+        154.1
+      ],
+      "target_price": [
+        149.6,
+        163.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        150.1,
+        150.1
+      ],
+      "business_price": [
+        173.7,
+        173.7
+      ],
+      "target_price": [
+        172.4,
+        195.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        175.4,
+        175.4
+      ],
+      "business_price": [
+        188.4,
+        188.4
+      ],
+      "target_price": [
+        195.6,
+        229.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
