@@ -1,0 +1,172 @@
+{
+  "ticker": "GNRC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:33:48-08:00",
+  "reference_price": {
+    "value": 189.32,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        191.1,
+        191.1
+      ],
+      "target_price": [
+        113.2,
+        141.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        402.5,
+        402.5
+      ],
+      "target_price": [
+        340.8,
+        397.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        523.7,
+        523.7
+      ],
+      "target_price": [
+        541.0,
+        638.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        656.6,
+        656.6
+      ],
+      "target_price": [
+        802.8,
+        958.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CMI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CMI的发动机与售后闭环；高弹选GNRC更大的新增业务占比和更短兑现窗口"
+    },
+    {
+      "peer": "CAT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "现价下GNRC基准年化更高、常规悲观回撤较浅；CAT的技术完整性尚不足以抵消价格与机械周期负担"
+    },
+    {
+      "peer": "PSIX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选GNRC的住宅现金基础；极端右尾选PSIX，但其外包份额和交付组织风险更大"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GNRC在基准回报、常规下行和同价右尾均更好；BE的主供技术价值已被更高估值预付"
+    },
+    {
+      "peer": "ENPH",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GNRC的新增业务已有实际交付和客户资格；ENPH要跨越需求修复与新平台量产两道门槛"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GEV经营确定性更高，但现价基准回报不足；GNRC以更低经营倍数承接较大的扩产弹性"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ETN的系统资格、分散客户与较浅悲观；高弹选GNRC的利润基数跃升"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选VRT已验证的跨客户系统交付；高弹选GNRC略大的条件右尾，不能把二者视为低相关"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "稳健风险收益倾向GNRC较小的资金缺口与较浅悲观；高弹两者接近，AMZN的平台期权受再投资约束"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT的续约壁垒；高弹选GNRC小基数扩产，期限差异已通过CAGR消除"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA的系统壁垒、现金创造和条件右尾均更强；构成全市场机会成本标杆，远期规模仍须预算复核"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MA较浅的资本损伤和可重复收费；高弹选GNRC的经营规模跃迁"
+    }
+  ]
+}
