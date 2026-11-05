@@ -1,0 +1,164 @@
+{
+  "ticker": "HOCPY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 156.25,
+    "date": "2026-11-03",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        152.7,
+        152.7
+      ],
+      "target_price": [
+        99.8,
+        117.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        226.9,
+        226.9
+      ],
+      "target_price": [
+        211.9,
+        239.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        292.8,
+        292.8
+      ],
+      "target_price": [
+        308.6,
+        344.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        358.5,
+        358.5
+      ],
+      "target_price": [
+        421.6,
+        465.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ASGLY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA的先进材料盈利及净现金更适合稳健复利；AGC的CDMO止损和材料组合重估提供更大的条件右尾。"
+    },
+    {
+      "peer": "PLAB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PLAB低表观P/E被合资归属、资本付款与每股经营收益近乎停滞削弱，HOYA在两种视角均更优。"
+    },
+    {
+      "peer": "MU",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA对短缺净价的依赖较低；MU已兑现的现金与存储重定价使进攻赔率明显更大，但周期与客户预算约束更强。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一先进制程投资逻辑下，ASML的曝光设备收费权、成熟平台扩容及更高基准回报优于HOYA。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KLA以成熟制程控制及服务复购提供更快每股盈利增长，基准回报更高且不要求新光罩路线成功。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾共同尾部风险的组合中，台积电的先进制造及封装平台与基准赔率优于HOYA。"
+    },
+    {
+      "peer": "STX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA更适合承受客户转换而不押整盘价差的稳健资金；STX的HAMR、密度降本和净价留存更适合进攻资金。"
+    },
+    {
+      "peer": "WDC",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WDC更大的右尾伴随整盘净价、HAMR转换及更深悲观回撤，HOYA更适合资本保全优先的配置。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Linde合同韧性更强，但增长、现金回收及估值缓冲不足以抵消HOYA更好的基准与上行情景回报。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的平台与AI变现右尾更大；HOYA的内生扩产和现金回收更干净，适合稳健资金补充分散。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG手术工作流更集中，但高起点估值、器械降价及租赁资本削弱当前赔率，HOYA在两种视角更优。"
+    }
+  ]
+}
