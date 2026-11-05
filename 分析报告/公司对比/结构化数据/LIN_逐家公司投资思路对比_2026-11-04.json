@@ -1,0 +1,156 @@
+{
+  "ticker": "LIN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:12:23-08:00",
+  "reference_price": {
+    "value": 524.74,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        503.3,
+        503.3
+      ],
+      "target_price": [
+        408.7,
+        459.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        665.0,
+        665.0
+      ],
+      "target_price": [
+        630.0,
+        697.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        737.4,
+        737.4
+      ],
+      "target_price": [
+        748.5,
+        823.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        788.0,
+        788.0
+      ],
+      "target_price": [
+        853.2,
+        933.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "negative",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "APD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的现金自给和项目风险控制更强；APD在NEOM净价与分红后现金修复成功时右尾更大，须先过11月5日财报。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN在杠杆、现金连续性和下行保护上胜出；ENTG的先进工艺耗材内容、产能吸收和新材料认证带来更大右尾。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN基准回报、服务现金与融资纪律更可靠；BE若跨过许可、产能和全生命周期服务门槛，非线性上限更高，但现价基准赔率仍差。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSM取得先进节点和封装的更大增量利润，基准现金与估值回报均优于LIN；须接受台湾集中生产尾部，防御性资金可保留LIN作补充。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的利润与现金对存储价格依赖低；MU已获高利润和长期采购支持，强周期右尾明显更大，仍需检验客户预算与新供给。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "EUV稀缺、价值定价和净现金提供比LIN更高的基准及右尾回报；中国许可和ZEISS交付风险仍需单独承受。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的现价资本回报缓冲及成熟资产融资负担较优；ECL的CoolIT/High-Tech放量给更高右尾，但并购价格与负债已先发生。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "both_avoid",
+      "verdict": "peer_preferred",
+      "reason": "防御现金配置下WM现时Owner FCF收益率及基准回报略优于LIN；两者均不宜占用追求非线性爆发的进攻额度。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "软件续费、Azure及AI收费的基准增量与右尾高于LIN，融资承受力强；新增算力和组件占款约束使其仍需分步配置。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN现金连续性、股权纪律与资本回收更稳；GOOGL的搜索/TPU/Cloud右尾更大，现时负Owner FCF、优先股和信用支持降低稳健优先级。"
+    }
+  ]
+}
