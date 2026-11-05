@@ -1,0 +1,172 @@
+{
+  "ticker": "MSFT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:49:08-08:00",
+  "reference_price": {
+    "value": 555.8,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        571.4,
+        571.4
+      ],
+      "target_price": [
+        320.3,
+        392.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        849.2,
+        849.2
+      ],
+      "target_price": [
+        744.3,
+        851.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1038.5,
+        1038.5
+      ],
+      "target_price": [
+        1073.8,
+        1204.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1277.8,
+        1277.8
+      ],
+      "target_price": [
+        1441.4,
+        1682.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "AMZN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT订阅和现时现金底盘更稳，AMZN在云、自研芯片和零售利润扩张的右尾更强"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT企业续约和股本纪律占优，GOOGL的TPU外售及多入口AI平台突破空间更大"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT在信用和可持续现金上胜出，ORCL仅在接受续融资与稀释的进攻任务中提供更大条件右尾"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT现有盈利和分散性更稳，NOW以较低资本强度取得工作流平台化更大的每股右尾"
+    },
+    {
+      "peer": "CRM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT资产负债和核心增长更稳，CRM较低买价与跨应用执行收费形成更大的条件弹性"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE当前现金收益率、基准回报与右尾均更优，但须接受专业软件收费迁移风险"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT对单一算力架构和采购周期更分散，NVDA以系统瓶颈利润捕获获得更高进攻赔率"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT客户和盈利更分散，AVGO在ASIC及网络价值截留上有更大上行但集中和融资风险更高"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT避开单一地区制造尾部且收入更分散，TSM在路线中立的AI制造扩张上提供更高条件回报"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Visa现金质量更好但当前买价压低基准和突破回报，MSFT在本次两种资金任务中均更划算"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Costco经营证据强但现价长期回报低于MSFT，会员壁垒尚不足以弥补质量溢价"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG临床壁垒强但当前高倍数和降价压低基准回报，MSFT的估值与右尾更有吸引力"
+    }
+  ]
+}
