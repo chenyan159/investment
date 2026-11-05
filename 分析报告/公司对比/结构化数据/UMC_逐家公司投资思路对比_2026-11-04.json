@@ -1,0 +1,172 @@
+{
+  "ticker": "UMC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:55:00-08:00",
+  "reference_price": {
+    "value": 16.06,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        7.31,
+        7.31
+      ],
+      "target_price": [
+        7.39,
+        9.04
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        19.05,
+        19.05
+      ],
+      "target_price": [
+        18.31,
+        20.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        29.22,
+        29.22
+      ],
+      "target_price": [
+        32.08,
+        37.43
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        40.16,
+        40.16
+      ],
+      "target_price": [
+        51.85,
+        61.39
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "GFS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "格芯的光电收入与具名中介层需求更可见，基准及右尾回报均更高，但仍受2027扩产现金和政府稀释约束。"
+    },
+    {
+      "peer": "TSEM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "高塔已有硅光收入、预付款和明确交付合同，较联电更直接承接光互连增长，代价是集中度与扩产现金风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "台积电在已验证壁垒、基准年化回报及压力回撤上均更优，是广义半导体制造逻辑的优先载体。"
+    },
+    {
+      "peer": "INTC",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "联电的资本缓冲和股本路径更清晰，英特尔的近似右尾需要更重投入及融资，当前未提供足够的额外补偿。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "德仪的产品收费权更强，但按当前买价其基准回报更薄、压力回撤相近，联电作为条件性观察标的的相对赔率略胜。"
+    },
+    {
+      "peer": "ON",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "联电胜在流动性和较低融资复杂度，安森美胜在AI电源净内容与乐观右尾，需按稳健和进攻任务分开选择。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "应用材料可从多家晶圆厂资本投入中收费，基准和上行情景的每股增长更强，需承担设备周期与出口许可风险。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "科磊的良率控制收费、经营现金和基准兑现证据更强，兼有较低压力损失及可观右尾，是优先设备载体。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "博通已有计算、网络与软件收费规模，基准及右尾高于联电，但新增融资含残值支持，不能作为无条件低风险替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软的基准收费确定性与年化回报更强，突破年化和联电接近，组合核心资金优先微软但不替代特定光子工艺敞口。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "维萨以较可重复的网络现金和较小经营压力胜出稳健视角，联电的新平台提供更大的条件性非线性右尾。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "废物管理的重复需求和较小压力回撤更适合防御底仓，联电只在新平台成功带来的进攻弹性上更强。"
+    }
+  ]
+}
