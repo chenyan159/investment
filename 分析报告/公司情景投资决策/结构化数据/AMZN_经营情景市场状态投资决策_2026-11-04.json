@@ -1,0 +1,73 @@
+{
+  "ticker": "AMZN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 266.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        108.8,
+        108.8
+      ],
+      "business_price": [
+        296.8,
+        296.8
+      ],
+      "target_price": [
+        109.3,
+        141.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        387.1,
+        387.1
+      ],
+      "business_price": [
+        562.8,
+        562.8
+      ],
+      "target_price": [
+        560.4,
+        641.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        580.8,
+        580.8
+      ],
+      "business_price": [
+        699.8,
+        699.8
+      ],
+      "target_price": [
+        772.8,
+        874.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        925.1,
+        925.1
+      ],
+      "business_price": [
+        896.4,
+        896.4
+      ],
+      "target_price": [
+        1055.8,
+        1251.8
+      ],
+      "evidence": "weak"
+    }
+  }
+}
