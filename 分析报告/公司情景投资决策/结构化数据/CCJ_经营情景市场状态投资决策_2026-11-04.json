@@ -1,0 +1,73 @@
+{
+  "ticker": "CCJ",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:45:58-08:00",
+  "reference_price": {
+    "value": 71.68,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        3.8,
+        3.8
+      ],
+      "business_price": [
+        19.8,
+        19.8
+      ],
+      "target_price": [
+        14.0,
+        20.0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        17.0,
+        17.0
+      ],
+      "business_price": [
+        53.8,
+        53.8
+      ],
+      "target_price": [
+        53.8,
+        65.7
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        29.4,
+        29.4
+      ],
+      "business_price": [
+        77.1,
+        77.1
+      ],
+      "target_price": [
+        90.4,
+        110.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        41.5,
+        41.5
+      ],
+      "business_price": [
+        95.4,
+        95.4
+      ],
+      "target_price": [
+        127.1,
+        154.8
+      ],
+      "evidence": "weak"
+    }
+  }
+}
