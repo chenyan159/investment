@@ -1,0 +1,172 @@
+{
+  "ticker": "BELFB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:52:19-08:00",
+  "reference_price": {
+    "value": 217.43,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        154.6,
+        154.6
+      ],
+      "target_price": [
+        103.6,
+        129.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        345.0,
+        345.0
+      ],
+      "target_price": [
+        314.4,
+        375.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        493.9,
+        493.9
+      ],
+      "target_price": [
+        539.1,
+        652.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        658.5,
+        658.5
+      ],
+      "target_price": [
+        813.6,
+        999.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "APH",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选APH的规模、产品跨度与现金记录；追求小体量非线性右尾选BELFB。"
+    },
+    {
+      "peer": "TEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选TEL的多元现金底盘、低杠杆与较小受损回撤；高弹性选BELFB。"
+    },
+    {
+      "peer": "AEIS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AEIS的工艺电源壁垒和更高基准每股增长提供同逻辑更优载体；现金转化仍须验证。"
+    },
+    {
+      "peer": "LFUS",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LFUS现金防守更强但回报较低，稳健综合大致相当；BELFB数据业务的上行空间更大。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选BELFB较低估值和已规模交付底盘；愿承受更深回撤以追求极端右尾可选VICR。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MPWR技术和平台能力更强，但当前付价、SBC及诉讼约束使BELFB基准与右尾性价比更优。"
+    },
+    {
+      "peer": "FLEX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选BELFB较简单的股债结构；FLEX保留分拆全部权益时的产品化和事件右尾更大。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "VRT基准回报和系统收费边界较优，乐观及突破年化与BELFB接近，优先占用产业链配置预算。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA的平台利润池和经重置买价后的基准／乐观回报更优；远期大规模预测及信用支持限制仓位。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL商业壁垒更深，但现阶段资本负担、负Owner FCF和较弱价格赔率使BELFB更值得参与。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾集中尾部风险的前提下，TSM基准与乐观回报、竞争壁垒和受损区间更好。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "以本研究新资金稳健回报门槛衡量，两者现价均须等待；进攻资金选BELFB更高的真实右尾。"
+    }
+  ]
+}
