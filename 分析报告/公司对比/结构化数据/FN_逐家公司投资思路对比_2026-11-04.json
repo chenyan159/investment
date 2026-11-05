@@ -1,0 +1,172 @@
+{
+  "ticker": "FN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 341.64,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        330.7,
+        330.7
+      ],
+      "target_price": [
+        201.4,
+        248.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        625.6,
+        625.6
+      ],
+      "target_price": [
+        484.2,
+        579.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        844.1,
+        844.1
+      ],
+      "target_price": [
+        814.3,
+        1011.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1027.4,
+        1027.4
+      ],
+      "target_price": [
+        1152.6,
+        1476.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FN融资压力较小，CLS的ASIC与整柜平台右尾更大但需承担量产和资金周转风险。"
+    },
+    {
+      "peer": "JBL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "JBL已有正的租赁后股东现金，正常每股盈利与买价组合使基准和上行赔率均优于FN。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FN更适合控制稀释与产品认证尾部，CRDO的互连IP和新路线提供更大但证据更弱的右尾。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO的定制ASIC和互联IP捕获更多利润与现金，在计入新增残值支持尾部后仍具更优条件回报。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FN净现金与低负债更稳健，COHR的光源及平台内容右尾更大但最新现金消耗和债务显著上升。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA在接近的正常化经营倍数下拥有更强平台收费与现金，条件基准和上行回报优于FN。"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CSCO成熟现金被当前买价较充分资本化，FN的基准增长回报和右尾更值得承担有限风险。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健比较各有资本约束，FN以较低融资久期提供不逊于AMZN的年化右尾，形成局部配置优势。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ANET的EOS与网络系统现金支持更强，基准赔率与可承载的右尾在当前价格下优于FN。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT成熟续约与平台收费更适合稳健核心，FN的制造放量带来更大的乐观和突破价格弹性。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的低资本收费网络和可分配现金更稳健，FN更适合追求显著右尾的有限进攻预算。"
+    },
+    {
+      "peer": "GE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GE售后壁垒很强但当前倍数压低前瞻回报，FN在本次买价下的基准与高弹赔率均更优。"
+    }
+  ]
+}
