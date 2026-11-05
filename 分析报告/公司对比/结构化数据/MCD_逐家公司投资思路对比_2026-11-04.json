@@ -1,0 +1,156 @@
+{
+  "ticker": "MCD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:00-08:00",
+  "reference_price": {
+    "value": 280.22,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        275.0,
+        275.0
+      ],
+      "target_price": [
+        194.8,
+        221.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        348.4,
+        348.4
+      ],
+      "target_price": [
+        316.3,
+        357.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        391.0,
+        391.0
+      ],
+      "target_price": [
+        392.4,
+        447.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        422.3,
+        422.3
+      ],
+      "target_price": [
+        463.3,
+        522.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "negative",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "CMG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCD的成熟收费与较低倍数；进攻选CMG的新店复制和更高每股经营增幅，须承受更深回撤"
+    },
+    {
+      "peer": "SBUX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MCD基准回报为正、经营收费更成熟；SBUX现价连基准修复后的收益也不足，两个视角均选MCD"
+    },
+    {
+      "peer": "WMT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCD的现金收益和买入倍数；进攻选WMT的广告与履约利润结构变化，现价只适合受约束参与"
+    },
+    {
+      "peer": "COST",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "COST经营防守更强，但高估值与更长兑现期消耗回报；稳健买价取舍选MCD，年化右尾大致相当"
+    },
+    {
+      "peer": "KR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCD的收费与现金可见性；容忍法律和薄利尾部、押价格重建选KR，其低倍数右尾更高"
+    },
+    {
+      "peer": "KO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按同日价格KO基准含息回报更低且税务尾部更大；MCD在本轮稳健与右尾比较均占优"
+    },
+    {
+      "peer": "UBER",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCD的成熟现金和较少资本去向变化；高弹性选UBER，基准不靠AV也有更大空间但远期利润须校准"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "V的重复收费、资本效率及同日基准年化更优，右尾也更强；构成成熟收费网络逻辑下更优替代"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "有资本回收条件的MSFT基准与右尾更高、客户转换成本更强；若要求即时现金防守，MCD仍可作分散补充"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "WM主业替代性更低、悲观跌幅较浅且基准/乐观更高，是防御现金流逻辑下先于MCD的载体"
+    }
+  ]
+}
