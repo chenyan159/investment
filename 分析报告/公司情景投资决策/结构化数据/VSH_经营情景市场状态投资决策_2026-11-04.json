@@ -1,0 +1,73 @@
+{
+  "ticker": "VSH",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:23:14-08:00",
+  "reference_price": {
+    "value": 25.84,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        14.51,
+        14.51
+      ],
+      "business_price": [
+        19.2,
+        19.2
+      ],
+      "target_price": [
+        17.3,
+        21.73
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        35.84,
+        35.84
+      ],
+      "business_price": [
+        46.65,
+        46.65
+      ],
+      "target_price": [
+        40.84,
+        52.24
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        51.65,
+        51.65
+      ],
+      "business_price": [
+        68.51,
+        68.51
+      ],
+      "target_price": [
+        68.51,
+        85.86
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        72.54,
+        72.54
+      ],
+      "business_price": [
+        88.1,
+        88.1
+      ],
+      "target_price": [
+        105.38,
+        128.43
+      ],
+      "evidence": "weak"
+    }
+  }
+}
