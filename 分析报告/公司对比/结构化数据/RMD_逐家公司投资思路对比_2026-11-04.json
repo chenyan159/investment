@@ -1,0 +1,156 @@
+{
+  "ticker": "RMD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:35:00-08:00",
+  "reference_price": {
+    "value": 240.51,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-06-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        192.6,
+        192.6
+      ],
+      "target_price": [
+        148.2,
+        172.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        331.3,
+        331.3
+      ],
+      "target_price": [
+        324.2,
+        367.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        382.2,
+        382.2
+      ],
+      "target_price": [
+        424.5,
+        475.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        428.5,
+        428.5
+      ],
+      "target_price": [
+        533.7,
+        610.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "LLY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "RMD的持续现金和低杠杆更适合稳健配置；LLY的口服药与下一代分子提供更大进攻右尾。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMD，避免承保与监管资本修复的不确定性；高弹修复选UNH，但不把付款方利润与器械提价同时外推。"
+    },
+    {
+      "peer": "ABT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMD的现金和较低资本负担；高弹选ABT的双分析物与癌症平台，并合并获派营养股份价值。"
+    },
+    {
+      "peer": "BSX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMD；进攻选BSX的修复与新品弹性，前提是EP、WATCHMAN和并购融资得到验证。"
+    },
+    {
+      "peer": "MDT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健偏向RMD的现金转化和净现金；进攻偏向MDT的CAS、RDN及机器人增量，须排除已分拆MiniMed。"
+    },
+    {
+      "peer": "DXCM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMD的较低估值和更成熟利润；进攻选DXCM的非胰岛素覆盖与长佩戴，但须承担支付重置风险。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按当前买价，RMD基准回报更高且乐观年化不逊；ISRG更深的临床工作流尚不足以抵消当前估值溢价。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "V的网络壁垒更广，RMD的现金底盘和较低估值更好；校准期限后基准及乐观赔率接近，可互为分散补充。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "纯防御稳健选WM的需求与价格韧性；较高收益及睡眠第二曲线选RMD，承担更大的治疗替代风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "全组合复利与进攻均优先MSFT的收费平台及较高基准年化；RMD保留低AI资本周期相关性的补充价值。"
+    }
+  ]
+}
