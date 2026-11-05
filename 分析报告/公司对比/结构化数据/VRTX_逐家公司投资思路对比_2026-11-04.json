@@ -1,0 +1,172 @@
+{
+  "ticker": "VRTX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:34:18-08:00",
+  "reference_price": {
+    "value": 549.04,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        549.6,
+        549.6
+      ],
+      "target_price": [
+        370.3,
+        433.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        727.9,
+        727.9
+      ],
+      "target_price": [
+        571.0,
+        656.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1038.0,
+        1038.0
+      ],
+      "target_price": [
+        996.7,
+        1120.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1315.5,
+        1315.5
+      ],
+      "target_price": [
+        1421.5,
+        1580.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "再生元的已上市免疫合作利润与净金融资产，在较低经营倍数下同时提供更高基准回报和更大右尾；须防2031年前后专利接续。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX的CF底盘与压力回撤更适合资本保全，argenx的已商业化gMG/CIDP经营杠杆和多适应症扩张提供更大右尾。"
+    },
+    {
+      "peer": "IONS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX在现金自给和下行保护上明显更强，IONS在Angelman等临床及支付跨门槛后有更大倍数弹性但面临融资稀释。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX的现金和商业稳定性更强，ALNY的TTR患者扩张与无现有版税的新一代接代提供更高年化赔率，须承担结局和支付风险。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX的低扩产负担及较小压力回撤优于礼来，礼来的代谢患者扩容、口服与下一代针剂组合具有更大进攻空间。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "丹纳赫以多客户复购和去杠杆提供更好的基准配置回报，VRTX在肾病及慢性疼痛成功时拥有更大非线性权益。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "赛默飞的多客户耗材和服务降低单药风险且基准年化更高，VRTX的新适应症右尾较大；两者现价均缺厚现金折价。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "VRTX不承担保险医疗成本错配和母公司资金受限，UNH的修复赔率较高却不足以成为CF与创新药逻辑的全面替代。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "insufficient",
+      "convexity_preference": "insufficient",
+      "verdict": "insufficient",
+      "reason": "冻结模型显示分销专科复利与VRTX右尾各有优势；11月4日新GAAP数字已取得，但完整调整对账和新指引仍缺，现时替代裁决证据不足。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的重复交易与轻资本基准回报优于VRTX，VRTX在肾病和慢性疼痛突破时的价格弹性更大。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "万事达的成熟网络与服务附着给出更高基准年化及较浅压力回撤，VRTX在多项临床成功时的右尾更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软在更短观察期中兼有更高基准年化和更大突破弹性，VRTX只提供较少算力资本开支敞口的分散价值。"
+    }
+  ]
+}
