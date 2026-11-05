@@ -1,0 +1,73 @@
+{
+  "ticker": "UBER",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:00-08:00",
+  "reference_price": {
+    "value": 69.89,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        40.1,
+        40.1
+      ],
+      "business_price": [
+        79.7,
+        79.7
+      ],
+      "target_price": [
+        48.6,
+        61.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        120.8,
+        120.8
+      ],
+      "business_price": [
+        167.8,
+        167.8
+      ],
+      "target_price": [
+        144.4,
+        177.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        167.8,
+        167.8
+      ],
+      "business_price": [
+        211.1,
+        211.1
+      ],
+      "target_price": [
+        206.5,
+        247.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        243.2,
+        243.2
+      ],
+      "business_price": [
+        243.1,
+        243.1
+      ],
+      "target_price": [
+        266.1,
+        322.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
