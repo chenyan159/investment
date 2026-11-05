@@ -1,0 +1,73 @@
+{
+  "ticker": "AEHR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:28:34-08:00",
+  "reference_price": {
+    "value": 60.84,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        7.3,
+        7.3
+      ],
+      "business_price": [
+        13.8,
+        13.8
+      ],
+      "target_price": [
+        9.1,
+        11.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        37.7,
+        37.7
+      ],
+      "business_price": [
+        53.0,
+        53.0
+      ],
+      "target_price": [
+        53.0,
+        64.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        65.1,
+        65.1
+      ],
+      "business_price": [
+        86.9,
+        86.9
+      ],
+      "target_price": [
+        106.9,
+        127.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        132.7,
+        132.7
+      ],
+      "business_price": [
+        131.4,
+        131.4
+      ],
+      "target_price": [
+        183.4,
+        225.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
