@@ -1,0 +1,180 @@
+{
+  "ticker": "AMGN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:33:38-08:00",
+  "reference_price": {
+    "value": 478.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        317.4,
+        317.4
+      ],
+      "target_price": [
+        218.0,
+        253.7
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        532.3,
+        532.3
+      ],
+      "target_price": [
+        489.8,
+        544.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        770.6,
+        770.6
+      ],
+      "target_price": [
+        786.9,
+        898.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        873.4,
+        873.4
+      ],
+      "target_price": [
+        1018.0,
+        1144.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ABBV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMGN基准价格回报略好且MariTide右尾更大；两者现价均不足以重仓建成稳健核心。"
+    },
+    {
+      "peer": "MRK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "统一年化后MRK突破弹性不再领先，AMGN乐观证据更强且接续更分散。"
+    },
+    {
+      "peer": "JNJ",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选JNJ的分散现金及较小压力损失；高弹选AMGN，比较已加回条件DePuy权益。"
+    },
+    {
+      "peer": "GILD",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "GILD基准现金回报更高，右尾年化与AMGN接近，分红型医疗资金优先GILD。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "REGN在基准、压力保护和右尾均更优，是本比较集成熟创新药首选载体。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "认可大支付池时LLY的已商业化规模和右尾胜出；高回撤使其仍适合分批成长仓。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ARGX的基准增长和右尾更高，但FcRn行业份额加总偏紧，降低整条路径支撑度。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ALNY在对齐年化后仍有显著更高赔率，适合作为有经营底盘的进攻仓，价格为公告前条件价。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健买DHR的跨分子复购和较小压力损失；追求临床突破右尾才选AMGN。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对选AMGN的药品经营现金确定性；高风险修复弹性选UNH，二者均非现价防守核心首选。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCK的履约与专科复利；AMGN临床突破右尾较高，MCK旧远期价保留为保守约束。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软在更短观察期内提供更高基准和右尾，资本回收是其加仓约束。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选Visa的轻资本网络复利；需追求临床跳跃赔率时AMGN更有右尾。"
+    }
+  ]
+}
