@@ -1,0 +1,164 @@
+{
+  "ticker": "RNR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:17-08:00",
+  "reference_price": {
+    "value": 353.66,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        402.2,
+        402.2
+      ],
+      "target_price": [
+        274.6,
+        315.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        509.3,
+        509.3
+      ],
+      "target_price": [
+        434.6,
+        521.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        566.0,
+        566.0
+      ],
+      "target_price": [
+        579.6,
+        676.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        606.6,
+        606.6
+      ],
+      "target_price": [
+        724.7,
+        828.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ACGL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "RNR基准每股资本积累更强，已有收费平台；ACGL更高突破上沿依赖尚未锁定的募资与重估。"
+    },
+    {
+      "peer": "BRK.B",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "伯克希尔的资本调度及业务分散更稳健；RNR的较低买价要求与承保周期提供更大右尾。"
+    },
+    {
+      "peer": "WRB",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WRB较高估值仍承受责任险成本；RNR基准及有利情景的价格回报更好。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "PGR短尾重定价及现金分配更适合稳健复利；RNR更适合承受灾损和募资不确定性的右尾资金。"
+    },
+    {
+      "peer": "CB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CB全球分散有价值，但现价基准增长和弹性不足以补偿与RNR的赔率差。"
+    },
+    {
+      "peer": "TRV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TRV正常化利润增长有限且现价基准回报偏低，RNR保留更好的资本积累与上行情景。"
+    },
+    {
+      "peer": "AON",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AON收费增长及整合右尾更强，USI杠杆使稳健视角只与RNR相当，综合仍优先AON。"
+    },
+    {
+      "peer": "AJG",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "AJG成熟经纪收费和已见整合更支持基准现金；两者突破弹性接近，综合优先AJG。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SPGI标准和授权收费更持久；RNR更便宜且有利情景弹性稍强，须承担灾损尾部。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa网络与服务复利更可见；当前价格下RNR乐观及突破的相对涨幅更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软成熟收费权及较短窗口的利润增长和右尾更强，须单独限制AI资本回收风险。"
+    }
+  ]
+}
