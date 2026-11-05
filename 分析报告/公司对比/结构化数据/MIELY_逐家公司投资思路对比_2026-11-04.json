@@ -1,0 +1,172 @@
+{
+  "ticker": "MIELY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:40-08:00",
+  "reference_price": {
+    "value": 61.77,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        37.54,
+        37.54
+      ],
+      "target_price": [
+        27.95,
+        33.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        78.42,
+        78.42
+      ],
+      "target_price": [
+        78.06,
+        90.19
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        103.09,
+        103.09
+      ],
+      "target_price": [
+        113.37,
+        134.88
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        127.9,
+        127.9
+      ],
+      "target_price": [
+        161.4,
+        195.51
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ABB的订单转换与较浅模型回撤；追求更大但较弱证据的突破右尾时三菱胜出"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受PTC融资与整合约束时，施耐德在电气数字化的每股增长和年化右尾均更优，三菱净现金更强仍不足抵消收益差"
+    },
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一电气升级逻辑下，伊顿的交付、单位内容及基准每股增长更强，模型回撤也较浅，构成优先替代"
+    },
+    {
+      "peer": "FANUY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "稳健自动化配置优先发那科的现金转化与资产缓冲；右尾幅度大致相当，三菱的多业务期权尚未形成决定优势"
+    },
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "特灵既有服务现金和资本效率更强，基准与右尾年化均优于三菱，是暖通及冷却逻辑下更优载体"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受AI建设集中风险时，Vertiv的成熟系统交付、基准现金与突破净内容更强，三菱的分散性不足以赢得当前配置"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选三菱的净现金和分散业务；AI供电器件路线及更短兑现窗口的右尾优先英飞凌，但须验证汽车止损和FCF"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选三菱的资产负债表与经营分散；光互联进攻选Coherent的纯度和更大右尾，负现金及供给门槛限制仓位"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "愿承受算力信用与替代风险时，英伟达当前现金能力和平台利润捕获优于三菱，且基准和右尾回报更大"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾不可分散尾部风险时，台积电的工艺瓶颈、正常化资本回报和年化赔率优于三菱，不能以净现金消除地缘风险"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "企业软件复购和平台收费更稳定，基准及右尾年化也更优；微软AI资本回收仍须验证，三菱可作不同因子补充"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "防御复利选WM的重复需求和更浅模型回撤；愿承担工业周期并追求更大突破涨幅时三菱胜出"
+    }
+  ]
+}
