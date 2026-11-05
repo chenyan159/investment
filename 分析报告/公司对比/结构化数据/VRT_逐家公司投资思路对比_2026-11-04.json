@@ -1,0 +1,180 @@
+{
+  "ticker": "VRT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 205.55,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        155.7,
+        155.7
+      ],
+      "target_price": [
+        109,
+        134.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        321.2,
+        321.2
+      ],
+      "target_price": [
+        353.8,
+        405.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        419.4,
+        419.4
+      ],
+      "target_price": [
+        530,
+        631.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        548.1,
+        548.1
+      ],
+      "target_price": [
+        783.5,
+        917.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Eaton以航空与配电渠道分散单一AI建设风险，VRT以较轻净负债和较高右尾回报胜出。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "VRT在相近2027经营估值下有更高每股增长，施耐德的PTC融资与整合负担降低当前替代吸引力。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "nVent的较低经营估值补偿Maverick杠杆与整合风险，VRT的服务和资本缓冲补偿较高倍数，两者可互补。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT已兑现盈利与现金更稳，MOD若补价和产线效率修复则乐观及突破弹性更大。"
+    },
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Trane的服务密度与终端分散更适合稳健持有，VRT的基础设施内容扩张带来更大进攻弹性。"
+    },
+    {
+      "peer": "JCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "VRT的资本缓冲、业务增长与右尾优于江森，后者扩产重组与遗留责任压低风险调整后的吸引力。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AAON毛利和现金修复后的数学右尾更大，但在财报前证据与资金约束下，风险调整后的两种配置均优先VRT。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MPS的模块与工艺优势尚不足以抵消更高经营估值、SBC及ITC产品交付风险，当前优先VRT。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT的设施交付分散具体计算架构风险，NVIDIA以系统利润池与更大条件上行成为AI进攻的优先载体。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的企业续约网络适合稳健底仓，VRT以较轻资本更新负担和更大目标日赔率承担设施端进攻。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "Amazon有更大的平台选择权但前置资本和融资约束更强，VRT的现金自给使其综合配置顺位更高。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Visa收费网络更成熟，但436.57美元的买价使基准回报偏低，VRT更值得占用本次新增配置资金。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Linde合同韧性与较小下行情景回撤有优势，但现价基准年化不足以补偿资本和估值机会成本，优先VRT。"
+    }
+  ]
+}
