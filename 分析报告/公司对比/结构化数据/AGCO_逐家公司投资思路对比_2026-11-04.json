@@ -1,0 +1,156 @@
+{
+  "ticker": "AGCO",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:36:23-08:00",
+  "reference_price": {
+    "value": 112.69,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        59.02,
+        59.02
+      ],
+      "target_price": [
+        39.06,
+        54.03
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        164.53,
+        164.53
+      ],
+      "target_price": [
+        153.03,
+        176.03
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        253.37,
+        253.37
+      ],
+      "target_price": [
+        270.53,
+        304.86
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        315.47,
+        315.47
+      ],
+      "target_price": [
+        379.29,
+        443.11
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "DE",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同一农机复苏逻辑下，AGCO基准年化和右尾明显更高；DE的生态优势尚不足以弥补当前买价。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CMI现有发电及售后的基准现金和下行缓冲更好，AGCO在农机复苏叠加PTx成功时的右尾更大。"
+    },
+    {
+      "peer": "PH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "PH多行业资格与复购支持更可见的现金底盘，AGCO的周期利润和PTx右尾更强但资本风险更高。"
+    },
+    {
+      "peer": "DCI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DCI以旧机维护复购获得更小的需求和资本风险，AGCO在整机置换及精准改装加速时的利润弹性更大。"
+    },
+    {
+      "peer": "TEL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL已交付的数据连接增长和多元现金使基准更强，AGCO在周期与PTx同时成功时具有更大的尾部上行。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ADI业务质量更高但当前价格削弱基准赔率，AGCO的农机与PTx右尾更大，稳健标准下两者均需触发条件。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CAT当前订单和多元终端支持更强的基准证据，AGCO在农机修复与精准改装突破时的估值和盈利弹性更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT基准证据更强且年化突破弹性接近AGCO，现金与融资韧性更好，适合无农机主题限制的资金。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复交易和轻资本服务提供更高基准可见度及更小悲观损失，AGCO的周期和技术双重右尾更大。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM许可和收运密度形成更稳的现金底盘与较小悲观回撤，AGCO乐观及突破上行更大。"
+    }
+  ]
+}
