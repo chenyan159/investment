@@ -1,0 +1,164 @@
+{
+  "ticker": "CC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 13.79,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        1.54,
+        1.54
+      ],
+      "target_price": [
+        0,
+        3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        34.44,
+        34.44
+      ],
+      "target_price": [
+        29.88,
+        37.42
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        63.8,
+        63.8
+      ],
+      "target_price": [
+        68.14,
+        79.14
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        81.65,
+        81.65
+      ],
+      "target_price": [
+        97.18,
+        117.53
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "DKILY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "大金的渠道与设备现金更稳，CC化工修复的权益弹性更大。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ECL复购和资本承受力胜，CC在TT及材料修复成功时的绝对右尾更大。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT的多路线交付与净现金路径更适合主仓，CC提供更大且更脆弱的权益弹性。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MOD在真实冷却需求、数倍右尾和资本生存之间更均衡，风险调整后的进攻顺位高于CC。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ENTG在晶圆耗用和客户接触点更稳，CC恢复吨差和PS利润后的上行倍数更大。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CARR设备与服务现金相对稳健，CC价格及制造负荷恢复的财务杠杆更高。"
+    },
+    {
+      "peer": "TT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT基准回报、服务现金与资本韧性更适合稳健配置，CC只在高风险右尾任务胜出。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软收费入口和融资能力更稳，CC以较小权益基数提供更高但含重组风险的弹性。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN经营韧性更强而现价基准回报偏低，CC适合承受永久损失的小额高弹任务。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Alphabet的平台现金来源与资产负债承受力更稳，CC化工修复成功的股价倍数更高。"
+    },
+    {
+      "peer": "MMM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均不适合稳健新增配置；MMM现价基准年化偏低，进攻预算下CC的修复赔率更好。"
+    }
+  ]
+}
