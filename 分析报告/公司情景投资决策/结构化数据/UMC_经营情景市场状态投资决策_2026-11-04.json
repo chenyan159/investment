@@ -1,0 +1,73 @@
+{
+  "ticker": "UMC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:22:00-08:00",
+  "reference_price": {
+    "value": 16.06,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        7.62,
+        7.62
+      ],
+      "business_price": [
+        7.31,
+        7.31
+      ],
+      "target_price": [
+        7.39,
+        9.04
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        16.23,
+        16.23
+      ],
+      "business_price": [
+        19.05,
+        19.05
+      ],
+      "target_price": [
+        18.31,
+        20.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        25.33,
+        25.33
+      ],
+      "business_price": [
+        29.22,
+        29.22
+      ],
+      "target_price": [
+        32.08,
+        37.43
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        41.46,
+        41.46
+      ],
+      "business_price": [
+        40.16,
+        40.16
+      ],
+      "target_price": [
+        51.85,
+        61.39
+      ],
+      "evidence": "weak"
+    }
+  }
+}
