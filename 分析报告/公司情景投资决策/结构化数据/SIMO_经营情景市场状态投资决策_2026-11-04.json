@@ -1,0 +1,73 @@
+{
+  "ticker": "SIMO",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:32:00-08:00",
+  "reference_price": {
+    "value": 182.54,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        77.0,
+        77.0
+      ],
+      "business_price": [
+        129.7,
+        129.7
+      ],
+      "target_price": [
+        93.5,
+        118.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        326.2,
+        326.2
+      ],
+      "business_price": [
+        420.0,
+        420.0
+      ],
+      "target_price": [
+        509.0,
+        609.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        629.2,
+        629.2
+      ],
+      "business_price": [
+        664.0,
+        664.0
+      ],
+      "target_price": [
+        934.9,
+        1141.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1036.8,
+        1036.8
+      ],
+      "business_price": [
+        924.0,
+        924.0
+      ],
+      "target_price": [
+        1433.2,
+        1790.2
+      ],
+      "evidence": "weak"
+    }
+  }
+}
