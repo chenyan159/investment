@@ -1,0 +1,180 @@
+{
+  "ticker": "ASMVY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:15:00-08:00",
+  "reference_price": {
+    "value": 43.41,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        25.68,
+        25.68
+      ],
+      "target_price": [
+        19.73,
+        23.93
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        79.56,
+        79.56
+      ],
+      "target_price": [
+        80.91,
+        97.33
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        109.57,
+        109.57
+      ],
+      "target_price": [
+        146.32,
+        169.56
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "reestimate",
+      "business_price": [
+        113.64,
+        113.64
+      ],
+      "target_price": [
+        176.91,
+        213.66
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "BESIY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Besi现金质量更强，但当前价格对远期HB持续期收费更高；ASMPT基准回报与估值缓冲更好。"
+    },
+    {
+      "peer": "KLIC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ASMPT逻辑TCB批量资格与SMT/POT盈利更成熟，KLIC右尾需额外跨过AS盈利和份额门槛。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "AMAT在稳健视角以材料平台和服务分散风险胜出；高弹回报接近，ASMPT胜在更纯的SMT/TCB事件暴露。"
+    },
+    {
+      "peer": "CAMT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Camtek的检测复购、2027官方增长锚及基准/右尾回报更优，是设备逻辑下优先于ASMPT的载体。"
+    },
+    {
+      "peer": "ONTO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ASMPT净现金和当前DCF缓冲更适合稳健要求；ONTO更高的多工序现金扩张及右尾适合进攻。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLA以更厚的过程控制壁垒和现金胜出稳健视角；ASMPT低买价下的突破倍数更大。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "台积电控制制造交付且基准回报接近、经营下行较浅；ASMPT仅在高弹小仓的极右尾胜出。"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ASMPT相似AI封装暴露所需再投资较少，基准回报更高且避免ASX高净债务的左尾放大。"
+    },
+    {
+      "peer": "AMKR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Amkor客户入口真实但扩建和潜在增发吞噬普通股现金；ASMPT提供近似右尾且资金路径更轻。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在未出现新增供给/价格破坏证据的条件下，美光现金底盘及基准和右尾赔率均优；长期高利润仍需逐季证伪。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "微软商业壁垒更深，但当前成长久期价格和AI资本负担压低回报；ASMPT在本次买价下两视角更划算。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Alphabet的低法定PE含投资重估，现金和稀释约束尚重；ASMPT基准回报及右尾更有价格优势。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Vertiv已兑现交付与现金更适合稳健复利；ASMPT低估值与SMT/TCB事件提供更大的极右尾。"
+    }
+  ]
+}
