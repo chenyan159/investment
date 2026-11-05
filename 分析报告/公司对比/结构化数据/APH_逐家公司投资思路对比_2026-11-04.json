@@ -1,0 +1,180 @@
+{
+  "ticker": "APH",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:45:00-08:00",
+  "reference_price": {
+    "value": 79.01,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        64.1,
+        64.1
+      ],
+      "target_price": [
+        41.3,
+        50.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        140.4,
+        140.4
+      ],
+      "target_price": [
+        121.2,
+        146.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        188.2,
+        188.2
+      ],
+      "target_price": [
+        189.0,
+        222.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        221.2,
+        221.2
+      ],
+      "target_price": [
+        245.7,
+        284.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健买TEL的现金价格与较轻AI集中，进攻买APH更大的AI收入权重"
+    },
+    {
+      "peer": "BDC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH的交付和资产负债更稳，BDC以小基数、多客复制及去杠杆获得更大右尾"
+    },
+    {
+      "peer": "BELFB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH的规模分散与股本纪律较优，BELFB的新电源平台相对市值能产生更大右尾"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH更适合保守复利，CRDO用高集中风险交换更大的光与新路线每股弹性"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH现金自给更适合稳健仓，COHR新指引抬高中期利润斜率但必须承担融资与制造风险"
+    },
+    {
+      "peer": "GLW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "APH更低的现金价格和较轻新产线负担胜出，两者乐观与突破右尾大致相当"
+    },
+    {
+      "peer": "ANET",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH买价对长期持续期要求较低，ANET网络平台与scale-up提供更强进攻弹性"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受AI平台与信用风险的同一资金预算下，NVDA的现金盈利价格及基准／右尾回报整体更优"
+    },
+    {
+      "peer": "CLS",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "APH更适合现金自给的底仓，CLS的系统收入与运营杠杆更适合能承担资金缺口的进攻仓"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "微软商业壁垒更厚，但当前AI资本回收与现金价格使APH在本窗口的新增资金取舍更优"
+    },
+    {
+      "peer": "ETN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "APH较低DCF溢价与跨介质右尾略优；ETN适合需要降低AI设备客户集中度的补充"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的成熟收费和受损底线适合稳健优先，APH的AI每股增长及右尾更强"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COST经营稳定但估值持续期长、年化较低，当前买价下APH的稳健回报与进攻弹性均胜出"
+    }
+  ]
+}
