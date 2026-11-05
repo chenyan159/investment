@@ -1,0 +1,164 @@
+{
+  "ticker": "ADP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:37-08:00",
+  "reference_price": {
+    "value": 303.54,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        266.6,
+        266.6
+      ],
+      "target_price": [
+        201.13,
+        231.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        380.94,
+        380.94
+      ],
+      "target_price": [
+        373.61,
+        402.35
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        420.99,
+        420.99
+      ],
+      "target_price": [
+        444.65,
+        476.41
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        461.28,
+        461.28
+      ],
+      "target_price": [
+        522.01,
+        574.21
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "negative",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "avoid",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "PAYX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ADP资本分配与客户组合更从容；PAYX股息较高，右尾年化相近，未形成全面替代"
+    },
+    {
+      "peer": "INTU",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近受损回撤下，现金估值和基准／上行CAGR更优；是广义财税软件资金的优先替代，非纯发薪同质替代"
+    },
+    {
+      "peer": "WDAY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADP赢现金与受损底线；WDAY赢利润率修复和执行平台的右尾，不能以同等防御仓互换"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADP赢可自给现金及资本保全；ORCL上行更大但依赖交付、信用和融资，非发薪防御替代"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADP赢稳健收费和当期现金；NOW赢跨系统执行层扩张，适合成长进攻预算"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "资本保全与现金轻负担选ADP；扩大企业AI收入和上行赔率选MSFT，二者适合作风险互补"
+    },
+    {
+      "peer": "ACN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ADP较少受可收费人天压缩；ACN账面现金倍数更低但基准增速和净每股回报不足以替代"
+    },
+    {
+      "peer": "AON",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADP赢去杠杆依赖较低的稳健性；AON整合、协同和利润率改善右尾更高"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "V壁垒顶级，但当前现金倍数和含息基准回报不胜ADP；进攻CAGR近似，不能全面替代"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "标准壁垒突出，但按同日买价和CAGR，ADP基准含息更优；SPGI右尾略高但不足构成全面替代"
+    },
+    {
+      "peer": "CTAS",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同样成熟复利，ADP买价、基准CAGR和上行年化均更好；CTAS当前高品质未给足赔率"
+    }
+  ]
+}
