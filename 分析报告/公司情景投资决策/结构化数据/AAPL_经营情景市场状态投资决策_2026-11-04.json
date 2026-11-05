@@ -1,0 +1,73 @@
+{
+  "ticker": "AAPL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 349.51,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-28",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        108.2,
+        108.2
+      ],
+      "business_price": [
+        294.5,
+        294.5
+      ],
+      "target_price": [
+        178.4,
+        215.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        180.5,
+        180.5
+      ],
+      "business_price": [
+        444.0,
+        444.0
+      ],
+      "target_price": [
+        336.1,
+        403.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        255.4,
+        255.4
+      ],
+      "business_price": [
+        558.9,
+        558.9
+      ],
+      "target_price": [
+        507.8,
+        592.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        351.7,
+        351.7
+      ],
+      "business_price": [
+        677.7,
+        677.7
+      ],
+      "target_price": [
+        684.1,
+        786.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
