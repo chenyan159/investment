@@ -1,0 +1,73 @@
+{
+  "ticker": "TEL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:45-08:00",
+  "reference_price": {
+    "value": 220.22,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-28",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        126.7,
+        126.7
+      ],
+      "business_price": [
+        215.04,
+        215.04
+      ],
+      "target_price": [
+        147.08,
+        179.29
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        288.69,
+        288.69
+      ],
+      "business_price": [
+        362.31,
+        362.31
+      ],
+      "target_price": [
+        329.99,
+        374.18
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        372.09,
+        372.09
+      ],
+      "business_price": [
+        412.67,
+        412.67
+      ],
+      "target_price": [
+        436.14,
+        496.24
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        508.46,
+        508.46
+      ],
+      "business_price": [
+        475.94,
+        475.94
+      ],
+      "target_price": [
+        571.98,
+        664.08
+      ],
+      "evidence": "weak"
+    }
+  }
+}
