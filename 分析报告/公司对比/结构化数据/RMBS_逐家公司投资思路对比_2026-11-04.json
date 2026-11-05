@@ -1,0 +1,172 @@
+{
+  "ticker": "RMBS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:09:33-08:00",
+  "reference_price": {
+    "value": 82.9,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        82.85,
+        82.85
+      ],
+      "target_price": [
+        47.45,
+        57.47
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        160.74,
+        160.74
+      ],
+      "target_price": [
+        137.91,
+        162.13
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        226.2,
+        226.2
+      ],
+      "target_price": [
+        216.58,
+        251.44
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        322.05,
+        322.05
+      ],
+      "target_price": [
+        341.81,
+        409.23
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "SNPS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选SNPS的成熟EDA与IP修复；高弹选RMBS的新模组内容放大，SNPS的并购净债限制防守。"
+    },
+    {
+      "peer": "CDNS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CDNS工作流壁垒更宽，但现价扣SBC现金收益和基准回报偏低；RMBS在两类资金的增量配置中优先。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健质量与买价抵消后大致相当；RMBS的净现金、基准赔率与模组右尾胜出，MPWR的供电覆盖更广。"
+    },
+    {
+      "peer": "ALAB",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMBS的成熟许可与较小稀释；进攻选ALAB的Scorpio/Orion平台扩张，接受更深受损回撤。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMBS当前股东现金与无传统净债；进攻选MRVL跨客户Custom/attach与1.6T的更大可得利润池。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选AVGO：XPU/网络加软件现金截留更多系统价值；代价是客户融资、转售成本和更大周期敞口。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选RMBS较少依赖DRAM短缺租金；进攻选MU已兑现的存储价格与产能现金弹性，持续高利润仍是条件。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角均选NVDA：软件生态、系统和NVHBM设计权掌握利润入口；同一AI总需求逻辑下是更优主载体。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TSM的跨架构制造与资格瓶颈；极端右尾选RMBS内容扩张，TSM乐观路径本身也略强。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT的企业收费与需求控制权；高弹选RMBS小基数新内容，微软建设和组件资金拖累现金。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COST经营确定性更高，但现价基准年化回报低、久期溢价大；追求有限风险预算的增量回报时两视角均选RMBS。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选WM处置网络与较浅经营受损回撤；进攻选RMBS，WM的RNG/医疗右尾与资本效率仍有限。"
+    }
+  ]
+}
