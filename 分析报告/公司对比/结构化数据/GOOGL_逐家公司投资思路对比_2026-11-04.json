@@ -1,0 +1,172 @@
+{
+  "ticker": "GOOGL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:28:31-08:00",
+  "reference_price": {
+    "value": 288.93,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        249.7,
+        249.7
+      ],
+      "target_price": [
+        113.6,
+        150.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        433.6,
+        433.6
+      ],
+      "target_price": [
+        391.5,
+        455.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        575.3,
+        575.3
+      ],
+      "target_price": [
+        604.6,
+        710.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        724.8,
+        724.8
+      ],
+      "target_price": [
+        870.0,
+        1032.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "企业续约与现金底盘更厚，标准化基准回报略高，右尾与GOOGL接近。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AWS和交易广告在同一云与广告逻辑下有更高基准和右尾回报，资本回收仍需验证。"
+    },
+    {
+      "peer": "META",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL基准每股增长和多引擎回报更强，META低倍数未覆盖其资本与判罚现金压力。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GOOGL资金与业务底盘更稳，ORCL融资和OCI交付成功时股权弹性更大。"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AAPL现金质量较高但现价正常倍数偏满，GOOGL的基准与上行价格回报更好。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE已收费专业工作流和现金自给支撑较低隐含要求及更好的基准与右尾赔率。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA先捕获系统利润和现金，远期利润扣减压力下仍较优，但需约束共享客户预算。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO对TPU与网络增量的利润暴露更集中且现金更强，产业子池冲突要求限制仓位。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSM可同时承接GPU和ASIC制造需求且基准现金回报较高，前提是可承担台湾极端尾部。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COST会员循环优秀但高倍数压低回报，GOOGL在现价具有更高基准和上行空间。"
+    },
+    {
+      "peer": "BRK.B",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "BRK.B资产与现金保全更强，GOOGL的中期增长与突破弹性更大。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "LLY现价已反映较多药物增长，GOOGL基准证据与损伤回撤较优而右尾相近。"
+    }
+  ]
+}
