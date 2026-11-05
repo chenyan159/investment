@@ -1,0 +1,73 @@
+{
+  "ticker": "GOOGL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:53:17-08:00",
+  "reference_price": {
+    "value": 288.93,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        108.7,
+        108.7
+      ],
+      "business_price": [
+        225.4,
+        225.4
+      ],
+      "target_price": [
+        113.6,
+        150.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        288.6,
+        288.6
+      ],
+      "business_price": [
+        391.5,
+        391.5
+      ],
+      "target_price": [
+        391.5,
+        455.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        437.0,
+        437.0
+      ],
+      "business_price": [
+        519.6,
+        519.6
+      ],
+      "target_price": [
+        604.6,
+        710.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        638.3,
+        638.3
+      ],
+      "business_price": [
+        653.9,
+        653.9
+      ],
+      "target_price": [
+        870.0,
+        1032.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
