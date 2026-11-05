@@ -1,0 +1,73 @@
+{
+  "ticker": "SYK",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:00-08:00",
+  "reference_price": {
+    "value": 339.65,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        183.1,
+        183.1
+      ],
+      "business_price": [
+        331.6,
+        331.6
+      ],
+      "target_price": [
+        209.5,
+        250.2
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        354.7,
+        354.7
+      ],
+      "business_price": [
+        479.5,
+        479.5
+      ],
+      "target_price": [
+        460.5,
+        518.4
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        462.5,
+        462.5
+      ],
+      "business_price": [
+        549.1,
+        549.1
+      ],
+      "target_price": [
+        571.3,
+        637.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        572.6,
+        572.6
+      ],
+      "business_price": [
+        612.1,
+        612.1
+      ],
+      "target_price": [
+        685.9,
+        783.9
+      ],
+      "evidence": "weak"
+    }
+  }
+}
