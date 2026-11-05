@@ -1,0 +1,172 @@
+{
+  "ticker": "ALAB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 223.27,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        98.2,
+        98.2
+      ],
+      "target_price": [
+        62.3,
+        77.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        340.7,
+        340.7
+      ],
+      "target_price": [
+        301.4,
+        380.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        589.6,
+        589.6
+      ],
+      "target_price": [
+        624.3,
+        762.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        868.1,
+        868.1
+      ],
+      "target_price": [
+        1023.2,
+        1281.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MRVL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Lumentum全股票并购提高光电平台上行并稀释原股东；交割和最高数十亿美元条件终止费使稳健资金偏ALAB，高弹资金偏MRVL。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "软件现金和已规模化的定制计算提供更厚经营底盘，基准及右尾回报均优于ALAB，但采购与客户信用约束必须验证。"
+    },
+    {
+      "peer": "MCHP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ALAB的互连增长纯度、净现金和每股上行更优；MCHP的成熟业务恢复尚不能抵消债务与普通股现金分配压力。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "将CRDO由下一财年利润改成目标年度利润后，基准与右尾年化赔率接近；铜光执行与高radix平台是互补风险。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资金偏向ALAB的净现金和较轻资本负担；高弹资金偏向COHR较短观察窗口下更高的光学右尾年化，但须承受扩产融资风险。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "ANET的多客户生产网络、现金转化和基准赔率更强；ALAB极端右尾接近，但未形成全面替代优势。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台分发控制、既有利润及回报缓冲更强，在增长适度低于上游基准时仍有更好的赔率。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM更适合架构中性复利与稳健底仓，ALAB更适合承担客户和产品门槛风险以获取更大的极端右尾。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Amazon的客户入口、多业务利润和较高基准赔率使其稳健相对占优，但巨额资本缺口压低优势；ALAB融资韧性与极端右尾更强。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的重复交易和收费证据适合稳健复利；ALAB以显著更大回撤换取更高右尾。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG商业确定性更高但当前基准价格回报偏低；ALAB更值得占用有限成长风险预算，二者均不宜按现价重仓。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM有更可靠的处置收费和更浅的普通受损回撤；ALAB的技术平台右尾更大，不能替代防御仓位。"
+    }
+  ]
+}
