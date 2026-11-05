@@ -1,0 +1,73 @@
+{
+  "ticker": "ENPH",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:45:00-08:00",
+  "reference_price": {
+    "value": 31.55,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        7.8,
+        7.8
+      ],
+      "business_price": [
+        6.9,
+        6.9
+      ],
+      "target_price": [
+        8.0,
+        12.0
+      ],
+      "evidence": "strong"
+    },
+    "base": {
+      "dcf_price": [
+        28.8,
+        28.8
+      ],
+      "business_price": [
+        31.3,
+        31.3
+      ],
+      "target_price": [
+        31.3,
+        34.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        64.5,
+        64.5
+      ],
+      "business_price": [
+        62.2,
+        62.2
+      ],
+      "target_price": [
+        69.2,
+        83.1
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        114.2,
+        114.2
+      ],
+      "business_price": [
+        98.3,
+        98.3
+      ],
+      "target_price": [
+        122.2,
+        158.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
