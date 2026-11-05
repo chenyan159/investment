@@ -1,0 +1,172 @@
+{
+  "ticker": "KLAC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:00-08:00",
+  "reference_price": {
+    "value": 149.79,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        173.14,
+        173.14
+      ],
+      "target_price": [
+        100.38,
+        126.98
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        317.52,
+        317.52
+      ],
+      "target_price": [
+        265.69,
+        314.16
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        394.19,
+        394.19
+      ],
+      "target_price": [
+        390.03,
+        450.09
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        442.05,
+        442.05
+      ],
+      "target_price": [
+        459.85,
+        527.26
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "AMAT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC的控制任务与服务现金更适合稳健配置，AMAT材料工艺及平台扩展的条件右尾更大。"
+    },
+    {
+      "peer": "NVMI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC规模和装机服务更稳，NVMI材料与化学量测扩散带来更高条件弹性但须兑现回款。"
+    },
+    {
+      "peer": "ONTO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC现金底盘和资本纪律胜出，ONTO新界面与量测复制的右尾较大但并购和可转债增加约束。"
+    },
+    {
+      "peer": "CAMT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC胜在产品及客户分散和服务现金，CAMT胜在小基数封装放量与新增量测的软件期权。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC在当前买价下交付与服务现金的稳健性略优，ASML独占光刻平台及High-NA扩散的条件右尾更大。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "KLAC的控制强度和服务韧性配合当前基准与上行赔率，优于更依赖存储工艺周期的LRCX。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC资本强度较低且客户地域较分散，TSM更直接截留制造和封装增量利润但承担台湾与扩产回报尾部。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC的跨周期现金更稳，MU受益存储净价和现金留存的高弹性更大而非全公司利润已被长约锁定。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLAC收入模式和资本责任更可控，NVDA平台份额及内容量兑现的上行更大但信用支持和自研替代风险较强。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "在本次买价与现金回收标准下KLAC的基准和上行情景赔率更优，微软须先验证重资本AI投入的回收。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "KLAC的可分配现金路径及基准赔率更优，Alphabet低表观PE含投资重估且资本责任与稀释增加。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Visa商业稳定性更强，但现价对应的基准年化回报与右尾不足以替代KLAC，适合作为不同风险的分散配置。"
+    }
+  ]
+}
