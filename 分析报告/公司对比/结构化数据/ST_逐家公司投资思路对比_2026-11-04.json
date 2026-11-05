@@ -1,0 +1,172 @@
+{
+  "ticker": "ST",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:34-08:00",
+  "reference_price": {
+    "value": 41.12,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        31.6,
+        31.6
+      ],
+      "target_price": [
+        19.24,
+        24.84
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        61.89,
+        61.89
+      ],
+      "target_price": [
+        55.16,
+        64.68
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        80.77,
+        80.77
+      ],
+      "target_price": [
+        84.32,
+        96.44
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        97.78,
+        97.78
+      ],
+      "target_price": [
+        116.69,
+        138.63
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TEL已有规模化DDN交付，基准年化回报更高且主悲观较浅，是同类工业电子升级的优先载体。"
+    },
+    {
+      "peer": "LFUS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选净现金保护平台LFUS；高弹赔率选低起始倍数并带新用途期权的ST。"
+    },
+    {
+      "peer": "ALGM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ST的现有股东现金和基准业务回报较强；ALGM在多平台传感及IGD成功时有更大的右尾。"
+    },
+    {
+      "peer": "ON",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ST无需大型现金并购且经营现金更易归股东；ON的Vcore/EPP放量带来更大高风险右尾。"
+    },
+    {
+      "peer": "STM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看ST较低资本强度和正现金；高弹看STM制造修复与硅光跨客户放量。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ADI商业质量更高，但现价下基准回报和当前DCF缓冲弱于ST，突破涨幅亦较低。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "ETN成熟系统入口与基准回报胜出；ST较低买价右尾与ETN较强兑现证据在进攻视角大致相当。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "VRT在供电散热同逻辑中已有系统交付，基准及右尾均更高，构成优先替代。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健现金修复选ST；若接受大额资本投入与融资，AMZN平台增长的右尾更大。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "承受台湾地缘共同尾部的前提下，TSM的瓶颈位置、基准回报与右尾均胜ST。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ST当前现金及DCF缓冲更适合稳健资金；GOOGL平台复制与跨云TPU带来更强非线性选择。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选MA的网络与低资本强度；高弹赔率选ST较低倍数及新用途空间。"
+    }
+  ]
+}
