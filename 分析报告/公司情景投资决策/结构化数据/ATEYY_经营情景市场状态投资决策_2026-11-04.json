@@ -1,0 +1,73 @@
+{
+  "ticker": "ATEYY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 216.01,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        65.3,
+        65.3
+      ],
+      "business_price": [
+        132.5,
+        132.5
+      ],
+      "target_price": [
+        74.6,
+        95.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        225.1,
+        225.1
+      ],
+      "business_price": [
+        391.4,
+        391.4
+      ],
+      "target_price": [
+        362.8,
+        426.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        397.6,
+        397.6
+      ],
+      "business_price": [
+        572.5,
+        572.5
+      ],
+      "target_price": [
+        592.6,
+        701.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        593.7,
+        593.7
+      ],
+      "business_price": [
+        718.8,
+        718.8
+      ],
+      "target_price": [
+        823.3,
+        981.2
+      ],
+      "evidence": "weak"
+    }
+  }
+}
