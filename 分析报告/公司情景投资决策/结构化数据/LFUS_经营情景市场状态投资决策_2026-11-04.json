@@ -1,0 +1,73 @@
+{
+  "ticker": "LFUS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:22:22-08:00",
+  "reference_price": {
+    "value": 386.47,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        200.4,
+        200.4
+      ],
+      "business_price": [
+        262.7,
+        262.7
+      ],
+      "target_price": [
+        213.4,
+        250.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        419.6,
+        419.6
+      ],
+      "business_price": [
+        506.1,
+        506.1
+      ],
+      "target_price": [
+        506.1,
+        579.7
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        576.7,
+        576.7
+      ],
+      "business_price": [
+        623.0,
+        623.0
+      ],
+      "target_price": [
+        715.0,
+        837.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        838.8,
+        838.8
+      ],
+      "business_price": [
+        780.1,
+        780.1
+      ],
+      "target_price": [
+        1015.9,
+        1212.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
