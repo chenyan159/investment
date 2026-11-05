@@ -1,0 +1,172 @@
+{
+  "ticker": "TER",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:55:00-08:00",
+  "reference_price": {
+    "value": 250.99,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        160.72,
+        160.72
+      ],
+      "target_price": [
+        114.02,
+        134.32
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        456.51,
+        456.51
+      ],
+      "target_price": [
+        407.31,
+        469.11
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        609.71,
+        609.71
+      ],
+      "target_price": [
+        626.81,
+        731.41
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        761.81,
+        761.81
+      ],
+      "target_price": [
+        889.31,
+        1048.01
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ATEYY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "爱德万平台更强，但固定汇率后右尾相近，TER买入倍数及悲观回撤更有利，不能视为全面替代"
+    },
+    {
+      "peer": "COHU",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TER的产现与平台，追求更高右尾选COHU但须承担转换稀释及认证现金风险"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TER基准和乐观回报更好、现金底盘更强，AEHR突破年化略高但须跨更多门槛且悲观损失更深"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选现金与客户面更成熟的KEYS，进攻选TER较高的基准和突破增长斜率"
+    },
+    {
+      "peer": "FORM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TER同等景气下基准回报更高且不依赖单座新厂爬坡，FORM融资与合作不能替代持续订单"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ASX名义右尾稍高却需更大债务和资本承诺，TER稳健更优，高弹风险补偿大致相当"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "当前现金、合同及买价隐含要求给予MU更强赔率，远期价格证据降为中并不消除其相对优势"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA平台价值捕获与基准每股增长更强，现价及悲观跌幅也更有利，构成AI资本支出逻辑下更优载体"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "KLAC基准回报更高、成熟现金和悲观韧性更好，TER突破略高不足以覆盖该差距"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT成熟收费与客户基础，进攻选TER较低资本强度及更高远期右尾，微软不是无资本负担的软件年金"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MA低周期现金底盘与较小悲观损失，进攻选TER显著更宽的乐观和突破空间"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG经营复购更稳却缺基准价格回报，当前买价下TER两视角更有吸引力，机器人标签不能替代估值"
+    }
+  ]
+}
