@@ -1,0 +1,180 @@
+{
+  "ticker": "MYRG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 263.89,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        173.2,
+        173.2
+      ],
+      "target_price": [
+        121.7,
+        151.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        483.2,
+        483.2
+      ],
+      "target_price": [
+        384.7,
+        466.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        637.3,
+        637.3
+      ],
+      "target_price": [
+        669.1,
+        777.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        769.7,
+        769.7
+      ],
+      "target_price": [
+        876.2,
+        1043.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同属电力工程增长，MYRG的买价与基准/右尾回报更有利；PWR平台更强但已收取更高溢价",
+      "peer": "PWR"
+    },
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "EME以相近基准回报提供更好的现金转换及受损保护，高弹性回报与MYRG同档，构成更优工程配置替代",
+      "peer": "EME"
+    },
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "FIX的已实现利润、现金和模块复制更强，基准及右尾回报亦更高；两者均须限制工程周期风险",
+      "peer": "FIX"
+    },
+    {
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "按原始股本和DBM融资校正后IESC仍提供更高基准与右尾回报；先核验整合现金，勿沿用无债表述",
+      "peer": "IESC"
+    },
+    {
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "BE解决供电时间却仍需安装并网，且现价已要求大幅放量；MYRG基准、右尾价格赔率与下行损失更有利",
+      "peer": "BE"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选择ETN的产品资格与更小受损回撤；高弹性选择MYRG更大的每股经营及价格右尾",
+      "peer": "ETN"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HUBB的产品资格和现金底盘更适合复利仓，MYRG的基准成长及突破价格弹性更高",
+      "peer": "HUBB"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "POWL的净现金和设备复制对冲MYRG更高基准回报，两者右尾及受损回撤相近，当前互有长短而无全面替代",
+      "peer": "POWL"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GEV设备与服务壁垒更高但现价基准回报偏低且右尾不胜MYRG，当前资金机会成本支持MYRG",
+      "peer": "GEV"
+    },
+    {
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "以资本保全和股息为目的选AEP，以工程成长及右尾为目的选MYRG；客户钱包不等于施工利润",
+      "peer": "AEP"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与生态更适合长期复利；按真实2.65年窗口年化后MYRG仍有更大的乐观/突破价格弹性",
+      "peer": "MSFT"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN下行与重复收费更适合稳健复利，MYRG以更高波动换取显著更大的经营及价格上行",
+      "peer": "LIN"
+    },
+    {
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM的许可和重复现金更适合防御复利，MYRG以更大受损风险换取明显更高的成长和突破赔率",
+      "peer": "WM"
+    }
+  ]
+}
