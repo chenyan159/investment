@@ -1,0 +1,156 @@
+{
+  "ticker": "CCJ",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:23:26-08:00",
+  "reference_price": {
+    "value": 71.68,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        19.8,
+        19.8
+      ],
+      "target_price": [
+        14,
+        20
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        53.8,
+        53.8
+      ],
+      "target_price": [
+        53.8,
+        65.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        77.1,
+        77.1
+      ],
+      "target_price": [
+        90.4,
+        110.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        95.4,
+        95.4
+      ],
+      "target_price": [
+        127.1,
+        154.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "BWXT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟核制造资格和订单支持更高基准及右尾年化回报，资本兑现比CCJ更可见。"
+    },
+    {
+      "peer": "LEU",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CCJ具备现成矿山与合同现金，LEU的六年右尾仍受建厂资本、俄源过渡和稀释约束。"
+    },
+    {
+      "peer": "SMR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CCJ的存量经营更稳健，SMR在极弱证据的多项目商业化成功分支具有更大的每股右尾。"
+    },
+    {
+      "peer": "OKLO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CCJ胜在现成供给，OKLO胜在2032复制成功的右尾幅度，但须接受许可、燃料与融资风险。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CCJ的合同及成熟资产更稳健，BE的大客户交付扩张产生更高右尾，同时承受服务和资本占用。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "燃机和电网的成熟订单转化提供比CCJ更高的基准和上行年化收益，仍需验证预收款后的现金。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已运行核电的电力重定价更直接捕获稀缺租金，基准和右尾收益均优于CCJ。"
+    },
+    {
+      "peer": "VST",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "全投入现金及现价对应的基准收益优于CCJ，长约提供右尾，代价是更高杠杆和电价风险。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德长期合同与网络提供更稳健复利，CCJ在铀价及核电平台成功时有更强资源右尾。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "企业收费权和Azure增长支持更优基准与右尾年化回报，但新增算力资本回收仍是约束。"
+    }
+  ]
+}
