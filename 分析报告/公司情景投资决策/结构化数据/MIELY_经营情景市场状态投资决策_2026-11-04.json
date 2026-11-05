@@ -1,0 +1,73 @@
+{
+  "ticker": "MIELY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 61.77,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        29.02,
+        29.02
+      ],
+      "business_price": [
+        37.54,
+        37.54
+      ],
+      "target_price": [
+        27.95,
+        33.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        65.37,
+        65.37
+      ],
+      "business_price": [
+        78.42,
+        78.42
+      ],
+      "target_price": [
+        78.06,
+        90.19
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        100.31,
+        100.31
+      ],
+      "business_price": [
+        103.09,
+        103.09
+      ],
+      "target_price": [
+        113.37,
+        134.88
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        142.02,
+        142.02
+      ],
+      "business_price": [
+        127.9,
+        127.9
+      ],
+      "target_price": [
+        161.4,
+        195.51
+      ],
+      "evidence": "weak"
+    }
+  }
+}
