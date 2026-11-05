@@ -1,0 +1,172 @@
+{
+  "ticker": "ATEYY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 215.86,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        111.3,
+        111.3
+      ],
+      "target_price": [
+        74.6,
+        95.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        326.9,
+        326.9
+      ],
+      "target_price": [
+        362.8,
+        426.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        477.2,
+        477.2
+      ],
+      "target_price": [
+        592.6,
+        701.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        598.1,
+        598.1
+      ],
+      "target_price": [
+        823.3,
+        981.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TER",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TER的较低经营倍数及较浅受损回撤；高弹选ATE已建立的HPC份额与CPU扩展"
+    },
+    {
+      "peer": "COHU",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ATE的现金与平台控制力；高弹选COHU更小基数及HPC经营杠杆，但限里程碑仓"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ATE基准回报、平台宽度及现金均更好；AEHR当前倍数已要求更强跨客户兑现"
+    },
+    {
+      "peer": "FORM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ATE对测试程序和主平台控制更强，基准及突破回报更高；FORM适合专押光子接口"
+    },
+    {
+      "peer": "ASX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "类似上行中ATE以更少自有制造资本截留利润，ASX杠杆和负FCF放大下行"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "较低倍数、更强基准证据和更浅受损回撤；同AI制造逻辑下优先TSM，ATE为设备补充"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台利润捕获与现价回报优于ATE；保守现金价值仍较有支撑，但客户信用不能忽略"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "合约重定价和较低经营倍数给出更强绝对赔率；稳健相对胜出仍须按周期仓管理"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选KLAC的服务、现金和受损回撤；极端右尾选ATE量产体制与收费扩展"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT广泛续费与分散业务；进攻选ATE更高目标回报与轻制造结构"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选V的交易复购与低资本负担；高弹选ATE；V以当日价格的基准回报已有限"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG业务更平稳，但当前基准价格回报太低；ATE在两种配置标准中均更值得新资金关注"
+    }
+  ]
+}
