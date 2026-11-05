@@ -1,0 +1,73 @@
+{
+  "ticker": "ALNY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:00-08:00",
+  "reference_price": {
+    "value": 161.08,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        83.6,
+        83.6
+      ],
+      "business_price": [
+        199.0,
+        199.0
+      ],
+      "target_price": [
+        85,
+        115
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        324.3,
+        324.3
+      ],
+      "business_price": [
+        422.2,
+        422.2
+      ],
+      "target_price": [
+        420,
+        520
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        530.7,
+        530.7
+      ],
+      "business_price": [
+        641.0,
+        641.0
+      ],
+      "target_price": [
+        740,
+        945
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        804.4,
+        804.4
+      ],
+      "business_price": [
+        840.3,
+        840.3
+      ],
+      "target_price": [
+        1110,
+        1455
+      ],
+      "evidence": "weak"
+    }
+  }
+}
