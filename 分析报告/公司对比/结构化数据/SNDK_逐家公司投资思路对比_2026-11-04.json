@@ -1,0 +1,172 @@
+{
+  "ticker": "SNDK",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:22:49-08:00",
+  "reference_price": {
+    "value": 1037.4,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        474.7,
+        474.7
+      ],
+      "target_price": [
+        574.4,
+        713.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1608.7,
+        1608.7
+      ],
+      "target_price": [
+        2829.2,
+        3777.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1988.3,
+        1988.3
+      ],
+      "target_price": [
+        4446.3,
+        5652.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        2141.4,
+        2141.4
+      ],
+      "target_price": [
+        5878.3,
+        7553.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MU",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "广义AI内存配置中，美光的HBM／DRAM与企业SSD组合、已实现现金和更高右尾胜出；纯NAND敞口仍由SNDK更直接提供。"
+    },
+    {
+      "peer": "SKHY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选海力士的多代HBM与现金缓冲；高弹性选SNDK较短窗口的NAND重估与HBF分支，ADR溢价须另核。"
+    },
+    {
+      "peer": "STX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SNDK的现金转换、当前估值与受损回撤优于希捷；HDD每TB成本领先不能消除密度扩张后的单位价差风险。"
+    },
+    {
+      "peer": "WDC",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SNDK在相同观察日的基准及受损结构更好，WDC还须越过HAMR认证、转债结算和单位容量净价回落。"
+    },
+    {
+      "peer": "P",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SNDK已有强股东现金，Everpure的高毛利分母不含完整NAND采购且TTM Owner FCF为负，云端授权尚不能支撑相同安全垫。"
+    },
+    {
+      "peer": "SIMO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选SNDK实际产现与无有息债务；高弹小仓选慧荣更小基数和企业主控跃迁，但须承担库存融资与2029转债回售。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选跨代工艺资格及装机服务的泛林；高弹选SNDK位元净价和股东现金杠杆，设备收入并不等于永久短缺。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选平台客户入口和跨代生态的英伟达；纯NAND景气高弹选SNDK较低起始经营倍数，但两者共享CSP钱包风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选微软成熟软件续费与多元终端收入；高弹选SNDK内存租金，微软的算力资本回收不足以全面替代上游赔率。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健低回撤选林德的现场供气与合同现金基础；高弹选SNDK，林德当前资本回收和估值限制右尾。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "直觉外科经营复利更持久，但现价基准价格回报过低且器械降价待消化；当前买价下SNDK的回报缓冲胜出。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "好市多会员壁垒很强且10月销售新增证据向好，但现价基准回报与估值缓冲仍弱；SNDK更值得占用当期新增风险预算。"
+    }
+  ]
+}
