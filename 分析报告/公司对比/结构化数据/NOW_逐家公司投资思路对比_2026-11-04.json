@@ -1,0 +1,164 @@
+{
+  "ticker": "NOW",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:43:15-08:00",
+  "reference_price": {
+    "value": 108.81,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        89.0,
+        89.0
+      ],
+      "target_price": [
+        58.4,
+        73.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        165.9,
+        165.9
+      ],
+      "target_price": [
+        165.9,
+        203.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        204.2,
+        204.2
+      ],
+      "target_price": [
+        240.9,
+        296.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        236.0,
+        236.0
+      ],
+      "target_price": [
+        321.3,
+        406.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CRM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选NOW的有机增长与较低债务负担；进攻选CRM较低经营估值下的AI重加速右尾。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT的多业务收费与分发；进攻选NOW较轻新增资本与更纯的工作流收费弹性。"
+    },
+    {
+      "peer": "IBM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NOW基准每股增长与右尾均更强；IBM的股息和旧系统黏性不足以补足当前机会成本。"
+    },
+    {
+      "peer": "PLTR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PLTR经营增速更高，但现价要求更高持续期，NOW基准和乐观回报更厚、受损回撤较小。"
+    },
+    {
+      "peer": "SNOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NOW同样拥有执行治理入口，基准赔率更好且已产生正Owner FCF，SNOW需要更多经营与倍数兑现。"
+    },
+    {
+      "peer": "DDOG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NOW在相似企业自动化逻辑下基准回报更高、净收费基础更成熟，DDOG右尾也不足以补足价差。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选NOW当前现金自给与较轻投入；进攻选AMZN算力交付、自研芯片和利润修复的更大右尾。"
+    },
+    {
+      "peer": "ACN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NOW更能在执行许可上留住自动化收益，ACN低倍数仍对应较慢增长与较低基准价格回报。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾集中风险的AI成长资金中，TSM较低经营估值、低稀释和更强基准右尾胜出，构成机会成本上的优先载体。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全选V成熟收费与更低技术替代风险；高弹性选NOW更高的每股扩张和AI收费右尾。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG壁垒清晰但基准回报偏薄，NOW在现价的基准和右尾均更有吸引力，不能用医疗标签替代买价纪律。"
+    }
+  ]
+}
