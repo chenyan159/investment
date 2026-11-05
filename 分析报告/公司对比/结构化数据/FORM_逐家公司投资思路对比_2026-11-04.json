@@ -1,0 +1,172 @@
+{
+  "ticker": "FORM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:55:00-08:00",
+  "reference_price": {
+    "value": 85.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        59.6,
+        59.6
+      ],
+      "target_price": [
+        32.3,
+        39.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        130.5,
+        130.5
+      ],
+      "target_price": [
+        117.2,
+        143.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        168.7,
+        168.7
+      ],
+      "target_price": [
+        186.3,
+        233.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        181.9,
+        181.9
+      ],
+      "target_price": [
+        239.5,
+        303.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TER",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近前瞻经营倍数下，ATE平台复用、基准现金扩张与跨客户右尾均更强；仍须接受采购周期。"
+    },
+    {
+      "peer": "ATEYY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台控制与已兑现ASIC/CPU扩展优于单个接触环节；固定汇率后右尾仍更大，OTC执行须折价看待。"
+    },
+    {
+      "peer": "COHU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FORM成熟盈利和现金承受力更稳；COHU较小估值基数与HPC量产带来更大右尾，但需更严里程碑。"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KEYS成熟验证与分散收费更适合稳健复利；FORM的生产光子与接触设计扩张提供更集中的高弹性。"
+    },
+    {
+      "peer": "CAMT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "扣SBC后估值与FORM相近，跨年订单、新平台收入和2027增长路径更清晰，基准及右尾均胜。"
+    },
+    {
+      "peer": "ONTO",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "FORM现金结构较干净，ONTO估值和已获资格增长更优，稳健综合相当；进攻优先ONTO并等待近端财报核验。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同等前瞻经营倍数下，更多不可省控制步骤和服务收入带来更强下行与复利，右尾也无需陌生模式。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "先进制造收取更大的产业利润池、估值更低且稀释极小；台海风险是额外尾部约束，不抹去经营优势。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在当前巨额已兑现利润和低经营倍数下，周期下修缓冲及高弹性均更强；须主动跟踪同规格净价与合格供给。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "成熟续约与客户工作流更稳；统一年化后右尾与FORM重叠，FORM没有足以补偿集中风险的赔率优势。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "低得多的经营倍数与成熟现金收费提供更大基准缓冲，AI变现右尾无需支付FORM式扩厂成本。"
+    },
+    {
+      "peer": "MELI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FORM现金盈利与资本边界更易核验；MELI右尾更大但Q3未证实利润回收，只能按高波动成长条件参与。"
+    }
+  ]
+}
