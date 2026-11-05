@@ -1,0 +1,73 @@
+{
+  "ticker": "AEP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:23:46-08:00",
+  "reference_price": {
+    "value": 129.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        65.62,
+        65.62
+      ],
+      "business_price": [
+        112.94,
+        112.94
+      ],
+      "target_price": [
+        88.63,
+        99.71
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        136.85,
+        136.85
+      ],
+      "business_price": [
+        170.32,
+        170.32
+      ],
+      "target_price": [
+        158.72,
+        183.78
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        169.43,
+        169.43
+      ],
+      "business_price": [
+        196.01,
+        196.01
+      ],
+      "target_price": [
+        201.89,
+        230.73
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        205.85,
+        205.85
+      ],
+      "business_price": [
+        208.69,
+        208.69
+      ],
+      "target_price": [
+        245.66,
+        286.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
