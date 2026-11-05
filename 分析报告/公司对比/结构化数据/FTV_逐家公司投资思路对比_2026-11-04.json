@@ -1,0 +1,172 @@
+{
+  "ticker": "FTV",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 68.34,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        66.0,
+        66.0
+      ],
+      "target_price": [
+        47.5,
+        53.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        96.5,
+        96.5
+      ],
+      "target_price": [
+        91.8,
+        100.4
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        113.1,
+        113.1
+      ],
+      "target_price": [
+        117.6,
+        132.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        132.1,
+        132.1
+      ],
+      "target_price": [
+        154.7,
+        172.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AME",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AME的原有订单、关键流程分散度与可实现协同带来略高基准及右尾回报；须承担Indicor整合与购买价格风险，纯业务比较剔除全年化错觉。"
+    },
+    {
+      "peer": "TDY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "特种感知资格、国防与商业成像提供更高基准复利和右尾，当前现金估值溢价尚可解释；Varex交割与现金修复必须单独验证。"
+    },
+    {
+      "peer": "IBM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "FTV的基准价格回报与去杠杆路径较好；IBM现金倍数低且股息高，但咨询、融资回收与稀释削弱可比性，两者突破右尾大致相当。"
+    },
+    {
+      "peer": "EMR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "EMR控制装机更深但净债及现金估值更高；FTV在更低经济现金倍数下提供较高基准和突破回报，尚无证据证明EMR平台溢价全面胜出。"
+    },
+    {
+      "peer": "ROK",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FTV胜在现金估值与下行控制；ROK若控制生态、Conductor与跨厂部署兑现，突破弹性更强，须先等11月5日全年业绩验证。"
+    },
+    {
+      "peer": "ROP",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "相近经济现金倍数下，ROP垂直记录系统的留存与轻资产现金更适合稳健复利；FTV现价的乐观和突破上行更大，但医疗兑现较弱。"
+    },
+    {
+      "peer": "GWW",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "渠道采购效率和增长真实，但经济现金估值约为FTV两倍；FTV保留产品与流程利润且基准及右尾回报更高，当前不宜为分销增长付过多溢价。"
+    },
+    {
+      "peer": "HCA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "医院需求不等于股东现金；HCA的支付政策、无保险病例和高债务约束更强，FTV以耗材及流程收费分散风险且现价回报结构更好。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台分发、收费负载与较短观察期带来更高年化和更强突破机制；巨额算力及组件投入显著压低现金，配置须接受资本回收风险。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "MA的重复交易、服务增长与较高基准回报胜出；FTV突破价格弹性略大但证据更弱，高弹视角不足以形成明确优势。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN合同与网络更稳，但成长资本占用和较高经济现金倍数压低回报；FTV的基准及右尾收益更高，足以补偿部分工业与医疗执行风险。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "FTV更适合控制单一资本开支周期与下行损失；VRT的供电、液冷和交付规模使基准及右尾显著更大，是进攻资金的优先载体。"
+    }
+  ]
+}
