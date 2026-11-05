@@ -1,0 +1,172 @@
+{
+  "ticker": "VSH",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 25.84,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        19.2,
+        19.2
+      ],
+      "target_price": [
+        17.3,
+        21.73
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        46.65,
+        46.65
+      ],
+      "target_price": [
+        40.84,
+        52.24
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        68.51,
+        68.51
+      ],
+      "target_price": [
+        68.51,
+        85.86
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        88.1,
+        88.1
+      ],
+      "target_price": [
+        105.38,
+        128.43
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "DIOD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "VSH基准年化更高且成熟无源利润池分散风险，DIOD须用更多ATE/服务器复购才能补足现价回报"
+    },
+    {
+      "peer": "AOSL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VSH的盈利与现金缓冲更适合稳健参与，AOSL在较短观察窗的乐观和突破涨幅更大但亏损及稀释风险更高"
+    },
+    {
+      "peer": "LFUS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健优先LFUS的保护件现金和复购质量，高弹优先VSH更低进入估值与制造利润修复的右尾"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "英飞凌系统卡位更强，但当前买价及偏高AI捕获要求压低回报，VSH在本比较的稳健价格赔率和进攻弹性均较优"
+    },
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "VSH少承受大额并购融资叠加，稳健价格赔率占优；ON的IVR右尾与VSH制造右尾大致相当，暂优先VSH"
+    },
+    {
+      "peer": "MRAAY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "村田的高端电容工艺和重复交付更适合稳健复利，VSH在更短窗口的乐观与突破回报更高"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MPWR的系统内容与高毛利交付更适合稳健复利，VSH买价要求较低并有更高的乐观制造修复弹性"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NVTS名义突破倍数更大，但基准接近零回报且需收入跨数量级增长，证据调整后的高弹资金仍优先VSH"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT以系统交付和服务获得更强的基准证据，高弹赔率视角VSH的乐观与突破涨幅更大，适合作为小额补充"
+    },
+    {
+      "peer": "FLEX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在AI供电增长逻辑下FLEX的基准及进攻年化回报更高且已有交付，综合优先；分拆资金和更深下行须单独承担"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GOOGL的平台和客户底盘更适合长期复利，VSH的基准价格赔率与右尾更高但缺少平台持续性"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全和长期合同复购优先LIN，高弹资金优先VSH，LIN现价基准回报不足以充当进攻替代"
+    }
+  ]
+}
