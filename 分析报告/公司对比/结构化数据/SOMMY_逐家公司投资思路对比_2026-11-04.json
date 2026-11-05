@@ -1,0 +1,180 @@
+{
+  "ticker": "SOMMY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 16.09,
+    "date": "2026-11-03",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        12.82,
+        12.82
+      ],
+      "target_price": [
+        10.17,
+        11.94
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        30.03,
+        30.03
+      ],
+      "target_price": [
+        30.03,
+        34.61
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        46.25,
+        46.25
+      ],
+      "target_price": [
+        53.47,
+        60.69
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        61.82,
+        61.82
+      ],
+      "target_price": [
+        81.44,
+        91.25
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "SHECY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "信越的净现金、成熟材料复购及成本曲线更适合稳健持有；SOMMY低价修复和多业务期权的右尾更大。"
+    },
+    {
+      "peer": "ASGLY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均有集团资本配置与现金修复负担；SOMMY现有药品、农化与材料接续的价格空间更大，AGC不构成全面替代。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ENTG材料纯度更高但买价、债务到期与大额再投资压低赔率；当前更愿为SOMMY付较低的修复价格。"
+    },
+    {
+      "peer": "Q",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Q以已量产材料内容量获得接近SOMMY的基准回报，且右尾机制更集中；虽有PFAS和独立成本，仍为电子材料优先载体。"
+    },
+    {
+      "peer": "AJNMY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ABF配方资格与食品复购使味之素更适合稳健复利；SOMMY买价较低且修复右尾大，但玻璃芯并不等于ABF消失。"
+    },
+    {
+      "peer": "SMTOY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "住友电工的光连接已批量盈利，稳健性较优；SOMMY整体盈利修复的右尾较大，两者不是同一家公司的不同代码。"
+    },
+    {
+      "peer": "AXTI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AXT纯InP暴露更高，但需要高利润率、许可、子公司IPO与赎回同时顺利；SOMMY更低估值的多来源上行更划算。"
+    },
+    {
+      "peer": "HOCPY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "HOYA的高缺陷等级坯料、医疗复购和净现金更稳；SOMMY估值起点和盈利修复提供更大右尾。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "先进节点与封装直接截留客户预算，台积电基准现金及证据更强；SOMMY右尾百分比高但不构成风险调整后的全面胜出。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "美光已有经营现金和HBM交付，进攻赔率更大；其3251亿美元基准收入及周期利润率仍需预算守恒，不能当低波动核心。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约、分发与企业平台更适合复利；SOMMY更低起点的转型修复右尾大，微软亦受现金资本开支拖累。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德最低采购合同、配送网络和现金底线适合防守；现价增长赔率有限，SOMMY更适合承担小额进攻风险。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "再生元直接拥有更多药品现金权利及净金融资产，稳健性优于制药嵌入高负债集团；SOMMY跨业务修复的百分比右尾较大。"
+    }
+  ]
+}
