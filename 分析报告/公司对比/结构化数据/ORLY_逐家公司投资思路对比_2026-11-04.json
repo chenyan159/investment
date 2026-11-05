@@ -1,0 +1,156 @@
+{
+  "ticker": "ORLY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:06:11-08:00",
+  "reference_price": {
+    "value": 92.34,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        94.6,
+        94.6
+      ],
+      "target_price": [
+        72.6,
+        85.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        121.0,
+        121.0
+      ],
+      "target_price": [
+        113.9,
+        126.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        138.8,
+        138.8
+      ],
+      "target_price": [
+        140.4,
+        159.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        159.2,
+        159.2
+      ],
+      "target_price": [
+        177.6,
+        199.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AZO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ORLY专业网络与现金转换更成熟、普通悲观较浅，AZO更低估值与经营恢复提供更高右尾。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ORLY现金自给和需求韧性更适合稳健仓，AMZN云与平台增长提供更高上行但须验证资本回收与融资。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WMT平台化已计入较高估值，ORLY在本次买价下的基准年化与乐观弹性更有利。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "both_avoid",
+      "verdict": "target_preferred",
+      "reason": "ORLY成熟盈利与基准回报占优，TSLA现价需多项突破兑现，两者均不作为现价进攻资金首选。"
+    },
+    {
+      "peer": "ITW",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ITW上游品牌与工业组合质量真实，但当前每股增长和价格回报不足以胜过ORLY。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ORLY基准经营斜率及普通悲观更优，PGR核保修复杠杆右尾更大但峰值利润与准备金风险更高。"
+    },
+    {
+      "peer": "GWW",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "两者分销现金经济相近，ORLY买入倍数和普通受损结构略优，突破弹性大致相当。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COST经营与净现金更稳，但更高买入估值和更长原目标期使配置回报及右尾年化弱于ORLY。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "Visa资本效率和可归属现金更适合通用稳健核心，年化回报接近或略优，右尾相当但需承担支付监管。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM许可网络及每股经济现金优先满足防御核心，ORLY乐观突破弹性更高。"
+    }
+  ]
+}
