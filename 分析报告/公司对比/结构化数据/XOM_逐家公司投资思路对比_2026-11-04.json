@@ -1,0 +1,172 @@
+{
+  "ticker": "XOM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:30:00-08:00",
+  "reference_price": {
+    "value": 169.27,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        81.7,
+        81.7
+      ],
+      "target_price": [
+        76,
+        95.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        235.3,
+        235.3
+      ],
+      "target_price": [
+        205.9,
+        233.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        328.7,
+        328.7
+      ],
+      "target_price": [
+        307.2,
+        344.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        382.8,
+        382.8
+      ],
+      "target_price": [
+        379.3,
+        422.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "CVX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同油价下XOM低成本资产、利润及现金覆盖更好，CVX较高原油假设不足以证明相对优势。"
+    },
+    {
+      "peer": "COP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "XOM经营与资产负债韧性更强；COP资本转现有弹性，但油价对齐后右尾未形成明确优势。"
+    },
+    {
+      "peer": "SLB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "XOM适合现金与周期韧性，SLB在国际油服恢复及数据中心第二曲线的年化右尾更强。"
+    },
+    {
+      "peer": "WMB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "XOM减少建设期融资和少数权益风险，WMB已签通道与供电复制提供更高增长年化。"
+    },
+    {
+      "peer": "ET",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "税前收入及天然气收费配置优先ET，XOM仍提供ET不能替代的原油与炼油通胀暴露。"
+    },
+    {
+      "peer": "NEE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NEE外部融资、合并稀释与监管条件限制普通股回报，XOM现金自给和右尾赔率更优。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "XOM现金底盘更成熟，CEG存量核电重定价与长约复制是清洁电力主题更直接的进攻载体。"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CCJ买价需要矿山恢复及权益业务现金兑现，当前基准与右尾均不足以抵偿其估值和执行风险。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "XOM更适合保全与稳定现金，BE制造及多客户放量有更强右尾，但只适合能承受极大损失的里程碑仓。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN合同供气与切换成本支持稳健复利，XOM商品和资源效率杠杆带来更强乐观与突破弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软成熟软件收费权和更快每股经营增长同时胜出，XOM用于能源暴露及组合分散。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "Visa净收费与低维护资本更适合稳健复利，右尾年化相近，XOM的独特价值在商品周期分散。"
+    }
+  ]
+}
