@@ -1,0 +1,73 @@
+{
+  "ticker": "HOCPY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:16-08:00",
+  "reference_price": {
+    "value": 156.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        83.1,
+        83.1
+      ],
+      "business_price": [
+        152.9,
+        152.9
+      ],
+      "target_price": [
+        99.5,
+        116.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        172.7,
+        172.7
+      ],
+      "business_price": [
+        227.2,
+        227.2
+      ],
+      "target_price": [
+        211.2,
+        238.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        257.8,
+        257.8
+      ],
+      "business_price": [
+        293.1,
+        293.1
+      ],
+      "target_price": [
+        307.6,
+        342.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        383.1,
+        383.1
+      ],
+      "business_price": [
+        359.0,
+        359.0
+      ],
+      "target_price": [
+        420.2,
+        463.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
