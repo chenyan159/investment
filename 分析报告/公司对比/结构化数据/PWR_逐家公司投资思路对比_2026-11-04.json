@@ -1,0 +1,180 @@
+{
+  "ticker": "PWR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:00-08:00",
+  "reference_price": {
+    "value": 580.44,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        467.7,
+        467.7
+      ],
+      "target_price": [
+        237.3,
+        294.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1050.4,
+        1050.4
+      ],
+      "target_price": [
+        770.6,
+        891.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1363.8,
+        1363.8
+      ],
+      "target_price": [
+        1118.0,
+        1314.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1756.0,
+        1756.0
+      ],
+      "target_price": [
+        1640.8,
+        1946.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "EME",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相同复杂机电逻辑下，EME的起点经营倍数、净现金和基准回报更优，PWR的电网入口尚不足抵消溢价。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "FIX的利润与净现金更厚、现有模块能力使乐观回报更强，须承担更集中的技术客户和得州审批风险。"
+    },
+    {
+      "peer": "IESC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看PWR的电网底盘和更新财报，高弹看IESC较低买价及制造扩张，后者须先核DBM整合、控制股东与真实现金。"
+    },
+    {
+      "peer": "MYRG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看PWR的客户与工程平台，高弹看MYRG较小市值的利润恢复，但回款和项目估计调整限制其底仓资格。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PWR已有集团现金和多业务底盘，BE现价的基准回报近零且换堆、许可、融资和稀释负担更重。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN的产品资格、设备利润及当前买价支持更好的基准与乐观赔率，PWR仅在更弱证据的极端突破上沿稍大。"
+    },
+    {
+      "peer": "HUBB",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看HUBB的小额关键部件和较低正常化倍数，高弹看PWR跨专业交付平台；HUBB收购资本回报仍是短板。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GEV瓶颈更硬但正常化估值已更充分，PWR在同一电力建设逻辑下的基准回报和突破幅度更好。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "VRT的设备和服务可跨客户复制，基准与右尾回报优于PWR，但仍是高波动成长配置。"
+    },
+    {
+      "peer": "AEP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健收益看AEP的监管收费与股息，高弹看PWR的内生增长；AEP持续外部融资使其不能取代现金资产。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT企业软件收费权更强，较早目标日折算后基准及右尾年化回报也更高；AI资本与组件投入仍限制其现金安全边际。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾共同尾部的前提下，TSM工艺和制造壁垒及基准回报更强；PWR可分散地域风险，不能替代先进制造。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看LIN区域供气网络与长期收费，高弹看PWR；LIN当前基准回报较低，不因此自动成为优先买入。"
+    }
+  ]
+}
