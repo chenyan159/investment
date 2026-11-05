@@ -1,0 +1,180 @@
+{
+  "ticker": "ETR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:05:49-08:00",
+  "reference_price": {
+    "value": 111.9,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        104.4,
+        104.4
+      ],
+      "target_price": [
+        70.7,
+        84.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        154.1,
+        154.1
+      ],
+      "target_price": [
+        149.6,
+        163.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        173.7,
+        173.7
+      ],
+      "target_price": [
+        172.4,
+        195.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        188.4,
+        188.4
+      ],
+      "target_price": [
+        195.6,
+        229.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "avoid",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "AEP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR每股增长与项目可见度更适合稳健配置；AEP合同能源平台复制的突破弹性略大，但需更重资本和LOA转化。"
+    },
+    {
+      "peer": "DTE",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ETR近期已兑现工业增长、基准年化及右尾均更强；DTE更低估值与较小受损回撤不足以抵消增长较慢和更长等待。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR受监管回收及基准回报更适合稳健资金；CEG存量核电净重定价带来更强上行，但需承担电价与追加资本风险。"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR下行较浅且受监管盈利确定性更高；VST现价的现金回报与核电长约右尾更高，是供电进攻预算优先替代。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR基准正回报和资本保全明显更强；BE现场主供规模化的绝对右尾更大，但极弱下行与产能现金门槛只适合极小风险仓。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR基准含息回报和较小受损回撤胜出；GEV合格产位、价格批次和服务的经营杠杆提供更强进攻弹性。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN基准回报更高、经营现金为正且无需持续大额新股融资，受损回撤也较小，是电力基础设施资金的更优首选。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR受监管回收及下行更适合稳健仓；PWR跨园区机电复制与生产率提升的右尾更大，但固定价格承包和回款风险更高。"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR基准收益、合同回收和下行优于Meta投入洪峰；Meta广告与代理变现的右尾更大，需吸收资本及法律责任。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETR现金责任边界较清晰且受损回撤较小；Alphabet搜索、云与TPU扩展的乐观弹性更高，但资本和信用支持义务更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软企业软件收费权、更短目标窗口及较强资本渠道支持更高基准与右尾回报，ETR主要作为不同监管与行业风险的补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德成熟供气现金与信用韧性更适合资本保全；ETR每股成长和乐观弹性更高，收入增长型公用事业配置可互补。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "台积电先进制造收费权、净现金和基准每股盈利增长均更强；ETR用于分散台湾地缘与半导体周期共同尾部。"
+    }
+  ]
+}
