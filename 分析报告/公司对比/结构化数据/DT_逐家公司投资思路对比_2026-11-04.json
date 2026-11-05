@@ -1,0 +1,172 @@
+{
+  "ticker": "DT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:39:43-08:00",
+  "reference_price": {
+    "value": 46.78,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        47.9,
+        47.9
+      ],
+      "target_price": [
+        33,
+        40.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        60.5,
+        60.5
+      ],
+      "target_price": [
+        60.5,
+        70.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        73.9,
+        73.9
+      ],
+      "target_price": [
+        85.5,
+        100
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        78,
+        78
+      ],
+      "target_price": [
+        102.5,
+        120.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "DDOG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "DT的基准年化和受损下限更优，DDOG更快的业务增长尚不足补偿现价及SBC成本"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DT在基准回报与可观测性纯度占优，CSCO的AI网络组合突破右尾更大但条件更多"
+    },
+    {
+      "peer": "PANW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PANW业务威胁真实，但当前基准年化偏低且高倍数，DT在两类资金的现价赔率均更好"
+    },
+    {
+      "peer": "IBM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "在不含股息的增长配置标准下DT基准与右尾年化更强，IBM适合另设的收入型资金而非更优可观测性载体"
+    },
+    {
+      "peer": "NOW",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近当期Owner现金倍数下NOW拥有更宽的执行收费入口和更强基准/突破回报，是广义企业AI的优先载体"
+    },
+    {
+      "peer": "SNOW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "SNOW基准交易回报接近零且SBC现金门槛更高，DT提供更早现金与更好的年化右尾"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "多层收费入口与续约底盘令MSFT适合广义AI核心配置；DT仅在轻资本、独立可观测性及更小市值上补充"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DT的现金自给和受损回撤更适合稳健资金，AMZN的AWS/芯片增长右尾更强但依赖大额资本回收"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DT在现金自给和中期回撤约束下更合适，GOOGL在TPU外售及云增长的右尾更强但并非低风险替代"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE以显著较低的现金倍数提供更高基准与右尾赔率，愿承担创作收费迁移风险的资金应优先于DT"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DT更适合回撤与资本承诺受限的稳健预算，NVDA在真实平台放量的高弹性资金中明显胜出"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的支付收费和下行底线更适合稳健复利，DT在更短观察期的乐观/突破年化弹性占优"
+    }
+  ]
+}
