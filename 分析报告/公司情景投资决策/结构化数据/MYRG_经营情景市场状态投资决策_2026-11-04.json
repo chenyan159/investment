@@ -1,0 +1,73 @@
+{
+  "ticker": "MYRG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 263.89,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        96.0,
+        96.0
+      ],
+      "business_price": [
+        173.2,
+        173.2
+      ],
+      "target_price": [
+        121.7,
+        151.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        309.7,
+        309.7
+      ],
+      "business_price": [
+        483.2,
+        483.2
+      ],
+      "target_price": [
+        425.5,
+        507.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        476.5,
+        476.5
+      ],
+      "business_price": [
+        637.3,
+        637.3
+      ],
+      "target_price": [
+        696.2,
+        804.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        683.9,
+        683.9
+      ],
+      "business_price": [
+        769.7,
+        769.7
+      ],
+      "target_price": [
+        943.2,
+        1111.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
