@@ -1,0 +1,172 @@
+{
+  "ticker": "ODFL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:30:00-08:00",
+  "reference_price": {
+    "value": 179.39,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        163.12,
+        163.12
+      ],
+      "target_price": [
+        112.55,
+        131.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        232.18,
+        232.18
+      ],
+      "target_price": [
+        212.89,
+        240.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        310.98,
+        310.98
+      ],
+      "target_price": [
+        312.98,
+        350.31
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        390.97,
+        390.97
+      ],
+      "target_price": [
+        417.05,
+        475.94
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "UNP",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ODFL无大型并购融资与增发门槛，且同期限乐观及突破弹性更高，UNP仅在偏好铁路股息与路权时补充。"
+    },
+    {
+      "peer": "CSX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ODFL的净现金与服务质量优于CSX，基准和右尾价格年化亦更高，CSX当前不构成更优运输替代。"
+    },
+    {
+      "peer": "UPS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角选ODFL的现金与低杠杆，高弹视角选UPS的利润修复和更低正常化估值，但须先确认分红由经营现金覆盖。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CMI的正常化买价和发电及售后增量提供更高基准及乐观回报，是广义工业盈利修复的更优载体，先等11月5日验证且不称纯LTL替代。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角选ODFL较小的经营与融资尾部，高弹视角选CAT已有订单支撑的发电放量，其乐观路径更容易由实际交付验证。"
+    },
+    {
+      "peer": "GWW",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者稳健价格回报大致相当，GWW份额增长抵消库存与归属复杂性，ODFL在相近买价纪律下拥有更强网络密度右尾。"
+    },
+    {
+      "peer": "FAST",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FAST增长更快但正常化倍数及现金分配负担更高，ODFL以较低估值提供相近基准与更强右尾，当前优先ODFL的触发后参与。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角选ODFL，进攻小仓视角选SYM的新合同和平台复制右尾，同时接受其客户集中、完整经济单位稀释及大幅损失风险。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角选ODFL的现金自给，进攻视角选AMZN的AWS及芯片平台弹性，但其高目标价依赖融资和资本回收而不属于稳健确定回报。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健底仓选LIN的合同和更浅受损回撤，追求上行弹性选ODFL的网络密度修复，LIN不提供同等突破幅度。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选V的轻资本收费与持续交易，右尾选ODFL的利用率跃升，V须按全股类权益且以11月4日较高买价重新计回报。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健底仓选WM的许可和重复收费及更浅受损区间，高弹赔率选ODFL，WM杠杆与资源化再投资使其同样不能无价买入。"
+    }
+  ]
+}
