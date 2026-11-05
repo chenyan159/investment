@@ -1,0 +1,172 @@
+{
+  "ticker": "TOELY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:10:00-08:00",
+  "reference_price": {
+    "value": 30.33,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        31.38,
+        31.38
+      ],
+      "target_price": [
+        14.32,
+        17.66
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        75.55,
+        75.55
+      ],
+      "target_price": [
+        50.39,
+        58.49
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        112.87,
+        112.87
+      ],
+      "target_price": [
+        87.25,
+        105.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        148.46,
+        148.46
+      ],
+      "target_price": [
+        130.67,
+        162.84
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "LRCX",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "泛林的量产现金和净收费更适合稳健配置，东京电子冷冻刻蚀及多平台扩展的条件右尾更高。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AMAT基准和右尾年化均更好，平台分散且成熟利润率更强，是当前同设备逻辑下更优主载体。"
+    },
+    {
+      "peer": "ASMIY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健视角大致相当，ASM的ALD纯度抵消东京电子的平台分散；东京电子突破年化更高。"
+    },
+    {
+      "peer": "ACMR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "东京电子现金和资格更稳健，ACMR小市值多产品平台提供更大条件右尾，但要付两层稀释与政策风险。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ASML的不可绕开性、受损回撤和四情景年化更优，构成更好的AI设备主载体。"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "东京电子基准及下行更好，年化右尾与Besi相近，较少依赖HBM全面转混合键合。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLA更好的服务稳定性、基准年化与受损区间胜稳健，东京电子新增工艺的突破年化胜进攻。"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角风险收益大致相当，MKSI融资风险较高但估值缓冲更好，进攻视角其去杠杆与部件放量明显占优。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM在成熟制造确定性与基准回报占优，东京电子不承担同等晶圆厂资本且突破右尾更高。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "东京电子较少依赖存储净价格维持极高利润率，MU的价格杠杆、已成现金和条件右尾更适合高风险进攻。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "以当前经营与资本路径，东京电子股东现金和基准／突破年化更好，微软的软件质量尚未抵消AI资本回收压力。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健视角林德更平稳但预期回报较低、两者均缺深DCF折价；进攻和当前整体资金机会成本偏向东京电子。"
+    }
+  ]
+}
