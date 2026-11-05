@@ -1,0 +1,188 @@
+{
+  "ticker": "ABBV",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:48:06-08:00",
+  "reference_price": {
+    "value": 294.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        222.7,
+        222.7
+      ],
+      "target_price": [
+        142.0,
+        176.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        306.4,
+        306.4
+      ],
+      "target_price": [
+        306.4,
+        351.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        352.3,
+        352.3
+      ],
+      "target_price": [
+        403.2,
+        454.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        362.6,
+        362.6
+      ],
+      "target_price": [
+        467.5,
+        537.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "JNJ",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "强生的分散与较低净债抵消艾伯维的免疫增长优势；分拆财富还原后两者大致相当。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维的免疫接续更清晰；进攻侧安进的MariTide与肿瘤前移右尾更大。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维的现金及需求分散较好；进攻侧礼来的付费患者年与新剂型复制更有弹性。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "再生元在相近免疫治疗逻辑下拥有更低现金预付倍数、更强资产缓冲和更大的基准及右尾回报。"
+    },
+    {
+      "peer": "MRK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维已证明接续且专利窗口较后；进攻侧默沙东ADC、疫苗与TL1A接续赔率更高。"
+    },
+    {
+      "peer": "GILD",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两者稳健性各有约束；吉利德较低现金倍数和更大商业右尾使其在分红药企配置中略优先。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维的业务分散与分红胜出；进攻侧argenx已有付费基础并有更强免疫平台弹性。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维有现金自给优势；极小事件预算下Kyverna的免疫重置右尾更大但可归零。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "丹纳赫把单一药物风险分散到多个生产工作流，基准回报更高且压力回撤较浅。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "麦克森获益于多品牌用药与专科服务，最新上修验证基准，当前资金回报仍优于艾伯维。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健侧艾伯维较少承担精算和监管资本修复风险；进攻侧联合健康的利润修复右尾更高。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软基准年化与平台延展更高，虽现金倍数较贵，仍更值得占用长期核心和进攻预算。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Visa的资本负担、持续收费和基准复利更占优，艾伯维较低表观P/E不足以弥补期限风险。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "林德与艾伯维的右尾接近，但合同现金流的持续性与更浅压力回撤令林德稳健配置更优。"
+    }
+  ]
+}
