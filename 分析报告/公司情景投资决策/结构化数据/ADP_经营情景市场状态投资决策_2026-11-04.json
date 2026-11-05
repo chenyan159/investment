@@ -1,0 +1,73 @@
+{
+  "ticker": "ADP",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:56-08:00",
+  "reference_price": {
+    "value": 303.54,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        162.53,
+        162.53
+      ],
+      "business_price": [
+        266.6,
+        266.6
+      ],
+      "target_price": [
+        201.13,
+        231.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        289.89,
+        289.89
+      ],
+      "business_price": [
+        380.94,
+        380.94
+      ],
+      "target_price": [
+        373.61,
+        402.35
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        352.64,
+        352.64
+      ],
+      "business_price": [
+        420.99,
+        420.99
+      ],
+      "target_price": [
+        444.65,
+        476.41
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        400.48,
+        400.48
+      ],
+      "business_price": [
+        461.28,
+        461.28
+      ],
+      "target_price": [
+        522.01,
+        574.21
+      ],
+      "evidence": "weak"
+    }
+  }
+}
