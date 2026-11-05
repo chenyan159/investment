@@ -1,0 +1,172 @@
+{
+  "ticker": "BKNG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 170.97,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        142.5,
+        142.5
+      ],
+      "target_price": [
+        96.9,
+        121.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        272.8,
+        272.8
+      ],
+      "target_price": [
+        264.7,
+        324.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        338.9,
+        338.9
+      ],
+      "target_price": [
+        401.2,
+        473.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        407.1,
+        407.1
+      ],
+      "target_price": [
+        567.3,
+        696.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "UBER",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健BKNG胜，右尾UBER胜；UBER利润扩张和AV选择权更大，但收购及车队资本回收更复杂。"
+    },
+    {
+      "peer": "MELI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健BKNG胜，右尾MELI胜；新Q3支持需求，却未证明全成本履约和信贷资本可以充分释放股东现金。"
+    },
+    {
+      "peer": "SHOP",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；SHOP交易增长更快，但现价支付的资本化倍数高，基准回报低、突破回报也较弱。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；Google战略入口更强，但整个集团资本回收负担更重，当前条件回报未全面胜过BKNG。"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；META基准现金回收偏弱，代理突破门槛更多；A+C完整经济权益才是可比价格。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健大致相当、右尾BKNG胜；微软企业续约更强，BKNG现金回收更快且当前条件赔率更高。"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；苹果的客户控制权强，但高买价使基准及突破回报均较低。"
+    },
+    {
+      "peer": "V",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；Visa经营更分散，但当前价下基准回报明显较低，安全性优势不足以抹去估值差。"
+    },
+    {
+      "peer": "MA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健MA胜，右尾BKNG胜；MA基准回报接近而压力回撤更浅，BKNG受益于更便宜的起价和旅行平台跃迁。"
+    },
+    {
+      "peer": "AXP",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；运通有会员和融资租金，但信用资本约束更高，当前价下两类回报未胜过BKNG。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；Costco经营抗周期更强，但当前估值和更长兑现期使基准年化与右尾都偏低。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角BKNG胜；SPGI收费标准更稳定，但当前价下基准回报更低，远期数据期权尚不足以补足差额。"
+    }
+  ]
+}
