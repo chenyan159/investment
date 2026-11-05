@@ -1,0 +1,172 @@
+{
+  "ticker": "TT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 410.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        439.0,
+        439.0
+      ],
+      "target_price": [
+        287.4,
+        335.1
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        670.5,
+        670.5
+      ],
+      "target_price": [
+        634.0,
+        705.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        813.9,
+        813.9
+      ],
+      "target_price": [
+        856.8,
+        972.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        997.9,
+        997.9
+      ],
+      "target_price": [
+        1157.8,
+        1300.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CARR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "TT的服务现金与低负债胜出，CARR更高名义右尾尚不足抵消净价、欧洲资本与证据质量约束。"
+    },
+    {
+      "peer": "JCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT负债更轻、服务底盘较稳；JCI已兑现的增长和较短目标期限使进攻年化更强。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT现金与分散业务更稳，AAON在BASX毛利、吞吐和回款改善后有更大的小基数右尾。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT适合稳健持有，MOD在产线、补价和营运资金恢复时具有更大的盈利修复弹性。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角由TT服务韧性与VRT增长现金互抵，AI设施进攻配置优先选择已兑现交付和系统利润的VRT。"
+    },
+    {
+      "peer": "SPXC",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT的服务现金更强，SPXC的室外热排出更顺温水路线且基数较小，但制造和并购现金仍须验证。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "ETN电力瓶颈与航空分散性、TT更低净债与服务现金各有优势，两个视角均无稳定压倒性替代。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT对项目延期更有韧性，FIX依靠熟练工与预制产能获得更高进攻回报，同时承担施工和客户预收风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台收费权使MSFT在较短期限的右尾年化更强，稳健视角需以高资本回收风险抵消其壁垒优势。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN长约韧性强，但现价下项目资本负担与较低基准及右尾回报，使TT的现金增长和机会成本更优。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Visa网络质量优异，但统一至11月4日买价后的基准年化偏低，TT以更高每股增长和较轻定价要求胜出。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WM的需求更防御，但当前估值、债务和维持资本限制回报，TT的基准现金复利与进攻空间更有吸引力。"
+    }
+  ]
+}
