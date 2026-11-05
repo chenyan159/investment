@@ -1,0 +1,73 @@
+{
+  "ticker": "HTHIY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:48:27-08:00",
+  "reference_price": {
+    "value": 31.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        19.61,
+        19.61
+      ],
+      "business_price": [
+        27.2,
+        27.2
+      ],
+      "target_price": [
+        20.0,
+        24.42
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        41.85,
+        41.85
+      ],
+      "business_price": [
+        48.77,
+        48.77
+      ],
+      "target_price": [
+        45.74,
+        51.74
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        58.17,
+        58.17
+      ],
+      "business_price": [
+        59.29,
+        59.29
+      ],
+      "target_price": [
+        62.94,
+        72.76
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        89.21,
+        89.21
+      ],
+      "business_price": [
+        74.8,
+        74.8
+      ],
+      "target_price": [
+        88.9,
+        104.62
+      ],
+      "evidence": "weak"
+    }
+  }
+}
