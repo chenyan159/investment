@@ -1,0 +1,180 @@
+{
+  "ticker": "AEIS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:57:40-08:00",
+  "reference_price": {
+    "value": 211.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        195,
+        195
+      ],
+      "target_price": [
+        115.4,
+        142.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        545.9,
+        545.9
+      ],
+      "target_price": [
+        430.8,
+        508.8
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        754.7,
+        754.7
+      ],
+      "target_price": [
+        705.2,
+        809.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        936.6,
+        936.6
+      ],
+      "target_price": [
+        1006.2,
+        1205
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MKSI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEIS的低融资压力；高弹选MKSI的更低经营倍数及去杠杆，不能把后者的债务当免费杠杆"
+    },
+    {
+      "peer": "BELFB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角均选AEIS：双业务底盘、较低基准DCF溢价与更强每股右尾；Bel订单好不等于更便宜"
+    },
+    {
+      "peer": "FLEX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEIS；追求重组和系统平台右尾选FLEX，后者须先验证2027过桥融资与普通股归属"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AEIS；严格追求多客户VPD/IP最远右尾时VICR胜，但其受损回撤与商业门槛显著更大"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角均选AEIS当前买价：MPWR平台质量更高，但净现金流和现价要求并未给出更优赔率"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选VRT的系统交付和服务广度；高弹选AEIS较低起点与RF新增份额，不能把VRT设施收入全算进PSU池"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选AMAT的整机与服务议价权；高弹选AEIS的更小基数与较低倍数，供应商重要性不等于拥有整机利润"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LRCX既有工艺和现金；高弹选AEIS。新RF可扩大AEIS内容，但采购权和提效收益仍在OEM"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健核心首选KLAC，客户工艺控制与持续现金更强；高弹选AEIS，代价是更深周期回撤"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "可承担台湾地缘风险时稳健选TSM的核心收费权与现金；高弹选AEIS小基数及两类部件内容升级"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT成熟订阅和需求分散；高弹选AEIS。微软资本支出是预算外证，不能反推它就是AEIS匿名客户"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "当前两视角选AEIS：Alphabet商业壁垒强，但高资本投入、现金负值和外部权益削弱本次买价的资本保全与右尾效率"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选LIN的合同和网络，但524.74仍需控买价；高弹选AEIS，其经营放量空间远大于气体集团"
+    }
+  ]
+}
