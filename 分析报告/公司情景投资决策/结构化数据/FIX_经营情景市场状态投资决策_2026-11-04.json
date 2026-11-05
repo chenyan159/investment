@@ -1,0 +1,73 @@
+{
+  "ticker": "FIX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:50:52-08:00",
+  "reference_price": {
+    "value": 1091.31,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        459.5,
+        459.5
+      ],
+      "business_price": [
+        965.8,
+        965.8
+      ],
+      "target_price": [
+        576.0,
+        722.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        1136.5,
+        1136.5
+      ],
+      "business_price": [
+        2134.9,
+        2134.9
+      ],
+      "target_price": [
+        1829.4,
+        2165.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        1656.3,
+        1656.3
+      ],
+      "business_price": [
+        2733.7,
+        2733.7
+      ],
+      "target_price": [
+        2773.3,
+        3319.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        2125.8,
+        2125.8
+      ],
+      "business_price": [
+        3300.1,
+        3300.1
+      ],
+      "target_price": [
+        3750.7,
+        4420.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
