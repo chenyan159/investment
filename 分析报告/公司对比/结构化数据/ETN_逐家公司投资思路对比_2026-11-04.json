@@ -1,0 +1,180 @@
+{
+  "ticker": "ETN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:11:26-08:00",
+  "reference_price": {
+    "value": 353.08,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        326.6,
+        326.6
+      ],
+      "target_price": [
+        248.7,
+        286.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        574.2,
+        574.2
+      ],
+      "target_price": [
+        568.4,
+        655.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        705.8,
+        705.8
+      ],
+      "target_price": [
+        779.2,
+        886.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        764.4,
+        764.4
+      ],
+      "target_price": [
+        902.2,
+        1047.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ABB自动化与服务分散度较好，ETN的电气和Boyd增长更快；稳健接近、进攻偏ETN。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ETN减少了PTC大额并购融资与股权摊薄的不确定性，现价基准回报也更高。"
+    },
+    {
+      "peer": "HUBB",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "HUBB电网部件和现金转换更稳，ETN系统内容和近期增长更强，二者可互补。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN业务与客户更分散，NVT以更低经营倍数换取更高液冷及配电增长弹性，但并购后压力回撤更深。"
+    },
+    {
+      "peer": "POWL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN分散度与下行承载力更优，POWL的较小收入基数和大单复制提供更高右尾但客户与项目集中。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN的航空与非数据中心底盘降低集中风险，VRT的纯度、服务附着和系统复制使上行更大。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN成熟现金和客户分散更可靠，VICR垂直供电及许可扩张更凸，但资格、专利和客户集中门槛更高。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GEV燃机与电网瓶颈更稀缺，但现价正常化倍数和预付资金履约责任使其基准及压力赔率逊于ETN。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ETN产品资格和更高单位利润优于工程总价责任；PWR跨园区复制右尾较大但难称全面更优替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN的新增现金需求与交付归属更易界定，微软的收费生态与AI平台突破更大，但算力和租赁承诺压低近期现金。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN更能承受计算架构分流，NVDA平台利润及现金右尾更大，但客户预算、ASIC与信用支持约束更强。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟网络和低设备资本强度胜于ETN的稳健复利，ETN在当前买价的基准回报及产业上行更高。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "COST会员循环更稳定，但现价高倍数与较长观察期压低年化回报，ETN在两个配置视角下更具价格吸引力。"
+    }
+  ]
+}
