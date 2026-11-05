@@ -1,0 +1,172 @@
+{
+  "ticker": "ENPH",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:29:37-08:00",
+  "reference_price": {
+    "value": 31.55,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        6.9,
+        6.9
+      ],
+      "target_price": [
+        8,
+        12
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        31.3,
+        31.3
+      ],
+      "target_price": [
+        31.3,
+        34.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        62.2,
+        62.2
+      ],
+      "target_price": [
+        69.2,
+        83.1
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        98.3,
+        98.3
+      ],
+      "target_price": [
+        122.2,
+        158
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "negative",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "GNRC",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健GNRC；高弹GNRC；已有客户资格与交付支持较高基准及乐观回报，构成备电/AI电力资金更优载体。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "direct_competitor",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健双双回避；高弹ENPH；Tesla整股高估值使储能优势难转成当前买价赔率，ENPH是更便宜的特定能源/SST期权。"
+    },
+    {
+      "peer": "FLNC",
+      "relation": "alternative",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健双双回避；极高风险赔率FLNC；右尾倍数更高但有归零分支；该胜负只适用于信用窗口可承受的资金。"
+    },
+    {
+      "peer": "ENS",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健ENS；高弹ENS；成熟现金底盘和更高乐观回报优于ENPH；ENPH仅在追求SST直接暴露时有补充意义。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健ETN；纯右尾ENPH；ETN是成熟电气配置优先项，ENPH的更高突破倍数需承担主业修复与新业务双重验证。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健VRT；高弹VRT；乐观回报与证据更优，已有完整交付和服务能力；ENPH突破上沿略高不足以反转综合取舍。"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健双双回避；纯高弹NVTS；低基数和IVR平台右尾更大，现金由融资取得；不是ENPH主业质量的全面替代。"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健IFNNY；直接SST右尾ENPH；上游跨路线收费较稳，汽车/工业体量稀释AI弹性，不能把器件池与整机池相加。"
+    },
+    {
+      "peer": "FLEX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健FLEX；高弹FLEX；当前业务已升级、上行幅度更高；须保留Axiom权益并落实融资，不能把未来FLEX单股价直接相比较。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健TSM；风险调整后的高弹TSM；基准/乐观收益和商业锁定更优，ENPH仅在分散半导体地域风险及追求SST特定期权时有补充性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健MSFT；极端右尾ENPH；微软基准胜率和收费权更强；按各自年化后ENPH突破弹性仍高，损伤资本保全更弱。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健GOOGL；极端右尾ENPH；Alphabet正常业务有更大基准回报，ENPH更小市值带来SST跃迁弹性并需更多商业验证。"
+    }
+  ]
+}
