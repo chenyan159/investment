@@ -1,0 +1,164 @@
+{
+  "ticker": "CAT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:00-08:00",
+  "reference_price": {
+    "value": 591.3,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        411.5,
+        411.5
+      ],
+      "target_price": [
+        270.3,
+        317.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        883.9,
+        883.9
+      ],
+      "target_price": [
+        752.2,
+        850.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1136.2,
+        1136.2
+      ],
+      "target_price": [
+        1093.7,
+        1219.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1236.4,
+        1236.4
+      ],
+      "target_price": [
+        1327.4,
+        1510.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "negative",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "CMI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健CMI胜、高弹CMI胜：更低正常化买价、2029基准回报更高；同发动机逻辑优先CMI，先核11/5财报"
+    },
+    {
+      "peer": "GNRC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健CAT胜、高弹GNRC胜：CAT制造和分散现金更稳，GNRC已获订单相对11B市值的放量弹性更大"
+    },
+    {
+      "peer": "DE",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健CAT胜、高弹CAT胜：DE已预付农机修复，CAT发电增长更可见、当前基准回报更高"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健CAT胜、高弹GEV胜：CAT基准回报较高；GEV更直接受益大型燃机/电网与新架构右尾"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健CAT胜、高弹CAT胜：BE只有突破上端更高，基准几乎无回报、悲观损失更深，风险调整后优先CAT"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健ETN胜、高弹ETN胜：电源路线更中性、基准回报高且悲观损失较小；工业电气稳健主选"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健VRT胜、高弹VRT胜：基准现金/盈利增长及右尾更大，承受高波动时优先VRT；不把液冷采用直接当毛利"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健MSFT胜、高弹MSFT胜：平台重复收费与主供设备一次销售不同；半年不加盈利的保守对齐后仍更优"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健NVDA胜、高弹NVDA胜：高现金盈利和显著更大的每股增长；结论依赖客户预算与信用约束，不能按高目标价机械重仓"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健TSM胜、高弹TSM胜：同AI预算下工艺瓶颈、低稀释与基准回报更强；台湾极端尾部须另设集中度"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健LIN胜、高弹CAT胜：LIN需求和现金波动更小，CAT发电主供与矿山自动化有更大上行"
+    }
+  ]
+}
