@@ -1,0 +1,172 @@
+{
+  "ticker": "SBUX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:16-08:00",
+  "reference_price": {
+    "value": 109.7,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        52.48,
+        52.48
+      ],
+      "target_price": [
+        40.09,
+        48.35
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        96.57,
+        96.57
+      ],
+      "target_price": [
+        88.62,
+        104.53
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        116.05,
+        116.05
+      ],
+      "target_price": [
+        120.86,
+        140.14
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        140.1,
+        140.1
+      ],
+      "target_price": [
+        163.39,
+        186.67
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "MCD",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MCD以更低估值购买更稳定的总部现金，基准与右尾回报均高于SBUX；仍承担加盟商投入约束。"
+    },
+    {
+      "peer": "CMG",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CMG有更长的店数复制空间及净现金，正常经营即可产生更高回报，右尾也不必依赖SBUX式修复溢价。"
+    },
+    {
+      "peer": "KO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利优先KO的收费与现金转化；仅比较修复右尾时SBUX的营业杠杆和突破年化上沿更高，两者现价均非优先进攻。"
+    },
+    {
+      "peer": "PEP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "PEP以更低正常化倍数购买分散现金与北美修复期权，右尾也更大；NACP对集团规模贡献有限，不能把它视作纯星巴克渠道股。"
+    },
+    {
+      "peer": "MNST",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MNST的国际渗透与无债务缓冲优于SBUX的成熟网络修复，虽估值昂贵，基准及突破回报仍更好。"
+    },
+    {
+      "peer": "COST",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "稳健优先COST的会员与资产负债表；高弹赔率与SBUX大致相当，均非进攻首选，COST需更低买价才宜配足。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "WMT的必需消费底盘与广告履约利润扩展提供更好基准及右尾，现价现金估值也偏满，属于有条件替代。"
+    },
+    {
+      "peer": "KR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KR更低的买入倍数提供更高修复赔率；法律与并购风险使其仍应受限参与，而非无条件防御仓。"
+    },
+    {
+      "peer": "UBER",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "UBER可从多品牌交易与广告获利，正常化买价与右尾优于SBUX；并购和收费权风险使其更适合成长进攻仓。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "V的网络转换成本及每股现金复利优于SBUX，按全股类经济权益修正后基准回报仍更高。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT的平台收费权及有收入支持的增长胜过SBUX，资本回收仍是约束，不能只按GAAP EPS宣称廉价。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "WM的处置许可和重复现金较难被替代，基准及右尾均更好，惟当前市场价仍高于保守DCF。"
+    }
+  ]
+}
