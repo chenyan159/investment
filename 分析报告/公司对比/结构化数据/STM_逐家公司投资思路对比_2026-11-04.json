@@ -1,0 +1,180 @@
+{
+  "ticker": "STM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:57:49-08:00",
+  "reference_price": {
+    "value": 45.6,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        34.0,
+        34.0
+      ],
+      "target_price": [
+        27.1,
+        32.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        76.7,
+        76.7
+      ],
+      "target_price": [
+        76.7,
+        85.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        110.8,
+        110.8
+      ],
+      "target_price": [
+        123.3,
+        148.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        148.6,
+        148.6
+      ],
+      "target_price": [
+        199.5,
+        250.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "STM少一层大型现金并购杠杆，ON末级供电更直接；现价风险调整后优先STM。"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "英飞凌供电卡位更强，STM净现金、硅光/MCU及较高右尾使组合取舍略偏STM。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TI商业质量更好，但现价基准年化过低；STM的正常兑现价格赔率更优。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ADI现金质量占优，但现价对应较低基准回报与更大压力回撤，STM更值得新增资金。"
+    },
+    {
+      "peer": "MCHP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "STM有更好的净现金、正常兑现回报和非线性组合，MCHP修复受资本索取权分流。"
+    },
+    {
+      "peer": "TSEM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选STM的分散底盘；集中押注硅光放量选TSEM，需承受更深回撤及扩产现金风险。"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选STM；只追求小额资本右尾可选NVTS，其更大倍数伴随更弱基准和约九成下行。"
+    },
+    {
+      "peer": "POWI",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "POWI财报改善值得承认，但其基准回报仍近零；STM不需要等待同样早期的主功率商业门槛。"
+    },
+    {
+      "peer": "WOLF",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "不把最大名义涨幅当风险调整后优势；STM能自我融资，WOLF基准仍依赖新增权益和债务重置。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "长期平台与基准增长选AMZN；控制资本强度并追求制造杠杆右尾选STM，不能因客户预算大就给供应商全额价值。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "平台确定性更高却带来更大资本责任；按现价正常兑现与上行弹性，新增进攻资金略偏STM。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健平台复利优先MSFT；接受工厂迁移与周期风险以追求更高右尾则选STM。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "要求持续可分配现金选V，但现价回报不高；追求更高业务/利润弹性选STM。"
+    }
+  ]
+}
