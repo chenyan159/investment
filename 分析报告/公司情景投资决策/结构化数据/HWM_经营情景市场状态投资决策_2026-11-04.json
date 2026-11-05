@@ -1,0 +1,73 @@
+{
+  "ticker": "HWM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 213.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        103.99,
+        103.99
+      ],
+      "business_price": [
+        223.39,
+        223.39
+      ],
+      "target_price": [
+        132.73,
+        167.25
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        187.33,
+        187.33
+      ],
+      "business_price": [
+        354.4,
+        354.4
+      ],
+      "target_price": [
+        282.44,
+        338.09
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        237.14,
+        237.14
+      ],
+      "business_price": [
+        416.9,
+        416.9
+      ],
+      "target_price": [
+        375.83,
+        441.39
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        293.45,
+        293.45
+      ],
+      "business_price": [
+        475.98,
+        475.98
+      ],
+      "target_price": [
+        454.02,
+        541.45
+      ],
+      "evidence": "weak"
+    }
+  }
+}
