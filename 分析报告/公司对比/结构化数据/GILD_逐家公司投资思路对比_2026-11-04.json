@@ -1,0 +1,180 @@
+{
+  "ticker": "GILD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:39-08:00",
+  "reference_price": {
+    "value": 174.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        124,
+        124
+      ],
+      "target_price": [
+        59.5,
+        78.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        180.0,
+        193.8
+      ],
+      "target_price": [
+        180.0,
+        223.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        247.5,
+        247.5
+      ],
+      "target_price": [
+        273.1,
+        324.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        292.2,
+        292.2
+      ],
+      "target_price": [
+        367.9,
+        443.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "MRK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选GILD，进攻选MRK；MRK更大临床接续右尾伴随2029年后专利压力。"
+    },
+    {
+      "peer": "JNJ",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健大致相当，进攻选GILD；计入骨科分配与股息后JNJ仍未形成明显价格优势。"
+    },
+    {
+      "peer": "ABBV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两个视角均选GILD；ABBV收入接续成立，但现价的基准现金回报及突破弹性较弱。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "稳健选GILD，进攻大致相当；GILD净杠杆较低，AMGN代谢右尾不能取消其税案及资金代价。"
+    },
+    {
+      "peer": "VRTX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两个视角均选VRTX；CF防线及净金融资产较好，肾病/疼痛右尾更大，但只能分步参与。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两个视角均选REGN；净金融资产和已商业化合作利润提供更好的赔率，须验证利润向现金转换。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选GILD，进攻选ALNY；ALNY右尾显著更大，当前现金薄、下一代接续及支付风险更高。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选DHR，进攻选GILD；DHR复购更分散，GILD特定新药成功的右尾更大。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健大致相当，进攻选GILD；TMO较分散但价格对慢复苏容错不高，GILD估值现金门槛较低。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MCK，进攻选GILD；MCK跨药品的执行和净缩股更稳，新指引增强近端验证，不能自动外推新利润率。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两个视角均选MSFT；可续约软件与更高增长斜率胜出，前提是把算力投入转回现金。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选V，进攻选GILD；V基准与下行结构更好，GILD的药品里程碑提供更大非线性右尾。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选WM，进攻选GILD；WM悲观回撤较浅，GILD新品成功的上行空间更大。"
+    }
+  ]
+}
