@@ -1,0 +1,172 @@
+{
+  "ticker": "INTC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 58.27,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        19.2,
+        19.2
+      ],
+      "target_price": [
+        13.7,
+        20.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        63.5,
+        63.5
+      ],
+      "target_price": [
+        63.5,
+        79.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        112.0,
+        112.0
+      ],
+      "target_price": [
+        125,
+        157.4
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        131.7,
+        131.7
+      ],
+      "target_price": [
+        170.6,
+        217.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AMD",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "EPYC与GPU双增长、基准回报及右尾均更强；客户权证稀释已计，AMD优先于INTC"
+    },
+    {
+      "peer": "TSM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "晶圆和封装已有多客现金闭环，基准与突破赔率更好；INTC仅补充美国制造分散敞口"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "生产平台、利润和现金证据更强，年化右尾亦更高；NVDA为AI增长进攻首选之一"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ASIC和软件利润已成立，基准和右尾收益显著更优；系统转售与客户融资须限仓"
+    },
+    {
+      "peer": "ARM",
+      "relation": "alternative",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健双双回避；高弹视角INTC基准与右尾定价更有利，ARM成功预付更多"
+    },
+    {
+      "peer": "QCOM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟收费现金和较低入场估值支撑相近累计右尾，较短窗口年化更优；QCOM优先"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同押先进制造时先收设备/服务回报，基准和右尾更优；高数量路径须作为条件"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "成熟付费与基准年化胜出；年化突破和INTC接近，INTC累计倍数较大不足以取代微软"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "基准盈利/现金底盘优于INTC；突破区间差小于模型误差，高弹不判INTC明显胜"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选Visa的成熟现金与较浅受损；追求数倍右尾选INTC，二者承担不同组合角色"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对选COST但该价回报仍偏低；进攻选INTC的工艺/封装右尾，非核心替代"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ISRG且等待好价格；高弹选INTC，ISRG成熟复购难复制同等转型倍数"
+    }
+  ]
+}
