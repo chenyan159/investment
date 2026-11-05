@@ -1,0 +1,73 @@
+{
+  "ticker": "GEV",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:47:45-08:00",
+  "reference_price": {
+    "value": 832.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        248,
+        248
+      ],
+      "business_price": [
+        433,
+        433
+      ],
+      "target_price": [
+        305,
+        396
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        817,
+        817
+      ],
+      "business_price": [
+        907,
+        907
+      ],
+      "target_price": [
+        907,
+        1086
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        1257,
+        1257
+      ],
+      "business_price": [
+        1220,
+        1220
+      ],
+      "target_price": [
+        1458,
+        1743
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1776,
+        1776
+      ],
+      "business_price": [
+        1424,
+        1424
+      ],
+      "target_price": [
+        1930,
+        2380
+      ],
+      "evidence": "weak"
+    }
+  }
+}
