@@ -1,0 +1,180 @@
+{
+  "ticker": "MRAM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:12:37-08:00",
+  "reference_price": {
+    "value": 13.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        2.41,
+        2.41
+      ],
+      "target_price": [
+        2.14,
+        2.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        10.29,
+        10.29
+      ],
+      "target_price": [
+        10.29,
+        12.52
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        23.88,
+        23.88
+      ],
+      "target_price": [
+        27.73,
+        35.44
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        38.11,
+        38.11
+      ],
+      "target_price": [
+        54.55,
+        67.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选英飞凌的成熟组合和现金恢复；极小进攻仓追求MRAM纯新品右尾，选目标。"
+    },
+    {
+      "peer": "STM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角选STM：更厚经营底盘、基准正回报，突破价格弹性也不逊于MRAM。"
+    },
+    {
+      "peer": "MU",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角选MU：可验证量产、现金和长约优于MRAM；高利润持续性仍须独立限仓。"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角选SNDK：基准无需HBF便可产现金，非线性选择权叠在真实业务之上。"
+    },
+    {
+      "peer": "MCHP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对选MCHP但不作强推荐；高弹性选MRAM，MCHP基准赔率偏薄且有债务。"
+    },
+    {
+      "peer": "GFS",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角选GFS：多个已收费工艺与光子增长提供较好基准和右尾，资本效率仍须验证。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角选TSM：风险调整后基准和可验证扩张胜出，MRAM更高极端涨幅不足抵补失败路径。"
+    },
+    {
+      "peer": "IBM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选IBM的经常软件现金与分红；追求数倍右尾的小仓选MRAM。"
+    },
+    {
+      "peer": "SMCI",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健两者均回避；进攻相对选SMCI已验证交付与更厚基准赔率，须限现金及治理风险。"
+    },
+    {
+      "peer": "MXL",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健两者均回避；进攻选MXL实际光芯片增量，较MRAM有更早商业证据与更大条件右尾。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健核心选MSFT；只有追求更高数倍上行并可接受近乎全损的小仓任务，MRAM右尾更强。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对选GOOGL的业务底盘；极小高弹性仓MRAM潜在倍数更高，Google仍优于其核心配置。"
+    },
+    {
+      "peer": "RKLB",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健两者均回避；进攻选MRAM，RKLB乐观仅接近现价，显著正回报更依赖突破及高倍数。"
+    }
+  ]
+}
