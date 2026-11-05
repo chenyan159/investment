@@ -1,0 +1,172 @@
+{
+  "ticker": "JCI",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:35:00-08:00",
+  "reference_price": {
+    "value": 140.53,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-30",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        130.7,
+        130.7
+      ],
+      "target_price": [
+        77.5,
+        96.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        242.4,
+        242.4
+      ],
+      "target_price": [
+        215.7,
+        250.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        303.6,
+        303.6
+      ],
+      "target_price": [
+        302.3,
+        344.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        354.5,
+        354.5
+      ],
+      "target_price": [
+        390.0,
+        439.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT现金与受损保护较好；JCI较短目标期、盈利增长及较低近端定价支持进攻取舍。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "JCI服务、利润兑现及基准年化更强；CARR较大突破上限尚不足补偿欧洲和制造执行风险。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "JCI成熟服务和现金更适合稳健；MOD基准与右尾显著更高，但需接受制造和现金恢复风险。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "JCI非AI及现场服务缓冲较多；VRT已规模化系统平台与右尾明显胜出。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVT液路商业化及较低经营估值，给出更高基准／乐观年化和较好的受损区间；构成同逻辑较优替代。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN更低受损跌幅、配电与航空分散性胜稳健；JCI突破的年化幅度及较轻增量并购负担胜进攻。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "JCI存量服务及终端分散胜稳健；FIX交付平台利润与基准／右尾更大，进攻胜出。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "JCI当前经营现金与较高基准年化占优；MSFT平台右尾更广，按较短观察期年化后高弹大致相当。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "JCI现金自给和下行压力较可控；AMZN云／芯片与平台扩展右尾更大，适合更高风险预算。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN合同质量更高，但现价基准回报过低且项目资本仍重；JCI在增长回报与右尾的机会成本比较中胜出。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA更低资本负担、较小受损跌幅及强重复交易胜稳健；JCI数据中心与效率改善右尾更大。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM现金需求稳定及受损区间胜稳健防守；JCI基准年化与右尾显著更高。"
+    }
+  ]
+}
