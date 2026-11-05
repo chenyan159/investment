@@ -1,0 +1,73 @@
+{
+  "ticker": "RMBS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:15-08:00",
+  "reference_price": {
+    "value": 82.9,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        38.46,
+        38.46
+      ],
+      "business_price": [
+        82.85,
+        82.85
+      ],
+      "target_price": [
+        47.45,
+        57.47
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        100.64,
+        100.64
+      ],
+      "business_price": [
+        160.74,
+        160.74
+      ],
+      "target_price": [
+        137.91,
+        162.13
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        165.11,
+        165.11
+      ],
+      "business_price": [
+        226.2,
+        226.2
+      ],
+      "target_price": [
+        216.58,
+        251.44
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        291.69,
+        291.69
+      ],
+      "business_price": [
+        322.05,
+        322.05
+      ],
+      "target_price": [
+        341.81,
+        409.23
+      ],
+      "evidence": "weak"
+    }
+  }
+}
