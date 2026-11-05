@@ -1,0 +1,172 @@
+{
+  "ticker": "MRK",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:48:52-08:00",
+  "reference_price": {
+    "value": 150.36,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        85.5,
+        85.5
+      ],
+      "target_price": [
+        55.3,
+        69.7
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        179.5,
+        179.5
+      ],
+      "target_price": [
+        157.9,
+        186.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        268.9,
+        268.9
+      ],
+      "target_price": [
+        278.6,
+        320.0
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        341.3,
+        341.3
+      ],
+      "target_price": [
+        388.5,
+        458.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "JNJ",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "强生的已收费接续和分散底盘更稳；MRK的跨癌种ADC与V940提供更大的条件右尾。"
+    },
+    {
+      "peer": "ABBV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "艾伯维接续证据更强但买价更满、净债更高，MRK的基准含息回报及跨癌种右尾略优。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已商业化产品支撑更强的基准，乐观与突破年化不逊于MRK；须保留MariTide和税案风险预算。"
+    },
+    {
+      "peer": "GILD",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "已获批HIV复购和LEN提供更强基准、相近的年化右尾，2028净价台阶须一次性计入。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近经营倍数下，Dupixent现金权利、净金融资产和更高基准及右尾年化均优，眼科与2031接续仍是约束。"
+    },
+    {
+      "peer": "ZTS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同动物保健逻辑下价格更有利、基准及右尾年化更高，但须先验收11月5日竞争与净价数据。"
+    },
+    {
+      "peer": "BNTX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MRK的经营现金和已验证标签更稳，BNTX临床右尾更大但依赖全球随机胜出和2033前瞻定价。"
+    },
+    {
+      "peer": "MRNA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "统一V940患者与单位经济后，Moderna当前市值仍要求更多独立平台成功，MRK兼有成熟现金和更好的乐观赔率。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TMO靠多客户耗材与工作流获得更稳的基准，MRK有更大的跨癌种条件右尾，工具供给不等于药品利润。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角两者都需验证，UNH成本重新定价的右尾年化更高，但母公司现金与监管风险令其只适合修复仓。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "软件续约和已收费云增长支撑更高基准及更短期的右尾年化，资本回收与组件资金占用须持续验收。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟网络和低资本消耗更适合稳健底仓，MRK跨癌种突破的条件右尾更大。"
+    }
+  ]
+}
