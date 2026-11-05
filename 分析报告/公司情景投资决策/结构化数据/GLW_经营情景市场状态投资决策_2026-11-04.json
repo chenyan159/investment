@@ -1,0 +1,73 @@
+{
+  "ticker": "GLW",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 118.77,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        40.19,
+        40.19
+      ],
+      "business_price": [
+        113.13,
+        113.13
+      ],
+      "target_price": [
+        52.4,
+        67.83
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        106.95,
+        106.95
+      ],
+      "business_price": [
+        228.82,
+        228.82
+      ],
+      "target_price": [
+        175.35,
+        212.32
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        176.82,
+        176.82
+      ],
+      "business_price": [
+        311.33,
+        311.33
+      ],
+      "target_price": [
+        272.85,
+        322.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        258.68,
+        258.68
+      ],
+      "business_price": [
+        385.02,
+        385.02
+      ],
+      "target_price": [
+        367.89,
+        439.35
+      ],
+      "evidence": "weak"
+    }
+  }
+}
