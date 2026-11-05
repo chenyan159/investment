@@ -1,0 +1,156 @@
+{
+  "ticker": "ROG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:50:00-08:00",
+  "reference_price": {
+    "value": 128.7,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        61.4,
+        61.4
+      ],
+      "target_price": [
+        68.0,
+        80.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        164.5,
+        164.5
+      ],
+      "target_price": [
+        164.5,
+        193.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        224.0,
+        224.0
+      ],
+      "target_price": [
+        264.6,
+        305.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        264.1,
+        264.1
+      ],
+      "target_price": [
+        362.6,
+        411.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "PCRHY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MEGTRON与BBU已有规模付费和扩产，当前基准与右尾回报均更高；须接受日元、补贴与集团资本负担。"
+    },
+    {
+      "peer": "MMM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ROG基准回报和新品右尾更高、无3M同量级法律付款约束；相对胜出仍只支持小仓，不能推成稳健核心。"
+    },
+    {
+      "peer": "Q",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟工艺耗材复购与量产材料提供更强基准和更高条件回报，优先于ROG测试阶段的邻接机会；保留去杠杆与遗留责任约束。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "光连接已有规模盈利、具名客户与扩产支持，基准及光子右尾优于ROG；高估值、客户权证和太阳能资本仍限制仓位。"
+    },
+    {
+      "peer": "TTMI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对偏ROG的净现金与正股东现金，高弹偏TTMI已量产N+M和更高赔率；TTMI扩产、负现金与并购杠杆使其不能全面替代。"
+    },
+    {
+      "peer": "ON",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对偏ROG，因ON现金并购增加融资与整合约束；高弹偏ON已收费AI电源和更大右尾，但不能将AI收入等比例传给ROG陶瓷基板。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "铜、光与供电产品广度、实际订单及现金复制同时占优，基准与右尾更高，是AI互联组合优先载体；并购债务仍须计价。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健偏LIN的长期供气合同、网络与较小受损回撤，高弹偏ROG的新品非线性；LIN现价基准回报也偏低，优先级不等于立即买足。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "企业软件续费和Azure付费增长更可验证；按更短观察窗年化后乐观及突破亦不逊于ROG，需接受AI投入与现金回收风险。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG经营护城河更强，但现价基准年化仅约2%至6%、受损价格回撤亦不更小；ROG在新资金稳健赔率与进攻右尾均相对更优，仍只宜小仓或等价。"
+    }
+  ]
+}
