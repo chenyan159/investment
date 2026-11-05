@@ -1,0 +1,172 @@
+{
+  "ticker": "PLTR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:45:00-08:00",
+  "reference_price": {
+    "value": 171.7,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        74.3,
+        74.3
+      ],
+      "target_price": [
+        50.1,
+        65.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        200.5,
+        200.5
+      ],
+      "target_price": [
+        184.5,
+        227.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        252.4,
+        252.4
+      ],
+      "target_price": [
+        318.5,
+        419.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        323.8,
+        323.8
+      ],
+      "target_price": [
+        452.2,
+        626.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "SNOW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PLTR已实现较强SBC后盈利，基准回报及右尾均优于尚需消化股权成本的SNOW"
+    },
+    {
+      "peer": "NOW",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NOW以更低买入负担提供更厚基准回报和相近或更强右尾，是本比较集工作流逻辑的更优载体"
+    },
+    {
+      "peer": "CRM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CRM现价要求更低，成熟Owner FCF和更高条件回报胜出，但债务及并购限制其稳健仓位"
+    },
+    {
+      "peer": "ACN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ACN的现金与受损下行更稳，PLTR的平台复用和乐观突破弹性更高；ACN现价绝对回报亦偏薄"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "alternative",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健标准下两者均欠安全垫，进攻选择PLTR的已盈利轻资本路径，ORCL更大纸面右尾伴随更弱融资及回报证据"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT基准年化更高、客户和收费入口更分散，按原观察期折算后右尾也不逊于PLTR"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健标准均需等待更厚保护，广义AI进攻AMZN的条件右尾更高；PLTR仅作为避开机房资本负担的补充"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "GOOGL正常化估值及基准回报更优，右尾与PLTR大致相当；资本回收和搜索变现构成额外约束"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA以更低正常化经营倍数承接AI需求，经营盈利和压力后的回报仍较PLTR有利，但不是低风险现金替代"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA的基准及受损资本保护显著更优，PLTR才有更大的条件性非线性右尾"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "COST受损情景和经营确定性较稳，PLTR右尾更高；COST现价也需长期高溢价，非核心低估首选"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ISRG已验证临床复购和较小受损回撤胜出，PLTR乐观及突破回报更高；两者现价均非厚安全垫底仓"
+    }
+  ]
+}
