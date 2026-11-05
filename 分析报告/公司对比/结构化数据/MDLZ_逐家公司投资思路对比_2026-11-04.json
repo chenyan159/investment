@@ -1,0 +1,172 @@
+{
+  "ticker": "MDLZ",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:47:20-08:00",
+  "reference_price": {
+    "value": 67.38,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        59.3,
+        59.3
+      ],
+      "target_price": [
+        41.6,
+        47.1
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        90.9,
+        90.9
+      ],
+      "target_price": [
+        85,
+        93.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        104.5,
+        104.5
+      ],
+      "target_price": [
+        107.5,
+        117.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        116.6,
+        116.6
+      ],
+      "target_price": [
+        130.8,
+        141.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "negative",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "PEP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MDLZ基准回报更高，欧洲成本修复路径比百事多平台同时恢复更集中；百事股息和现金底盘仍有分散价值。"
+    },
+    {
+      "peer": "KO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "KO收费质量更强，但现价基准回报偏低且有税务尾部，MDLZ提供更高修复赔率。"
+    },
+    {
+      "peer": "MNST",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Monster净现金和海外成长更好，但现价要求更长高增长期，MDLZ本次基准及右尾回报均较高。"
+    },
+    {
+      "peer": "MCD",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选MCD的合同收费与较好现金价值覆盖，右尾修复选MDLZ，二者不属于同一产业逻辑的完全替代。"
+    },
+    {
+      "peer": "CMG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角选MDLZ较分散的复购，进攻选CMG的扩店和老店效率杠杆，后者仍需交易及食安验证。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Walmart掌握渠道议价权，但现价资本化倍数及再投资要求更高，MDLZ作为股票载体更有价格回报。"
+    },
+    {
+      "peer": "COST",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Costco需求证据与资产负债表更好，但高估值和较长目标年限压低可比年化，MDLZ现价回报更有利。"
+    },
+    {
+      "peer": "KR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MDLZ以回避薄利润与法律付款叠加；容忍事件尾部的进攻资金可选KR较高右尾。"
+    },
+    {
+      "peer": "PG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "宝洁必需品需求更稳，但同价日基准年化明显低于MDLZ，较小经营波动不足以完全抵偿价格机会成本。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Visa成熟网络和VAS复利、较少实体投入及较短观察期，在两个视角均优于依赖成本修复的MDLZ。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选WM地方处置收费和较浅经营悲观回撤，条件右尾选MDLZ更高弹性，WM仍受估值与债务约束。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在承受AI资本回收波动的2—4年资金中，微软平台复利与年化右尾优于MDLZ；现金保全需求另受仓位约束。"
+    }
+  ]
+}
