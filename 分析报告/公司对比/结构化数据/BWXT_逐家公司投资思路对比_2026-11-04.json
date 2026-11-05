@@ -1,0 +1,172 @@
+{
+  "ticker": "BWXT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 121.5,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        140.51,
+        140.51
+      ],
+      "target_price": [
+        99.49,
+        119.33
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        226.56,
+        226.56
+      ],
+      "target_price": [
+        201.21,
+        239.98
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        296.47,
+        296.47
+      ],
+      "target_price": [
+        303.83,
+        354.16
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        383.91,
+        383.91
+      ],
+      "target_price": [
+        443.43,
+        518.15
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "BWXT的核材料资格更稀缺、起始估值较低且远期增量更大；CW现金效率更高，但尚未形成全面替代"
+    },
+    {
+      "peer": "CCJ",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同为核电扩张载体，BWXT基准回报和现金归属更优，CCJ当前溢价需更强铀价与新堆兑现才能消化"
+    },
+    {
+      "peer": "LEU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LEU有真实瓶颈价值，但六年融资和现金本金后，乐观及突破年化仍弱于BWXT，当前不构成更优核燃料载体"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "稳健资金选择BWXT较低的隐含要求；GEV交付更快但价格已预付，右尾年化相近，未形成全面替代"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "BWXT稳健复利明显更优；BE更快的工程放量与更深下行互相抵消，当前右尾性价比仅与BWXT相当"
+    },
+    {
+      "peer": "CEG",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CEG资产稀缺但基准年化较低、全资本现金和债务约束更重；BWXT以较少资产资本承担取得更好回报"
+    },
+    {
+      "peer": "VST",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选BWXT的现金与履约韧性；能承受发电价差和杠杆波动的进攻资金选VST更高的近中期年化赔率"
+    },
+    {
+      "peer": "SMR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资金选择BWXT；仅在允许全损的极小商业化期权预算中，SMR批量复制的尾部放大胜出，证据仍弱且不能替代核心仓"
+    },
+    {
+      "peer": "OKLO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "OKLO突破上限更高，但需更长时间和更大权益融资；可执行乐观年化并未明显胜过BWXT，风险调整后的进攻仍选BWXT"
+    },
+    {
+      "peer": "ETN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一电力投资机会成本下，ETN基准和乐观年化更高、客户与用途更分散；BWXT适合补充国防核预算敞口"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健复利两者相当：微软平台质量更强但现金投入更重；高弹视角微软在更短窗口胜出，综合偏微软，BWXT用于分散AI资本回报和软件监管风险"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受台湾共同尾部风险的权益预算内，TSM基准及右尾年化、净现金和制造壁垒更优；BWXT承担不同风险因子，仍有补充价值"
+    }
+  ]
+}
