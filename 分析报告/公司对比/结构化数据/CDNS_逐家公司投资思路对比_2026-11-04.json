@@ -1,0 +1,172 @@
+{
+  "ticker": "CDNS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:57:38-08:00",
+  "reference_price": {
+    "value": 329.52,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        183.0,
+        183.0
+      ],
+      "target_price": [
+        132.5,
+        162.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        369.5,
+        369.5
+      ],
+      "target_price": [
+        379.6,
+        440.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        455.8,
+        455.8
+      ],
+      "target_price": [
+        530.7,
+        605.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        563.6,
+        563.6
+      ],
+      "target_price": [
+        733.8,
+        857.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "SNPS",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一设计预算逻辑下，SNPS估值更低、基准与右尾回报更高，整合及债务风险尚未抵消价格优势。"
+    },
+    {
+      "peer": "ARM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CDNS的成熟收费及基准防守优于Arm，Arm的CPU平台突破上限更高但需承担供给、毛利与高估值风险。"
+    },
+    {
+      "peer": "RMBS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CDNS业务更分散且法律尾部较小，RMBS以更低买价和内存接口新品提供更强右尾。"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "KEYS以较低经济估值取得已兑现订单与更高情景回报，周期波动可用现金和分批配置约束。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA取得更大的AI利润池且现价基准及上行情景补偿更强，但优先配置以客户回款和资本支出成立为条件。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO用成熟软件现金支持定制芯片扩张，基准赔率高于CDNS；须限制客户集中和采购信用敞口。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSM对GPU与ASIC路线共同收费，当前估值和基准回报明显占优；不可用财务健康消除台湾尾部。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ASML在不可替代的曝光环节有更强量价弹性，当前经济估值低于CDNS；需逐台核验交付和升级现金。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT的分发与成熟软件结合云增长提供较高基准回报，优于现价CDNS，但资本回收必须单独验证。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE的收费权风险更高，但约12倍前瞻经济估值和强现金给出的基准及右尾补偿显著优于CDNS。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "COST在经营分散和政策韧性上胜出，CDNS在乐观及突破回报上更高，二者现价均不宜配满。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SPGI的现金与成熟收费给予更好的稳健补偿，CDNS的代理平台突破弹性更高，适合不同仓位职责。"
+    }
+  ]
+}
