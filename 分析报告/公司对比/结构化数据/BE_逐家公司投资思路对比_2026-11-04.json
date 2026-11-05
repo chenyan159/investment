@@ -1,0 +1,188 @@
+{
+  "ticker": "BE",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 200.4,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        37.6,
+        37.6
+      ],
+      "target_price": [
+        20.8,
+        29.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        165.0,
+        165.0
+      ],
+      "target_price": [
+        153.7,
+        187.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        270.7,
+        270.7
+      ],
+      "target_price": [
+        325.1,
+        397.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        386.7,
+        386.7
+      ],
+      "target_price": [
+        519.2,
+        651.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "FCEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对BE较优；裸右尾FCEL更大且更弱；两者均不作稳健核心"
+    },
+    {
+      "peer": "CMI",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CMI；追求SOFC突破上端选BE；广义发电配置优先CMI"
+    },
+    {
+      "peer": "CAT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CAT；SOFC非线性突破上端BE较大；CAT为更早的组合顺位"
+    },
+    {
+      "peer": "GNRC",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "基准与右尾均优于BE；须先处理发动机及政策风险，非无条件稳健买点"
+    },
+    {
+      "peer": "GEV",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选GEV；SOFC突破尾部BE更尖；GEV现价基准回报也偏薄"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CEG；公共电力平台突破上端选BE；已有机组提高CEG证据确定性"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "当前价格下基准、乐观及突破回报均更好；VST构成缺电逻辑更优进攻载体"
+    },
+    {
+      "peer": "AEP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健收益与股息选AEP；制造规模及公共电力突破选BE；AEP不等于现金替代"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健双双回避；进攻优先ORCL条件路径；融资上限与旧现金模型冲突须继续核验"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "基准现金及乐观赔率优先ETN；BE只在更极端突破上端略大，不能抵消基准劣势"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI建设预算下VRT兼有更好基准回报和更大右尾，是更优设备载体"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健和按年化比较的进攻均选MSFT；BE不具平台收费权与现金分散度"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "更强获利与更高条件赔率选NVDA；远期883B基准收入须视作预测而非已锁订单"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "基准、乐观及突破均优于BE；受台湾共同尾部约束仍是更优全市场载体"
+    }
+  ]
+}
