@@ -1,0 +1,156 @@
+{
+  "ticker": "ALNY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:25:00-08:00",
+  "reference_price": {
+    "value": 161.08,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        199.0,
+        199.0
+      ],
+      "target_price": [
+        85.0,
+        115.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        384.0,
+        384.0
+      ],
+      "target_price": [
+        385.0,
+        475.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        641.0,
+        641.0
+      ],
+      "target_price": [
+        740.0,
+        945.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        840.3,
+        840.3
+      ],
+      "target_price": [
+        1110.0,
+        1455.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "IONS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ALNY 已有持续产品现金流和更高基准回报，IONS 右尾相近却承担更大的融资与本金损伤。"
+    },
+    {
+      "peer": "VRTX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX 的成熟 CF 底盘及较小受损回撤更适合稳健复利，ALNY 的当前价格与接代利润弹性更利于进攻。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ARGX 已验证商业复利更强，但当前基准年化较低且受损情景更深，ALNY 在买价补偿和右尾上占优。"
+    },
+    {
+      "peer": "REGN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "REGN 以更低含 SBC 经营倍数和多条现金来源赢稳健配置，ALNY 的 TTR 接代带来更大的每股上行。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "限制一种高价药并不能自动转成集团利润，UNH 的成本与政策修复风险使其不能完整替代 ALNY 的成长收益。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TMO 的分散复购与较小受损回撤适合稳健任务，ALNY 的终端产品权利和基准／右尾回报更有进攻价值。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的分散客户和近端付费证据更适合稳健复利，ALNY 的中期资本需求较轻且右尾回报更大。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Alphabet 业务证据更强，但新增资本与外部权益使股东现金承压；ALNY 当前基准回报和资本强度补偿更好。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa 的成熟收费与较小受损回撤赢稳健维度，但现价基准回报已降至约 7%—11%，ALNY 赢进攻赔率。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Costco 的经营稳定性更高，但现价基准年化只有约 6%—9%且增长久期溢价大，ALNY 的风险补偿更充分。"
+    }
+  ]
+}
