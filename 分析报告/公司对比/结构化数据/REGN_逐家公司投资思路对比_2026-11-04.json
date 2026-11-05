@@ -1,0 +1,172 @@
+{
+  "ticker": "REGN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:46:24-08:00",
+  "reference_price": {
+    "value": 930.67,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        869.7,
+        869.7
+      ],
+      "target_price": [
+        529.8,
+        621.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1724.5,
+        1724.5
+      ],
+      "target_price": [
+        1368.1,
+        1577.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        2285.2,
+        2285.2
+      ],
+      "target_price": [
+        2083.8,
+        2467.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        2715.9,
+        2715.9
+      ],
+      "target_price": [
+        2937.0,
+        3519.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ABBV",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "REGN净现金更强，校准后的基准及右尾年化回报仍显著较高，ABBV双核心增长还须分配特许权并消化高债务。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "礼来商业增长更快，但现价及持续扩厂已支付更多成功预期；REGN的基准回报和受损损失组合更有利。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "安进接续已发生，但净债、税案与旧药侵蚀压低可分配现金；REGN两种标准的赔率均更好。"
+    },
+    {
+      "peer": "MRK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Keytruda独占转换更近且新品权益分成更重；即使保留2030目标并年化，REGN的基准和右尾均更优。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "REGN以多产品和净现金赢得稳健视角，ARGX以FcRn/CIDP及anti-C2更集中、更长专利窗口的右尾赢得进攻视角。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "REGN当前现金自给和产品分散度更强，ALNY以TTR患者扩张及nucresiran释放版税的机制提供更高进攻赔率。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DHR的分散复购与较小受损回撤更适合稳健预算，REGN的药物权益及管线接续提供更高右尾。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TMO临床与制造服务更分散，但并购、净债和高买价使回报偏薄；本比较价下REGN更值得承担有限风险预算。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "UNH承担医疗成本、监管资本和PBM重定价风险，当前不能替代REGN的净现金药物权益；REGN受损损失较小且右尾不低。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软以企业续约与更短验证窗口优先承接核心复利资金，REGN年化右尾大致相当，可补充医药与临床风险敞口。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟网络的收费持续性优于药物独占现金流，REGN则以更高基准及右尾回报补偿临床接续风险。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Costco商业稳定性更强，但约51倍正常EPS与弱现金收益压低当前投资吸引力；REGN在两类资金的回报补偿上占优。"
+    }
+  ]
+}
