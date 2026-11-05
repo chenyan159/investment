@@ -1,0 +1,172 @@
+{
+  "ticker": "PCRHY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 22.45,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        17.76,
+        17.76
+      ],
+      "target_price": [
+        11.73,
+        14.79
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        36.24,
+        36.24
+      ],
+      "target_price": [
+        34.06,
+        41.18
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        50.07,
+        50.07
+      ],
+      "target_price": [
+        58.46,
+        71.47
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        62.93,
+        62.93
+      ],
+      "target_price": [
+        85.99,
+        106.64
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ROG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "松下已有规模化电源和材料收入，Rogers数字板材与冷却仍待量产，现价基准回报也较低。"
+    },
+    {
+      "peer": "MRAAY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选盈利更集中的村田；进攻选电源系统与集团改善同时兑现时右尾更大的松下。"
+    },
+    {
+      "peer": "TTDKY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "统一汇率后中期赔率接近；松下电源兑现与现金略优，TDK以HDD和被动器件分散风险。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Vertiv的系统交付、服务和现金流已兑现，基准与年化上行更强，但须扣除收购及预付款责任。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选已有规模收入且低倍数的松下；进攻选VPD与许可跨平台复制弹性更大的Vicor。"
+    },
+    {
+      "peer": "SMTOY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选悲观损失较小且通信已盈利的住友；进攻选松下电源与新材料的组合放大。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "康宁的光连接很强，但现价高于保守现金价值且资本重，松下提供更低进入倍数与相近以上右尾。"
+    },
+    {
+      "peer": "TTMI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选财务缓冲更好的松下；进攻选N+M放量、单位利润跃升更直接的TTM并承担并购和现金风险。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "平台收费和跨代生态比元件资格更强，调整终端预算风险后仍有更大的基准每股经营弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选企业续费与分散利润池更强的微软；进攻选松下较低买价与新电源扩张的更大右尾。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选合同与本地供气网络的林德，进攻选业务增长和估值重构空间更大的松下。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "跨GPU和ASIC的制造瓶颈、已兑现利润与基准年化更优；台湾尾部风险使其并非全风险支配。"
+    }
+  ]
+}
