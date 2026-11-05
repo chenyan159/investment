@@ -1,0 +1,172 @@
+{
+  "ticker": "EQIX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:37:21-08:00",
+  "reference_price": {
+    "value": 1054.09,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        901.06,
+        901.06
+      ],
+      "target_price": [
+        508.6,
+        653.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1419.92,
+        1419.92
+      ],
+      "target_price": [
+        1316.7,
+        1488.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1804.11,
+        1804.11
+      ],
+      "target_price": [
+        1818.6,
+        2109.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        2224.01,
+        2224.01
+      ],
+      "target_price": [
+        2510.7,
+        2959.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "DLR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "EQIX的互联密度与分散客户略胜；两者基准回报接近，DLR未构成全面更优替代"
+    },
+    {
+      "peer": "AMT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选现金自给较强的AMT，AI互联弹性选EQIX；AMT是部分业务同池，不能当纯数据中心替代"
+    },
+    {
+      "peer": "NET",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NET技术可替代部分任务但难复制物理集聚；现价基准回报为负，EQIX的可验证收费及右尾价格更优"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EQIX；极高风险右尾选CRWV，但保留普通股归零与资金链先断的分支"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT掌握客户工作流与模型分发，基准及右尾年化更高；资本压力大但现金来源更广"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "成熟互联收入稳定性选EQIX；更高经营复利与右尾选AMZN，负Owner FCF使其尚非全面稳健替代"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "GOOGL控制终端分发与芯片平台，基准及右尾更强；仍须扣除担保和再投资责任"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选EQIX；承担更强融资与客户风险换右尾选ORCL，不能把OCI预付当自由现金"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一建设潮中VRT较早收取设备及服务利润，基准回报和右尾更高；订单取消与压价是反证"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN在建设前端收取受认证约束的设备利润，现金自给与基准赔率优于EQIX；为同趋势综合优先载体"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选Visa的现金复利；非线性情景价差选EQIX，Visa在新买价的回报已较原报告变薄"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选WM，较小悲观损失与现金回收胜出；高弹性视角EQIX胜，但不足以挤进进攻优先组"
+    }
+  ]
+}
