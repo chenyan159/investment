@@ -1,0 +1,180 @@
+{
+  "ticker": "ASX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:00-08:00",
+  "reference_price": {
+    "value": 37.51,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        28.1,
+        28.1
+      ],
+      "target_price": [
+        7.5,
+        11.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        74.7,
+        74.7
+      ],
+      "target_price": [
+        51.4,
+        61.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        107,
+        107
+      ],
+      "target_price": [
+        101.8,
+        115.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        140.7,
+        140.7
+      ],
+      "target_price": [
+        151.5,
+        169.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "AMKR",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "韩国交付和客户融资更明确，现价经营倍数低于ASX，基准回报与受损情景均较好"
+    },
+    {
+      "peer": "TSM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM以控制权与正现金胜稳健，ASX以更小体量的先进封测盈利弹性胜右尾幅度"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "现有正现金和较低资本负担提高右尾可兑现性；ASX不具不可替代优势"
+    },
+    {
+      "peer": "ASMVY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "净现金与已收费TCB/光通信提供更轻的盈利扩张，稳健和右尾均优于ASX"
+    },
+    {
+      "peer": "ATEYY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "测试平台已有高利润与正现金，风险调整后的右尾兑现质量优于ASX重资产扩张"
+    },
+    {
+      "peer": "TER",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TER现金与受损下行较佳；ASX的2027先进交付与突破幅度更早、更大"
+    },
+    {
+      "peer": "CAMT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "较小利润池、更低自建资本负担及更高基准/右尾回报，使其成为更优进攻载体"
+    },
+    {
+      "peer": "ONTO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一设备资本预算获得更高现金转化与弹性，但近端应等待11月9日验证"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "控制系统定价与客户生态且已有现金，基准和平台突破赔率均高于ASX"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ASX较少依赖存储超额净价维持；MU的供需与现金弹性提供更强进攻右尾"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与分散收费胜稳健；ASX先进封测升级提供更高突破弹性"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa现金与收费持续性更稳，ASX明显胜高弹性，两者承担不同组合任务"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德合同和下行韧性胜稳健；ASX在乐观/突破幅度胜出，林德现价也不宜追满"
+    }
+  ]
+}

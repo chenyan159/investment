@@ -1,0 +1,156 @@
+{
+  "ticker": "AJG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:43:21-08:00",
+  "reference_price": {
+    "value": 288.38,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        299.7,
+        299.7
+      ],
+      "target_price": [
+        237.9,
+        265.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        406.2,
+        406.2
+      ],
+      "target_price": [
+        379.8,
+        416.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        441.6,
+        441.6
+      ],
+      "target_price": [
+        473.1,
+        533.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        488.7,
+        488.7
+      ],
+      "target_price": [
+        590.6,
+        679.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "AON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AJG的已并表整合与较低资本负担更适合稳健复利，AON的较低目标年盈利买价和USI协同提供更大右尾。"
+    },
+    {
+      "peer": "CB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "both_avoid",
+      "verdict": "target_preferred",
+      "reason": "AJG基准增长与回报更高且无直接保单赔付负担；高弹进攻标准下两者均缺乏足够独特的非线性。"
+    },
+    {
+      "peer": "ACGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AJG基准每股复利更扎实，ACGL较低买价及承保恢复提供更大突破弹性，后者须承担灾损与信用共振。"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "AJG不承担相同巨灾及长尾资本风险；RNR的右尾接近AJG但并未充分补偿额外承保波动。"
+    },
+    {
+      "peer": "TRV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "both_avoid",
+      "verdict": "target_preferred",
+      "reason": "TRV基准目标下沿低于现价且利润正常化压力大，AJG更适合复利；两者均不作为非线性进攻首选。"
+    },
+    {
+      "peer": "WRB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "both_avoid",
+      "verdict": "target_preferred",
+      "reason": "WRB基准增长不足以补偿当前买价及长尾负债，AJG复利更优；高弹进攻下两者均回避。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角AJG较高基准回报与SPGI更强收费标准互相抵消；高弹视角SPGI已有授权与付费入口更有价值。"
+    },
+    {
+      "peer": "MCO",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MCO在相近基准回报下有更强的标准收费与可验证订阅扩展，优先于AJG，但更深的估值回撤使其不构成所有风险维度的支配。"
+    },
+    {
+      "peer": "CME",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CME低融资依赖和现金分配更适合资本韧性，AJG在现价的长期股价弹性较高；CME不能因忽略股息而被低估。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "Visa网络规模与融资韧性强，AJG买价及少依赖支付规则有补偿；当前两者均无充分证据获得绝对替代地位。"
+    }
+  ]
+}

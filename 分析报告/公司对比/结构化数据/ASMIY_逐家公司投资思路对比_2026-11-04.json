@@ -1,0 +1,172 @@
+{
+  "ticker": "ASMIY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:03:47-08:00",
+  "reference_price": {
+    "value": 766.99,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        829.7,
+        829.7
+      ],
+      "target_price": [
+        449.0,
+        567.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1768.2,
+        1768.2
+      ],
+      "target_price": [
+        1273.0,
+        1536.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        2362.3,
+        2362.3
+      ],
+      "target_price": [
+        1931.6,
+        2286.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        2752.5,
+        2752.5
+      ],
+      "target_price": [
+        2524.6,
+        2939.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "AMAT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AMAT以略低2027经营倍数、工序分散和更高基准／右尾区间胜出，ASM保留ALD纯度"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ASM以GAA内容增长、净现金与较强情景上行胜出；Lam较高营业率不足以抵消NAND／地区节奏风险"
+    },
+    {
+      "peer": "TOELY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ASM较高毛利和更清楚的近端增长桥，高弹选TELWY多产品份额突破；旧TOELY报价停用"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ASM已量产GAA底盘，高弹选Besi多客户HBM键合采用的右尾；二者并非同层工艺替代"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ASML以更难替代的曝光控制点、更强基准与突破赔率胜出，是广义先进制程优先载体"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "KLA以较浅主悲观回撤、更高基准现金价值及服务韧性赢稳健，右尾与ASM大致相当"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "TSM以更低经营倍数及直接利润池、较好基准现金锚赢稳健，右尾相近；台湾尾险须另限额"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ASM工艺内容与现金可见度，高弹选MU短缺租金和现金留存；不把低P/E当无风险"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ASM无金融债务，高弹选MKS低经营倍数和去杠杆；收盘后公告须防止价格时点错配"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ASM以更强基准年化、近期正现金及较小资本承诺胜出，微软业务分散优势不足以覆盖当前回收负担"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ASM以较高基准年化、已自给现金及较少外部权益负担胜出，Alphabet需先证明资本回收"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ASM工艺资格与资金结构，高弹选Vertiv液冷／供电／预制平台扩大钱包；两者共享云CapEx风险"
+    }
+  ]
+}

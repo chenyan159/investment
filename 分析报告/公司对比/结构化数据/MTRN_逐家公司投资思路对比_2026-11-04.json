@@ -1,0 +1,164 @@
+{
+  "ticker": "MTRN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:03:07-08:00",
+  "reference_price": {
+    "value": 187.26,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        109.0,
+        109.0
+      ],
+      "target_price": [
+        82.9,
+        109.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        250.4,
+        250.4
+      ],
+      "target_price": [
+        239.0,
+        284.4
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        306.6,
+        306.6
+      ],
+      "target_price": [
+        362.2,
+        431.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        389.0,
+        389.0
+      ],
+      "target_price": [
+        513.9,
+        620.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ENTG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MTRN较浅的信用尾部适合稳健资金；ENTG的先进耗材与新散热平台给进攻资金更强右尾，但须承担到期债务。"
+    },
+    {
+      "peer": "Q",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Q的先进工艺复购、较低资本负担与更高基准及上行情景回报胜出，前提是PFAS和IT现金负担维持模型范围。"
+    },
+    {
+      "peer": "ROG",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "ROG净现金和较浅下行抵消新品资格不确定性，MTRN已量产电子材料和客户共投更扎实，两种任务下总体接近。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN长期最低采购和区域网络更适合稳健复利；MTRN较小的利润基数与材料资格扩张提供更高上行弹性。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AMAT以工艺设备和服务截留更多利润，基准和右尾年化回报均优于MTRN，但须接受出口许可与设备周期风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSM的制造平台收费权、现金与同日价格赔率胜出，台湾系统性风险须单列且不能由材料资格替代。"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "APH拥有更广客户平台、更高现金转化和更强基准及上行回报，MTRN仅以特殊铍材料分散单一AI连接风险。"
+    },
+    {
+      "peer": "BWXT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "核工业稳健配置优先BWXT的长期任务和现金；MTRN较短观察窗口内的材料扩产与核能小基数更适合进攻补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软续约和平台控制更强，统一年化后基准及右尾也优于MTRN，但资本与组件资金占用必须继续验证。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MTRN的现金兑现和融资约束更清楚；Alphabet的平台与TPU扩张右尾更大，同时承担更高资本和监管不确定性。"
+    },
+    {
+      "peer": "MU",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MU的现金、资产负债表及条件回报明显更强；必须把存储高利润持续期作为可证伪变量，不能把它视为永久年金。"
+    }
+  ]
+}

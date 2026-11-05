@@ -1,0 +1,172 @@
+{
+  "ticker": "MRAAY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:02:00-08:00",
+  "reference_price": {
+    "value": 19.11,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        12.38,
+        12.38
+      ],
+      "target_price": [
+        9.59,
+        11.45
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        26.63,
+        26.63
+      ],
+      "target_price": [
+        24.52,
+        28.74
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        38.4,
+        38.4
+      ],
+      "target_price": [
+        44.57,
+        52.29
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        50.81,
+        50.81
+      ],
+      "target_price": [
+        63.27,
+        75.74
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TTDKY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选村田的成熟高端元件与正现金；进攻选TDK较低估值及电池/磁性/传感多条扩张路线"
+    },
+    {
+      "peer": "VSH",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选村田的盈利与融资底座；进攻选VSH制造成本修复带来的更大经营杠杆"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "MPS供电净内容和增长更强，村田稀释更低且MLCC位置更成熟，两视角均不足以判定全面替代"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选村田的客户及产品分散；进攻选Vicor多客户VPD与许可，但接受更深损失及弱证据"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "村田基准能产生回报且乐观有成熟业务支持；NVTS更大名义右尾尚不能补偿近零基准回报与约90%受损空间"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "APH的基准年化和现金转化更优，乐观弹性相当，作为AI硬件配套预算的综合载体优先于村田"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "现价下平台利润捕获、基准与右尾赔率均强于村田，但需独立限制客户信用和算力资本周期暴露"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "苹果业务更稳定但现价基准年化约零至5%，村田在两种收益诉求下均有更好的价格赔率"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软成熟订阅使稳健复利更优，统一年化后的右尾相当，综合配置顺位先于村田"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "先进制造收费权及基准/乐观回报更强，接受台湾尾部风险预算时优先于村田"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选林德成熟供气现金与较浅压力回撤；进攻选村田的高端元件及供电右尾"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "好市多确定性更高但价格已收取高质量溢价，稳健风险收益相当，村田的上行弹性更值得进攻预算"
+    }
+  ]
+}

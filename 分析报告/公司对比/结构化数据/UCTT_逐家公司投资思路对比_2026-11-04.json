@@ -1,0 +1,172 @@
+{
+  "ticker": "UCTT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:56:25-08:00",
+  "reference_price": {
+    "value": 44.04,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        35.98,
+        35.98
+      ],
+      "target_price": [
+        19.05,
+        27.52
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        130.55,
+        130.55
+      ],
+      "target_price": [
+        117.93,
+        143.18
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        208.1,
+        208.1
+      ],
+      "target_price": [
+        239.68,
+        281.79
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "reestimate",
+      "business_price": [
+        266.87,
+        266.87
+      ],
+      "target_price": [
+        350.07,
+        405.54
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ICHR",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Ichor的净现金和较小资本缺口更适合稳健约束；UCTT的规模、服务与较宽业务升级空间提供更大的条件右尾。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Entegris复购更强，但当前价格与债务到期墙压低基准赔率；UCTT的价格补偿较充足，两者均须验证现金。"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MKS具有专有器件与耗材收费权，最新Q3已产生强现金；债务虽高，证据调整后的进攻与复利顺位均高于UCTT。"
+    },
+    {
+      "peer": "AEIS",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AEIS的工艺电源与数据中心双入口更有复利质量；其当期现金也弱，UCTT较低买价提供更大条件右尾。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Lam拥有配方、整机与服务利润截留权，稳健载体更优；UCTT在制造放量与质量重估同时兑现时涨幅更大。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Applied的材料工程平台与资本自给能力更适合底仓；UCTT以客户集中和库存风险换取更高上行倍数。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLA的控制任务、服务复购与现金转化使其成为稳健设备链首选；UCTT仅在高波动进攻的条件价格弹性上胜出。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "台积电的制程平台与已投入资本支持更强基准确定性，须单独容忍台湾尾部；UCTT具有更高但更弱证据的条件右尾。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "美光的已实现现金、客户协议及短缺利润提供更直接进攻载体；远期高利润率仍须验证，不能仅因低PE当成永久安全。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与分销平台的复利确定性更高，但AI投入压现金；UCTT提供更大上行赔率，不能取代微软的组合角色。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的轻资本网络与真实股东现金适合稳健复利；当前价格已抬高机会成本，进攻赔率明显低于UCTT。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "直觉外科工作流壁垒更强，但当前基准年化回报太低且已知降价在前；UCTT的价格补偿更值得承担研究风险。"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "ticker": "MOD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:25:00-08:00",
+  "reference_price": {
+    "value": 98.56,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        89.0,
+        89.0
+      ],
+      "target_price": [
+        51.1,
+        70.7
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        194.5,
+        194.5
+      ],
+      "target_price": [
+        197.4,
+        239.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        293.7,
+        293.7
+      ],
+      "target_price": [
+        361.3,
+        424.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        381.0,
+        381.0
+      ],
+      "target_price": [
+        511.6,
+        636.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选VRT的已实现利润与系统覆盖；高弹选MOD较低起价下的利润修复。"
+    },
+    {
+      "peer": "TT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TT的成熟服务和现金复利；高弹选MOD更集中的冷却放量与较大每股弹性。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MOD相对CARR兼具更高基准回报和更低财务杠杆；CARR的服务与多元化未充分抵消欧洲及资本拖累。"
+    },
+    {
+      "peer": "JCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选JCI已有设备与服务利润；高弹选MOD更高的经营集中度和目标回报。"
+    },
+    {
+      "peer": "AAON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对选MOD较新的财报和客户产能出资证据；高弹选AAON更大的同规模制造恢复期权。"
+    },
+    {
+      "peer": "SPXC",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选SPXC较分散业务和热排出适应性；高弹选MOD更高的数据中心占比与利润修复。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选NVT已商业化液路和成熟电气利润；高弹选MOD更大的冷机成本修复，但后者温水风险更高。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FIX净现金和已实现施工利润；高弹选MOD的制造恢复，FIX保守DCF限制追价。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ETN广泛资格和电气/航空现金；高弹选MOD的较小市值与冷却利润修复。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MSFT企业收费入口；高弹选MOD较高的每股成长弹性，微软资本回收约束使两者并非同一种风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TSM更难替代的工艺卡位与较强下行现金；高弹选MOD较大的冷却恢复右尾。"
+    },
+    {
+      "peer": "MU",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角均需验证跨周期资本回报；接受存储价格风险的进攻资金优先MU更强的现金与右尾。"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "ticker": "SKHY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:56:46-08:00",
+  "reference_price": {
+    "value": 143.07,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        96.87,
+        96.87
+      ],
+      "target_price": [
+        76.97,
+        93.43
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        258.15,
+        258.15
+      ],
+      "target_price": [
+        273.02,
+        324.13
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        512.89,
+        512.89
+      ],
+      "target_price": [
+        651.29,
+        758.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        701.29,
+        701.29
+      ],
+      "target_price": [
+        1043.2,
+        1267.06
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MU",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健：MU；高弹：MU。对手占优，构成同逻辑更优替代；SK保留HBM补充角色"
+    },
+    {
+      "peer": "SNDK",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：SKHY；高弹：SNDK。分视角各占胜场；SNDK适合更集中的NAND进攻"
+    },
+    {
+      "peer": "RMBS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健：SKHY；高弹：SKHY。目标占优；RMBS不构成HBM利润的等比例替代"
+    },
+    {
+      "peer": "STX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健：SKHY；高弹：SKHY。目标占优；STX受损回撤与合同重定价风险更大"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：NVDA；高弹：SKHY。分视角各占胜场；平台复利与内存利润弹性不同"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：TSM；高弹：SKHY。分视角各占胜场；TSM为制造复利优先载体"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：LRCX；高弹：SKHY。分视角各占胜场；设备资格比器件净价更持久"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：ASML；高弹：SKHY。分视角各占胜场；长期工艺收费优先于周期净价"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：MSFT；高弹：SKHY。分视角各占胜场；软件续约更稳，SK现金弹性更大"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健：SKHY；高弹：SKHY。按现价目标占优；Visa商业质量更稳，但基准价格回报偏低"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健：SKHY；高弹：SKHY。按现价目标占优；手术增长未提供足够估值缓冲"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健：WM；高弹：SKHY。分视角各占胜场；WM用于防御，SK用于景气进攻"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "ticker": "MA",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:43:51-08:00",
+  "reference_price": {
+    "value": 672.68,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        797.9,
+        797.9
+      ],
+      "target_price": [
+        548.5,
+        639.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1091.5,
+        1091.5
+      ],
+      "target_price": [
+        937.6,
+        1062.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1243.5,
+        1243.5
+      ],
+      "target_price": [
+        1174.7,
+        1316.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1364.0,
+        1364.0
+      ],
+      "target_price": [
+        1366.1,
+        1559.9
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "V",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "同档估值后两者复利与右尾接近，MA每股增长较快，Visa规模和服务增长构成反向优势"
+    },
+    {
+      "peer": "AXP",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA信用和资本负担较轻，AXP较低买入倍数叠加费用杠杆提供更大乐观及突破弹性"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "MA基准回报明显更高且无需承担硬件毛利压力，苹果任务入口突破虽有右尾但并无全面替代优势"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA当前经济股东现金为正且资本负担低，Alphabet的跨云TPU和任务分发提供更大右尾但须承担现金回收风险"
+    },
+    {
+      "peer": "JPM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "MA更低信用资本占用带来更好的基准每股增长，JPM突破右尾接近却增加银行资产负债表尾部"
+    },
+    {
+      "peer": "BAC",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA下行韧性和收费复利更强，BAC低倍数在息差与费用同时改善时右尾更高但资本和信用条件更苛刻"
+    },
+    {
+      "peer": "BKNG",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA更适合控制回撤的稳健底仓，BKNG更低经济倍数和成熟现金增量提供更高进攻赔率"
+    },
+    {
+      "peer": "COST",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Costco商业质量高但现价基准和右尾年化均偏低，MA更值得占用新增核心或进攻资本"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "MA基准增长和目标回报较高，SPGI标准化收费与平台右尾接近但交易边界和数据预算增加不确定性"
+    },
+    {
+      "peer": "ICE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "ICE现金定价和降债更有缓冲，MA经营复利与资本负担更优，稳健与进攻均无全面占优者"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA当期每股现金更扎实且不承担算力更新资本，微软跨平台AI收费与Maia可实现更高右尾"
+    }
+  ]
+}
