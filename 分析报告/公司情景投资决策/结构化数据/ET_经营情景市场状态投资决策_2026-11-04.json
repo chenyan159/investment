@@ -1,0 +1,73 @@
+{
+  "ticker": "ET",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:47:23-08:00",
+  "reference_price": {
+    "value": 19.46,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        15.6,
+        15.6
+      ],
+      "business_price": [
+        16.51,
+        16.51
+      ],
+      "target_price": [
+        12.05,
+        14.46
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        30.7,
+        30.7
+      ],
+      "business_price": [
+        25.28,
+        25.28
+      ],
+      "target_price": [
+        25.84,
+        29.53
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        40.26,
+        40.26
+      ],
+      "business_price": [
+        29.58,
+        29.58
+      ],
+      "target_price": [
+        34.54,
+        38.86
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        49.55,
+        49.55
+      ],
+      "business_price": [
+        33.15,
+        33.15
+      ],
+      "target_price": [
+        43.56,
+        48.4
+      ],
+      "evidence": "weak"
+    }
+  }
+}
