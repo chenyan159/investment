@@ -1,0 +1,164 @@
+{
+  "ticker": "EME",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:35:00-08:00",
+  "reference_price": {
+    "value": 639.25,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        566.7,
+        566.7
+      ],
+      "target_price": [
+        434.7,
+        514.9
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1014.6,
+        1014.6
+      ],
+      "target_price": [
+        1017.7,
+        1164.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1283.5,
+        1283.5
+      ],
+      "target_price": [
+        1413.5,
+        1665.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1576.1,
+        1576.1
+      ],
+      "target_price": [
+        1896.3,
+        2290.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "FIX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "EME的利润分散与现金底座更适合稳健仓，FIX模块化的增长与右尾更强。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同看好电力与园区建设，EME起始经营估值更低、净债更少且基准回报更高。"
+    },
+    {
+      "peer": "IESC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资金选EME的财务新鲜度和分散交付，进攻资金选IESC更低估值与制造扩张赔率。"
+    },
+    {
+      "peer": "MYRG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "MYRG账面右尾更大但需更苛刻的现金和项目修订条件，EME提供更可兑现的风险调整赔率。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "EME买到更低估值的交付现金，VRT拥有更强的产品架构与规模复制右尾。"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TT更适合跨周期服务复利底仓，EME以更低买价提供较大的建设增长弹性。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ETN产品壁垒更强但收购价及净债已收取代价，现价下EME基准与突破赔率更优。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "EME更直接收取当前施工现金，微软平台复用与代理工作流在较短窗口有更高右尾年化。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Alphabet理论平台空间更广，但本窗口现金投入与融资责任令其风险调整赔率弱于EME。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa经营现金与网络壁垒更适合长期复利，EME在本次买价的回报和右尾更大。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM以较小模型回撤和重复需求胜在防御，EME以较低起始估值胜在建设增长上行。"
+    }
+  ]
+}
