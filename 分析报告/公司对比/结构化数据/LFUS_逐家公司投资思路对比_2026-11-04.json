@@ -1,0 +1,172 @@
+{
+  "ticker": "LFUS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:06:28-08:00",
+  "reference_price": {
+    "value": 386.47,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        262.7,
+        262.7
+      ],
+      "target_price": [
+        213.4,
+        250.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        506.1,
+        506.1
+      ],
+      "target_price": [
+        506.1,
+        579.7
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        623.0,
+        623.0
+      ],
+      "target_price": [
+        715,
+        837.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        780.1,
+        780.1
+      ],
+      "target_price": [
+        1015.9,
+        1212.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "更广的系统采购入口、较低主悲观损失及更高基准回报，胜过LFUS单器件逻辑"
+    },
+    {
+      "peer": "VSH",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LFUS的现金与认证底盘；制造修复及右尾倍数选VSH，须承受资本和稀释风险"
+    },
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LFUS的低净杠杆和现金转换；AI供电进攻选IFNNY的已收费内容和系统覆盖"
+    },
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LFUS避免收购融资反身性；高弹选ON的AI/Vcore与周期经营杠杆"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选LFUS较低久期和净价风险；高弹选MPWR的实际供电平台复用，保留同池预算约束"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健明确选LFUS；仅在极小里程碑风险预算下，NVTS拥有更大右尾，不能作核心替代"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全选LFUS低净杠杆；承担AI系统交付周期并追求右尾时选VRT"
+    },
+    {
+      "peer": "TEL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "相近电气化逻辑下，买价接近保守DCF、基准现金与回报更优，是LFUS优先替代"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已收费的AI位置、组合复用和基准/右尾回报更强；LFUS只补充较低系统集中暴露"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "更强收费控制和较短观察窗下的年化回报占优；需严守AI资本回收约束"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾共同尾部时，技术壁垒、基准回报与每股增长更优；LFUS仅作地域分散补充"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "防御复利选WM较小需求波动与主悲观损失；上行弹性选LFUS，二者均需价格纪律"
+    }
+  ]
+}
