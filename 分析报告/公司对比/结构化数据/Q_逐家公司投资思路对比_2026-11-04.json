@@ -1,0 +1,156 @@
+{
+  "ticker": "Q",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 118.78,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        101.97,
+        101.97
+      ],
+      "target_price": [
+        67.16,
+        82.23
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        220.13,
+        220.13
+      ],
+      "target_price": [
+        210.75,
+        251.08
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        285.99,
+        285.99
+      ],
+      "target_price": [
+        325.84,
+        377.77
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        328.11,
+        328.11
+      ],
+      "target_price": [
+        418.87,
+        493.64
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ENTG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Q的现金经营倍数更低、基准回报更高，且少了ENTG在2028至2030年的集中偿债和新厂资本回收压力。"
+    },
+    {
+      "peer": "SHECY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "信越的净金融资产和多业务现金底盘更适合防守，Q对先进封装及净材料内容量的暴露提供更高增长和右尾。"
+    },
+    {
+      "peer": "ASGLY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Q已有更高利润率与清晰的材料增长，AGC仍需CDMO止损、成熟业务回报和现金修复同时兑现。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Lam的净现金、成熟工艺和现金转换更适合稳健复利，Q较低入场经营倍数和更高突破回报适合进攻。"
+    },
+    {
+      "peer": "BESIY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Q的多品类复购与较低经营倍数更稳，Besi在混合键合跨客户量产成功时的右尾更大。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "台积电的整体工艺控制、净现金与相近或更高的基准回报胜出，两者突破年化区间高度重叠，优先配置台积电。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Q较少依赖存储短缺租金维持，MU在高价合同和供给约束延续时的现金积累与上行赔率明显更高。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德的长期供气与区域网络更适合低经营波动目标，Q的基准增长和非线性弹性更强。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的企业收费入口和业务分散更适合核心复利，Q在当前入场估值下提供更高乐观年化，但仍受现金及法律尾部约束。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "PGR承保利润缓冲消耗使基准每股盈利低于当前，Q的基准增长和右尾更优，PGR的价值主要是行业分散与现金分配。"
+    }
+  ]
+}
