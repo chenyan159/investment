@@ -1,0 +1,196 @@
+{
+  "ticker": "ECL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:00-08:00",
+  "reference_price": {
+    "value": 315.01,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        283.3,
+        283.3
+      ],
+      "target_price": [
+        175.9,
+        205.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        465.4,
+        465.4
+      ],
+      "target_price": [
+        361.2,
+        409.36
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        553.6,
+        553.6
+      ],
+      "target_price": [
+        486.88,
+        544.16
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        633.5,
+        633.5
+      ],
+      "target_price": [
+        622.82,
+        688.38
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同为AI冷却投入，VRT的订单、交付规模和基准回报优于ECL，须接受更高项目波动。"
+    },
+    {
+      "peer": "NVT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVT以较低现金定价取得更大的正常兑现与右尾空间，胜负取决于原范围补单和整合现金。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ETN同时占据供电与芯片侧热路径，正常增长所需定价低于ECL，是偏稳健AI基础设施的更优载体。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健视角双方均受收购约束而大致相当，施耐德以更低买价要求提供更强系统平台弹性。"
+    },
+    {
+      "peer": "PNR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ECL的重复采购路径更稳，PNR的低起点修复弹性更大，但并非ECL化学服务的完整替代。"
+    },
+    {
+      "peer": "DOV",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "DOV以较低定价承接接口、换热和后市场价值，基准与右尾均可与ECL较量且下行更浅。"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TT的成熟服务现金和当前买价下的正常兑现空间更好，液路迁移使其并非单纯被替代者。"
+    },
+    {
+      "peer": "CARR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ECL经营复购更稳，CARR在利润修复成功时有更大价格弹性，无法以低市盈率抹去欧洲风险。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ECL更适合控制经营风险，MOD是更强制造爬坡期权，现有负现金使其不能替代防御底仓。"
+    },
+    {
+      "peer": "ITT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ITT的新季报强化现金兑现，以当前买价重算后的基准与右尾优于ECL，但SPX并购仍需去杠杆验证。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软的终端收费权和按原观察日折算的回报更好，须把AI资本回收作为加仓前提。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ECL近期现金和经营边界更稳，谷歌在搜索与TPU持续商业化时右尾更大且融资责任更重。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德的合同和区域供气网络更适合稳健复利，ECL的AI热路径与生科扩展提供更大上行尾部。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "WM的防御需求和下行带更佳，双方右尾区间接近，当前稳健资金优先WM。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MA以更好的现金转换和正常增长回报胜出，乐观与突破上沿也不弱于ECL。"
+    }
+  ]
+}
