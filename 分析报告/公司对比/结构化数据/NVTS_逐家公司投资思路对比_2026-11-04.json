@@ -1,0 +1,172 @@
+{
+  "ticker": "NVTS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:07:21-08:00",
+  "reference_price": {
+    "value": 9.33,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        1.17,
+        1.17
+      ],
+      "target_price": [
+        0.98,
+        1.11
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        4.87,
+        7.55
+      ],
+      "target_price": [
+        5.38,
+        10.32
+      ],
+      "evidence": "weak"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        19.96,
+        19.96
+      ],
+      "target_price": [
+        23.78,
+        31.42
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        38.65,
+        38.65
+      ],
+      "target_price": [
+        53.67,
+        68.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "英飞凌的实际AI交付和集团现金基础更强，NVTS仅在Claros与800V同时成功时拥有更大的每股右尾。"
+    },
+    {
+      "peer": "ON",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ON在相近乐观弹性下已有规模AI收入和传统业务现金，虽然并购杠杆增加，仍优于NVTS对多次资格跨越的依赖。"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "STM以已量产光学、MCU与制造降本形成多来源弹性，乐观证据强于NVTS，永久亏损风险也较低。"
+    },
+    {
+      "peer": "POWI",
+      "relation": "direct_competitor",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "POWI的盈利和现金更成熟但现价基准回报不足，NVTS在可容忍永久损失的小仓进攻用途上具有更强右尾。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MPWR以现有模块和跨客户交付支撑基准复利，NVTS的高风险突破倍数更大但缺少同等量产基础。"
+    },
+    {
+      "peer": "VICR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "VICR已有产品盈利与许可现金，现价下乐观弹性超过NVTS，虽有专利和扩产风险，仍是较优高密度供电载体。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "台积电的先进工艺收费和每股现金更确定，NVTS只有在800V与IVR共同跃迁时拥有更大突破倍数。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA掌握平台利润并已大规模产现，给定正式模型的基准和右尾均胜出，NVTS没有更高弹性这一当然优势。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT通过系统交付和服务捕获较确定收益，NVTS仅在材料与末级平台同时突破时具有更大尾部倍数。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "伊顿凭配电资格与交付网络取得成熟现金，NVTS有更大技术突破倍数但缺少稳定底盘。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软拥有成熟软件续约与分发收费权，NVTS适合追求更大技术右尾的独立小仓，不能替代软件底仓。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa以轻资本网络产生持续股东现金，NVTS的数倍右尾只适合完全不同的高风险预算。"
+    }
+  ]
+}
