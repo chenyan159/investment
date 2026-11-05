@@ -1,0 +1,172 @@
+{
+  "ticker": "AME",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:00-08:00",
+  "reference_price": {
+    "value": 237.09,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        215.57,
+        215.57
+      ],
+      "target_price": [
+        161.45,
+        199.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        314.46,
+        314.46
+      ],
+      "target_price": [
+        313.66,
+        356.77
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        373.46,
+        373.46
+      ],
+      "target_price": [
+        423.4,
+        474.27
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "reestimate",
+      "business_price": [
+        451.91,
+        451.91
+      ],
+      "target_price": [
+        527.56,
+        604.36
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "TDY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TDY的基准回报及受损回撤更优，成像与任务系统的真实交付也比AME的800V实验更接近可收费放量。"
+    },
+    {
+      "peer": "FTV",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "FTV买价与经济现金收益更低，AME经营增长和分散性更强；现价两者回报区间重叠，尚无全面替代。"
+    },
+    {
+      "peer": "ITW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "同为工业复利，AME的增长及基准和右尾回报更高，ITW当前价格不足以补偿低增长与现金兑现压力。"
+    },
+    {
+      "peer": "EMR",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "AME基准年化和受损缓冲较好；EMR控制平台右尾相近，但不足以用较低基准回报取代AME。"
+    },
+    {
+      "peer": "KEYS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健看AME的分散现金和较浅压力回撤；进攻看KEYS已收费的高速验证任务及更高右尾，路线各有用途。"
+    },
+    {
+      "peer": "CGNX",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AME更适合现金复利底仓；CGNX小体量、视觉复制及RealSense提供更强弹性，同时客户集中和收购执行风险更高。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "若资金押电力与AI基础设施，ETN已有订单、交付和更高基准回报，是比AME未定点800V更直接的载体。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资金选AME的需求分散和较低政策集中度；半导体高弹资金选ASML的独占收费权与产能释放，不能按客户CapEx给AME记等额收入。"
+    },
+    {
+      "peer": "GE",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GE更能截留发动机售后利润，但现价基准回报偏低、压力回撤更深，AME在当前价格更合适。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "低波动和压力缓冲选LIN；愿承担工业波动以换业务增速与上行弹性选AME，LIN不是高收益替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健现金复利偏AME；进攻偏MSFT的既有付费用量和平台扩张，但不能忽略其前置资本与更深悲观回撤。"
+    },
+    {
+      "peer": "ROP",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按11月4日新买价重算，ROP基准及压力赔率均逊于AME；19.48倍表观TTM PE含非经常收益，不能作为便宜替代的依据。"
+    }
+  ]
+}
