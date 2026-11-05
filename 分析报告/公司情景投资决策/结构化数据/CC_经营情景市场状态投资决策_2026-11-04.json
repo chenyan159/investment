@@ -1,0 +1,73 @@
+{
+  "ticker": "CC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:00-08:00",
+  "reference_price": {
+    "value": 13.79,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        0.0,
+        0.0
+      ],
+      "business_price": [
+        1.54,
+        1.54
+      ],
+      "target_price": [
+        0.0,
+        3.0
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        29.09,
+        29.09
+      ],
+      "business_price": [
+        35.14,
+        35.14
+      ],
+      "target_price": [
+        30.52,
+        38.17
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        51.96,
+        51.96
+      ],
+      "business_price": [
+        65.22,
+        65.22
+      ],
+      "target_price": [
+        69.65,
+        80.85
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        76.78,
+        76.78
+      ],
+      "business_price": [
+        81.65,
+        81.65
+      ],
+      "target_price": [
+        97.18,
+        117.53
+      ],
+      "evidence": "weak"
+    }
+  }
+}
