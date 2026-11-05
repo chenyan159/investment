@@ -1,0 +1,172 @@
+{
+  "ticker": "AAPL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:00:00-08:00",
+  "reference_price": {
+    "value": 349.51,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-09-28",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        296.7,
+        296.7
+      ],
+      "target_price": [
+        178.4,
+        215.6
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        446.0,
+        446.0
+      ],
+      "target_price": [
+        336.1,
+        403.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        561.5,
+        561.5
+      ],
+      "target_price": [
+        507.8,
+        592.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        680.8,
+        680.8
+      ],
+      "target_price": [
+        684.1,
+        786.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "DELL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "苹果现金底盘和消费关系更稳，戴尔AI交付与利润留存的右尾更大。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软经营增长及当前估值给出更高基准与右尾回报，须监测其资本回收。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "苹果当前经济现金更稳，Alphabet模型、搜索与计算平台的右尾更大但资本责任更重。"
+    },
+    {
+      "peer": "META",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "苹果资本纪律与现金确定性更优，Meta广告和代理商业化提供更大高风险右尾。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "亚马逊当前买价下正常兑现及上行回报显著更高，前提是承受投入期融资与设备更新风险。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "台积电先进制造内容增长、低稀释与当前估值占优，台湾生产尾部风险需单独预算。"
+    },
+    {
+      "peer": "QCOM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "苹果存量生态与现金更稳，高通汽车及定制计算右尾更大但最新SBC和手机利润仍承压。"
+    },
+    {
+      "peer": "ARM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Arm当期分母与未来增长要求偏高，苹果可验证右尾和本金韧性的组合更优。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "博通已有定制计算和软件现金支撑更高经营增长与回报，仍须核验客户信用及齐套交付。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟支付与服务现金复利更优，苹果新品和AI成功时的右尾更大。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "both_avoid",
+      "verdict": "both_avoid",
+      "reason": "两者当前价格均依赖持续高估值，Costco长持有期和苹果基准低回报均不足以支持新增资金。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "林德合同供气及需求分散更适合稳健复利，苹果技术与产品成功时的弹性更大。"
+    }
+  ]
+}
