@@ -1,0 +1,172 @@
+{
+  "ticker": "NVT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:56:24-08:00",
+  "reference_price": {
+    "value": 112.82,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        94.5,
+        94.5
+      ],
+      "target_price": [
+        66.6,
+        85.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        213.5,
+        213.5
+      ],
+      "target_price": [
+        194.4,
+        233.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        268.1,
+        268.1
+      ],
+      "target_price": [
+        293.4,
+        342.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        314.4,
+        314.4
+      ],
+      "target_price": [
+        387.2,
+        444.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ETN的产品和客户更分散，NVT的买价与去杠杆空间更有利；稳健大致相当，进攻优先NVT。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NVT以更低经营成本倍数和较小现金依赖胜稳健，VRT以更广系统与服务平台胜突破右尾。"
+    },
+    {
+      "peer": "SBGSY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "施耐德系统与软件覆盖更广，但PTC融资与稀释压低每股回报，现价两种标准均优先NVT。"
+    },
+    {
+      "peer": "HUBB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "HUBB电网资格稳定，但退款与NSI收购回报约束较重，NVT基准年化和右尾均更高。"
+    },
+    {
+      "peer": "MOD",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NVT已有正现金与多产品底盘胜稳健，MOD在补价和产线兑现后具有更大的利润修复右尾。"
+    },
+    {
+      "peer": "TT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TT服务现金更成熟，但当前买价的回报与温水路线约束使NVT的综合赔率更佳。"
+    },
+    {
+      "peer": "POWL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "NVT基准回报更高且客户产品较分散，POWL多工厂复制成功的年化突破弹性更强。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "FIX低有息负债与履约规模对冲预收和施工风险，两者基准及右尾接近，属于互补而非全面替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软企业续费和平台控制力胜稳健，NVT以较低资本投入和更高基准年化胜当前进攻配置。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "接受台湾共同尾部风险时，TSM先进制造壁垒、现金底盘和四情景赔率更优，NVT作为地域及产业环节分散补充。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复收费及轻实物资本胜稳健，NVT的利润增长、去杠杆和系统化上行胜进攻。"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "META的算力现金投入与稀释消耗广告增长，NVT基准回报和可见现金均优于押注代理商业化。"
+    }
+  ]
+}
