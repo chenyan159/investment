@@ -1,0 +1,73 @@
+{
+  "ticker": "WMB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:00:00-08:00",
+  "reference_price": {
+    "value": 67.86,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        38.6,
+        40.1
+      ],
+      "business_price": [
+        62.1,
+        62.1
+      ],
+      "target_price": [
+        47.8,
+        56.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        69.1,
+        73.9
+      ],
+      "business_price": [
+        107.5,
+        107.5
+      ],
+      "target_price": [
+        91.8,
+        102.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        84.0,
+        89.6
+      ],
+      "business_price": [
+        126.6,
+        126.6
+      ],
+      "target_price": [
+        120.7,
+        133.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        93.6,
+        99.6
+      ],
+      "business_price": [
+        141.0,
+        141.0
+      ],
+      "target_price": [
+        141.6,
+        155.8
+      ],
+      "evidence": "weak"
+    }
+  }
+}
