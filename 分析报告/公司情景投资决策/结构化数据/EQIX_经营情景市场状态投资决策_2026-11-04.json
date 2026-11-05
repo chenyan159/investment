@@ -1,0 +1,73 @@
+{
+  "ticker": "EQIX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:50:00-08:00",
+  "reference_price": {
+    "value": 1054.09,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        209.9,
+        209.9
+      ],
+      "business_price": [
+        871.8,
+        871.8
+      ],
+      "target_price": [
+        508.6,
+        653.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        532.5,
+        532.5
+      ],
+      "business_price": [
+        1374.0,
+        1374.0
+      ],
+      "target_price": [
+        1316.7,
+        1488.5
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        1072.4,
+        1072.4
+      ],
+      "business_price": [
+        1745.8,
+        1745.8
+      ],
+      "target_price": [
+        1818.6,
+        2109.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1763.7,
+        1763.7
+      ],
+      "business_price": [
+        2152.0,
+        2152.0
+      ],
+      "target_price": [
+        2510.7,
+        2959.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
