@@ -1,0 +1,73 @@
+{
+  "ticker": "ODFL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:06:00-08:00",
+  "reference_price": {
+    "value": 179.39,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        78.66,
+        78.66
+      ],
+      "business_price": [
+        163.12,
+        163.12
+      ],
+      "target_price": [
+        112.55,
+        131.3
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        128.67,
+        128.67
+      ],
+      "business_price": [
+        232.18,
+        232.18
+      ],
+      "target_price": [
+        212.89,
+        240.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        185.27,
+        185.27
+      ],
+      "business_price": [
+        310.98,
+        310.98
+      ],
+      "target_price": [
+        312.98,
+        350.31
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        255.1,
+        255.1
+      ],
+      "business_price": [
+        390.97,
+        390.97
+      ],
+      "target_price": [
+        417.05,
+        475.94
+      ],
+      "evidence": "weak"
+    }
+  }
+}
