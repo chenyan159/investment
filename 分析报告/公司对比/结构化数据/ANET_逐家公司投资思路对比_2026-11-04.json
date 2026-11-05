@@ -1,0 +1,172 @@
+{
+  "ticker": "ANET",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:09:43-08:00",
+  "reference_price": {
+    "value": 178.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        186.2,
+        186.2
+      ],
+      "target_price": [
+        116.7,
+        139.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        337.7,
+        337.7
+      ],
+      "target_price": [
+        311.4,
+        363.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        462.9,
+        462.9
+      ],
+      "target_price": [
+        523.8,
+        596.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        552.5,
+        552.5
+      ],
+      "target_price": [
+        743.7,
+        846.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ANET在稳健复利和高弹赔率均占优；CSCO的硅光一体化有战略价值，但基准价格回报明显较低"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "NVDA在两个视角均优先；更低正常化经营倍数和更大平台利润池胜出，ANET补充其异构以太网敞口"
+    },
+    {
+      "peer": "CLS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ANET，右尾选CLS；CLS的计算系统增量提供更高弹性，但营运资金及再融资风险更高"
+    },
+    {
+      "peer": "ALAB",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ANET，极端右尾选ALAB；ALAB可扩张每加速器内容，但当前倍数和客户集中不支持核心替代"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ANET，有限风险预算的年化右尾选CRDO；两者解决不同网络层，CRDO不能取代EOS平台"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO在两个视角优先；芯片和客户ASIC捕获更广且基准赔率更高，须另承受更大采购及信用风险"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按本次买价和AI增长资金用途，ANET两个视角均优先；微软有更强收入分散度，但资本回收压低基准赔率"
+    },
+    {
+      "peer": "META",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ANET两个视角均优先；META基准现金和每股价值被资本投入吞噬，代理右尾尚不足弥补机会成本"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选TSM，极端右尾选ANET；TSM跨架构捕获且现金价值覆盖较好，ANET有开放scale-up期权"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选V，进攻选ANET；V的成熟交易现金更可预测，但当前基准价格回报不足以取代ANET成长敞口"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ANET两个视角均优先；ISRG复购强但近期定价逆风明确，当前基准回报和右尾均低于ANET"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ANET两个视角均优先；COST近端经营获上修证据，现价仍要求很长质量溢价、年化机会成本偏高"
+    }
+  ]
+}
