@@ -1,0 +1,172 @@
+{
+  "ticker": "ICE",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:44:30-08:00",
+  "reference_price": {
+    "value": 174.92,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        170.16,
+        170.16
+      ],
+      "target_price": [
+        135.97,
+        158.63
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        251.11,
+        251.11
+      ],
+      "target_price": [
+        245.24,
+        278.68
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        303.91,
+        303.91
+      ],
+      "target_price": [
+        323.78,
+        364.26
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        333.88,
+        333.88
+      ],
+      "target_price": [
+        370.54,
+        429.82
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "positive"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "CME",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE当前现金估值与基准回报更有吸引力；CME胜在资产负债表和派息纪律，尚不足抵消现价回报差。"
+    },
+    {
+      "peer": "SPGI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE的交易和存量工作流现金相对买价更有优势，SPGI需要较多长期溢价与KDP收费稳定。"
+    },
+    {
+      "peer": "MCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE基准回报更高且融资来源更分散，MCO评级恢复与数据授权右尾尚未抵消较高买价。"
+    },
+    {
+      "peer": "MSCI",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE以更低现金负担取得相近或更强的条件右尾，MSCI需证明ETF费率和平台投入后现金增长。"
+    },
+    {
+      "peer": "JPM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE较少承受贷款信用和增长资本占用，当前基准与乐观回报也更高；JPM不是同等安全的低PE替代。"
+    },
+    {
+      "peer": "GS",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ICE稳健复利占优，高弹性大致相当；GS的周期及CET1约束使其难成为全面替代。"
+    },
+    {
+      "peer": "BLK",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ICE稳健复利占优，高弹性大致相当；BLK私募现金及后续对价增加了右尾兑现负担。"
+    },
+    {
+      "peer": "IBKR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选ICE，高弹性选IBKR；后者账户和融资平台右尾更大，但压力回撤与监管资本约束更重。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE现价基准回报与现金估值占优，Visa的网络质量未抵消续约让利及更高买入估值。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "MA的目标回报和建模下行略佳，ICE的当前现金估值及DCF缓冲更好；两个视角均大致相当，适合作为不同风险来源的补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选ICE，高弹性选MSFT；微软的AI平台右尾更大，设备及外购承诺也使现金回收更不确定。"
+    },
+    {
+      "peer": "ROP",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ICE基准回报与右尾均较优；ROP垂直软件壁垒真实，但当前价格需要更快有机增长或更高收购回报。"
+    }
+  ]
+}
