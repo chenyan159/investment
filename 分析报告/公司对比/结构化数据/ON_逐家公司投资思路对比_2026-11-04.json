@@ -1,0 +1,180 @@
+{
+  "ticker": "ON",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:08:58-08:00",
+  "reference_price": {
+    "value": 71.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        51.4,
+        51.4
+      ],
+      "target_price": [
+        33.7,
+        45.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        116.7,
+        116.7
+      ],
+      "target_price": [
+        104.8,
+        128.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        176.9,
+        176.9
+      ],
+      "target_price": [
+        203.3,
+        238.6
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        211.8,
+        211.8
+      ],
+      "target_price": [
+        285.7,
+        338.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "IFNNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "英飞凌产品覆盖更广但当前买价下基准回报较低、现金转化和资本负担更重，ON的价格门槛与每股现金路径更有利。"
+    },
+    {
+      "peer": "STM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "STM的净现金及较浅悲观回撤更适合稳健资金，ON已实现的AI电源增长及成熟盈利更适合电源主题进攻；STM更大突破尾部还依赖硅光。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "按共同买价TXN基准年化价格回报不足，ON在承担并购风险后仍提供更好的基准及乐观空间。"
+    },
+    {
+      "peer": "ADI",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ADI成熟精密模拟及现金复利更适合底仓，ON以更低经营利润门槛交换更大的复苏与AI右尾。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MPS的末级供电卡位和无借款更稳健，ON买价对应的乐观回报更大但需容忍现金并购与制造风险。"
+    },
+    {
+      "peer": "NVTS",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "NVTS突破倍数更大但基准几乎无价格收益且规模资格未过，ON的经营现金和基准回报使风险调整后进攻也更优。"
+    },
+    {
+      "peer": "WOLF",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WOLF经营改善尚未跨过股东现金和融资稀释门槛，ON无需再次资本重置才能实现基准价值。"
+    },
+    {
+      "peer": "AEHR",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AEHR已计入较多新客户量产成功，基准回报低且悲观回撤深，ON的价格及现金起点更有利。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN的订单交付、较浅回撤及基准回报构成更好基础设施底仓，ON提供更大的电源器件右尾。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在同一AI资本预算逻辑中NVDA拥有平台利润截留权及更强条件回报，ON适合作为器件份额与产品验证的补充。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与平台收费底盘更稳健，ON的乐观回报较高；两者均须核验AI投入后的现金回收。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "Alphabet较低GAAP市盈率含投资收益且资本责任大，ON虽有并购负担但基准价格回报及现金转化更有吸引力。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa成熟收费网络、较浅经营回撤胜在稳健，ON的周期修复和AI电源带来更强非线性上行。"
+    }
+  ]
+}
