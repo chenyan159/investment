@@ -1,0 +1,180 @@
+{
+  "ticker": "FANUY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:30:00-08:00",
+  "reference_price": {
+    "value": 17.95,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        13.41,
+        13.41
+      ],
+      "target_price": [
+        10.71,
+        12.22
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        22.99,
+        22.99
+      ],
+      "target_price": [
+        21.66,
+        25.52
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        29.42,
+        29.42
+      ],
+      "target_price": [
+        32.8,
+        37.95
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        37.26,
+        37.26
+      ],
+      "target_price": [
+        48.51,
+        58.7
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "YASKY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FANUY的现金和交付基础，进攻选安川的低利润修复与NEXT弹性。"
+    },
+    {
+      "peer": "ABBNY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ABB的配电积压与现金质量，工业机器人右尾选FANUY；ABB不是永久机器人替代品。"
+    },
+    {
+      "peer": "TER",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FANUY的融资与现金韧性，进攻选TER已盈利测试扩张；不能将TER股价右尾全归机器人。"
+    },
+    {
+      "peer": "ROK",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "FANUY稳健占优；高弹年化区间相近，ROK缺少足以覆盖高估值的额外付费证据。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FANUY；仅追求并容忍极深回撤的突破尾部时选SYM，其基准价格回报接近零。"
+    },
+    {
+      "peer": "TSLA",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FANUY两视角均占优；TSLA乐观回报仍有限、突破弹性不足以补偿基准大幅负回报。"
+    },
+    {
+      "peer": "SMCAY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "SMC两视角占优：更短兑现期、更低悲观损失、较低2027经营倍数；FANUY作CNC/本体补充。"
+    },
+    {
+      "peer": "CGNX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FANUY；感知平台上行选CGNX，但53.06为公告前价格，须重算实际入场赔率。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在接受AI算力周期风险的组合中NVDA两视角占优；机器人训练与执行硬件的盈利成熟度高于FANUY软件期权。"
+    },
+    {
+      "peer": "HTHIY",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "日立稳健占优、进攻大致相当；现金流价值及多条成熟利润链提供更好的基础。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "按统一年化窗口微软两视角占优；FANUY补充工业实物资产并降低云客户与AI资本开支集中。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FANUY的现金自给；进攻选AMZN更大可捕获利润池，但须接受融资和折旧更新风险。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "现价FANUY两视角占优；ISRG业务复购更强，但当前估值与每例变现压力使股东赔率逊色。"
+    }
+  ]
+}
