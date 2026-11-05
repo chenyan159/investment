@@ -1,0 +1,73 @@
+{
+  "ticker": "MXL",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:39-08:00",
+  "reference_price": {
+    "value": 56.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        4.8,
+        5.3
+      ],
+      "business_price": [
+        13.7,
+        13.7
+      ],
+      "target_price": [
+        7.4,
+        10.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        54.6,
+        68.1
+      ],
+      "business_price": [
+        76.1,
+        76.1
+      ],
+      "target_price": [
+        76.1,
+        93.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        139.0,
+        179.9
+      ],
+      "business_price": [
+        145.2,
+        145.2
+      ],
+      "target_price": [
+        195.8,
+        246.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        274.7,
+        362.9
+      ],
+      "business_price": [
+        227.8,
+        227.8
+      ],
+      "target_price": [
+        388.5,
+        495.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
