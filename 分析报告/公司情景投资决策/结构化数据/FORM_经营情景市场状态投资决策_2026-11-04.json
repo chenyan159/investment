@@ -1,0 +1,73 @@
+{
+  "ticker": "FORM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 85.24,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        34.2,
+        34.2
+      ],
+      "business_price": [
+        59.6,
+        59.6
+      ],
+      "target_price": [
+        32.3,
+        39.6
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        96.5,
+        96.5
+      ],
+      "business_price": [
+        130.5,
+        130.5
+      ],
+      "target_price": [
+        117.2,
+        143.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        153.8,
+        153.8
+      ],
+      "business_price": [
+        168.7,
+        168.7
+      ],
+      "target_price": [
+        186.3,
+        233.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        257.2,
+        257.2
+      ],
+      "business_price": [
+        181.9,
+        181.9
+      ],
+      "target_price": [
+        239.5,
+        303.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
