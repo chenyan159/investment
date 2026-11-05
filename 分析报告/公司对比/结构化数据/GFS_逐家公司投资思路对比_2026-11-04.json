@@ -1,0 +1,172 @@
+{
+  "ticker": "GFS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:06-08:00",
+  "reference_price": {
+    "value": 40.34,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        33.7,
+        33.7
+      ],
+      "target_price": [
+        23.4,
+        30.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        78.9,
+        78.9
+      ],
+      "target_price": [
+        66.5,
+        83.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        108.6,
+        108.6
+      ],
+      "target_price": [
+        131.3,
+        154.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        138.6,
+        138.6
+      ],
+      "target_price": [
+        190.4,
+        227.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "TSEM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GFS经营底盘更分散且压力回撤较小；纯硅光进攻优先Tower的年度交付合同与更高光子收入纯度。"
+    },
+    {
+      "peer": "UMC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "联电成熟制造复苏已反映在利用率，基准年化仅4%—9%；GFS以更低远期经营估值提供更大的增长及右尾。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "台积电的核心工艺与封装控制权、基准现金回收更强；GFS的右尾倍数和非台湾制造敞口适合作补充。"
+    },
+    {
+      "peer": "TXN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TXN商业质量更稳定，但现价下基准年化仅2%—8%；GFS的价格与增长组合优于以高价购买模拟复苏。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "已按11月2日季报上调LITE经营起点，GFS仍有更高基准及突破赔率，且LITE的合格光源、系统和稀释负担并未消失。"
+    },
+    {
+      "peer": "MRVL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GFS所需增长跨度与压力回撤较小；Marvell的跨客户Custom及互联设计权益提供更强进攻回报，但依赖更激进的收入路径。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MPS保留产品与工艺设计收益，基准证据更强；GFS以较低起始经营估值取得更大的突破弹性。"
+    },
+    {
+      "peer": "KLAC",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "KLA的良率控制、服务复购和更强现金转化胜在稳健；GFS胜在小市值光子转型的更大条件右尾。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ASML基准回报更高，光刻壁垒更强且突破年化接近GFS；一般半导体增长预算优先ASML，GFS只补充特色工艺敞口。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与多产品收费权更适合稳健持有；GFS具有更大的非线性价格弹性，微软自身也须验证AI资本回收。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Alphabet的平台与客户基础更强，稳健质量胜出；其现金与稀释压力使现价也需节制，GFS在进攻右尾占优。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的低物理资本网络复利更可重复，但现价基准回报下降；GFS的进攻收益空间明显更大。"
+    }
+  ]
+}
