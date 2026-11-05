@@ -1,0 +1,73 @@
+{
+  "ticker": "ACMR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:38-08:00",
+  "reference_price": {
+    "value": 44.43,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        22.1,
+        22.1
+      ],
+      "business_price": [
+        39.2,
+        39.2
+      ],
+      "target_price": [
+        23.9,
+        29.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        61.1,
+        61.1
+      ],
+      "business_price": [
+        110.5,
+        110.5
+      ],
+      "target_price": [
+        97.6,
+        117.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        105.0,
+        105.0
+      ],
+      "business_price": [
+        165.7,
+        165.7
+      ],
+      "target_price": [
+        166.5,
+        208.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        146.3,
+        146.3
+      ],
+      "business_price": [
+        197.6,
+        197.6
+      ],
+      "target_price": [
+        224.3,
+        288.5
+      ],
+      "evidence": "weak"
+    }
+  }
+}
