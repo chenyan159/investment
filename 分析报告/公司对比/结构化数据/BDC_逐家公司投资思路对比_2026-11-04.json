@@ -1,0 +1,164 @@
+{
+  "ticker": "BDC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 105.15,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        89.8,
+        89.8
+      ],
+      "target_price": [
+        52.9,
+        74.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        193.1,
+        193.1
+      ],
+      "target_price": [
+        192.8,
+        240.2
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        258.1,
+        258.1
+      ],
+      "target_price": [
+        317.2,
+        376.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        316.4,
+        316.4
+      ],
+      "target_price": [
+        458.9,
+        530.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "APH",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选APH的规模认证与交付证据，进攻选BDC的低起点与去杠杆弹性。"
+    },
+    {
+      "peer": "TEL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TEL低杠杆和成熟多元现金更适合底仓，BDC乐观右尾更大但整合信用风险更高。"
+    },
+    {
+      "peer": "GLW",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GLW有材料与客户协同优势但扩产占款且子池口径待对账，BDC现价回报与右尾更优。"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "CSCO维护与软件底盘更稳健，现价基准回报较低；BDC提供更强现金修复和权益弹性。"
+    },
+    {
+      "peer": "ANET",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ANET以已规模化平台、净现金和更强基准证据提供相近右尾，是广义网络升级的更优主载体。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "BDC旧业务与现金底盘更稳，CRDO在统一买价下有更高年化右尾但客户集中和稀释更重。"
+    },
+    {
+      "peer": "ROK",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ROK控制生态更深但买价要求较高久期溢价，BDC基准与乐观价格回报均更有吸引力。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ETN成熟订单与多元利润更适合稳健配置，BDC去杠杆与较低盈利定价带来更高弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT平台续约与融资韧性更强，BDC对交付改善的每股弹性更高但不是微软确定供应商。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN合同网络和较浅悲观回撤适合资本保全，BDC更适合承担波动换取较高右尾。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复交易与低实物资本负担更适合核心复利，BDC在顺利整合时具备更高价格弹性。"
+    }
+  ]
+}
