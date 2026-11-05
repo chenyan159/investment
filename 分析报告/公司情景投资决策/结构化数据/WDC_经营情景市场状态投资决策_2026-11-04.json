@@ -1,0 +1,73 @@
+{
+  "ticker": "WDC",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:00-08:00",
+  "reference_price": {
+    "value": 323.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        80.1,
+        80.1
+      ],
+      "business_price": [
+        162.9,
+        162.9
+      ],
+      "target_price": [
+        79.6,
+        101.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        412.7,
+        412.7
+      ],
+      "business_price": [
+        673.8,
+        673.8
+      ],
+      "target_price": [
+        449.5,
+        548.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        787.4,
+        787.4
+      ],
+      "business_price": [
+        1172.2,
+        1172.2
+      ],
+      "target_price": [
+        952.0,
+        1171.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1262.3,
+        1262.3
+      ],
+      "business_price": [
+        1583.1,
+        1583.1
+      ],
+      "target_price": [
+        1461.8,
+        1821.2
+      ],
+      "evidence": "weak"
+    }
+  }
+}
