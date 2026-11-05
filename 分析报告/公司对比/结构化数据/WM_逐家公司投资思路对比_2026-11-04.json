@@ -1,0 +1,156 @@
+{
+  "ticker": "WM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:47:35-08:00",
+  "reference_price": {
+    "value": 238.49,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        235.3,
+        235.3
+      ],
+      "target_price": [
+        192.6,
+        212.4
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        314.1,
+        314.1
+      ],
+      "target_price": [
+        297.5,
+        322.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        368.0,
+        368.0
+      ],
+      "target_price": [
+        378.2,
+        407.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        393.1,
+        393.1
+      ],
+      "target_price": [
+        419.1,
+        465.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "negative",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "RSG",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM的现价倍数和受损回撤更适合防御底仓，RSG的ES扩张与突破右尾更强。"
+    },
+    {
+      "peer": "WCN",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "共同买价下WM基准和右尾年化均较高，WCN额外承担环境现金尾部且估值更贵。"
+    },
+    {
+      "peer": "CWST",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM的现金底盘和处置冗余更稳，CWST有更大的整合与许可右尾但只适合里程碑小仓。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "防御与回撤约束下WM更合适，ECL高科技业务提供更大右尾；工业源头减量不替代主体垃圾处置。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM更适合低经营波动底仓，CMI按共同价格重算后的成长年化和供电右尾更高，需先过Q3。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM以更小的周期下行换取较低回报，CAT的供电和自动化右尾更大但金融及机械周期回撤明显。"
+    },
+    {
+      "peer": "WMB",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM的当期股东现金与资本需求更平衡，WMB的合同扩张和能源通道右尾更大但建设期现金更薄。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN的合同质量与WM的防御现金大致相当，当前买价下WM基准年化及右尾略高，构成有限相对优势。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "Visa在相近基准年化下有更强的轻资本复利和较短窗口右尾，WM主要胜在更低的经营及压力波动。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "WM更适合限制现金投入和波动的底仓，微软在更短目标窗口的增长及代理平台右尾明显更强。"
+    }
+  ]
+}
