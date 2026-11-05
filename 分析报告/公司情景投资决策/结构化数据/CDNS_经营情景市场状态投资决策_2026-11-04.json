@@ -1,0 +1,73 @@
+{
+  "ticker": "CDNS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:20:41-08:00",
+  "reference_price": {
+    "value": 329.52,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        96.7,
+        96.7
+      ],
+      "business_price": [
+        183.0,
+        183.0
+      ],
+      "target_price": [
+        132.5,
+        162.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        263.2,
+        263.2
+      ],
+      "business_price": [
+        369.5,
+        369.5
+      ],
+      "target_price": [
+        379.6,
+        440.3
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        397.4,
+        397.4
+      ],
+      "business_price": [
+        455.8,
+        455.8
+      ],
+      "target_price": [
+        530.7,
+        605.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        595.9,
+        595.9
+      ],
+      "business_price": [
+        563.6,
+        563.6
+      ],
+      "target_price": [
+        733.8,
+        857.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
