@@ -1,0 +1,172 @@
+{
+  "ticker": "ICHR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:01:32-08:00",
+  "reference_price": {
+    "value": 33.71,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-28",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        20.9,
+        20.9
+      ],
+      "target_price": [
+        17.1,
+        20.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        68.7,
+        68.7
+      ],
+      "target_price": [
+        68.7,
+        78.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        101.4,
+        101.4
+      ],
+      "target_price": [
+        116.7,
+        147.3
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        130.5,
+        130.5
+      ],
+      "target_price": [
+        171,
+        221.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "UCTT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ICHR净现金和更清楚的稀释边界相对稳健；UCTT在共同12倍压力下仍保留更大的制造放量赔率，但18倍主表溢价需验证。"
+    },
+    {
+      "peer": "MKSI",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟关键部件和耗材已有现金，最新业绩继续上修；估值与右尾均优于ICHR，但承担较高优先债权和转债尾部。"
+    },
+    {
+      "peer": "AEIS",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AEIS的已盈利工艺电源和实际第二支柱更适合稳健复利；ICHR小市值部件转型的条件右尾更大、证据更弱。"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ENTG复购更强，但现价现金价值缓冲和债务保护不足，两者均不作稳健底仓；高弹性要求下选择ICHR。"
+    },
+    {
+      "peer": "LRCX",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Lam控制工艺资格与装机服务、现金更强，是同一设备逻辑的稳健优选；ICHR仅在更高波动右尾幅度上占优。"
+    },
+    {
+      "peer": "AMAT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMAT凭工艺与服务取得更多产业利润，适合稳健设备配置；ICHR有更高但更依赖部件外销的条件右尾。"
+    },
+    {
+      "peer": "ASML",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ASML拥有更稀缺的不可替代工艺位置；ICHR突破幅度略大，ASML远期规模亦需超过旧长期框架。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSMC已收费平台、净金融资产和现金能力更适合稳健配置；ICHR部件放量右尾更大，但无相同证据强度。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MU已实现大额现金和更高的条件回报，优于尚未现金自给的ICHR；高毛利持续期仍是独立周期风险。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT续费与分发护城河更适合稳健复利，但现价也需约束资本回报；ICHR承担更大执行风险换取较大右尾。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "GOOGL当期现金缺口和成长久期溢价削弱现价稳健性；两者均非稳健底仓，ICHR进攻赔率与资本规模更合适。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRT已有正股东现金、系统交付与服务支撑稳健视角；ICHR在承受更高供应链执行风险时提供更大右尾。"
+    }
+  ]
+}
