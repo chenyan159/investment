@@ -1,0 +1,172 @@
+{
+  "ticker": "AMD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:00:00-08:00",
+  "reference_price": {
+    "value": 488.78,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        256.7,
+        256.7
+      ],
+      "target_price": [
+        102.5,
+        136.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        699.5,
+        699.5
+      ],
+      "target_price": [
+        699.5,
+        841.3
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        962.6,
+        962.6
+      ],
+      "target_price": [
+        1093.3,
+        1289.4
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1329.3,
+        1329.3
+      ],
+      "target_price": [
+        1693.5,
+        2057.8
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "NVDA",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟GPU生态、盈利底盘及基准与右尾回报均优于AMD，信用支持仍需单独验证。"
+    },
+    {
+      "peer": "INTC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMD无需同时修复重资产制造系统，INTC基准现金回收和突破融资负担更弱。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "成熟软件现金与多平台ASIC实现提供更强回报，须核查客户集中及融资净责任。"
+    },
+    {
+      "peer": "ARM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ARM架构采用尚不能转成同等股东现金，现价基准回报为负且更依赖平台跃迁。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "TSM多路线制造收费、基准回报及受损韧性更佳，高弹视角与AMD大致相当。"
+    },
+    {
+      "peer": "MU",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "内存价值截留、较低经营倍数及更强条件回报胜过AMD，但仍承担净价和扩产周期。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MSFT成熟企业收费胜在稳健，AMD二供平台成功的突破弹性更强。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GOOGL成熟搜索与云更适合稳健角色，AMD乐观和突破更强，二者均需验证资本回收。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AWS与多来源平台的基准和右尾更强，优先顺位以设备和客户资金回收为条件。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa重复收费与低资本强度适合稳健，AMD提供更大且更不确定的平台右尾。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Costco经营与受损路径更可控但质量溢价压低收益，AMD更适合高弹任务。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG成熟临床壁垒被高价购买后基准年化不足，稳健大致相当而AMD高弹占优。"
+    }
+  ]
+}
