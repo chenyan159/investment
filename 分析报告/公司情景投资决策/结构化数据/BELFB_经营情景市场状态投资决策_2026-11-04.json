@@ -1,0 +1,73 @@
+{
+  "ticker": "BELFB",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:20-08:00",
+  "reference_price": {
+    "value": 217.43,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        88.5,
+        88.5
+      ],
+      "business_price": [
+        154.6,
+        154.6
+      ],
+      "target_price": [
+        103.6,
+        129.1
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        227.0,
+        227.0
+      ],
+      "business_price": [
+        345.0,
+        345.0
+      ],
+      "target_price": [
+        314.4,
+        375.7
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        386.2,
+        386.2
+      ],
+      "business_price": [
+        493.9,
+        493.9
+      ],
+      "target_price": [
+        539.1,
+        652.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        615.7,
+        615.7
+      ],
+      "business_price": [
+        658.5,
+        658.5
+      ],
+      "target_price": [
+        813.6,
+        999.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
