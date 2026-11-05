@@ -1,0 +1,180 @@
+{
+  "ticker": "GEV",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:22:34-08:00",
+  "reference_price": {
+    "value": 832.83,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        433,
+        433
+      ],
+      "target_price": [
+        305,
+        396
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        907,
+        907
+      ],
+      "target_price": [
+        907,
+        1086
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1220,
+        1220
+      ],
+      "target_price": [
+        1458,
+        1743
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1424,
+        1424
+      ],
+      "target_price": [
+        1930,
+        2380
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "positive",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "HTHIY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "电网同逻辑下日立的基准回报和悲观缓冲均更好，GEV仅提供更纯的燃机暴露"
+    },
+    {
+      "peer": "ETN",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同为电力设备成长，伊顿在现价的基准和右尾年化均更高，新增现金与债务仍须核验"
+    },
+    {
+      "peer": "CAT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CAT的较低买价负担，进攻选GEV的大型燃机价差及服务复利弹性"
+    },
+    {
+      "peer": "CMI",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选CMI的现金底座与基准年化，进攻选GEV已商业化大机组带来的更早价差兑现"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选GEV的成熟利润与融资韧性，容忍接近全损且追求最大右尾者才优先BE"
+    },
+    {
+      "peer": "CEG",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "comparable",
+      "verdict": "comparable",
+      "reason": "CEG的在运资产与较小模型回撤抵销杠杆和政策风险，双方均不足以成为本集合的稳健首选"
+    },
+    {
+      "peer": "VST",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "广义电力进攻优先VST的较低现价和已在运资产，仍以卫星仓承担杠杆而非当成低风险公用事业"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "基础设施交付逻辑下PWR的基准与突破年化更高，但须对总价责任及高增长模型留现金约束"
+    },
+    {
+      "peer": "HWM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选HWM的合格零件现金与航空分散，进攻选GEV更大的燃机及新电力架构右尾"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "投资AI变现和平台收费优先MSFT，GEV只在需要分散软件及算力更新风险时补充"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "即对远期利润及现金积累作显著折让，NVDA仍有较好条件赔率，但其高增长基准不按已锁定事实处理"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "正常经营与国际交付环境下TSM的基准和右尾均优，GEV用于降低台湾集中风险而非复制制造优势"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选MA的基准回报和现金韧性，追求电力景气及更大突破幅度时才选GEV"
+    }
+  ]
+}
