@@ -1,0 +1,180 @@
+{
+  "ticker": "AMZN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:43:00-08:00",
+  "reference_price": {
+    "value": 266.03,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        296.7,
+        296.7
+      ],
+      "target_price": [
+        109.3,
+        141.2
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        562.7,
+        562.7
+      ],
+      "target_price": [
+        499.3,
+        580.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        699.7,
+        699.7
+      ],
+      "target_price": [
+        747.4,
+        848.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        896.4,
+        896.4
+      ],
+      "target_price": [
+        1055.8,
+        1186.5
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MSFT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软的企业订阅与当期正股东现金更适合稳健核心；AMZN的AWS、广告及第二曲线带来更大条件右尾。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMZN的基准现金流价值覆盖买价更好，购物闭环与云增长并存；Alphabet还承担搜索变现迁移及TPU外售信用责任。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMZN的客户与现金来源更分散；ORCL在客户融资和交付顺利时条件右尾更大，但净债务、预付及强制转换约束更重。"
+    },
+    {
+      "peer": "BABA",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMZN的全球云与商家收费更成熟；BABA的低起点利润恢复和中国AI商业化具有更大条件弹性，须承担补贴、政策及ADS汇率风险。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WMT的必需品稳定性更高，但现价基准年化回报偏低；在愿意承担成长回撤的长期资金中，AMZN的云利润与现金修复回报更有吸引力。"
+    },
+    {
+      "peer": "META",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "AMZN的基准现金恢复和右尾均更有吸引力；Meta广告强，但前沿AI投入、员工扣税及法律现金支出使基准股东剩余偏弱。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AMZN的成熟利润池和融资承受力明显更稳；CRWV的普通股杠杆给出更大条件右尾，同时存在全损和大幅稀释路径。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI投资趋势下，NVDA现有产现、平台控制与条件上行优于AMZN；须约束客户融资、ASIC替代及供应承诺风险。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "AVGO的软件现金、跨客户ASIC与网络收费提供更高的条件回报；AMZN自研成功不等于可取得制造和系统实现的全部利润。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TSM通过多条芯片路线收取制造利润、现金与稀释纪律更稳；AMZN的平台、外售芯片及新业务给出更大条件突破幅度。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "COST的会员与股东现金更适合低经营风险复利，但高买价限制回报；AMZN的业务利润放大和右尾更大。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa的现金转换及成熟网络适合稳健复利；当前价格抬高后回报余量下降，AMZN在可容忍波动资金中的右尾更强。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的区域供气网络和合同现金适合资本保全型复利；AMZN的基准利润及突破放大更强，但资本回收和回撤风险更大。"
+    }
+  ]
+}
