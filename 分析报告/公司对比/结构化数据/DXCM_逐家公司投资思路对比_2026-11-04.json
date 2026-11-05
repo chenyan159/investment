@@ -1,0 +1,156 @@
+{
+  "ticker": "DXCM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:44:42-08:00",
+  "reference_price": {
+    "value": 88.48,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        65.6,
+        65.6
+      ],
+      "target_price": [
+        35.8,
+        44.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        154.2,
+        154.2
+      ],
+      "target_price": [
+        111.4,
+        136.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        213.2,
+        213.2
+      ],
+      "target_price": [
+        200.6,
+        235.9
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        267.1,
+        267.1
+      ],
+      "target_price": [
+        281.0,
+        340.6
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ABT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健取雅培的多业务复购，CGM高弹性取DXCM；雅培债务及诉讼使其不能全面替代。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健相对取DXCM较低支付与资本门槛；高弹取礼来已验证的治疗扩容及口服平台，二者可互补。"
+    },
+    {
+      "peer": "AMGN",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "DXCM基准每股增长和右尾均更高；MariTide只是安进集团的一项早期接续，现价缺少足够补偿。"
+    },
+    {
+      "peer": "VRTX",
+      "relation": "alternative",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "VRTX资产负债及受损回撤较好，DXCM增长赔率较好；稳健接近，高弹优先DXCM而非把细胞疗法提前证券化。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "DXCM不承保总医疗成本且无需修复多层利润；UNH虽便宜但价格成本差、PBM与法律风险更重。"
+    },
+    {
+      "peer": "MCK",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健取麦克森多药品和专科服务收费，高弹取DXCM传感平台；麦克森不能复制CGM厂家的经营杠杆。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG业务壁垒更强，但现价基准年化回报太低；DXCM两个投资视角的价格赔率更好。"
+    },
+    {
+      "peer": "RMD",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健取瑞思迈更低估值及更窄受损区间；高弹取DXCM非胰岛素支付与规模利润的上行。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健取维萨更持久的资本效率和网络复利；高弹取DXCM更大的有条件右尾，不能把维萨当CGM同逻辑替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软稳健基准的年化回报和受损区间更好，高弹年化接近；综合优先微软，DXCM仅在CGM专门暴露和略大右尾上补充。"
+    }
+  ]
+}
