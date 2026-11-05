@@ -1,0 +1,164 @@
+{
+  "ticker": "FTNT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:40:56-08:00",
+  "reference_price": {
+    "value": 129.39,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        120.9,
+        120.9
+      ],
+      "target_price": [
+        71.2,
+        86.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        200.4,
+        200.4
+      ],
+      "target_price": [
+        165.6,
+        191.7
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        257.3,
+        257.3
+      ],
+      "target_price": [
+        240.5,
+        279.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        296.6,
+        296.6
+      ],
+      "target_price": [
+        303.0,
+        354.3
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "positive",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "PANW",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FTNT的基准现金归属和乐观年化更好；PANW平台更宽尚不足抵消买价"
+    },
+    {
+      "peer": "CSCO",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FTNT；追求AI硅光右尾选CSCO，后者的突破来自不同产品池"
+    },
+    {
+      "peer": "CRWD",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FTNT有显著更好的基准与乐观赔率；CRWD端点入口优势已被高价购买"
+    },
+    {
+      "peer": "NET",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "FTNT的已付费利润和中期赔率占优；NET的平台远景不能替代现金与价格验证"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "微软的原生权限、分发和同年化回报更强；FTNT仅作低资本强度的独立安全补充"
+    },
+    {
+      "peer": "INTC",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选FTNT；高风险选INTC转型右尾，但不能把SP6关系当成代工平台必胜"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健现金配置选FTNT；能承担算力资本回收风险的进攻资金选AMZN"
+    },
+    {
+      "peer": "ANET",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ANET的现金盈利已成立且基准及右尾更高；FTNT的客户分散优势适合补充"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "现金韧性选FTNT；TPU和多平台规模右尾选GOOGL，搜索/资本风险不能互相抵消"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "资本保全与复利确定性选V；高弹性选FTNT，V当前价格已消耗一部分基准回报"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ADBE的低买价、现金与基准/右尾回报更优；FTNT在收费单位抗替代性上更好"
+    }
+  ]
+}
