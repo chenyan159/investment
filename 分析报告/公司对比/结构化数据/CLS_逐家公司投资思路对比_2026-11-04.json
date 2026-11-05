@@ -1,0 +1,172 @@
+{
+  "ticker": "CLS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:08:16-08:00",
+  "reference_price": {
+    "value": 236.41,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        139.1,
+        139.1
+      ],
+      "target_price": [
+        115.2,
+        154.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        443.3,
+        443.3
+      ],
+      "target_price": [
+        537.4,
+        684.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        681.1,
+        681.1
+      ],
+      "target_price": [
+        1059.2,
+        1289.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        981.6,
+        981.6
+      ],
+      "target_price": [
+        1706.5,
+        2045.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "high_priority_offense",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "JBL",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选 JBL 的多客户兑现与现金底盘，高弹选 CLS 的计算扩量；JBL 是更均衡 EMS 替代"
+    },
+    {
+      "peer": "FLEX",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "稳健大致相当且均需验证；高弹选 CLS，净现金与更大计算右尾优于 Flex 的分拆融资复杂度"
+    },
+    {
+      "peer": "SANM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CLS 既有网络利润底盘和可验证产品代际更强；SANM 不是同逻辑下更优替代"
+    },
+    {
+      "peer": "ANET",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选 ANET 的软件/运维租金和现金，高弹选 CLS 的较低买价倍数及更大右尾；开放NOS并未消灭ANET"
+    },
+    {
+      "peer": "HPE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两个视角均选 CLS：更强净现金、更快每股增长；HPE 有网络协同但非更好的高弹制造载体"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选 AVGO 的芯片与软件租金，高弹选 CLS 的低基数与更大价格右尾；两者客户信用风险相关"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "两视角优先 NVDA：基准回报更高、下行较小、平台盈利与内生资金更强；CLS原始右尾较大但需更多生产/融资条件，适合作补充"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "现价两视角均选 CLS：基准价格空间更大、资本投入规模可界定；客户有强壁垒不等于其股票更便宜"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选 VRT 的跨平台产品/服务与现金，高弹选 CLS；VRT 是较少押单一计算路线的替代"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资本保全选 WM，高弹选 CLS；WM以较低潜在回报购买分散化，不是同赛道替代"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选 Visa 的收费网络和资本效率，高弹选 CLS；Visa目前只给中低个位至低双位数价格年化"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两视角均选 CLS 的价格赔率；ISRG商业壁垒更强，但当前买价下基准回报不足以胜出"
+    }
+  ]
+}
