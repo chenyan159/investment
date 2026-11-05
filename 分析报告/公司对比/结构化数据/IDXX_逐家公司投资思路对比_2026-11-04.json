@@ -1,0 +1,156 @@
+{
+  "ticker": "IDXX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:00-08:00",
+  "reference_price": {
+    "value": 698.55,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        760.5,
+        760.5
+      ],
+      "target_price": [
+        435.7,
+        529.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1033.1,
+        1033.1
+      ],
+      "target_price": [
+        802.7,
+        932.0
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        1206.0,
+        1206.0
+      ],
+      "target_price": [
+        1138.3,
+        1289.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        1409.0,
+        1409.0
+      ],
+      "target_price": [
+        1506.5,
+        1742.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ZTS",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "IDXX的成熟诊断增长和定价权更可靠；ZTS低起点下的经营修复及管线右尾更大，但须先验证份额与净价止跌。"
+    },
+    {
+      "peer": "ABT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "IDXX的现金与负债结构更清楚；计入营养获派股份后ABT右尾更大，但并购债务、支付重置和诉讼使其不构成全面替代。"
+    },
+    {
+      "peer": "RMD",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健配置优先RMD的较低经营倍数与净现金；进攻视角IDXX的新品及国际菜单右尾更早，但不能忽略RMD药物替代风险。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均有耗材工作流壁垒，IDXX现价下基准与右尾更好，且ISRG还承担明确器械延寿降价、SBC与租赁制造资金负担。"
+    },
+    {
+      "peer": "BSX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "IDXX更适合追求经营确定性；BSX利润修复和介入平台右尾更大，但EP/左心耳封堵已受损且并购融资尚待兑现。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "DHR以更低倍数和分散复购提供较好的稳健回报；IDXX有更大的有机增长与新品右尾，DHR收购回报是其主要约束。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "TMO的较低倍数被较慢内生增长、较高并购债务与制造项目资本负担抵销；IDXX的基准赔率相近而现金质量和右尾更好。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "V以成熟网络和更低资本更新负担优先承担稳健底仓；IDXX新品右尾较大，V仍须承担续约激励和网络规则监管。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT在较短观察期内给出更好的基准及右尾回报，平台收费权更广；优先级以AI资本回收持续验证为条件，并不等于低风险防御。"
+    },
+    {
+      "peer": "MCO",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MCO的成熟评级和续约现金以更低倍数支持稳健配置；IDXX的突破终点更大，MCO乐观路径则更强，进攻胜负取决于右尾而非单一涨幅。"
+    }
+  ]
+}
