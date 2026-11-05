@@ -1,0 +1,73 @@
+{
+  "ticker": "CAMT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 101.42,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        36.4,
+        36.4
+      ],
+      "business_price": [
+        87.1,
+        87.1
+      ],
+      "target_price": [
+        49.9,
+        62.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        146.2,
+        146.2
+      ],
+      "business_price": [
+        234.0,
+        234.0
+      ],
+      "target_price": [
+        199.4,
+        233.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        227.9,
+        227.9
+      ],
+      "business_price": [
+        321.3,
+        321.3
+      ],
+      "target_price": [
+        304.9,
+        353.7
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        356.8,
+        356.8
+      ],
+      "business_price": [
+        420.8,
+        420.8
+      ],
+      "target_price": [
+        442.5,
+        529.8
+      ],
+      "evidence": "weak"
+    }
+  }
+}
