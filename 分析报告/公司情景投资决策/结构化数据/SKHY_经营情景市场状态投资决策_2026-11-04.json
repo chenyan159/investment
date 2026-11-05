@@ -1,0 +1,73 @@
+{
+  "ticker": "SKHY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:30:00-08:00",
+  "reference_price": {
+    "value": 143.07,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        85.15,
+        85.15
+      ],
+      "business_price": [
+        109.89,
+        109.89
+      ],
+      "target_price": [
+        76.97,
+        93.43
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        263.73,
+        263.73
+      ],
+      "business_price": [
+        298.58,
+        298.58
+      ],
+      "target_price": [
+        273.02,
+        324.13
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        626.46,
+        626.46
+      ],
+      "business_price": [
+        597.68,
+        597.68
+      ],
+      "target_price": [
+        651.29,
+        758.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1104.96,
+        1104.96
+      ],
+      "business_price": [
+        819.33,
+        819.33
+      ],
+      "target_price": [
+        1043.2,
+        1267.06
+      ],
+      "evidence": "weak"
+    }
+  }
+}
