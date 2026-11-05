@@ -1,0 +1,172 @@
+{
+  "ticker": "AXTI",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:05:00-08:00",
+  "reference_price": {
+    "value": 47.54,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        9.1,
+        9.1
+      ],
+      "target_price": [
+        10.4,
+        13.9
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        64.3,
+        64.3
+      ],
+      "target_price": [
+        57.8,
+        70.8
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        96.5,
+        96.5
+      ],
+      "target_price": [
+        118.8,
+        152.2
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        133.8,
+        133.8
+      ],
+      "target_price": [
+        201.5,
+        269.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "avoid",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "SMTOY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "住友以成熟业务和较浅受损回撤胜稳健；AXTI以更纯的InP利润弹性胜右尾。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "COHR覆盖更广光学利润池，校准后基准与右尾年化更高；资本占用仍使它只适合卫星仓。"
+    },
+    {
+      "peer": "LWLG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LWLG纸面突破更大但基准亏损赔率与规模证据明显更弱，AXTI的已付费放量使两种风险调整视角均更优。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "CRDO基准年化和右尾更高、制造地域／赎回结构更简单，客户集中与股权成本限制核心配置。"
+    },
+    {
+      "peer": "TSEM",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "TSEM具有更明确的具年合同、较低受损回撤和更高基准／乐观年化，在当前同口径下优先于AXTI。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "value_chain",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "稳健标准下两者均不足；能承担换股与交割风险的进攻资金优先LITE，其独立失败分支仍须承受大幅回撤。"
+    },
+    {
+      "peer": "MTSI",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MACOM的工业国防底盘及较浅压力回撤胜稳健；AXTI当前买价对应的上行倍数胜进攻。"
+    },
+    {
+      "peer": "AAOI",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "AXTI现金与已兑现利润较强；AAOI在足额融资和合格量产后具有更大右尾，资金风险也更高。"
+    },
+    {
+      "peer": "FN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "FN成熟复购与更低受损回撤胜稳健，年化右尾与AXTI接近，综合优先FN而非重复押同一光学预算。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软靠成熟收费权和多业务现金胜稳健；AXTI以较小利润基数和InP稀缺租金胜条件右尾。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN的客户合约与浅回撤胜稳健；AXTI的乐观／突破年化远高于成熟供气业务。"
+    },
+    {
+      "peer": "VRTX",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "VRTX已验证的CF现金供给胜稳健；AXTI以更高经营杠杆和材料放量弹性胜进攻。"
+    }
+  ]
+}
