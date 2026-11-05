@@ -1,0 +1,73 @@
+{
+  "ticker": "MPWR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:23:16-08:00",
+  "reference_price": {
+    "value": 1260.64,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        443.3,
+        443.3
+      ],
+      "business_price": [
+        812.5,
+        812.5
+      ],
+      "target_price": [
+        599.7,
+        759.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        1305.9,
+        1305.9
+      ],
+      "business_price": [
+        1767.2,
+        1767.2
+      ],
+      "target_price": [
+        1767.2,
+        2245.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        1924.6,
+        1924.6
+      ],
+      "business_price": [
+        2268.3,
+        2268.3
+      ],
+      "target_price": [
+        2732.9,
+        3352.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        2960.5,
+        2960.5
+      ],
+      "business_price": [
+        3047.1,
+        3047.1
+      ],
+      "target_price": [
+        4098.6,
+        5150.1
+      ],
+      "evidence": "weak"
+    }
+  }
+}
