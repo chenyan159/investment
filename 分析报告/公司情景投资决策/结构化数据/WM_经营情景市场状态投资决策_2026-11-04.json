@@ -1,0 +1,73 @@
+{
+  "ticker": "WM",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:55:00-08:00",
+  "reference_price": {
+    "value": 238.49,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        113.8,
+        113.8
+      ],
+      "business_price": [
+        235.3,
+        235.3
+      ],
+      "target_price": [
+        192.6,
+        212.4
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        185.9,
+        185.9
+      ],
+      "business_price": [
+        314.1,
+        314.1
+      ],
+      "target_price": [
+        297.5,
+        322.9
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        240.4,
+        240.4
+      ],
+      "business_price": [
+        368.0,
+        368.0
+      ],
+      "target_price": [
+        378.2,
+        407.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        295.2,
+        295.2
+      ],
+      "business_price": [
+        393.1,
+        393.1
+      ],
+      "target_price": [
+        419.1,
+        465.1
+      ],
+      "evidence": "weak"
+    }
+  }
+}
