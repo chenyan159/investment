@@ -1,0 +1,172 @@
+{
+  "ticker": "ET",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:35:00-08:00",
+  "reference_price": {
+    "value": 19.46,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        16.51,
+        16.51
+      ],
+      "target_price": [
+        12.05,
+        14.46
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        25.28,
+        25.28
+      ],
+      "target_price": [
+        25.84,
+        29.53
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        29.58,
+        29.58
+      ],
+      "target_price": [
+        34.54,
+        38.86
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        33.15,
+        33.15
+      ],
+      "target_price": [
+        43.56,
+        48.4
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "preferred_participate",
+    "offense_allocation": "avoid",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "WMB",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "基准含息年化接近；WMB已锁项目和增长斜率更优，增长型天然气配置优先WMB，ET用于更高分派需求。"
+    },
+    {
+      "peer": "CEG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ET的分派缓冲和现金估值；进攻选CEG的存量电量重定价弹性。"
+    },
+    {
+      "peer": "VST",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ET的分派和较小常规悲观损失；高弹资金优先VST的存量电站和更高基准及右尾年化。"
+    },
+    {
+      "peer": "BE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ET；追求可承受大幅本金损失的制造放量右尾才选小仓BE，其基准价格回报不足以支持核心配置。"
+    },
+    {
+      "peer": "NEE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ET当前税前现金回报更高，基准含分派赔率及右尾并不逊于NEE，且不需承担同等规模合并发股。"
+    },
+    {
+      "peer": "AEP",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "ET分派及基准含息年化略优，AEP监管确定性被持续融资抵销；右尾相近，AEP不构成全面更优替代。"
+    },
+    {
+      "peer": "XOM",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "油气运输逻辑优先ET，含分派基准回报更高且少暴露油价；要押原油供给冲击才用XOM补充。"
+    },
+    {
+      "peer": "GEV",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ET的现金收益及较低经营兑现要求；设备利润非线性和更大右尾选GEV，但需更高证据门槛。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健选ET的成熟收费与分派；高风险成长优先ORCL的基准及乐观年化，但不把管理层融资目标当已实现现金。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT成熟平台的增长证据、较短兑现窗口和右尾年化更优；ET仅在高现金分派需求上有不可替代补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "LIN业务确定性更强，但现价现金DCF及回报不足以补偿高倍数；ET在当前收入及总赔率上胜出。"
+    },
+    {
+      "peer": "BRK.B",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "BRK资产负债表更稳，但579.09买价的基准年化偏低；按投资回报门槛ET更优，纯保本偏好另选BRK。"
+    }
+  ]
+}
