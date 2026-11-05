@@ -1,0 +1,172 @@
+{
+  "ticker": "BSX",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:50:16-08:00",
+  "reference_price": {
+    "value": 45.82,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        34.0,
+        34.0
+      ],
+      "target_price": [
+        22.7,
+        30.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        63.9,
+        63.9
+      ],
+      "target_price": [
+        67.5,
+        80.5
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        85.0,
+        85.0
+      ],
+      "target_price": [
+        106.2,
+        128.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        96.8,
+        96.8
+      ],
+      "target_price": [
+        140.2,
+        172.1
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MDT",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MDT实际CAS放量与较浅下行适合稳健消融配置，BSX承担修复风险换取更大右尾。"
+    },
+    {
+      "peer": "ABT",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "雅培多平台分散被新披露现金弱化和Exact／营养责任抵消，BSX现价修复右尾更好。"
+    },
+    {
+      "peer": "JNJ",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "强生EP竞争力强但集团基准回报偏薄，计入分拆股份和股息后仍逊于BSX当前赔率。"
+    },
+    {
+      "peer": "EW",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "EW结构心临床和净现金更适合稳健配置，BSX多业务修复的右尾更大。"
+    },
+    {
+      "peer": "ISRG",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "ISRG工作流质量更高但现价需要较长高增长持续期，BSX以较低估值提供更好价格补偿。"
+    },
+    {
+      "peer": "LLY",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "礼来药物需求证据更强且右尾同档，BSX以更浅受损幅度和更高基准回报取得综合优势。"
+    },
+    {
+      "peer": "HCA",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "医院需求增加仍受支付、工资和债务挤压，BSX基准回报和平台右尾均更有吸引力。"
+    },
+    {
+      "peer": "UNH",
+      "relation": "value_chain",
+      "compounding_preference": "comparable",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者均为风险修复，UNH医疗定价与监管资本更复杂，BSX上行情景证据和赔率较好。"
+    },
+    {
+      "peer": "RMD",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "RMD净现金与成熟面罩复购更适合质量底仓，BSX提供更高波动下的修复右尾。"
+    },
+    {
+      "peer": "SYK",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "SYK成熟器械基准更扎实且下行较浅，BSX当前价格下的乐观和突破弹性更大。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "Visa收费网络与现金转换更适合稳健资本，BSX以更大经营风险换取更高上行弹性。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "微软基准客户与收费证据更强，按更短持有期折算右尾与BSX相近，综合配置优先微软。"
+    }
+  ]
+}
