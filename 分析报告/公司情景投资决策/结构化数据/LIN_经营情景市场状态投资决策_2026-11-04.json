@@ -1,0 +1,73 @@
+{
+  "ticker": "LIN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:21:20-08:00",
+  "reference_price": {
+    "value": 524.74,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        262.3,
+        262.3
+      ],
+      "business_price": [
+        503.3,
+        503.3
+      ],
+      "target_price": [
+        409.3,
+        460.5
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        424.1,
+        424.1
+      ],
+      "business_price": [
+        665.0,
+        665.0
+      ],
+      "target_price": [
+        631.0,
+        698.6
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        525.6,
+        525.6
+      ],
+      "business_price": [
+        737.4,
+        737.4
+      ],
+      "target_price": [
+        749.7,
+        824.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        641.7,
+        641.7
+      ],
+      "business_price": [
+        788.0,
+        788.0
+      ],
+      "target_price": [
+        854.5,
+        934.6
+      ],
+      "evidence": "weak"
+    }
+  }
+}
