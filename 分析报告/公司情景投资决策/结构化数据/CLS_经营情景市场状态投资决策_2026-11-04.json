@@ -1,0 +1,73 @@
+{
+  "ticker": "CLS",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:00:00-08:00",
+  "reference_price": {
+    "value": 236.41,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        134.0,
+        134.0
+      ],
+      "business_price": [
+        139.1,
+        139.1
+      ],
+      "target_price": [
+        115.2,
+        154.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        454.0,
+        454.0
+      ],
+      "business_price": [
+        443.3,
+        443.3
+      ],
+      "target_price": [
+        537.4,
+        684.1
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        786.0,
+        786.0
+      ],
+      "business_price": [
+        681.1,
+        681.1
+      ],
+      "target_price": [
+        1059.2,
+        1289.6
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1181.4,
+        1181.4
+      ],
+      "business_price": [
+        981.6,
+        981.6
+      ],
+      "target_price": [
+        1706.5,
+        2045.0
+      ],
+      "evidence": "weak"
+    }
+  }
+}
