@@ -1,0 +1,180 @@
+{
+  "ticker": "TTDKY",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:50:00-08:00",
+  "reference_price": {
+    "value": 15.73,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2030-03-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        11.63,
+        12.45
+      ],
+      "target_price": [
+        8.03,
+        9.84
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        24.0,
+        25.03
+      ],
+      "target_price": [
+        22.48,
+        27.34
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        32.9,
+        34.09
+      ],
+      "target_price": [
+        35.96,
+        44.37
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        41.37,
+        42.69
+      ],
+      "target_price": [
+        51.85,
+        64.75
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "build_now"
+  },
+  "comparisons": [
+    {
+      "peer": "MRAAY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "村田已实现的高端元件利润与正现金更适合稳健复利；TDK估值较低，但右尾回报与村田重叠，尚不能抵消现金验证差距。"
+    },
+    {
+      "peer": "VSH",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK成熟利润和低稀释胜在稳健；VSH制造迁移成功后的经营杠杆更大，但须承担增发、转债和投资回收风险。"
+    },
+    {
+      "peer": "PCRHY",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK较少依赖车载补贴、历史质量与子公司索偿；松下已有大规模BBU和材料收费，适合集中押注AI电源与材料的进攻资金。"
+    },
+    {
+      "peer": "BELFB",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK业务分散且没有同等级大额普通股融资；Bel的2027交货订单与小体量电源放量更适合高弹进攻，但需承担客户集中及剩余权益结算。"
+    },
+    {
+      "peer": "MPWR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK较低的经常利润估值更适合稳健预算；MPS在近芯片供电中的设计和模块收费控制更强，集中押注电源平台时更优，但估值和专利风险较高。"
+    },
+    {
+      "peer": "ALGM",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "TDK的成熟利润、资本结构和基准赔率更好；ALGM已实现数据中心传感收入，但其800V延期、利润率恢复和更深受损回撤使右尾优势不足以形成全面替代。"
+    },
+    {
+      "peer": "STX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK分散利润与较小受损回撤更适合稳健资金；希捷直接捕获整盘价格和密度红利，年化进攻赔率更强，同时承担更大价格租金回吐风险。"
+    },
+    {
+      "peer": "WDC",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "TDK更适合控制单一HDD周期风险；WDC在40TB和HAMR成功且价格保持时右尾更大，但同行预测合计高于旧行业中枢，不能把该右尾作为稳健基准。"
+    },
+    {
+      "peer": "AAPL",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "苹果生态和现金更强，但当前价格下基准回报接近零且右尾较小；TDK为同一终端升级提供更低买入估值和更大的条件回报。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "先进制造的客户迁移成本、已收费节点和基准年化回报更强，构成广义AI资本开支逻辑的优先载体；台湾极端地缘尾部须另控仓，TDK可作不同业务的补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "target_preferred",
+      "reason": "Alphabet平台更广，但巨额再投资、信用支持和新增权益融资削弱当前现金赔率；TDK基准价格回报更高且资本责任较小，两者右尾区间重叠。"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MA重复收费、低实物资本和较小受损回撤更适合核心复利；TDK的高电流、HDD和新业务成功时价格放大更大，适合作卫星进攻补充。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "接受较低基准收益以保全资本时，林德长期供气合同与区域网络更优；需要15%以上成长回报和右尾时，TDK更有吸引力，两者不是同收益目标下的完全替代。"
+    }
+  ]
+}
