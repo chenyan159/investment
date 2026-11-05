@@ -1,0 +1,73 @@
+{
+  "ticker": "REGN",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:58:00-08:00",
+  "reference_price": {
+    "value": 930.67,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        555.4,
+        555.4
+      ],
+      "business_price": [
+        986.1,
+        986.1
+      ],
+      "target_price": [
+        592.4,
+        698.8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "dcf_price": [
+        1078.3,
+        1078.3
+      ],
+      "business_price": [
+        1890.2,
+        1890.2
+      ],
+      "target_price": [
+        1496.6,
+        1728.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        1975.1,
+        1975.1
+      ],
+      "business_price": [
+        2505.7,
+        2505.7
+      ],
+      "target_price": [
+        2283.8,
+        2706.1
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        3021.1,
+        3021.1
+      ],
+      "business_price": [
+        2935.1,
+        2935.1
+      ],
+      "target_price": [
+        3174.5,
+        3805.2
+      ],
+      "evidence": "weak"
+    }
+  }
+}
