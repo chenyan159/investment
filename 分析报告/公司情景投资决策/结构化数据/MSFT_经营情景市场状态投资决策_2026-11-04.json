@@ -1,0 +1,73 @@
+{
+  "ticker": "MSFT",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:53:32-08:00",
+  "reference_price": {
+    "value": 555.8,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-06-29",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        258.4,
+        258.4
+      ],
+      "business_price": [
+        571.4,
+        571.4
+      ],
+      "target_price": [
+        320.3,
+        392.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        548.4,
+        548.4
+      ],
+      "business_price": [
+        849.9,
+        849.9
+      ],
+      "target_price": [
+        745.0,
+        852.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        816.4,
+        816.4
+      ],
+      "business_price": [
+        1038.5,
+        1038.5
+      ],
+      "target_price": [
+        1073.8,
+        1204.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        1215.4,
+        1215.4
+      ],
+      "business_price": [
+        1277.8,
+        1277.8
+      ],
+      "target_price": [
+        1441.4,
+        1682.1
+      ],
+      "evidence": "weak"
+    }
+  }
+}
