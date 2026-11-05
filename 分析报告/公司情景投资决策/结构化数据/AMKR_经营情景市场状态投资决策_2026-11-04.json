@@ -1,0 +1,73 @@
+{
+  "ticker": "AMKR",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:22:00-08:00",
+  "reference_price": {
+    "value": 35.66,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        18.8,
+        18.8
+      ],
+      "business_price": [
+        23.6,
+        23.6
+      ],
+      "target_price": [
+        17.7,
+        21.4
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        62.7,
+        62.7
+      ],
+      "business_price": [
+        56.7,
+        56.7
+      ],
+      "target_price": [
+        56.1,
+        68.9
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "dcf_price": [
+        108.0,
+        108.0
+      ],
+      "business_price": [
+        90.0,
+        90.0
+      ],
+      "target_price": [
+        95.4,
+        120.5
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        165.1,
+        165.1
+      ],
+      "business_price": [
+        115.2,
+        115.2
+      ],
+      "target_price": [
+        145.4,
+        183.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
