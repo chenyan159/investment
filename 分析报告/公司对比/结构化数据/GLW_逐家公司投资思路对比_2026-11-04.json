@@ -1,0 +1,172 @@
+{
+  "ticker": "GLW",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T18:03:08-08:00",
+  "reference_price": {
+    "value": 118.77,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        113.13,
+        113.13
+      ],
+      "target_price": [
+        52.4,
+        67.83
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        228.82,
+        228.82
+      ],
+      "target_price": [
+        163.03,
+        200.0
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        311.33,
+        311.33
+      ],
+      "target_price": [
+        272.85,
+        322.2
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        385.02,
+        385.02
+      ],
+      "target_price": [
+        367.89,
+        439.35
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "SMTOY",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "住友现价和受损回撤更有缓冲；GLW的美国数据中心光连接敞口更直接，进攻资金选GLW。"
+    },
+    {
+      "peer": "APH",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "相近的终点盈利增长和右尾，APH以更低正常化买价倍数、跨介质产品和较好现金转化胜出。"
+    },
+    {
+      "peer": "BDC",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GLW的主业务可见度和信用缓冲较好；BDC从低估值起步的交付、整合与偿债右尾更大。"
+    },
+    {
+      "peer": "CRDO",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GLW受损底线与客户分散更好；CRDO光业务、ALC和内存连接跨过复购门槛时有更大每股弹性。"
+    },
+    {
+      "peer": "COHR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GLW现金和资产负债表边界较清楚；COHR有源光学及跨平台内容的条件右尾更大。"
+    },
+    {
+      "peer": "LITE",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "insufficient",
+      "verdict": "insufficient",
+      "reason": "GLW更适合独立经营复利；LITE已变为换股及合并经营暴露，缺少可信合并四情景，不能断言高弹胜负。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "同一AI基础设施趋势下，平台收费权、当前现金及正常化估值提供更好的条件回报，仍须约束客户信用和预算总量。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "已有软件与ASIC的现金底盘及基准DCF折价优于GLW，右尾也更大，但信用支持损失可使裁决逆转。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "微软续约与受损回撤更适合稳健复利；GLW光连接及Photonics成功时的条件股价弹性更高。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "GLW较少依赖连续外部融资和云资产回收；AMZN利用率、芯片及平台变现顺利时条件收益更大。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "LIN受损回撤与合同韧性更适合稳健持有，GLW的光连接增长和非线性条件回报显著更大。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "V的可分配现金和低实体更新资本胜出，GLW有更高产业增量和突破上行；V现价也有估值约束。"
+    }
+  ]
+}
