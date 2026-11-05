@@ -1,0 +1,172 @@
+{
+  "ticker": "DD",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T17:45:00-08:00",
+  "reference_price": {
+    "value": 150.73,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        114.5,
+        114.5
+      ],
+      "target_price": [
+        74,
+        87.3
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        204.7,
+        204.7
+      ],
+      "target_price": [
+        173.9,
+        203.8
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        238.5,
+        238.5
+      ],
+      "target_price": [
+        226.1,
+        260.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        265.8,
+        265.8
+      ],
+      "target_price": [
+        277.4,
+        328.2
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "avoid",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "ECL",
+      "relation": "direct_competitor",
+      "compounding_preference": "comparable",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "ECL服务与液冷增长更强，DD价格和投入较低但法律尾部更大；稳健相当，高弹优先ECL"
+    },
+    {
+      "peer": "PNR",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "PNR的渠道与并购风险真实，但较低现金倍数及更大基准修复空间优于DD当前有限回报"
+    },
+    {
+      "peer": "DCI",
+      "relation": "alternative",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "DCI成熟过滤复购、较小下行损伤和更高基准年化回报胜出，且无DD同等历史法律尾部"
+    },
+    {
+      "peer": "MMM",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "更新3M法律负担后当前基准回报不足，DD在两视角均较佳，但胜过3M仍不等于现价应买DD"
+    },
+    {
+      "peer": "DHR",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "comparable",
+      "verdict": "peer_preferred",
+      "reason": "DHR成熟工艺和检测现金更可靠、悲观损伤较小，右尾与DD相近，稳健配置优先DHR"
+    },
+    {
+      "peer": "ENTG",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健资金偏好DD较轻的信用与周期压力，高弹资金选ENTG工艺内容及散热右尾"
+    },
+    {
+      "peer": "LIN",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选LIN供气网络与合同，非线性赔率DD更高，但两者现价均无很厚现金折价"
+    },
+    {
+      "peer": "BSX",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健视角DD的分散成熟业务较佳，高弹视角BSX的平台恢复和较低现金买价更有上行空间"
+    },
+    {
+      "peer": "Q",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "若论点是原杜邦电子材料与AI内容量，Q在经营增长、基准回报和右尾上均优于DD"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT已验证收费与更快复利优于DD，高投入要求分步配置，但仍是较佳机会成本载体"
+    },
+    {
+      "peer": "MA",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MA以较小经营下行、强收费基础及更高基准回报胜出，乐观右尾也不逊于DD"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "稳健复利选WM许可与现金确定性，DD非线性上行更高，但并非全组最佳"
+    }
+  ]
+}
