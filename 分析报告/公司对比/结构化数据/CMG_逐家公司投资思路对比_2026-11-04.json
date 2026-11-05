@@ -1,0 +1,164 @@
+{
+  "ticker": "CMG",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T19:30:00-08:00",
+  "reference_price": {
+    "value": 35.2,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        32.87,
+        32.87
+      ],
+      "target_price": [
+        19.36,
+        24.02
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        56.06,
+        56.06
+      ],
+      "target_price": [
+        51.98,
+        58.54
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        69.69,
+        69.69
+      ],
+      "target_price": [
+        72.78,
+        82.97
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        84.07,
+        84.07
+      ],
+      "target_price": [
+        97.67,
+        112.47
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "negative",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "decision": {
+    "steady_allocation": "conditional_wait",
+    "offense_allocation": "small_option_bet",
+    "near_term_timing": "wait_for_trigger"
+  },
+  "comparisons": [
+    {
+      "peer": "MCD",
+      "relation": "direct_competitor",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "MCD成熟加盟现金与股息更适合稳健持有；CMG直营扩店和效率修复的右尾更大。"
+    },
+    {
+      "peer": "SBUX",
+      "relation": "direct_competitor",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "CMG净现金和更低的修复预付价格胜出，SBUX基准目标仍低于现价。"
+    },
+    {
+      "peer": "KR",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "KR低倍数有价值，但法律与并购资金尾部削弱安全垫；CMG的净资产负债表和基准回报更好。"
+    },
+    {
+      "peer": "COST",
+      "relation": "alternative",
+      "compounding_preference": "both_avoid",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "两者现价均不够稳健核心安全垫；进攻比较CMG所需买价与右尾更优，COST业务品质不等于股票便宜。"
+    },
+    {
+      "peer": "WMT",
+      "relation": "alternative",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "WMT经营护城河更宽，但现价基准赔率明显不足以补偿其高倍数和资本投入，CMG配置性价比更高。"
+    },
+    {
+      "peer": "UBER",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "在消费便利与餐饮数字化资金逻辑下，UBER基准与右尾均更强；并购资本约束使其不能当作无风险替代。"
+    },
+    {
+      "peer": "KO",
+      "relation": "value_chain",
+      "compounding_preference": "target_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "target_preferred",
+      "reason": "KO跨地域复购更稳，但95.80已预付较多低风险溢价且有税案尾部，CMG现价的基准和右尾更优。"
+    },
+    {
+      "peer": "PEP",
+      "relation": "value_chain",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "PEP较低常态倍数和现金分红更适合防御复利；CMG直营增量利润与上行空间更优。"
+    },
+    {
+      "peer": "V",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "V的网络复购及股东现金质量更适合稳健复利；CMG乐观和突破价格弹性更高。"
+    },
+    {
+      "peer": "ORLY",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "target_preferred",
+      "verdict": "split_by_mandate",
+      "reason": "ORLY必要维修需求和较浅主悲观回撤胜在稳健；CMG扩店和效率恢复右尾胜在进攻。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "compounding_preference": "peer_preferred",
+      "convexity_preference": "peer_preferred",
+      "verdict": "peer_preferred",
+      "reason": "MSFT订阅收费确定性和按较短目标窗口年化后的AI右尾胜出，但租赁及组件投入必须纳入现金约束。"
+    }
+  ]
+}
