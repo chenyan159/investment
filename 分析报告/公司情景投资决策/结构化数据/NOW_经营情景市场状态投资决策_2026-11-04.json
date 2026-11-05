@@ -1,0 +1,73 @@
+{
+  "ticker": "NOW",
+  "research_date": "2026-11-04",
+  "information_cutoff": "2026-11-04T16:53:00-08:00",
+  "reference_price": {
+    "value": 108.81,
+    "date": "2026-11-04",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "dcf_price": [
+        37.3,
+        37.3
+      ],
+      "business_price": [
+        89.0,
+        89.0
+      ],
+      "target_price": [
+        58.4,
+        73.7
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "dcf_price": [
+        153.3,
+        153.3
+      ],
+      "business_price": [
+        165.9,
+        165.9
+      ],
+      "target_price": [
+        165.9,
+        203.1
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "dcf_price": [
+        248.8,
+        248.8
+      ],
+      "business_price": [
+        204.2,
+        204.2
+      ],
+      "target_price": [
+        240.9,
+        296.0
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "dcf_price": [
+        384.0,
+        384.0
+      ],
+      "business_price": [
+        236.0,
+        236.0
+      ],
+      "target_price": [
+        321.3,
+        406.7
+      ],
+      "evidence": "weak"
+    }
+  }
+}
